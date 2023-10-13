@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Basic Forms</title>
+  <title>Основные формы</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference section for the Basic Forms functions and variables" />
   <meta name="rh-index-keywords" content="" />
@@ -14,52 +14,51 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1><span data-field="title" data-format="default">Basic Forms</span></h1>
-  <p><span data-keyref="GameMaker Name">GameMaker</span> has a whole collection of functions available for drawing different forms and shapes. These functions should only ever be used in the draw event of an instance (you <i>can</i> use them elsewhere but you won&#39;t see anything!) and create purely graphic effects, which means that they do not generate collision events as those can only be done through the sprite or collision mask that has been assigned to an instance. All these functions are affected by the current draw colour, alpha and blend mode (see the section on <a href="../Colour_And_Alpha/Colour_And_Alpha.htm">Colour</a>).</p>
-  <p class="note"><span data-conref="../../../../assets/snippets/Tag_important.hts"> </span> Lines, points and forms are always drawn at 1:1 with the <strong>screen resolution</strong>, regardless of the event they are drawn in.</p>
-  <p class="note"><span data-conref="../../../../assets/snippets/Tag_important.hts"> </span> These functions will break the vertex batching and increase the number of texture swaps in your game, so having multiple calls to any of them in a single draw frame may lead to performance issues.</p>
-  <h2 id="func_ref">Function Reference</h2>
-  <p class="note"><span data-conref="../../../../assets/snippets/Tag_note.hts"> </span> These functions are slow to call and only supplied as basic drawing tools.</p>
+  <h1>Основные формы</h1>
+  <p>В<span data-keyref="GameMaker Name">GameMaker</span> имеется целая коллекция функций для рисования различных форм и фигур. Эти функции должны использоваться только в событии рисования экземпляра (вы <i>можете</i> использовать их в других местах, но вы ничего не увидите!) и создавать чисто графические эффекты, что означает, что они не генерируют события столкновений, поскольку они могут происходить только через <span class="notranslate">sprite</span> или маску столкновений, назначенную экземпляру. Все эти функции зависят от текущего цвета рисования, альфа-канала и режима наложения (см. раздел " <a href="../Colour_And_Alpha/Colour_And_Alpha.htm">Цвет"</a>).</p>
+  <p class="note"><b>ВАЖНО!</b> Линии, точки и формы всегда рисуются в соотношении 1:1 с <strong>разрешением экрана</strong>, независимо от события, в котором они рисуются.</p>
+  <p class="note"><strong>ВАЖНО!</strong> Эти функции нарушают пакетную обработку вершин и увеличивают количество смен текстур в вашей игре, поэтому несколько вызовов любой из них в одном кадре рисования могут привести к проблемам с производительностью.</p>
+  <p>Для рисования основных фигур существуют следующие функции рисования. Обратите внимание, что эти функции вызываются медленно и поставляются только в качестве основных инструментов рисования:</p>
   <ul class="colour">
-    <li><a href="draw_arrow.htm">draw_arrow</a></li>
-    <li><a href="draw_circle.htm">draw_circle</a></li>
-    <li><a href="draw_circle_colour.htm">draw_circle_colour</a></li>
-    <li><a href="draw_ellipse.htm">draw_ellipse</a></li>
-    <li><a href="draw_ellipse_colour.htm">draw_ellipse_colour</a></li>
-    <li><a href="draw_line.htm">draw_line</a></li>
-    <li><a href="draw_line_colour.htm">draw_line_colour</a></li>
-    <li><a href="draw_line_width.htm">draw_line_width</a></li>
-    <li><a href="draw_line_width_colour.htm">draw_line_width_colour</a></li>
-    <li><a href="draw_point.htm">draw_point</a></li>
-    <li><a href="draw_point_colour.htm">draw_point_colour</a></li>
-    <li><a href="draw_rectangle.htm">draw_rectangle</a></li>
-    <li><a href="draw_rectangle_colour.htm">draw_rectangle_colour</a></li>
-    <li><a href="draw_roundrect.htm">draw_roundrect</a></li>
-    <li><a href="draw_roundrect_colour.htm">draw_roundrect_colour</a></li>
-    <li><a href="draw_roundrect_ext.htm">draw_roundrect_ext</a></li>
-    <li><a href="draw_roundrect_colour_ext.htm">draw_roundrect_colour_ext</a></li>
-    <li><a href="draw_triangle.htm">draw_triangle</a></li>
-    <li><a href="draw_triangle_colour.htm">draw_triangle_colour</a></li>
+    <li><a href="draw_arrow.htm"><span class="notranslate">draw_arrow</span></a></li>
+    <li><a href="draw_circle.htm"><span class="notranslate">draw_circle</span></a></li>
+    <li><a href="draw_circle_colour.htm"><span class="notranslate">draw_circle_colour</span></a></li>
+    <li><a href="draw_ellipse.htm"><span class="notranslate">draw_ellipse</span></a></li>
+    <li><a href="draw_ellipse_colour.htm"><span class="notranslate">draw_ellipse_colour</span></a></li>
+    <li><a href="draw_line.htm"><span class="notranslate">draw_line</span></a></li>
+    <li><a href="draw_line_colour.htm"><span class="notranslate">draw_line_colour</span></a></li>
+    <li><a href="draw_line_width.htm"><span class="notranslate">draw_line_width</span></a></li>
+    <li><a href="draw_line_width_colour.htm"><span class="notranslate">draw_line_width_colour</span></a></li>
+    <li><a href="draw_point.htm"><span class="notranslate">draw_point</span></a></li>
+    <li><a href="draw_point_colour.htm"><span class="notranslate">draw_point_colour</span></a></li>
+    <li><a href="draw_rectangle.htm"><span class="notranslate">draw_rectangle</span></a></li>
+    <li><a href="draw_rectangle_colour.htm"><span class="notranslate">draw_rectangle_colour</span></a></li>
+    <li><a href="draw_roundrect.htm"><span class="notranslate">draw_roundrect</span></a></li>
+    <li><a href="draw_roundrect_colour.htm"><span class="notranslate">draw_roundrect_colour</span></a></li>
+    <li><a href="draw_roundrect_ext.htm"><span class="notranslate">draw_roundrect_ext</span></a></li>
+    <li><a href="draw_roundrect_colour_ext.htm"><span class="notranslate">draw_roundrect_colour_ext</span></a></li>
+    <li><a href="draw_triangle.htm"><span class="notranslate">draw_triangle</span></a></li>
+    <li><a href="draw_triangle_colour.htm"><span class="notranslate">draw_triangle_colour</span></a></li>
   </ul>
-  <p> </p>
-  <p>The following functions are also included in <span data-keyref="GameMaker Name">GameMaker</span> to set drawing precision and draw some very specific things:</p>
+  <p> </p>
+  <p>В <span data-keyref="GameMaker Name">GameMaker</span> также включены следующие функции для настройки точности рисования и рисования некоторых очень специфических вещей:</p>
   <ul class="colour">
-    <li><a href="draw_set_circle_precision.htm">draw_set_circle_precision</a></li>
-    <li><a href="draw_button.htm">draw_button</a></li>
-    <li><a href="draw_healthbar.htm">draw_healthbar</a></li>
-    <li><a href="draw_path.htm">draw_path</a></li>
+    <li><a href="draw_set_circle_precision.htm"><span class="notranslate">draw_set_circle_precision</span></a></li>
+    <li><a href="draw_button.htm"><span class="notranslate">draw_button</span></a></li>
+    <li><a href="draw_healthbar.htm"><span class="notranslate">draw_healthbar</span></a></li>
+    <li><a href="draw_path.htm"><span class="notranslate">draw_path</span></a></li>
   </ul>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="../Drawing.htm">Drawing</a></div>
-        <div style="float:right">Next: <a href="../Sprites_And_Tiles/Sprites_And_Tiles.htm">Sprites And Tiles</a></div>
+        <div style="float:left">Назад: <a href="../Drawing.htm">Рисунок</a></div>
+        <div style="float:right">Следующий: <a href="../Sprites_And_Tiles/Sprites_And_Tiles.htm">Спрайты и плитки</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 Basic Forms

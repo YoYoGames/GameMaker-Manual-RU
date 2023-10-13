@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>доски достижений_показывать_лидеры</title>
+  <meta name="generator" content="Adobe RoboHelp 2019" />
+  <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
+  <script src="../../../../assets/scripts/main_script.js"></script>
+  <meta name="rh-authors" content="Mark Alexander" />
+  <meta name="topic-comment" content="Reference page for achievement_show_leaderboards" />
+  <meta name="rh-index-keywords" content="achievement_show_leaderboards" />
+  <meta name="search-keywords" content="achievement_show_leaderboards" />
+</head>
+<body>
+  <!--<div class="body-scroll" style="top: 150px;">-->
+  <h1>доски достижений_показывать_лидеры</h1>
+  <p>Эта функция откроет страницу таблицы лидеров для выбранной платформы. Обратите внимание, что это <i>асинхронная функция</i>, т.е. ваша игра будет продолжать работать в фоновом режиме, пока отображается страница таблицы лидеров. Поэтому вам следует быть
+    осторожно использовать эту функцию и обязательно ставить игру на паузу или разрешать ее показ только в тех местах вашей игры, где она не будет мешать игровому процессу.</p>
+  <p> </p>
+  <h4><b>Синтаксис:</b></h4>
+  <p class="code">achievement_show_leaderboards()</p>
+  <p> </p>
+  <h4>Возвращается:</h4>
+  <p class="code">N/A</p>
+  <p> </p>
+  <h4>Пример:</h4>
+  <p class="code">if achievement_available()<br/>     {
+    <br/>     global.Pause = true;<br/>     instance_create_layer(0, 0, &quot;Controllers&quot;, obj_Pause);<br/>     achievement_show_leaderboards();
+    <br/>     }
+  </p>
+  <p>Приведенный выше код проверяет, доступен ли выбранный сервис таблиц лидеров и достижений, и если да, то устанавливает глобальную переменную и создает экземпляр контроллера &quot;pause&quot; перед вызовом функции для отображения таблиц лидеров на экране.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <div class="footer">
+    <div class="buttons">
+      <div class="clear">
+        <div style="float:left">Назад: <a href="Achievements_And_Leaderboards.htm">Достижения и таблицы лидеров</a></div>
+        <div style="float:right">Следующий: <a href="achievement_show_challenge_notifications.htm"><span class="notranslate">achievement_show_challenge_notifications</span></a></div>
+      </div>
+    </div>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Все права защищены</span></h5>
+  </div>
+  <!-- KEYWORDS
+achievement_show_leaderboards
+-->
+  <!-- TAGS
+achievement_show_leaderboards
+-->
+</body>
+</html>

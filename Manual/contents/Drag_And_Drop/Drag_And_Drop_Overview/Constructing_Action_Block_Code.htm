@@ -2,74 +2,74 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>Constructing Action Block Code</title>
-    <meta name="generator" content="Adobe RoboHelp 2020"/>
-    <link rel="stylesheet" href="../../assets/css/default.css" type="text/css"/>
-    <script src="../../assets/scripts/main_script.js" type="module"></script>
-    <meta name="rh-authors" content="Mark Alexander"/>
-    <meta name="topic-comment" content="Article explaining how to construct GML Visual actions"/>
-    <meta name="rh-index-keywords" content="GML Visual Overview - Constructing Action Block Code"/>
-    <meta name="search-keywords" content="GML Visual Comments"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Конструирование кода блока действий</title>
+    <meta name="generator" content="Adobe RoboHelp 2020" />
+    <link rel="stylesheet" href="../../assets/css/default.css" type="text/css" />
+    <script src="../../assets/scripts/main_script.js"></script>
+    <meta name="rh-authors" content="Mark Alexander" />
+    <meta name="topic-comment" content="Article explaining how to construct GML Visual actions" />
+    <meta name="rh-index-keywords" content="GML Visual Overview - Constructing Action Block Code" />
+    <meta name="search-keywords" content="GML Visual Comments" />
   </head>
   <body><!--<div class="body-scroll" style="top: 150px;">-->
-    <h1>Constructing Action Block Code</h1>
-    <p>To add behaviours to objects you can construct your code using <strong>Actions </strong>from the different libraries available to you from the <strong>Action Toolbox</strong>. To start with you&#39;ll need to make a <a href="../../Introduction/The_Start_Page.htm">new GML Visual project</a> and then make a new <a href="../../The_Asset_Editors/Objects.htm">object</a> (you can assign a <a href="../../The_Asset_Editors/Sprites.htm">sprite</a> to the object too if required). In your new object you can start to add <a href="../../The_Asset_Editors/Object_Properties/Object_Events.htm">events</a>, and in the events add your GML Visual code actions.</p>
-    <p><img alt="GML Visual Create Event" class="center" src="../../assets/Images/Scripting_Reference/Drag_And_Drop/Overview/DnD_Create_Event.png"/>Note that when you add a new event, a &quot;code&quot; window is opened with a tab for the given event (see the image above), and you can now drag any action you wish from the Toolbox on the right into the Action Block pane of the code window. Now, while it&#39;s true that you can add any action, that doesn&#39;t mean that they will all work or that the project will compile with them. Some actions require at least one <a class="glossterm" data-glossterm="variable" href="#">variable</a> to work, while others - like the <a href="../Drag_And_Drop_Reference/Drawing/Drawing_Actions.htm">Draw</a> actions - will only work if used in a specific event. How do you know which ones to use? Well, generally, it&#39;s simply a question of using logic... if an action requires a variable and we haven&#39;t defined one yet, then we shouldn&#39;t be using it until we&#39;ve added an action to create the variable.</p>
-    <p>When you drag an action from the Toolbox into the main Action Block workspace, it will expand to show you the available <a class="glossterm" data-glossterm="argument" href="#">argument</a><span class="glossextra">s</span> (parameters) that you can fill in and change to set the behaviour. In the image below, we have dragged an <a href="../Drag_And_Drop_Reference/Common/Assign_Variable.htm">Assign Variable</a> action from the Toolbox <a href="../Drag_And_Drop_Reference/Common/Common_Actions_Library.htm">Common library</a> into the action block workspace:</p>
-    <p><img alt="GML Visual Assign Variable" class="center" src="../../assets/Images/Scripting_Reference/Drag_And_Drop/Overview/DnD_Add_Var.png"/>You can see that the new action is also shown on the left of the code window in a shorthand form. This list of actions, called the action Overview, can be clicked on to quickly navigate to that action for editing. You can continue to add actions to the event should you need to, with each new action being &quot;chained&quot; to the previous one to show the flow of the GML Visual code you are constructing. Note that the area where you can drop further actions is highlighted for you underneath the initial action, and, depending on the action you are using, different areas will highlight to show where in the chain you can add it:</p>
-    <p><img alt="GML Visual Set Direction Variable" class="center" src="../../assets/Images/Scripting_Reference/Drag_And_Drop/Overview/DnD_Set_Dir.png"/>As you add actions to the workspace, they will be &quot;chained&quot; to the actions above so you can see how the GML Visual code flows, with one action leading to another, and the overview pane shows them in shorthand form and in order of execution:</p>
-    <p><img alt="GML Visual chain of actions" class="center" src="../../assets/Images/Scripting_Reference/Drag_And_Drop/Overview/DnD_Scope_Other.png"/>Some actions will place code in a separate chain away from the main flow - things like <a href="../Drag_And_Drop_Reference/Common/If_Variable.htm">If Variable</a> will create a <em>sub-chain</em> of actions that should occur if the correct conditions are met before continuing on with the main chain:</p>
-    <p><img alt="GML Visual side chain of actions" class="center" src="../../assets/Images/Scripting_Reference/Drag_And_Drop/Overview/DnD_If_Variable.png"/>Note that when using actions that can have a side chain block like this, the action will have <em>two </em>areas highlighted for dropping further actions:</p>
+    <h1>Конструирование кода блока действий</h1>
+    <p>Чтобы добавить поведение к объектам, вы можете построить свой код, используя <strong>действия </strong>из различных библиотек, доступных вам из <strong>Action Toolbox</strong>. Для начала вам нужно создать <a href="../../Introduction/The_Start_Page.htm">новый проект <span class="notranslate">GML</span> Visual</a>, а затем создать новый <a href="../../The_Asset_Editors/Objects.htm">объект</a> (при необходимости вы можете назначить объекту <a href="../../The_Asset_Editors/Sprites.htm">спрайт</a> ). В новом объекте вы можете начать добавлять <a href="../../The_Asset_Editors/Object_Properties/Object_Events.htm"><span class="notranslate">events</span></a>, а в событиях добавьте ваши действия из кода <span class="notranslate">GML</span> Visual.</p>
+    <p><img>Обратите внимание, что при добавлении нового события открывается окно &quot;код&quot; с вкладкой для данного события (см. рисунок выше), и теперь вы можете перетащить любое действие из панели инструментов справа в панель Action Block окна кода. Теперь, хотя это правда, что вы можете добавить любое действие, это не означает, что все они будут работать или что проект будет компилироваться с ними. Некоторые действия требуют для работы хотя бы одной <a class="glossterm" data-glossterm="переменная" href="#">переменной</a>, а другие - например, действия <a href="../Drag_And_Drop_Reference/Drawing/Drawing_Actions.htm">Draw</a> - будут работать только при использовании в определенном событии. Как узнать, какие из них использовать? Если действие требует переменной, а мы ее еще не определили, то не стоит ее использовать, пока мы не добавим действие для создания переменной.</p>
+    <p>Когда вы перетащите действие из панели инструментов в основное рабочее пространство блока действий, оно развернется и покажет доступные <a class="glossterm" data-glossterm="аргумент" href="#">аргументы</a>(параметры), которые вы можете заполнить и изменить, чтобы задать поведение. На изображении ниже мы перетащили действие <a href="../Drag_And_Drop_Reference/Common/Assign_Variable.htm">Assign Variable</a> из <a href="../Drag_And_Drop_Reference/Common/Common_Actions_Library.htm">библиотеки</a> Toolbox <a href="../Drag_And_Drop_Reference/Common/Common_Actions_Library.htm">Common</a> в рабочую область блока действий:</p>
+    <p><img>Вы можете видеть, что новое действие также отображается слева от окна кода в сокращенном виде. Этот список действий, называемый "Обзор действий", можно щелкнуть, чтобы быстро перейти к этому действию для редактирования. При необходимости вы можете продолжать добавлять действия к событию, при этом каждое новое действие будет &quot;привязано&quot; к предыдущему, чтобы показать поток создаваемого вами кода <span class="notranslate">GML</span> Visual. Обратите внимание, что область, в которую можно добавлять последующие действия, выделена под начальным действием, и, в зависимости от используемого действия, различные области будут выделены, чтобы показать, в каком месте цепочки вы можете его добавить:</p>
+    <p><img>По мере добавления действий в рабочую область они будут &quot;примыкать&quot; к действиям выше, чтобы вы могли видеть, как течет код <span class="notranslate">GML</span> Visual, где одно действие ведет к другому, а панель обзора показывает их в сокращенном виде и в порядке выполнения:</p>
+    <p><img>Некоторые действия помещают код в отдельную цепочку в стороне от основного потока - такие вещи, как <a href="../Drag_And_Drop_Reference/Common/If_Variable.htm">If Variable</a>, создают <em>подцепочку</em> действий, которые должны произойти при выполнении правильных условий, прежде чем продолжить основную цепочку:</p>
+    <p><img>Обратите внимание, что при использовании действий, которые могут иметь боковой блок цепочки, как это, действие будет иметь <em>две </em>выделенные области для отбрасывания дальнейших действий:</p>
     <ul class="colour">
-      <li>One below the action as normal</li>
-      <li>One to the right of the action to show that you want to create a separate block of actions to run when the condition of the first action returns true</li>
+      <li>Один под действием, как обычно</li>
+      <li>Один справа от действия, чтобы показать, что вы хотите создать отдельный блок действий для выполнения, когда условие первого действия возвращает true</li>
     </ul>
-    <p><img alt="GML Visual Side Chain Of Actions" class="center" src="../../assets/Images/Scripting_Reference/Drag_And_Drop/Overview/DnD_If_Drop.png"/>You can change the position of actions within the chain by simply clicking <img alt="LMB Icon" class="icon" height="24" src="../../assets/Images/Icons/Icon_LMB.png" width="21"/> and dragging them into the new position that you require, and if you do a click <img alt="LMB Icon" class="icon" height="24" src="../../assets/Images/Icons/Icon_LMB.png" width="21"/> and hold for a second then move the mouse, you can move the action within the workspace while maintaining its place within the action block chain.</p>
-    <p>It is also possible to add <strong>comments</strong> to GML Visual actions, so you can leave notes beside different blocks to explain what they do (which is especially useful when working in a team):</p>
-    <p><img alt="GML Visual Add Comment" class="center" src="../../assets/Images/Scripting_Reference/Drag_And_Drop/Overview/DnD_Add_Comment.gif"/>You can find out more about this feature from the page on the <a href="Right_Mouse_Button_Menu_Options.htm">Right Mouse Button Menu</a>.</p>
-    <p>That&#39;s the basics of using the GML Visual code editor, but there are further important details explained in the sections below:</p>
-    <p> </p>
-    <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down1" href="#">Target Variables</a></p>
+    <p><img>Вы можете изменить положение действий в цепочке, просто щелкнув <img> и перетащив их в нужное вам новое положение, а если вы нажмете <img> и удержите в течение секунды, а затем переместите мышь, вы сможете переместить действие в пределах рабочей области, сохраняя его место в цепочке блоков действий.</p>
+    <p>Также можно добавлять <strong>комментарии</strong> к визуальным действиям <span class="notranslate">GML</span>, поэтому вы можете оставлять заметки рядом с различными блоками, чтобы объяснить, что они делают (что особенно полезно при работе в команде):</p>
+    <p><img>Подробнее об этой функции можно узнать на странице <a href="Right_Mouse_Button_Menu_Options.htm">Меню правой кнопки мыши</a>.</p>
+    <p>Это основы использования редактора кода <span class="notranslate">GML</span> Visual, но есть и другие важные детали, о которых рассказано в следующих разделах:</p>
+    <p> </p>
+    <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down1" href="#">Целевые переменные</a></p>
     <div class="droptext" data-targetname="drop-down1">
-      <p class="dropspot">It is important to note that many actions offer a &quot;target&quot; variable, which can be flagged as &quot;Temporary&quot;, for example:</p>
-      <p class="dropspot"><img alt="Example Of Target" class="center" src="../../assets/Images/Scripting_Reference/Drag_And_Drop/Overview/DnD_Audio_Get_Audio_Volume.png"/>What this means is that you can supply a variable which is the target to hold the value returned by the action. In the example action above, the action will return the volume of the audio resource that you select, so you supply a target variable to hold this value so you can reference it later.</p>
-      <p class="dropspot">Now, this target variable will need to have been declared previously either using <a href="../Drag_And_Drop_Reference/Common/Assign_Variable.htm">Assign Variable</a> (which creates an <strong>Instance Variable</strong>) or <a href="../Drag_And_Drop_Reference/Common/Declare_Temporary_Variable.htm">Declare Temporary Variable</a> (which creates a <strong>Local Temporary Variable</strong>) If you check the &quot;Temp&quot; option, then you can simply add a variable name and the action will create that variable and set it to hold the return value for you (creating a temporary local variable). Any actions used after this can now access the value in the temporary variable, <strong>but only within the same Event or Script</strong>. Temporary variables are only available within the scope that they were created. For more in depth information on variables and variable scope, please see <a href="../../GameMaker_Language/GML_Overview/Variables_And_Variable_Scope.htm">here</a>.</p>
-      <p class="dropspot"> </p>
+      <p class="dropspot">Важно отметить, что многие действия предлагают переменную &quot;цель&quot;, которая может быть помечена, например, как &quot;Временная&quot;:</p>
+      <p class="dropspot"><img>Это означает, что вы можете указать переменную, которая является целью для хранения значения, возвращаемого действием. В приведенном выше примере действие возвращает громкость аудиоресурса, который вы выбрали, поэтому вы предоставляете переменную target для хранения этого значения, чтобы вы могли сослаться на него позже.</p>
+      <p class="dropspot">Если вы отметите опцию &quot;Temp&quot;, то можете просто добавить имя переменной, и действие создаст эту переменную и установит ее для хранения возвращаемого значения (создав временную локальную <strong>переменную</strong>). Любые действия, используемые после этого, теперь могут получить доступ к значению временной переменной, <strong>но только в рамках одного события или сценария</strong>. Временные переменные доступны только в той области видимости, в которой они были созданы. Более подробную информацию о переменных и области видимости переменных можно найти <a href="../../GameMaker_Language/GML_Overview/Variables_And_Variable_Scope.htm">здесь</a>.</p>
+      <p class="dropspot"> </p>
     </div>
-    <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down2" href="#">Action Scope</a></p>
+    <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down2" href="#">Сфера действия</a></p>
     <div class="droptext" data-targetname="drop-down2">
-      <p class="dropspot">Not only variables have scopes (see the <strong>Target Variables </strong>section, above), actions can have different scopes too. In fact, almost all actions can be given a different scope to work in, set from the drop down window opened in the action itself as shown here:</p>
-      <p class="dropspot"><img alt="GML Visual Applies To" class="center" src="../../assets/Images/Scripting_Reference/Drag_And_Drop/Overview/DnD_Applies_To.png"/>You can also set the scope for all further actions using the special action <a href="../Drag_And_Drop_Reference/Common/Apply_To...htm">Apply to</a>. For more information on this feature of the GML Visual actions, please see here:</p>
+      <p class="dropspot">Не только переменные имеют области видимости (см. раздел " <strong>Целевые переменные </strong>" выше), действия также могут иметь различные области видимости. На самом деле, почти всем действиям можно присвоить разные области действия, задаваемые из выпадающего окна, открываемого в самом действии, как показано здесь:</p>
+      <p class="dropspot"><img>Вы также можете установить область действия для всех последующих действий с помощью специального действия <a href="../Drag_And_Drop_Reference/Common/Apply_To...htm">Apply to</a>. Более подробную информацию об этой возможности визуальных действий <span class="notranslate">GML</span> см. здесь:</p>
       <ul class="dropspotlist">
-        <li class="dropspot"><a href="Applying_Actions_To_Other_Instances.htm">Applying Actions To Other Instances</a></li>
+        <li class="dropspot"><a href="Applying_Actions_To_Other_Instances.htm">Применение действий к другим экземплярам</a></li>
       </ul>
-      <p class="dropspot"> </p>
+      <p class="dropspot"> </p>
     </div>
-    <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down3" href="#">Auto Complete</a></p>
+    <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down3" href="#">Автокомплект</a></p>
     <div class="droptext" data-targetname="drop-down3">
-      <p class="dropspot">When working with GML Visual you will have to add variables and expressions into the different input fields of the actions. However, as you do this you will often get the <strong>Auto Complete</strong> window popping up to help you:</p>
-      <p class="dropspot"><img alt="Auto Complete" class="center" src="../../assets/Images/Scripting_Reference/Drag_And_Drop/Overview/DnD_Action_AutoComplete.png"/>This pop up window will list all the built in GML (GameMaker Language) variables, constants and functions, as well as any resources that contain the initial letters of what you were typing. It can be used to quickly find the resource or variable that you are wanting for the action without having to type it all in yourself. For example, if all your rooms are prefixed &quot;<span class="inline">rm_</span>&quot; then typing that and waiting a moment will show the auto complete window with all the assets beginning with &quot;<span class="inline">rm_</span>&quot;. Note that all the built in variables that are shown in the auto complete window can be used anywhere where a variable or expression is expected in an action, as can most GML functions.</p>
-      <p class="dropspot"> </p>
+      <p class="dropspot">При работе с <span class="notranslate">GML</span> Visual вам придется добавлять переменные и выражения в различные поля ввода действий. Однако при этом часто появляется окно <strong>Auto Complete</strong>, которое помогает вам:</p>
+      <p class="dropspot"><img>В этом всплывающем окне будут перечислены все встроенные в <span class="notranslate">GML</span> (<span class="notranslate">GameMaker Language</span>) переменные, константы и функции, а также любые ресурсы, содержащие начальные буквы того, что вы набирали. Его можно использовать для быстрого поиска нужного ресурса или переменной для действия без необходимости вводить их самостоятельно. Например, если все ваши комнаты имеют префикс &quot;<span class="inline">rm_</span>&quot;, то, набрав его и подождав немного, вы увидите окно автозаполнения со всеми ресурсами, начинающимися с &quot;<span class="inline">rm_</span>&quot;. Обратите внимание, что все встроенные переменные, которые отображаются в окне автозавершения, можно использовать везде, где в действии ожидается переменная или выражение, как и большинство функций <span class="notranslate">GML</span>.</p>
+      <p class="dropspot"> </p>
     </div>
-    <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down4" href="#">Action Expansion</a></p>
+    <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down4" href="#">Расширение действия</a></p>
     <div class="droptext" data-targetname="drop-down4">
-      <p class="dropspot">Sometimes when using an action you will see a small plus icon <img alt="Expand Arguments Icon" src="../../assets/Images/Icons/Icon_Expand_Arguments.png"/> to the side. This means that you can expand the action to perform extra tasks or take further arguments. For example, if you look at the <a href="../Drag_And_Drop_Reference/Common/Declare_Temporary_Variable.htm">Declare Temporary Variables</a> action, you can see that it has this  icon:</p>
-      <p class="dropspot"><img alt="Temp Variable Expansion" class="center" src="../../assets/Images/Scripting_Reference/Drag_And_Drop/Overview/DnD_Declare_Temp_Var.png"/>When you click the icon, the action will <em>expand </em>and permit you to declare more variables, making it easier and faster to define multiple variables at the same time.</p>
-      <p class="dropspot"><img alt="Temp Variable Expansion Example" class="center" src="../../assets/Images/Scripting_Reference/Drag_And_Drop/Overview/DnD_Expansion_Example.png"/>The icon can also be used for those actions that require <strong>optional </strong>arguments, like the <a href="../Drag_And_Drop_Reference/Random/Choose.htm">Choose</a> action, which permits you to add various different values to be returned:</p>
-      <p class="dropspot"><img alt="Choose Expansion Example" class="center" src="../../assets/Images/Scripting_Reference/Drag_And_Drop/Overview/DnD_Mathematics_Choose.png"/></p>
+      <p class="dropspot">Иногда при использовании действия вы увидите маленький значок плюса <img> сбоку. Это означает, что вы можете расширить действие, чтобы выполнить дополнительные задачи или принять дополнительные аргументы. Например, если вы посмотрите на действие <a href="../Drag_And_Drop_Reference/Common/Declare_Temporary_Variable.htm">Declare Temporary Variables</a>, вы увидите, что у него есть этот значок:</p>
+      <p class="dropspot"><img>Когда вы щелкните по значку, действие <em>расширится </em>и позволит вам объявить больше переменных, что упрощает и ускоряет одновременное определение нескольких переменных.</p>
+      <p class="dropspot"><img>Значок также можно использовать для тех действий, которые требуют <strong>необязательных </strong>аргументов, например, действие <a href="../Drag_And_Drop_Reference/Random/Choose.htm">Choose</a>, которое позволяет добавлять различные значения для возврата:</p>
+      <p class="dropspot"><img alt="GML Visual Create Event" class="center" src="../../assets/Images/Scripting_Reference/Drag_And_Drop/Overview/DnD_Create_Event.png"/></p>
     </div>
-    <p> </p>
-    <p> </p>
-    <p> </p>
+    <p> </p>
+    <p> </p>
+    <p> </p>
     <div class="footer">
       <div class="buttons">
         <div class="clear">
-          <div style="float:left">Back: <a href="../../Content.htm">Index</a></div>
-          <div style="float:right">Next: <a href="Applying_Actions_To_Other_Instances.htm">Applying Actions To Other Instances</a></div>
+          <div style="float:left">Назад: <a href="../../Content.htm">Указатель</a></div>
+          <div style="float:right">Следующее: <a href="Applying_Actions_To_Other_Instances.htm">Применение действий к другим экземплярам</a></div>
         </div>
       </div>
-      <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2021 All Rights Reserved</span></h5>
+      <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Все права защищены</span></h5>
     </div>
     <!-- KEYWORDS
 GML Visual Construction

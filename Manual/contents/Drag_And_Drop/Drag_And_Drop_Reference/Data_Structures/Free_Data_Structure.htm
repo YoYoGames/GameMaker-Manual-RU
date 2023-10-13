@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Free Data Structure</title>
+  <title>Свободная структура данных</title>
   <meta name="generator" content="Adobe RoboHelp 2019" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
-  <script src="../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page that explains the Free Data Structure action" />
   <meta name="rh-index-keywords" content="GML Visual Action - Free Data Structure" />
@@ -14,47 +14,47 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1><img alt="Free Data Structure Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Data_Structures/i_DS_Free_Data_Structure.png" /> Free Data Structure</h1>
-  <p>This action will free the data structure from memory and should be called whenever a data structure is no longer required, for example in the Destroy even of an instance or the Room End event, etc... Freeing a data structure means that no further actions
-    can be used to reference it as it will no longer exist, although you can also check for this using the action <a href="If_Data_Structure_Exists.htm">If Data Structure Exists</a>.</p>
-  <p>Note that unless the data structure has an index assigned to a global scope variable, it will not be carried across from one room to another. For example, if you create a player instance and a list data structure is assigned to a variable in that instance,
-    the list will need to be freed if the player is destroyed <i>or</i> if the room changes with the player instance in it (unless the player instance is flagged as persistent), so the player instance would have two Free Data Structure actions in it for
-    both those events. It is important that all created data structures are destroyed in this way when no longer required to prevent memory leaks which can cause performance issues or even crash your game.</p>
-  <p> </p>
-  <h4>Action Syntax:</h4>
-  <p><img alt="Free Data Structure Action" class="center" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Data_Structures/a_DS_Free_Data_Structure.png" /></p>
-  <h4>Arguments:</h4>
+  <h1><img> Свободная структура данных</h1>
+  <p>Это действие освободит структуру данных из памяти и должно вызываться всякий раз, когда структура данных больше не нужна, например, в событии Destroy даже экземпляра или в событии Room End и т.д.. Освобождение структуры данных означает, что никакие дальнейшие действия
+    не могут быть использованы для ссылки на нее, поскольку она больше не существует, хотя вы также можете проверить это с помощью действия <a href="If_Data_Structure_Exists.htm">If Data Structure Exists</a>.</p>
+  <p>Обратите внимание, что если структура данных не имеет индекса, назначенного переменной глобальной области видимости, она не будет переноситься из одной комнаты в другую. Например, если вы создадите экземпляр игрока и структура данных list будет присвоена переменной этого экземпляра,
+    список нужно будет освободить, если игрок будет уничтожен <i>или</i> если изменится комната с экземпляром игрока в ней (если только экземпляр игрока не помечен как постоянный), поэтому экземпляр игрока будет иметь два действия Free Data Structure для
+    обоих этих событий. Важно, чтобы все созданные структуры данных уничтожались таким образом, когда они больше не нужны, чтобы предотвратить утечку памяти, которая может вызвать проблемы с производительностью или даже крах вашей игры.</p>
+  <p> </p>
+  <h4>Синтаксис действия:</h4>
+  <p><img alt="Free Data Structure Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Data_Structures/i_DS_Free_Data_Structure.png" /></p>
+  <h4>Аргументы:</h4>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Description</th>
+        <th>Аргумент</th>
+        <th>Описание</th>
       </tr>
       <tr>
-        <td>Type</td>
-        <td>The type of data structure you are freeing (List, Map, Grid or Stack)</td>
+        <td><span class="notranslate">Type</span></td>
+        <td>Тип структуры данных, которую вы освобождаете (список, карта, сетка или стек).</td>
       </tr>
       <tr>
-        <td>Variable</td>
-        <td>The variable holding the index of the data structure to free</td>
+        <td><span class="notranslate">Variable</span></td>
+        <td>Переменная, содержащая индекс структуры данных для освобождения</td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Example:</h4>
-  <p><img alt="Free Data Structure Example" class="center" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Data_Structures/e_DS_Free_Data_Structure.png" />The above action block code gets the size of the list referenced in the global
-    variable and then uses a for loop to loop through it and destroy the instances with the IDs stored in the list. After the loop is finished, the list is freed from memory.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p> </p>
+  <h4>Пример:</h4>
+  <p><img>Приведенный выше код блока действий получает размер списка, на который ссылается глобальная
+    и затем использует цикл for для его просмотра и уничтожения экземпляров с идентификаторами, хранящимися в списке. После завершения цикла список освобождается из памяти.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Data_Structure_Actions.htm">Data Structure Actions</a></div>
-        <div style="float:right">Next: <a href="Add_To_List.htm">Add To List</a></div>
+        <div style="float:left">Назад: <a href="Data_Structure_Actions.htm">Действия со структурой данных</a></div>
+        <div style="float:right">Следующий: <a href="Add_To_List.htm">Добавить в список</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2021 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 Action - Free Data Structure

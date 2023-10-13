@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>directory_destroy</title>
+  <title>уничтожение каталога</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference page for directory_destroy" />
   <meta name="rh-index-keywords" content="directory_destroy" />
@@ -14,46 +14,46 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>directory_destroy</h1>
-  <p>This function will remove a directory with the given name in the save area.</p>
-  <p class="note"><strong>NOTE</strong>: This function will not work on HTML5 as you cannot create or remove directories in the browser local storage.</p>
-  <p class="note"><b></b><b>WARNING!</b> This function may not work as you expect due to <span data-keyref="GameMaker Name">GameMaker</span> being sandboxed! Please see the section on the <a href="../../../../Additional_Information/The_File_System.htm">File System</a> for more information.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <h1>уничтожение каталога</h1>
+  <p>Эта функция удалит каталог с заданным именем в области сохранения.</p>
+  <p class="note"><strong>ПРИМЕЧАНИЕ</strong>: Эта функция не будет работать на HTML5, так как вы не можете создавать или удалять каталоги в локальном хранилище браузера.</p>
+  <p class="note"><b></b><b>ВНИМАНИЕ!</b> Эта функция может работать не так, как вы ожидаете, из-за того, что <span data-keyref="GameMaker Name">GameMaker</span> находится в "песочнице"! Пожалуйста, обратитесь к разделу о <a href="../../../../Additional_Information/The_File_System.htm">файловой системе</a> для получения дополнительной информации.</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
   <p class="code">directory_destroy(dname)</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th><th>Type</th>
-        <th>Description</th>
+        <th>Аргумент</th><th>Тип</th>
+        <th>Описание</th>
      </tr>
       <tr>
-        <td>dname</td><td><span data-keyref="Type_String"></span></td>
-        <td>The name of the directory to remove.</td>
+        <td><span class="notranslate">dname</span></td><td><span data-keyref="Type_String"></span></td>
+        <td><span class="notranslate">The name of the directory to remove.</span></td>
      </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
   <p class="code"><span data-keyref="Type_Void"></span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Пример:</h4>
   <p class="code">if directory_exists(&quot;DLC&quot;)<br />
     {<br />
         directory_destroy(&quot;DLC&quot;);<br />
     }</p>
-  <p>This will check to see if the specified directory exists in the local data folder and, if it does, it is removed.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>При этом проверяется, существует ли указанный каталог в локальной папке данных, и если да, то он удаляется.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="File_Directories.htm">File Directories</a></div>
-        <div style="float:right">Next: <a href="temp_directory.htm">temp_directory</a></div>
+        <div style="float:left">Назад: <a href="File_Directories.htm">Файловые каталоги</a></div>
+        <div style="float:right">Следующий: <a href="temp_directory.htm"><span class="notranslate">temp_directory</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 directory_destroy

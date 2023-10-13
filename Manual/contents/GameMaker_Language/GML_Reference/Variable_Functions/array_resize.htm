@@ -6,7 +6,7 @@
   <title>array_resize</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
-  <script src="../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page explaining the function array_resize" />
   <meta name="rh-index-keywords" content="array_resize" />
@@ -15,8 +15,8 @@
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
   <h1>array_resize</h1>
-  <p>With this function you can resize an existing array dimension to a new size. You supply the array to be resized as well as the new number of indices for the array, and the function will resize that array. Note that this function is designed for resizing an array <i>down</i> to a smaller length as you can resize up by simply setting a new index in the array. That said, if you do use it to size up an array, any new indices will be set to the default value of 0.</p>
-  <p>This function can also be used for multi-dimension arrays, as long as you specify which dimension you want to resize when you supply the array index, following this pattern:</p>
+  <p>С помощью этой функции вы можете изменить размер существующего массива на новый. Вы указываете массив, размер которого необходимо изменить, а также новое количество индексов для массива, и функция изменит размер массива. Обратите внимание, что эта функция предназначена для изменения размера массива <i>до</i> меньшей длины, так как вы можете изменить размер массива, просто установив новый индекс в массиве. Тем не менее, если вы используете эту функцию для увеличения размера массива, все новые индексы будут установлены в значение по умолчанию 0.</p>
+  <p>Эта функция также может быть использована для многомерных массивов, если при указании индекса массива вы укажете, какое измерение вы хотите изменить, следуя этой схеме:</p>
   <p class="code">// Resize the first dimension of the array<br />
     array_resize(my_array, 10);<br />
     <br />
@@ -28,53 +28,50 @@
     <br />
     // ...and so on.
   </p>
-  <p>The code states that only the first slot of the second dimension is resized, since the slots in any given array dimension are <em>not</em> interconnected and can have different sizes; for example:</p>
+  <p>В коде указано, что изменяется размер только первого слота второго измерения, поскольку слоты в любом данном измерении массива <em>не</em> связаны между собой и могут иметь разные размеры; например:</p>
   <p class="code">array_resize(my_array[0], 10);<br />
     array_resize(my_array[1], 22);</p>
-  <p>In the above code, the length of the array&#39;s second dimension is 10 in the first slot but 22 in the second slot.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p>В приведенном выше коде длина второго измерения массива равна 10 в первом слоте, но 22 во втором слоте.</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
   <p class="code">array_resize(array_index, new_size);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
+        <th>Аргумент</th><th>Тип</th>
+        <th>Описание</th>
+     </tr>
       <tr>
-        <td>array_index</td>
-        <td><span data-keyref="Type_Array"><a href="../../../../GameMaker_Language/GML_Overview/Arrays.htm" target="_blank">Array</a></span></td>
-        <td>The index of the array to resize.</td>
-      </tr>
+        <td><span class="notranslate">array_index</span></td><td><span data-keyref="Type_Array"></span></td>
+        <td><span class="notranslate">The index of the array to resize.</span></td>
+     </tr>
       <tr>
-        <td>new_size</td>
-        <td><span data-keyref="Type_Real"><a href="../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
-        <td>The new size for the array (an integer, starting from 0).</td>
-      </tr>
+        <td><span class="notranslate">new_size</span></td><td><span data-keyref="Type_Real"></span></td>
+        <td><span class="notranslate">The new size for the array (an integer, starting from 0).</span></td>
+     </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
-  <p class="code"><span data-keyref="Type_Void">N/A</span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
+  <p class="code"><span data-keyref="Type_Void"></span></p>
+  <p> </p>
+  <h4>Пример:</h4>
   <p class="code">if array_length(a) &gt; 10<br />
     {<br />
         array_resize(a, 10);<br />
     }</p>
-  <p>The above code checks the length of an array and if it has more than 10 indices, it is resized.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Приведенный выше код проверяет длину массива, и если он имеет более 10 индексов, то его размер изменяется.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a data-xref="{title}" href="Array_Functions.htm">Array Functions</a></div>
-        <div style="float:right">Next: <a data-xref="{title}" href="array_length_1d.htm">array_length_1d</a></div>
+        <div style="float:left">Назад: <a href="Variable_Functions.htm">Переменные функции</a></div>
+        <div style="float:right">Следующий: <a href="array_length_1d.htm"><span class="notranslate">array_length_1d</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 array_resize

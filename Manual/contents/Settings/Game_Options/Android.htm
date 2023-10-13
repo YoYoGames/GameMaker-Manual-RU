@@ -4,9 +4,9 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>Android</title>
-  <meta name="generator" content="Adobe RoboHelp 2022" />
+  <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../assets/css/default.css" type="text/css" />
-  <script src="../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page that details the Android Game Options" />
   <meta name="rh-index-keywords" content="Game Options - Android" />
@@ -14,124 +14,129 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1><span data-field="title" data-format="default">Android</span> Game Options</h1>
-  <p>This section outlines the different options available to you that control how your Android game projects will be compiled. The different sections are:</p>
-  <h2 id="general">General</h2>
-  <p><img alt="General Android Game Options 1" class="center" src="../../assets/Images/Settings/Android_General1_Options.png" />The first part of the <strong>General </strong>section is dedicated to the <strong>Product Information</strong> and the <strong>Build Settings</strong>. You should fill in the Product information, which includes the projects <strong>Display Name</strong>, its Package information, which consists of a <strong>Domain</strong>, <strong>Company </strong>and <strong>Product</strong>. The package information can only be made up of letters from A-Z and numbers 0-9, with no symbols or other special characters at all, nor should it have uppercase characters. These details will then be used to generate a Package ID with the format &quot;<span class="inline">com.company.myappname</span>&quot;.</p>
-  <p>You then need to set the <strong>Build Tools</strong> as well as the <strong>Target</strong>, <strong>Minimum </strong>and <strong>Compile SDK</strong> versions.</p>
-  <p class="note"><span data-conref="../../assets/snippets/Tag_note.hts"> </span> There is also an option for the &quot;<strong>Support Library</strong>&quot; version to use. From <span data-keyref="GameMaker Name">GameMaker</span> v2.2.4 and above, this is no longer required and any values used here will be ignored. The setting is maintained for use with legacy projects that require an earlier runtime than 2.2.4.</p>
-  <p>The Build Tools (and Support Library if required) are used when <span data-keyref="GameMaker Name">GameMaker</span> builds your game for the Android target and should be set to appropriate values based on the tools you have installed using Android Studio.</p>
+  <h1>Варианты игр для Android</h1>
+  <p>В этом разделе описаны различные доступные вам опции, которые определяют, как будут компилироваться ваши игровые проекты <span class="notranslate">Android</span>. Различными разделами являются:</p>
+  <p> </p>
+  <h2>Общий</h2>
+  <p><img>Первая часть раздела <strong>General </strong>посвящена <strong>информации о продукте</strong> и <strong>настройкам сборки</strong>. Вы должны заполнить информацию о продукте, которая включает в себя <strong>отображаемое имя</strong> проекта, информацию о его пакете, которая состоит из <strong>домена</strong>, <strong>компании </strong>и <strong>продукта</strong>. Информация о пакете может состоять только из букв A-Z и цифр 0-9, без символов и других специальных знаков, а также не должна содержать заглавных букв. Эти данные будут использованы для создания идентификатора пакета в формате &quot;<span class="inline">com.company.myappname</span>&quot;.</p>
+  <p>Затем необходимо установить <strong>Build Tools</strong>, а также <strong>Target</strong>, <strong>Minimum </strong>и <strong>Compile SDK</strong> версии.</p>
+  <p class="note"><strong>ПРИМЕЧАНИЕ</strong>: Существует также опция для использования версии &quot;<strong>Support Library</strong>&quot;. Начиная с <span data-keyref="GameMaker Name">GameMaker</span> v2.2.4 и выше, этот параметр больше не требуется, и любые значения, используемые здесь, будут игнорироваться. Этот параметр сохраняется для использования в старых проектах, которым требуется более ранняя версия исполнения, чем 2.2.4.</p>
+  <p>Инструменты сборки (и библиотека поддержки, если требуется) используются, когда <span data-keyref="GameMaker Name">GameMaker</span> собирает вашу игру для Android, и должны быть установлены на соответствующие значения, основанные на инструментах, которые вы установили с помощью <span class="notranslate">Android</span> Studio.</p>
   <ul class="colour">
-    <li>The <strong>Target SDK</strong> indicates that you have tested your app on (up to and including) the version you specify here. This is simply to give the Android OS an idea of how it should handle your app in terms of OS features. For all practical purposes, most apps are going to want to set Target SDK to the latest released version of the API (as used by the Compile SDK setting). This will ensure your app looks as good as possible on the most recent Android devices. Note that from November 2019 Google has made API level 28 the required target.</li>
-    <li>The <strong>Minimum SDK</strong> version is the minimum API level that will run your project. From November 2019 Google has made API level 16 the absolute minimum required, but if you add extensions then they may require a higher minimum API level.</li>
-    <li>The <strong>Compile SDK</strong> version is the version of the API that the project is compiled against. This means you can use Android API features included in that version of the API. If you try and use API 16 features - for example - but set Compile SDK 15, then you will get a compilation error. However, if you set the Compile SDK to 28 then you can still run the app on an API 26 device (as well as all other previous versions too).</li>
+    <li> <strong>Target SDK</strong> указывает, что вы протестировали свое приложение на версии (вплоть до включительно), которую вы здесь указали. Это просто для того, чтобы дать ОС <span class="notranslate">Android</span> представление о том, как она должна работать с вашим приложением с точки зрения возможностей ОС. Для всех практических целей большинство приложений захотят установить Target SDK на последнюю выпущенную версию API (как используется параметром Compile SDK). Это позволит вашему приложению выглядеть как можно лучше на самых последних устройствах <span class="notranslate">Android</span>. Обратите внимание, что с ноября 2019 года Google сделал API уровня 28 обязательной целью.</li>
+    <li> <strong>Минимальная</strong> версия <strong>SDK</strong> - это минимальный уровень API, на котором будет работать ваш проект. С ноября 2019 года Google сделал уровень API 16 абсолютно минимально необходимым, но если вы добавите расширения, то они могут потребовать более высокий минимальный уровень API.</li>
+    <li>Версия <strong>SDK для компиляции</strong> - это версия API, под которую компилируется проект. Это означает, что вы можете использовать функции API <span class="notranslate">Android</span>, включенные в эту версию API. Если вы попытаетесь использовать, например, функции API 16, но установите Compile SDK 15, то получите ошибку компиляции. Однако если вы установите Compile SDK на 28, вы сможете запустить приложение на устройстве с API 26 (а также на всех предыдущих версиях).</li>
   </ul>
-  <p>You can select from one of the predefined target settings by clicking on the <strong>Pre-populate SDK</strong> values to chosen API level button, which will open a list of different APIs to choose from. Selecting any one of them will populate all the SDK files with appropriate values which you can then use or edit as required.</p>
-  <p class="note"><span data-conref="../../assets/snippets/Tag_note.hts"> </span> You must have installed the appropriate APIs in the Android SDK Manager or through Android Studio for your projects to compile correctly.</p>
+  <p>Вы можете выбрать один из предопределенных целевых параметров, нажав на кнопку <strong>Pre-populate SDK</strong> values to chosen API level, которая откроет список различных API на выбор. При выборе любого из них все файлы SDK будут заполнены соответствующими значениями, которые вы можете использовать или редактировать по мере необходимости.</p>
+  <p class="note"><strong>ПРИМЕЧАНИЕ</strong>: Для правильной компиляции проектов вы должны установить соответствующие API в <span class="notranslate">Android</span> SDK Manager или через <span class="notranslate">Android</span> Studio.</p>
+  <p><img alt="General Android Game Options 1" class="center" src="../../assets/Images/Settings/Android_General1_Options.png" /></p>
+  <p>Вторая часть раздела " <strong>Общие"</strong> охватывает архитектуры процессоров, для которых будет производиться сборка, со следующими вариантами (вы можете выбрать все из них или только те, которые вам нужны, но учтите, что каждый из них увеличит конечный размер скомпилированного apk):</p>
+  <ul class="Disc">
+    <li>Сборка для ARMV5 (отмечено по умолчанию)</li>
+    <li>Сборка для ARMV7 (Проверено по умолчанию)</li>
+    <li>Сборка для x86 (отмечено по умолчанию)</li>
+    <li>Build for Mips (отмечено по умолчанию)</li>
+    <li>Сборка для ARM64</li>
+    <li>Сборка для x86_64</li>
+  </ul>
+  <p>После настройки вы можете выбрать различные ориентации, в которых может быть запущена ваша игра для наилучшего восприятия пользователем. Доступны следующие варианты:</p>
+  <ul class="Disc">
+    <li>Портрет</li>
+    <li>Перевернутый портрет</li>
+    <li>Ландшафт</li>
+    <li>Перевернутый пейзаж</li>
+  </ul>
+  <p>Наконец, у вас есть следующие различные опции:</p>
+  <ul class="colour">
+    <li><strong>Включить поддержку Bluetooth/iCade</strong>: Это добавит поддержку геймпадов bluetooth или iCade в ваш игровой проект. По умолчанию эта функция включена.</li>
+    <li><strong>Запустить анализ кода Lint</strong>: Когда эта опция отмечена, инструменты сборки будут запускать lint-анализ кода проекта в процессе сборки, обеспечивая более глубокую проверку ошибок и показывая больше информации в окне вывода по мере компиляции проекта (также будет создан LOG-файл, путь к которому будет показан в конце компиляции в <a href="../../Introduction/The_Output_Window.htm">окне вывода</a>). Обратите внимание, что не все ошибки, отмеченные lint-анализом, обязательно являются проблемными для вашей игры, и включение этой функции может означать, что ваша игра больше не компилируется, даже если она выключена, она будет компилироваться и запускаться нормально. По сути, эта опция нужна только для отладки, и по умолчанию она выключена.</li>
+    <li><strong>Место установки</strong>: Здесь вы можете установить место установки по умолчанию для вашей игры. Можно установить значение <strong>Automatic</strong>, в этом случае игра будет установлена в место, выбранное пользователем на его устройстве, или значение <strong>Prefer External</strong>, которое всегда будет пытаться установить игру на внешнее хранилище устройства.</li>
+  </ul>
+  <p>Здесь также можно установить параметр Android <strong>Sleep Margin</strong>. Эта опция связана с уменьшением заикания при запуске игры на определенных системах. В принципе, если ваша игра работает быстрее, чем ваша комнатная скорость, <span data-keyref="GameMaker Name">GameMaker</span> будет &quot;спать&quot; оставшееся время, но этот сон может быть довольно неточным, и в итоге вы можете спать дольше, чем нужно, в результате чего ваш кадр занимает больше времени, что вызывает заикание. Чтобы обойти эту проблему, мы можем спать меньше времени, а затем зациклиться на оставшемся времени, чтобы сделать его более точным - хотя проблема с зацикливанием заключается в том, что это приводит к увеличению загрузки процессора, что в свою очередь может привести к повышению температуры процессора и увеличению расхода заряда батареи. По умолчанию это значение установлено на 4, и в 99,99% случаев вас это устроит, но для устройств с низким уровнем производительности или для устройств с большим количеством запущенных фоновых процессов это может быть не идеальным решением, и может потребоваться значение от 5 до 10. Обратите внимание, что эта конфигурация зависит от конкретного устройства, и то, что работает на вашем устройстве, может не подойти другому пользователю, поэтому, если вы сомневаетесь, оставьте значение 4.</p>
+  <p> </p>
+  <h2>Адаптивные иконки</h2>
+  <p><img>В Android 8.0 (уровень API 26) появились <strong>адаптивные значки пусковой установки</strong> для ваших игр, и эти значки могут отображаться в разных моделях устройств в различной форме. Для решения этой проблемы необходимо предоставить несколько изображений переднего плана и фона, чтобы ваши значки отображались в разных размерах. Этими размерами значков являются:</p>
+  <ul class="Disc">
+    <li>81x81 пиксель (LDPI)</li>
+    <li>108x108 пикселей MDPI)</li>
+    <li>162x162 пикселей (HDPI)</li>
+    <li>216x216 пикселей (XHDPI)</li>
+    <li>324x324 пикселей (XXHDPI)</li>
+    <li>432x432 пикселей (XXXHDPI)</li>
+  </ul>
+  <p>Вы можете предоставить каждое фоновое и фоновое изображение по отдельности, либо выбрать опцию Generate Icons From File. Это означает, что <span data-keyref="GameMaker Name">GameMaker</span> сгенерирует необходимые изображения иконок из базового файла (XXXHDPI). Вам нужно предоставить по одному изображению для переднего и заднего плана, а затем нажать кнопку Generate, и иконки будут созданы. Все изображения должны быть в формате <span class="inline">*.png</span>.</p>
+  <p>Важно понимать, что ваши адаптивные иконки могут быть замаскированы на любом устройстве, поэтому у вас также есть возможность посмотреть, как они будут выглядеть вместе с этими масками в меню <strong>Preview Adaptive Icons</strong>:</p>
+  <p><img>Обратите внимание, что это просто предварительный просмотр того, как иконка <em>может </em>выглядеть с выбранной маской, и настройка не влияет на то, как экспортируются и отображаются иконки, поскольку это зависит от устройства и ОС, на которой будет запущена игра. Также обратите внимание, что эти значки <strong>не</strong> создаются для вас как часть генерации изображений при использовании инструмента <a href="../../IDE_Tools/Project_Image_Generator.htm">Project Image Generator</a>.</p>
+  <p> </p>
+  <h2>Графика</h2>
+  <p><img>Здесь вы можете изменить следующие детали, связанные с тем, как будет отображаться ваша игра, при этом доступны следующие опции:</p>
+  <ul class="colour">
+    <li><strong>Интерполировать цвета между пикселями</strong>: Включает <a class="glossterm" data-glossterm="линейная интерполяция">линейную интерполяцию</a>, которая, по сути, &quot;сглаживает&quot; пиксели. Для четкой пиксельной графики ее следует выключить, но если у вас есть красивые альфа-смешения и сглаженные края графики, ее лучше оставить включенной. По умолчанию эта функция включена.</li>
+    <li><strong>Глубина цвета экрана</strong>: Здесь можно установить глубину цвета для рендеринга в 16 или 24 бита. Если установить значение 24 бит, это повлияет на совместимость с некоторыми старыми устройствами, а также увеличит объем необходимой памяти <em>ashmem </em>(это общая память на устройствах AmazonFire).</li>
+    <li><strong>Поддержка устройств</strong>: Этот параметр устанавливает, поддерживать ли только устройства с выделенным GPU или все устройства. В принципе, если ваша игра имеет какие-либо расширенные функции рисования, такие как альфа-смешивание, аддитивное смешивание, поверхности и т.д., вам следует ограничиться теми устройствами, которые имеют GPU, иначе вы рискуете получить негативные комментарии и низкий рейтинг вашей игры из-за графических ошибок или сбоев на старых устройствах.</li>
+    <li><strong>Масштабирование</strong>: Здесь можно выбрать масштабирование холста рисунка с сохранением соотношения сторон экрана устройства - добавление &quot;прокладок&quot; по краям для соответствия экрану - или растягивание холста рисунка в соответствии с экраном устройства.</li>
+  </ul>
+  <p>Наконец, есть возможность задать размер <a class="glossterm" data-glossterm="страница текстуры" href="macOS.htm#">страницы текстуры</a>. По умолчанию (и наиболее совместимый) размер - 2048x2048, но вы можете выбрать любой размер от 256x256 до 8192x8192. Есть также кнопка <strong>Preview </strong>, которая генерирует страницы текстур для этой платформы и открывает окно, чтобы вы могли увидеть, как они выглядят. Это может быть очень полезно, если вы хотите увидеть, как структурированы текстурные страницы, и предотвратить создание текстурных страниц большего (или меньшего) размера, чем необходимо. Более подробную информацию о текстурных страницах можно найти <a href="../Texture_Information/Texture_Pages.htm">здесь</a>.</p>
+  <p class="note"><strong>ПРИМЕЧАНИЕ</strong>: Помните, что чем больше размер страницы текстуры, тем меньше совместимость вашей игры с различными браузерами и устройствами.</p>
+  <p> </p>
+  <h2>Иконки</h2>
+  <p><img>В этом разделе вы можете добавить различные изображения <strong>иконок </strong>, которые понадобятся вашему проекту для различных страниц магазина и устройств. Все изображения иконок должны быть созданы в виде 24-битных файлов <span class="inline">*.png</span> соответствующих размеров.</p>
+  <p>Стоит отметить, что в <span data-keyref="GameMaker Name">GameMaker</span> есть инструмент <a href="../../IDE_Tools/Project_Image_Generator.htm">Project Image Generator</a>, который можно использовать для автоматического создания всех изображений, необходимых для различных целевых платформ, для которых компилируется ваша игра. Если вы используете этот инструмент, вам следует пересмотреть созданные изображения, чтобы убедиться, что они соответствуют вашим требованиям. Инструмент генерирует как значки, так и изображения (см. раздел ниже).</p>
+  <p> </p>
+  <h2>Изображения</h2>
+  <p><img>Здесь можно задать <strong>цвет границы</strong>, который будет использоваться в качестве фона для заставки, не заполняющей весь экран. Вы также можете добавить <strong>заставки</strong> в конечный файл игры, как для <em>ландшафтного </em>, так и для <em>портретного </em>режимов, которые будут отображаться во время загрузки игры на устройство. Этот экран должен быть 24-битным <span class="inline">*.png</span> файлом, и рекомендуется, чтобы он был такого же размера, как первая комната (или вид) вашей игры. Если вам требуется, чтобы заставка отображалась в течение определенного времени, вы также можете задать его здесь в диапазоне от 0 до 10 секунд (время по умолчанию 0 означает, что она будет отображаться только в течение загрузки актива). Вы также можете выбрать способ отображения заставки из следующих вариантов:</p>
+  <ul class="colour">
+    <li><strong>Сохранить соотношение сторон</strong>: Это позволит сохранить соотношение сторон изображения по сравнению с экраном устройства, добавляя &quot;подложку&quot; по краям, где это необходимо.</li>
+    <li><strong>Crop To Fit</strong>: Это позволит сохранить изображение в соотношении 1:1 с экраном устройства и обрезать (или подрезать) края по мере необходимости.</li>
+    <li><strong>Растянуть</strong>: Это растягивает изображение, чтобы заполнить экран устройства (и может исказить отображаемое изображение).</li>
+  </ul>
+  <p>Наконец, вы можете установить <strong>изображение баннера</strong> для игры на телевизионных устройствах <span class="notranslate">Android</span>, которое также является 24-битным <span class="inline">*.png</span>.</p>
+  <p> </p>
+  <h2>Упаковка</h2>
   <p><img alt="Android General Options Part 2" class="center" src="../../assets/Images/Settings/Android_General2_Options.png" /></p>
-  <p>The second part of the <strong>General</strong> section covers the CPU Architectures to build for, with the following options available (you can select all of them or only those that you require, but note that each one will add to the final size of the compiled apk):</p>
-  <ul class="Disc">
-    <li>Build for Armv7</li>
-    <li>Build for Arm64 (Checked by default)</li>
-    <li>Build for x86_64</li>
-  </ul>
-  <p>After setting that up you can select the different Orientations that your game can be run on for the best user experience. The available options are:</p>
-  <ul class="Disc">
-    <li>Portrait</li>
-    <li>Portrait-flipped</li>
-    <li>Landscape</li>
-    <li>Landscape-flipped</li>
-  </ul>
-  <p>Finally you have the following miscellaneous options:</p>
+  <p>Одной из особенностей использования Google Play для ваших игр <span class="notranslate">Android</span> является возможность <strong>лицензирования </strong>ваших игр. Это означает, что ваши игры будут находиться под контролем Google, так что играть в них смогут только те, кто скачал их через их рынок, что позволит избежать распространения нелегальных копий вашего продукта.</p>
+  <p>Чтобы активировать эту функцию в своей игре, необходимо скопировать <strong>открытый ключ</strong> в поле с надписью <strong>Google Licencing Public Key</strong>. Эту лицензию можно найти, зайдя на свою <a href="https://play.google.com/apps/publish">страницу разработчиков Google Play</a>, а затем выбрав игру, которую вы хотите отредактировать. На странице профиля игры прокрутите страницу вниз до раздела &quot;<em>Сервисы и API</em>&quot; и найдите там открытый ключ, необходимый для включения этой функции.</p>
+  <p>После активации, если кто-либо, не имеющий права владеть вашей игрой, попытается сыграть в нее, ему будет показано всплывающее окно с сообщением о том, что лицензия не может быть найдена на его устройстве, а затем ему будет предоставлена возможность повторить попытку и проверить еще раз или выйти из игры.</p>
+  <p>Еще одна особенность лицензирования заключается в том, что ваша игра может использовать <strong>расширения APK</strong>. Это способ обойти максимальный размер приложения в 50 МБ, установленный Google Play (и только Google Play). При этом ваша игра будет создана из двух частей: небольшого файла <span class="inline">*.apk</span> и более крупного файла <span class="inline">*.zip</span>, который будет содержать все активы вашей игры, и оба эти файла будут загружены в магазин. Когда пользователь впервые запустит вашу игру, zip-архив будет загружен и распакован. Более подробную информацию об этой опции вы можете найти <a href="https://help.yoyogames.com/hc/en-us/articles/115002418632-Android-Using-APK-Expansions-With-Google-Play">здесь</a>.</p>
+  <p>Вы также можете использовать Google Dynamic Asset Delivery для создания пакетов приложений размером до 1 ГБ при использовании опции экспорта <span class="inline">*.aab</span>. При этом все игровые активы упаковываются как активы &quot;времени установки&quot;, которые устанавливаются вместе с самим приложением. Более подробную информацию об этой функции можно найти <a href="https://developer.android.com/guide/playcore/asset-delivery" title="Asset Delivery">здесь</a>.</p>
+  <p>Наконец, у вас есть возможность подготовить окончательный пакет приложения как игру для <strong>Android TV</strong> (галочку следует ставить только в том случае, если ваша игра соответствует <a href="https://developer.android.com/training/tv/games/">рекомендациям Android TV</a>).</p>
+  <p> </p>
+  <h2>Разрешения</h2>
+  <p><img>На этой вкладке вы можете изменить некоторые разрешения, которые ваша игра может запросить в манифесте <span class="notranslate">Android</span>. <span data-keyref="GameMaker Name">GameMaker</span> автоматически назначает разрешения по мере необходимости, исходя из функций, используемых игрой, однако вы можете обнаружить, что для вашей игры требуется разрешение, которое не было правильно назначено (например, при использовании пользовательских расширений), в этом случае отметьте нужное разрешение.</p>
+  <p>В приведенном ниже списке указаны доступные разрешения:</p>
   <ul class="colour">
-    <li><strong>Enable Bluetooth/iCade support</strong>: This will add support for Bluetooth or iCade gamepads to your game project. This is on by default.</li>
-    <li><strong>Run Lint Code Analysis</strong>: When this option is flagged, the build tools will run a lint code analysis on the project as it builds, giving a more in-depth error check and showing more information in the output window as the project compiles (a LOG file will be created too, with the path to the file shown at the end of compiling in the <a href="../../Introduction/The_Output_Window.htm">Output Window</a>). Note that not everything flagged by lint analysis as an error is necessarily problematic for your game, and having this enabled may mean that your game no longer compiles, even though when it is off, it will compile and run fine. Essentially this is only for debugging, and the option is off by default.</li>
-    <li><strong>Install Location</strong>: Here you can set the default Install Location for your game. This can either be set to <strong>Automatic</strong>, in which case the game will be installed to the location chosen by the user on their device, or it can be set to <strong>Prefer External</strong> which will always try to install the game to the external storage of the device.</li>
+    <li><span class="inline">WRITE_EXTERNAL_STORAGE</span>: Позволяет вашей игре записывать данные на внешнее хранилище.</li>
+    <li><span class="inline">READ_PHONE_STATE</span>: Разрешить доступ к состоянию телефона только для чтения.</li>
+    <li><span class="inline">ACCESS_NETWORK_STATE</span>: Разрешить вашей игре доступ к информации о сетях.</li>
+    <li><span class="inline">INTERNET</span>: Разрешить вашей игре открывать сетевые сокеты.</li>
+    <li><span class="inline">BLUETOOTH</span>: Позволяет вашей игре подключаться к сопряженным устройствам Bluetooth.</li>
+    <li><span class="inline">RECORD_AUDIO</span>: Позволяет вашей игре записывать звук с микрофона.</li>
   </ul>
-  <p>You can also set the Android <strong>Sleep Margin</strong> here. This option is related to reducing stuttering when running your game on specific systems. Basically, if your game is running faster than your game speed <span data-keyref="GameMaker Name">GameMaker</span> will &quot;sleep&quot; for the remaining time, but this sleep can be quite inaccurate and you can often end of sleeping for longer than necessary, causing your frame to take longer which causes stuttering. To get around this we can sleep for less time, then sit in a tight loop for the remainder of the time to make it more accurate - although the problem with sitting in a loop is that it causes CPU usage to increase, which in turn can cause your CPU temperatures to rise and your device to use more battery. By default, this value is set to 4, and in 99.99% of the cases you&#39;ll be fine with this, but for low end devices or for devices with a lot of background processes running this may not be an ideal solution and a value of 5 up to 10 may be required. Note though that this is very much a device specific configuration and what works on your build device may not be appropriate for another user, and as such if in doubt leave it set to 4.</p>
-  <p> </p>
-  <h2 id="adaptive_icons">Adaptive Icons</h2>
-  <p><img alt="Android Adaptive Icons Options" class="center" src="../../assets/Images/Settings/Android_AdaptiveIcons_Options.png" />Android 8.0 (API level 26) introduced <strong>adaptive launcher icons</strong> for your games, and these icons can display a variety of shapes across different device models. To deal with this, you are required to supply a number of foreground and background images for your icons to be displayed at different sizes. These icon sizes are:</p>
-  <ul class="Disc">
-    <li>81x81 pixels (LDPI)</li>
-    <li>108x108 pixels MDPI)</li>
-    <li>162x162 pixels (HDPI)</li>
-    <li>216x216 pixels (XHDPI)</li>
-    <li>324x324 pixels (XXHDPI)</li>
-    <li>432x432 pixels (XXXHDPI)</li>
-  </ul>
-  <p>You can supply each forground and background image individually, or you can choose to Generate Icons From File. This means that <span data-keyref="GameMaker Name">GameMaker</span> will generate the required icon images from a base (XXXHDPI) file. You need to supply one image each for the foreground and background and then click the button labeled Generate, and the Icons will be created for you. Images should all be in <span class="inline">*.png</span> format.</p>
-  <p>It&#39;s important to understand that your adaptive icons may be masked on any given device and so you also have the option to see how they&#39;ll look along with these masks from the <strong>Preview Adaptive Icons</strong> menu:</p>
-  <p><img alt="Android Adaptive Mask Preview" class="center" src="../../assets/Images/Settings/Android_AdaptiveIcons_Masks.gif" />Note that this is simply a preview of how the icon <em>could </em>look with the selected mask, and the setting will not affect how the icons are exported and displayed, as that is up to the device and OS the game will be run on. Also note that these icons are <strong>not</strong> created for you as part of the image generation done when using the <a href="../../IDE_Tools/Project_Image_Generator.htm">Project Image Generator</a> tool.</p>
-  <p> </p>
-  <h2 id="graphics">Graphics</h2>
-  <p><img alt="Android Graphics Options" class="center" src="../../assets/Images/Settings/Android_Graphics_Options.png" />Here you can change the following details related to how your game will be displayed, with the following options are available:</p>
+  <p class="note"><strong>ПРИМЕЧАНИЕ</strong>: Если вы не уверены, что они вам нужны, вам, вероятно, следует просто оставить их не отмеченными по умолчанию и позволить <span data-keyref="GameMaker Name">GameMaker</span> разобраться с разрешениями для вашей игры.</p>
+  <p>В разделе <span class="notranslate">Android</span> Permissions также есть область, где вы можете вводить разрешения в <strong>теги Android-приложений</strong> в разделе <span class="inline">Androidmanifest.xml</span>. Полный список доступных тегов можно найти в документации <span class="notranslate">Android</span> здесь:</p>
   <ul class="colour">
-    <li><strong>Interpolate colours between pixels</strong>: Turns on <a class="glossterm" data-glossterm="linear interpolation">linear interpolation</a>, which basically &quot;smooths&quot; pixels. For crisp pixel graphics, it should be off, but if you have nice alpha blends and smoothed edged graphics it is better left on. This is on by default.</li>
-    <li><strong>Screen Colour Depth</strong>: This can be used to set the colour depth for rendering to either 16bit or 24bit. This will affect the compatibility with some older devices if it is set to 24bit, and will also increase the <em>ashmem </em>that is needed (this is the shared memory on AmazonFire devices).</li>
-    <li><strong>Device Support</strong>: This option will set whether to support only devices that have a dedicated GPU, or all devices. Basically, if your game has any advanced drawing functions like alpha blending, additive blending, surfaces, etc... you should limit it to those devices that have a GPU otherwise you run the risk of getting negative comments and poor rating for your game due to graphical errors or crashes on older devices.</li>
-    <li><strong>Scaling</strong>: Here you can select to scale the draw canvas maintaining the aspect ratio within the device screen - adding &quot;padding&quot; around the edges to fit the screen - or you can select to have the draw canvas stretched to fit the device screen.</li>
+    <li><a href="https://developer.android.com/guide/topics/manifest/application-element">Разработчик Android: Теги приложения</a></li>
   </ul>
-  <p>Finally there is the option to set the size of the <a class="glossterm" data-glossterm="texture page" href="macOS.htm#">texture page</a>. The default (and most compatible) size is 2048x2048, but you can choose from anywhere between 256x256 up to 8192x8192. There is also a button marked <strong>Preview </strong>which will generate the texture pages for this platform and then open a window so that you can see how they look. This can be very useful if you wish to see how the texture pages are structured and to prevent having texture pages larger (or smaller) than necessary. For more information on texture pages, please see <a data-xref="{title}" href="../Texture_Information/Texture_Pages.htm">Texture Pages</a>.</p>
-  <p class="note"><span data-conref="../../assets/snippets/Tag_note.hts"> </span> Be aware that the larger the size of the texture page, the less compatible your game will be with different browsers and devices.</p>
-  <p> </p>
-  <h2 id="icons">Icons</h2>
-  <p><img alt="Android Icons Options" class="center" src="../../assets/Images/Settings/Android_Icons_Options.png" />This section permits you to add the various <strong>Icon </strong>images that your project will need for the different store pages and devices. All icon images should be created as 24bit <span class="inline">*.png</span> files of the appropriate sizes given.</p>
-  <p>It is worth noting that <span data-keyref="GameMaker Name">GameMaker</span> has a <a href="../../IDE_Tools/Project_Image_Generator.htm">Project Image Generator</a> tool which can be used to automatically create all the images required for all the different target platforms your game is being compiled to. If you use this tool, you should revise the images created to ensure that they are what you require. The tool will generate Icons as well as Images (see the section below).</p>
-  <p> </p>
-  <h2 id="images">Images</h2>
-  <p><img alt="Android Images Options" class="center" src="../../assets/Images/Settings/Android_Images_Options.png" />Here you can set the <strong>Border Colour</strong> that will be used as the background for splash screens that are not set to fill the full screen. You can also add <strong>Splash Screens</strong> to your final game file, for both <em>landscape </em>and <em>portrait </em>modes, which will be shown while the game loads on the device. This screen should be a 24bit <span class="inline">*.png</span> file, and is recommended to be the same size as the first room (or view) of your game. If you require that the splash screen be shown for a specific time then you can also set it here from 0 to 10 seconds (the default time of 0 means that it will only show for the duration of the asset loading). You can also set how the splash screen should be displayed from the following options:</p>
-  <ul class="colour">
-    <li><strong>Keep Aspect Ratio</strong>: This will maintain the aspect ratio of the image compared to the device screen, adding &quot;padding&quot; around the edges where required.</li>
-    <li><strong>Crop To Fit</strong>: This will keep the image 1:1 with the device screen and crop (or pad) the edges as required.</li>
-    <li><strong>Stretch</strong>: This will stretch the image to fill the device screen (and may distort the image shown).</li>
-  </ul>
-  <p>Finally you can set the <strong>Banner Image</strong> for the game on Android TV devices, which is also a 24bit <span class="inline">*.png</span>.</p>
-  <p> </p>
-  <h2 id="packaging">Packaging</h2>
-  <p><img alt="Android Packaging Options" class="center" src="../../assets/Images/Settings/Android_Packaging_Options.png" /></p>
-  <h3 id="proguard">Proguard</h3>
-  <p>Here you can enable &quot;<strong>minifyEnabled</strong>&quot; and &quot;<strong>shrinkResources</strong>&quot; for Proguard to reduce your APK file size.</p>
-  <p>&quot;<strong>minifyEnabled</strong>&quot; removes unnecessary code from your final executable, and &quot;<strong>shrinkResources</strong>&quot; removes any resources that become unreferenced after minifying, hence it&#39;s dependent on the former option being enabled.</p>
-  <p>See the sections &quot;<strong>Shrink your code</strong>&quot; and &quot;<strong>Shrink your resources</strong>&quot; <a href="https://developer.android.com/studio/build/shrink-code">on Android Developers</a>.</p>
-  <h3 id="google">Google</h3>
-  <p>One of the features of using Google Play for your Android games is the ability to <strong>licence </strong>your games. This means that your games will be controlled by Google so that only people that have downloaded it through their market will be able to play the game, thus avoiding illegal copies of your product from getting distributed.</p>
-  <p>To activate this function in your game, you need to copy your <strong>Public Key</strong> into the box labelled <strong>Google Licencing Public Key</strong>. This licence can be found by going to your <a href="https://play.google.com/apps/publish">Google Play Developers Page</a> and then selecting the game you wish to edit. Once on the game profile page, scroll down to the section titled &quot;<em>Services &amp; APIs</em>&quot; and there you should find the Public key that is needed for this functionality to be enabled.</p>
-  <p>Once activated, if anyone who is not authorised to posses your game tries to play it, they will be shown a pop-up message box that will inform them that the licence cannot be found on their device, and then give them the option to retry and test again, or exit the game.</p>
-  <p>Another feature of Licensing is that your game can use <strong>APK Expansions</strong>. This is a way to bypass the 50MB maximum application size imposed by Google Play (and only Google Play). It will create your game in two parts: a small <span class="inline">*.apk</span> file and a larger <span class="inline">*.zip</span> file which will hold all your games assets, both of which are uploaded to the store. When the user first runs your game, the zip will be downloaded and unpacked. You can find further details of this option <a href="https://help.yoyogames.com/hc/en-us/articles/115002418632-Android-Using-APK-Expansions-With-Google-Play">here</a>.</p>
-  <p>You can also use Google Dynamic Asset Delivery to create app bundles as large as 1GB when using the <span class="inline">*.aab</span> export option. This packages all game assets as &quot;install-time&quot; assets which are installed alongside the app itself. You can find further details on this feature <a href="https://developer.android.com/guide/playcore/asset-delivery" title="Asset Delivery">here</a>.</p>
-  <h3 id="android_tv">Android TV</h3>
-  <p>Finally, you have the option to prepare the final app package as an <strong>Android TV</strong> game (you should only tick this if your game conforms to the <a href="https://developer.android.com/training/tv/games/">Android TV guidelines</a>).</p>
-  <p>You can also select whether your game <a href="https://developer.android.com/jetpack/androidx/releases/leanback">supports Leanback</a>. Enable this if you are using Leanback libraries.</p>
-  <h2 id="permissions">Permissions</h2>
-  <p><img alt="Android Permission Options" class="center" src="../../assets/Images/Settings/Android_Permissions_Options.png" />From this tab you can change some of the permissions that your game may request within the Android Manifest. <span data-keyref="GameMaker Name">GameMaker</span> will allocate permissions automatically as required based on the functions the game uses, however you may find you require a permission for your game that hasn&#39;t been correctly assigned (for example, when you use custom extensions) in which case tick the requisite permission box.</p>
-  <p>The list below outlines those permissions that are available:</p>
-  <ul class="colour">
-    <li><span class="inline">WRITE_EXTERNAL_STORAGE</span>: Will permit your game to write to external storage.</li>
-    <li><span class="inline">READ_PHONE_STATE</span>: Allow read only access to the phone state.</li>
-    <li><span class="inline">ACCESS_NETWORK_STATE</span>: Permit your game to access information about networks.</li>
-    <li><span class="inline">INTERNET</span>: Permit your game to open network sockets.</li>
-    <li><span class="inline">BLUETOOTH</span>: Will permit your game to connect to paired Bluetooth devices.</li>
-    <li><span class="inline">RECORD_AUDIO</span>: Will permit your game to record audio input from the microphone.</li>
-  </ul>
-  <p class="note"><span data-conref="../../assets/snippets/Tag_note.hts"> </span> If you are not sure that you need these, you should probably just leave them un-checked by default and let <span data-keyref="GameMaker Name">GameMaker</span> deal with the permissions for your game.</p>
-  <p>The Android Permissions secton also has an area where you can inject permissions into the <strong>Android Application Tags</strong> in the <span class="inline">Androidmanifest.xml</span>. You can find a full list of available tags from the Android documentation here:</p>
-  <ul class="colour">
-    <li><a href="https://developer.android.com/guide/topics/manifest/application-element">Android Developer: Application Tags</a></li>
-  </ul>
-  <p>It is worth noting that for target API 28 and above, you will no longer be permitted to use any external web calls using &quot;<span class="inline">http</span>&quot; - &quot;<span class="inline">https</span>&quot; is required instead - unless you add the following tag:</p>
+  <p>Стоит отметить, что для целевого API 28 и выше, вам больше не будет разрешено использовать внешние веб-вызовы с помощью &quot;<span class="inline">http</span>&quot; - вместо этого требуется &quot;<span class="inline">https</span>&quot; - если вы не добавите следующий тег:</p>
   <p class="code">android:usesCleartextTraffic=&quot;true&quot;</p>
-  <p>Finally you can enable the <a href="https://developer.android.com/guide/topics/manifest/application-element#allowbackup">android:allowBackup</a> attribute.</p>
-  <p> </p>
-  <p> </p>
+  <p> </p>
+  <h2>Социальная</h2>
+  <p><img>Этот раздел предназначен для включения различных <strong>социальных </strong>функций в вашей игре <span class="notranslate">Android</span>. Можно выбрать следующие опции:</p>
+  <ul class="colour">
+    <li><strong>Google - </strong> <strong>Включить облачное сохранение</strong>: Отметив этот флажок, вы включите функцию Google Cloud Saving, и вам будет предложено загрузить и установить соответствующее расширение из <a href="../../Introduction/The_Marketplace.htm">Marketplace</a>. См. раздел "Облачное сохранение" на странице " <a href="../../GameMaker_Language/GML_Reference/Asynchronous_Functions/Asynchronous_Functions.htm">Асинхронные функции</a> ".</li>
+    <li><strong>Google - идентификатор служб Google</strong>: Здесь можно ввести идентификатор Google Services ID вашего приложения.</li>
+  </ul>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="../Game_Options.htm">Game Options</a></div>
-        <div style="float:right">Next: <a href="iOS.htm">iOS</a></div>
+        <div style="float:left">Назад: <a href="../Game_Options.htm">Опции игры</a></div>
+        <div style="float:right">Далее: <a href="iOS.htm">iOS</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 Android Game Options

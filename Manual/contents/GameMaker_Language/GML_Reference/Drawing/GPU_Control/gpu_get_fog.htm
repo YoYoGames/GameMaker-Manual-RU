@@ -6,7 +6,7 @@
   <title>gpu_get_fog</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference for the function gpu_get_fog" />
   <meta name="rh-index-keywords" content="gpu_get_fog" />
@@ -16,37 +16,37 @@
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
   <h1>gpu_get_fog</h1>
-  <p>This function can be used to retrieve the fog settings. The function returns a 4 element 1D array with the following information:</p>
+  <p>Эта функция может быть использована для получения настроек тумана. Функция возвращает 4-элементный массив 1D со следующей информацией:</p>
   <ul class="colour">
-    <li>[0] = enabled toggle (a <span data-keyref="Type_Bool">Boolean</span>, either <span class="inline">true</span> or <span class="inline">false</span>), default <span class="inline">false</span></li>
-    <li>[1] = <span data-keyref="Type_Constant_Colour">Colour Constant</span>, default <span class="inline">c_black</span></li>
-    <li>[2] = start distance (<span data-keyref="Type_Real">Real</span>), default 0</li>
-    <li>[3] = end distance (<span data-keyref="Type_Real">Real</span>), default 1</li>
+    <li>[0] = включение переключения ( <span data-keyref="Type_Bool">булево значение</span>, либо <span class="inline">true</span>, либо <span class="inline">false</span>), по умолчанию <span class="inline">false</span></li>
+    <li>[1] = <span data-keyref="Type_Constant_Colour">Постоянный цвет</span>, по умолчанию <span class="inline">c_black</span></li>
+    <li>[2] = начальное расстояние<span data-keyref="Type_Real">(Real</span>), по умолчанию 0</li>
+    <li>[3] = конечное расстояние<span data-keyref="Type_Real">(Real</span>), по умолчанию 1</li>
   </ul>
-  <p>Note that you can change these values and pass the full array to the <a href="gpu_set_fog.htm"><span class="inline">gpu_set_fog()</span></a> function as a single argument.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p>Обратите внимание, что вы можете изменить эти значения и передать полный массив в функцию <a href="gpu_set_fog.htm"><span class="inline">gpu_set_fog()</span></a> функции в качестве единственного аргумента.</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
   <p class="code">gpu_get_fog();</p>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
   <p class="code"><span data-keyref="Type_Array">Array</span> (4 elements only; see above for details)</p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Пример:</h4>
   <p class="code">var fog_a = gpu_get_fog();<br />
     fog_a[1] = c_red;<br />
     gpu_set_fog(fog_a);</p>
-  <p>The above code gets the current fog settings and then sets the colour element of the array to <span class="inline">c_red</span> before setting the fog again using the changed array.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Приведенный выше код получает текущие настройки тумана, затем устанавливает элемент color массива на <span class="inline">c_red</span>, после чего снова устанавливает туман, используя измененный массив.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="GPU_Control.htm">GPU Control</a></div>
-        <div style="float:right">Next: <a href="gpu_get_cullmode.htm">gpu_get_cullmode</a></div>
+        <div style="float:left">Назад: <a href="GPU_Control.htm">Управление графическим процессором</a></div>
+        <div style="float:right">Следующий: <a href="gpu_get_cullmode.htm"><span class="notranslate">gpu_get_cullmode</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 gpu_get_fog

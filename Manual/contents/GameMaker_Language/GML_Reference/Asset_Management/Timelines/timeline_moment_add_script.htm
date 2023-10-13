@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>timeline_moment_add_script</title>
+  <title>таймлайн_момент_добавить_скрипт</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page outlining the function timeline_moment_add_script" />
   <meta name="rh-index-keywords" content="timeline_moment_add_script" />
@@ -14,59 +14,59 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1><span data-field="title" data-format="default">timeline_moment_add_script</span></h1>
-  <p>With this function you can dynamically add a <a href="../../../GML_Overview/Script_Functions.htm">script function</a> to Timelines at any given &quot;moment&quot; within that time line, where a &quot;moment&quot; is the equivalent of one game tick (or step).</p>
-  <p>In this way you can create a new time line using the <span class="inline3_func"><a data-xref="{title}" href="timeline_add.htm">timeline_add</a></span> function and add different behaviours at any point, or simply modify a previously created time line resource with new behaviours. Note that the function cannot require any additional arguments when using this function, and if you use it to modify a Timeline asset present in the Asset Browser, then all instances that use this timeline will be affected, and the change will last until the end of the game (calling <span class="inline3_func"><a data-xref="{title}" href="../../General_Game_Control/game_restart.htm">game_restart</a></span> will not reset the change either).</p>
-  <p> </p>
-  <h4>Syntax:</h4>
-  <p class="code"><span data-field="title" data-format="default">timeline_moment_add_script</span>(ind, step, script);</p>
+  <h1>таймлайн_момент_добавить_скрипт</h1>
+  <p>С помощью этой функции вы можете динамически добавлять <a href="../../../GML_Overview/Script_Functions.htm">скрипт-функцию</a> в Timelines в любой заданный &quot;момент&quot; в пределах этой временной линии, где &quot;момент&quot; эквивалентен одному игровому тику (или шагу). Таким образом, вы можете создать новую временную линию с помощью функции <a href="timeline_add.htm"><span class="inline">timeline_add()</span></a> и добавить различные модели поведения в любой момент, или просто модифицировать ранее созданный ресурс временной линии с помощью новых моделей поведения. Обратите внимание, что при использовании этой функции не требуется никаких дополнительных аргументов, и если вы используете ее для изменения актива Timeline, присутствующего в Asset Browser, то все экземпляры, использующие эту временную линию, будут затронуты, и изменение будет длиться до конца игры (вызов <span class="inline">game_restart()</span> также не сбросит изменение).</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
+  <p class="code">timeline_moment_add_script(ind, step, script);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Аргумент</th>
+        <th>Тип</th>
+        <th>Описание</th>
       </tr>
       <tr>
-        <td>ind</td>
-        <td><span data-keyref="Type_Asset_Timeline"><a href="../../../../../The_Asset_Editors/Timelines.htm" target="_blank">Timeline Asset</a></span></td>
-        <td>The index of the timeline to add a moment to.</td>
+        <td><span class="notranslate">ind</span></td>
+        <td><span data-keyref="Type_Asset_Timeline">Временной актив</span></td>
+        <td><span class="notranslate">The index of the timeline to add a moment to.</span></td>
       </tr>
       <tr>
-        <td>step</td>
-        <td><span data-keyref="Type_Real"><a href="../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
-        <td>The moment (step) to add to.</td>
+        <td><span class="notranslate">step</span></td>
+        <td><span data-keyref="Type_Real">Реально</span></td>
+        <td><span class="notranslate">The moment (step) to add to.</span></td>
       </tr>
       <tr>
-        <td>script</td>
-        <td><span data-keyref="Type_Function_Script"><a href="../../../../../GameMaker_Language/GML_Overview/Script_Functions.htm" target="_blank">Script Function</a></span></td>
-        <td>The index of the script function to add into the moment.</td>
+        <td><span class="notranslate">script</span></td>
+        <td><span data-keyref="Type_Function_Script">Функция сценария</span></td>
+        <td><span class="notranslate">The index of the script function to add into the moment.</span></td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
   <p class="code"><span data-keyref="Type_Void">N/A</span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Пример:</h4>
   <p class="code">global.tl = timeline_add();<br />
-    var i = game_get_speed(gamespeed_fps) * 60;<br />
+    var i = room_speed * 60;<br />
     repeat(3)<br />
     {<br />
-        <span data-field="title" data-format="default">timeline_moment_add_script</span>(global.tl, i, choose(Attack_1, Attack_2, Attack_3);<br />
-        i += game_get_speed(gamespeed_fps) * 60;<br />
+        timeline_moment_add_script(global.tl, i, choose(Attack_1, Attack_2, Attack_3);<br />
+        i += room_speed * 60;<br />
     }</p>
-  <p>The above code will create a new time line and store its index in the variable <span class="inline2">global.tl</span>. It will then add three scripts to the time line, chosen at random, at one minute intervals.</p>
-  <p> </p>
-  <p> </p>
+  <p>Приведенный выше код создаст новую временную линию и сохранит ее индекс в переменной &quot;global.tl&quot;. Затем он добавит на линию времени три сценария, выбранные случайным образом с интервалом в одну минуту.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Timelines.htm">Timelines</a></div>
-        <div style="float:right">Next: <a href="timeline_moment_clear.htm">timeline_moment_clear</a></div>
+        <div style="float:left">Назад: <a href="Timelines.htm">Временные шкалы</a></div>
+        <div style="float:right">Следующий: <a href="timeline_moment_clear.htm"><span class="notranslate">timeline_moment_clear</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 timeline_moment_add_script

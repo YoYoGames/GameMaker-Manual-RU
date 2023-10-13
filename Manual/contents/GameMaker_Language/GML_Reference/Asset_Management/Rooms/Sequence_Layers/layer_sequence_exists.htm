@@ -6,7 +6,7 @@
   <title>layer_sequence_exists</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page outlining the function layer_sequence_exists" />
   <meta name="rh-index-keywords" content="layer_sequence_exists" />
@@ -16,51 +16,51 @@
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
   <h1>layer_sequence_exists</h1>
-  <p>With this function you can check to see if a sequence element exists on the given layer. You supply the layer ID which can be a string of the layer name - as defined in the room editor - or the unique layer ID - as returned by the function <a href="../General_Layer_Functions/layer_get_id.htm"><span class="inline">layer_get_id()</span></a>, as well the sequence element ID - as returned by <a href="layer_sequence_create.htm"><span class="inline">layer_sequence_create()</span></a> or by one of the <a href="../General_Layer_Functions/General_Layer_Functions.htm">layer element functions</a> - and it will return <span class="inline">true</span> if the given element exists or <span class="inline">false</span> otherwise.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p>С помощью этой функции вы можете проверить, существует ли элемент последовательности на заданном слое. Вы передаете идентификатор слоя, который может быть строкой имени слоя - как определено в редакторе помещений - или уникальным идентификатором слоя - как возвращается функцией <a href="../General_Layer_Functions/layer_get_id.htm"><span class="inline">layer_get_id()</span></a>, а также идентификатор элемента последовательности - как возвращается функцией <a href="layer_sequence_create.htm"><span class="inline">layer_sequence_create()</span></a> или одной из <a href="../General_Layer_Functions/General_Layer_Functions.htm">функций элементов слоя</a> - и функция вернет <span class="inline">true</span>, если данный элемент существует, или <span class="inline">false</span> в противном случае.</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
   <p class="code">layer_sequence_exists(layer_id, sequence_element_id)</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Аргумент</th>
+        <th>Тип</th>
+        <th>Описание</th>
       </tr>
       <tr>
-        <td>layer_ID</td>
-        <td><span data-keyref="Type_String">String</span> or <span data-keyref="Type_ID_Layer">Layer ID</span></td>
-        <td>The unique ID or name of the layer to check</td>
+        <td><span class="notranslate">layer_ID</span></td>
+        <td><span data-keyref="Type_String">Строка</span> или <span data-keyref="Type_ID_Layer">идентификатор слоя</span></td>
+        <td><span class="notranslate">The unique ID or name of the layer to check</span></td>
       </tr>
       <tr>
-        <td>sequence_element_id</td>
-        <td><span data-keyref="Type_ID_Element_Sequence">Sequence Element ID</span></td>
-        <td>The unique ID value of the sequence element to target</td>
+        <td><span class="notranslate">sequence_element_id</span></td>
+        <td><span data-keyref="Type_ID_Element_Sequence">Идентификатор элемента последовательности</span></td>
+        <td><span class="notranslate">The unique ID value of the sequence element to target</span></td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
   <p class="code"><span data-keyref="Type_Bool">Boolean</span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Пример:</h4>
   <p class="code">if !layer_sequence_exists(&quot;Background&quot;, my_seq)<br />
     {<br />
         my_seq = layer_sequence_create(&quot;Background&quot;, 0, 0, seq_AnimatedBackground);<br />
         layer_sequence_pause(my_seq);<br />
     }</p>
-  <p>The above code checks to see if the given sequence element exists, and if it does not then it creates a new sequence on the given layer then pauses it.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Приведенный выше код проверяет, существует ли заданный элемент последовательности, и если нет, то создает новую последовательность на заданном слое, а затем приостанавливает ее.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Sequence_Layers.htm">Sequence Layers</a></div>
-        <div style="float:right">Next: <a href="layer_sequence_create.htm">layer_sequence_create</a></div>
+        <div style="float:left">Назад: <a href="Sequence_Layers.htm">Последовательность слоев</a></div>
+        <div style="float:right">Следующий: <a href="layer_sequence_create.htm"><span class="notranslate">layer_sequence_create</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 layer_sequence_exists

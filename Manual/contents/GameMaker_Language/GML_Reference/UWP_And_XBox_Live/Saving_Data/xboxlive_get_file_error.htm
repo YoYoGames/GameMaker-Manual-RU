@@ -6,7 +6,7 @@
   <title>xboxlive_get_file_error</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference page for xboxlive_get_file_error" />
   <meta name="rh-index-keywords" content="xboxlive_get_file_error,xboxlive_fileerror_outoflocalstorage,xboxlive_fileerror_quotaexceeded,xboxlive_fileerror_noerror" />
@@ -15,13 +15,13 @@
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
   <h1>xboxlive_get_file_error</h1>
-  <p>This function will return a constant (shown below) to help debug why a file function failed so that you can take appropriate action in your game code. When one of the file functions fails you can call the function to find out exactly what the error was.</p>
-  <p class="note"><b>NOTE</b>: When using the asynchronous <a href="../../Buffers/buffer_save_async.htm">save</a>/<a href="../../Buffers/buffer_load_async.htm">load</a> functions, the <a href="../../../GML_Overview/Variables/Builtin_Global_Variables/async_load.htm"><span class="inline">async_load</span></a> map will have an extra key, &quot;<b>error</b>&quot; which will also contain one of the constants (shown below).</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p>Эта функция возвращает константу (показана ниже), которая поможет отладить причину сбоя файловой функции, чтобы вы могли предпринять соответствующие действия в коде игры. Когда одна из файловых функций не работает, вы можете вызвать эту функцию, чтобы узнать, в чем именно заключалась ошибка.</p>
+  <p class="note"><b>ПРИМЕЧАНИЕ</b>: При использовании функций асинхронного <a href="../../Buffers/buffer_save_async.htm">сохранения/загрузки</a>, карта <a href="../../../GML_Overview/Variables/Builtin_Global_Variables/async_load.htm"><span class="inline">async_load</span></a> map будет иметь дополнительный ключ &quot;<b>error</b>&quot;, который также будет содержать одну из констант (показано ниже).</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
   <p class="code">xboxlive_get_file_error();</p>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
   <p class="code"><span data-keyref="Type_Constant_Xbox_FileError"><a data-rhwidget="HyperlinkPopover" href="../../../../../GameMaker_Language/GML_Reference/UWP_And_XBox_Live/Saving_Data/xboxlive_get_file_error.htm">Xbox File Error Constant</a></span></p>
   <table>
     <colgroup>
@@ -33,43 +33,43 @@
         <th colspan="2"><span data-keyref="Type_Constant_Xbox_FileError"><a data-rhwidget="HyperlinkPopover" href="../../../../../GameMaker_Language/GML_Reference/UWP_And_XBox_Live/Saving_Data/xboxlive_get_file_error.htm">Xbox File Error Constant</a></span></th>
       </tr>
       <tr>
-        <th>Constant</th>
-        <th>Description</th>
+        <th>Постоянная</th>
+        <th>Описание</th>
       </tr>
       <tr>
-        <td><span class="inline">xboxlive_fileerror_outoflocalstorage</span></td>
-        <td>If this occurs while saving this means that all available save game space has been used up, and the user has declined the offer (presented by the OS) of freeing up space. The game should confirm with the user that they intend to continue playing without saving. If they still want to be able to save, the game should retry the save operation.</td>
+        <td><span class="notranslate"><span class="inline">xboxlive_fileerror_outoflocalstorage</span></td>
+        <td>Если это происходит во время сохранения, это означает, что все доступное место для сохранения игры было использовано, и пользователь отклонил предложение (представленное ОС) освободить место. Игра должна подтвердить пользователю, что он намерен продолжить игру без сохранения. Если пользователь все еще хочет иметь возможность сохраниться, игра должна повторить операцию сохранения.</td>
       </tr>
       <tr>
-        <td><span class="inline">xboxlive_fileerror_quotaexceeded</span></td>
-        <td>If this occurs the game should notify the user that they can&#39;t save any more data until they free up some space, and then present them with a way of doing this.</td>
+        <td><span class="notranslate"><span class="inline">xboxlive_fileerror_quotaexceeded</span></td>
+        <td>В этом случае игра должна уведомить пользователя, что он не может больше сохранять данные, пока не освободит место, а затем предложить ему способ сделать это.</td>
       </tr>
       <tr>
-        <td><span class="inline">xboxlive_fileerror_noerror</span></td>
-        <td>The file save or load function was carried out without issues.</td>
+        <td><span class="notranslate"><span class="inline">xboxlive_fileerror_noerror</span></td>
+        <td>Функция сохранения или загрузки файлов выполнялась без проблем.</td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <p> </p>
+  <h4>Пример:</h4>
   <p class="code">buffer_save(buff, &quot;SaveGame.bin&quot;);<br />
     if (xboxlive_get_file_error() != xboxlive_fileerror_noerror)<br />
     {<br />
         show_debug_message(&quot;Save failed. Error code = &quot; + string(xboxlive_get_file_error()));<br />
     }</p>
-  <p>The above code checks to see if there was an error with saving and if so the error code is printed out to the console.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Приведенный выше код проверяет, не произошла ли ошибка при сохранении, и если да, то код ошибки выводится на консоль.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Saving_Data.htm">Saving Data</a></div>
-        <div style="float:right">Next: <a href="xboxlive_set_savedata_user.htm">xboxlive_set_savedata_user</a></div>
+        <div style="float:left">Назад: <a href="Saving_Data.htm">Сохранение данных</a></div>
+        <div style="float:right">Следующий: <a href="xboxlive_set_savedata_user.htm"><span class="notranslate">xboxlive_set_savedata_user</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 xboxlive_get_savedata_user

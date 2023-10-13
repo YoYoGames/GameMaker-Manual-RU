@@ -6,7 +6,7 @@
   <title>audio_sound_is_playable</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page explaining the function audio_sound_is_playable" />
   <meta name="rh-index-keywords" content="audio_sound_is_playable" />
@@ -15,45 +15,46 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1><span data-field="title" data-format="default">audio_sound_is_playable</span></h1>
-  <p>This function can be used to check if the given sound index can be played currently. This is needed due to the different ways streamed and unstreamed sound playback is handled on the <b>HTML5</b> target platform, and will return <span class="inline">true</span> if the sound can be played and <span class="inline">false</span> if it can&#39;t. Note that on all other platforms other than HTML5, the function will always return <span class="inline">true</span>.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
-  <p class="code"><span data-field="title" data-format="default">audio_sound_is_playable</span>(index);</p>
+  <h1>audio_sound_is_playable</h1>
+  <p>Эта функция может быть использована для проверки возможности воспроизведения заданного звукового индекса. Это необходимо из-за различий в способах воспроизведения потокового и непотокового звука на целевой платформе <b>HTML5</b>. Функция возвращает <span class="inline">true</span>, если звук может быть воспроизведен, и <span class="inline">false</span>, если не может. Обратите внимание, что на всех других платформах, кроме HTML5, функция всегда будет возвращать <span class="inline">true</span>.</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
+  <p class="code">audio_sound_is_playable(index);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Аргумент</th>
+        <th>Тип</th>
+        <th>Описание</th>
       </tr>
       <tr>
-        <td>index</td>
-        <td><span data-keyref="Type_Asset_Sound"><a href="../../../../../The_Asset_Editors/Sounds.htm" target="_blank">Sound Asset</a></span></td>
-        <td>The index of the sound to check.</td>
+        <td><span class="notranslate">index</span></td>
+        <td><span data-keyref="Type_Asset_Sound"><a href="../../../../../The_Asset_Editors/Sounds.htm" target="_blank">Звуковой актив</a></span></td>
+        <td><span class="notranslate">The index of the sound to check.</span></td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
   <p class="code"><span data-keyref="Type_Bool"><a href="../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Boolean</a></span></p>
-  <p> </p>
-  <h4>Example:</h4>
-  <p class="code">if <span data-field="title" data-format="default">audio_sound_is_playable</span>(snd_Shot)<br />
+  <p> </p>
+  <h4>Пример:</h4>
+  <p class="code">if audio_sound_is_playable(snd_Shot)<br />
     {<br />
         audio_play_sound(snd_Shot, 10, false);<br />
     }</p>
-  <p>The above code will play the sound &quot;snd_Shot&quot; if it is playable.</p>
-  <p> </p>
-  <p> </p>
+  <p>Приведенный выше код воспроизведет звук &quot;snd_Shot&quot;, если он воспроизводим.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a data-xref="{title}" href="Audio.htm">Audio</a></div>
-        <div style="float:right">Next: <a data-xref="{title}" href="audio_play_sound.htm">audio_play_sound</a></div>
+        <div style="float:left">Назад: <a href="Audio.htm">Аудио</a></div>
+        <div style="float:right">Следующий: <a href="audio_falloff_set_model.htm"><span class="notranslate">audio_falloff_set_model</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 audio_sound_is_playable

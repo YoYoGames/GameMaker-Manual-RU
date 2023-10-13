@@ -6,7 +6,7 @@
   <title>skeleton_animation_get_frame</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page explaining the function skeleton_animation_get_frame" />
   <meta name="rh-index-keywords" content="skeleton_animation_get_frame" />
@@ -16,29 +16,29 @@
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
   <h1>skeleton_animation_get_frame</h1>
-  <p>This function will return the frame number of the animation on the specified animation track. The function will return -1 if no animation is assigned to the specific track given.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p>Эта функция возвращает номер кадра анимации на указанной дорожке анимации. Функция вернет -1, если на указанную дорожку не назначена анимация.</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
   <p class="code">skeleton_animation_get_frame(track);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Аргумент</th>
+        <th>Тип</th>
+        <th>Описание</th>
       </tr>
       <tr>
-        <td>track</td>
-        <td><span data-keyref="Type_Real">Real</span></td>
-        <td>The animation track to get the frame of.</td>
+        <td><span class="notranslate">track</span></td>
+        <td><span data-keyref="Type_Real">Реально</span></td>
+        <td><span class="notranslate">The animation track to get the frame of.</span></td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
   <p class="code"><span data-keyref="Type_Real">Real</span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Пример:</h4>
   <p class="code">var frame = skeleton_animation_get_frame(0);<br />
     if frame &gt; 0 &amp;&amp; frame &lt; 2<br />
     {<br />
@@ -47,18 +47,18 @@
         var hh = (box[3] - box[1]) / 2;<br />
         part_particles_create(global.p_sys, box[0] + ww, box[1] + hh, global.Stars, 10);<br />
     }</p>
-  <p>The above code will check the current frame of the animation assigned to track 0 and then burst some particles from a point in the middle of the total bounding box for the sprite.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Приведенный выше код проверит текущий кадр анимации, назначенный дорожке 0, а затем вырвет несколько частиц из точки в середине общей граничной области для <span class="notranslate">sprite</span>.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Animation.htm">Animation</a></div>
-        <div style="float:right">Next: <a href="skeleton_animation_set_frame.htm">skeleton_animation_set_frame</a></div>
+        <div style="float:left">Назад: <a href="Animation.htm">Анимация</a></div>
+        <div style="float:right">Следующий: <a href="skeleton_animation_set_frame.htm"><span class="notranslate">skeleton_animation_set_frame</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 skeleton_animation_get_frame

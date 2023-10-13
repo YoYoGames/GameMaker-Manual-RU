@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>instance_deactivate_all</title>
+  <title>экземпляр_деактивировать_все</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page outlining the function instance_deactivate_all" />
   <meta name="rh-index-keywords" content="instance_deactivate_all" />
@@ -15,49 +15,50 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1><span data-field="title" data-format="default">instance_deactivate_all</span></h1>
-  <p>This function will deactivate <b>all</b> instances that are in the room at the moment that the code is run. This may include the instance running the code if the &quot;notme&quot; flag is set to <span class="inline">false</span>, but normally you would want that instance to be active, in which case the &quot;notme&quot; flag should be set to <span class="inline">true</span>. Note that deactivation is not instantaneous, and an instance that has been deactivated in this way will not be considered to be inactive until the end of the event in which the function was called.</p>
-  <div data-conref="../../../../../assets/snippets/Note_Deactivate_On_Room_Start_Create_Event.hts"> </div>
-  <div data-conref="../../../../../assets/snippets/Note_Warning_Deactivating_Physics_Instances.hts"> </div>
-  <p> </p>
-  <h4>Syntax:</h4>
-  <p class="code"><span data-field="title" data-format="default">instance_deactivate_all</span>(notme);</p>
+  <h1>экземпляр_деактивировать_все</h1>
+  <p>Эта функция деактивирует <b>все</b> экземпляры, находящиеся в комнате в момент выполнения кода. Это может включать экземпляр, выполняющий код, если флаг &quot;notme&quot; установлен в <span class="inline">false</span>, но обычно вы хотите, чтобы этот экземпляр был активен, в этом случае флаг &quot;notme&quot; должен быть установлен в <span class="inline">true</span>. Обратите внимание, что деактивация не является мгновенной, и экземпляр, деактивированный таким образом, не будет считаться неактивным до окончания события, в котором была вызвана функция.</p>
+  <p class="note"><b>ПРИМЕЧАНИЕ</b>: Если вы деактивируете экземпляр при запуске комнаты (т.е. из кода создания комнаты или из события создания экземпляра в комнате), то все экземпляры, размещенные в комнате из редактора комнат, <b>будут выполнять свое событие создания</b> до деактивации.</p>
+  <p class="note"><b></b><b>ПРЕДУПРЕЖДЕНИЕ</b>: Деактивация экземпляров, у которых включена физика, <b>НЕ</b> остановит взаимодействие их светильников в рамках физической симуляции. Для этого необходимо установить их <span style="font-size:1px;"><a href="../../../Physics/Physics_Variables/phy_active.htm"><span class="inline">phy_active</span></a></span> <span class="inline">true</span> или <span class="inline">false</span> при активации/деактивации экземпляров.</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
+  <p class="code">instance_deactivate_all(notme);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Аргумент</th>
+        <th>Тип</th>
+        <th>Описание</th>
       </tr>
       <tr>
-        <td>notme</td>
-        <td><span data-keyref="Type_Bool"><a href="../../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Boolean</a></span></td>
-        <td>Whether to keep the calling instance activated (true) or not (false).</td>
+        <td><span class="notranslate">notme</span></td>
+        <td><span data-keyref="Type_Bool">Булево</span></td>
+        <td><span class="notranslate">Whether to keep the calling instance activated (true) or not (false).</span></td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
   <p class="code"><span data-keyref="Type_Void">N/A</span></p>
-  <p> </p>
-  <h4>Example:</h4>
-  <p class="code"><span data-field="title" data-format="default">instance_deactivate_all</span>(true);<br />
+  <p> </p>
+  <h4>Пример:</h4>
+  <p class="code">instance_deactivate_all(true);<br />
     var _vx = camera_get_view_x(view_camera[0]);<br />
     var _vy = camera_get_view_y(view_camera[0]);<br />
     var _vw = camera_get_view_width(view_camera[0]);<br />
     var _vh = camera_get_view_height(view_camera[0]);<br />
     instance_activate_region(_vx - 64, _vy - 64, _vw + 128, _vh + 128, false);</p>
-  <p>The above code deactivates all instances except the one that is running the code and then activates a region within the room.</p>
-  <p> </p>
-  <p> </p>
+  <p>Приведенный выше код деактивирует все экземпляры, кроме того, который выполняет код, а затем активирует регион в комнате.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Deactivating_Instances.htm">Deactivating Instances</a></div>
-        <div style="float:right">Next: <a href="instance_deactivate_object.htm">instance_deactivate_object</a></div>
+        <div style="float:left">Назад: <a href="Deactivating_Instances.htm">Деактивация экземпляров</a></div>
+        <div style="float:right">Следующий: <a href="instance_deactivate_object.htm"><span class="notranslate">instance_deactivate_object</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 instance_deactivate_all

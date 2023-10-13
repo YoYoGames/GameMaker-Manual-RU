@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Draw Instance Health</title>
-  <meta name="generator" content="Adobe RoboHelp 2020" />
+  <title>Здоровье экземпляра рисунка</title>
+  <meta name="generator" content="Adobe RoboHelp 2019" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
-  <script src="../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page that explains the Draw Instance Health action" />
   <meta name="rh-index-keywords" content="GML Visual Action - Draw Instance Health" />
@@ -14,73 +14,76 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1><img alt="Draw Instance Health Icon" class="icon" height="32" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Drawing/i_Drawing_Draw_Instance_Health.png" width="32" /> Draw Instance Health</h1>
-  <p>With this action you can draw a coloured bar to show a graphic representation of the instance variable <span class="inline">health</span> (when you use <i>any</i> &quot;health&quot; action in <span data-keyref="GameMaker Name">GameMaker</span> the instance that calls it will have a new instance scope variable called <span class="inline">health</span> added). The amount to be displayed is a percentage value that falls within the range of 0 - 100. You can set the direction anchor for drawing the healthbar (from left-to-right or right-to-left and top-to-bottom or bottom-to-top) as well as the position, either within the room or relative to the instance calling the action. You can also set the colour to be blended from each of the four corners of the healthbar, creating gradients from red to green (for example, but you can use any colours). Below you can see an image of how a simple healthbar looks with the different options:</p>
-  <p><b><img alt="Different Healthbar Settings" class="center" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Drawing/Healthbars_Example.png" /></b></p>
-  <p class="note"><span data-conref="../../../assets/snippets/Tag_note.hts"> </span> This action is only for use in the various <a href="../../../The_Asset_Editors/Object_Properties/Draw_Events.htm">Draw Events</a>, and will not draw anything if used elsewhere.</p>
-  <p> </p>
-  <p> </p>
-  <h4>Action Syntax:</h4>
-  <p><img alt="Draw Instance Health Action" class="center" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Drawing/a_Drawing_Draw_Instance_Health.png" /></p>
-  <h4>Arguments:</h4>
+  <h1><img> Здоровье экземпляра рисунка</h1>
+  <p>С помощью этого действия можно нарисовать цветную полосу, чтобы показать графическое представление переменной экземпляра <span class="inline">health</span> (когда вы используете <i>любое</i> действие &quot;здоровье&quot; в <span data-keyref="GameMaker Name">GameMaker</span>, у экземпляра, который его вызывает, будет добавлена новая переменная области видимости экземпляра
+    <span class="inline">health</span> ). Отображаемая величина - это процентное значение, которое находится в диапазоне от 0 до 100. Вы можете задать привязку направления для отрисовки панели здоровья (слева направо или справа налево, сверху вниз или снизу вверх)
+    а также позицию, либо в пределах комнаты, либо относительно экземпляра, вызывающего действие. Вы также можете задать цвет, который будет смешиваться с каждым из четырех углов панели здоровья, создавая градиенты от красного к зеленому (например, но вы можете
+    использовать любые цвета). Ниже показано изображение того, как выглядит простая панель здоровья с различными опциями:</p>
+  <p><b><img alt="Draw Instance Health Icon" class="icon" height="32" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Drawing/i_Drawing_Draw_Instance_Health.png" width="32" /></b></p>
+  <p class="note"><b>ПРИМЕЧАНИЕ</b>: Это действие предназначено только для использования в различных <a href="../../../The_Asset_Editors/Object_Properties/Draw_Events.htm">событиях рисования</a> и не будет рисовать ничего, если использовать его в других местах.</p>
+  <p> </p>
+  <p> </p>
+  <h4>Синтаксис действия:</h4>
+  <p><img alt="Different Healthbar Settings" class="center" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Drawing/Healthbars_Example.png"/></p>
+  <h4>Аргументы:</h4>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Description</th>
+        <th>Аргумент</th>
+        <th>Описание</th>
       </tr>
       <tr>
-        <td>Direction</td>
-        <td>The direction to draw the healthbar contents</td>
+        <td><span class="notranslate">Direction</span></td>
+        <td>Направление рисования содержимого панели здоровья</td>
       </tr>
       <tr>
-        <td>Left</td>
-        <td>The position of the left side of the healthbar</td>
+        <td><span class="notranslate">Left</span></td>
+        <td>Положение левой части панели здоровья</td>
       </tr>
       <tr>
-        <td>Top</td>
-        <td>The position of the top of the healthbar</td>
+        <td><span class="notranslate">Top</span></td>
+        <td>Положение верхней части панели здоровья</td>
       </tr>
       <tr>
-        <td>Right</td>
-        <td>The position of the right side of the healthbar</td>
+        <td><span class="notranslate">Right</span></td>
+        <td>Положение правой части панели здоровья</td>
       </tr>
       <tr>
-        <td>Bottom</td>
-        <td>The position of the bottom of the healthbar</td>
+        <td><span class="notranslate">Bottom</span></td>
+        <td>Положение нижней части панели здоровья</td>
       </tr>
       <tr>
-        <td>Background</td>
-        <td>The colour to draw as the background on the healthbar</td>
+        <td><span class="notranslate">Background</span></td>
+        <td>Цвет, который будет использоваться в качестве фона на панели здоровья</td>
       </tr>
       <tr>
-        <td>Outline</td>
-        <td>The colour to use to outline the healthbar</td>
+        <td><span class="notranslate">Outline</span></td>
+        <td>Цвет, используемый для обводки панели здоровья</td>
       </tr>
       <tr>
-        <td>Min Colour</td>
-        <td>The colour to blend from the minimum value</td>
+        <td><span class="notranslate">Min Colour</span></td>
+        <td>Цвет для смешивания с минимальным значением</td>
       </tr>
       <tr>
-        <td>Max Colour</td>
-        <td>The colour to blend from the maximum value</td>
+        <td><span class="notranslate">Max Colour</span></td>
+        <td>Цвет для смешивания с максимальным значением</td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Example:</h4>
-  <p><img alt="Draw Instance Health Example" class="center" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Drawing/e_Drawing_Draw_Instance_Health.png" />The above action block code draws a healthbar in the top left of the screen.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p> </p>
+  <h4>Пример:</h4>
+  <p><img>Приведенный выше код блока действий рисует панель здоровья в верхней левой части экрана.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Drawing_Actions.htm">Drawing Actions</a></div>
-        <div style="float:right">Next: <a href="Draw_Instance_Lives.htm">Draw Instance Lives</a></div>
+        <div style="float:left">Назад: <a href="Drawing_Actions.htm">Действия при рисовании</a></div>
+        <div style="float:right">Следующий: <a href="Draw_Instance_Lives.htm">Нарисовать жизнь экземпляра</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 Action - Draw Instance Health

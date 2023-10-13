@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Set Instance Scale</title>
+  <title>Установить масштаб экземпляра</title>
   <meta name="generator" content="Adobe RoboHelp 2019" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
-  <script src="../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page that explains the Set Instance Scale action" />
   <meta name="rh-index-keywords" content="GML Visual Action - Set Instance Scale" />
@@ -14,48 +14,48 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1><img alt="Set Instance Scale Icon" class="icon" height="32" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Instance/i_Instance_Set_Scale.png" width="32" /> Set Instance Scale</h1>
-  <p>This action block sets the <span class="inline">image_xscale</span> and <span class="inline">image_yscale</span> values for the instance. The input values here are modifiers which will be applied to the sprite assigned to the instance, where a scale of 1 (the default value) indicates no
-    scaling (1:1), smaller values will scale down (0.5, for example, will half the width of the sprite), and larger values will scale up. You can use negative values to flip the sprite and scale it unless the value used is exactly -1 (in which case the
-    sprite is just flipped or mirrored about its origin with no scaling). You can choose to set the horizontal or vertical scale relative to the current values, in which case you will be adding or subtracting the new value from the current scale values.</p>
-  <p>Note that changing these values will also change how the instance detects collisions, unless you have supplied a separate <span class="inline">mask_index</span> (collision mask) in the <a href="../../../The_Asset_Editors/Objects.htm">Object Editor</a>. Please note that
-    for changes in this variable to be visible, the instance should have either <i>no</i> draw event (and so <span data-keyref="GameMaker Name">GameMaker</span> will default draw the sprite) or be drawn using <a href="../Drawing/Draw_Self.htm">Draw Self</a> action.</p>
+  <h1><img> Установить масштаб экземпляра</h1>
+  <p>Этот блок действий устанавливает значения <span class="inline">image_xscale</span> и <span class="inline">image_yscale</span> для экземпляра. Входные значения здесь являются модификаторами, которые будут применены к <span class="notranslate">sprite</span>, назначенному экземпляру, где масштаб 1 (значение по умолчанию) означает отсутствие масштабирования (1:1), меньшие значения будут масштабироваться в меньшую сторону (0,5, например, уменьшит ширину вдвое), а большие значения будут масштабироваться в меньшую сторону (1:1).
+    масштабирование (1:1), меньшие значения будут масштабироваться вниз (0,5, например, уменьшит ширину <span class="notranslate">sprite</span> в два раза), а большие значения будут масштабироваться вверх. Вы можете использовать отрицательные значения, чтобы перевернуть <span class="notranslate">sprite</span> и масштабировать его, если только используемое значение не равно -1 (в этом случае картинка
+    <span class="notranslate">sprite</span> просто переворачивается или зеркально отражается относительно своего начала координат без масштабирования). Вы можете установить горизонтальный или вертикальный масштаб относительно текущих значений, в этом случае вы будете добавлять или вычитать новое значение из текущих значений масштаба.</p>
+  <p>Обратите внимание, что изменение этих значений также изменит способ обнаружения столкновений экземпляром, если только вы не задали отдельную <span class="inline">mask_index</span> (маску столкновений) в <a href="../../../The_Asset_Editors/Objects.htm">редакторе объектов</a>. Обратите внимание, что
+    чтобы изменения в этой переменной были видны, экземпляр должен либо <i>не</i> иметь события рисования (и тогда <span data-keyref="GameMaker Name">GameMaker</span> по умолчанию нарисует <span class="notranslate">sprite</span>), либо быть нарисованным с помощью действия <a href="../Drawing/Draw_Self.htm">Draw Self</a>.</p>
+  <p><img alt="Set Instance Scale Icon" class="icon" height="32" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Instance/i_Instance_Set_Scale.png" width="32" /></p>
+  <p> </p>
+  <h4>Синтаксис действия:</h4>
   <p><img alt="Examples of scaled sprites" class="center" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Instance/sprite_scale.png" /></p>
-  <p> </p>
-  <h4>Action Syntax:</h4>
-  <p><img alt="Set Instance Scale Action" class="center" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Instance/a_Instance_Set_Scale.png" /></p>
-  <h4>Arguments:</h4>
+  <h4>Аргументы:</h4>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Description</th>
+        <th>Аргумент</th>
+        <th>Описание</th>
       </tr>
       <tr>
-        <td>Horizontal</td>
-        <td>The vertical scaling factor to use (default is 1).</td>
+        <td><span class="notranslate">Horizontal</span></td>
+        <td>Используемый коэффициент вертикального масштабирования (по умолчанию 1).</td>
       </tr>
       <tr>
-        <td>Vertical</td>
-        <td>The horizontal scaling factor to use (default is 1).</td>
+        <td><span class="notranslate">Vertical</span></td>
+        <td>Используемый коэффициент горизонтального масштабирования (по умолчанию 1).</td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Example:</h4>
-  <p><span><img alt="Set Instance Scale Example" class="center" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Instance/e_Instance_Set_Sprite.png"/></span>The above action block code sets a new sprite as well as a number of other
-    properties for how that sprite is to be displayed, including setting it to scale to three quarters of its base size along both axis.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p> </p>
+  <h4>Пример:</h4>
+  <p><span><img></span>Приведенный выше код блока действий устанавливает новый <span class="notranslate">sprite</span>, а также ряд других свойств для отображения этого .
+    свойств для отображения этого <span class="notranslate">sprite</span>, включая установку его масштаба в три четверти от базового размера по обеим осям.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Instance_Actions_Library.htm">Instance Actions</a></div>
-        <div style="float:right">Next: <a href="Set_Instance_Alpha.htm">Set Instance Alpha</a></div>
+        <div style="float:left">Назад: <a href="Instance_Actions_Library.htm">Действия экземпляра</a></div>
+        <div style="float:right">Следующий: <a href="Set_Instance_Alpha.htm">Установить альфу экземпляра</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2021 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 Action - Set Instance Scale

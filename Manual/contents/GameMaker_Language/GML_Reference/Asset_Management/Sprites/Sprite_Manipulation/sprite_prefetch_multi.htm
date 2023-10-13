@@ -4,9 +4,9 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>sprite_prefetch_multi</title>
-  <meta name="generator" content="Adobe RoboHelp 2022" />
+  <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page explaining the function sprite_prefetch_multi" />
   <meta name="rh-index-keywords" content="sprite_prefetch_multi" />
@@ -15,47 +15,47 @@
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
   <h1>sprite_prefetch_multi</h1>
-  <p>This function can be used to prefetch (place into texture memory) a number of texture pages that contain the sprites given. You supply an array populated with the sprite indices (as defined when you created the sprite asset) and the texture pages that they are on will be loaded into memory. Note that the function will return <span class="inline">-1</span> if prefetch is not supported for the chosen resource or the target platform is HTML5, or it will return <span class="inline">0</span> if all worked correctly.</p>
-  <div data-conref="../../../../../assets/snippets/Note_Sprite_Prefetch_To_Avoid_Performance_Hit.hts"> </div>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p>Эта функция может быть использована для предварительной выборки (размещения в памяти текстуры) ряда текстурных страниц, содержащих заданный <span class="notranslate">sprites</span>. Вы передаете массив, заполненный индексами <span class="notranslate">sprite</span> (как определено при создании актива <span class="notranslate">sprite</span> ), и текстурные страницы, на которых они находятся, будут загружены в память. Обратите внимание, что функция вернет <span class="inline">-1</span>, если prefetch не поддерживается для выбранного ресурса или целевая платформа - HTML5, или вернет <span class="inline">0</span>, если все работает правильно.</p>
+  <p class="note"><b>ПРИМЕЧАНИЕ</b>: При загрузке текстуры в память текстуры на большинстве устройств происходит снижение производительности, поэтому рекомендуется вызывать <span style="font-size:1px;"><span class="inline">sprite_prefetch_multi()</span></span> все необходимые графические элементы в начале уровня, чтобы избежать задержек.</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
   <p class="code">sprite_prefetch_multi</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Аргумент</th>
+        <th>Тип</th>
+        <th>Описание</th>
       </tr>
       <tr>
-        <td>array</td>
-        <td><span data-keyref="Type_Array"><a href="GameMaker_Language/GML_Overview/Arrays.htm" target="_blank">Array</a></span> of <span data-keyref="Type_Asset_Sprite"><a href="The_Asset_Editors/Sprites.htm" target="_blank">Sprite Asset</a></span>s</td>
-        <td>Array with the sprite indices to fetch</td>
+        <td><span class="notranslate">array</span></td>
+        <td><span data-keyref="Type_Array">Массив</span> <span data-keyref="Type_Asset_Sprite">активов спрайтов</span></td>
+        <td><span class="notranslate">Array with the sprite indices to fetch</span></td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
-  <p class="code"><span data-keyref="Type_Real"><a href="GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span> (-1 or 0)</p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
+  <p class="code"><span data-keyref="Type_Real">Real</span> (-1 or 0)</p>
+  <p> </p>
+  <h4>Пример:</h4>
   <p class="code">spr_a[0] = spr_Player_Aura1;<br />
     spr_a[1] = spr_Player_Aura2;<br />
     spr_a[2] = spr_Player_Aura3;<br />
     spr_a[3] = spr_Player_Aura4;<br />
     sprite_prefetch_multi(spr_a);</p>
-  <p>The above code creates an array where each element holds a sprite index. This array is then used to place those sprite textures into memory.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Приведенный выше код создает массив, каждый элемент которого содержит индекс <span class="notranslate">sprite</span>. Этот массив затем используется для размещения этих <span class="notranslate">sprite</span> текстур в памяти.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Sprite_Manipulation.htm">Sprite Manipulation</a></div>
-        <div style="float:right">Next: <a href="../Sprite_Instance_Variables/sprite_index.htm">sprite_index</a></div>
+        <div style="float:left">Назад: <a href="Sprite_Manipulation.htm">Манипуляция спрайтом</a></div>
+        <div style="float:right">Следующий: <a href="../Sprite_Instance_Variables/sprite_index.htm"><span class="notranslate">sprite_index</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 sprite_prefetch_multi

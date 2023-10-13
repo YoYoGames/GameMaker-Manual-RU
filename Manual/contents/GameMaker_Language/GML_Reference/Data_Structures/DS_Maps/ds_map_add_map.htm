@@ -6,7 +6,7 @@
   <title>ds_map_add_map</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference page for ds_map_add_map" />
   <meta name="rh-index-keywords" content="ds_map_add_map" />
@@ -15,39 +15,39 @@
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
   <h1>ds_map_add_map</h1>
-  <p>With this function you can assign a (previously created) DS map to a key within the given DS map . This function is designed for creating JSON compatible maps which you would then encode using <a href="../../File_Handling/Encoding_And_Hashing/json_encode.htm"><span class="inline">json_encode()</span></a> and should only be used in conjunction with that functionality. If a DS map has another map added in this way, then destroying the parent map will also destroy the contained maps and free their memory, and calling <a href="ds_map_clear.htm"><span class="inline">ds_map_clear()</span></a> on the parent map will also destroy and clean up any flagged maps.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p>С помощью этой функции вы можете назначить (ранее созданную) карту DS ключу в заданной карте DS. Эта функция предназначена для создания карт, совместимых с JSON, которые вы затем будете кодировать, используя <a href="../../File_Handling/Encoding_And_Hashing/json_encode.htm"><span class="inline">json_encode()</span></a> и должна использоваться только в сочетании с этой функцией. Если в DS-карту добавлена другая карта, то уничтожение родительской карты приведет к уничтожению содержащихся в ней карт и освобождению их памяти, а вызов функции <a href="ds_map_clear.htm"><span class="inline">ds_map_clear()</span></a> на родительской карте также уничтожит и очистит все помеченные карты.</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
   <p class="code">ds_map_add_map(id, key, value)</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Аргумент</th>
+        <th>Тип</th>
+        <th>Описание</th>
       </tr>
       <tr>
-        <td>id</td>
-        <td><span data-keyref="Type_ID_DS_Map">DS Map ID</span></td>
-        <td>The id of the map to use.</td>
+        <td><span class="notranslate">id</span></td>
+        <td><span data-keyref="Type_ID_DS_Map">Идентификатор карты DS</span></td>
+        <td><span class="notranslate">The id of the map to use.</span></td>
       </tr>
       <tr>
-        <td>key</td>
-        <td><span data-keyref="Type_String">String</span></td>
-        <td>The key for the added map.</td>
+        <td><span class="notranslate">key</span></td>
+        <td><span data-keyref="Type_String">Строка</span></td>
+        <td><span class="notranslate">The key for the added map.</span></td>
       </tr>
       <tr>
-        <td>value</td>
-        <td><span data-keyref="Type_ID_DS_Map">DS Map ID</span></td>
-        <td>The id of the map to add.</td>
+        <td><span class="notranslate">value</span></td>
+        <td><span data-keyref="Type_ID_DS_Map">Идентификатор карты DS</span></td>
+        <td><span class="notranslate">The id of the map to add.</span></td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
   <p class="code"><span data-keyref="Type_Void">N/A</span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Пример:</h4>
   <p class="code">var j_map = ds_map_create();<br />
     var j_list = ds_list_create();<br />
     var sub_map = ds_map_create();<br />
@@ -56,18 +56,18 @@
     ds_map_add_map(j_map, &quot;map&quot;, sub_map);<br />
     var j = json_encode(j_map);<br />
     ds_map_destroy(j_map);</p>
-  <p>The above code will create two DS maps, and then populate one with a list and an array before adding it into the second, which is then encoded into a JSON string. The map is then destroyed to remove it, and any other maps or lists that it contains, from memory.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Приведенный выше код создает две карты DS, затем заполняет одну из них списком и массивом, после чего добавляет их во вторую, которая затем кодируется в строку JSON. Затем карта уничтожается, чтобы удалить ее и любые другие карты или списки, которые она содержит, из памяти.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="DS_Maps.htm">DS Maps</a></div>
-        <div style="float:right">Next: <a href="ds_map_replace_list.htm">ds_map_replace_list</a></div>
+        <div style="float:left">Назад: <a href="DS_Maps.htm">Карты DS</a></div>
+        <div style="float:right">Следующий: <a href="ds_map_replace_list.htm"><span class="notranslate">ds_map_replace_list</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 ds_map_add_map

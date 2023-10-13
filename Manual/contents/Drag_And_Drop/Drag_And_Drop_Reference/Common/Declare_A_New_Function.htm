@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Declare A New Function</title>
+  <title>Объявление новой функции</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
-  <script src="../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Section detailing Declare A New Function" />
   <meta name="rh-index-keywords" content="GML Visual Action - Declare A New Function" />
@@ -14,65 +14,65 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1><img alt="Declare A New Function Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Common/i_Common_Declare_Function.png" /> Declare A New Function</h1>
-  <p>This action can be used to create a new user-defined function, which can later be called at any time in your code. A user-defined function is one that you define to do a task that isn&#39;t covered by the built-in GML Visual actions or GML runner functions, and can be global, instance or local in scope (see <a href="../../../GameMaker_Language/GML_Overview/Variables_And_Variable_Scope.htm">here</a> for more information on scope); they can also be used as <b>constructors</b> to create <a href="../../../GameMaker_Language/GML_Overview/Structs.htm">structs</a>. To find out more about using this action to create global functions, please see the section on <a href="../../Drag_And_Drop_Overview/Action_Block_Functions.htm">Creating Action Functions</a>.</p>
-  <p>To use this action, you can add it to an event or a script and give the new function a name. You then provide the required arguments/parameters that the function will take, and the default values for any optional arguments.</p>
-  <p>If the function is to be used as a constructor (which is used to create a struct), then you need to check the <strong>Constructor </strong>option and later use the <a href="New.htm">New</a> action to create a struct from the function. You may also flag the function as being <b>static</b>, which means that it will only be defined once no matter how many times this action is executed. Finally, if the function is only going to be used locally in the same event and nowhere else, then you can enable the <strong>Temp </strong>option.</p>
-  <p>Once you have defined the name and the parameters, you can attach the actions that you want the function to run when it is called in your code, by dropping them to the side of the action as shown in the image below:</p>
-  <p><img alt="Declare A New Function drop actions" class="center" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Common/drop_declare_function.png" />You can see examples of using this action as both a regular function and a constructor function in the &quot;Extended Examples&quot; section given below.</p>
-  <p> </p>
-  <h4>Action Syntax:</h4>
-  <p><img alt="Declare A New Function Action" class="center" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Common/a_Common_Declare_Function.png" /></p>
-  <h4>Arguments:</h4>
+  <h1><img> Объявление новой функции</h1>
+  <p>Это действие можно использовать для создания новой определяемой пользователем функции, которая впоследствии может быть вызвана в любое время в вашем коде. Определяемая пользователем функция - это функция, которую вы определяете для выполнения задачи, не охваченной встроенными действиями <span class="notranslate">GML</span> Visual или функциями <span class="notranslate">GML</span> runner, и которая может быть глобальной, экземпляром или локальной по области видимости (более подробную информацию о области видимости см. <a href="../../../GameMaker_Language/GML_Overview/Variables_And_Variable_Scope.htm">здесь</a> ); они также могут использоваться в качестве <b>конструкторов</b> для создания <a href="../../../GameMaker_Language/GML_Overview/Structs.htm">структур</a>. Чтобы узнать больше об использовании этого действия для создания глобальных функций, обратитесь к разделу <a href="../../Drag_And_Drop_Overview/Action_Block_Functions.htm">Создание функций действия</a>.</p>
+  <p>Чтобы использовать это действие, вы можете добавить его в событие или сценарий и дать новой функции имя. Затем вы указываете необходимые аргументы/параметры, которые будет принимать функция, и значения по умолчанию для любых необязательных аргументов.</p>
+  <p>Если функция будет использоваться в качестве конструктора (который используется для создания структуры), то необходимо отметить опцию <strong>Constructor </strong>, а затем использовать действие <a href="New.htm">New</a> для создания структуры из функции. Вы также можете отметить функцию как <b>статическую</b>, что означает, что она будет определена только один раз, независимо от того, сколько раз будет выполняться это действие. Наконец, если функция будет использоваться только локально в одном событии и больше нигде, то можно включить опцию <strong>Temp </strong>.</p>
+  <p>После того как вы определили имя и параметры, вы можете прикрепить действия, которые вы хотите, чтобы функция выполнялась при вызове в вашем коде, поместив их сбоку от действия, как показано на рисунке ниже:</p>
+  <p><img>Примеры использования этого действия в качестве обычной функции и функции-конструктора можно посмотреть в разделе &quot;Расширенные примеры&quot;, приведенном ниже.</p>
+  <p> </p>
+  <h4>Синтаксис действия:</h4>
+  <p><img alt="Declare A New Function Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Common/i_Common_Declare_Function.png" /></p>
+  <h4>Аргументы:</h4>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Description</th>
+        <th>Аргумент</th>
+        <th>Описание</th>
       </tr>
       <tr>
-        <td>Name</td>
-        <td>The name of the new function.</td>
+        <td><span class="notranslate">Name</span></td>
+        <td>Имя новой функции.</td>
       </tr>
       <tr>
-        <td>Argument [+]</td>
-        <td>The different arguments that can be passed into the function, and their default values if optional.</td>
+        <td><span class="notranslate">Argument [+]</span></td>
+        <td>Различные аргументы, которые могут быть переданы в функцию, и их значения по умолчанию, если они необязательны.</td>
       </tr>
       <tr>
-        <td>Constructor</td>
-        <td>Whether this function is a constructor.</td>
+        <td><span class="notranslate">Constructor</span></td>
+        <td>Является ли эта функция конструктором.</td>
       </tr>
       <tr>
-        <td>Static</td>
-        <td>Whether this function is static.</td>
+        <td><span class="notranslate">Static</span></td>
+        <td>Является ли эта функция статической.</td>
       </tr>
       <tr>
-        <td>Temp</td>
-        <td>Whether the function is temporary (meaning that it&#39;s only used within the current event).</td>
+        <td><span class="notranslate">Temp</span></td>
+        <td>Является ли функция временной (это означает, что она используется только в рамках текущего события).</td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h1>Extended Examples</h1>
-  <h4>Extended Example 1</h4>
-  <p><img alt="Declare A New Function Example 1" class="center" height="491" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Common/e_Common_Declare_Function_1.png" width="492" />The above action block would go in the <b>Create Event</b> of an instance or a script, and declares a new function called <span class="inline">set_vec</span> with three arguments: <span class="inline">_x</span>, <span class="inline">_y</span> and <span class="inline">spd</span>. These arguments are then used in the actions that the function contains to set the direction and speed of the instance, which happens when the function is called. You would later call the function using the <a href="Function_Call.htm">Function Call</a> action in any subsequent events, like this:</p>
-  <p><img alt="Declare A New Function Exmaple 2" class="center" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Common/e_Common_Declare_Function_2.png" />In the above image, the <span class="inline">set_vec</span> function is called which changes the instance&#39;s direction to point towards the mouse&#39;s X/Y position and sets the speed to 5.</p>
-  <p> </p>
-  <h4 id="h">Extended Example 2</h4>
-  <p><img alt="Declare A New Function Exmaple 3" class="center" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Common/e_Common_Declare_Function_3.png" />The above action block would go in the <b>Create Event</b> of an instance or a script, and declares a new <strong>constructor</strong> function called <span class="inline">init_char_struct</span> with four arguments: <span class="inline">_name</span>, <span class="inline">_location</span>, <span class="inline">_hp</span> and <span class="inline">_mana</span>, with the last two being optional with a default value of 100 (this means that if those arguments are not specified when the function is called, their default values will be used instead). These arguments are then used to create some variables within the struct that the function is creating.</p>
-  <p>You would later call this function using the <a href="New.htm">New</a> action to create a struct, like this:</p>
-  <p><img alt="Declare A New Function Exmaple 4" class="center" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Common/e_Common_Declare_Function_4.png" />The function is called and will return a new struct which is stored in the array <span class="inline">char</span>, and the struct will be populated with the variables <span class="inline">name</span>, <span class="inline">location</span>, <span class="inline">hp</span> and <span class="inline">mana</span>, set to the values that were passed into the corresponding arguments in the function call.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p> </p>
+  <h1>Расширенные примеры</h1>
+  <h4>Расширенный пример 1</h4>
+  <p><img>Приведенный выше блок действий находится в <b>событии Create</b> экземпляра или сценария и объявляет новую функцию <span class="inline">set_vec</span> с тремя аргументами: <span class="inline">_x</span>, <span class="inline">_y</span> и <span class="inline">spd</span>. Эти аргументы затем используются в действиях, которые содержит функция, для установки направления и скорости движения экземпляра, что происходит при вызове функции. В дальнейшем вы будете вызывать функцию с помощью действия <a href="Function_Call.htm">Function Call</a> в любых последующих событиях, например, так:</p>
+  <p><img>На изображении выше вызывается функция <span class="inline">set_vec</span>, которая изменяет направление движения экземпляра на направленное в сторону позиции X/Y мыши и устанавливает скорость на 5.</p>
+  <p> </p>
+  <h4 id="h">Расширенный пример 2</h4>
+  <p><img>Приведенный выше блок действий будет находиться в <b>событии Create</b> экземпляра или сценария и объявляет новую <strong>функцию-конструктор</strong> <span class="inline">init_char_struct</span> с четырьмя аргументами: <span class="inline">_name</span>, <span class="inline">_location</span>, <span class="inline">_hp</span> и <span class="inline">_mana</span>, причем последние два являются необязательными и имеют значение по умолчанию 100 (это означает, что если эти аргументы не указаны при вызове функции, то вместо них будут использоваться их значения по умолчанию). Эти аргументы затем используются для создания некоторых переменных в структуре, которую создает функция.</p>
+  <p>Позже вы вызовете эту функцию с помощью действия <a href="New.htm">New</a> для создания структуры, как показано ниже:</p>
+  <p><img>Функция вызывается и возвращает новый struct, который хранится в массиве <span class="inline">char</span>, а struct будет заполнен переменными <span class="inline">name</span>, <span class="inline">location</span>, <span class="inline">hp</span> и <span class="inline">mana</span>, установленными в значения, которые были переданы в соответствующих аргументах при вызове функции.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Common_Actions_Library.htm">Common Actions</a></div>
-        <div style="float:right">Next: <a href="Assign_Variable.htm">Assign Variable</a></div>
+        <div style="float:left">Назад: <a href="Common_Actions_Library.htm">Общие действия</a></div>
+        <div style="float:right">Следующий: <a href="Assign_Variable.htm">Присвоение переменной</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 Action - Declare A New Function

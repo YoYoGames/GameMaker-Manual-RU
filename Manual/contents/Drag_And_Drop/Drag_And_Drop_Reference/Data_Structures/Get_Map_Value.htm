@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Get Map Value</title>
-  <meta name="generator" content="Adobe RoboHelp 2020" />
+  <title>Получить значение карты</title>
+  <meta name="generator" content="Adobe RoboHelp 2019" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
-  <script src="../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page that explains the Get Map Value action" />
   <meta name="rh-index-keywords" content="GML Visual Action - Get Map Value" />
@@ -14,47 +14,49 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1><img alt="Get Map Value Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Data_Structures/i_DS_Get_Map_Value.png" /> Get Map Value</h1>
-  <p>With this action you can retrieve the value associated with a given key in a map data structure. You supply the variable that holds the map index (as returned by the action <a href="Create_Map.htm">Create Map</a>) and then give a &quot;key&quot; (which is the identifier within the map for a value), and also supply a target variable to hold the returned value (which can be flagged as a temporary local variable).</p>
-  <p class="note"><span data-conref="../../../assets/snippets/Tag_note.hts"> </span> If you give a key that does not exist in the map then the action will return <span class="inline">undefined</span>. You can check for this this using the <a href="../Common/If_Undefined.htm">If Undefined</a> action.</p>
-  <p> </p>
-  <h4>Action Syntax:</h4>
-  <p><img alt="Get Map Value Action" class="center" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Data_Structures/a_DS_Get_Map_Value.png" /></p>
-  <h4>Arguments:</h4>
+  <h1><img> Получить значение карты</h1>
+  <p>С помощью этого действия вы можете получить значение, связанное с заданным ключом в структуре данных карты. Вы предоставляете переменную, которая содержит индекс карты (как возвращается действием <a href="Create_Map.htm">Create Map</a>), а затем задаете &quot;ключ&quot; (который
+    это идентификатор значения в карте), а также предоставляете целевую переменную для хранения возвращаемого значения (которая может быть помечена как временная локальная переменная).</p>
+  <p class="note"><b>ПРИМЕЧАНИЕ</b>: Если вы зададите ключ, который не существует в карте, действие вернет <span class="inline">undefined</span>. Проверить это можно с помощью действия <a href="../Common/If_Undefined.htm">If Undefined</a>.</p>
+  <p> </p>
+  <h4>Синтаксис действия:</h4>
+  <p><img alt="Get Map Value Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Data_Structures/i_DS_Get_Map_Value.png" /></p>
+  <h4>Аргументы:</h4>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Description</th>
+        <th>Аргумент</th>
+        <th>Описание</th>
       </tr>
       <tr>
-        <td>Map</td>
-        <td>The index (stored in a variable) of the map to get the value from</td>
+        <td><span class="notranslate">Map</span></td>
+        <td>Индекс (хранится в переменной) карты, из которой нужно получить значение</td>
       </tr>
       <tr>
-        <td>Key</td>
-        <td>The key to get (real or string)</td>
+        <td><span class="notranslate">Key</span></td>
+        <td>Ключ, который нужно получить (вещественный или строковый)</td>
       </tr>
       <tr>
-        <td>Target</td>
-        <td>The target variable to hold the returned map value</td>
+        <td><span class="notranslate">Target</span></td>
+        <td>Целевая переменная для хранения возвращаемого значения карты</td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Example:</h4>
-  <p><img alt="Get Map Value Example" class="center" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Data_Structures/e_DS_Get_Map_Value.png" />The above action block code checks for a collision at the instance position and if one is found then a map is looked up to get a value from the key &quot;damage&quot;, and this value is then used to change the calling instance variable &quot;hp&quot;.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p> </p>
+  <h4>Пример:</h4>
+  <p><img>Приведенный выше код блока действий проверяет наличие столкновения в позиции экземпляра, и если оно
+    найдено, то выполняется поиск по карте, чтобы получить значение из ключа &quot;damage&quot;, и это значение затем используется для изменения вызывающей переменной экземпляра &quot;hp&quot;.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Data_Structure_Actions.htm">Data Structure Actions</a></div>
-        <div style="float:right">Next: <a href="Remove_Map_Entry.htm">Remove Map Entry</a></div>
+        <div style="float:left">Назад: <a href="Data_Structure_Actions.htm">Действия со структурой данных</a></div>
+        <div style="float:right">Следующий: <a href="Remove_Map_Entry.htm">Удалить запись карты</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 Action - Get Map Value

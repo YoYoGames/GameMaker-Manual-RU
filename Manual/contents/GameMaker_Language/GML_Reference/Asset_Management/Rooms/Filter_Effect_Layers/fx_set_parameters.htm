@@ -6,7 +6,7 @@
   <title>fx_set_parameters</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Gurpreet S. Matharoo" />
   <meta name="topic-comment" content="Page outlining the function fx_set_parameters" />
   <meta name="rh-index-keywords" content="fx_set_parameters" />
@@ -15,32 +15,32 @@
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
   <h1>fx_set_parameters</h1>
-  <p>This function is used to change the parameters of a filter/effect. You specify an FX struct (as returned from <span class="inline"><a href="fx_create.htm">fx_create()</a></span> or <span class="inline"><a href="layer_get_fx.htm">layer_get_fx()</a></span>) and a struct containing its parameters (as returned from <span class="inline"><a href="fx_get_parameters.htm">fx_get_parameters()</a></span>). This will make your changes visible in the layer that the FX struct is assigned to.</p>
-  <p>Your parameter struct is not required to contain every parameter that is applicable to the filter/effect, and only the variables that are present in the given struct will be updated for the filter/effect.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p>Эта функция используется для изменения параметров фильтра/эффекта. Вы указываете структуру FX (как возвращено из <span class="inline"><a href="fx_create.htm">fx_create()</a></span> или <span class="inline"><a href="layer_get_fx.htm">layer_get_fx()</a></span>) и структуру, содержащую его параметры (как возвращено из <span class="inline"><a href="fx_get_parameters.htm">fx_get_parameters()</a></span>). В результате ваши изменения будут видны в слое, которому присвоен FX struct.</p>
+  <p>Ваша структура параметров не обязана содержать все параметры, применимые к фильтру/эффекту, и только переменные, присутствующие в данной структуре, будут обновлены для фильтра/эффекта.</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
   <p class="code">fx_set_parameters(filter_or_effect, parameter_struct);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th><th>Type</th>
-        <th>Description</th>
+        <th>Аргумент</th><th>Тип</th>
+        <th>Описание</th>
      </tr>
       <tr>
-        <td>filter_or_effect</td><td><span data-keyref="Type_Struct_FX"></span></td>
-        <td>The FX struct to modify</td>
+        <td><span class="notranslate">filter_or_effect</span></td><td><span data-keyref="Type_Struct_FX"></span></td>
+        <td><span class="notranslate">The FX struct to modify</span></td>
      </tr>
       <tr>
-        <td>parameter_struct</td><td><span data-keyref="Type_Struct"></span></td>
-        <td>A struct containing the parameters for the filter/effect</td>
+        <td><span class="notranslate">parameter_struct</span></td><td><span data-keyref="Type_Struct"></span></td>
+        <td><span class="notranslate">A struct containing the parameters for the filter/effect</span></td>
      </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
   <p class="code"><span data-keyref="Type_Void"></span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Пример:</h4>
   <p class="code">var _fx_struct = layer_get_fx(&quot;TintEffect&quot;);<br />
     <br />
     if (_fx_struct != -1)<br />
@@ -52,18 +52,18 @@
         fx_set_parameters(_fx_struct, _params);<br />
     }
   </p>
-  <p>The above code gets the FX struct for a layer that is assumed to have the &quot;Colour Tint&quot; filter applied to it, and retrieves its parameter struct by calling <a href="fx_get_parameters.htm"><span class="inline">fx_get_parameters()</span></a>. After that it creates an oscillating value by using <span class="inline"><a href="../../../Maths_And_Numbers/Angles_And_Distance/sin.htm">sin()</a></span> and <span class="inline"><a href="../../../Maths_And_Numbers/Date_And_Time/current_time.htm">current_time</a></span>, which is then used for the RGBA values for the tint effect so it keeps animating. The RGBA array is assigned to the <span class="inline">g_TintCol</span> variable in the parameter struct, and the struct is then applied back to the FX struct by calling <span class="inline">fx_set_parameters()</span>.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Приведенный выше код получает структуру FX для слоя, к которому, как предполагается, применен фильтр &quot;Цветовой оттенок&quot;, и извлекает структуру параметров, вызывая команду <a href="fx_get_parameters.htm"><span class="inline">fx_get_parameters()</span></a>. После этого он создает осциллирующее значение с помощью <span class="inline"><a href="../../../Maths_And_Numbers/Angles_And_Distance/sin.htm">sin()</a></span> и <span class="inline"><a href="../../../Maths_And_Numbers/Date_And_Time/current_time.htm">current_time</a></span>, которое затем используется для значений RGBA для эффекта оттенка, так что он продолжает анимироваться. Массив RGBA присваивается переменной <span class="inline">g_TintCol</span> в структуре параметров, а затем эта структура применяется обратно к структуре FX вызовом <span class="inline">fx_set_parameters()</span>.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Filter_Effect_Functions.htm">Filter and Effect Functions</a></div>
-        <div style="float:right">Next: <a data-xref="{title}" href="fx_set_single_layer.htm">fx_set_single_layer</a></div>
+        <div style="float:left">Назад: <a href="Filter_Effect_Functions.htm">Функции фильтров и эффектов</a></div>
+        <div style="float:right">Далее: <a data-xref="{title}" href="fx_set_single_layer.htm">fx_set_single_layer</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 fx_set_parameters

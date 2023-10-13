@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Creating An Extension</title>
+  <title>Создание расширения</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../assets/css/default.css" type="text/css" />
-  <script src="../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page detailing how to create a generic extension" />
   <meta name="rh-index-keywords" content="Extensions - Creating An Extension" />
@@ -14,28 +14,28 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>Creating An Extension</h1>
-  <p>To create an extension, you&#39;ll first need to right click <img alt="RMB Icon" class="icon" src="../../assets/Images/Icons/Icon_RMB.png" /> anywhere within the <a href="../../Introduction/The_Asset_Browser.htm">Asset Browser</a> and select <strong>Create -&gt; Extension</strong>. This will open the Extension properties for your newly created asset in the Workspace:</p>
-  <p><img alt="Extension Properties" class="center" height="519" src="../../assets/Images/Asset_Editors/Editor_Extensions.png" width="486" />If you do not see this, you can double click on your Extension asset in the Asset Browser to open its properties window or to focus on it when it&#39;s already open.</p>
-  <p>This is now ready for you to add the required files and functions, and you can also give the extension a name here (following the usual convention of only letters/numbers and no special symbols except the underscore &quot;_&quot;). You can also set the version number for the extension should you wish to.</p>
-  <p>Under &quot;Copies To&quot; you can choose the platforms that this extension is exported to. For a simple GML extension you do not need to worry about this as it will run on all platforms, however if you are creating a platform-specific extension (such as for Android) then you need to make sure that it&#39;s <em>not</em> exported to any non-compatible platforms (such as iOS, consoles, etc.).</p>
-  <h2>Placeholder Files</h2>
-  <p>To add a file to the new extension you need to click the menu icon <img alt="Estension Options Icon" class="icon" src="../../assets/Images/Icons/Icon_ExtensionMenu.png" /> and select either a placeholder file (&quot;Add Placeholder&quot;) or import the actual file that is required for the target platform (&quot;Add File&quot;):</p>
-  <p class="dropspot"><img alt="Add Files To An Extension" class="center" src="../../assets/Images/Asset_Editors/Editor_Extensions_Files.png" /></p>
-  <p>A &quot;generic&quot; placeholder is a file that can be of any type, except those required by the specific platforms (so no <span class="inline">DLL</span> or <span class="inline">SO </span>files, for example), and it will not be used except as a &quot;linker&quot; file to connect a set of functions or constants with the given extension (generally it is only for use with iOS and Android extensions, which is explained in the sections below for those targets). You can also add &quot;GML&quot; and &quot;JS&quot; placeholder files for more specific use.</p>
-  <h2>Adding Files</h2>
-  <p>Normally you won&#39;t need to use placeholders unless you&#39;re building for iOS and Android, so you would choose the &quot;Add File&quot; option to add any one of the following files depending on the target platform they are for:</p>
+  <h1>Создание расширения</h1>
+  <p>Чтобы создать расширение, сначала нужно щелкнуть правой кнопкой мыши <img> в любом месте <a href="../../Introduction/The_Asset_Browser.htm">браузера активов</a> и выбрать <strong>Создать -&gt; Расширение</strong>. Это откроет свойства расширения для только что созданного актива в рабочей области:</p>
+  <p><img>Если вы не видите этого, вы можете дважды щелкнуть на активе расширения в браузере активов, чтобы открыть окно его свойств или сфокусироваться на нем, когда оно уже открыто.</p>
+  <p>Теперь все готово для добавления необходимых файлов и функций. Здесь же вы можете дать расширению имя (следуя обычному соглашению: только буквы/цифры и никаких специальных символов, кроме знака подчеркивания &quot;_&quot;). При желании вы можете задать номер версии расширения.</p>
+  <p>В разделе &quot;Copies To&quot; вы можете выбрать платформы, на которые будет экспортировано данное расширение. Для простого расширения <span class="notranslate">GML</span> вам не нужно беспокоиться об этом, так как оно будет работать на всех платформах, однако если вы создаете расширение для конкретной платформы (например, для <span class="notranslate">Android</span>), вам нужно убедиться, что оно <em>не</em> экспортируется на несовместимые платформы (например, <span class="notranslate">iOS</span>, консоли и т.д.).</p>
+  <h2>Файлы-заполнители</h2>
+  <p>Чтобы добавить файл в новое расширение, нужно щелкнуть значок меню <img> и выбрать либо файл-местодержатель (&quot;Add Placeholder&quot;), либо импортировать фактический файл, необходимый для целевой платформы (&quot;Add File&quot;):</p>
+  <p class="dropspot"><img alt="RMB Icon" class="icon" src="../../assets/Images/Icons/Icon_RMB.png" /></p>
+  <p>Общий&quot; файл-заполнитель - это файл, который может быть любого типа, кроме тех, которые требуются для конкретных платформ (например, никаких файлов <span class="inline">DLL</span> или <span class="inline">SO </span>), и он не будет использоваться, кроме как в качестве файла &quot;компоновщика&quot; для подключения набора функций или констант с данным расширением (как правило, он предназначен только для использования с расширениями <span class="notranslate">iOS</span> и <span class="notranslate">Android</span>, что объясняется в разделах ниже для этих целей). Вы также можете добавить файлы-заполнители &quot;GML&quot; и &quot;JS&quot; для более специфического использования.</p>
+  <h2>Добавление файлов</h2>
+  <p>Обычно вам не нужно использовать заполнители, если вы не собираете для <span class="notranslate">iOS</span> и <span class="notranslate">Android</span>, поэтому вы выбираете опцию &quot;Add File&quot;, чтобы добавить любой из следующих файлов в зависимости от целевой платформы, для которой они предназначены:</p>
   <ul class="colour">
-    <li class="dropspot"><span class="inline">.gml</span>: This is a file made only with the GameMaker Language and is compatible with all platforms.</li>
-    <li class="dropspot"><span class="inline">.js</span>: This is a JavaScript extension format and is only compatible with the HTML5 target.</li>
-    <li class="dropspot"><span class="inline">.dll</span>: This is a dynamic-link library extension format and is only compatible with the Windows and Xbox targets (each target will need a different <span class="inline">*.dll</span> file compatible with its specifications).</li>
-    <li class="dropspot"><span class="inline">.dylib</span>: This is the Mac equivalent of a DLL and is only compatible with Mac target (not iOS).</li>
-    <li class="dropspot"><span class="inline">.so</span>: This is the Linux equivalent of a DLL and is only compatible with the Ubuntu (Linux) target.</li>
-    <li class="dropspot"><span class="inline">.prx</span>: This is a file format for adding functionality to the PlayStation target (each target will need a different <span class="inline">*.prx</span> file compatible with its specifications).</li>
+    <li class="dropspot"><span class="inline">.gml</span>: Это файл, созданный только с помощью <span class="notranslate">GameMaker Language</span> и совместимый со всеми платформами.</li>
+    <li class="dropspot"><span class="inline">.js</span>: Это формат расширения JavaScript и совместим только с HTML5.</li>
+    <li class="dropspot"><span class="inline">.dll</span>: Это формат расширения динамически подключаемой библиотеки, совместимый только с целями <span class="notranslate">Windows</span>, UWP и Xbox (для каждой цели потребуется свой файл <span class="inline">*.dll</span>, совместимый с ее спецификациями).</li>
+    <li class="dropspot"><span class="inline">.dylib</span>: Это эквивалент DLL для Mac и совместим только с Mac target (не <span class="notranslate">iOS</span>).</li>
+    <li class="dropspot"><span class="inline">.so</span>: Это <span class="notranslate">Linux</span> эквивалент DLL и совместим только с целью <span class="notranslate">Ubuntu</span> (<span class="notranslate">Linux</span>).</li>
+    <li class="dropspot"><span class="inline">.prx</span>: Это формат файла для добавления функциональности к цели PlayStation (для каждой цели потребуется свой файл <span class="inline">*.prx</span>, совместимый с ее спецификациями).</li>
   </ul>
-  <p>You&#39;ll notice that there is no file type for <strong>Android </strong>or <strong>iOS</strong>, which is because their set-up is slightly different. Further down you can find explanations on how to set them up but first let&#39;s look at creating a general GML extension for any of the target platforms, since the process is the same for all of them.</p>
-  <h2>Creating a GML Extension</h2>
-  <p>To start with you need to create the file that is going to be used. For a GML extension, this would be a text file (saved with the <span class="inline">.gml</span> extension) and would be formatted something like this:</p>
+  <p>Вы заметите, что здесь нет типа файла для <strong>Android </strong>или <strong>iOS</strong>, потому что их настройка немного отличается. Далее вы найдете объяснения, как их настроить, но сначала давайте рассмотрим создание общего расширения <span class="notranslate">GML</span> для любой из целевых платформ, поскольку процесс для всех них одинаков.</p>
+  <h2>Создание расширения <span class="notranslate">GML</span> </h2>
+  <p>Для начала необходимо создать файл, который будет использоваться. Для расширения <span class="notranslate">GML</span> это будет текстовый файл (сохраненный с расширением <span class="inline">.gml</span> ), который будет иметь следующий формат:</p>
   <p class="code">#define c_alice_blue<br />
     return make_color_rgb(240,248,255);<br />
     <br />
@@ -48,70 +48,69 @@
     }<br />
     return i;
   </p>
-  <p>As you can see, we start each section with a <span class="inline">#define</span> call, which in the example above is used to define two functions. Let&#39;s look at each part of a defined function:</p>
+  <p>Как видите, мы начинаем каждый раздел с вызова <span class="inline">#define</span>, который в приведенном выше примере используется для определения двух функций. Давайте рассмотрим каждую часть определяемой функции:</p>
   <ul class="colour">
-    <li>The <span class="inline">#define</span> statement is used to define a new function with the given name;</li>
-    <li>That statement is then followed by the function code, which uses the <span class="inline">argument0</span>, <span class="inline">argument1</span>, etc. variables to access the arguments passed into the function when it is called;</li>
-    <li>At the end we have a <a href="../../GameMaker_Language/GML_Overview/Language_Features/return.htm">return</a> statement which is used to return data from the extension back to the GML code where the function was called.</li>
+    <li>Оператор <span class="inline">#define</span> используется для определения новой функции с заданным именем;</li>
+    <li>За этим утверждением следует код функции, который использует переменные <span class="inline">argument0</span>, <span class="inline">argument1</span> и т.д. для доступа к аргументам, переданным в функцию при ее вызове;</li>
+    <li>В конце у нас есть <a href="../../GameMaker_Language/GML_Overview/Language_Features/return.htm"><span class="notranslate">return</span></a> который используется для возврата данных из расширения обратно в код <span class="notranslate">GML</span>, где была вызвана функция.</li>
   </ul>
-  <p>If you were writing a <span class="inline">DLL</span> or JavaScript extension, then the process would be similar but in the correct language for the extension&#39;s file format.</p>
-  <p>Once you have done that, you need to add the file to the extension (using the &quot;Add File&quot; option) which will chain a new window to the Extensions Properties for the File Properties:</p>
-  <p class="dropspot"><img alt="File Property Window" class="center" height="553" src="../../assets/Images/Asset_Editors/Editor_Extensions_FileProperties.png" width="1050" /></p>
-  <p>Here you would select the target platform for the extension (for GML you would select them all), as well as rename the extension file and set a few other details, which we&#39;ll cover in a moment.</p>
-  <p class="note"><span data-conref="../../assets/snippets/Tag_note.hts"> </span> Adding a file to an extension copies it to the project directory, meaning that any further changes must be made to that copy for them to be visible in-game. You can find the copy by right-clicking on your extension in the Asset Browser and selecting &quot;Open in Explorer&quot;.</p>
-  <h2>Adding Functions</h2>
-  <p>The editor should automatically be populated with the functions included in our GML file, but if it isn&#39;t then you can add them manually by clicking on the functions menu button <img alt="Estension Options Icon" class="icon" src="../../assets/Images/Icons/Icon_ExtensionMenu.png" /> and selecting what you require:</p>
-  <p class="dropspot"><img alt="Add functions/Constants To An Extension" class="center" src="../../assets/Images/Asset_Editors/Editor_Extensions_AddFunctions.png" /></p>
-  <p>Selecting &quot;Add Function&quot; will permit you to add a function to the extension which can then be called in <span data-keyref="GameMaker Name">GameMaker</span> same as any of the built-in functions. <span>Once the function has been added, the following window will open for you to define the function properties (or you can double-click the function to open it):</span></p>
-  <p class="dropspot"><img alt="Function Editor" class="center" src="../../assets/Images/Asset_Editors/Editor_Extensions_FunctionEditor.png" /></p>
-  <p>In the image above we have populated the function editor with the details for the function <span class="inline">instance_create_colour()</span> that we defined in our GML extension file (note that this function editor window isn&#39;t just for defining GML functions -- it will be the same across all extension types). Let&#39;s go through each option that can be defined for a function:</p>
+  <p>Если бы вы писали расширение <span class="inline">DLL</span> или JavaScript, то процесс был бы аналогичным, но на языке, соответствующем формату файла расширения.</p>
+  <p>После этого необходимо добавить файл в расширение (с помощью опции &quot;Добавить файл&quot;), что вызовет новое окно в Свойствах расширений для Свойств файла:</p>
+  <p class="dropspot"><img alt="Extension Properties" class="center" height="519" src="../../assets/Images/Asset_Editors/Editor_Extensions.png" width="486" /></p>
+  <p>Здесь вы можете выбрать целевую платформу для расширения (для GML вы можете выбрать их все), а также переименовать файл расширения и задать несколько других деталей, которые мы рассмотрим чуть позже.</p>
+  <p class="note"><strong>ПРИМЕЧАНИЕ</strong>: Добавление файла в расширение копирует его в каталог проекта, что означает, что любые дальнейшие изменения должны быть внесены в эту копию, чтобы они были видны в игре. Вы можете найти копию, щелкнув правой кнопкой мыши на расширении в браузере активов и выбрав &quot;Открыть в проводнике&quot;.</p>
+  <h2>Добавление функций</h2>
+  <p>Редактор должен автоматически заполниться функциями, включенными в наш файл <span class="notranslate">GML</span>, но если это не так, то вы можете добавить их вручную, нажав на кнопку меню функций <img> и выбрав то, что вам нужно:</p>
+  <p class="dropspot"><img alt="Estension Options Icon" class="icon" src="../../assets/Images/Icons/Icon_ExtensionMenu.png" /></p>
+  <p>Выбор пункта &quot;Добавить функцию&quot; позволит вам добавить в расширение функцию, которая затем может быть вызвана в <span data-keyref="GameMaker Name">GameMaker</span> так же, как и любая из встроенных функций. <span>После добавления функции откроется следующее окно для определения свойств функции (или вы можете дважды щелкнуть на функции, чтобы открыть ее):</span></p>
+  <p class="dropspot"><img alt="Add Files To An Extension" class="center" src="../../assets/Images/Asset_Editors/Editor_Extensions_Files.png" /></p>
+  <p>На рисунке выше мы заполнили редактор функций деталями для функции <span class="inline">instance_create_colour()</span>, которую мы определили в нашем файле расширения <span class="notranslate">GML</span> (обратите внимание, что это окно редактора функций предназначено не только для определения функций <span class="notranslate">GML</span> - оно будет одинаковым для всех типов расширений). Давайте рассмотрим каждый параметр, который может быть определен для функции:</p>
   <ul class="colour">
-    <li>You can see that we have given the function a <em>Name</em>, which is what you would use when calling the function in your project; note that this name doesn&#39;t have to match the one used in the extension -- you can name it anything you like and then use the <em>External Name</em> field to link it to the actual name defined in the extension:<img class="center" src="../../assets/Images/Asset_Editors/Editor_Extensions_FunctionNames.png" /></li>
-    <li>Below that you have a section for defining the <em>Help </em>text, which is the text that will be shown in the code completion pop-up and the helper text at the bottom of the code editor.</li>
-    <li>Next you can define the <em>Return Type</em>, which can be a <strong>double </strong>(real number <a class="glossterm" data-glossterm="floating point" href="#">floating point</a> value) or a <strong>string</strong>; if there is nothing returned by the external function, then this does not matter.</li>
-    <li>Under that you define the arguments that the function will take. These arguments can be either <strong>doubles </strong>or <strong>strings</strong>, and you can add them by clicking the add button <img alt="Add Argument Icon" class="icon" height="18" src="../../assets/Images/Icons/Icon_AddArgument.png" width="18" /> and remove them by clicking the remove button <img alt="Remove Argument Icon" class="icon" src="../../assets/Images/Icons/Icon_RemoveArgument.png" />.<br />
-      <br />
-      If your function can take a variable amount of arguments (meaning it has some optional arguments), you should make sure to check the &quot;Variable Length Arguments&quot; checkbox at the bottom.
+    <li>Вы можете видеть, что мы задали функции <em>имя</em>, которое вы будете использовать при вызове функции в вашем проекте; обратите внимание, что это имя не обязательно должно совпадать с именем, используемым в расширении - вы можете назвать ее как угодно, а затем использовать поле <em>External Name</em> для связи с реальным именем, определенным в расширении:<img></li>
+    <li>Ниже находится раздел для определения текста <em>справки </em>- текста, который будет отображаться во всплывающем окне завершения кода и вспомогательном тексте в нижней части редактора кода.</li>
+    <li>Далее вы можете определить <em>тип возврата</em>, который может быть <strong>двойным </strong>(вещественное число с <a class="glossterm" data-glossterm="плавающая запятая" href="#">плавающей точкой</a> ) или <strong>строкой</strong>; если внешняя функция ничего не возвращает, то это не имеет значения.</li>
+    <li>Под ним вы определяете аргументы, которые будет принимать функция. Эти аргументы могут быть <strong>двойными </strong>или <strong>строками</strong>, и вы можете добавить их, нажав кнопку add <img>, и удалить, нажав кнопку remove <img>.<br>
+      <br>
+      Если ваша функция может принимать переменное количество аргументов (то есть у нее есть необязательные аргументы), вам следует установить флажок &quot;Аргументы переменной длины&quot; внизу.
     </li>
   </ul>
-  <p class="note"><span data-conref="../../assets/snippets/Tag_note.hts"> </span> If the function is part of a native extension for Windows, Mac or Ubuntu (<span class="inline">dll</span>, <span class="inline">dylib</span> or <span class="inline">so</span> respectively) and it has more than four arguments, <strong>all arguments must be of the same type</strong>.</p>
-  <p>Once you have done all that then the function is ready to be used in the project; it will now show up in auto-complete and be colour-coded too:</p>
-  <p><img class="center" src="../../assets/Images/Asset_Editors/Editor_Extensions_GMLFunctionExample.png" />Defined functions can also be set as <strong>Init Functions</strong> or <strong>Final Functions</strong>, meaning that they will be called automatically when the game starts (Init) and when the game ends (Final).</p>
-  <p class="note"><span data-conref="../../assets/snippets/Tag_important.hts"> </span> All platforms support the Init function call, <strong>but not all platforms will perform the Final function call.</strong> This is because certain platforms will simply close the app without giving any notice or time for this function to be called. The platforms mostly affected by this are <strong>iOS</strong>, <strong>Android</strong>, <strong>HTML5</strong>, <strong>PlayStation </strong>and <strong>Xbox</strong>.</p>
-  <h2>Macros</h2>
-  <p>The other option you have is to create a <strong>Macro</strong>. A macro can be either a <a class="glossterm" data-glossterm="constant" href="#">constant</a> value or a short snippet of code (for more information on macros, please see <a href="../../GameMaker_Language/GML_Overview/Variables/Constants.htm">here</a>). For example, we could remove the <span class="inline">c_alice_blue</span> function from our previously defined GML extension and make it a macro instead. To create a macro, you can simply click on the &quot;Macros&quot; button in the Extension Properties, which will open the following window:</p>
-  <p class="dropspot"><img alt="Macro Editor" class="center" src="../../assets/Images/Asset_Editors/Editor_Extensions_MacroEditor.png" /></p>
-  <p>The editor here is pretty much self explanatory: you give the name of the macro and its constant value, or a short line of code. Note that if the macro is a line of code <strong>it will be evaluated every time the macro is called</strong>.</p>
-  <h2 id="h1">Creating Extension Options</h2>
-  <p>Click on the cog icon next to &quot;<strong>Extension Options</strong>&quot; to create or modify the options for your extensions:</p>
-  <p><img class="center" src="../../assets/Images/Asset_Editors/Editor_Extensions_OpenExtensionOptions.png" />After clicking &quot;<strong>Yes</strong>&quot; on the confirmation prompt, you will see a new window, where you can add new extension options:</p>
-  <p><img class="center" src="../../assets/Images/Asset_Editors/Editor_Extensions_Options_Edit.png" />You can give each extension option a name, a default value, and a data type. The name is what you would use internally in your extension code to retrieve the option&#39;s value.</p>
-  <p>Aside from adding options using &quot;Add Option&quot; you can also add sections using &quot;Add Section&quot;. A section is <strong>not</strong> an option, but only a heading displayed in the main Extension Editor window. Use this if you have a lot of options and want to clean up the options list that the end user sees.</p>
-  <p>The following types of options can be created:</p>
+  <p class="note"><strong>ПРИМЕЧАНИЕ</strong>: Если функция является частью встроенного расширения для <span class="notranslate">Windows</span>, Mac или <span class="notranslate">Ubuntu</span> (<span class="inline">dll</span>, <span class="inline">dylib</span> или <span class="inline">so</span> соответственно) и имеет более четырех аргументов, <strong>все аргументы должны быть одного типа</strong>.</p>
+  <p>После этого функция готова к использованию в проекте; теперь она будет отображаться в автозаполнении и будет выделена цветом:</p>
+  <p><img>Определенные функции можно также установить как <strong>начальные (Init Functions</strong> ) или <strong>конечные (Final Functions</strong>), что означает, что они будут вызываться автоматически при начале игры (Init) и при завершении игры (Final).</p>
+  <p class="note"><strong>ВАЖНО!</strong> Все платформы поддерживают вызов функции Init, <strong>но не все платформы будут выполнять вызов функции Final.</strong> Это связано с тем, что некоторые платформы просто закрывают приложение, не давая никакого уведомления или времени для вызова этой функции. В основном это касается таких платформ, как <strong>iOS</strong>, <strong>Android</strong>, <strong>HTML5</strong>, <strong>PlayStation </strong>и <strong>Xbox</strong>.</p>
+  <h2>Макросы</h2>
+  <p>Другой вариант - создать <strong>макрос</strong>. Макрос может быть как <a class="glossterm" data-glossterm="постоянная" href="#">постоянным</a> значением, так и коротким фрагментом кода (более подробную информацию о макросах можно найти <a href="../../GameMaker_Language/GML_Overview/Variables/Constants.htm">здесь</a>). Например, мы можем удалить функцию <span class="inline">c_alice_blue</span> из нашего ранее определенного расширения <span class="notranslate">GML</span> и сделать ее макросом. Чтобы создать макрос, можно просто нажать на кнопку &quot;Макросы&quot; в Свойствах расширения, в результате чего откроется следующее окно:</p>
+  <p class="dropspot"><img alt="File Property Window" class="center" height="553" src="../../assets/Images/Asset_Editors/Editor_Extensions_FileProperties.png" width="1050" /></p>
+  <p>Редактор здесь практически ничего не объясняет: вы указываете имя макроса и его постоянное значение или короткую строку кода. Обратите внимание, что если макрос представляет собой строку кода, <strong>она будет оцениваться каждый раз при вызове макроса</strong>.</p>
+  <h2 id="h1">Создание опций расширения</h2>
+  <p>Нажмите на значок шестеренки рядом с &quot;<strong>Параметры расширений</strong>&quot;, чтобы создать или изменить параметры для ваших расширений:</p>
+  <p><img>После нажатия кнопки &quot;<strong>Да</strong>&quot; на запрос подтверждения вы увидите новое окно, в котором можно добавить новые параметры расширения:</p>
+  <p><img>Каждому параметру расширения можно присвоить имя, значение по умолчанию и тип данных. Имя - это то, что вы будете использовать внутри кода расширения для получения значения опции.</p>
+  <p>Помимо добавления опций с помощью &quot;Add Option&quot;, вы можете добавлять разделы с помощью &quot;Add Section&quot;. Раздел - это <strong>не</strong> опция, а только заголовок, отображаемый в главном окне редактора расширений. Используйте эту функцию, если у вас много опций и вы хотите очистить список опций, который видит конечный пользователь.</p>
+  <p>Можно создать следующие типы опций:</p>
   <ul class="colour">
-    <li><strong>Boolean</strong>: This creates a true/false checkbox.</li>
-    <li><strong>Number</strong>: This is a real number.</li>
-    <li><strong>String</strong>: This is a text string.</li>
-    <li><strong>FilePath</strong>: This is a path to a file. It allows you to use your OS&#39;s explorer to browse for a file.</li>
-    <li><strong>FolderPath</strong>: This is a path to a folder/directory. It allows you to use your OS&#39;s explorer to browse for a folder.</li>
-    <li><strong>List</strong>: This is a dropdown from which a single item can be selected from a predefined list of items.</li>
+    <li><strong>Булево</strong>: Создает флажок "истина/ложь".</li>
+    <li><strong>Число</strong>: Это действительное число.</li>
+    <li><strong>Строка</strong>: Это текстовая строка.</li>
+    <li><strong>FilePath</strong>: Это путь к файлу. Он позволяет вам использовать проводник вашей ОС для поиска файла.</li>
+    <li><strong>FolderPath</strong>: Это путь к папке/каталогу. Он позволяет вам использовать проводник вашей ОС для поиска папки.</li>
+    <li><strong>Список</strong>: Это выпадающий список, из которого можно выбрать один элемент из заранее определенного списка элементов.</li>
   </ul>
-  <p>You can also click on the <img class="icon" src="../../assets/Images/Icons/Icon_Cog.png" /> cog icon next to an option to give it an optional <strong>Display Name</strong> and <strong>Description</strong> (that appears as a tooltip on hovering on the Display Name).</p>
-  <p>In the extras window, you can also choose to export this option to the <strong>options.ini</strong> file bundled with your game.</p>
-  <p>Finally you can choose to hide the option from the editor, making it invisible to the end user who uses the extension.</p>
-  <h3>Using Extension Options</h3>
-  <p>You can retrieve the values of an extension&#39;s options at runtime by using the <a href="../../GameMaker_Language/GML_Reference/Asset_Management/Extensions/Extensions.htm">Extension Functions</a>.</p>
-  <p>You can also retrieve your extension options in your <a data-xref="{title}" href="../../Settings/Runner_Details/Compiler_Batch_Files.htm">Compiler Batch Files / Scripts</a> by using the name <span class="inline2">YYEXTOPT_&lt;ExtensionName&gt;_&lt;OptionName&gt;</span>.</p>
-  <p class="note"><span data-conref="../../assets/snippets/Tag_note.hts"> </span> You can use the extension version number in <a data-xref="{title}" href="../../Settings/Runner_Details/Compiler_Batch_Files.htm">Compiler Batch Files / Scripts</a> as well, using the name <span class="inline2">GMEXT_&lt;ExtensionName&gt;_version</span>.</p>
-  <p>Extension options will only be available at runtime if the extension has functions that are used at runtime. However, options will always be exported to the INI file (if the option is enabled) and batch scripts regardless of the extension&#39;s use.</p>
-  <h2>Proxy Files</h2>
-  <p>When working with multiple target platforms, it is worth noting that you can create a single extension with only one set of functions/macros which will work on <em>all </em>platforms. This is achieved by adding only one of the link libraries to your game as an extension and placing the other(s) into the list of <strong>Proxy Files</strong> in the <strong>Extension Properties</strong> window.</p>
-  <p><img class="center" src="../../assets/Images/Asset_Editors/Editor_Extensions_ProxyFiles.png" />For example, say you have a Windows extension with the <span class="inline"> <strong>dll </strong></span>&quot;<span class="inline">Haggis.dll</span>&quot;. You would simply replicate this <span class="inline"> <strong>dll</strong></span> as a Mac <span class="inline"> <strong>DyLib</strong></span>, naming it &quot;<span class="inline"><strong>libHaggis.dylib</strong></span>&quot; and making sure that the internal function names match those of the original Windows <span class="inline"> <strong>dll</strong></span>. This <strong> <span class="inline">DyLib</span> </strong>would then be added into the Proxy Files and set to export when the game is run on the Mac target, and <span data-keyref="GameMaker Name">GameMaker</span> will automatically use it when the extension functions are called.</p>
-  <p>To add a proxy file, you can simply click on the <img alt="Add Argument Icon" class="icon" height="18" src="../../assets/Images/Icons/Icon_AddArgument.png" width="18" /> button in the Properties window for the selected resource file and browse to the file location. Once it is added you may need to update the extension&#39;s targets to add the appropriate module, and when you next run your game it will be included as a proxy for that platform. You can remove proxy files too by clicking on the <img alt="Remove Argument Icon" class="icon" src="../../assets/Images/Icons/Icon_RemoveArgument.png" /> button which will remove the selected proxy file.</p>
-  <p>Once you have added your proxy files they will be copied into the Extensions folder of your project (you can find them by right-clicking <img alt="RMB Icon" class="icon" src="../../assets/Images/Icons/Icon_RMB.png" /> on the extension and selecting <em>Open in Explorer</em>), so if you need to edit them, you should edit the copied files that are bundled with the game and not the source file that was imported, as <span data-keyref="GameMaker Name">GameMaker</span> will be using the ones in the project for compiling.</p>
-  <h2 id="h">Naming Conventions</h2>
-  <p>It is very important that your proxy files follow the naming conventions listed below, as <span data-keyref="GameMaker Name">GameMaker</span> will parse these names and assign the target module for the file according to its extension and name and will automatically link the files for you. If you do not follow these conventions your game may not work at runtime, as <span data-keyref="GameMaker Name">GameMaker</span> will not be able to work out which file to use so it will not load the file properly.</p>
-  <p>The naming conventions for each target platform are given below:</p>
+  <p>Вы также можете щелкнуть на значке <img> рядом с опцией, чтобы дать ей дополнительное <strong>отображаемое имя</strong> и <strong>описание</strong> (которое появляется в виде всплывающей подсказки при наведении на отображаемое имя).</p>
+  <p>В окне дополнительных возможностей вы также можете выбрать экспорт этой опции в файл <strong>options.ini</strong>, поставляемый вместе с игрой.</p>
+  <p>Наконец, вы можете скрыть опцию из редактора, сделав ее невидимой для конечного пользователя, использующего расширение.</p>
+  <h3>Использование опций расширения</h3>
+  <p>Вы можете получить значения опций расширения во время выполнения с помощью <a href="../../GameMaker_Language/GML_Reference/Asset_Management/Extensions/Extensions.htm">функций расширения</a>.</p>
+  <p>Вы также можете получить опции расширения в <a data-xref="{title}" href="../../Settings/Runner_Details/Compiler_Batch_Files.htm">пакетных файлах / скриптах компилятора</a>, используя имя <span class="inline2">YYEXTOPT_&lt;ExtensionName&gt;_&lt;OptionName&gt;</span>.</p>
+  <p>Опции расширения будут доступны во время выполнения, только если расширение имеет функции, которые используются во время выполнения. Однако опции всегда будут экспортироваться в INI-файл (если опция включена) и пакетные сценарии независимо от использования расширения.</p>
+  <h2>Прокси-файлы</h2>
+  <p>При работе с несколькими целевыми платформами стоит отметить, что вы можете создать одно расширение с одним набором функций/макросов, которое будет работать на <em>всех </em>платформах. Это достигается путем добавления только одной из библиотек ссылок в вашу игру в качестве расширения и размещения другой(их) в списке <strong>Proxy Files</strong> в окне <strong>Extension Properties</strong>.</p>
+  <p><img>Например, допустим, у вас есть расширение <span class="notranslate">Windows</span> с расширением <span class="inline"> <strong>dll </strong></span>&quot;<span class="inline">Haggis.dll</span>&quot;. Вы просто скопируете этот <span class="inline"> <strong>dll</strong></span> как Mac <span class="inline"> <strong>DyLib</strong></span>, назвав его &quot;<span class="inline"><strong>libHaggis.dylib</strong></span>&quot; и убедившись, что имена внутренних функций совпадают с именами исходного <span class="notranslate">Windows</span> <span class="inline"> <strong>dll</strong></span>. Этот <strong> <span class="inline">DyLib</span> </strong>затем добавляется в файлы прокси и устанавливается на экспорт при запуске игры на Mac, и <span data-keyref="GameMaker Name">GameMaker</span> автоматически использует его при вызове функций расширения.</p>
+  <p>Чтобы добавить прокси-файл, достаточно нажать кнопку <img> в окне свойств выбранного файла ресурсов и перейти к расположению файла. После его добавления вам может понадобиться обновить цели расширения, чтобы добавить соответствующий модуль, и при следующем запуске вашей игры он будет включен в качестве прокси для этой платформы. Вы также можете удалить прокси-файлы, нажав на кнопку <img>, которая удалит выбранный прокси-файл.</p>
+  <p>После добавления прокси-файлов они будут скопированы в папку Extensions вашего проекта (вы можете найти их, щелкнув правой кнопкой мыши <img> на расширении и выбрав <em>Open in Explorer</em>), поэтому, если вам нужно их отредактировать, вы должны редактировать скопированные файлы, которые идут в комплекте с игрой, а не исходный файл, который был импортирован, так как <span data-keyref="GameMaker Name">GameMaker</span> будет использовать те, которые находятся в проекте для компиляции.</p>
+  <h2 id="h">Соглашения об именовании</h2>
+  <p>Очень важно, чтобы ваши прокси-файлы соответствовали приведенным ниже соглашениям об именовании, поскольку <span data-keyref="GameMaker Name">GameMaker</span> будет анализировать эти имена и назначать целевой модуль для файла в соответствии с его расширением и именем, а также автоматически связывать файлы для вас. Если вы не будете следовать этим соглашениям, ваша игра может не работать во время выполнения, поскольку <span data-keyref="GameMaker Name">GameMaker</span> не сможет определить, какой файл использовать, и не загрузит его должным образом.</p>
+  <p>Ниже приведены соглашения об именовании для каждой целевой платформы:</p>
   <table>
     <colgroup>
       <col style="width: 173px;" />
@@ -119,8 +118,8 @@
     </colgroup>
     <tbody>
       <tr>
-        <th>Platform</th>
-        <th>Names</th>
+        <th>Платформа</th>
+        <th>Имена</th>
       </tr>
       <tr>
         <td>Windows 32bit Runtime</td>
@@ -131,19 +130,23 @@
         <td><span class="inline">&lt;<em>N</em><em>ame</em>&gt;_x64.dll, lib&lt;<em>Name</em>&gt;_x64.dll</span></td>
       </tr>
       <tr>
-        <td>Ubuntu (Linux)</td>
-        <td><span class="inline">&lt;<span class="inline"><span class="inline"><em>Name</em></span></span>&gt;.so, lib&lt;<span class="inline"><span class="inline"><em>Name</em></span></span>&gt;.so,<br />
-            &lt;<span class="inline"><span class="inline"><em>Name</em></span></span>&gt;_linux.so, lib&lt;<span class="inline"><span class="inline"><em>Name</em></span></span>&gt;_linux.so,<br />
-            <br />
-            &lt;<span class="inline"><span class="inline"><em>Name</em></span></span>&gt;_arm.so, lib&lt;<span class="inline"><span class="inline"><em>Name</em></span></span>&gt;_arm.so,<br />
-            <span class="inline">lib&lt;<span class="inline"><span class="inline"><em>Name</em></span></span>&gt;_linux_arm.so,</span><br />
-            <br />
-            &lt;<em>Name</em>&gt;_arm64.so, lib&lt;<em>Name</em>&gt;_arm64.so, lib&lt;<em>Name</em>&gt;_linux_arm64.so,<br />
-            <br />
-            &lt;<em>Name</em>&gt;_arm64-v8.so,<br />
-            lib&lt;<em>Name</em>&gt;_arm64-v8.so, lib&lt;Name&gt;_linux_arm64-v8.so,<br />
-            <br />
-            &lt;<span class="inline"><span class="inline"><em>Name</em></span></span>&gt;_armeabi-v7a.so, lib&lt;<span class="inline"><span class="inline"><em>Name</em></span></span>&gt;_armeabi-v7a.so, lib&lt;<span class="inline"><span class="inline"><em>Name</em></span></span>&gt;_linux_armeabi-v7a.so</span></td>
+        <td>UWP</td>
+        <td><span class="inline"><span class="inline">&lt;<em>Name</em>&gt;.dll, &lt;<span class="inline"><span class="inline"><em>Name</em></span>&gt;_win8_x86.dll, &lt;<span class="inline"><span class="inline"><em>Name</em></span>&gt;_win8_arm.dll, lib&lt;<span class="inline"><span class="inline"><em>Name</em></span>&gt;_win8_x86.dll, lib&lt;<span class="inline"><span class="inline"><em>Name</em></span>&gt;_win8_arm.dll</td>
+      </tr>
+      <tr>
+        <td>Ubuntu (<span class="notranslate">Linux</span>)</td>
+        <td><span class="inline">&lt;<span class="inline"><span class="inline"><em>Name</em></span>&gt;.so, lib&lt;<span class="inline"><span class="inline"><em>Name</em></span>&gt;.so,<br>
+            &lt;<span class="inline"><span class="inline"><em>Name</em></span>&gt;_linux.so, lib&lt;<span class="inline"><span class="inline"><em>Name</em></span>&gt;_linux.so,<br>
+            <br>
+            &lt;<span class="inline"><span class="inline"><em>Name</em></span>&gt;_arm.so, lib&lt;<span class="inline"><span class="inline"><em>Name</em></span>&gt;_arm.so,<br>
+            <span class="inline">lib&lt;<span class="inline"><span class="inline"><em>Name</em></span>&gt;_linux_arm.so,<br>
+            <br>
+            &lt;<em>Имя&gt;_arm64</em>.so, lib&lt;<em>Имя&gt;_arm64</em>.so, lib&lt;<em>Имя&gt;_linux_arm64</em>.so,<br>
+            <br>
+           <em>&lt;Имя&gt;_arm64-v8</em>.so,<br>
+           <em>lib&lt;Имя&gt;_arm64-v8</em>.so, lib&lt;Имя&gt;_linux_arm64-v8.so,<br>
+            <br>
+            &lt;<span class="inline"><span class="inline"><em>Name</em></span>&gt;_armeabi-v7a.so, lib&lt;<span class="inline"><span class="inline"><em>Name</em></span>&gt;_armeabi-v7a.so, lib&lt;<span class="inline"><span class="inline"><em>Name</em></span>&gt;_linux_armeabi-v7a.so</td>
       </tr>
       <tr>
         <td>macOS</td>
@@ -163,25 +166,25 @@
       </tr>
       <tr>
         <td>Xbox One</td>
-        <td><span class="inline"><span class="inline">&lt;<em>Name</em>&gt;.dll, </span>&lt;<em>Name</em>&gt;_xboxone.dll</span></td>
+        <td><span class="inline"><span class="inline">&lt;<em>Name</em>&gt;.dll, </span><em>&lt;Имя&gt;_xboxone</em>.dll</td>
       </tr>
       <tr>
         <td>Xbox Series X|S</td>
-        <td><span class="inline"><span class="inline">&lt;<em>Name</em>&gt;.dll, </span>&lt;<em>Name</em>&gt;_xboxseriesxs.dll</span></td>
+        <td><span class="inline"><span class="inline">&lt;<em>Name</em>&gt;.dll, </span><em>&lt;Имя&gt;_xboxseriesxs</em>.dll</td>
       </tr>
     </tbody>
   </table>
-  <p>Using the conventions above, you would swap out the <span class="inline">&lt;<em>Name</em>&gt;</span> part for the name of the base file that you are adding the proxy files for.</p>
-  <p> </p>
-  <p> </p>
+  <p>Используя вышеприведенные соглашения, вы замените часть <span class="inline">&lt;<em>Name</em>&gt;</span> на имя базового файла, для которого вы добавляете прокси-файлы.</p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="../Extensions.htm">The Extension Editor</a></div>
-        <div style="float:right">Next: <a href="Android_Extensions.htm">Android Extensions</a></div>
+        <div style="float:left">Назад: <a href="../Extensions.htm">Редактор расширений</a></div>
+        <div style="float:right">Следующее: <a href="Android_Extensions.htm">Расширения для Android</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 Creating Extensions

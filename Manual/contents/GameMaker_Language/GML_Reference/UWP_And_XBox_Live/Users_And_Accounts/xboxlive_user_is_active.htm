@@ -6,7 +6,7 @@
   <title>xboxlive_user_is_active</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference page for xboxlive_user_is_active" />
   <meta name="rh-index-keywords" content="xboxlive_user_is_active" />
@@ -15,28 +15,28 @@
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
   <h1>xboxlive_user_is_active</h1>
-  <p>With this function you can check whether the given user ID is in the list of users currently using the console, and the function will return <span class="inline">true</span> if they are, or <span class="inline">false</span> otherwise. You can get a User ID pointer with the function <span class="inline"><a href="xboxlive_get_user.htm">xboxlive_get_user()</a>.</span></p>
-  <p> </p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p>С помощью этой функции вы можете проверить, есть ли заданный идентификатор пользователя в списке пользователей, использующих консоль в данный момент, и функция вернет <span class="inline">true</span>, если есть, или <span class="inline">false</span> в противном случае. Вы можете получить указатель идентификатора пользователя с помощью функции <span class="inline"><a href="xboxlive_get_user.htm">xboxlive_get_user()</a>.</span></p>
+  <p> </p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
   <p class="code">xboxlive_user_is_active(user_id);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th><th>Type</th>
-        <th>Description</th>
+        <th>Аргумент</th><th>Тип</th>
+        <th>Описание</th>
      </tr>
       <tr>
-        <td>user_id</td><td><span data-keyref="Type_ID_Xbox_User"></span></td>
-        <td>The ID pointer of the user to check.</td>
+        <td><span class="notranslate">user_id</span></td><td><span data-keyref="Type_ID_Xbox_User"></span></td>
+        <td><span class="notranslate">The ID pointer of the user to check.</span></td>
      </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
   <p class="code"><span data-keyref="Type_Bool"></span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Пример:</h4>
   <p class="code">global.PlayerNum = 0;<br />
     global.Player_ID = array_create();<br />
     for(var i = 0; i &lt; xboxlive_get_user_count(); ++i;)<br />
@@ -47,18 +47,18 @@
             global.Player_ID[global.PlayerNum++] = _uid;<br />
         }<br />
     }</p>
-  <p>The above code loops through the user accounts and then checks to see if any of them are active. If they are, their user ID is added into a global array.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Приведенный выше код перебирает все учетные записи пользователей, а затем проверяет, активны ли они. Если они активны, их идентификатор пользователя добавляется в глобальный массив.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Users_And_Accounts.htm">Users And Accounts</a></div>
-        <div style="float:right">Next: <a href="xboxlive_user_is_remote.htm">xboxlive_user_is_remote</a></div>
+        <div style="float:left">Назад: <a href="Users_And_Accounts.htm">Пользователи и учетные записи</a></div>
+        <div style="float:right">Следующий: <a href="xboxlive_user_is_remote.htm"><span class="notranslate">xboxlive_user_is_remote</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 xboxlive_user_is_active

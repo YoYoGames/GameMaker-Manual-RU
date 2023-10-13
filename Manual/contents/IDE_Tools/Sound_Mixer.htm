@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Sound Mixer</title>
+  <title>Звуковой микшер</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../assets/css/default.css" type="text/css" />
-  <script src="../assets/scripts/main_script.js" type="module"></script>
+  <script src="../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Section that covers the Sound Mixer" />
   <meta name="rh-index-keywords" content="Sound Mixer" />
@@ -14,28 +14,28 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1><span data-field="title" data-format="default">Sound Mixer</span></h1>
-  <p><img alt="The Sound Mixer" class="center" src="../assets/Images/IDE Tools/Audio_Mixer.png" />While creating any project it can be useful to check and set volumes of groups of sounds together, so that you can be sure that in-game they all sound correct. This can be tricky when you have to open each individual sound editor within the workspace, and so <span data-keyref="GameMaker Name">GameMaker</span> permits you to open a<strong> Sound Mixer</strong> window where you can play multiple sounds all from the same place and tweak their volume levels accordingly. This window can be opened from the <a href="../The_Asset_Editors/Sounds.htm">Sound Editor</a> (which will add that selected sound to the mixer view) or from the <a href="../IDE_Navigation/Menus/The_Tools_Menu.htm">Tools Menu</a>.</p>
-  <p>To add sounds to the mixer, you can use <img alt="Control Icon" class="icon" height="20" src="../assets/Images/Icons/Icon_Ctrl.png" width="55" /> / <img alt="CMD Icon" class="icon" height="20" src="../assets/Images/Icons/Icon_Cmd.png" width="55" /> +<img alt="LMB Icon" class="icon" height="22" src="../assets/Images/Icons/Icon_LMB.png" width="20" /> to select sounds in the <a href="../Introduction/The_Asset_Browser.htm">Asset Browser</a> and then open the right click <img alt="RMB Icon" class="icon" height="24" src="../assets/Images/Icons/Icon_RMB.png" width="21" /> menu and select <strong>Open In Sound Mixer</strong>. Alternatively, you can click <img alt="LMB Icon" class="icon" height="22" src="../assets/Images/Icons/Icon_LMB.png" width="20" /> on a sound asset and drag it into the mixer.</p>
-  <p>The mixer itself is split into the following sections:</p>
+  <h1>Звуковой микшер</h1>
+  <p><img>При создании любого проекта бывает полезно проверить и установить громкость групп звуков вместе, чтобы быть уверенным, что в игре все они звучат правильно. Это может быть непросто, если вам приходится открывать каждый отдельный звуковой редактор в рабочей области, поэтому <span data-keyref="GameMaker Name">GameMaker</span> позволяет вам открыть окно<strong> Sound Mixer</strong>, в котором вы можете воспроизводить несколько звуков в одном месте и соответствующим образом настраивать их уровни громкости. Это окно можно открыть из <a href="../The_Asset_Editors/Sounds.htm">редактора звуков</a> (что добавит выбранный звук в представление микшера) или из <a href="../IDE_Navigation/Menus/The_Tools_Menu.htm">меню Инструменты</a>.</p>
+  <p>Чтобы добавить звуки в микшер, вы можете использовать <img> / <img> +<img> для выбора звуков в <a href="../Introduction/The_Asset_Browser.htm">браузере активов</a>, а затем открыть меню правой кнопки мыши <img> и выбрать <strong>Open In Sound Mixer</strong>. В качестве альтернативы можно щелкнуть <img> на звуковом активе и перетащить его в микшер.</p>
+  <p>Сам смеситель разделен на следующие разделы:</p>
   <ul class="Disc">
-    <li><strong>Column Controls</strong>: This section contains the controls for the column of sounds. You can choose to play back all sounds in the column, as well as set them to loop or rewind to the start. You can also set the volume that they should be played back at, and changing this value will change it for all sounds in the group in real time.</li>
-    <li><strong>Audio Group</strong>: If you have assigned sound resources to different <a href="../Settings/Audio_Groups.htm">Audio Groups</a> then you can select the group from this drop-down menu and all the sounds will be added to the current sound mixer column.</li>
-    <li><strong>Sound Assets</strong>: This part of the column view shows each of the sounds that have been added to the mixer. You can set the overall volume for all sounds for the column at the top of the mixer, then use the individual sound volume controllers to change it as required, and you can also playback and loop individual sounds. To remove a sound from the column view, simply click the close button <img alt="Mixer Close SOund Icon" src="../assets/Images/Icons/Mixer_CloseColumn.png" /> for the sound, and you can also expand/collapse the individual sound playback and volume controls to make the view more compact.</li>
-    <li><strong>Link Columns</strong>: The Link Columns button <img alt="Mixer Link Columns Icon" src="../assets/Images/Icons/Mixer_LinkColumns.png" /> will link adjacent columns meaning that their volume and playback controls will now be linked. So, any sounds that are in either of the linked columns will have their volume affected by changes to either column control.</li>
-    <li><strong>Extra Column / Add Column</strong>: You can add as many extra columns to the sound mixer as required by clicking the large button to the right of the mixer. Each extra column will be added to he right-most column and can then be linked the previous one, and you can add sounds or audio groups as you would normally. If you need to remove a column from the mixer, then you can find the <strong>Remove Sound Group</strong> button <img alt="Mixer Close SOund Icon" src="../assets/Images/Icons/Mixer_CloseColumn.png" /> found beside the Audio Group drop down menu.</li>
+    <li><strong>Элементы управления колонкой</strong>: Этот раздел содержит элементы управления колонкой звуков. Вы можете выбрать воспроизведение всех звуков в колонке, а также установить их зацикливание или перемотку к началу. Вы также можете установить громкость, с которой они должны воспроизводиться, и изменение этого значения изменит его для всех звуков в группе в реальном времени.</li>
+    <li><strong>Аудиогруппа</strong>: Если вы назначили звуковые ресурсы различным <a href="../Settings/Audio_Groups.htm">аудиогруппам</a>, вы можете выбрать группу из этого выпадающего меню, и все звуки будут добавлены в текущую колонку звукового микшера.</li>
+    <li><strong>Звуковые ресурсы</strong>: В этой части представления колонок отображаются все звуки, которые были добавлены в микшер. Вы можете установить общую громкость для всех звуков колонки в верхней части микшера, а затем использовать регуляторы громкости отдельных звуков для ее изменения по мере необходимости, а также воспроизводить и зацикливать отдельные звуки. Чтобы удалить звук из представления колонки, просто нажмите кнопку закрытия <img> для этого звука, а также вы можете развернуть/свернуть регуляторы громкости и воспроизведения отдельных звуков, чтобы сделать представление более компактным.</li>
+    <li><strong>Связать колонки</strong>: Кнопка Link Columns <img> свяжет соседние колонки, то есть их регуляторы громкости и воспроизведения будут связаны между собой. Таким образом, любые звуки, находящиеся в любой из связанных колонок, будут иметь свою громкость при изменении регулятора любой из колонок.</li>
+    <li><strong>Дополнительная колонка / Добавить колонку</strong>: Вы можете добавить столько дополнительных колонок в звуковой микшер, сколько необходимо, нажав на большую кнопку справа от микшера. Каждая дополнительная колонка будет добавлена к самой правой колонке и может быть связана с предыдущей, и вы можете добавлять звуки или аудиогруппы, как обычно. Если вам нужно удалить колонку из микшера, то вы можете найти кнопку <strong>Remove Sound Group</strong> <img>, расположенную рядом с выпадающим меню Audio Group.</li>
   </ul>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Additional_IDE_Tools.htm">Additional IDE Tools</a></div>
-        <div style="float:right">Next: <a data-xref="{title}" href="Source_Control.htm">Source Control</a></div>
+        <div style="float:left">Назад: <a href="Additional_IDE_Tools.htm">Дополнительные инструменты <span class="notranslate">IDE</span> </a></div>
+        <div style="float:right">Следующий: <a data-xref="{title}" href="Source_Control.htm">Контроль источников</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 Sound Mixer

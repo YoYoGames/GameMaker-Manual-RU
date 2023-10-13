@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>timeline_get_name</title>
+  <title>имя_временной_линии</title>
   <meta name="generator" content="Adobe RoboHelp 2019" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page outlining the function timeline_get_name" />
   <meta name="rh-index-keywords" content="timeline_get_name" />
@@ -15,43 +15,43 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>timeline_get_name</h1>
-  <p>This function can be used to get the name of a time line as a string. if the time line has been created dynamically using the <a href="timeline_add.htm"><span class="inline">timeline_add()</span></a> function, the name returned will have the
-    format &quot;__newtimeline<i>N</i>&quot; where &quot;<i>N</i>&quot; is the number of the time line (starting from 0). Please note that this is <i>only</i> a string and cannot be used to reference the timeline directly - for
-    that you would need the <i>timeline index</i>. You can, however, use this string to get the <i>timeline index</i> using the returned string along with the function <a href="../Assets_And_Tags/asset_get_index.htm"><span class="inline">asset_get_index()</span></a>.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <h1>имя_временной_линии</h1>
+  <p>Эта функция может быть использована для получения имени временной линии в виде строки. если временная линия была создана динамически с помощью функции <a href="timeline_add.htm"><span class="inline">timeline_add()</span></a> функции, возвращаемое имя будет иметь
+    формат &quot;__newtimelineN&quot;, где &quot;<i>N</i>&quot; - номер временной линии (начиная с 0). Обратите внимание, что это <i>только</i> строка и не может быть использована для прямой ссылки на временную шкалу - для этого вам понадобится индекс временной шкалы.
+    для этого вам понадобится <i>индекс временной шка</i>лы. Однако вы можете использовать эту строку для получения <i>индекса временной шкалы</i>, используя возвращаемую строку вместе с функцией <a href="../Assets_And_Tags/asset_get_index.htm"><span class="inline">asset_get_index()</span></a>.</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
   <p class="code">timeline_get_name(ind);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th><th>Type</th>
-        <th>Description</th>
+        <th>Аргумент</th><th>Тип</th>
+        <th>Описание</th>
      </tr>
       <tr>
-        <td>ind</td><td><span data-keyref="Type_Asset_Timeline"></span></td>
-        <td>The index of the time line to check the name of.</td>
+        <td><span class="notranslate">ind</span></td><td><span data-keyref="Type_Asset_Timeline"></span></td>
+        <td><span class="notranslate">The index of the time line to check the name of.</span></td>
      </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
   <p class="code"><span data-keyref="Type_String"></span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Пример:</h4>
   <p class="code">var _str = timeline_get_name(timeline_index);<br/> show_debug_message(&quot;Current timeline = &quot; + _str);</p>
-  <p>The above code get the name of the currently assigned timeline and output it to the console.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Приведенный выше код получает имя текущей назначенной временной шкалы и выводит его на консоль.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Timelines.htm">Timelines</a></div>
-        <div style="float:right">Next: <a href="timeline_add.htm">timeline_add</a></div>
+        <div style="float:left">Назад: <a href="Timelines.htm">Временные шкалы</a></div>
+        <div style="float:right">Следующий: <a href="timeline_add.htm"><span class="notranslate">timeline_add</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2021 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 timeline_get_name

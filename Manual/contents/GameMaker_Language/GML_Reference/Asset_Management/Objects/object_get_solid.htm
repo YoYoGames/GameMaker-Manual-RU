@@ -6,7 +6,7 @@
   <title>object_get_solid</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page outlining the function object_get_solid" />
   <meta name="rh-index-keywords" content="object_get_solid" />
@@ -16,43 +16,43 @@
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
   <h1>object_get_solid</h1>
-  <p>This function will tell you whether the object you are checking has been flagged as &quot;solid&quot; or not. A solid object generates a special collision event when using the traditional collision system (ie: the physics world is off). Please note that this is not an instance function! So, you can have a solid object and a normal instance of the same object and vice-versa. You can set an individual instances solid flag using the <a href="../Instances/Instance_Variables/solid.htm"><span class="inline">solid</span></a> instance variable.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p>Эта функция сообщит вам, был ли проверяемый объект помечен как &quot;твердый&quot; или нет. Твердый объект генерирует специальное событие столкновения при использовании традиционной системы столкновений (т.е. мир физики отключен). Обратите внимание, что это не функция экземпляра! Таким образом, вы можете иметь твердый объект и обычный экземпляр одного и того же объекта, и наоборот. Флаг твердости отдельного экземпляра можно установить с помощью переменной <a href="../Instances/Instance_Variables/solid.htm"><span class="inline">solid</span></a> переменной instance.</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
   <p class="code">object_get_solid(obj);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th><th>Type</th>
-        <th>Description</th>
+        <th>Аргумент</th><th>Тип</th>
+        <th>Описание</th>
      </tr>
       <tr>
-        <td>obj</td><td><span data-keyref="Type_Asset_Object"></span></td>
-        <td>The index of the object to check.</td>
+        <td><span class="notranslate">obj</span></td><td><span data-keyref="Type_Asset_Object"></span></td>
+        <td><span class="notranslate">The index of the object to check.</span></td>
      </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
   <p class="code"><span data-keyref="Type_Bool"></span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Пример:</h4>
   <p class="code">if (!solid) &amp;&amp; (object_get_solid(object_index))<br />
     {<br />
         solid = true;<br />
     }</p>
-  <p>The above code will check the instance running it to see if it is solid or not as well as check the object index of the instance to see if it is flagged as solid or not. If the instance is <i>not</i> solid yet the object index is flagged as solid, it will set &quot;solid&quot; to true for that instance.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Приведенный выше код проверит запущенный экземпляр на предмет того, является ли он цельным или нет, а также проверит индекс объекта экземпляра на предмет того, помечен ли он как цельный или нет. Если экземпляр <i>не</i> является сплошным, но индекс объекта помечен как сплошной, то для этого экземпляра будет установлено значение &quot;solid&quot; равное true.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Objects.htm">Objects</a></div>
-        <div style="float:right">Next: <a href="object_get_sprite.htm">object_get_sprite</a></div>
+        <div style="float:left">Назад: <a href="Objects.htm">Объекты</a></div>
+        <div style="float:right">Следующий: <a href="object_get_sprite.htm"><span class="notranslate">object_get_sprite</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2021 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 object_get_solid

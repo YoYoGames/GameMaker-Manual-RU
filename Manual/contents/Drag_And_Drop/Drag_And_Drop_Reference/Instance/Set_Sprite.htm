@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Set Sprite</title>
+  <title>Установить спрайт</title>
   <meta name="generator" content="Adobe RoboHelp 2019" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
-  <script src="../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page that explains the Set Sprite action" />
   <meta name="rh-index-keywords" content="GML Visual Action - Set Sprite" />
@@ -14,46 +14,46 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1><img alt="Set Sprite Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Instance/i_Instance_Set_Sprite.png" /> Set Sprite</h1>
-  <p>This action block sets the <span class="inline">sprite_index</span> of the instance to another sprite from the Asset Browser. You select the sprite to change to, and then give the image (animation frame) to show. Note that if you don&#39;t want the sprite to animate after
-    setting the frame, you&#39;ll need to use the <a href="Set_Animation_Speed.htm">Set Animation Speed</a> action and set it to 0, or if you want the sprite to continue animating then set the value to use the <span class="inline">image_index</span> built-in variable variable
-    instead.</p>
-  <p>Changing the sprite will also change the collision mask of the instance, unless you have also specified a separate <span class="inline">mask_index</span> in the <a href="../../../The_Asset_Editors/Objects.htm">Object Editor</a>. Please note that for changes in this action
-    to be visible, the instance should have either <i>no</i> draw event (and so <span data-keyref="GameMaker Name">GameMaker</span> will default draw the sprite) or be drawn using <a href="../Drawing/Draw_Self.htm">Draw Self</a> action.</p>
-  <p> </p>
-  <h4>Action Syntax:</h4>
-  <p><img alt="Set Sprite Action" class="center" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Instance/a_Instance_Set_Sprite.png" /></p>
-  <h4>Arguments:</h4>
+  <h1><img> Установить спрайт</h1>
+  <p>Этот блок действий устанавливает <span class="inline">sprite_index</span> экземпляра на другой <span class="notranslate">sprite</span> из браузера активов. Вы выбираете <span class="notranslate">sprite</span>, на который нужно перейти, а затем указываете изображение (кадр анимации), которое нужно показать. Обратите внимание, что если вы не хотите, чтобы <span class="notranslate">sprite</span> анимировался после
+    установки кадра, вам нужно использовать действие <a href="Set_Animation_Speed.htm">Set Animation Speed</a> и установить его на 0, или если вы хотите, чтобы <span class="notranslate">sprite</span> продолжал анимировать, то установите значение для использования встроенной переменной <span class="inline">image_index</span>.
+    вместо этого.</p>
+  <p>Изменение <span class="notranslate">sprite</span> также изменит маску столкновений экземпляра, если только вы не указали отдельный <span class="inline">mask_index</span> в <a href="../../../The_Asset_Editors/Objects.htm">редакторе объектов</a>. Обратите внимание, что для того, чтобы изменения в этом действии
+    чтобы изменения в этом действии были видимыми, экземпляр должен либо <i>не</i> иметь события рисования (и тогда <span data-keyref="GameMaker Name">GameMaker</span> по умолчанию нарисует <span class="notranslate">sprite</span>), либо быть нарисованным с помощью действия <a href="../Drawing/Draw_Self.htm">Draw Self</a>.</p>
+  <p> </p>
+  <h4>Синтаксис действия:</h4>
+  <p><img alt="Set Sprite Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Instance/i_Instance_Set_Sprite.png" /></p>
+  <h4>Аргументы:</h4>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Description</th>
+        <th>Аргумент</th>
+        <th>Описание</th>
       </tr>
       <tr>
-        <td>Sprite</td>
-        <td>The new sprite to use (-1 if you want to remove the sprite).</td>
+        <td><span class="notranslate">Sprite</span></td>
+        <td>Новый <span class="notranslate">sprite</span> для использования (-1, если вы хотите удалить <span class="notranslate">sprite</span>).</td>
       </tr>
       <tr>
-        <td>Frame</td>
-        <td>The animation frame to show initially (if no extra frames are used, then use 0).</td>
+        <td><span class="notranslate">Frame</span></td>
+        <td>Кадр анимации, который будет показан изначально (если дополнительные кадры не используются, то используйте 0).</td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Example:</h4>
-  <p>The above action block code sets a new sprite as well as a number of other properties for how that sprite is to be displayed.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p> </p>
+  <h4>Пример:</h4>
+  <p>Приведенный выше код блока действий устанавливает новый <span class="notranslate">sprite</span>, а также ряд других свойств для отображения этого <span class="notranslate">sprite</span>.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Instance_Actions_Library.htm">Instance Actions</a></div>
-        <div style="float:right">Next: <a href="Set_Instance_Rotation.htm">Set Instance Rotation</a></div>
+        <div style="float:left">Назад: <a href="Instance_Actions_Library.htm">Действия экземпляра</a></div>
+        <div style="float:right">Следующий: <a href="Set_Instance_Rotation.htm">Установка вращения экземпляра</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2021 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 Action - Set Sprite

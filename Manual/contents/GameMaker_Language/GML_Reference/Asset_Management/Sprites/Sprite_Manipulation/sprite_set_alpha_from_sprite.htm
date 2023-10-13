@@ -4,9 +4,9 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>sprite_set_alpha_from_sprite</title>
-  <meta name="generator" content="Adobe RoboHelp 2022" />
+  <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page explaining the function sprite_set_alpha_from_sprite" />
   <meta name="rh-index-keywords" content="sprite_set_alpha_from_sprite" />
@@ -15,40 +15,37 @@
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
   <h1>sprite_set_alpha_from_sprite</h1>
-  <p>This function uses the value/saturation of one sprite and multiplies it with the alpha of the target sprite. Ideally the sprite being used to generate the new alpha map should be grey-scale, with the white areas having an equivalent alpha value of 1 (opaque), the black areas being equivalent to alpha 0 (transparent), and the grey areas being an alpha in between 0 and 1. The sprite that you are setting the alpha of <i>cannot be a permanent resource</i>, nor can the sprite you use to set the alpha, as this will give an error. This means that you must create two completely new sprites &quot;on the fly&quot; in some way for the function to work correctly. This can be achieved by using surfaces, or by creating a sprite from the screen (the code example below shows how the effect can be achieved with surfaces).</p>
-  <p class="note"><b><span data-conref="../../../../../assets/snippets/Tag_note.hts"> </span></b> This function is only useful for <b>bitmap</b> sprites and will not work with SWF or JSON (Spine) sprites.</p>
-  <p>Below is an image that illustrates how this function works:</p>
+  <p>Эта функция использует значение/насыщенность одного <span class="notranslate">sprite</span> и умножает его на альфа-фактор целевого <span class="notranslate">sprite</span>. В идеале <span class="notranslate">sprite</span>, используемый для создания новой альфа-карты, должен быть серо-масштабным, с белыми областями, имеющими эквивалентное значение альфа 1 (непрозрачный), черные области эквивалентны альфа 0 (прозрачный), а серые области имеют альфа между 0 и 1. <span class="notranslate">sprite</span>, для которого вы устанавливаете альфа, <i>не может быть постоянным ресурсом</i>, как и <span class="notranslate">sprite</span>, который вы используете для установки альфа, так как это приведет к ошибке. Это означает, что для корректной работы функции необходимо создать два совершенно новых <span class="notranslate">sprites</span> &quot;на лету&quot;. Этого можно достичь с помощью поверхностей или путем создания <span class="notranslate">sprite</span> на экране (в примере кода ниже показано, как можно достичь эффекта с помощью поверхностей).</p>
+  <p class="note"><b>ПРИМЕЧАНИЕ</b>: Эта функция полезна только для <b>растровых изображений</b> <span class="notranslate">sprites</span> и не работает с SWF или JSON (<span class="notranslate">Spine</span>) <span class="notranslate">sprites</span>.</p>
+  <p>Ниже приведено изображение, иллюстрирующее работу этой функции:</p>
   <p><img alt="Sprite Set Alpha Example" class="center" src="../../../../../assets/Images/Scripting_Reference/GML/Reference/Sprites/spr_alpha.png" /></p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p> </p>
+  <h4>Синтаксис:</h4>
   <p class="code">sprite_set_alpha_from_sprite(ind, spr);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
+        <th>Аргумент</th><th>Тип</th>
+        <th>Описание</th>
+     </tr>
       <tr>
-        <td>ind</td>
-        <td><span data-keyref="Type_Asset_Sprite"><a href="The_Asset_Editors/Sprites.htm" target="_blank">Sprite Asset</a></span></td>
-        <td>The index of the sprite to change the transparency map of.</td>
-      </tr>
+        <td><span class="notranslate">ind</span></td><td><span data-keyref="Type_Asset_Sprite"></span></td>
+        <td><span class="notranslate">The index of the sprite to change the transparency map of.</span></td>
+     </tr>
       <tr>
-        <td>spr</td>
-        <td><span data-keyref="Type_Asset_Sprite"><a href="The_Asset_Editors/Sprites.htm" target="_blank">Sprite Asset</a></span></td>
-        <td>The index of the sprite to take the transparency map data from.</td>
-      </tr>
+        <td><span class="notranslate">spr</span></td><td><span data-keyref="Type_Asset_Sprite"></span></td>
+        <td><span class="notranslate">The index of the sprite to take the transparency map data from.</span></td>
+     </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns</h4>
-  <p class="code"><span data-keyref="Type_Void">N/A</span></p>
-  <p> </p>
-  <h4>Extended Example:</h4>
-  <p>In this extended example we show how you can create a special effect sprite from two sprite resources. To start with we need to have a controller variable in the <b>Create Event</b> of the instance. This variable is to ensure that the sprite is only created once:</p>
+  <p> </p>
+  <h4>Возвращает</h4>
+  <p class="code"><span data-keyref="Type_Void"></span></p>
+  <p> </p>
+  <h4>Расширенный пример:</h4>
+  <p>В этом расширенном примере мы покажем, как можно создать специальный эффект <span class="notranslate">sprite</span> из двух ресурсов <span class="notranslate">sprite</span>. Для начала нам необходимо иметь переменную контроллера в <b>событии Create</b> экземпляра. Эта переменная должна гарантировать, что <span class="notranslate">sprite</span> будет создан только один раз:</p>
   <p class="code">spr_create = true;</p>
-  <p>Once that is done we need to then go to the <b>Draw Event</b> and add in this code:</p>
+  <p>После этого нам нужно перейти к <b>событию Draw Event</b> и добавить этот код:</p>
   <p class="code">if spr_create<br />
     {<br />
         spr_create = false;<br />
@@ -72,20 +69,20 @@
     <br />
     draw_sprite(sprite_index, 0, x, y);
   </p>
-  <p>The above code first checks to see if the control variable is true or not, and if it is, it then runs the code to set the sprite alpha, setting the variable to false to prevent the code from running more than once. In this case, it creates a surface the size of the alpha mask that we wish to use, then draws the sprite that is to have its alpha changed onto the surface and creates a new sprite from it, assigning it as the <span class="inline">sprite_index</span> of the object. The code then clears the surface and draws the alpha map sprite to it and creates another new sprite, storing its index in a local variable. Finally, the new sprite assigned to the object gets its alpha set from this temporary sprite, the surface is freed and the temporary sprite is removed.</p>
-  <p>There is one final thing to do here, and that is remove the sprite that has been created for the object from memory when not in use. This would either be done in the <b>Destroy Event</b> or the <b>Room End Event</b> like this:</p>
+  <p>Приведенный выше код сначала проверяет, является ли управляющая переменная истинной или нет, и если она истинна, то запускает код для установки альфы <span class="notranslate">sprite</span>, устанавливая переменную в false, чтобы предотвратить выполнение кода более одного раза. В этом случае создается поверхность размером с альфа-маску, которую мы хотим использовать, затем рисуется объект <span class="notranslate">sprite</span>, альфа которого должна быть изменена, на поверхности и создается новый объект <span class="notranslate">sprite</span>, который назначается как <span class="inline">sprite_index</span> объекта. Затем код очищает поверхность, рисует на ней карту альфа-канала <span class="notranslate">sprite</span> и создает еще один новый <span class="notranslate">sprite</span>, сохраняя его индекс в локальной переменной. Наконец, новый <span class="notranslate">sprite</span>, назначенный объекту, получает свой набор альфа-карт от этого временного <span class="notranslate">sprite</span>, поверхность освобождается, а временный <span class="notranslate">sprite</span> удаляется.</p>
+  <p>Осталось сделать последнюю вещь, а именно удалить <span class="notranslate">sprite</span>, созданный для объекта, из памяти, когда он не используется. Это можно сделать либо в <b>событии Destroy</b>, либо в <b>событии Room End</b>, как показано ниже:</p>
   <p class="code">sprite_delete(sprite_index);</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Sprite_Manipulation.htm">Sprite Manipulation</a></div>
-        <div style="float:right">Next: <a href="sprite_set_cache_size.htm">sprite_set_cache_size</a></div>
+        <div style="float:left">Назад: <a href="Sprite_Manipulation.htm">Манипуляция спрайтом</a></div>
+        <div style="float:right">Следующий: <a href="sprite_set_cache_size.htm"><span class="notranslate">sprite_set_cache_size</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 sprite_set_alpha_from_sprite

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>достижение_логин</title>
+  <meta name="generator" content="Adobe RoboHelp 2019" />
+  <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
+  <script src="../../../../assets/scripts/main_script.js"></script>
+  <meta name="rh-authors" content="Mark Alexander" />
+  <meta name="topic-comment" content="Reference page for achievement_login" />
+  <meta name="rh-index-keywords" content="achievement_login,achievement_our_info" />
+  <meta name="search-keywords" content="achievement_login,achievement_our_info" />
+</head>
+<body>
+  <!--<div class="body-scroll" style="top: 150px;">-->
+  <h1>достижение_логин</h1>
+  <p>Эта функция регистрирует пользователя в соответствующем сервисе таблиц лидеров и достижений. Если сервис <i>недоступен</i>, пользователь входит в &quot;притворный&quot; игровой центр, и все достижения и баллы сохраняются на устройстве, чтобы, когда
+    когда будет доступен настоящий сервис, эти данные можно будет загрузить. Функция вызовет обратный вызов <a href="../../../../The_Asset_Editors/Object_Properties/Async_Events/Social.htm">Social Asynchronous Event</a>, который содержит <a href="../../../GML_Overview/Variables/Builtin_Global_Variables/async_load.htm"><tt>async_load</tt></a>    карту, заполненную соответствующими парами ключ/значение. Ключ <i>id</i> этой <tt>карты DS Map</tt> используется для идентификации правильного обратного вызова (для любого асинхронного события может быть более одной функции запуска), и он будет сопряжен с <b>константой</b> <tt>achievement_our_info</tt>, а также рядом других пар ключ/значение для каждого вызова. Точное содержимое карты показано ниже:</p>
+  <ul class="colour">
+    <li>&quot;<b>id</b>&quot; - Для данной функции это должно быть <tt>achievement_our_info</tt></li>
+    <li>&quot;<b>name</b>&quot; - Имя пользователя, который в данный момент вошел в систему.</li>
+    <li>&quot;<b>playerid</b>&quot; - Уникальный идентификатор игрока для пользователя, который в данный момент вошел в систему.</li>
+  </ul>
+  <p> </p>
+  <h4><b>Синтаксис:</b></h4>
+  <p class="code">achievement_login()</p>
+  <p> </p>
+  <h4>Возвращается:</h4>
+  <p class="code">N/A</p>
+  <p> </p>
+  <h4>Расширенный пример:</h4>
+  <p>Следующий код, вероятно, будет вызываться в самом начале игры или из специального объекта-кнопки, который вы разместили в комнате, и будет запрашивать, чтобы игрок вошел в свою учетную запись Google Game Services или Apple Game center:</p>
+  <p class="code">achievement_login();</p>
+  <p>Это отправит запрос на получение текущей информации об игроке и сгенерирует асинхронный обратный вызов со специальной картой <tt>async_load</tt> DS, содержащей следующие данные:</p>
+  <p class="code">var ident = ds_map_find_value(async_load, &quot;id&quot;);<br/> if ident == achievement_our_info<br/>     {
+    <br/>     var name = ds_map_find_value(async_load, &quot;name&quot; );<br/>     var playerid = ds_map_find_value(async_load, &quot;playerid&quot; );<br/>     global.OurName = name;<br/>     global.OurId = playerid;<br/>     if os_type == os_android<br/>            {
+    <br/>         achievement_load_leaderboard(&quot;CgkIs9_51u0PEAIQBw&quot;, 1, 100, achievement_filter_friends_only);<br/>         }
+    <br/>     else
+    <br/>         {
+    <br/>         achievement_load_leaderboard(&quot;leaderboard1id&quot;, 1, 100, achievement_filter_friends_only);<br/>         }
+    <br/>     achievement_get_challenges();
+    <br/>     achievement_load_friends();
+    <br/>     achievement_load_progress();
+    <br/>     }
+  </p>
+  <p>Приведенный выше код проверяет возвращенную <tt>DS Map</tt> в <b>социальном асинхронном событии</b>, и если ее &quot;id&quot; совпадает с проверяемой константой, то она проходит по карте, сохраняя все различные значения в переменных, прежде чем вызвать остальные функции для подготовки списков лидеров.
+    функций для подготовки таблиц лидеров, вызовов и списков друзей.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <div class="footer">
+    <div class="buttons">
+      <div class="clear">
+        <div style="float:left">Назад: <a href="Achievements_And_Leaderboards.htm">Достижения и таблицы лидеров</a></div>
+        <div style="float:right">Следующий: <a href="achievement_logout.htm"><span class="notranslate">achievement_logout</span></a></div>
+      </div>
+    </div>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Все права защищены</span></h5>
+  </div>
+  <!-- KEYWORDS
+achievement_login
+achievement_our_info
+-->
+  <!-- TAGS
+achievement_login
+-->
+</body>
+</html>

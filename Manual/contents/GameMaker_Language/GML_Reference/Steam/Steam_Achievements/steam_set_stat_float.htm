@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>steam_set_stat_float</title>
+  <meta name="generator" content="Adobe RoboHelp 2019" />
+  <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
+  <script src="../../../../assets/scripts/main_script.js"></script>
+  <meta name="rh-authors" content="Mark Alexander" />
+  <meta name="topic-comment" content="Reference page for steam_set_stat_float" />
+  <meta name="rh-index-keywords" content="steam_set_stat_float" />
+  <meta name="search-keywords" content="steam_set_stat_float" />
+</head>
+<body>
+  <!--<div class="body-scroll" style="top: 150px;">-->
+  <h1>steam_set_stat_float</h1>
+  <p>С помощью этой функции вы можете установить определенную статистику в новое значение с <b>плавающей точкой</b>. Статистика должна быть предварительно определена на странице учетных записей панели управления Steamworks для вашей игры, а строка, передаваемая в функцию, должна
+    совпадать со строкой, используемой в качестве <b>API Name</b> на панели управления. Примером использования этой функции может быть отслеживание того, как далеко прошел игрок, или какой процент игры завершен.</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
+  <p class="code">steam_set_stat_float(stat_name, value);</p>
+  <table>
+    <tbody>
+      <tr>
+        <th>Аргумент</th>
+        <th>Описание</th>
+      </tr>
+      <tr>
+        <td><span class="notranslate">stat_name</span></td>
+        <td>Имя статистики, которую нужно установить (строка).</td>
+      </tr>
+      <tr>
+        <td><span class="notranslate">value</span></td>
+        <td>Значение (32-битное плавающее число), на которое нужно установить значение stat.</td>
+      </tr>
+    </tbody>
+  </table>
+  <p> </p>
+  <h4>Возвращается:</h4>
+  <p class="code">N/A</p>
+  <p> </p>
+  <h4>Пример:</h4>
+  <p class="code">var dist_pc = (dist / dist_max) * 100;<br/> steam_set_stat_float(&quot;Travelled&quot;, dist_pc);</p>
+  <p>Приведенный выше код вычисляет процент, основанный на переменной пройденного расстояния &quot;dist&quot; и максимальном расстоянии, которое вы можете проехать &quot;dist_max&quot;, а затем устанавливает статистику &quot;Travelled&quot; в новое значение.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <div class="footer">
+    <div class="buttons">
+      <div class="clear">
+        <div style="float:left">Назад: <a href="Steam_Achievements.htm">Достижения и статистика</a></div>
+        <div style="float:right">Следующий: <a href="steam_set_stat_avg_rate.htm"><span class="notranslate">steam_set_stat_avg_rate</span></a></div>
+      </div>
+    </div>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Все права защищены</span></h5>
+  </div>
+  <!-- KEYWORDS
+steam_set_stat_float
+-->
+  <!-- TAGS
+steam_set_stat_float
+-->
+</body>
+</html>

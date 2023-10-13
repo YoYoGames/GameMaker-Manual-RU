@@ -4,9 +4,9 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>draw_set_circle_precision</title>
-  <meta name="generator" content="Adobe RoboHelp 2022" />
+  <meta name="generator" content="Adobe RoboHelp 2019" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference for the function draw_set_circle_precision" />
   <meta name="rh-index-keywords" content="draw_set_circle_precision" />
@@ -15,44 +15,45 @@
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
   <h1>draw_set_circle_precision</h1>
-  <p>To optimise performance when drawing circles, <span data-keyref="GameMaker Name">GameMaker</span> basically draws a polygon shape with enough sides to make it <i>appear</i> circular. However, depending on how big or small you need your circles to be, you may find that changing this value can help increase the performance of your game, or make the circles look better. The precision value that you can input into this function is the number of sides the circle polygon has, and this number can be anything between 4 and 64, <i>but must be a number divisible by 4</i>, with a default value of 24.</p>
+  <p>Чтобы оптимизировать производительность при рисовании окружностей, <span data-keyref="GameMaker Name">GameMaker</span> в основном рисует многоугольную форму с достаточным количеством сторон, чтобы она <i>казалась</i> круглой. Однако в зависимости от того, насколько большими или маленькими должны быть ваши круги, вы можете обнаружить, что изменение
+    этого значения может помочь увеличить производительность игры или сделать круги более красивыми. Точное значение, которое вы можете ввести в эту функцию, - это количество сторон многоугольника окружности, которое может быть любым от 4 до 64,
+   <i>но должно быть числом, кратным 4</i>, по умолчанию значение равно 24.</p>
   <p><img alt="Circle precision example" class="center" src="../../../../assets/Images/Scripting_Reference/GML/Reference/Drawing/draw_set_circle_precision.png" /></p>
-  <div data-conref="../../../../assets/snippets/Note_Shape_Shader_Attributes_Are_Different.hts"> </div>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p class="note"><b>ПРИМЕЧАНИЕ</b>: Если вы хотите нарисовать фигуру с помощью шейдера, вы должны знать, что большинство шейдеров ожидают следующих входных данных: вершина, текстура, цвет. Однако при использовании этой функции передаются только данные вершин и цвета, поэтому шейдер может ничего не нарисовать (или нарисовать, но не отрисовать).
+    шейдер может ничего не нарисовать (или нарисовать, но неправильно). Если вам нужно рисовать фигуры таким образом, то шейдер должен быть настроен с учетом этого.</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
   <p class="code">draw_set_circle_precision(precision);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
+        <th>Аргумент</th><th>Тип</th>
+        <th>Описание</th>
+     </tr>
       <tr>
-        <td>precision</td>
-        <td><span data-keyref="Type_Real"><a href="GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
-        <td>The precision of all circles drawn after this function is called.</td>
-      </tr>
+        <td><span class="notranslate">precision</span></td><td><span data-keyref="Type_Real"></span></td>
+        <td><span class="notranslate">The precision of all circles drawn after this function is called.</span></td>
+     </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
-  <p class="code"><span data-keyref="Type_Void">N/A</span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
+  <p class="code"><span data-keyref="Type_Void"></span></p>
+  <p> </p>
+  <h4>Пример:</h4>
   <p class="code">draw_set_circle_precision(12);</p>
-  <p>The above code will draw all circles using a 12 sided polygon.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Приведенный выше код нарисует все окружности, используя 12-сторонний многоугольник.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Basic_Forms.htm">Basic Forms</a></div>
-        <div style="float:right">Next: <a href="draw_button.htm">draw_button</a></div>
+        <div style="float:left">Назад: <a href="Basic_Forms.htm">Основные формы</a></div>
+        <div style="float:right">Следующий: <a href="draw_button.htm"><span class="notranslate">draw_button</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 draw_set_circle_precision

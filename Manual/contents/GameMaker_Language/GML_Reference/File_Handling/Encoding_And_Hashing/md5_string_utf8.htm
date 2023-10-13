@@ -6,7 +6,7 @@
   <title>md5_string_utf8</title>
   <meta name="generator" content="Adobe RoboHelp 2019" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference page for md5_string_utf8" />
   <meta name="rh-index-keywords" content="md5_string_utf8" />
@@ -16,46 +16,46 @@
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
   <h1>md5_string_utf8</h1>
-  <p>In cryptography, MD5 (Message-Digest algorithm 5) is a widely used cryptographic hash function with a 128-bit hash value and has been employed in a wide variety of security applications. It is also commonly used to check the integrity of files and strings.
-    This function will take an input UTF-8 string (which has a variable number of bytes per character) and return the 32-character hexadecimal MD5 hash that is unique to that string. In this way you can generate a secure key which can be stored and used
-    to check the integrity of the information being sent to (or received from) an external server (for example).</p>
-  <p class="note"><b>NOTE</b>: There are two formats for the MD5 encoding, UTF-8 and unicode. Both are provided to facilitate communication with different server setups, but the most common to use is unicode.</p>
-  <p class="note"><strong>NOTE</strong>: MD5 is not completely secure and can be broken. See <a href="https://en.wikipedia.org/wiki/MD5">this page</a> for more info.</p>
-  <h4>Syntax:</h4>
+  <p>В криптографии MD5 (Message-Digest algorithm 5) - это широко используемая криптографическая хэш-функция со 128-битным хэш-значением, которая применяется в самых разных приложениях безопасности. Она также часто используется для проверки целостности файлов и строк.
+    Эта функция принимает на вход строку UTF-8 (которая имеет переменное количество байт на символ) и возвращает 32-символьный шестнадцатеричный хэш MD5, уникальный для этой строки. Таким образом, вы можете сгенерировать безопасный ключ, который можно хранить и использовать
+    для проверки целостности информации, отправляемой (или получаемой) на внешний сервер (например).</p>
+  <p class="note"><b>ПРИМЕЧАНИЕ</b>: Существует два формата кодировки MD5 - UTF-8 и unicode. Оба формата предусмотрены для облегчения взаимодействия с различными настройками сервера, но чаще всего используется unicode.</p>
+  <p class="note"><strong>ПРИМЕЧАНИЕ</strong>: MD5 не является полностью безопасным и может быть взломан. См. <a href="https://en.wikipedia.org/wiki/MD5">эту страницу</a> для получения дополнительной информации.</p>
+  <h4>Синтаксис:</h4>
   <p class="code">md5_string_utf8(string)</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th><th>Type</th>
-        <th>Description</th>
+        <th>Аргумент</th><th>Тип</th>
+        <th>Описание</th>
      </tr>
       <tr>
-        <td>string</td><td><span data-keyref="Type_String"></span></td>
-        <td>The string to hash.</td>
+        <td><span class="notranslate">string</span></td><td><span data-keyref="Type_String"></span></td>
+        <td><span class="notranslate">The string to hash.</span></td>
      </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
   <p class="code"><span data-keyref="Type_String"></span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Пример:</h4>
   <p class="code">var hash, str;<br/> str = json_encode(hiscore_map);<br/> hash = md5_string_utf8(str);<br/> ini_open(&quot;local.ini&quot;);
     <br/> ini_write_string(&quot;info&quot;, &quot;0&quot;, hash);<br/> ini_close();
     <br/> get[0] = http_post_string(&quot;http://www.MacSweeney Games.com/CatchTheHaggis?game_hiscores=&quot; + string(global.game_id), str)</p>
-  <p>The above code will encode a DS map into a JSON string. An MD5 hash is then generated and stored in an ini file so that this can later be used to check the integrity of the JSON should the same information be received later form the server. The JSON
-    is then sent.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Приведенный выше код кодирует карту DS в строку JSON. Затем генерируется хэш MD5 и сохраняется в ini-файле, чтобы впоследствии его можно было использовать для проверки целостности JSON при получении той же информации от сервера. JSON
+    затем отправляется.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Encoding_And_Hashing.htm">File Encoding</a></div>
-        <div style="float:right">Next: <a href="md5_string_unicode.htm">md5_string_unicode</a></div>
+        <div style="float:left">Назад: <a href="Encoding_And_Hashing.htm">Кодирование файлов</a></div>
+        <div style="float:right">Следующий: <a href="md5_string_unicode.htm"><span class="notranslate">md5_string_unicode</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2021 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 md5_string_utf8

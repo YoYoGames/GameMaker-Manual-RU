@@ -1,47 +1,47 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"><head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>Instance Variables</title>
-  <meta name="generator" content="Adobe RoboHelp 2020"/>
-  <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css"/>
-  <script src="../../../assets/scripts/main_script.js" type="module"></script>
-  <meta name="rh-authors" content="Mark Alexander"/>
-  <meta name="topic-comment" content="Page explaining instance variables"/>
-  <meta name="rh-index-keywords" content="Instance Variables"/>
-  <meta name="search-keywords" content="instance variables"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Переменные экземпляра</title>
+  <meta name="generator" content="Adobe RoboHelp 2020" />
+  <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
+  <script src="../../../assets/scripts/main_script.js"></script>
+  <meta name="rh-authors" content="Mark Alexander" />
+  <meta name="topic-comment" content="Page explaining instance variables" />
+  <meta name="rh-index-keywords" content="Instance Variables" />
+  <meta name="search-keywords" content="instance variables" />
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>Instance Variables</h1>
-  <p>An <strong>instance </strong>variable is created within an instance of an object and is considered unique to that instance - ie: many instances of the same object can have the same variable, but each variable can hold a different value as they are <em>unique </em>to
-    each instance. But <i>how</i> is an instance variable created? Well, you create new variables by simply assigning a value to them as shown in this small example (this is called <em>declaring</em> the variable):</p>
+  <h1>Переменные экземпляра</h1>
+  <p>Переменная <strong>экземпляра </strong>создается внутри экземпляра объекта и считается уникальной для этого экземпляра - т.е. многие экземпляры одного и того же объекта могут иметь одну и ту же переменную, но каждая переменная может иметь разное значение, поскольку она <em>уникальна </em>для каждого экземпляра.
+    каждого экземпляра. Но <i>как</i> создается переменная экземпляра? Ну, вы создаете новые переменные, просто присваивая им значение, как показано в этом небольшом примере (это называется <em>объявлением</em> переменной):</p>
   <p class="code">potions = 12;<br/> life = 100;<br/> name = &quot;Jock MacSweeney&quot;;<br/> strength = 5.5;<br/> armour = -2;</p>
-  <p>As you can see you just have to give the name and then a value (the value can be any <a href="../Data_Types.htm">data type</a>) to set that variable and have it ready for use within an instance of the object you are coding for (note that the value can
-    come from the return value of a function or the result of an operation between other variables, etc...). These variables can then be used and modified in a number of ways from within the instance, for example this code could be in a collision event
-    and used to take an amount off of the variable &quot;<span class="inline">life</span>&quot;:</p>
+  <p>Как вы видите, вам нужно только задать имя, а затем значение (значение может быть любым <a href="../Data_Types.htm">типом данных</a>), чтобы установить переменную и получить ее готовой к использованию в экземпляре объекта, для которого вы кодируете (обратите внимание, что значение может быть
+    быть возвращенным значением функции или результатом операции между другими переменными и т.д...). Затем эти переменные можно использовать и изменять различными способами внутри экземпляра, например, этот код можно использовать в событии столкновения
+    и использоваться для снятия суммы с переменной &quot;<span class="inline">life</span>&quot;:</p>
   <p class="code">life -= 5 + armour;</p>
-  <p>If &quot;<span class="inline">life</span>&quot; is at 100 it will now have a value of 97 (100 - (5 + -2) = 97). Now, that&#39;s a simple example, and you <i>could</i> replace &quot;<span class="inline">armour</span>&quot; for the actual value of -2,
-    but what happens if that value is <a class="glossterm" data-glossterm="hard-coded" href="#">hard-coded</a> in multiple places and then you decide to change it? You would have to go through ALL your code and change every -2 to whatever the new value
-    is, which is time consuming and very error prone! But if you use a variable, all you have to do is reassign it a new value and the code will automatically use that new value from then onwards, making things far more flexible and far easier to fix
-    should there be a problem. It should also be noted that even if a value is not going to change it is far easier to remember what a variable called &quot;<span class="inline">life</span>&quot; means rather than just looking at a number.</p>
-  <p><span data-keyref="GameMaker Name">GameMaker</span> has a collection of &quot;built in&quot; instance variables too, so you should be aware of them as you may name one of your own instance variables the same or wish to have your own global variable with the same name and wonder why
-    you are getting errors. They are easy to spot, however, as they are shown in a different colour in the code editor and also come up in auto-complete and are shown in bar at the bottom of the <a href="../../../The_Asset_Editors/Scripts.htm">code editor</a>.</p>
-  <p>There are quite a few <a href="../Runtime_Functions.htm">runtime functions</a> designed to help you when dealing with instance variables, which are all listed in the following section:</p>
+  <p>Если &quot;<span class="inline">life</span>&quot; находится на уровне 100, то теперь его значение будет равно 97 (100 - (5 + -2) = 97). Это простой пример, и вы <i>можете</i> заменить &quot;<span class="inline">armour</span>&quot; на фактическое значение -2,
+    но что произойдет, если это значение <a class="glossterm" data-glossterm="с жестким кодом" href="#">жестко закодировано</a> в нескольких местах, а затем вы решите его изменить? Вам придется пройтись по всему коду и изменить все -2 на новое значение.
+    что отнимает много времени и чревато ошибками! Но если вы используете переменную, все, что вам нужно сделать, это переназначить ей новое значение, и код будет автоматически использовать это новое значение с тех пор, что делает вещи гораздо более гибкими и гораздо легче исправить, если возникнет проблема.
+    если возникнет проблема. Следует также отметить, что даже если значение не будет меняться, гораздо легче запомнить, что означает переменная под названием &quot;<span class="inline">life</span>&quot;, чем просто смотреть на число.</p>
+  <p>В<span data-keyref="GameMaker Name">GameMaker</span> есть коллекция &quot;встроенных&quot; переменных экземпляров, поэтому вам следует знать о них, поскольку вы можете назвать одну из своих переменных экземпляров таким же именем или захотеть иметь свою глобальную переменную с таким же именем и удивляться, почему у вас возникают ошибки.
+    вы получаете ошибки. Однако их легко обнаружить, поскольку они отображаются другим цветом в редакторе кода, а также появляются в автозаполнении и отображаются в виде полоски в нижней части <a href="../../../The_Asset_Editors/Scripts.htm">редактора кода</a>.</p>
+  <p>Существует довольно много <a href="../Runtime_Functions.htm">функций времени выполнения</a>, призванных помочь вам при работе с переменными экземпляра, все они перечислены в следующем разделе:</p>
   <ul class="colour">
-    <li><a href="../../GML_Reference/Variable_Functions/Variable_Functions.htm">Variable Functions</a></li>
+    <li><a href="../../GML_Reference/Variable_Functions/Variable_Functions.htm">Переменные функции</a></li>
   </ul>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="../Variables_And_Variable_Scope.htm">Variables And Variables Scope</a></div>
-        <div style="float:right">Next: <a href="Global_Variables.htm">Global Variables</a></div>
+        <div style="float:left">Назад: <a href="../Variables_And_Variable_Scope.htm">Переменные и область применения переменных</a></div>
+        <div style="float:right">Следующее: <a href="Global_Variables.htm">Глобальные переменные</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2021 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 instance variables

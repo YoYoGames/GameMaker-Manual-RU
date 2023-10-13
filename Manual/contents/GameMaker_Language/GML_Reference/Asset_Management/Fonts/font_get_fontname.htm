@@ -6,7 +6,7 @@
   <title>font_get_fontname</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page outlining the function font_get_fontname" />
   <meta name="rh-index-keywords" content="font_get_fontname" />
@@ -16,41 +16,41 @@
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
   <h1>font_get_fontname</h1>
-  <p>With this function you can get the actual system name of the given font asset. This function returns a <i>string</i> and not an <i>index</i>, and the name returned will depend on the font being used. For example, you may have a font asset called &quot;<strong>fnt_Main</strong>&quot; in the Asset Browser, and the font itself may be the Windows system font <b>Arial</b>. In this case the function will return <span class="inline2">&quot;Arial&quot;</span> as that is the system name of the font. If you need the name that appears in the Asset Browser, use <a href="font_get_name.htm"><span class="inline">font_get_name()</span></a>.</p>
-  <p>The behaviour described above only applies to font assets added through the IDE. When used on a font loaded at runtime (using <span class="inline"><a href="font_add.htm">font_add()</a></span>), the function will return the full path to that font file instead of its font name.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p>С помощью этой функции можно получить фактическое системное имя заданного актива шрифта. Эта функция возвращает <i>строку</i>, а не <i>индекс</i>, и возвращаемое имя будет зависеть от используемого шрифта. Например, у вас может быть актив шрифта под названием &quot;<strong>fnt_Main</strong>&quot; в браузере активов, а сам шрифт может быть системным шрифтом <b>Arial</b> <span class="notranslate">Windows</span>. В этом случае функция вернет <span class="inline2">&quot;Arial&quot;</span>, так как это системное имя шрифта. Если вам нужно имя, которое отображается в браузере активов, используйте функцию <a href="font_get_name.htm"><span class="inline">font_get_name()</span></a>.</p>
+  <p>Описанное выше поведение применимо только к шрифтовым активам, добавленным с помощью <span class="notranslate">IDE</span>. При использовании для шрифта, загруженного во время выполнения (с помощью <span class="inline"><a href="font_add.htm">font_add()</a></span>), функция вернет полный путь к файлу шрифта вместо его имени.</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
   <p class="code">font_get_fontname(ind);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th><th>Type</th>
-        <th>Description</th>
+        <th>Аргумент</th><th>Тип</th>
+        <th>Описание</th>
      </tr>
       <tr>
-        <td>ind</td><td><span data-keyref="Type_Asset_Font"></span></td>
-        <td>Index of the font to check.</td>
+        <td><span class="notranslate">ind</span></td><td><span data-keyref="Type_Asset_Font"></span></td>
+        <td><span class="notranslate">Index of the font to check.</span></td>
      </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
   <p class="code"><span data-keyref="Type_String">String</span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Пример:</h4>
   <p class="code">fnt_Name = font_get_fontname(font0);</p>
-  <p>The above code will get the system name of a font resource and store it as a string in the variable &quot;fnt_Name&quot;.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Приведенный выше код получит системное имя ресурса шрифта и сохранит его в виде строки в переменной &quot;fnt_Name&quot;.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Fonts.htm">Fonts</a></div>
-        <div style="float:right">Next: <a href="font_get_first.htm">font_get_first</a></div>
+        <div style="float:left">Назад: <a href="Fonts.htm">Шрифты</a></div>
+        <div style="float:right">Следующий: <a href="font_get_first.htm"><span class="notranslate">font_get_first</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 font_get_fontname

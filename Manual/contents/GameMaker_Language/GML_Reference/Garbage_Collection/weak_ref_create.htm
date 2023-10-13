@@ -6,7 +6,7 @@
   <title>weak_ref_create</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
-  <script src="../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference page for weak_ref_create" />
   <meta name="rh-index-keywords" content="weak_ref_create" />
@@ -14,47 +14,43 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1><span data-field="title" data-format="default">weak_ref_create</span></h1>
-  <p>With this function you can create a <a class="glossterm" data-glossterm="weak reference" href="#">weak reference</a> to a <a href="../../GML_Overview/Structs.htm">struct</a> which can then be used to check if the struct is still &quot;alive&quot; (referenced) or not in the game. You supply the reference to the struct you want to track, and the function will return another struct which is a weak reference to that struct.</p>
-  <h3>Usage Notes</h3>
-  <ul class="Disc">
-    <li>You can check whether a reference is &quot;strong&quot; or &quot;weak&quot; by using the function <span class="inline3_func"><a data-xref="{title}" href="../Variable_Functions/instanceof.htm">instanceof</a></span>, as a strong reference will return either &quot;<span class="inline">struct</span>&quot; or the name of the constructor function that created the struct, or &quot;<span class="inline">weakref</span>&quot; if it&#39;s a weak reference.</li>
-    <li>The weak reference struct will have a variable &quot;<span class="inline">ref</span>&quot; which can be accessed to get the strong reference to the struct in question, unless it has been garbage collected, in which case it will return <span class="inline2">undefined</span>.</li>
-  </ul>
-  <p> </p>
-  <h4>Syntax:</h4>
-  <p class="code"><span data-field="title" data-format="default">weak_ref_create</span>(struct_to_track);</p>
+  <h1>weak_ref_create</h1>
+  <p>С помощью этой функции вы можете создать <a class="glossterm" data-glossterm="слабая ссылка" href="#">слабую ссылку</a> на структуру, которая затем может быть использована для проверки того, жива ли эта структура (ссылка на нее) или нет в игре. Вы передаете ссылку на структуру, которую хотите отследить, а функция возвращает другую структуру, которая является слабой ссылкой на эту структуру. Обратите внимание, что вы можете проверить, является ли ссылка &quot;сильной&quot; или &quot;слабой&quot;, используя функцию <span class="inline"><a href="../Variable_Functions/instanceof.htm">instanceof()</a></span>, так как сильная ссылка вернет либо &quot;<span class="inline">struct</span>&quot; или имя функции-конструктора, создавшей структуру, либо &quot;<span class="inline">weakref</span>&quot;, если это слабая ссылка. Также обратите внимание, что структура со слабой ссылкой будет иметь переменную &quot;<span class="inline">ref</span>&quot;, к которой можно обратиться, чтобы получить сильную ссылку на данную структуру, если только она не была собрана в мусор, в этом случае она вернет <span class="inline">undefined</span>.</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
+  <p class="code">weak_ref_create(struct_to_track);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Аргумент</th>
+        <th>Тип</th>
+        <th>Описание</th>
       </tr>
       <tr>
-        <td>struct_to_track</td>
-        <td><span data-keyref="Type_Struct"><a href="../../../../GameMaker_Language/GML_Overview/Structs.htm" target="_blank">Struct</a></span> or <span data-keyref="Type_Method"><a href="../../../../GameMaker_Language/GML_Overview/Method_Variables.htm" target="_blank">Method</a></span></td>
-        <td>The struct or method that you want to create a weak reference for</td>
+        <td><span class="notranslate">struct_to_track</span></td>
+        <td><span data-keyref="Type_Struct"><a data-rhwidget="HyperlinkPopover" href="../../../../GameMaker_Language/GML_Overview/Structs.htm">Структура</a></span></td>
+        <td><span class="notranslate">The struct that you want to create a weak reference for</span></td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
-  <p class="code"><span data-keyref="Type_Struct_WeakRef"><a href="../../../../GameMaker_Language/GML_Reference/Garbage_Collection/weak_ref_create.htm" target="_blank">Struct Weak Reference</a></span></p>
-  <p> </p>
-  <h4>Example:</h4>
-  <p class="code">inventory_ref = <span data-field="title" data-format="default">weak_ref_create</span>(inventory);</p>
-  <p>The above code creates a weak reference to a struct and stores it in an instance variable for later use.</p>
-  <p> </p>
-  <p> </p>
+  <p> </p>
+  <h4>Возвращается:</h4>
+  <p class="code"><span data-keyref="Type_Struct_WeakRef"><a data-rhwidget="HyperlinkPopover" href="../../../../GameMaker_Language/GML_Reference/Garbage_Collection/weak_ref_create.htm">Struct Weak Reference</a></span></p>
+  <p> </p>
+  <h4>Пример:</h4>
+  <p class="code">inventory_ref = weak_ref_create(inventory);</p>
+  <p>Приведенный выше код создает слабую ссылку на struct и сохраняет ее в переменной экземпляра для последующего использования.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a data-xref="{title}" href="Garbage_Collection.htm">Garbage Collection</a></div>
-        <div style="float:right">Next: <a data-xref="{title}" href="weak_ref_alive.htm">weak_ref_alive</a></div>
+        <div style="float:left">Назад: <a href="Garbage_Collection.htm">Сбор мусора</a></div>
+        <div style="float:right">Следующий: <a href="weak_ref_alive.htm"><span class="notranslate">weak_ref_alive</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 weak_ref_create

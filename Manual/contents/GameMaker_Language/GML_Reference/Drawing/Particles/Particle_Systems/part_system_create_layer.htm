@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>part_system_create_layer</title>
+  <title>часть_системы_создать_слой</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference page for part_system_create_layer" />
   <meta name="rh-index-keywords" content="part_system_create_layer" />
@@ -15,56 +15,50 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1><span data-field="title" data-format="default">part_system_create_layer</span></h1>
-  <p>This function creates a new particle system on a given layer and returns its unique index number.</p>
-  <p>You give the unique layer ID as returned by the function <span class="inline3_func"><a data-xref="{title}" href="../../../Asset_Management/Rooms/General_Layer_Functions/layer_create.htm">layer_create</a></span> or the name of the layer to use as a string - for example &quot;instance_layer&quot; - and then flag the system as being persistent or not.</p>
-  <p>Optionally you can provide a <span data-keyref="Type_Asset_ParticleSystem"><a href="../../../../../../The_Asset_Editors/Particle_Systems.htm" target="_blank">Particle System Asset</a></span> created using <a data-xref="{title}" href="../../../../../The_Asset_Editors/Particle_Systems.htm">The Particle System Editor</a>. Doing so will create the system defined in that asset, with all of its emitters.</p>
-  <p>A system not flagged as persistent is automatically destroyed at the end of the room it was created in (this is the same as if you had called the function <span class="inline3_func"><a data-xref="{title}" href="part_system_destroy.htm">part_system_destroy</a></span> and will also destroy any emitters associated with the system). However, when flagged as persistent, the system will be carried to the next room when the room is changed, and if the following room does <i>not</i> have a layer with the same name or depth as the one assigned, then a new layer will be created for the system that is persisting across the rooms, and it will be named the same as the original layer. When changing rooms, if there is another layer in the following rooms with the same name, then the persisted instance will be assigned to the layer with that name <i>regardless of the depth of the layer</i>. Finally, if a persisted system moves to a room with a layer at the same depth as the layer the system was created on, it will <i>not</i> be assigned to this layer, but instead a new layer will be created at the same depth (with the same name as the original layer).</p>
-  <p class="note"><span data-conref="../../../../../assets/snippets/Tag_important.hts"> </span> If you flag the particle system as persistent, then it (and any emitters assigned to it) will need to be cleaned up manually using the appropriate destroy functions when not in use, otherwise you risk a memory leak that will negatively impact your final game.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
-  <p class="code"><span data-field="title" data-format="default">part_system_create_layer</span>(layer_id, persistent, [partsys]);</p>
+  <h1>часть_системы_создать_слой</h1>
+  <p>Эта функция создаст новую систему частиц на заданном слое. Вы указываете уникальный идентификатор слоя, возвращаемый функцией <a href="../../../Asset_Management/Rooms/General_Layer_Functions/layer_create.htm"><span class="inline">layer_create()</span></a> или имя слоя в виде строки - например, &quot;instance_layer&quot; - и затем отмечаете систему как постоянную или нет. Если система не помечена как постоянная, то она будет автоматически уничтожена в конце комнаты, в которой она была создана (это то же самое, как если бы вы вызвали функцию <a href="part_system_destroy.htm"><span class="inline">part_system_destroy()</span></a> и также уничтожит все эмиттеры, связанные с системой). Однако, если система помечена как постоянная, то при смене комнаты она будет перенесена в следующую комнату, и если в следующей комнате <i>нет</i> слоя с таким же именем или глубиной, как у назначенного слоя, то для системы будет создан новый слой, сохраняющийся во всех комнатах, и он будет назван так же, как исходный слой. При смене комнаты, если в следующих комнатах есть другой слой с таким же именем, то сохраняемый экземпляр будет назначен слою с таким именем, <i>независимо от глубины слоя</i>. Наконец, если сохраняемая система перемещается в комнату со слоем на той же глубине, что и слой, на котором была создана система, она <i>не</i> будет назначена этому слою, а вместо этого будет создан новый слой на той же глубине (с тем же именем, что и исходный слой).</p>
+  <p>Функция вернет уникальное значение ID для системы частиц, которое следует использовать во всех дальнейших вызовах функции, где требуется указать ID системы.</p>
+  <p class="note"><b>ВАЖНО!</b> Если вы отметите систему частиц как постоянную, то ее (и все эмиттеры, назначенные ей) нужно будет очищать вручную с помощью соответствующих функций уничтожения, когда она не используется, иначе вы рискуете получить утечку памяти, которая негативно повлияет на конечную игру.</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
+  <p class="code">part_system_create_layer(layer_id, persistent);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Аргумент</th>
+        <th>Тип</th>
+        <th>Описание</th>
       </tr>
       <tr>
-        <td>layer</td>
-        <td><span data-keyref="Type_String"><a href="../../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">String</a></span> or <span data-keyref="Type_ID_Layer"><a href="../../../../../../GameMaker_Language/GML_Reference/Asset_Management/Rooms/General_Layer_Functions/layer_get_id.htm" target="_blank">Layer ID</a></span></td>
-        <td>The layer ID (or name) to assign the particle system to (can be any layer type)</td>
+        <td><span class="notranslate">layer</span></td>
+        <td><span data-keyref="Type_String">Строка</span> или <span data-keyref="Type_ID_Layer">идентификатор слоя</span></td>
+        <td><span class="notranslate">The layer ID (or name) to assign the particle system to (can be any layer type)</span></td>
       </tr>
       <tr>
-        <td>persistent</td>
-        <td><span data-keyref="Type_Bool"><a href="../../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Boolean</a></span></td>
-        <td>Flag the particle system as persistent (set to <span class="inline">true</span>) or not (set to <span class="inline">false</span>)</td>
-      </tr>
-      <tr>
-        <td>partsys</td>
-        <td><span data-keyref="Type_Asset_ParticleSystem"><a href="../../../../../../The_Asset_Editors/Particle_Systems.htm" target="_blank">Particle System Asset</a></span></td>
-        <td><span data-conref="../../../../../assets/snippets/Tag_optional.hts"> </span> The particle system asset to create an instance of</td>
+        <td><span class="notranslate">persistent</span></td>
+        <td><span data-keyref="Type_Bool">Булево</span></td>
+        <td><span class="notranslate">Flag the particle system as persistent (set to <span class="inline">true</span>) или нет (установлено на <span class="inline">false</span>)</td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
-  <p class="code"><span data-keyref="Type_ID_PartSys"><a href="../../../../../../GameMaker_Language/GML_Reference/Drawing/Particles/Particle_Systems/part_system_create.htm" target="_blank">Particle System ID</a></span></p>
-  <p> </p>
-  <h4>Example:</h4>
-  <p class="code">global.p_sys = <span data-field="title" data-format="default">part_system_create_layer</span>(&quot;effects_layer&quot;, true, ps_Explosion);</p>
-  <p>The above code will create a new particle system on the given layer from the <span class="inline2">ps_Explosion</span> asset, and flag it as persisting over subsequent rooms. The ID for the particle system is stored in a global scope variable <span class="inline2">p_sys</span> for future reference.</p>
-  <p> </p>
-  <p> </p>
+  <p> </p>
+  <h4>Возвращается:</h4>
+  <p class="code"><span data-keyref="Type_ID_PartSys">Particle System ID</span></p>
+  <p> </p>
+  <h4>Пример:</h4>
+  <p class="code">global.p_sys = part_system_create_layer(&quot;effects_layer&quot;, true);</p>
+  <p>Приведенный выше код создаст новую систему частиц на данном слое и пометит ее как сохраняющуюся в последующих комнатах. Идентификатор системы частиц сохраняется в глобальной переменной области видимости для дальнейшего использования.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a data-xref="{title}" href="Particle_Systems.htm">Particle Systems</a></div>
-        <div style="float:right">Next: <a data-xref="{title}" href="part_system_get_layer.htm">part_system_get_layer</a></div>
+        <div style="float:left">Назад: <a href="Particle_Systems.htm">Системы частиц</a></div>
+        <div style="float:right">Следующий: <a href="part_system_get_layer.htm"><span class="notranslate">part_system_get_layer</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 part_system_create_layer

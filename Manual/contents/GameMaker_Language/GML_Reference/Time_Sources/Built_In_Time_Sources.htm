@@ -4,7 +4,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="generator" content="Adobe RoboHelp 2020" />
-  <title>Built-In Time Sources</title>
+  <title>Встроенные источники времени</title>
   <meta name="topic-status" content="Draft" />
   <link rel="stylesheet" type="text/css" href="../../../assets/css/default.css" />
   <meta name="template" content="../../../assets/masterpages/Manual_Page.htt" />
@@ -14,48 +14,47 @@
   <meta name="search-keywords" content="Time Sources, Game Time Source, Global Time Source, time_source_global, time_source_game" />
 </head>
 <body>
-  <h1><span data-field="title" data-format="default">Built-In Time Sources</span></h1>
+  <h1>Встроенные источники времени</h1>
   <table>
     <tbody>
       <tr>
-        <th colspan="3"><span data-keyref="Type_Constant_TimeSource_BuiltIn"><a href="../../../../GameMaker_Language/GML_Reference/Time_Sources/Built_In_Time_Sources.htm" target="_blank">Time Source Constant</a></span></th>
+        <th colspan="3"><span data-keyref="Type_Constant_TimeSource_BuiltIn"><a href="../../../../GameMaker_Language/GML_Reference/Time_Sources/Built_In_Time_Sources.htm" target="_blank">Источник времени Постоянная</a></span></th>
       </tr>
       <tr>
-        <th>Constant</th>
-        <th>Description</th>
-        <th>Value</th>
+        <th>Постоянная</th>
+        <th>Описание</th>
+        <th>Значение</th>
       </tr>
       <tr>
-        <td><span class="inline">time_source_global</span><span class="inline"></span></td>
-        <td>The Global <span data-keyref="Type_Resource_TimeSource">Time Source</span></td>
-        <td>0</td>
+        <td><span class="notranslate"><span class="inline">time_source_global</span><span class="inline"></span></td>
+        <td> <span data-keyref="Type_Resource_TimeSource">Источник</span>глобального <span data-keyref="Type_Resource_TimeSource">времени</span></td>
+        <td><span class="notranslate">0</span></td>
       </tr>
       <tr>
-        <td><span class="inline">time_source_game</span></td>
-        <td>The Game <span data-keyref="Type_Resource_TimeSource">Time Source</span></td>
-        <td>1</td>
+        <td><span class="notranslate"><span class="inline">time_source_game</span></td>
+        <td> <span data-keyref="Type_Resource_TimeSource">Источник</span>игрового <span data-keyref="Type_Resource_TimeSource">времени</span></td>
+        <td><span class="notranslate">1</span></td>
       </tr>
     </tbody>
   </table>
-  <p>You can use the <strong>Global <span data-keyref="Type_Resource_TimeSource">Time Source</span></strong> or the <strong>Game <span data-keyref="Type_Resource_TimeSource">Time Source</span></strong> as a parent for your custom <span data-keyref="Type_Resource_TimeSource">Time Source</span>. Both <span data-keyref="Type_Resource_TimeSource">Time Source</span>s are globally available.</p>
-  <p>The Global <span data-keyref="Type_Resource_TimeSource">Time Source</span> runs outside the main game loop, while the Game <span data-keyref="Type_Resource_TimeSource">Time Source</span> runs as part of the game loop.</p>
-  <p>The choice between Global/Game doesn&#39;t affect whether <span data-keyref="Type_Resource_TimeSource">Time Source</span>s are affected by your game&#39;s framerate; that will depend on the <a href="Time_Source_Units.htm">unit</a> you use.</p>
-  <h2>Order</h2>
-  <p><span data-keyref="Type_Resource_TimeSource">Time Source</span>s inheriting from the Global <span data-keyref="Type_Resource_TimeSource">Time Source</span> are processed <strong>before</strong> the Game <span data-keyref="Type_Resource_TimeSource">Time Source</span>.</p>
-  <p class="note"><span data-conref="../../../assets/snippets/Tag_note.hts"> </span> See <a data-xref="{title}" href="../../../The_Asset_Editors/Object_Properties/Event_Order.htm">Event Order</a> for more details.</p>
-  <h2>States</h2>
-  <p>The Game <span data-keyref="Type_Resource_TimeSource">Time Source</span> has <a href="Time_Source_States.htm">states</a>, meaning it can be <a href="time_source_pause.htm">paused</a>. The Global <span data-keyref="Type_Resource_TimeSource">Time Source</span> doesn&#39;t have states and can&#39;t be paused.</p>
-  <p>You can use the Global <span data-keyref="Type_Resource_TimeSource">Time Source</span> for timers that should run regardless of the game state, and the Game <span data-keyref="Type_Resource_TimeSource">Time Source</span> for timers that are tied to your main game loop. You can then pause all of your game-related timers by pausing the Game <span data-keyref="Type_Resource_TimeSource">Time Source</span>.</p>
-  <p> </p>
-  <p> </p>
+  <p>Вы можете использовать <strong>глобальный <span data-keyref="Type_Resource_TimeSource">источник времени</span></strong> или <strong>игровой <span data-keyref="Type_Resource_TimeSource">источник времени</span></strong> в качестве родительского для вашего пользовательского <span data-keyref="Type_Resource_TimeSource">источника времени</span>. Оба <span data-keyref="Type_Resource_TimeSource">источника времени</span>доступны глобально.</p>
+  <p>Глобальный <span data-keyref="Type_Resource_TimeSource">источник времени</span> работает вне основного цикла игры, а игровой <span data-keyref="Type_Resource_TimeSource">источник времени</span> работает как часть цикла игры.</p>
+  <p>Выбор между Global/Game не влияет на то, будут ли <span data-keyref="Type_Resource_TimeSource">источники времени</span>зависеть от частоты кадров в вашей игре; это зависит от используемого вами <a href="Time_Source_Units.htm">устройства</a>.</p>
+  <h2>Заказ</h2>
+  <p><span data-keyref="Type_Resource_TimeSource">Источники времени</span>, наследующие от глобального <span data-keyref="Type_Resource_TimeSource">источника времени</span>, обрабатываются <strong>раньше, чем</strong> <span data-keyref="Type_Resource_TimeSource">источник времени</span> игры.</p>
+  <h2>Государства</h2>
+  <p> <span data-keyref="Type_Resource_TimeSource">Источник</span> игрового <span data-keyref="Type_Resource_TimeSource">времени</span> имеет <a href="Time_Source_States.htm">состояния</a>, то есть он может быть <a href="time_source_pause.htm"><span class="notranslate">paused</span></a>. Глобальный <span data-keyref="Type_Resource_TimeSource">источник времени</span> не имеет состояний и не может быть приостановлен.</p>
+  <p>Вы можете использовать глобальный <span data-keyref="Type_Resource_TimeSource">источник времени</span> для таймеров, которые должны запускаться независимо от состояния игры, и <span data-keyref="Type_Resource_TimeSource">источник</span> игрового <span data-keyref="Type_Resource_TimeSource">времени</span> для таймеров, привязанных к основному циклу игры. Затем вы можете приостановить все таймеры, связанные с игрой, приостановив <span data-keyref="Type_Resource_TimeSource">источник</span> игрового <span data-keyref="Type_Resource_TimeSource">времени</span>.</p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div>Back: <a data-xref="{title}" href="Time_Sources.htm">Time Sources</a> </div>
-        <div>Next: <a data-xref="{title}" href="Time_Source_Units.htm">Time Source Units</a></div>
+        <div>Назад: <a data-xref="{title}" href="Time_Sources.htm">Источники времени</a> </div>
+        <div>Следующее: <a data-xref="{title}" href="Time_Source_Units.htm">Единицы источника времени</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 time_source_global

@@ -4,9 +4,9 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>network_send_packet</title>
-  <meta name="generator" content="Adobe RoboHelp 2022" />
+  <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
-  <script src="../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference page for network_send_packet" />
   <meta name="rh-index-keywords" content="network_send_packet" />
@@ -14,57 +14,50 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1><span data-field="title" data-format="default">network_send_packet</span></h1>
-  <p>This function sends a data &quot;packet&quot; through the network.</p>
-  <p>The function takes the <span data-keyref="Type_ID_Network_Socket"><a href="../../../../GameMaker_Language/GML_Reference/Networking/network_create_socket.htm" target="_blank">Network Socket ID</a></span><i> </i>to connect through and then you supply the <span data-keyref="Type_ID_Buffer"><a href="../../../../GameMaker_Language/GML_Reference/Buffers/buffer_create.htm" target="_blank">Buffer ID</a></span> which contains the data to be sent (for more information on buffers see <a href="../Buffers/Buffers.htm">Reference - Buffers</a>) and finally the size (in bytes) of the data packet.</p>
-  <p>Packets sent with this function are formatted such that the <span data-keyref="GameMaker Name">GameMaker</span> game receiving the data can &quot;split&quot; the packets correctly, and the function will return the number of bytes of data sent, or a number less than 0 if the send has failed. It is worth noting that the final size of the data being sent that is returned by this function will also include the <span data-keyref="GameMaker Name">GameMaker</span> header information, which is an additional 12 bytes.</p>
-  <p class="note"><span data-conref="../../../assets/snippets/Tag_warning.hts"> </span> <span data-conref="../../../assets/snippets/Networking_dont_mix_raw_reg.hts"> </span></p>
-  <div data-conref="../../../assets/snippets/Note_Networking_TCP_like.hts"> </div>
-  <p> </p>
-  <h4>Syntax:</h4>
-  <p class="code"><span data-field="title" data-format="default">network_send_packet</span>(socket, bufferid, size);</p>
+  <h1>network_send_packet</h1>
+  <p>С помощью этой функции вы можете отправить &quot;пакет&quot; данных по сети. Функция принимает <i>идентификатор сокета</i> для подключения, затем вы должны указать <i>идентификатор буфера</i>, который содержит данные для отправки (более подробную информацию о буферах см. в разделе " <a href="../Buffers/Buffers.htm">Справочник - Буферы"</a>), и, наконец, размер (в байтах) пакета данных. Пакеты, отправленные с помощью этой функции, будут отформатированы таким образом, чтобы игра <span data-keyref="GameMaker Name">GameMaker</span>, получающая данные, могла правильно &quot;разделить&quot; пакеты, а функция вернет количество байт отправленных данных или число меньше 0, если отправка не удалась. Стоит отметить, что окончательный размер отправляемых данных, возвращаемый этой функцией, будет также включать информацию заголовка <span class="notranslate">GameMaker</span>, что составляет дополнительные 12 байт.</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
+  <p class="code">network_send_packet(socket, bufferid, size);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
+        <th>Аргумент</th><th>Тип</th>
+        <th>Описание</th>
+     </tr>
       <tr>
-        <td>socket</td>
-        <td><span data-keyref="Type_ID_Network_Socket"><a href="../../../../GameMaker_Language/GML_Reference/Networking/network_create_socket.htm" target="_blank">Network Socket ID</a></span></td>
-        <td>The id of the socket to use.</td>
-      </tr>
+        <td><span class="notranslate">socket</span></td><td><span data-keyref="Type_ID_Network_Socket"></span></td>
+        <td><span class="notranslate">The id of the socket to use.</span></td>
+     </tr>
       <tr>
-        <td>bufferid</td>
-        <td><span data-keyref="Type_ID_Buffer"><a href="../../../../GameMaker_Language/GML_Reference/Buffers/buffer_create.htm" target="_blank">Buffer ID</a></span></td>
-        <td>The id of the buffer to get the data from.</td>
-      </tr>
+        <td><span class="notranslate">bufferid</span></td><td><span data-keyref="Type_ID_Buffer"></span></td>
+        <td><span class="notranslate">The id of the buffer to get the data from.</span></td>
+     </tr>
       <tr>
-        <td>size</td>
-        <td><span data-keyref="Type_Real"><a href="../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
-        <td>The size (in bytes) of the data.</td>
-      </tr>
+        <td><span class="notranslate">size</span></td><td><span data-keyref="Type_Real"></span></td>
+        <td><span class="notranslate">The size (in bytes) of the data.</span></td>
+     </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
-  <p class="code"><span data-keyref="Type_Real"><a href="../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
+  <p class="code"><span data-keyref="Type_Real">Real</span></p>
+  <p> </p>
+  <h4>Пример:</h4>
   <p class="code">buff = buffer_load(&quot;player_save.dat&quot;);<br />
     network_send_packet(sock, buff, buffer_get_size(buff));</p>
-  <p>The above information loads a previously saved buffer data into memory and returns the buffer id to be stored in the variable &quot;buff&quot;. This complete buffer is then send as a packet over the network using the socket identified by the variable &quot;sock&quot;.</p>
-  <p> </p>
-  <p> </p>
+  <p>Приведенная выше информация загружает ранее сохраненные данные буфера в память и возвращает идентификатор буфера для хранения в переменной &quot;buff&quot;. Затем этот полный буфер отправляется в виде пакета по сети через сокет, идентифицируемый переменной &quot;sock&quot;.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Networking.htm">Networking</a></div>
-        <div style="float:right">Next: <a href="network_send_raw.htm">network_send_raw</a></div>
+        <div style="float:left">Назад: <a href="Networking.htm">Работа в сети</a></div>
+        <div style="float:right">Следующий: <a href="network_send_raw.htm"><span class="notranslate">network_send_raw</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 network_send_packet

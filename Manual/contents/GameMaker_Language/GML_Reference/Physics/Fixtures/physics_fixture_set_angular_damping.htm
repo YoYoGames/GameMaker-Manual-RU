@@ -4,9 +4,9 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>physics_fixture_set_angular_damping</title>
-  <meta name="generator" content="Adobe RoboHelp 2020" />
+  <meta name="generator" content="Adobe RoboHelp 2019" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference page for physics_fixture_set_angular_damping" />
   <meta name="rh-index-keywords" content="physics_fixture_set_angular_damping" />
@@ -15,47 +15,45 @@
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
   <h1>physics_fixture_set_angular_damping</h1>
-  <p>If you think about any rotating object in the &quot;real world&quot;, unless it has a motor or is in space, it slows down over time due to the influence of external forces (like friction with the air around it). We can use the function <span class="inline3_func"><span data-field="title" data-format="default">physics_fixture_set_angular_damping</span></span> in <span data-keyref="GameMaker Name">GameMaker</span> to simulate this effect and reduce the velocity of rotation of instances in the physics world, as, without it, any rotating instance would continue to rotate infinitely. Damping parameters should be between 0 and infinity, with 0 meaning no damping, and infinity meaning full damping. Normally you will use a damping value between 0 and 1, but you can use any non-negative value if required.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p>Если вспомнить любой вращающийся объект в &quot;реальном мире&quot;, если только у него нет двигателя или он не находится в космосе, он со временем замедляется под воздействием внешних сил (например, трения с окружающим воздухом). Мы можем использовать функцию <span class="inline">physics_fixture_set_angular_damping()</span> в <span data-keyref="GameMaker Name">GameMaker</span> для имитации этого эффекта и уменьшения скорости вращения объектов в физическом мире, поскольку без нее любой вращающийся объект продолжал бы вращаться бесконечно. Параметры демпфирования должны находиться в диапазоне от 0 до бесконечности,
+    при этом 0 означает отсутствие демпфирования, а бесконечность - полное демпфирование. Обычно используется значение демпфирования между 0 и 1, но при необходимости можно использовать любое неотрицательное значение.</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
   <p class="code">physics_fixture_set_angular_damping(fixture, damping)</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
+        <th>Аргумент</th><th>Тип</th>
+        <th>Описание</th>
+     </tr>
       <tr>
-        <td>fixture</td>
-        <td><span data-keyref="Type_ID_PhyFixture"><a href="../../../../../GameMaker_Language/GML_Reference/Physics/Fixtures/physics_fixture_create.htm" target="_blank">Physics Fixture ID</a></span></td>
-        <td>the index of the fixture</td>
-      </tr>
+        <td><span class="notranslate">fixture</span></td><td><span data-keyref="Type_ID_PhyFixture"></span></td>
+        <td><span class="notranslate">the index of the fixture</span></td>
+     </tr>
       <tr>
-        <td>damping</td>
-        <td><span data-keyref="Type_Real"><a href="../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
-        <td>the angular damping of the fixture, usually between 0 and 1</td>
-      </tr>
+        <td><span class="notranslate">damping</span></td><td><span data-keyref="Type_Real"></span></td>
+        <td><span class="notranslate">the angular damping of the fixture, usually between 0 and 1</span></td>
+     </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
-  <p class="code"><span data-keyref="Type_Void">N/A</span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
+  <p class="code"><span data-keyref="Type_Void"></span></p>
+  <p> </p>
+  <h4>Пример:</h4>
   <p class="code">physics_fixture_set_angular_damping(fix_Ball, 0.1);</p>
-  <p>The code above will set the angular damping of the fixture indexed in &quot;fix_ball&quot; to 0.1.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Приведенный выше код установит угловое демпфирование приспособления, индексируемого в &quot;fix_ball&quot;, равным 0,1.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Fixtures.htm">Fixtures</a></div>
-        <div style="float:right">Next: <a href="physics_fixture_set_restitution.htm">physics_fixture_set_restitution</a></div>
+        <div style="float:left">Назад: <a href="Fixtures.htm">Приспособления</a></div>
+        <div style="float:right">Следующий: <a href="physics_fixture_set_restitution.htm"><span class="notranslate">physics_fixture_set_restitution</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 physics_fixture_set_angular_damping

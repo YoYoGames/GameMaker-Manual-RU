@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>sprite_delete</title>
+  <title>спрайт_удалить</title>
   <meta name="generator" content="Adobe RoboHelp 2019" />
   <link rel="stylesheet" href="../../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page explaining the function sprite_delete" />
   <meta name="rh-index-keywords" content="sprite_delete" />
@@ -14,44 +14,44 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>sprite_delete</h1>
-  <p>This function will delete a sprite from the game, freeing any memory that was reserved for it. This is a very important function for those moments when you need to create and change sprites from external sources (like loading a sprite from a file with
-    <span class="inline"><a href="sprite_add.htm">sprite_add()</a></span>, or duplicating a sprite using <span class="inline"><a href="sprite_duplicate.htm">sprite_duplicate()</a></span>) and should always be used to remove those assets that are no longer
-    needed by a game, or to clear an indexed asset from a variable before re-assigning another asset to that variable. <b>This cannot be used to delete sprites that are included in the game as part of the assets in the Asset Browser</b>.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <h1>спрайт_удалить</h1>
+  <p>Эта функция удаляет <span class="notranslate">sprite</span> из игры, освобождая всю память, которая была зарезервирована для него. Это очень важная функция для тех моментов, когда вам нужно создавать и изменять <span class="notranslate">sprites</span> из внешних источников (например, загружать <span class="notranslate">sprite</span> из файла с помощью функции
+   <span class="inline"><a href="sprite_add.htm">sprite_add()</a></span>, или дублирование <span class="notranslate">sprite</span> с помощью <span class="inline"><a href="sprite_duplicate.htm">sprite_duplicate()</a></span>) и всегда должна использоваться для удаления тех активов, которые больше не нужны.
+    или для удаления индексированного актива из переменной перед повторным назначением другого актива в эту переменную. <b>Это нельзя использовать для удаления <span class="notranslate">sprites</span>, которые включены в игру как часть активов в браузере активов</b>.</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
   <p class="code">sprite_delete(index);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th><th>Type</th>
-        <th>Description</th>
+        <th>Аргумент</th><th>Тип</th>
+        <th>Описание</th>
      </tr>
       <tr>
-        <td>index</td><td><span data-keyref="Type_Asset_Sprite"></span></td>
-        <td>The index of the sprite to be deleted.</td>
+        <td><span class="notranslate">index</span></td><td><span data-keyref="Type_Asset_Sprite"></span></td>
+        <td><span class="notranslate">The index of the sprite to be deleted.</span></td>
      </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns</h4>
+  <p> </p>
+  <h4>Возвращает</h4>
   <p class="code"><span data-keyref="Type_Void"></span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Пример:</h4>
   <p class="code">var spr = sprite_create_from_surface(application_surface, 0, 0, 32, 32, false, false, 16, 16);<br/> sprite_merge(spr_Player, spr);<br/> sprite_delete(spr);
   </p>
-  <p>The above code creates a local variable and then stores the index of the sprite created from the application surface. This sprite is then merged with the asset indexed in the variable &quot;spr_Player&quot; before being removed from memory again.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Приведенный выше код создает локальную переменную и затем сохраняет индекс <span class="notranslate">sprite</span>, созданного на поверхности приложения. Затем этот <span class="notranslate">sprite</span> объединяется с активом, проиндексированным в переменной &quot;spr_Player&quot;, после чего снова удаляется из памяти.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Sprite_Manipulation.htm">Sprite Manipulation</a></div>
-        <div style="float:right">Next: <a href="sprite_set_alpha_from_sprite.htm">sprite_set_alpha_from_sprite</a></div>
+        <div style="float:left">Назад: <a href="Sprite_Manipulation.htm">Манипуляция спрайтом</a></div>
+        <div style="float:right">Следующий: <a href="sprite_set_alpha_from_sprite.htm"><span class="notranslate">sprite_set_alpha_from_sprite</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2021 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 sprite_delete

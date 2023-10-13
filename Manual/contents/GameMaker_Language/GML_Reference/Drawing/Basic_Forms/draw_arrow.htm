@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>draw_arrow</title>
-  <meta name="generator" content="Adobe RoboHelp 2022" />
+  <title>нарисовать_стрелку</title>
+  <meta name="generator" content="Adobe RoboHelp 2019" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference for the function draw_arrow" />
   <meta name="rh-index-keywords" content="draw_arrow" />
@@ -15,65 +15,61 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>draw_arrow</h1>
-  <p>This function will draw an arrow from point (x1,y1) to point (x2,y2). The stem of the arrow is drawn along these points with the actual arrow head being drawn at the end, where the size of the arrowhead is defined by the argument &quot;size&quot; and is calculated as being part of the stem so that the end point is always aligned with the position defined by x2,y2. The width of the arrow head is calculated automatically in proportion to the length.</p>
-  <div data-conref="../../../../assets/snippets/Note_Shape_Shader_Attributes_Are_Different.hts"> </div>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <h1>нарисовать_стрелку</h1>
+  <p>Эта функция рисует стрелку из точки (x1,y1) в точку (x2,y2). Вдоль этих точек рисуется стержень стрелы, а в конце рисуется головка стрелы, причем размер головки определяется аргументом &quot;size&quot; и
+    рассчитывается как часть стебля, так что конечная точка всегда выравнивается с позицией, заданной x2,y2. Ширина наконечника стрелки рассчитывается автоматически пропорционально длине.</p>
+  <p class="note"><b>ПРИМЕЧАНИЕ</b>: Если вы хотите нарисовать фигуру с помощью шейдера, вы должны знать, что большинство шейдеров ожидают следующих входных данных: вершина, текстура, цвет. Однако при использовании этой функции передаются только данные вершин и цвета, поэтому шейдер может ничего не нарисовать (или нарисовать, но не отрисовать).
+    шейдер может ничего не нарисовать (или нарисовать, но неправильно). Если вам нужно рисовать фигуры таким образом, то шейдер должен быть настроен с учетом этого.</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
   <p class="code">draw_arrow(x1, y1, x2, y2, size);</p>
-  <p> </p>
+  <p> </p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
+        <th>Аргумент</th><th>Тип</th>
+        <th>Описание</th>
+     </tr>
       <tr>
-        <td>x1</td>
-        <td><span data-keyref="Type_Real"><a href="GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
-        <td>The x coordinate of the start of the line.</td>
-      </tr>
+        <td><span class="notranslate">x1</span></td><td><span data-keyref="Type_Real"></span></td>
+        <td><span class="notranslate">The x coordinate of the start of the line.</span></td>
+     </tr>
       <tr>
-        <td>y1</td>
-        <td><span data-keyref="Type_Real"><a href="GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
-        <td>The y coordinate of the start of the line.</td>
-      </tr>
+        <td><span class="notranslate">y1</span></td><td><span data-keyref="Type_Real"></span></td>
+        <td><span class="notranslate">The y coordinate of the start of the line.</span></td>
+     </tr>
       <tr>
-        <td>x2</td>
-        <td><span data-keyref="Type_Real"><a href="GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
-        <td>The x coordinate of the end of the line (where the arrowhead ends).</td>
-      </tr>
+        <td><span class="notranslate">x2</span></td><td><span data-keyref="Type_Real"></span></td>
+        <td><span class="notranslate">The x coordinate of the end of the line (where the arrowhead ends).</span></td>
+     </tr>
       <tr>
-        <td>y2</td>
-        <td><span data-keyref="Type_Real"><a href="GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
-        <td>The y coordinate of the end of the line (where the arrowhead ends).</td>
-      </tr>
+        <td><span class="notranslate">y2</span></td><td><span data-keyref="Type_Real"></span></td>
+        <td><span class="notranslate">The y coordinate of the end of the line (where the arrowhead ends).</span></td>
+     </tr>
       <tr>
-        <td>size</td>
-        <td><span data-keyref="Type_Real"><a href="GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
-        <td>The length of the arrow in pixels.</td>
-      </tr>
+        <td><span class="notranslate">size</span></td><td><span data-keyref="Type_Real"></span></td>
+        <td><span class="notranslate">The length of the arrow in pixels.</span></td>
+     </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
-  <p class="code"><span data-keyref="Type_Void">N/A</span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
+  <p class="code"><span data-keyref="Type_Void"></span></p>
+  <p> </p>
+  <h4>Пример:</h4>
   <p class="code">draw_arrow(x, y, mouse_x, mouse_y, 10);</p>
-  <p>The above code will draw an arrow from the position of the instance to the position of the mouse, with the arrow head being 10 pixels long.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Приведенный выше код нарисует стрелку от позиции экземпляра до позиции мыши, при этом длина головки стрелки составит 10 пикселей.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Basic_Forms.htm">Basic Forms</a></div>
-        <div style="float:right">Next: <a href="draw_circle.htm">draw_circle</a></div>
+        <div style="float:left">Назад: <a href="Basic_Forms.htm">Основные формы</a></div>
+        <div style="float:right">Следующий: <a href="draw_circle.htm"><span class="notranslate">draw_circle</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 draw_arrow

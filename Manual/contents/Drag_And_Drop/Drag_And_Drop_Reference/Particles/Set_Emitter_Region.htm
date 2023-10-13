@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Set Emitter Region</title>
+  <title>Установите регион излучателя</title>
   <meta name="generator" content="Adobe RoboHelp 2019" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
-  <script src="../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page that explains the Set Emitter Region action" />
   <meta name="rh-index-keywords" content="GML Visual Action - Set Emitter Region" />
@@ -14,76 +14,76 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1><img alt="Set Emitter Region Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Particles/i_Particles_Set_Emitter_Region.png" /> Set Emitter Region</h1>
-  <p>This action is used to set the region and shape of an emitter within a particle system. You supply the particle system ID that the emitter belongs to (as returned by the action <a href="Create_Particle_System.htm">Create Particle System</a>) and then
-    the actual emitter ID (as returned by the action <a href="Create_Particle_Emitter.htm">Create Particle Emitter</a>), and then give a shape for the emitter to take within the given bounding box values. The possible emitter shapes are:</p>
-  <p><img alt="Emitter Shapes Example" class="center" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Particles/Emitter_Shapes.png" />To define your shapes, you give the coordinates for a &quot;bounding box&quot; into which the given
-    shape will be placed (in the case of rectangle, ellipse and diamond shapes) or the first and second coordinates for the start and finish points (in the case of a line). All particles that are burst or streamed from the emitter will be created within
-    the confines of the shape within this bounding box. You can also set the distribution of the particles with the option of:</p>
+  <h1><img> Установите регион излучателя</h1>
+  <p>Это действие используется для установки области и формы эмиттера в системе частиц. Вы указываете ID системы частиц, к которой принадлежит эмиттер (возвращается действием <a href="Create_Particle_System.htm">Создать систему частиц</a>), а затем
+    ID фактического эмиттера (возвращается действием <a href="Create_Particle_Emitter.htm">Create Particle Emitter</a>), а затем задаете форму эмиттера в пределах заданных значений граничной области. Возможными формами эмиттера являются:</p>
+  <p><img>Для определения фигур задаются координаты &quot;ограничивающей рамки&quot;, в которую будет помещена данная
+    (в случае прямоугольника, эллипса и ромба) или первую и вторую координаты для начальной и конечной точек (в случае линии). Все частицы, которые вырываются или вытекают из эмиттера, будут созданы в пределах
+    в границах фигуры в пределах этой ограничительной области. Вы также можете задать распределение частиц с помощью опции:</p>
   <ul class="colour">
-    <li><b>Linear</b>: Particles will be created anywhere at random within the given shape.</li>
-    <li><b>Gaussian</b>: Particles will be created predominantly in the middle of the shape with fewer along the edges.</li>
-    <li><b>Inverse Gaussian</b>: Particles will be created predominantly along the edges of the shape with fewer in the middle.</li>
+    <li><b>Линейный</b>: Частицы будут созданы в произвольном месте в пределах заданной формы.</li>
+    <li><b>Гаусс</b>: Частицы будут создаваться преимущественно в центре фигуры и меньше по краям.</li>
+    <li><b>Инверсный гаусс</b>: Частицы будут создаваться преимущественно по краям фигуры, а в центре их будет меньше.</li>
   </ul>
-  <p> </p>
-  <h4>Action Syntax:</h4>
-  <p><img alt="Set Emitter Region Action" class="center" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Particles/a_Particles_Set_Emitter_Region.png" /></p>
-  <h4>Arguments:</h4>
+  <p> </p>
+  <h4>Синтаксис действия:</h4>
+  <p><img alt="Set Emitter Region Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Particles/i_Particles_Set_Emitter_Region.png" /></p>
+  <h4>Аргументы:</h4>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Description</th>
+        <th>Аргумент</th>
+        <th>Описание</th>
       </tr>
       <tr>
-        <td>System</td>
-        <td>The unique ID of the system the emitter belongs to</td>
+        <td><span class="notranslate">System</span></td>
+        <td>Уникальный идентификатор системы, к которой принадлежит излучатель</td>
       </tr>
       <tr>
-        <td>Emitter</td>
-        <td>The unique ID of the emitter to set the shape of</td>
+        <td><span class="notranslate">Emitter</span></td>
+        <td>Уникальный идентификатор излучателя для установки формы</td>
       </tr>
       <tr>
-        <td>Shape</td>
-        <td>The particle shape that is to be used</td>
+        <td><span class="notranslate">Shape</span></td>
+        <td>Форма частицы, которая будет использоваться</td>
       </tr>
       <tr>
-        <td>Distribution</td>
-        <td>The distribution of particles within the given shape</td>
+        <td><span class="notranslate">Distribution</span></td>
+        <td>Распределение частиц в пределах заданной формы</td>
       </tr>
       <tr>
-        <td>Left</td>
-        <td>The position of the left side of the shape bounding box (in pixels)</td>
+        <td><span class="notranslate">Left</span></td>
+        <td>Положение левой стороны ограничительной рамки фигуры (в пикселях)</td>
       </tr>
       <tr>
-        <td>Top</td>
-        <td>The position of the top of the shape bounding box (in pixels)</td>
+        <td><span class="notranslate">Top</span></td>
+        <td>Положение вершины ограничивающей рамки фигуры (в пикселях)</td>
       </tr>
       <tr>
-        <td>Right</td>
-        <td>The position of the right side of the shape bounding box (in pixels)</td>
+        <td><span class="notranslate">Right</span></td>
+        <td>Положение правой стороны ограничительной рамки фигуры (в пикселях)</td>
       </tr>
       <tr>
-        <td>Bottom</td>
-        <td>The position of the bottom of the shape bounding box (in pixels)</td>
+        <td><span class="notranslate">Bottom</span></td>
+        <td>Положение нижней части ограничительной рамки фигуры (в пикселях)</td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Example:</h4>
-  <p><img alt="Set Emitter Region Example" class="center" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Particles/e_Particles_Create_Particle_Emitter.png" />The above action block code will create a particle emitter, set it&#39;s
-    region, and then set it to emit a stream of particles.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p> </p>
+  <h4>Пример:</h4>
+  <p><img>Приведенный выше код блока действий создаст излучатель частиц, установит его
+    регион, а затем настроит его на испускание потока частиц.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Particle_Actions.htm">Particle Actions</a></div>
-        <div style="float:right">Next: <a href="Do_Effect.htm">Do Effect</a></div>
+        <div style="float:left">Назад: <a href="Particle_Actions.htm">Действия частиц</a></div>
+        <div style="float:right">Следующий: <a href="Do_Effect.htm">Эффект Do</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2021 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 Action - Set Emitter Region

@@ -6,7 +6,7 @@
   <title>skeleton_animation_get_duration</title>
   <meta name="generator" content="Adobe RoboHelp 2019" />
   <link rel="stylesheet" href="../../../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page explaining the function skeleton_animation_get_duration" />
   <meta name="rh-index-keywords" content="skeleton_animation_get_duration" />
@@ -16,45 +16,45 @@
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
   <h1>skeleton_animation_get_duration</h1>
-  <p>This function will return the time required for the given animation set to run before looping back to the beginning. The return value is in seconds.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p>Эта функция возвращает время, необходимое для выполнения заданного набора анимации перед возвратом к началу. Возвращаемое значение выражается в секундах.</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
   <p class="code">skeleton_animation_get_duration(animname);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th><th>Type</th>
-        <th>Description</th>
+        <th>Аргумент</th><th>Тип</th>
+        <th>Описание</th>
      </tr>
       <tr>
-        <td>animname</td><td><span data-keyref="Type_String"></span></td>
-        <td>The name (a string) of the animation set to use.</td>
+        <td><span class="notranslate">animname</span></td><td><span data-keyref="Type_String"></span></td>
+        <td><span class="notranslate">The name (a string) of the animation set to use.</span></td>
      </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
   <p class="code"><span data-keyref="Type_Real"></span></p>
-  <p> </p>
-  <h4>Example1:</h4>
+  <p> </p>
+  <h4>Пример1:</h4>
   <p class="code">time += delta_time / 1000000;<br/> var duration = skeleton_animation_get_duration(skeleton_animation_get());<br/> var frame = floor((image_number * (mTime / duration)) + 0.5) % image_number;<br/> image_index = frame;<br/> draw_self();
   </p>
-  <p>The above code will set the <span class="inline">image_index</span> to the correct value for the currently assigned skeletal animation sprite.</p>
-  <h4>Example2:</h4>
+  <p>Приведенный выше код установит <span class="inline">image_index</span> в правильное значение для текущей назначенной скелетной анимации <span class="notranslate">sprite</span>.</p>
+  <h4>Пример2:</h4>
   <p class="code">time += delta_time / 1000000;<br/> var d = skeleton_animation_get_duration(&quot;walk&quot;);<br/> if time &gt; d time -= d;<br/> draw_skeleton_time(sprite_index, &quot;walk&quot;, &quot;skin1&quot;, time, x, y, image_xscale, image_yscale, image_angle,
     c_white);</p>
-  <p>The above code will draw the given skeletal animation sprite using delta-time to set the frame being drawn.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Приведенный выше код отрисует заданную скелетную анимацию <span class="notranslate">sprite</span>, используя дельта-время для установки рисуемого кадра.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Animation.htm">Animation</a></div>
-        <div style="float:right">Next: <a href="skeleton_animation_mix.htm">skeleton_animation_mix</a></div>
+        <div style="float:left">Назад: <a href="Animation.htm">Анимация</a></div>
+        <div style="float:right">Следующий: <a href="skeleton_animation_mix.htm"><span class="notranslate">skeleton_animation_mix</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2021 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 skeleton_animation_get_duration

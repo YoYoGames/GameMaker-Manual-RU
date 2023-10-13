@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>layer_sequence_angle</title>
+  <title>угол_последовательности_слоя</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page outlining the function layer_sequence_angle" />
   <meta name="rh-index-keywords" content="layer_sequence_y" />
@@ -14,53 +14,53 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>layer_sequence_angle</h1>
-  <p>With this function you can set the angle of rotation for the given sequence element. You supply the sequence element ID as returned by <a href="layer_sequence_create.htm"><span class="inline">layer_sequence_create()</span></a> or by one of the <a href="../General_Layer_Functions/General_Layer_Functions.htm">layer element functions</a> along with the new angle to set and the sequence will be rotated about its origin to the new position. Angles in GameMaker are calculated with 0º to the right, and go anti-clockwise - so 90º is up, 180º is left and 270º is down - and the default angle for a sequence would be 0º.</p>
-  <p>Note that you shouldn&#39;t change the <span class="inline">image_xscale</span> \ <span class="inline">image_yscale</span> \ <span class="inline">image_angle</span> \ <span class="inline">x</span> \ <span class="inline">y</span> variables for any instances in a sequence that uses this function as they will be overwritten as soon as the sequence updates after calling the function.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <h1>угол_последовательности_слоя</h1>
+  <p>С помощью этой функции вы можете установить угол поворота для заданного элемента последовательности. Вы передаете идентификатор элемента последовательности, возвращенный функцией <a href="layer_sequence_create.htm"><span class="inline">layer_sequence_create()</span></a> или одной из <a href="../General_Layer_Functions/General_Layer_Functions.htm">функций элемента слоя</a> вместе с новым углом, и последовательность будет повернута вокруг своего начала в новое положение. Углы в <span class="notranslate">GameMaker</span> рассчитываются с 0º вправо и идут против часовой стрелки - так 90º вверх, 180º влево и 270º вниз - и по умолчанию угол для последовательности равен 0º.</p>
+  <p>Обратите внимание, что не следует изменять переменные <span class="inline">image_xscale</span> \ <span class="inline">image_yscale</span> \ <span class="inline">image_angle</span> \ <span class="inline">x</span> \ <span class="inline">y</span> для любых экземпляров в последовательности, использующей эту функцию, так как они будут перезаписаны, как только последовательность обновится после вызова функции.</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
   <p class="code">layer_sequence_angle(sequence_element_id, angle)</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Аргумент</th>
+        <th>Тип</th>
+        <th>Описание</th>
       </tr>
       <tr>
-        <td>sequence_element_id</td>
-        <td><span data-keyref="Type_ID_Element_Sequence">Sequence Element ID</span></td>
-        <td>The unique ID value of the sequence element to target</td>
+        <td><span class="notranslate">sequence_element_id</span></td>
+        <td><span data-keyref="Type_ID_Element_Sequence">Идентификатор элемента последовательности</span></td>
+        <td><span class="notranslate">The unique ID value of the sequence element to target</span></td>
       </tr>
       <tr>
-        <td>angle</td>
-        <td><span data-keyref="Type_Real">Real</span></td>
-        <td>The new angle to rotate the sequence element to</td>
+        <td><span class="notranslate">angle</span></td>
+        <td><span data-keyref="Type_Real">Реально</span></td>
+        <td><span class="notranslate">The new angle to rotate the sequence element to</span></td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
   <p class="code"><span data-keyref="Type_Void">N/A</span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Пример:</h4>
   <p class="code">if current_angle &lt; 90<br />
     {<br />
         current_angle += 1;<br />
         layer_sequence_angle(my_seq, current_angle);<br />
     }</p>
-  <p>The above code checks the value held in the <span class="inline">current_angle</span> variable, and if it is less than 90 then it adds to it then uses the value to set the angle of the sequence element referenced in the variable <span class="inline">my_seq</span>.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Приведенный выше код проверяет значение, хранящееся в переменной <span class="inline">current_angle</span>, и если оно меньше 90, то прибавляет к нему значение, а затем использует его для установки угла элемента последовательности, на который ссылается переменная <span class="inline">my_seq</span>.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Sequence_Layers.htm">Sequence Layers</a></div>
-        <div style="float:right">Next: <a href="layer_sequence_xscale.htm">layer_sequence_xscale</a></div>
+        <div style="float:left">Назад: <a href="Sequence_Layers.htm">Последовательность слоев</a></div>
+        <div style="float:right">Следующий: <a href="layer_sequence_xscale.htm"><span class="notranslate">layer_sequence_xscale</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 layer_sequence_angle

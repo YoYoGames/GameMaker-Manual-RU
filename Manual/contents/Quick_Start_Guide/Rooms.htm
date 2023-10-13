@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Rooms</title>
+  <title>Номера</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../assets/css/default.css" type="text/css" />
-  <script src="../assets/scripts/main_script.js" type="module"></script>
+  <script src="../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Overview of the room editor." />
   <meta name="rh-index-keywords" content="Quick Start - Rooms" />
@@ -15,70 +14,87 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>Rooms</h1>
-  <p>All games that you make in <span data-keyref="GameMaker Name">GameMaker</span> need at least one room to run (but can have many, many more) , and a room is just a space where you place instances of the objects that make up your game as well as tiles and any other graphical resources. When you first create a room in the <a href="../Introduction/The_Asset_Browser.htm">Asset Browser</a> you will be presented with a new <a href="../The_Asset_Editors/Rooms.htm"><strong>Room Editor</strong></a> workspace with which to edit its properties, something like this:</p>
-  <p><img alt="The Room Editor" class="center" src="../assets/Images/QS_Guide/QS_RoomEditor.png" style="cursor: nwse-resize;" /></p>
-  <p>By default the room tools will be placed on the left, with two main sections:</p>
+  <h1>Номера</h1>
+  <p>Все игры, которые вы создаете в <span data-keyref="GameMaker Name">GameMaker</span>, должны иметь хотя бы одну комнату для запуска (но могут иметь и много, много других), а комната - это просто пространство, где вы размещаете экземпляры объектов, составляющих вашу игру, а также плитки и любые другие графические ресурсы.
+    Когда вы впервые создаете комнату в <a href="../Introduction/The_Asset_Browser.htm">браузере активов</a>, перед вами открывается новая рабочая область, в которой вы можете редактировать ее. <a href="../The_Asset_Editors/Rooms.htm"><strong>Редактор комнат</strong></a> рабочая область, в которой можно редактировать ее свойства,
+    примерно так:</p>
+  <p><img alt="The Room Editor" class="center" src="../assets/Images/QS_Guide/QS_RoomEditor.png"/></p>
+  <p>По умолчанию инструменты комнаты будут расположены слева, с тремя основными разделами:</p>
   <ul class="colour">
-    <li><strong>Layer Editor</strong>: Everything in a room is placed on <em>layers</em>, and there are different layer types that you can choose from (more on this later). Layers are ordered by <em>depth </em>and this depth is what defines the order in which the layer contents will be rendered to the screen when the game runs. Depth ordering is from highest to lowest, so that the lower the depth the nearer the &quot;camera&quot; and the higher the depth the further away. For example, a layer with a depth of -300 will render over a layer with a depth of -100, and a layer with a depth of 1000 will render under everything with a depth less than this. Note that by default, <span data-keyref="GameMaker Name">GameMaker</span> will order layer depths for you according to the position in the Layer Editor, and you can drag around layers using the mouse to re-order them and <span data-keyref="GameMaker Name">GameMaker</span> will re-order the depths to match.</li>
-    <li><a href="../IDE_Tools/The_Inspector.htm"><strong>Inspector</strong></a>: When you open a room its properties such as room size and camera view ports are shown here. You can set them here as well.<br />
-      When you click a layer in the Layer Editor its properties, that depend on the layer type, are shown and can be changed here. This window permits you to change those properties and edit how the layer will be <a class="glossterm" data-glossterm="rendered" href="#">rendered</a>.</li>
+    <li><strong>Редактор слоев</strong>: Все в комнате располагается на <em>слоях</em>, и существуют различные типы слоев, которые вы можете выбрать (подробнее об этом позже). Слои упорядочены по <em>глубине </em>, и эта глубина определяет порядок, в котором
+      содержимое слоев будет выводиться на экран при запуске игры. Глубина упорядочивается от наибольшей к наименьшей, так что чем меньше глубина, тем ближе к &quot;камере&quot;, а чем больше глубина, тем дальше. Например, слой с глубиной
+      глубиной -300 будет отображаться поверх слоя с глубиной -100, а слой с глубиной 1000 будет отображаться под всем, что имеет глубину меньше этой. Обратите внимание, что по умолчанию <span data-keyref="GameMaker Name">GameMaker</span> упорядочивает глубину слоев в соответствии с позицией
+      в редакторе слоев, и вы можете перетаскивать слои с помощью мыши, чтобы изменить их порядок, и <span data-keyref="GameMaker Name">GameMaker</span> изменит порядок глубин в соответствии с этим.</li>
+    <li><strong>Свойства слоя</strong>: Каждый слой, который вы добавляете в комнату, имеет свои собственные свойства, и эти свойства меняются в зависимости от типа слоя. В этом окне можно изменить эти свойства и отредактировать, как будет отображаться слой.
+     <a class="glossterm" data-glossterm="визуализированный" href="#">рендеринга</a>.</li>
+    <li><strong>Свойства комнаты</strong>: Комнаты также имеют ряд свойств, и их можно задать здесь. Здесь можно задать такие параметры, как размер комнаты, активные порты обзора камеры и некоторые другие.</li>
   </ul>
-  <p>We&#39;ve mentioned that there are different layer types, so let&#39;s just go over what they are and how they can be used when building your games:</p>
+  <p>Мы уже упоминали, что существуют различные типы слоев, поэтому давайте рассмотрим, что они собой представляют и как их можно использовать при создании игр:</p>
   <table class="icons">
     <tbody>
       <tr>
-        <td class="icons"><img src="../assets/Images/Icons/Icon_Layer_Background.png" /></td>
-        <td class="icons"><strong>Background Layer</strong></td>
-        <td class="text">The background layer is a layer that can be filled with a <em>single </em>colour or a <em>single </em>image. It can be moved and positioned within the room, and you can have multiple background layers. Generally this is used, as the name suggests, to generate a constant background for all the other layers in the room. By Default a new room will always contain a background layer, but you can remove it if you don&#39;t need it.</td>
+        <td class="icons"><img src="../assets/Images/Icons/Icon_Layer_Background.png"/></td>
+        <td class="icons"><strong>Фоновый слой</strong></td>
+        <td class="text">Фоновый слой - это слой, который может быть заполнен <em>одним </em>цветом или <em>одним </em>изображением. Его можно перемещать и позиционировать в пределах комнаты, и у вас может быть несколько фоновых слоев. Обычно он используется, как следует из названия,
+          для создания постоянного фона для всех остальных слоев в комнате. По умолчанию новая комната всегда будет содержать фоновый слой, но вы можете удалить его, если он вам не нужен.</td>
       </tr>
       <tr>
-        <td class="icons"><img src="../assets/Images/Icons/Icon_Layer_Instances.png" /></td>
-        <td class="icons"><strong>Instance Layer</strong></td>
-        <td class="text">The instance layer is where you place all the instances of the objects that you require for the game. To add an instance to a layer, simply click <img alt="LMB Icon" class="icon" src="../assets/Images/Icons/Icon_LMB.png" /> on the object in the asset browser and then drag it into the room editor workspace. When you release the mouse button, an instance of that object will have been added to the room. By Default a new room will always contain an instance layer, but you can remove it if you don&#39;t need it.</td>
+        <td class="icons"><img src="../assets/Images/Icons/Icon_Layer_Instances.png"/></td>
+        <td class="icons"><strong>Уровень экземпляров</strong></td>
+        <td class="text">Слой экземпляров - это место, где размещаются все экземпляры объектов, необходимых для игры. Чтобы добавить экземпляр в слой, просто щелкните <img> на объекте в
+          браузере активов, а затем перетащите его в рабочую область редактора комнат. Когда вы отпустите кнопку мыши, экземпляр этого объекта будет добавлен в комнату. По умолчанию новая комната всегда будет содержать слой экземпляра, но вы можете удалить его, если он вам нужен.
+          если он вам не нужен.</td>
       </tr>
       <tr>
-        <td class="icons"><img src="../assets/Images/Icons/Icon_Layer_Tilemap.png" /></td>
-        <td class="icons"><strong>Tile Map Layer</strong></td>
-        <td class="text"><span>After having created a <a class="glossterm" data-glossterm="tile sets" href="#">tile set</a>, you need to add the tiles to your room, which is done by creating a <a class="glossterm" data-glossterm="tile map" href="#">tile map</a> layer. A tile map layer is a layer that permits you to add tiles from any of the tile set assets that you have created and will be set up automatically to use a grid the size of the tile set cells. You can only add a single tile to each grid cell, so if you require multiple tiles to occupy the same space, then you should be using multiple tile map layers.</span></td>
+        <td class="icons"><img alt="LMB Icon" class="icon" src="../assets/Images/Icons/Icon_LMB.png"/></td>
+        <td class="icons"><strong>Плитка Слой карты</strong></td>
+        <td class="text"><span>После создания <a class="glossterm" data-glossterm="комплекты плитки" href="#">набора плиток</a> необходимо добавить плитки в комнату, что делается путем создания слоя <a class="glossterm" data-glossterm="карта плитки" href="#">карты плиток</a>. Слой карты плитки - это слой, позволяющий добавлять плитки из любого созданного вами набора плиток, который будет автоматически настроен на использование сетки размером с ячейки набора плиток. В каждую ячейку сетки можно добавить только одну плитку, поэтому если вам необходимо, чтобы несколько плиток занимали одно и то же пространство, то следует использовать несколько слоев карты плиток.</span></td>
       </tr>
       <tr>
-        <td class="icons"><img src="../assets/Images/Icons/Icon_Layer_Path.png" /></td>
-        <td class="icons"><strong>Path Layer</strong></td>
-        <td class="text"><span>The path layer is the only one that does not actually get rendered when you run your game. This layer is more of a &quot;convenience&quot; layer for helping you to create or edit <strong>Path </strong>assets, since it permits you to add or edit paths within the actual room space.</span></td>
+        <td class="icons"><img src="../assets/Images/Icons/Icon_Layer_Tilemap.png"/></td>
+        <td class="icons"><strong>Слой пути</strong></td>
+        <td class="text"><span>Слой путей - единственный, который фактически не отображается при запуске игры. Этот слой является скорее &quot;удобным&quot; слоем для создания или редактирования активов <strong>Path </strong>, поскольку он позволяет добавлять или редактировать пути в реальном пространстве комнаты.</span></td>
       </tr>
       <tr>
-        <td class="icons"><img src="../assets/Images/Icons/Icon_Layer_Asset.png" /></td>
-        <td class="icons"><strong>Asset Layer</strong></td>
-        <td class="text">Sometimes you want a nice graphical effect but don&#39;t want the overhead of using an instance or don&#39;t need it to do anything other than draw itself. You could use a tile map, but given that tile maps are restricted to using a grid and only a single image per grid cell, they can be a bit restrictive. This is when you would use the asset layer. The asset layer simply takes a sprite resource and draws it using the parameters that you set when you add it into the room. Sprites and sequences can be added to this layer the same way that instances of objects are added to the instance layer, ie: you click <img alt="LMB Icon" class="icon" src="../assets/Images/Icons/Icon_LMB.png" /> on the sprite in the asset browser and then drag it into the room editor workspace.</td>
+        <td class="icons"><img src="../assets/Images/Icons/Icon_Layer_Path.png"/></td>
+        <td class="icons"><strong>Слой активов</strong></td>
+        <td class="text">Иногда вы хотите получить красивый графический эффект, но не хотите накладных расходов на использование экземпляра или не нуждаетесь в том, чтобы он делал что-то, кроме рисования. Можно использовать карту плиток, но, учитывая, что карты плиток ограничены использованием сетки и только
+          одно изображение на ячейку сетки, они могут быть немного ограниченными. В этом случае можно использовать слой активов. Слой активов просто берет ресурс <span class="notranslate">sprite</span> и рисует его, используя параметры, которые вы задали при добавлении его в комнату. <span class="notranslate">Sprites</span> и
+          последовательности могут быть добавлены в этот слой так же, как экземпляры объектов добавляются в слой экземпляров, т.е. вы щелкаете <img> на <span class="notranslate">sprite</span> в браузере активов, а затем
+          перетаскиваете его в рабочую область редактора комнаты.</td>
       </tr>
     </tbody>
   </table>
   <p>
     <!--</div>-->
   </p>
-  <p>We won&#39;t go into much more details about the room editor here (for that we have <a href="../The_Asset_Editors/Rooms.htm">this section</a> of the manual), but we will briefly explain how to add instances to an Instance Layer, as you&#39;ll need to know that for the next section of the Quick Start Guide.</p>
-  <p>To add an instance to the room editor, you must first select an Instance Layer from the Layer Editor on the left (or create one if none exist). You can then go to the Asset Browser and simply click <img alt="LMB Icon" class="icon" src="../assets/Images/Icons/Icon_LMB.png" /> and drag an object that you want from there and drop it into the room at the position you want, which will add a single instance of that object to your game:</p>
-  <p><img alt="Adding Instances To A room Animation" class="center" src="../assets/Images/QS_Guide/QS_AddingInstances.gif" /></p>
-  <p>If you want to place multiple instances in the room, then you can select an object from the resource tree and then press and hold <img alt="ALT Icon" class="icon" height="20" src="../assets/Images/Icons/Icon_Alt.png" width="55" /> to preview the resource, and if you additionally click the left mouse button <img alt="LMB Icon" class="icon" height="24" src="../assets/Images/Icons/Icon_LMB.png" width="21" /> you can then &quot;paint&quot; it into the room layer.</p>
-  <p><img alt="Painting Instances In A Room Animation" class="center" src="../assets/Images/QS_Guide/QS_PaintingInstances.gif" /></p>
-  <p>Note that assets are given a position when they are added into the room editor based on their X and Y axis positions relative to the room <strong>origin</strong>. The room origin is the (0, 0) position, which in <span data-keyref="GameMaker Name">GameMaker</span> is the top left corner, and to the right is +X and down is +Y, e.g.:</p>
-  <p><img alt="Room Editor Axis Alignment" class="center" src="../assets/Images/QS_Guide/QS_RoomEditorAxis.png" />In the above example the instance is placed in the middle of the room at position (X:512, Y:384). It&#39;s also possible to go outside of the room bounds and have positions that are greater than the room axis lengths, or even less than than the room origin - in which case the X/Y coordinates will be negative values.</p>
-  <p>For more detailed information on the Room Editor, you can see the following section of the manual:</p>
+  <p>Мы не будем здесь подробно рассказывать о редакторе помещений (для этого есть <a href="../The_Asset_Editors/Rooms.htm">этот раздел</a> руководства), но мы кратко объясним, как добавить экземпляры в слой экземпляров, поскольку вам нужно будет
+    поскольку это необходимо знать для следующего раздела Краткого руководства.</p>
+  <p>Чтобы добавить экземпляр в редактор комнаты, сначала нужно выбрать слой экземпляра в редакторе слоев слева (или создать его, если таковых нет). Затем вы можете перейти в Браузер активов и просто щелкнуть <img>, перетащить оттуда нужный вам объект и бросить его в комнату в нужном вам месте, что добавит один экземпляр этого объекта в вашу игру:</p>
+  <p><img src="../assets/Images/Icons/Icon_Layer_Asset.png"/></p>
+  <p>Если вы хотите разместить несколько экземпляров в комнате, то можно выбрать объект в дереве ресурсов, а затем нажать и удерживать <img> для предварительного просмотра ресурса,
+    а если дополнительно нажать левую кнопку мыши <img>, то можно &quot;закрасить&quot; его в слой комнаты.</p>
+  <p><img alt="LMB Icon" class="icon" src="../assets/Images/Icons/Icon_LMB.png"/></p>
+  <p>Обратите внимание, что при добавлении активов в редактор комнаты им присваивается позиция, основанная на их положении по осям X и Y относительно <strong>начала</strong> комнаты. Начало комнаты - это позиция (0, 0), которая в <span data-keyref="GameMaker Name">GameMaker</span> является верхним левым углом,
+    вправо - это +X, а вниз - +Y, например:</p>
+  <p><img>В приведенном выше примере экземпляр размещен в центре комнаты в позиции (X:512, Y:384). Также можно выйти за пределы
+    и иметь позиции, которые больше, чем длина оси комнаты, или даже меньше, чем начало комнаты - в этом случае координаты X/Y будут иметь отрицательные значения.</p>
+  <p>Более подробную информацию о редакторе помещений вы можете найти в следующем разделе руководства:</p>
   <ul class="colour">
-    <li><a href="../The_Asset_Editors/Rooms.htm">Editors: The Room Editor</a></li>
+    <li><a href="../The_Asset_Editors/Rooms.htm">Редакторы: Редактор номера</a></li>
   </ul>
-  <p>That wraps it up for the Room Editor in this Quick Start Guide, and you should now know enough to actually get started creating sprites and objects and designing rooms for them. The next sections of this guide are going to cover some of the programming fundamentals to help you on your way, starting with actually <strong>Drawing </strong>things to the screen.</p>
-  <p> </p>
-  <p> </p>
+  <p>На этом мы заканчиваем рассмотрение редактора комнат в этом кратком руководстве, и теперь вы должны знать достаточно, чтобы приступить к созданию <span class="notranslate">sprites</span> и объектов и проектированию комнат для них. В следующих разделах этого руководства будут рассмотрены некоторые основы программирования.
+    основы программирования, чтобы помочь вам на этом пути, начиная с собственно <strong>рисования </strong>объектов на экране.</p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="../Content.htm">Index</a></div>
-        <div style="float:right">Next: <a href="Drawing.htm">Drawing</a></div>
+        <div style="float:left">Назад: <a href="../Content.htm">Указатель</a></div>
+        <div style="float:right">Следующий: <a href="Drawing.htm">Рисование</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 Rooms
@@ -87,5 +103,5 @@ Quick Start: Rooms
   <!-- TAGS
 qs_rooms
 -->
-</body>
-</html>
+
+</body></html>

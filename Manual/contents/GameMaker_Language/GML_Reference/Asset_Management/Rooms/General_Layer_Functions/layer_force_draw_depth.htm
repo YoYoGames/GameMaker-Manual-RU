@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>layer_force_draw_depth</title>
-  <meta name="generator" content="Adobe RoboHelp 2022" />
+  <title>глубина слоя_силы_рисунка</title>
+  <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page outlining the function layer_force_draw_depth" />
   <meta name="rh-index-keywords" content="layer_force_draw_depth" />
@@ -14,51 +14,51 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1><span data-field="title" data-format="default">layer_force_draw_depth</span></h1>
-  <p>This function forces <i>all</i> layers to be drawn at the specified z depth.</p>
-  <p>This <b>does not change the order the layers are rendered in</b> and they&#39;ll still be drawn in depth order, it simply changes what z value is used. In general you do not need to worry about this, but if you have layers that have a depth outside of the legal range (<span data-keyref="Const_Depth_Min">-16000</span> to <span data-keyref="Const_Depth_Max">16000</span>) then they won&#39;t be rendered, so you can force the Z depth to a reasonable value - 0 for example - and they will all be rendered fine. Note that this is generally only for use with legacy projects from previous version of <span data-keyref="GameMaker Name">GameMaker</span> where you could have draw depths higher or lower than the permitted layer range.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
-  <p class="code"><span data-field="title" data-format="default">layer_force_draw_depth</span>(force, depth)</p>
+  <h1>глубина слоя_силы_рисунка</h1>
+  <p>Эта функция заставляет <i>все</i> слои рисоваться на указанной глубине z. Это <b>не меняет порядок отрисовки слоев</b>, они по-прежнему будут отрисовываться в порядке глубины, просто меняется значение z. В общем случае вам не нужно беспокоиться об этом, но если у вас есть слои, глубина которых выходит за пределы допустимого диапазона (от -16000 до 16000), то они не будут отрисованы, поэтому вы можете принудительно установить глубину Z в разумное значение - например, 0 - и все они будут отрисованы нормально. Обратите внимание, что это обычно используется только в старых проектах предыдущих версий <i>GameMaker</i>, где глубина прорисовки может быть больше или меньше допустимого диапазона слоев.</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
+  <p class="code">layer_force_draw_depth(force, depth)</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Аргумент</th>
+        <th>Тип</th>
+        <th>Описание</th>
       </tr>
       <tr>
-        <td>force</td>
-        <td><span data-keyref="Type_Bool"><a href="GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Boolean</a></span></td>
-        <td>Whether to enable (set to <span class="inline">true</span> or disable (set to <span class="inline">false</span>) Z depth forcing</td>
+        <td><span class="notranslate">force</span></td>
+        <td><span data-keyref="Type_Bool">Булево</span></td>
+        <td><span class="notranslate">Whether to enable (set to <span class="inline">true</span> или отключить (установить на <span class="inline">false</span>) форсирование глубины Z</td>
       </tr>
       <tr>
-        <td>depth</td>
-        <td><span data-keyref="Type_Real"><a href="GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
-        <td>The new Z depth</td>
+        <td><span class="notranslate">depth</span></td>
+        <td><span data-keyref="Type_Real">Реально</span></td>
+        <td><span class="notranslate">The new Z depth</span></td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
   <p class="code"><span data-keyref="Type_Void">N/A</span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Пример:</h4>
   <p class="code">if !layer_is_draw_depth_forced()<br />
     {<br />
         layer_force_draw_depth(true, 0);<br />
     }</p>
-  <p>The above code checks to see if the layer Z depth is forced or not and if it is not, it sets the Z depth to 0 and enables it.</p>
-  <p> </p>
-  <p> </p>
+  <p>Приведенный выше код проверяет, является ли глубина Z слоя принудительной или нет, и если нет, то устанавливает глубину Z равной 0 и включает ее.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="General_Layer_Functions.htm">General Layer Functions</a></div>
-        <div style="float:right">Next: <a href="layer_is_draw_depth_forced.htm">layer_is_draw_depth_forced</a></div>
+        <div style="float:left">Назад: <a href="General_Layer_Functions.htm">Общие функции слоя</a></div>
+        <div style="float:right">Следующий: <a href="layer_is_draw_depth_forced.htm"><span class="notranslate">layer_is_draw_depth_forced</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 layer_force_draw_depth

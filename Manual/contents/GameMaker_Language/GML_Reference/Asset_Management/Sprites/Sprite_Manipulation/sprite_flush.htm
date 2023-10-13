@@ -4,9 +4,9 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>sprite_flush</title>
-  <meta name="generator" content="Adobe RoboHelp 2020" />
+  <meta name="generator" content="Adobe RoboHelp 2019" />
   <link rel="stylesheet" href="../../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page explaining the function sprite_flush" />
   <meta name="rh-index-keywords" content="sprite_flush" />
@@ -15,43 +15,42 @@
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
   <h1>sprite_flush</h1>
-  <p>With this function you can remove the texture page for the given sprite from texture memory (VRAM). The texture will stay in RAM after being flushed.</p>
-  <p>You supply the sprite index (as defined when creating the sprite resource) and the texture page it is assigned to will be removed from texture memory. Note that if the texture page is used elsewhere in the room (by another instance sprite or a background, etc...) you may get a minor performance hit as the page is immediately reloaded, so care should be taken when using this function. Note that the function will return <span class="inline">-1</span> if flush is not supported for the chosen resource, or it will return <span class="inline">0</span> if all worked correctly.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p>С помощью этой функции вы можете удалить из текстурной памяти данную текстурную страницу для данного <span class="notranslate">sprite</span>. Вы указываете индекс <span class="notranslate">sprite</span> (как определено при создании ресурса <span class="notranslate">sprite</span> ), и текстурная страница, которой она назначена, будет удалена из текстурной памяти.
+    Обратите внимание, что если страница текстуры используется в другом месте комнаты (другим экземпляром <span class="notranslate">sprite</span> или фоном, и т.д.), вы можете получить небольшое снижение производительности, так как страница будет немедленно перезагружена, поэтому при использовании этой функции следует соблюдать осторожность. Обратите внимание, что
+    вернет <span class="inline">-1</span>, если flush не поддерживается для выбранного ресурса, или вернет <span class="inline">0</span>, если все работает правильно.</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
   <p class="code">sprite_flush(ind)</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
+        <th>Аргумент</th><th>Тип</th>
+        <th>Описание</th>
+     </tr>
       <tr>
-        <td>ind</td>
-        <td><span data-keyref="Type_Asset_Sprite"><a href="../../../../../../The_Asset_Editors/Sprites.htm" target="_blank">Sprite Asset</a></span></td>
-        <td>The index (resource name) of the sprite asset to flush</td>
-      </tr>
+        <td><span class="notranslate">ind</span></td><td><span data-keyref="Type_Asset_Sprite"></span></td>
+        <td><span class="notranslate">The index (resource name) of the sprite asset to flush</span></td>
+     </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
-  <p class="code"><span data-keyref="Type_Real"><a href="../../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span> (-1 or 0)</p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
+  <p class="code"><span data-keyref="Type_Real"></span> (-1 or 0)</p>
+  <p> </p>
+  <h4>Пример:</h4>
   <p class="code">sprite_flush(spr_Player_Aura);</p>
-  <p>The above code flushes the sprite &quot;spr_Player_Aura&quot; from memory.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Приведенный выше код стирает из памяти <span class="notranslate">sprite</span> &quot;spr_Player_Aura&quot;.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Sprite_Manipulation.htm">Sprite Manipulation</a></div>
-        <div style="float:right">Next: <a href="sprite_flush_multi.htm">sprite_flush_multi</a></div>
+        <div style="float:left">Назад: <a href="Sprite_Manipulation.htm">Манипуляция спрайтом</a></div>
+        <div style="float:right">Следующий: <a href="sprite_flush_multi.htm"><span class="notranslate">sprite_flush_multi</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 sprite_flush

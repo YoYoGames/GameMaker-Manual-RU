@@ -6,7 +6,7 @@
   <title>gesture_get_tap_count</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference page for gesture_get_tap_count" />
   <meta name="rh-index-keywords" content="gesture_get_tap_count" />
@@ -16,31 +16,31 @@
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
   <h1>gesture_get_tap_count</h1>
-  <p>This function is used to check whether tap counting is enabled or disabled. The function will return <span class="inline">true</span> if it is enabled, and <span class="inline">false</span> otherwise and you can enable or disable tap counting using the function <a href="gesture_tap_count.htm"><span class="inline">gesture_tap_count()</span></a>. When enabled, each tap event will have an additional &quot;tapcount&quot; DS map entry which will have registered the number of taps, and when enabled it means that <i>all</i> tap events will be triggered, ie: two taps will trigger both the single tap event and the double tap event, with the single tap event tap count being 1 and the double tap event tap count being 2. The tap count value will be reset to 0 after the time set for a double-tap detection has passed (see the function <a href="gesture_get_double_tap_time.htm"><span class="inline">gesture_double_tap_time()</span></a>). If tap counting is disabled, then the initial tap won&#39;t be registered until the double-tap time has passed and no second tap has been detected. Note that this is <b>enabled</b> by default.</p>
-  <p> </p>
-  <h4><b>Syntax:</b></h4>
+  <p>Эта функция используется для проверки того, включен или отключен подсчет касаний. Функция возвращает <span class="inline">true</span>, если она включена, и <span class="inline">false</span> в противном случае, и вы можете включить или выключить отсчет касаний с помощью функции <a href="gesture_tap_count.htm"><span class="inline">gesture_tap_count()</span></a>. Если функция включена, каждое событие переключения будет иметь дополнительный элемент карты DS &quot;tapcount&quot;, в котором будет зарегистрировано количество переключений, и если функция включена, это означает, что <i>все</i> события переключения будут запущены, т.е.: два переключения вызовут как событие одинарного переключения, так и событие двойного переключения, при этом количество переключений для события одинарного переключения будет равно 1, а для события двойного переключения - 2. Значение счета переключений будет сброшено на 0 по истечении времени, установленного для обнаружения двойного переключения (см. функцию <a href="gesture_get_double_tap_time.htm"><span class="inline">gesture_double_tap_time()</span></a>). Если счетчик касаний отключен, то первое касание не будет зарегистрировано, пока не пройдет время двойного касания и не будет обнаружено второе касание. Обратите внимание, что по умолчанию эта функция <b>включена</b>.</p>
+  <p> </p>
+  <h4><b>Синтаксис:</b></h4>
   <p class="code">gesture_get_tap_count();</p>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
   <p class="code"><span data-keyref="Type_Bool"></span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Пример:</h4>
   <p class="code">if !gesture_get_tap_count()<br />
     {<br />
         getsure_tap_count(true);<br />
     }</p>
-  <p>The above code checks to see if tap counting is enabled and if it is not then it is switched on.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Приведенный выше код проверяет, включен ли подсчет касаний, и если нет, то он включается.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Gesture_Input.htm">Gesture Input</a></div>
-        <div style="float:right">Next: <a href="gesture_get_pinch_distance.htm">gesture_get_pinch_distance</a></div>
+        <div style="float:left">Назад: <a href="Gesture_Input.htm">Ввод с помощью жестов</a></div>
+        <div style="float:right">Следующий: <a href="gesture_get_pinch_distance.htm"><span class="notranslate">gesture_get_pinch_distance</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2021 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 gesture_get_tap_count

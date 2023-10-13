@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>game_end</title>
-  <meta name="generator" content="Adobe RoboHelp 2020" />
+  <title>конец игры</title>
+  <meta name="generator" content="Adobe RoboHelp 2019" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
-  <script src="../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="This page outlines the function game_end" />
   <meta name="rh-index-keywords" content="game_end" />
@@ -14,55 +14,38 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1><span data-field="title" data-format="default">game_end</span></h1>
-  <p>This function ends the game and triggers the <a href="../../../The_Asset_Editors/Object_Properties/Other_Events.htm">Game End Event</a>.</p>
-  <p>This will not happen instantaneously, but rather at the end of the current step, so any code you have in the same step after this function has been called will still run.</p>
-  <h3>Usage Notes</h3>
+  <h1>конец игры</h1>
+  <p>С помощью этой функции вы можете завершить игру (при этом будет вызвано <a href="../../../The_Asset_Editors/Object_Properties/Other_Events.htm">событие Game End Event</a> ). Это произойдет не мгновенно, а скорее в конце текущего шага, поэтому любой код
+    находящийся в том же шаге после вызова этой функции, будет по-прежнему выполняться. Обратите внимание, что эта функция имеет следующие ограничения:</p>
   <ul class="colour">
-    <li>On Android devices, calling <span class="inline3_func"><a data-xref="{title}" href="game_end.htm">game_end</a></span> will push the app into the background, but it will <i>not</i> close the app. This must be done by the user.</li>
-    <li>On iOS it will do nothing and silently fail.</li>
-    <li>On all consoles, it may crash the game or at best fail silently, and it may also be a submission fail, so this function <i>must not be used</i>.</li>
-    <li>On HTML5 it will end the game, but leave the user staring at a blank draw canvas on the web page, and as such it isn&#39;t recommended that it be used on that target platform.</li>
-    <li>On Windows, Linux and macOS the function simply ends the game and closes the game window (the <a href="../../../The_Asset_Editors/Object_Properties/Other_Events.htm">Game End Event</a> will also be triggered).</li>
+    <li>На устройствах <span class="notranslate">Android</span> вызов <span class="inline">game_end()</span> переводит приложение в фоновый режим, но <i>не</i> закрывает его. Это должен сделать пользователь.</li>
+    <li>На сайте <span class="notranslate">iOS</span> он ничего не сделает и молча выйдет из строя.</li>
+    <li>На всех консолях (включая UWP при запуске на Xbox) это может привести к краху игры или в лучшем случае к молчаливому отказу, а также к отказу отправки, поэтому эту функцию <i>нельзя использовать</i>.</li>
+    <li>На HTML5 это завершит игру, но оставит пользователя смотреть на чистый холст веб-страницы, и поэтому не рекомендуется использовать его на этой целевой платформе.</li>
+    <li>На сайтах <span class="notranslate">Windows</span> (включая UWP на ПК), <span class="notranslate">Linux</span> и <span class="notranslate">macOS</span> функция просто завершает игру и закрывает окно игры (также будет вызвано <a href="../../../The_Asset_Editors/Object_Properties/Other_Events.htm">событие Game End Event</a> ).</li>
     <br />
-     
   </ul>
-  <p> </p>
-  <h4>Syntax:</h4>
-  <p class="code"><span data-field="title" data-format="default">game_end</span>([return_code]);</p>
-  <div>
-    <table>
-      <tbody>
-        <tr>
-          <th style="">Argument</th>
-          <th>Type</th>
-          <th style="">Description</th>
-        </tr>
-        <tr>
-          <td style=""><strong>return_code</strong></td>
-          <td><span data-keyref="Type_Real"><a href="../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
-          <td style=""><span data-conref="../../../assets/snippets/Tag_optional.hts"> </span> The return code of the application, defaults to 0.</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-  <p> </p>
-  <h4>Returns:</h4>
-  <p class="code"><span data-keyref="Type_Void">N/A</span></p>
-  <p> </p>
-  <h4>Example:</h4>
-  <p class="code">if keyboard_check_pressed(vk_escape) <span data-field="title" data-format="default">game_end</span>();</p>
-  <p>This would end the game if the player presses the &quot;escape&quot; key.</p>
-  <p> </p>
-  <p> </p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
+  <p class="code">game_end();</p>
+  <p> </p>
+  <h4>Возвращается:</h4>
+  <p class="code"><span data-keyref="Type_Void"></span></p>
+  <p> </p>
+  <h4>Пример:</h4>
+  <p class="code">if keyboard_check_pressed(vk_escape) game_end();</p>
+  <p>Это приведет к завершению игры, если игрок нажмет клавишу &quot;escape&quot;.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a data-xref="{title}" href="General_Game_Control.htm">General Game Control</a></div>
-        <div style="float:right">Next: <a data-xref="{title}" href="game_restart.htm">game_restart</a></div>
+        <div style="float:left">Назад: <a href="General_Game_Control.htm">Общее управление игрой</a></div>
+        <div style="float:right">Следующий: <a href="game_restart.htm"><span class="notranslate">game_restart</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 game_end

@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>The Keyframe Struct</title>
+  <title>Структура ключевого кадра</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page outlining The Keyframe Struct" />
   <meta name="rh-index-keywords" content="Sequence Keyframe Struct" />
@@ -14,8 +14,8 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>The Keyframe Struct</h1>
-  <p>Each track (as defined on the page covering <a href="The_Track_Struct.htm">track structs</a>) will have one or more keyframe <a href="../../../../GML_Overview/Structs.htm">structs</a> assigned to it (which you can get from the <span class="inline">keyframes</span> property of the track struct), and each one will have the following properties:</p>
+  <h1>Структура ключевого кадра</h1>
+  <p>Каждая дорожка (как определено на странице, посвященной <a href="The_Track_Struct.htm">структурам дорожек</a>) будет иметь одну или несколько <a href="../../../../GML_Overview/Structs.htm">структур</a> ключевых кадров, назначенных ей (которые можно получить из свойства <span class="inline">keyframes</span> структуры дорожки), и каждая из них будет иметь следующие свойства:</p>
   <table>
     <colgroup>
       <col />
@@ -24,46 +24,46 @@
     </colgroup>
     <tbody>
       <tr>
-        <th colspan="3"><span data-keyref="Type_Struct_Sequence_Keyframe"><a data-rhwidget="HyperlinkPopover" href="../../../../../../GameMaker_Language/GML_Reference/Asset_Management/Sequences/Sequence_Structs/The_Keyframe_Struct.htm">Sequence Keyframe Struct</a></span></th>
+        <th colspan="3"><span data-keyref="Type_Struct_Sequence_Keyframe"><a data-rhwidget="HyperlinkPopover" href="../../../../../../GameMaker_Language/GML_Reference/Asset_Management/Sequences/Sequence_Structs/The_Keyframe_Struct.htm">Структура ключевого кадра последовательности</a></span></th>
       </tr>
       <tr>
-        <th>Variable</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Переменная</th>
+        <th>Тип</th>
+        <th>Описание</th>
       </tr>
       <tr>
         <td><span class="inline">frame</span></td>
-        <td><span data-keyref="Type_Real"><a data-rhwidget="HyperlinkPopover" href="../../../../../../GameMaker_Language/GML_Overview/Data_Types.htm">Real</a></span></td>
-        <td>The position (in frames) along the timeline for the keyframe. Default value is 0.</td>
+        <td><span data-keyref="Type_Real"><a data-rhwidget="HyperlinkPopover" href="../../../../../../GameMaker_Language/GML_Overview/Data_Types.htm">Реально</a></span></td>
+        <td>Позиция (в кадрах) на временной шкале для ключевого кадра. Значение по умолчанию равно 0.</td>
       </tr>
       <tr>
         <td><span class="inline">length</span></td>
-        <td><span data-keyref="Type_Real"><a data-rhwidget="HyperlinkPopover" href="../../../../../../GameMaker_Language/GML_Overview/Data_Types.htm">Real</a></span></td>
-        <td>The length of the keyframe. Default value is 1, and when set to larger values then the track property that the keyframe refers to will be maintained at the initial value for the duration of the length given. Note that the <span class="inline">stretch</span> property will override this if set to <span class="inline">true</span>.</td>
+        <td><span data-keyref="Type_Real"><a data-rhwidget="HyperlinkPopover" href="../../../../../../GameMaker_Language/GML_Overview/Data_Types.htm">Реально</a></span></td>
+        <td>Длина ключевого кадра. Значение по умолчанию равно 1, при установке больших значений свойство дорожки, на которое ссылается ключевой кадр, будет поддерживаться в начальном значении в течение заданной длины. Обратите внимание, что свойство <span class="inline">stretch</span> отменяет это значение, если оно установлено в <span class="inline">true</span>.</td>
       </tr>
       <tr>
         <td><span class="inline">stretch</span></td>
-        <td><span data-keyref="Type_Bool"><a data-rhwidget="HyperlinkPopover" href="../../../../../../GameMaker_Language/GML_Overview/Data_Types.htm">Boolean</a></span></td>
-        <td>If this property is set to <span class="inline">true</span> then the keyframe stretches to either the next keyframe for the track or to the end of the track if it&#39;s the last keyframe. You can get or set this value, and the default value is <span class="inline">false</span>.</td>
+        <td><span data-keyref="Type_Bool"><a data-rhwidget="HyperlinkPopover" href="../../../../../../GameMaker_Language/GML_Overview/Data_Types.htm">Булево</a></span></td>
+        <td>Если это свойство установлено в <span class="inline">true</span>, то ключевой кадр растягивается либо до следующего ключевого кадра дорожки, либо до конца дорожки, если это последний ключевой кадр. Вы можете получить или установить это значение, по умолчанию оно равно <span class="inline">false</span>.</td>
       </tr>
       <tr>
         <td><span class="inline">channels</span></td>
-        <td><span data-keyref="Type_Array"><a data-rhwidget="HyperlinkPopover" href="../../../../../../GameMaker_Language/GML_Overview/Arrays.htm">Array</a></span> of <span data-keyref="Type_Struct_Sequence_Keyframe_Data"><a data-rhwidget="HyperlinkPopover" href="../../../../../../GameMaker_Language/GML_Reference/Asset_Management/Sequences/Sequence_Structs/The_Keyframe_Data_Struct.htm">Sequence Keyframe Data Struct</a></span>s</td>
-        <td>This property allows access to the list of <a href="The_Keyframe_Data_Struct.htm">keyframe data structs</a> for the channels of the track. When getting this property an <a href="../../../../GML_Overview/Arrays.htm">array</a> of keyframe data structs is returned, and when setting this property an array of keyframe data structs should be specified.</td>
+        <td><span data-keyref="Type_Array"><a data-rhwidget="HyperlinkPopover" href="../../../../../../GameMaker_Language/GML_Overview/Arrays.htm">Массив</a></span> из <span data-keyref="Type_Struct_Sequence_Keyframe_Data"><a data-rhwidget="HyperlinkPopover" href="../../../../../../GameMaker_Language/GML_Reference/Asset_Management/Sequences/Sequence_Structs/The_Keyframe_Data_Struct.htm">Структура данных ключевого кадра последовательности</a></span>s</td>
+        <td>Это свойство позволяет получить доступ к списку <a href="The_Keyframe_Data_Struct.htm">структур данных ключевых кадров</a> для каналов дорожки. При получении этого свойства возвращается <a href="../../../../GML_Overview/Arrays.htm">массив</a> структур данных ключевых кадров, а при установке этого свойства должен быть указан массив структур данных ключевых кадров.</td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="../Sequences.htm">Sequences</a></div>
-        <div style="float:right">Next: <a href="The_Keyframe_Data_Struct.htm">The Keyframe Data Struct</a></div>
+        <div style="float:left">Назад: <a href="../Sequences.htm">Последовательности</a></div>
+        <div style="float:right">Следующее: <a href="The_Keyframe_Data_Struct.htm">Структура данных ключевого кадра</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 The Keyframe Struct

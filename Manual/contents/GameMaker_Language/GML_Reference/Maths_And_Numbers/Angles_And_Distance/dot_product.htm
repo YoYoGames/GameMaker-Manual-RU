@@ -2,15 +2,15 @@
 
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"><head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>dot_product</title>
-  <meta name="generator" content="Adobe RoboHelp 2019"/>
-  <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css"/>
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
-  <meta name="rh-authors" content="Mark Alexander"/>
-  <meta name="topic-comment" content="Reference page for dot_product"/>
-  <meta name="rh-index-keywords" content="dot_product"/>
-  <meta name="search-keywords" content="dot_product"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>точечный_продукт</title>
+  <meta name="generator" content="Adobe RoboHelp 2019" />
+  <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
+  <script src="../../../../assets/scripts/main_script.js"></script>
+  <meta name="rh-authors" content="Mark Alexander" />
+  <meta name="topic-comment" content="Reference page for dot_product" />
+  <meta name="rh-index-keywords" content="dot_product" />
+  <meta name="search-keywords" content="dot_product" />
   <meta name="is_pure" content="true" />
 </head>
 
@@ -20,75 +20,75 @@
 
 
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>dot_product</h1>
-  <p>The dot product is a value expressing the angular relationship between two vectors and is found by taking two vectors, multiplying them together and then adding the results. The name &quot;dot product&quot; is derived from the centered dot &quot;·&quot;
-    that is often used to designate this operation (the alternative name &quot;scalar product&quot; emphasizes the scalar rather than vector nature of the result).</p>
-  <p>The actual mathematical formula can be written like this:</p>
+  <h1>точечный_продукт</h1>
+  <p>Точечное произведение - это величина, выражающая угловое отношение между двумя векторами, которое находится путем взятия двух векторов, их умножения и последующего сложения. Название &quot;точечное произведение&quot; происходит от центрированной точки &quot;-&quot;
+    которая часто используется для обозначения этой операции (альтернативное название &quot;скалярное произведение&quot; подчеркивает скалярную, а не векторную природу результата).</p>
+  <p>Фактическая математическая формула может быть записана следующим образом:</p>
   <p><img alt="Dot Product formula" class="center" src="../../../../assets/Images/Scripting_Reference/GML/Reference/Maths/dot_product_image.png"/></p>
-  <p>So, in 2D the dot product of vectors <span class="inline">a[x1,y1]</span> and <span class="inline">b[x2,2]</span> is <span class="inline">x1x2 + y1y2</span>, meaning that the dot_product in <span data-keyref="GameMaker Name">GameMaker</span> is calculated as:</p>
+  <p>Так, в 2D точечное произведение векторов <span class="inline">a[x1,y1]</span> и <span class="inline">b[x2,2]</span> равно <span class="inline">x1x2 + y1y2</span>, что означает, что точечный_продукт в <span data-keyref="GameMaker Name">GameMaker</span> вычисляется как:</p>
   <p class="code">a · b = (x1*x2)+(y1*y2);</p>
-  <p>The curious thing about the dot product is the relationship it has to the angle formed by the input vectors which can be expressed as:</p>
+  <p>Любопытно, что точечное произведение связано с углом, образованным входными векторами, который может быть выражен как:</p>
   <p class="code">a · b = (length of a) * (length of b) * cos(angle)</p>
-  <p>That is to say, the dot product of two vectors will be equal to the cosine of the angle between those vectors, multiplied by the lengths of each of them. Here is an image to illustrate:</p>
+  <p>То есть, точечное произведение двух векторов будет равно косинусу угла между этими векторами, умноженному на длину каждого из них. Вот изображение для иллюстрации:</p>
   <p><img alt="Dot Product ilustration" class="center" height="143" src="../../../../assets/Images/Scripting_Reference/GML/Reference/Maths/dot_product_image_2.png" width="406"/></p>
-  <p class="note"><strong>NOTE</strong>: For more information on vectors, see <a href="../../../../Additional_Information/Vectors.htm">here</a>.</p>
-  <p>There are a few things that we can now state from any two vectors in relation to the result of their dot product:</p>
+  <p class="note"><strong>ПРИМЕЧАНИЕ</strong>: Более подробную информацию о векторах см. <a href="../../../../Additional_Information/Vectors.htm">здесь</a>.</p>
+  <p>Есть несколько вещей, которые мы теперь можем определить по любым двум векторам в зависимости от результата их точечного произведения:</p>
   <ul class="colour">
-    <li>If a and b are perpendicular (at 90 degrees to each other), the result of the dot product will be zero, because <span class="inline">cos(ang)</span> will be zero</li>
-    <li>If the angle between a and b are less than 90 degrees, the dot product will be positive (greater than zero), as <span class="inline">cos(ang)</span> will be positive</li>
-    <li>If the angle between a and b are greater than 90 degrees, the dot product will be negative (less than zero), as <span class="inline">cos(ang)</span> will be negative</li>
+    <li>Если a и b перпендикулярны (находятся под углом 90 градусов друг к другу), результат точечного произведения будет равен нулю, потому что <span class="inline">cos(ang)</span> будет равен нулю.</li>
+    <li>Если угол между a и b меньше 90 градусов, то точечное произведение будет положительным (больше нуля), так как <span class="inline">cos(ang)</span> будет положительным.</li>
+    <li>Если угол между a и b больше 90 градусов, то точечное произведение будет отрицательным (меньше нуля), так как <span class="inline">cos(ang)</span> будет отрицательным.</li>
   </ul>
-  <p>So what does this mean for those of us that make games? Well, this mathematical relationship can be used in quite a few circumstances, but the best way to see it is to build an actual scenario and see for yourself what is going on. One of the simplest
-    ways to do this is to generate a simple &quot;line of sight&quot; check for an enemy in, say, a platform game so that the enemy will &quot;see&quot; the player if they are within 90° of either side of their vector <i>normal</i>.</p>
-  <p><img alt="Dot product example" class="center" src="../../../../assets/Images/Scripting_Reference/GML/Reference/Maths/dot_product_image_1.png"/>Basically, we have to get the vector normal from the enemy (ie: comprised of a direction and sight distance)
-    and then we need to get the vector of the player to the enemy. We will then get the dot_product of these vectors, and if the result is positive the player has been seen, and if it is negative he hasn&#39;t. The actual code to get this working is supplied
-    in the example below.</p>
-  <p> </p>
-  <h4><b>Syntax:</b></h4>
+  <p>Что же это значит для тех из нас, кто создает игры? Эта математическая зависимость может быть использована в довольно многих обстоятельствах, но лучший способ увидеть ее - построить реальный сценарий и посмотреть, что происходит. Один из самых простых
+    способов сделать это - сгенерировать простую проверку &quot;прямой видимости&quot; для врага, скажем, в платформенной игре, чтобы враг &quot;видел&quot; игрока, если он находится в пределах 90° по обе стороны от своего вектора <i>нормали</i>.</p>
+  <p><img>По сути, нам нужно получить вектор нормали от врага (т.е. состоящий из направления и расстояния видимости)
+    и затем нам нужно получить вектор игрока к врагу. Затем мы получим точечный_продукт этих векторов, и если результат положительный, то игрок был замечен, а если отрицательный, то нет. Фактический код для работы этой функции представлен
+    в примере ниже.</p>
+  <p> </p>
+  <h4><b>Синтаксис:</b></h4>
   <p class="code">dot_product(x1, y1, x2, y2)</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th><th>Type</th>
-        <th>Description</th>
+        <th>Аргумент</th><th>Тип</th>
+        <th>Описание</th>
      </tr>
       <tr>
-        <td>x1</td><td><span data-keyref="Type_Real"></span></td>
-        <td>The x coordinate of the first vector.</td>
+        <td><span class="notranslate">x1</span></td><td><span data-keyref="Type_Real"></span></td>
+        <td><span class="notranslate">The x coordinate of the first vector.</span></td>
      </tr>
       <tr>
-        <td>y1</td><td><span data-keyref="Type_Real"></span></td>
-        <td>The y coordinate of the first vector.</td>
+        <td><span class="notranslate">y1</span></td><td><span data-keyref="Type_Real"></span></td>
+        <td><span class="notranslate">The y coordinate of the first vector.</span></td>
      </tr>
       <tr>
-        <td>x2</td><td><span data-keyref="Type_Real"></span></td>
-        <td>The x coordinate of the second vector.</td>
+        <td><span class="notranslate">x2</span></td><td><span data-keyref="Type_Real"></span></td>
+        <td><span class="notranslate">The x coordinate of the second vector.</span></td>
      </tr>
       <tr>
-        <td>y2</td><td><span data-keyref="Type_Real"></span></td>
-        <td>The y coordinate of the second vector.</td>
+        <td><span class="notranslate">y2</span></td><td><span data-keyref="Type_Real"></span></td>
+        <td><span class="notranslate">The y coordinate of the second vector.</span></td>
      </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
   <p class="code"><span data-keyref="Type_Real"></span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Пример:</h4>
   <p class="code">var x1, y1, x2, y2;<br/> x1 = lengthdir_x(1, image_angle);<br/> y1 = lengthdir_y(1, image_angle);<br/> x2 = o_Player.x - x;<br/> y2 = o_Player.y - y;<br/> if dot_product(x1, y1, x2, y2) &gt; 0 seen=true else seen=false;</p>
-  <p>The above code creates a vector using the instances image angle, and then gets the vector of the player object &quot;o_Player&quot; to itself. Finally it calculates the dot product of these two vectors and if it is greater than 0 it sets the variable
-    &quot;seen&quot; to true, and if it is equal to or less than 0 it sets it to &quot;false&quot;.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Приведенный выше код создает вектор, используя угол изображения экземпляра, а затем притягивает к себе вектор объекта игрока &quot;o_Player&quot;. Наконец, он вычисляет точечное произведение этих двух векторов и, если оно больше 0, устанавливает переменную
+    &quot;seen&quot; в true, а если оно равно или меньше 0, то устанавливает его в false.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Angles_And_Distance.htm">Angles And Distance</a></div>
-        <div style="float:right">Next: <a href="dot_product_3d.htm">dot_product_3d</a></div>
+        <div style="float:left">Назад: <a href="Angles_And_Distance.htm">Углы и расстояние</a></div>
+        <div style="float:right">Следующий: <a href="dot_product_3d.htm"><span class="notranslate">dot_product_3d</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2021 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 dot_product

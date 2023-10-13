@@ -6,7 +6,7 @@
   <title>ds_priority_read</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference page for ds_priority_read" />
   <meta name="rh-index-keywords" content="ds_priority_read" />
@@ -15,40 +15,40 @@
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
   <h1>ds_priority_read</h1>
-  <p>With this function you can recreate a saved DS priority (one that has previously been written as a string using <a href="ds_priority_write.htm"><span class="inline">ds_priority_write()</span></a>). You must first create a new DS priority to read the string into, and if the DS priority already exists and has information stored in it, then this will be cleared before reading. This function is of vital importance when creating save/load mechanisms for your game.</p>
-  <p>Note that if the specified DS string was written by the GameMaker: Studio 1.2.x runtime (or older), you should specify the optional argument &quot;legacy&quot;, setting it to <span class="inline">true</span> as the string format changed after that.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p>С помощью этой функции вы можете воссоздать сохраненный приоритет DS (тот, который ранее был записан в виде строки с помощью функции <a href="ds_priority_write.htm"><span class="inline">ds_priority_write()</span></a>). Вы должны сначала создать новый приоритет DS для чтения строки, и если приоритет DS уже существует и в нем сохранена информация, то она будет очищена перед чтением. Эта функция имеет жизненно важное значение при создании механизмов сохранения/загрузки для вашей игры.</p>
+  <p>Обратите внимание, что если указанная строка DS была написана в среде GameMaker: Studio 1.2.x (или старше), следует указать дополнительный аргумент &quot;legacy&quot;, установив его в значение <span class="inline">true</span>, поскольку после этого формат строки изменился.</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
   <p class="code">ds_priority_read(id, str, [legacy]);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Аргумент</th>
+        <th>Тип</th>
+        <th>Описание</th>
       </tr>
       <tr>
-        <td>id</td>
-        <td><span data-keyref="Type_ID_DS_Priority">DS Priority ID</span></td>
-        <td>The id of the data structure to write.</td>
+        <td><span class="notranslate">id</span></td>
+        <td><span data-keyref="Type_ID_DS_Priority">Идентификатор приоритета DS</span></td>
+        <td><span class="notranslate">The id of the data structure to write.</span></td>
       </tr>
       <tr>
-        <td>str</td>
-        <td><span data-keyref="Type_String">String</span></td>
-        <td>The string to read from.</td>
+        <td><span class="notranslate">str</span></td>
+        <td><span data-keyref="Type_String">Строка</span></td>
+        <td><span class="notranslate">The string to read from.</span></td>
       </tr>
       <tr>
-        <td>legacy</td>
-        <td><span data-keyref="Type_Bool">Boolean</span></td>
-        <td><span class="optional">OPTIONAL</span> Can be either <span class="inline">true</span> or <span class="inline">false</span> or omitted completely.</td>
+        <td><span class="notranslate">legacy</span></td>
+        <td><span data-keyref="Type_Bool">Булево</span></td>
+        <td><span class="notranslate"><span class="optional">OPTIONAL</span> Может быть либо <span class="inline">true</span>, либо <span class="inline">false</span>, либо полностью отсутствовать.</td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
   <p class="code"><span data-keyref="Type_Void">N/A</span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Пример:</h4>
   <p class="code">p_queue = ds_priority_create();<br />
     ini_open(&quot;save.ini&quot;);<br />
     var str = ini_read_string(&quot;P_Queues&quot;, &quot;0&quot;, &quot;&quot;);<br />
@@ -57,18 +57,18 @@
         ds_priority_read(p_queue, str);<br />
     }<br />
     ini_close();</p>
-  <p>The above code creates a priority queue and stores the index in the variable &quot;p_queue&quot;. It then opens an <span class="inline">ini</span> file and reads a string from that, checking to make sure that the string is not returned as empty first. This string is then read into the newly created DS priority.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Приведенный выше код создает приоритетную очередь и сохраняет индекс в переменной &quot;p_queue&quot;. Затем он открывает файл <span class="inline">ini</span> и считывает из него строку, проверяя, что сначала строка не возвращается пустой. Затем эта строка считывается во вновь созданный приоритет DS.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="DS_Priority_Queues.htm">DS Priority Queues</a></div>
-        <div style="float:right">Next: <a href="ds_priority_write.htm">ds_priority_write</a></div>
+        <div style="float:left">Назад: <a href="DS_Priority_Queues.htm">Очереди приоритетов DS</a></div>
+        <div style="float:right">Следующий: <a href="ds_priority_write.htm"><span class="notranslate">ds_priority_write</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 ds_priority_read

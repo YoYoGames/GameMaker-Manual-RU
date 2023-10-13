@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>physics_apply_local_impulse</title>
+  <title>физика_применить_локальный_импульс</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference page for physics_apply_local_impulse" />
   <meta name="rh-index-keywords" content="physics_apply_local_impulse" />
@@ -14,58 +14,58 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>physics_apply_local_impulse</h1>
-  <p>Not only can you apply force and gravity to an object with the physics in <span data-keyref="GameMaker Name">GameMaker</span> but you can also apply an impulse. This is slightly different to a force in that when it is applied it will <i>immediately</i> affect the speed, and, potentially the torque (or &quot;spin&quot;) of the object, particularly if the point chosen to apply the impulse has a vector that is not aligned with the centre of mass (note: the center of mass is <i>not necessarily</i> the same as the origin!). This function applies an impulse <i>locally</i> to an instance. What this means is that the strength and direction of the impulse are calculated based on the origin (or the position if it has no sprite) of the instance, without taking into consideration the direction or rotation it may have in the game room or physics world. Here is an illustration:</p>
-  <p><img alt="Apply local physics impulse illustration" class="center" src="../../../../assets/Images/Scripting_Reference/GML/Reference/Physics/physics_apply_local_impulse_image.png" />As you can see, the frog in the image gets an impulse from below to make it &quot;jump&quot;. The exact impulse is defined by the vector we get from the components ximpulse/yimpulse in relation to the xpos/ypos coordinates - which simply means that the impulse is calculated as the distance from xpos/ypos to ximpulse/yimpulse in Newtons, and the direction is the angle that we get from xpos/ypos to ximpulse/yimpulse.</p>
-  <p class="note"><b>NOTE</b>: The physics world uses meters for all its calculations, and the ratio of pixels per meter is defined in the room editor or using <span style="font-size:1px;"><a href="../The_Physics_World/physics_world_create.htm"><span class="inline">physics_world_create()</span></a></span>.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <h1>физика_применить_локальный_импульс</h1>
+  <p>С помощью физики в <span data-keyref="GameMaker Name">GameMaker</span> к объекту можно применить не только силу и гравитацию, но и импульс. Он немного отличается от силы тем, что при его применении он <i>немедленно</i> повлияет на скорость и, возможно, крутящий момент (или &quot;вращение&quot;) объекта, особенно если точка, выбранная для приложения импульса, имеет вектор, не совпадающий с центром масс (обратите внимание: центр масс <i>не обязательно</i> совпадает с началом координат!). Эта функция прикладывает импульс <i>локально</i> к экземпляру. Это означает, что сила и направление импульса рассчитываются на основе начала координат (или положения, если оно не имеет <span class="notranslate">sprite</span>) экземпляра, без учета направления или вращения, которое он может иметь в игровой комнате или физическом мире. Вот иллюстрация:</p>
+  <p><img>Как вы видите, лягушка на рисунке получает импульс снизу, который заставляет ее &quot;прыгнуть&quot;. Точный импульс определяется вектором, который мы получаем из компонентов ximpulse/yimpulse по отношению к координатам xpos/ypos - это означает, что импульс рассчитывается как расстояние от xpos/ypos до ximpulse/yimpulse в Ньютонах, а направление - это угол, который мы получаем от xpos/ypos до ximpulse/yimpulse.</p>
+  <p class="note"><b>ПРИМЕЧАНИЕ</b>: Физический мир использует метры для всех своих расчетов, а соотношение пикселей на метр определяется в редакторе комнаты или с помощью функции <span style="font-size:1px;"><a href="../The_Physics_World/physics_world_create.htm"><span class="inline">physics_world_create()</span></a></span>.</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
   <p class="code">physics_apply_local_impulse(xpos, ypos, ximpulse, yimpulse)</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th><th>Type</th>
-        <th>Description</th>
+        <th>Аргумент</th><th>Тип</th>
+        <th>Описание</th>
      </tr>
       <tr>
-        <td>xpos</td><td><span data-keyref="Type_Real"></span></td>
-        <td>The x coordinate <i>relative to the origin</i> where the impulse will be applied</td>
+        <td><span class="notranslate">xpos</span></td><td><span data-keyref="Type_Real"></span></td>
+        <td><span class="notranslate">The x coordinate <i>relative to the origin</i> where the impulse will be applied</span></td>
      </tr>
       <tr>
-        <td>ypos</td><td><span data-keyref="Type_Real"></span></td>
-        <td>The y coordinate <i>relative to the origin</i> where the impulse will be applied</td>
+        <td><span class="notranslate">ypos</span></td><td><span data-keyref="Type_Real"></span></td>
+        <td><span class="notranslate">The y coordinate <i>relative to the origin</i> where the impulse will be applied</span></td>
      </tr>
       <tr>
-        <td>ximpulse</td><td><span data-keyref="Type_Real"></span></td>
-        <td>the x component of the impulse vector (relative to the xpos coordinate)</td>
+        <td><span class="notranslate">ximpulse</span></td><td><span data-keyref="Type_Real"></span></td>
+        <td><span class="notranslate">the x component of the impulse vector (relative to the xpos coordinate)</span></td>
      </tr>
       <tr>
-        <td>yimpulse</td><td><span data-keyref="Type_Real"></span></td>
-        <td>the y component of the impulse vector (relative to the ypos coordinate)</td>
+        <td><span class="notranslate">yimpulse</span></td><td><span data-keyref="Type_Real"></span></td>
+        <td><span class="notranslate">the y component of the impulse vector (relative to the ypos coordinate)</span></td>
      </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
   <p class="code"><span data-keyref="Type_Void"></span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Пример:</h4>
   <p class="code">if jump<br />
     {<br />
         physics_apply_local_impulse(0, 20, 0, 50);<br />
     }</p>
-  <p>The code above will apply an impulse with force of 30 Newtons and a direction going from bottom to top <i>relative</i> to the instance origin if the variable &quot;jump&quot; is true.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Приведенный выше код применит импульс с силой 30 Ньютонов и направлением снизу вверх <i>относительно</i> начала экземпляра, если переменная &quot;jump&quot; равна true.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Forces.htm">Forces</a></div>
-        <div style="float:right">Next: <a href="physics_apply_torque.htm">physics_apply_torque</a></div>
+        <div style="float:left">Назад: <a href="Forces.htm">Силы</a></div>
+        <div style="float:right">Следующий: <a href="physics_apply_torque.htm"><span class="notranslate">physics_apply_torque</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 physics_apply_local_impulse

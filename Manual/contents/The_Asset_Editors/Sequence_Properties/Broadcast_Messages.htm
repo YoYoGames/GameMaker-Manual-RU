@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Broadcast Messages</title>
+  <title>Широковещательные сообщения</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../assets/css/default.css" type="text/css" />
-  <script src="../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page detailing the dope sheet" />
   <meta name="rh-index-keywords" content="Sequences - Broadcast Messages" />
@@ -14,13 +14,13 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>Broadcast Messages</h1>
-  <p>Both <a href="../Sequences.htm">Sequences</a> and <a href="../../GameMaker_Language/GML_Reference/Asset_Management/Sprites/Sprites.htm">Sprites</a> can generate what are called <strong>broadcast messages</strong> at any point along their length. These messages are simple strings that are added to specific frames along the animation timeline, and when that point in the timeline is reached, then the string will be broadcast out to all instances that listen for it. Any instance that has a <a href="../Object_Properties/Other_Events.htm">Broadcast Message Event</a> (found in the &quot;<strong>Other</strong>&quot; event category) will receive the message string when it is reached in the timeline, at which point it&#39;s up to you to have some code that will parse it and react accordingly. Note too that sequences can also listen for broadcast messages, but this requires you to first set up the listener method using code (see the GML section on <a href="../../GameMaker_Language/GML_Reference/Asset_Management/Sequences/Sequence_Events_Moments_Broadcast.htm">Sequence Events And Moments</a> for more information).</p>
-  <p class="note"><strong><span class="note">NOTE</span></strong> Setting the <strong>image_index </strong>of an instance directly to a frame will <em>not</em> trigger any Broadcast Messages that may be present on that frame of the object&#39;s sprite.</p>
-  <p>To add a Broadcast Message to the sequence or sprite timeline you simply click the <img alt="Broadcast Message Button Icon" class="icon" src="../../assets/Images/Icons/Icon_Broadcast.png" /> button. This will open a dialog where you can add the message to be broadcast:</p>
-  <p class="dropspot"><img alt="Add A broadcast message to a sequence" class="center" src="../../assets/Images/Asset_Editors/Editor_Sequences_Broadcast.gif" style="cursor: nesw-resize;" /></p>
-  <p>Once added, the message will be shown in the Dope Sheet (or in the sprite frame view). To edit it, you must click the right mouse button <img alt="RMB Icon" class="icon" height="24" src="../../assets/Images/Icons/Icon_RMB.png" width="21" /> on the message icon to open a list of all the messages that overlap the frame (there can only be one message on a frame, but placing multiple messages on consecutive frames will cause them to overlap visually, making it harder to select the one you want and you can have a message and a <a href="../../GameMaker_Language/GML_Reference/Asset_Management/Sequences/Sequence_Events_Moments_Broadcast.htm">moment</a> on the same frame too), and then selecting one from this list will open the message dialog where you can edit it or remove it.</p>
-  <p>When a Broadcast Message event is triggered, there will be a special <a href="../../GameMaker_Language/GML_Reference/Data_Structures/DS_Maps/DS_Maps.htm">DS Map</a> created and stored in the built-in variable <span class="inline">event_data</span>. This variable ID is a built-in <em>global </em>scope variable, but will only contain DS map data in the event that triggered it - in this case the Broadcast Message event - and will return -1 at all other times. The keys that the event will have are as follows:</p>
+  <h1>Широковещательные сообщения</h1>
+  <p> <a href="../Sequences.htm">Последовательности</a> и <a href="../../GameMaker_Language/GML_Reference/Asset_Management/Sprites/Sprites.htm">спрайты</a> могут генерировать так называемые <strong>широковещательные сообщения</strong> в любой точке своей длины. Эти сообщения - простые строки, которые добавляются к определенным кадрам на временной шкале анимации, и когда эта точка временной шкалы будет достигнута, строка будет передана всем экземплярам, которые ее слушают. Любой экземпляр, имеющий <a href="../Object_Properties/Other_Events.htm">событие Broadcast Message Event</a> (находится в категории событий &quot;<strong>Other</strong>&quot;), получит строку сообщения, когда она будет достигнута на временной шкале, и тогда от вас зависит, какой код будет ее анализировать и реагировать соответствующим образом. Обратите внимание, что последовательности также могут прослушивать широковещательные сообщения, но для этого необходимо сначала настроить метод слушателя с помощью кода (более подробную информацию см. в разделе <span class="notranslate">GML</span> " <a href="../../GameMaker_Language/GML_Reference/Asset_Management/Sequences/Sequence_Events_Moments_Broadcast.htm">События и моменты последовательностей</a> ").</p>
+  <p class="note"><strong><span class="note">ПРИМЕЧАНИЕ</span></strong> Установка <strong>image_index </strong>экземпляра непосредственно на кадр <em>не</em> вызовет никаких широковещательных сообщений, которые могут присутствовать на этом кадре объекта <span class="notranslate">sprite</span>.</p>
+  <p>Чтобы добавить сообщение для трансляции в последовательность или на временную шкалу <span class="notranslate">sprite</span>, достаточно нажать кнопку <img>. Откроется диалог, в котором вы можете добавить сообщение для трансляции:</p>
+  <p class="dropspot"><img alt="Broadcast Message Button Icon" class="icon" src="../../assets/Images/Icons/Icon_Broadcast.png" /></p>
+  <p>После добавления сообщение будет показано в Dope Sheet (или в покадровом просмотре <span class="notranslate">sprite</span> ). Чтобы отредактировать его, вы должны нажать правую кнопку мыши <img> на иконке сообщения, чтобы открыть список всех сообщений, которые перекрывают кадр (на кадре может быть только одно сообщение, но размещение нескольких сообщений на последовательных кадрах приведет к их визуальному перекрытию, что затруднит выбор нужного, и вы можете иметь сообщение и <a href="../../GameMaker_Language/GML_Reference/Asset_Management/Sequences/Sequence_Events_Moments_Broadcast.htm">момент</a> на одном кадре), а затем, выбрав одно из этого списка, открыть диалог сообщения, где вы можете отредактировать его или удалить.</p>
+  <p>При срабатывании события Broadcast Message создается специальная <a href="../../GameMaker_Language/GML_Reference/Data_Structures/DS_Maps/DS_Maps.htm">карта DS Map</a>, которая хранится во встроенной переменной <span class="inline">event_data</span>. Эта переменная ID является встроенной переменной <em>глобальной </em>области видимости, но будет содержать данные карты DS только в том событии, которое ее вызвало - в данном случае событие Broadcast Message - и будет возвращать -1 во всех остальных случаях. Ключи, которыми будет обладать событие, следующие:</p>
   <table>
     <colgroup>
       <col />
@@ -29,32 +29,32 @@
     </colgroup>
     <tbody>
       <tr>
-        <th colspan="3"><span data-keyref="Type_Struct_Message_Event"><a data-rhwidget="HyperlinkPopover" href="../../../The_Asset_Editors/Sequence_Properties/Broadcast_Messages.htm">Message Event Struct</a></span></th>
+        <th colspan="3"><span data-keyref="Type_Struct_Message_Event"><a data-rhwidget="HyperlinkPopover" href="../../../The_Asset_Editors/Sequence_Properties/Broadcast_Messages.htm">Структура события сообщения</a></span></th>
       </tr>
       <tr>
-        <th>Variable</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Переменная</th>
+        <th>Тип</th>
+        <th>Описание</th>
       </tr>
       <tr>
         <td><span class="inline">event_type</span></td>
-        <td><span data-keyref="Type_String"><a data-rhwidget="HyperlinkPopover" href="../../../GameMaker_Language/GML_Overview/Data_Types.htm">String</a></span></td>
-        <td>This will be the string &quot;<span class="inline">sequence event</span>&quot; for a message sent from a Sequence and &quot;<span class="inline">sprite event</span>&quot; for a message sent from a Sprite.</td>
+        <td><span data-keyref="Type_String"><a data-rhwidget="HyperlinkPopover" href="../../../GameMaker_Language/GML_Overview/Data_Types.htm">Строка</a></span></td>
+        <td>Это будет строка &quot;<span class="inline">sequence event</span>&quot; для сообщения, отправленного из последовательности, и &quot;<span class="inline">sprite event</span>&quot; для сообщения, отправленного из <span class="notranslate">Sprite</span>.</td>
       </tr>
       <tr>
         <td><span class="inline">message</span></td>
-        <td><span data-keyref="Type_String"><a data-rhwidget="HyperlinkPopover" href="../../../GameMaker_Language/GML_Overview/Data_Types.htm">String</a></span></td>
-        <td>This contains the message string that has been received.</td>
+        <td><span data-keyref="Type_String"><a data-rhwidget="HyperlinkPopover" href="../../../GameMaker_Language/GML_Overview/Data_Types.htm">Строка</a></span></td>
+        <td>Содержит строку сообщения, которое было получено.</td>
       </tr>
       <tr>
         <td><span class="inline">element_id</span></td>
-        <td><span data-keyref="Type_ID_Layer_Element"><a data-rhwidget="HyperlinkPopover" href="../../../GameMaker_Language/GML_Reference/Asset_Management/Rooms/General_Layer_Functions/layer_get_all_elements.htm">Layer Element ID</a></span></td>
-        <td>This contains the ID of the layer element (sequence/sprite/instance) that fired the message. You can then use this ID value to find out what kind of element generated the message using the function <a href="../../GameMaker_Language/GML_Reference/Asset_Management/Rooms/General_Layer_Functions/layer_get_element_type.htm"><span class="inline">layer_get_element_type()</span></a> and to use the other relevant functions to target it, or perform an action like play a sound, as required.</td>
+        <td><span data-keyref="Type_ID_Layer_Element"><a data-rhwidget="HyperlinkPopover" href="../../../GameMaker_Language/GML_Reference/Asset_Management/Rooms/General_Layer_Functions/layer_get_all_elements.htm">Идентификатор элемента слоя</a></span></td>
+        <td>Здесь содержится идентификатор элемента слоя (последовательности/спрайта/инстанса), который выдал сообщение. Затем вы можете использовать это значение ID, чтобы узнать, какой элемент сгенерировал сообщение, используя функцию <a href="../../GameMaker_Language/GML_Reference/Asset_Management/Rooms/General_Layer_Functions/layer_get_element_type.htm"><span class="inline">layer_get_element_type()</span></a> и использовать другие соответствующие функции, чтобы нацелиться на него или выполнить действие, например, воспроизвести звук, в зависимости от необходимости.</td>
       </tr>
     </tbody>
   </table>
-  <p>Note that the broadcast message event of an instance will receive multiple strings for each of the times a broadcast message is sent. You do not need to act on all of them, and can have different instances listening for different broadcast strings. However, you may have an instance that is listening for messages that may be received at the same time. When this happens, the event will be triggered multiple times - <em>once for each message string</em>.</p>
-  <p>Below is a brief example of how this event can be checked:</p>
+  <p>Обратите внимание, что событие широковещательного сообщения экземпляра будет получать несколько строк для каждого из случаев отправки широковещательного сообщения. Вам не обязательно действовать на все из них, и вы можете иметь разные экземпляры, прослушивающие разные строки широковещательных сообщений. Однако у вас может быть экземпляр, который прослушивает сообщения, которые могут быть получены одновременно. В этом случае событие будет срабатывать несколько раз - <em>по одному разу для каждой строки сообщения</em>.</p>
+  <p>Ниже приведен краткий пример того, как можно проверить это событие:</p>
   <p class="code">if event_data[? &quot;event_type&quot;] == &quot;sequence event&quot; // or you can check &quot;sprite event&quot;<br />
     {<br />
         switch (event_data[? &quot;message&quot;])<br />
@@ -69,17 +69,17 @@
         }<br />
     }
   </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="../Sequences.htm">Sequences</a></div>
-        <div style="float:right">Next: <a href="The_Sequence_Canvas.htm">The Sequence Canvas</a></div>
+        <div style="float:left">Назад: <a href="../Sequences.htm">Последовательности</a></div>
+        <div style="float:right">Следующий: <a href="The_Sequence_Canvas.htm">Полотно последовательности</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 Sequences - Broadcast Messages

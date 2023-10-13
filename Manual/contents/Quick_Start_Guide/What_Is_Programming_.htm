@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>What Is Programming?</title>
+  <title>Что такое программирование?</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../assets/css/default.css" type="text/css" />
-  <script src="../assets/scripts/main_script.js" type="module"></script>
+  <script src="../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="A brief description of what makes a program, generally and specifically using GameMaker." />
   <meta name="rh-index-keywords" content="Quick Start - What Is Programming?" />
@@ -15,46 +15,46 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>What Is Programming?</h1>
-  <p>In the <a href="Quick_Start_Guide.htm">previous section</a>, we outlined how <span data-keyref="GameMaker Name">GameMaker</span> works to create your game, but regardless of the sprites, objects or rooms that you have added, nothing will happen unless you have <strong>programmed </strong>it to happen. But, what is a program?</p>
-  <p>In the general sense, a program is simply a set of instructions (or <strong> <a class="glossterm" data-glossterm="statement" href="#">statement</a></strong><span class="glossextra">s</span>) that you give to the computer to tell it to perform certain tasks. These tasks can vary greatly from simply telling the computer to draw something to the screen, to calculating a value based on some user input and then reacting to it, but in all cases it&#39;s a logical structure that will give some result. In the previous page we talked about moving an instance of an object to the right by 2 pixels, so let&#39;s have a look at the actual program that would do that:</p>
-  <p>In <span data-keyref="GML_Visual">GML Visual</span> it would look like this:</p>
+  <h1>Что такое программирование?</h1>
+  <p>В <a href="Quick_Start_Guide.htm">предыдущем разделе</a> мы описали, как работает <span data-keyref="GameMaker Name">GameMaker</span> для создания вашей игры, но независимо от <span class="notranslate">sprites</span>, объектов или комнат, которые вы добавили, ничего не произойдет, если вы не <strong>запрограммируете </strong>это. Но что такое программа?</p>
+  <p>В общем смысле программа - это просто набор инструкций (или <strong> <a class="glossterm" data-glossterm="заявление" href="#">заявление</a></strong>), которые вы даете компьютеру, чтобы он выполнил определенные задачи. Эти задачи могут быть самыми разными: от простого указания компьютеру нарисовать что-то на экране до вычисления значения на основе пользовательского ввода и последующей реакции на него, но во всех случаях это логическая структура, которая даст определенный результат. На предыдущей странице мы говорили о перемещении экземпляра объекта вправо на 2 пикселя, поэтому давайте посмотрим на программу, которая это сделает:</p>
+  <p>В <span data-keyref="GML_Visual">GML Visual</span> это будет выглядеть следующим образом:</p>
   <p><img alt="GML VisualExample" class="center" src="../assets/Images/QS_Guide/QS_DnD_Example.png" /></p>
-  <p>And using <span data-keyref="GML_Code">GML Code</span>, it would look like this:</p>
+  <p>А если использовать <span data-keyref="GML_Code">код GML</span>, то это будет выглядеть следующим образом:</p>
   <p class="code">x = x + 2;</p>
-  <p>To understand what&#39;s going on above, we must first talk about <strong>Variables</strong>, and then we&#39;ll go on to discuss <strong>Functions </strong>and finally <strong>Conditionals </strong>as these three things are generally what makes up the bulk of any program.</p>
-  <p> </p>
-  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop_down" href="What_Is_Programming_.htm#">Variables</a></p>
+  <p>Чтобы понять, что происходит выше, мы должны сначала поговорить о <strong>Переменных</strong>, затем мы перейдем к обсуждению <strong>Функций </strong>и, наконец, <strong>Условий </strong>, поскольку эти три вещи, как правило, составляют основную часть любой программы.</p>
+  <p> </p>
+  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop_down" href="What_Is_Programming_.htm#">Переменные</a></p>
   <div class="droptext" data-targetname="drop_down">
-    <p class="dropspot">Variables are the cornerstone of programing, along with <strong>functions </strong>(which we&#39;ll cover briefly in a moment). A variable is simply a <em>named value</em>, and in the case above the variable is called &quot;<span class="inline">x</span>&quot;. Now, &quot;<span class="inline">x</span>&quot; can be any value, like -126, or 583, or even 1.56378, but the actual value of &quot;<span class="inline">x</span>&quot; is irrelevant as it can vary (hence the name &quot;variable&quot;). What is important is that we take &quot;<span class="inline">x</span>&quot; and add 2 to it. It&#39;s worth noting that in this case &quot;<span class="inline">x</span>&quot; is a <strong>built-in variable</strong>, which means that it&#39;s a variable that is create by <span data-keyref="GameMaker Name">GameMaker</span> for all objects, but you can create your own variables too.</p>
-    <p class="dropspot">To create a variable, it must be <strong>declared </strong>before it can be used. Declaring a variable is telling <span data-keyref="GameMaker Name">GameMaker</span> that this new variable exists and it has an initial value. To decalre a variable you would simply do something like this:</p>
+    <p class="dropspot">Переменные - это краеугольный камень программирования, наряду с <strong>функциями </strong>(которые мы рассмотрим вкратце в ближайшее время). Переменная - это просто <em>именованное значение</em>, и в приведенном выше случае переменная называется &quot;<span class="inline">x</span>&quot;. Теперь &quot;<span class="inline">x</span>&quot; может быть любым значением, например -126, или 583, или даже 1,56378, но фактическое значение &quot;<span class="inline">x</span>&quot; не имеет значения, поскольку оно может меняться (отсюда и название &quot;переменная&quot;). Важно то, что мы берем &quot;<span class="inline">x</span>&quot; и прибавляем к нему 2. Стоит отметить, что в данном случае &quot;<span class="inline">x</span>&quot; - это <strong>встроенная переменная</strong>, то есть переменная, которая создается <span data-keyref="GameMaker Name">GameMaker</span> для всех объектов, но вы можете создавать и свои собственные переменные.</p>
+    <p class="dropspot">Чтобы создать переменную, ее необходимо <strong>объявить </strong>, прежде чем ее можно будет использовать. Объявление переменной - это сообщение программе <span data-keyref="GameMaker Name">GameMaker</span> о том, что эта новая переменная существует и у нее есть начальное значение. Чтобы объявить переменную, достаточно сделать следующее:</p>
     <p class="dropspot"><img alt="Declare GML VisualVariables" class="center" src="../assets/Images/QS_Guide/QS_DnD_Declare.png" /></p>
-    <p class="dropspot">or:</p>
+    <p class="dropspot">или:</p>
     <p class="code">points = 0;</p>
-    <p class="dropspot">Once a variable has been declared, then it can be used in further programed code or actions. The great thing about variables is that it permits you to &quot;re-use&quot; a value in multiple places, without actually having to worry about what the value is. For example, say you have a &quot;<span class="inline">damage</span>&quot; variable and you use it in various places to tell <span data-keyref="GameMaker Name">GameMaker</span> to deal a certain amount of damage to other objects in the game. We may declare &quot;<span class="inline">damage</span>&quot; as 20, but later on decide that this is too great a value and want to change it to 10. If we&#39;d used the value 20 instead of a variable, we&#39;d need to go through all our code or actions and change 20 to 10, which is time consuming and error prone. However, using a variable means we only have to change it <em>once </em>to 10 when we declare it and the rest of the code or actions will use this new value.</p>
-    <p class="dropspot">It is worth noting that there are many different types of variables, and each one has slightly different ways it can be used. We won&#39;t be covering this here, but you can find out more information from the <a href="../GameMaker_Language/GML_Overview/Variables_And_Variable_Scope.htm">GameMaker Language Overview</a> section of the manual.</p>
-    <p class="dropspot">However, variables are only the first part of the story. The next part is the use of Functions...</p>
-    <p class="dropspot"> </p>
+    <p class="dropspot">Как только переменная объявлена, ее можно использовать в дальнейшем программном коде или действиях. Самое замечательное в переменных то, что они позволяют &quot;повторно использовать&quot; значение в разных местах, не задумываясь о том, что это за значение. Например, у вас есть переменная &quot;<span class="inline">damage</span>&quot;, и вы используете ее в различных местах, чтобы указать <span data-keyref="GameMaker Name">GameMaker</span> на нанесение определенного урона другим объектам в игре. Мы можем объявить &quot;<span class="inline">damage</span>&quot; как 20, но позже решить, что это слишком большое значение, и изменить его на 10. Если бы мы использовали значение 20 вместо переменной, нам пришлось бы перебрать весь наш код или действия и изменить 20 на 10, что отнимает много времени и чревато ошибками. Однако использование переменной означает, что нам нужно только <em>один раз </em>изменить значение 10 на 10, когда мы его объявляем, а весь остальной код или действия будут использовать это новое значение.</p>
+    <p class="dropspot">Стоит отметить, что существует множество различных типов переменных, и каждый из них имеет несколько различных способов использования. Мы не будем рассматривать это здесь, но вы можете получить более подробную информацию из раздела руководства " <a href="../GameMaker_Language/GML_Overview/Variables_And_Variable_Scope.htm">Обзор языка GameMaker</a> ".</p>
+    <p class="dropspot">Однако переменные - это только первая часть истории. Следующая часть - это использование функций...</p>
+    <p class="dropspot"> </p>
   </div>
-  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop_down1" href="What_Is_Programming_.htm#">Functions</a></p>
+  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop_down1" href="What_Is_Programming_.htm#">Функции</a></p>
   <div class="droptext" data-targetname="drop_down1">
-    <p class="dropspot">The next main important part of programing is the use of <strong>functions </strong>along with variables. A function is simply an instruction to the computer to do something, and it can have input values as well as output values (ie: you can give a value to it, and it will do some operation and then return a different value), although not all functions require input, nor do they have an output. To better understand this, let&#39;s look at a built-in function in <span data-keyref="GameMaker Name">GameMaker</span>.</p>
-    <p class="dropspot">The function we&#39;ll look at is <a href="../GameMaker_Language/GML_Reference/Asset_Management/Instances/instance_number.htm"><span class="inline">instance_number()</span></a>, which in GML Visual is the <a href="../Drag_And_Drop/Drag_And_Drop_Reference/Instance/Get_Instance_Count.htm">Get Instance Count</a> action. This function/action will retrieve the number of instances of a given object in the game room, and you would use it like this:</p>
+    <p class="dropspot">Следующей важной частью программирования является использование <strong>функций </strong>наряду с переменными. Функция - это просто инструкция компьютеру сделать что-то, и она может иметь как входные, так и выходные значения (то есть вы можете передать ей значение, и она выполнит некоторую операцию, а затем вернет другое значение), хотя не все функции требуют ввода и не имеют выхода. Чтобы лучше понять это, давайте рассмотрим встроенную функцию в <span data-keyref="GameMaker Name">GameMaker</span>.</p>
+    <p class="dropspot">Функция, которую мы рассмотрим, это <a href="../GameMaker_Language/GML_Reference/Asset_Management/Instances/instance_number.htm"><span class="inline">instance_number()</span></a>, которая в <span class="notranslate">GML</span> Visual является действием <a href="../Drag_And_Drop/Drag_And_Drop_Reference/Instance/Get_Instance_Count.htm">Get Instance Count</a>. Эта функция/действие позволяет получить количество экземпляров данного объекта в игровой комнате, и вы будете использовать ее следующим образом:</p>
     <p class="dropspot"><img alt="Get Instance Count GML VisualAction" class="center" src="../assets/Images/QS_Guide/QS_DnD_GetInstanceCount.png" /></p>
-    <p class="dropspot">or:</p>
+    <p class="dropspot">или:</p>
     <p class="code">number = instance_number(obj_Enemy);</p>
-    <p class="dropspot">In both of the above examples, the function takes an object ID as its input value (the <strong> <a class="glossterm" data-glossterm="argument" href="#">argument</a></strong> or <strong>parameter</strong>) and will give an output value (the <strong>return </strong>value), which is the number of instances of the given object present in the room when the function/action was called. Note that we use a variable to store the returned value, the variable &quot;<span class="inline">number</span>&quot;. This variable can be declared before this code is run, or it will be considered as being declared when the code is run and the return value from the function/action assigned to it.</p>
-    <p class="dropspot">It is worth noting that you are not just limited to using the built in GameMaker Language or GML Visual actions and you can actually construct your own functions to use to extend what is possible when programming (you can find out more about this <a href="../GameMaker_Language/GML_Overview/Script_Functions.htm">here</a> for GML and <a href="../Drag_And_Drop/Drag_And_Drop_Overview/Action_Block_Functions.htm">here</a> for GML Visual).</p>
-    <p class="dropspot">You can do a lot with functions and variables, however they would be pretty much useless without the final important piece of the programming story, <strong>conditionals</strong>...</p>
-    <p class="dropspot"> </p>
+    <p class="dropspot">В обоих приведенных выше примерах функция принимает идентификатор объекта в качестве входного значения (параметр <strong> <a class="glossterm" data-glossterm="аргумент" href="#">аргумент</a></strong> или <strong>параметр</strong>) и выдает выходное значение ( <strong>возвращаемое </strong>значение), которое представляет собой количество экземпляров данного объекта, присутствующих в комнате на момент вызова функции/действия. Обратите внимание, что для хранения возвращаемого значения мы используем переменную &quot;<span class="inline">number</span>&quot;. Эта переменная может быть объявлена до выполнения кода, или она будет считаться объявленной после выполнения кода, и ей будет присвоено возвращаемое значение из функции/действия.</p>
+    <p class="dropspot">Стоит отметить, что вы не ограничены только использованием встроенных действий <span class="notranslate">GameMaker Language</span> или <span class="notranslate">GML</span> Visual и можете создавать собственные функции для расширения возможностей программирования (подробнее об этом можно узнать <a href="../GameMaker_Language/GML_Overview/Script_Functions.htm">здесь</a> для <span class="notranslate">GML</span> и <a href="../Drag_And_Drop/Drag_And_Drop_Overview/Action_Block_Functions.htm">здесь</a> для <span class="notranslate">GML</span> Visual).</p>
+    <p class="dropspot">Вы можете многое сделать с помощью функций и переменных, однако они были бы практически бесполезны без последней важной части истории программирования - <strong>условий</strong>...</p>
+    <p class="dropspot"> </p>
   </div>
-  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop_down2" href="What_Is_Programming_.htm#">Conditionals</a></p>
+  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop_down2" href="What_Is_Programming_.htm#">Условные обозначения</a></p>
   <div class="droptext" data-targetname="drop_down2">
-    <p class="dropspot">A large part of programming is made up of asking questions. These questions are generally simple ones that can evaluate to either true or false, and are called <strong>conditionals </strong>(and the values of <span class="inline">true </span>and <span class="inline">false </span>are called <strong>boolean </strong>values). The most common and widely used conditional is the question &quot;<span class="inline">if</span>&quot;, which is used to check if something is <span class="inline">true </span>or <span class="inline">false </span>and then act accordingly. A simple example would be removing a character from the game if their health goes below zero, which in plain language would be expressed as:</p>
+    <p class="dropspot">Значительная часть программирования состоит из задавания вопросов. Эти вопросы, как правило, простые, которые могут быть оценены как true или false, и называются <strong>условными </strong>(а значения <span class="inline">true </span>и <span class="inline">false </span>называются <strong>булевыми </strong>). Наиболее распространенным и широко используемым условием является вопрос &quot;<span class="inline">if</span>&quot;, который используется для проверки того, является ли что-то <span class="inline">true </span>или <span class="inline">false </span>, и последующих действий. Простым примером может быть удаление персонажа из игры, если его здоровье опускается ниже нуля, что на обычном языке будет выражено как:</p>
     <p class="code">if the character variable &quot;hp&quot; is less than or equal to zero, then destroy it.</p>
-    <p class="dropspot">To make the above into code we&#39;d have this:</p>
+    <p class="dropspot">Чтобы преобразовать вышеизложенное в код, мы должны сделать следующее:</p>
     <p class="dropspot"><img alt="GML VisualConditional" class="center" src="../assets/Images/QS_Guide/QS_DnD_Conditional.png" /></p>
-    <p class="dropspot">or:</p>
+    <p class="dropspot">или:</p>
     <p class="code">if (hp &lt;= 0)<br />
       {<br />
       <br />
@@ -62,10 +62,10 @@
       <br />
       }
     </p>
-    <p class="dropspot">So, above we ask the question &quot;if the hp variable is less than or equal to 0&quot; and then if that evaluates to true we call the function <a href="../GameMaker_Language/GML_Reference/Asset_Management/Instances/instance_destroy.htm"><span class="inline">instance_destroy()</span></a> or the action <a href="../Drag_And_Drop/Drag_And_Drop_Reference/Instance/Destroy_Object_Instance.htm">Destroy Object Instance</a>. Note that the &quot;<span class="inline">then</span>&quot; (if something... then something...) is <em>implicit </em>and you don&#39;t need to add it, and also note that in the GML code we use braces <span class="inline">{} </span>to &quot;block off&quot; the code we want to be executed when the &quot; <span class="inline">if</span>&quot; evaluates to <span class="inline">true </span>(in GML Visual this is symbolised by dropping the actions to the <em>right </em>of the &quot;<span class="inline">If</span>&quot; action). Anything added between the braces will only run if the &quot; <span class="inline">if</span>&quot; evaluates to <span class="inline">true</span>, so you can have more than one statement run in a single &quot;block&quot;.</p>
-    <p class="dropspot">One more thing to note when using the &quot;<span class="inline">if</span>&quot; conditional is that we can add an &quot;<span class="inline">else</span>&quot; statement to it too, so the conditional would then become &quot;if something evaluates to <span class="inline">true </span>then do something, <em>else </em>do something different&quot;. In this way way can deal with a conditional expression returning <span class="inline">true </span> <em>or </em> <span class="inline">false</span>. Let&#39;s give an example of that too:</p>
+    <p class="dropspot">Итак, выше мы задаем вопрос &quot;если переменная hp меньше или равна 0&quot;, а затем, если эта оценка равна true, мы вызываем функцию <a href="../GameMaker_Language/GML_Reference/Asset_Management/Instances/instance_destroy.htm"><span class="inline">instance_destroy()</span></a> или действие <a href="../Drag_And_Drop/Drag_And_Drop_Reference/Instance/Destroy_Object_Instance.htm">Destroy Object Instance</a>. Обратите внимание, что &quot;<span class="inline">then</span>&quot; (если что-то... то что-то...) является <em>неявным </em>и вам не нужно его добавлять, а также обратите внимание, что в коде <span class="notranslate">GML</span> мы используем скобки <span class="inline">{} </span>для &quot;блокировки&quot; кода, который мы хотим выполнить, когда &quot; <span class="inline">if</span>&quot; оценит <span class="inline">true </span>(в <span class="notranslate">GML</span> Visual это символизируется опусканием действий <em>справа </em>от действия &quot;<span class="inline">If</span>&quot;). Все, что добавлено между скобками, будет выполняться, только если &quot; <span class="inline">if</span>&quot; оценит <span class="inline">true</span>, поэтому в одном &quot;блоке&quot; можно запустить более одного оператора.</p>
+    <p class="dropspot">Еще один момент, который следует отметить при использовании условного выражения &quot;<span class="inline">if</span>&quot;, заключается в том, что к нему можно добавить утверждение &quot;<span class="inline">else</span>&quot;, тогда условное выражение будет выглядеть так: &quot;если что-то оценивается как <span class="inline">true </span>, то сделайте то-то, <em>иначе </em>сделайте что-то другое&quot;. Таким образом можно работать с условным выражением, возвращающим <span class="inline">true </span> <em>или </em> <span class="inline">false</span>. Приведем пример на эту тему:</p>
     <p class="dropspot"><img alt="GML VisualIf... Else.. Example" class="center" src="../assets/Images/QS_Guide/QS_DnD_IfElse.png" /></p>
-    <p class="dropspot">or:</p>
+    <p class="dropspot">или:</p>
     <p class="code">if (countdown &lt;= 0)<br />
       {<br />
       <br />
@@ -81,7 +81,7 @@
       <br />
       }
     </p>
-    <p class="dropspot">The above code translates into plain language as:</p>
+    <p class="dropspot">Приведенный выше код переводится на простой язык как:</p>
     <p class="code">if the countdown variable is less than or equal to zero then:<br />
       <br />
           create an instance of the object &quot;obj_Bullet&quot; at the current x/y position on the layer &quot;instances&quot;,<br />
@@ -92,12 +92,12 @@
       <br />
           subtract one from the countdown variable.
     </p>
-    <p class="dropspot">Don&#39;t worry too much about the actual instance creation part of the above code, as we&#39;ll cover that in more detail in the following sections. The important thing to understand here is that you can create conditional expressions that check if something is <span class="inline">true </span>or <span class="inline">false </span>and have your program respond in different ways. This may seem a very simple thing, but it&#39;s actually incredibly powerful and will form the basis for almost everything you do when programming in <span data-keyref="GameMaker Name">GameMaker</span>.</p>
+    <p class="dropspot">Не стоит слишком беспокоиться о фактическом создании экземпляра в приведенном выше коде, поскольку мы рассмотрим это более подробно в следующих разделах. Важно понять, что вы можете создавать условные выражения, которые проверяют, является ли что-то <span class="inline">true </span>или <span class="inline">false </span>, и заставляют вашу программу реагировать по-разному. Это может показаться очень простой вещью, но на самом деле она невероятно мощная и станет основой почти всего, что вы будете делать при программировании в <span data-keyref="GameMaker Name">GameMaker</span>.</p>
   </div>
-  <p> </p>
-  <p>So, to answer our question of &quot;What is programming?&quot;, we can say that <strong>programming </strong>is using a combination of <strong>statements  </strong>- which can use <strong> <a class="glossterm" data-glossterm="variable" href="#">variable</a></strong> <span class="glossextra">s</span><strong> </strong>to form <strong> <a class="glossterm" data-glossterm="expression" href="#">expression</a></strong><span class="glossextra">s</span>, <strong>functions </strong>to perform tasks, and <strong><a class="glossterm" data-glossterm="conditional" href="#">conditional</a></strong> <span class="glossextra">s</span> to ask questions - and then run these statements concurrently to achieve an objective. Below you can see a slightly more complex program in GML Visual and GML. Can you guess what it does?</p>
+  <p> </p>
+  <p>Итак, отвечая на наш вопрос &quot;Что такое программирование?&quot;, можно сказать, что <strong>программирование </strong>- это использование комбинации <strong>утверждений - </strong> которые могут использовать <strong> <a class="glossterm" data-glossterm="переменная" href="#">переменная</a></strong> <span class="glossextra">s</span><strong> </strong>для формирования <strong> <a class="glossterm" data-glossterm="выражение" href="#">выражение</a></strong><span class="glossextra">s</span>, <strong>функции </strong>для выполнения задач и <strong><a class="glossterm" data-glossterm="условный" href="#">условный</a></strong> <span class="glossextra">s</span>, чтобы задавать вопросы - и затем выполнять эти утверждения параллельно для достижения цели. Ниже вы можете увидеть немного более сложную программу в <span class="notranslate">GML</span> Visual и <span class="notranslate">GML</span>. Можете ли вы догадаться, что она делает?</p>
   <p><img alt="GML VisualFinal Code Example" class="center" src="../assets/Images/QS_Guide/QS_DnD_FinalCode.png" /></p>
-  <p>or:</p>
+  <p>или:</p>
   <p class="code">if mouse_check_button_pressed(mb_left) == true<br />
     {<br />
     <br />
@@ -120,23 +120,23 @@
     <br />
     }
   </p>
-  <p><a class="expandspot" data-rhwidget="ExpandSpot" data-target="expanding" href="What_Is_Programming_.htm#">Spoiler</a><span class="expandtext" data-targetname="expanding">The above code first checks for a mouse button being pressed (the <strong>left </strong>mouse button, which is defined using the constant &quot; <span class="inline">mb_left</span>&quot;),
-      and if it has been pressed, then it moves the instance running the code to the current mouse position (defined using the built-in variables &quot; <span class="inline">mouse_x</span>&quot; and &quot; <span class="inline">mouse_y</span>&quot;) and
-      also sets the instance blend colour to <strong>red</strong>. If the mouse button has not been pressed, then it checks to see if the mouse button has been <strong>released</strong>, and if it has it resets the instance blend colour to white (note that
-      again, we use some built-in <strong>constants </strong>- &quot; <span class="inline">c_red</span>&quot; and &quot; <span class="inline">c_white</span>&quot; - to define the colours easily).</span></p>
-  <p> </p>
-  <p>Hopefully you&#39;ll now have a bit more of an idea of what programming is all about, so let&#39;s move on to explore the <span data-keyref="GameMaker Name">GameMaker</span> <a class="glossterm" data-glossterm="IDE" href="#">IDE</a> and see how to add assets like <em>sprites </em>and <em>objects </em>and other important resources that your game will need.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p><a class="expandspot" data-rhwidget="ExpandSpot" data-target="expanding" href="What_Is_Programming_.htm#">Спойлер</a><span class="expandtext" data-targetname="expanding">Приведенный выше код сначала проверяет, нажата ли кнопка мыши ( <strong>левая </strong>кнопка мыши, которая определяется с помощью константы &quot; <span class="inline">mb_left</span>&quot;),
+      и если она была нажата, то перемещает экземпляр, выполняющий код, в текущую позицию мыши (определяется с помощью встроенных переменных &quot; <span class="inline">mouse_x</span>&quot; и &quot; <span class="inline">mouse_y</span>&quot;) и
+      также устанавливает цвет наложения экземпляра на <strong>красный</strong>. Если кнопка мыши не была нажата, то проверяется, была ли она <strong>отпущена</strong>, и если была, то сбрасывается цвет наложения экземпляра на белый (обратите внимание, что
+      мы снова используем некоторые встроенные <strong>константы - </strong>&quot; <span class="inline">c_red</span>&quot; и &quot; <span class="inline">c_white</span>&quot; - для простого определения цветов).</span></p>
+  <p> </p>
+  <p>Надеюсь, теперь вы имеете более полное представление о том, что такое программирование, поэтому давайте перейдем к изучению <a class="glossterm" data-glossterm="IDE" href="#">IDE</a> <span data-keyref="GameMaker Name">GameMaker</span> и посмотрим, как добавлять активы, такие как <em>спрайты </em>, <em>объекты </em>и другие важные ресурсы, которые понадобятся вашей игре.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="../Content.htm">Index</a></div>
-        <div style="float:right">Next: <a href="Creating_Sprites.htm">Creating Sprites</a></div>
+        <div style="float:left">Назад: <a href="../Content.htm">Указатель</a></div>
+        <div style="float:right">Следующее: <a href="Creating_Sprites.htm">Создание спрайтов</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 What is Programming?

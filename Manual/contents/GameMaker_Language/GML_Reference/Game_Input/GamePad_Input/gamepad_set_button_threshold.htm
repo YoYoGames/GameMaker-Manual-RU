@@ -6,7 +6,7 @@
   <title>gamepad_set_button_threshold</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference page for gamepad_set_button_threshold" />
   <meta name="rh-index-keywords" content="gamepad_set_button_threshold" />
@@ -15,52 +15,52 @@
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
   <h1>gamepad_set_button_threshold</h1>
-  <p>This function can be used to set the current threshold setting of the analogue buttons for a given device. The default threshold for all analogue buttons is 0.5, with the range being from 0 to 1.</p>
-  <p>The threshold defines at what point the button is considered as being &quot;pressed&quot; for games that require them to act as a digital button.</p>
-  <p>This function will affect the <a href="gamepad_button_check.htm">check</a>, <a href="gamepad_button_check_pressed.htm">pressed</a> and <a href="gamepad_button_check_released.htm">released</a> states for analogue buttons, but will <em>not</em> affect the value returned by the function <a href="gamepad_button_value.htm"><span class="inline">gamepad_button_value()</span></a>, which will always return the raw value for the button.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p>С помощью этой функции можно установить текущее пороговое значение аналоговых кнопок для данного устройства. По умолчанию порог для всех аналоговых кнопок составляет 0,5, а диапазон - от 0 до 1.</p>
+  <p>Порог определяет, в какой момент кнопка считается &quot;нажатой&quot; для игр, в которых они должны действовать как цифровая кнопка.</p>
+  <p>Эта функция влияет на состояния <a href="gamepad_button_check.htm">проверки</a>, <a href="gamepad_button_check_pressed.htm">нажатия</a> и <a href="gamepad_button_check_released.htm">отпускания</a> для аналоговых кнопок, но <em>не</em> влияет на значение, возвращаемое функцией <a href="gamepad_button_value.htm"><span class="inline">gamepad_button_value()</span></a>которая всегда будет возвращать исходное значение для кнопки.</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
   <p class="code">gamepad_set_button_threshold(device, threshold);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Аргумент</th>
+        <th>Тип</th>
+        <th>Описание</th>
       </tr>
       <tr>
-        <td>device</td>
-        <td><span data-keyref="Type_Real"><a href="../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
-        <td>Which gamepad device &quot;slot&quot; to check.</td>
+        <td><span class="notranslate">device</span></td>
+        <td><span data-keyref="Type_Real"><a href="../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Реально</a></span></td>
+        <td><span class="notranslate">Which gamepad device &quot;slot&quot; to check.</span></td>
       </tr>
       <tr>
-        <td>threshold</td>
-        <td><span data-keyref="Type_Real"><a href="../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
-        <td>The new threshold value (from 0 - 1, default 0.5).</td>
+        <td><span class="notranslate">threshold</span></td>
+        <td><span data-keyref="Type_Real"><a href="../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Реально</a></span></td>
+        <td><span class="notranslate">The new threshold value (from 0 - 1, default 0.5).</span></td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
   <p class="code"><span data-keyref="Type_Void">N/A</span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Пример:</h4>
   <p class="code">if gamepad_get_button_threshold(0) != 0.5<br />
     {<br />
         gamepad_set_button_threshold(0, 0.5);<br />
     }</p>
-  <p>The above code checks the analogue button threshold of the gamepad connected to device &quot;slot&quot; 0 and if it is not the default value of 0.5, it is set to that value.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Приведенный выше код проверяет пороговое значение аналоговой кнопки геймпада, подключенного к устройству &quot;slot&quot; 0, и если оно не равно значению по умолчанию 0,5, то оно устанавливается на это значение.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Gamepad_Input.htm">Gamepad Input</a></div>
-        <div style="float:right">Next: <a href="gamepad_set_axis_deadzone.htm"> gamepad_set_axis_deadzone </a></div>
+        <div style="float:left">Назад: <a href="Gamepad_Input.htm">Вход геймпада</a></div>
+        <div style="float:right">Далее: <a href="gamepad_set_axis_deadzone.htm"> gamepad_set_axis_deadzone </a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 gamepad_set_button_threshold

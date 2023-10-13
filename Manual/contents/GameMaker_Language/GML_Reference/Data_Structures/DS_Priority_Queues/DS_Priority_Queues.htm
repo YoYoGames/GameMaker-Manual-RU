@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>DS Priority Queues</title>
-  <meta name="generator" content="Adobe RoboHelp 2022" />
+  <title>Очереди приоритетов DS</title>
+  <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference section for DS Priority Queues" />
   <meta name="rh-index-keywords" content="" />
@@ -14,40 +14,40 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>DS Priority Queues</h1>
-  <p>A DS priority queue is a special data structure similar to a <a href="../DS_Queues/DS_Queues.htm"><span class="inline">DS queue</span></a>, only here the queue of values is ordered by the priorities (always real numbers) that the values have been assigned. This structure can be very useful for constructing leaderboards or information lists where the importance of each entry can be weighted.</p>
-  <div data-conref="../../../../assets/snippets/Note_DS_Destroy_When_No_Longer_Needed.hts"> </div>
-  <div data-conref="../../../../assets/snippets/Note_DS_Use_ds_exists_To_Check_For_Existence.hts"> </div>
-  <p>The following functions exist that deal with DS priority queues:</p>
+  <h1>Очереди приоритетов DS</h1>
+  <p>Очередь приоритетов DS - это специальная структура данных, похожая на очередь приоритетов. <a href="../DS_Queues/DS_Queues.htm"><span class="inline">DS queue</span></a>только здесь очередь значений упорядочена по приоритетам (всегда вещественные числа), которые были присвоены значениям. Эта структура может быть очень полезна для построения таблиц лидеров или информационных списков, где важность каждой записи может быть взвешена.</p>
+  <p class="note"><b>ПРИМЕЧАНИЕ</b>: Как и все динамические ресурсы, структуры данных занимают память, поэтому их <b>всегда</b> следует уничтожать, когда они больше не нужны, чтобы предотвратить утечку памяти, которая замедлит и в конечном итоге приведет к краху вашей игры.</p>
+  <p class="note"><b>ПРИМЕЧАНИЕ</b>: Если вам нужно проверить, существует ли структура данных, вы можете использовать функцию <span style="font-size:1px;"><a href="../ds_exists.htm"><span class="inline">ds_exists()</span></a></span> функцию.</p>
+  <p>Существуют следующие функции, работающие с очередями приоритетов DS:</p>
   <ul class="colour">
-    <li><a href="ds_priority_create.htm">ds_priority_create</a></li>
-    <li><a href="ds_priority_destroy.htm">ds_priority_destroy</a></li>
-    <li><a href="ds_priority_clear.htm">ds_priority_clear</a></li>
-    <li><a href="ds_priority_empty.htm">ds_priority_empty</a></li>
-    <li><a href="ds_priority_size.htm">ds_priority_size</a></li>
-    <li><a href="ds_priority_add.htm">ds_priority_add</a></li>
-    <li><a href="ds_priority_change_priority.htm">ds_priority_change_priority</a></li>
-    <li><a href="ds_priority_delete_max.htm">ds_priority_delete_max</a></li>
-    <li><a href="ds_priority_delete_min.htm">ds_priority_delete_min</a></li>
-    <li><a href="ds_priority_delete_value.htm">ds_priority_delete_value</a></li>
-    <li><a href="ds_priority_find_max.htm">ds_priority_find_max</a></li>
-    <li><a href="ds_priority_find_min.htm">ds_priority_find_min</a></li>
-    <li><a href="ds_priority_find_priority.htm">ds_priority_find_priority</a></li>
-    <li><a href="ds_priority_copy.htm">ds_priority_copy</a></li>
-    <li><a href="ds_priority_read.htm">ds_priority_read</a></li>
-    <li><a href="ds_priority_write.htm">ds_priority_write</a></li>
+    <li><a href="ds_priority_create.htm"><span class="notranslate">ds_priority_create</span></a></li>
+    <li><a href="ds_priority_destroy.htm"><span class="notranslate">ds_priority_destroy</span></a></li>
+    <li><a href="ds_priority_clear.htm"><span class="notranslate">ds_priority_clear</span></a></li>
+    <li><a href="ds_priority_empty.htm"><span class="notranslate">ds_priority_empty</span></a></li>
+    <li><a href="ds_priority_size.htm"><span class="notranslate">ds_priority_size</span></a></li>
+    <li><a href="ds_priority_add.htm"><span class="notranslate">ds_priority_add</span></a></li>
+    <li><a href="ds_priority_change_priority.htm"><span class="notranslate">ds_priority_change_priority</span></a></li>
+    <li><a href="ds_priority_delete_max.htm"><span class="notranslate">ds_priority_delete_max</span></a></li>
+    <li><a href="ds_priority_delete_min.htm"><span class="notranslate">ds_priority_delete_min</span></a></li>
+    <li><a href="ds_priority_delete_value.htm"><span class="notranslate">ds_priority_delete_value</span></a></li>
+    <li><a href="ds_priority_find_max.htm"><span class="notranslate">ds_priority_find_max</span></a></li>
+    <li><a href="ds_priority_find_min.htm"><span class="notranslate">ds_priority_find_min</span></a></li>
+    <li><a href="ds_priority_find_priority.htm"><span class="notranslate">ds_priority_find_priority</span></a></li>
+    <li><a href="ds_priority_copy.htm"><span class="notranslate">ds_priority_copy</span></a></li>
+    <li><a href="ds_priority_read.htm"><span class="notranslate">ds_priority_read</span></a></li>
+    <li><a href="ds_priority_write.htm"><span class="notranslate">ds_priority_write</span></a></li>
   </ul>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="../Data_Structures.htm">Data Structures</a></div>
-        <div style="float:right">Next: <a href="../DS_Queues/DS_Queues.htm">DS Queues</a></div>
+        <div style="float:left">Назад: <a href="../Data_Structures.htm">Структуры данных</a></div>
+        <div style="float:right">Следующий: <a href="../DS_Queues/DS_Queues.htm">Очереди DS</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 DS Priority Queues

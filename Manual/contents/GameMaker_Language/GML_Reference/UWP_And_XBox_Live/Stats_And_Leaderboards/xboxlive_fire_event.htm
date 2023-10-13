@@ -6,7 +6,7 @@
   <title>xboxlive_fire_event</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference page for xboxlive_fire_event" />
   <meta name="rh-index-keywords" content="xboxlive_fire_event" />
@@ -15,49 +15,49 @@
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
   <h1>xboxlive_fire_event</h1>
-  <p>This function can be used to fire a stat event. The &quot;event_name&quot; argument is the name of the event to be fired as defined in the XDP console for your game, and the following additional parameters will also depend on what you have a set up for the stat. The function will return 0 if the event was sent (and should be received/processed by the server) or -1 if there was an error (ie: your event was not setup as the event manifest file included in the project says another number).</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p>Эта функция может быть использована для запуска события stat. Аргумент &quot;имя_события&quot; - это имя события, которое должно быть запущено, как определено в консоли XDP для вашей игры, а следующие дополнительные параметры также будут зависеть от того, что у вас настроено для stat. Функция вернет 0, если событие было отправлено (и должно быть получено/обработано сервером) или -1, если произошла ошибка (т.е. ваше событие не было настроено, т.к. в файле манифеста событий, включенном в проект, указано другое число).</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
   <p class="code">xboxlive_fire_event(event_name, [stat_parameters...]);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Аргумент</th>
+        <th>Тип</th>
+        <th>Описание</th>
       </tr>
       <tr>
-        <td>event_name</td>
-        <td><span data-keyref="Type_String">String</span></td>
-        <td>The name of the event to fire.</td>
+        <td><span class="notranslate">event_name</span></td>
+        <td><span data-keyref="Type_String">Строка</span></td>
+        <td><span class="notranslate">The name of the event to fire.</span></td>
       </tr>
       <tr>
-        <td>stat_parameters</td>
-        <td><span data-keyref="Type_Any">Variable</span></td>
-        <td><span class="optional">OPTIONAL</span> Additional parameters to add to the event.</td>
+        <td><span class="notranslate">stat_parameters</span></td>
+        <td><span data-keyref="Type_Any">Переменная</span></td>
+        <td><span class="notranslate"><span class="optional">OPTIONAL</span> Дополнительные параметры для добавления к событию.</td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
   <p class="code"><span data-keyref="Type_Real">Real</span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Пример:</h4>
   <p class="code">var _user = xboxlive_get_user(0);<br />
     var _uid = xboxlive_user_id_for_user(_user);<br />
     result = xboxlive_fire_event(&quot;PlayerSessionStart&quot;, _uid, global.guid_str, 0, 42, 42);</p>
-  <p>The above code gets some information about the user then fires off a stat event along with this (and additional) data.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Приведенный выше код получает некоторую информацию о пользователе, затем запускает событие stat вместе с этими (и дополнительными) данными.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Stats_And_Leaderboards.htm">Stats And Leaderboards</a></div>
-        <div style="float:right">Next: <a href="xboxlive_stats_setup.htm"> xboxlive_stats_setup </a></div>
+        <div style="float:left">Назад: <a href="Stats_And_Leaderboards.htm">Статистика и таблицы лидеров</a></div>
+        <div style="float:right">Далее: <a href="xboxlive_stats_setup.htm"> xboxlive_stats_setup </a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 xboxlive_fire_event

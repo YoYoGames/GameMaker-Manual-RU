@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>alarm</title>
+  <title>сигнализация</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page outlining the variable alarm" />
   <meta name="rh-index-keywords" content="alarm" />
@@ -14,40 +14,41 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1><span data-field="title" data-format="default">alarm</span></h1>
-  <p>This 1-dimensional <a href="../../../../GML_Overview/Arrays.htm">array</a> is used to get the current value for any alarms that the instance may have, or it can be used to set those alarms. There are twelve alarms built into each instance of an object, and each one has its own <a href="../../../../../The_Asset_Editors/Object_Properties/Object_Events.htm">event</a> that will run when this variable reaches 0.</p>
-  <p>Alarms are counted down at the start of each step, <strong>after</strong> the Begin Step event but <strong>before</strong> the main Step event, and before anything is rendered for the frame. This means that if you set an alarm to <span class="inline2">1</span> in the Begin Step event, its event will run in that same frame (as the alarm will be counted down to 0 after Begin Step has finished), but if you set an alarm to <span class="inline2">1</span> in the Step event, it will run in the next frame.</p>
-  <p>It should be noted that the alarm is not finished when it reaches 0 (although the event has been triggered) as the next step it will go down to -1, so if you need to stop an alarm for any reason you should set its array value to -1 <i>not</i> 0. Alarm times are calculated in <i>game steps</i>, with a value of 30 being 30 steps, 60 being 60 steps, etc.</p>
-  <p class="note"><span data-conref="../../../../../assets/snippets/Tag_note.hts"> </span> An alarm with no actions or code in it will not run. However, even with just a comment and no code, the alarm will count down.</p>
-  <p>You can set the alarm array directly (and retrieve the current alarm value directly by using the array too), but under some circumstances this is not the most appropriate method, so you can also use the function <span class="inline3_func"><a data-xref="{title}" href="../alarm_set.htm">alarm_set</a></span> to set an alarm, and the function <span class="inline3_func"><a data-xref="{title}" href="../alarm_get.htm">alarm_get</a></span> to get the value of an alarm.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
-  <p class="code"><span data-field="title" data-format="default">alarm</span>[val];</p>
-  <p> </p>
-  <h4>Returns:</h4>
-  <p class="code"><span data-keyref="Type_Real"><a href="../../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span> (-1 if the alarm isn&#39;t running)</p>
-  <p> </p>
-  <h4>Example:</h4>
+  <h1>сигнализация</h1>
+  <p>Этот одномерный <a href="../../../../GML_Overview/Arrays.htm">массив</a> используется для получения текущего значения для всех сигналов тревоги, которые могут быть у экземпляра, или для установки этих сигналов. В каждый экземпляр объекта встроено двенадцать сигналов тревоги, и у каждого из них есть свой собственный <a href="../../../../../The_Asset_Editors/Object_Properties/Object_Events.htm"><span class="notranslate">event</span></a> которая сработает, когда эта переменная достигнет 0.</p>
+  <p>Сигналы тревоги отсчитываются в начале каждого шага, <strong>после</strong> события Begin Step, но <strong>до</strong> события Main Step, и до того, как что-либо будет отрисовано для данного кадра. Это означает, что если вы установите сигнал тревоги на <span class="inline2">1</span> в событии Begin Step, его событие будет запущено в том же кадре (поскольку сигнал тревоги будет отсчитан до 0 после завершения Begin Step), но если вы установите сигнал тревоги на <span class="inline2">1</span> в событии Step, он будет запущен в следующем кадре.</p>
+  <p>Следует отметить, что тревога не завершена, когда она достигает 0 (хотя событие сработало), так как на следующем шаге она снизится до -1, поэтому если вам нужно остановить тревогу по какой-либо причине, вы должны установить значение массива на -1 <i>, а не</i> на 0. Время тревоги рассчитывается в <i>игровых шагах</i>, при этом значение 30 - это 30 шагов, 60 - 60 шагов и т.д..</p>
+  <p class="note"><span class="note">ПРИМЕЧАНИЕ</span> Сигнал тревоги, в котором нет никаких действий или кода, не будет запущен. Однако даже при наличии только комментария и отсутствии кода сигнал тревоги будет отсчитывать время.</p>
+  <p>Вы можете установить массив сигналов тревоги напрямую (и получить текущее значение сигнала тревоги также напрямую, используя массив), но при некоторых обстоятельствах это не самый подходящий метод, поэтому вы также можете использовать функцию <span class="inline"><a href="../alarm_set.htm">alarm_set()</a></span> для установки сигнала тревоги и функцию <a href="../alarm_get.htm"><span class="inline">alarm_get()</span></a> для получения значения сигнала тревоги.</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
+  <p class="code">alarm[val];</p>
+  <p> </p>
+  <h4>Возвращается:</h4>
+  <p class="code"><span data-keyref="Type_Real"></span> (-1 if the alarm isn&#39;t running)</p>
+  <p> </p>
+  <h4>Пример:</h4>
   <p class="code">if canshoot<br />
     {<br />
         if keyboard_check_pressed(vk_space)<br />
         {<br />
             canshoot = false;<br />
-            alarm[0] = game_get_speed(gamespeed_fps);<br />
+            alarm[0] = room_speed;<br />
             instance_create_layer(x, y, &quot;Bullets&quot;, obj_Bullet);<br />
         }<br />
     }</p>
-  <p>The above code checks a variable and then if it is true, checks for a key press and if that is true it finally sets the variable to false, sets an alarm (where it will be set to true again) and creates an instance.</p>
-  <p> </p>
-  <p> </p>
+  <p>Приведенный выше код проверяет переменную, затем, если она истинна, проверяет нажатие клавиши, и если она истинна, то в конце устанавливает переменную в false, устанавливает тревогу (где она снова будет установлена в true) и создает экземпляр.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Instance_Variables.htm">Instance Variables</a></div>
-        <div style="float:right">Next: <a href="direction.htm">direction</a></div>
+        <div style="float:left">Назад: <a href="Instance_Variables.htm">Переменные экземпляра</a></div>
+        <div style="float:right">Следующий: <a href="direction.htm"><span class="notranslate">direction</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 alarm

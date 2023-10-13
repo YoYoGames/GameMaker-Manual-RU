@@ -6,7 +6,7 @@
   <title>audio_emitter_create</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page explaining the function audio_emitter_create" />
   <meta name="rh-index-keywords" content="audio_emitter_create" />
@@ -16,35 +16,35 @@
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
   <h1><span data-field="title" data-format="default">audio_emitter_create</span></h1>
-  <p>This function creates a new audio emitter and returns the index for it. This index should be stored in a variable for all further functions that relate to this emitter, and then when it is no longer needed it should be removed from memory using the function <a href="audio_emitter_free.htm"><span class="inline">audio_emitter_free()</span></a> to prevent memory leaks which may eventually crash your game.</p>
-  <p>The audio emitter is created with the following default settings: </p>
+  <p>Эта функция создает новый звуковой эмиттер и возвращает его индекс. Этот индекс должен храниться в переменной для всех последующих функций, связанных с этим эмиттером, а затем, когда он больше не нужен, его следует удалить из памяти с помощью функции <a href="audio_emitter_free.htm"><span class="inline">audio_emitter_free()</span></a> чтобы предотвратить утечку памяти, которая может привести к краху вашей игры.</p>
+  <p>Аудиоизлучатель создается со следующими настройками по умолчанию: </p>
   <ul class="Disc">
-    <li>A gain and pitch of 1</li>
-    <li>A listener mask set to only the default listener (1)</li>
-    <li>A position of <span data-keyref="Position_Origin">(0, 0, 0)</span></li>
-    <li>A speed of 0 (vx = 0, vy = 0, vz = 0)</li>
+    <li>Коэффициент усиления и шаг 1</li>
+    <li>Маска слушателя, установленная только для слушателя по умолчанию (1)</li>
+    <li>Положение <span data-keyref="Position_Origin">(0, 0, 0)</span></li>
+    <li>Скорость равна 0 (vx = 0, vy = 0, vz = 0)</li>
   </ul>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p> </p>
+  <h4>Синтаксис:</h4>
   <p class="code"><span data-field="title" data-format="default">audio_emitter_create</span>();</p>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
   <p class="code"><span data-keyref="Type_ID_Audio_Emitter"><a href="../../../../../../GameMaker_Language/GML_Reference/Asset_Management/Audio/Audio_Emitters/audio_emitter_create.htm" target="_blank">Audio Emitter ID</a></span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Пример:</h4>
   <p class="code">s_emit = <span data-field="title" data-format="default">audio_emitter_create</span>();</p>
-  <p>The above code creates a new audio emitter and assigns its index to the variable &quot;s_emit&quot;.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Приведенный выше код создает новый аудиоэмиттер и присваивает его индекс переменной &quot;s_emit&quot;.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Audio_Emitters.htm">Audio Emitters</a></div>
-        <div style="float:right">Next: <a href="audio_emitter_exists.htm">audio_emitter_exists</a></div>
+        <div style="float:left">Назад: <a href="Audio_Emitters.htm">Аудиоизлучатели</a></div>
+        <div style="float:right">Следующий: <a href="audio_emitter_exists.htm"><span class="notranslate">audio_emitter_exists</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 audio_emitter_create

@@ -6,7 +6,7 @@
   <title>skeleton_skin_set</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page explaining the function skeleton_skin_set" />
   <meta name="rh-index-keywords" content="skeleton_skin_set" />
@@ -14,50 +14,44 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1><span data-field="title" data-format="default">skeleton_skin_set</span></h1>
-  <p>This function sets the skin used to draw a skeletal animation sprite.</p>
-  <p>A skeletal animation sprite can be drawn with a variety of textures (called &quot;skins&quot;), permitting you to use one single animation for multiple different purposes. For example, you may have a generic walk animation and this can be used by your NPC characters, enemies, etc... in a game simply by changing the skin it is drawn with.</p>
-  <p>These skins need to have been previously created and named in your animation program, and this name is passed into the function (as a string) to set the sprite to use that skin when being drawn.</p>
-  <p>You can also add skins through code using <a data-xref="{title}" href="skeleton_skin_create.htm">skeleton_skin_create</a>.</p>
-  <p class="note"><span data-conref="../../../../../../assets/snippets/Tag_important.hts"> </span> For skins added using <a data-xref="{title}" href="skeleton_skin_create.htm">skeleton_skin_create</a> you must pass the struct returned by the function instead of the name.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
-  <p class="code"><span data-field="title" data-format="default">skeleton_skin_set</span>(skin);</p>
+  <h1>skeleton_skin_set</h1>
+  <p>Скелетная анимация <span class="notranslate">sprite</span> может быть нарисована с различными текстурами (называемыми &quot;скинами&quot;), что позволяет использовать одну анимацию для различных целей. Например, у вас может быть общая анимация ходьбы, и она может использоваться персонажами NPC, врагами и т.д. в игре, просто изменив скин, которым она нарисована. Эти скины должны быть предварительно созданы и названы в вашей программе анимации, и это имя передается в функцию (как строка), чтобы установить <span class="notranslate">sprite</span> для использования этого скина при рисовании.</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
+  <p class="code">skeleton_skin_set(skinname);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
+        <th>Аргумент</th><th>Тип</th>
+        <th>Описание</th>
+     </tr>
       <tr>
-        <td>skin</td>
-        <td><span data-keyref="Type_String"><a href="../../../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">String</a></span> or <span data-keyref="Type_Struct_Skeleton_Skin"><a href="../../../../../../../GameMaker_Language/GML_Reference/Asset_Management/Sprites/Skeletal_Animation/Skins/skeleton_skin_create.htm" target="_blank">Skeleton Skin Struct</a></span></td>
-        <td>The name of the skin to use as a string (for skins defined in the animation program) or a struct (for skins added using <a data-xref="{title}" href="skeleton_skin_create.htm">skeleton_skin_create</a>)</td>
-      </tr>
+        <td><span class="notranslate">skinname</span></td><td><span data-keyref="Type_String"></span></td>
+        <td><span class="notranslate">The name (a string) of the skin to use.</span></td>
+     </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
-  <p class="code"><span data-keyref="Type_Void">N/A</span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
+  <p class="code"><span data-keyref="Type_Void"></span></p>
+  <p> </p>
+  <h4>Пример:</h4>
   <p class="code">if skeleton_skin_get() == &quot;skin_Enemy1&quot;<br />
     {<br />
-        <span data-field="title" data-format="default">skeleton_skin_set</span>(choose(&quot;skin_Enemy1&quot;, &quot;skin_Enemy2&quot;, &quot;skin_Enemy3&quot;);<br />
+        skeleton_skin_set(choose(&quot;skin_Enemy1&quot;, &quot;skin_Enemy2&quot;, &quot;skin_Enemy3&quot;);<br />
     }</p>
-  <p>The above code would check the currently assigned skin for the animation and if it is &quot;skin_Enemy1&quot;, it chooses and sets a new skin from one of three options.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Приведенный выше код проверяет текущий назначенный скин для анимации, и если это &quot;skin_Enemy1&quot;, он выбирает и устанавливает новый скин из одного из трех вариантов.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Skins.htm">Skins</a></div>
-        <div style="float:right">Next: <a href="skeleton_skin_list.htm">skeleton_skin_list</a></div>
+        <div style="float:left">Назад: <a href="Skins.htm">Скины</a></div>
+        <div style="float:right">Следующий: <a href="skeleton_skin_list.htm"><span class="notranslate">skeleton_skin_list</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 skeleton_skin_set

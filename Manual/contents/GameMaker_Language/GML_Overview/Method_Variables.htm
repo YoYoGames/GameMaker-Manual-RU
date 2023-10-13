@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Method Variables</title>
+  <title>Переменные метода</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../assets/css/default.css" type="text/css" />
-  <script src="../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Gurpreet S. Matharoo" />
   <meta name="topic-comment" content="Page outlining the use of Method Variables" />
   <meta name="rh-index-keywords" content="Method Variables" />
@@ -14,11 +14,11 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>Method Variables</h1>
-  <p>A method variable is essentially a variable that has had a function assigned to it, &quot;binding&quot; the function to an instance and enabling you to use the variable to refer to the function - much like you use a <a href="Runtime_Functions.htm">runtime function name</a> to refer to a built-in GML function. The variable used can be <em>local</em>, <em>instance</em> or <em>global</em> in scope (see <a href="Variables_And_Variable_Scope.htm">here</a> for more information on variable scope).</p>
-  <p>Also see: <a data-xref="{title}" href="Script_Functions_vs_Methods.htm">Script Functions vs. Methods</a></p>
-  <h2>Creating Methods</h2>
-  <p>The syntax for creating a method variable is as follows:</p>
+  <h1>Переменные метода</h1>
+  <p>Переменная метода - это, по сути, переменная, которой назначена функция, &quot;привязывающая&quot; функцию к экземпляру и позволяющая использовать переменную для ссылки на функцию - так же, как вы используете <a href="Runtime_Functions.htm">имя функции во время выполнения</a> для ссылки на встроенную функцию <span class="notranslate">GML</span>. Используемая переменная может быть <em>локальной</em>, <em>экземпляром</em> или <em>глобальной</em> (более подробную информацию об области видимости переменных см. <a href="Variables_And_Variable_Scope.htm">здесь</a> ).</p>
+  <p>Также см: <a data-xref="{title}" href="Script_Functions_vs_Methods.htm">Функции сценария в сравнении с методами</a></p>
+  <h2>Создание методов</h2>
+  <p>Синтаксис для создания переменной метода следующий:</p>
   <p class="code"><span><span>name = </span>function( parameter1, parameter2, ... )</span><br />
     <span>{</span><br />
     <span>    statement1;</span><br />
@@ -26,7 +26,7 @@
     <span>    ...</span><br />
     <span>}</span>
   </p>
-  <p>or</p>
+  <p>или</p>
   <p class="code"><span>function name( parameter1, parameter2, ... )<br />
       {</span><br />
     <span>    statement1;</span><br />
@@ -34,11 +34,11 @@
     <span>    ...</span><br />
     <span>}</span>
   </p>
-  <p class="note">To create a function in GML Visual, use <a data-xref="{title}" href="../../Drag_And_Drop/Drag_And_Drop_Reference/Common/Declare_A_New_Function.htm">Declare A New Function</a>. Enable its &quot;Temp&quot; option to create a method variable (first syntax shown above).</p>
-  <p>In general, however, you would use the <em>first </em>form for methods, and the second form for defining <a href="Script_Functions.htm">script functions</a>, since the second form will also assign a script index to the function name while the first form will be a &quot;true&quot; method (and require the use of the <a href="Variables/Global_Variables.htm">global</a> prefix if used to define a scripted function).</p>
-  <p class="note"><span class="note">NOTE</span> You can check this by using both forms in project and then calling the runtime function <a href="../GML_Reference/Variable_Functions/typeof.htm">typeof()</a> on each of them. One will be classed as a &quot;number&quot; - since it returns a script index ID - and the other will be classed as a &quot;method&quot;.</p>
-  <p>So, keep in mind that - in general - we will always be referring to functions that have <em>not </em>been defined with a script index when we are talking about methods and method variables. </p>
-  <p>Below you can see three simple examples of creating a method variable using different scopes:</p>
+  <p class="note">Чтобы создать функцию в <span class="notranslate">GML</span> Visual, используйте <a data-xref="{title}" href="../../Drag_And_Drop/Drag_And_Drop_Reference/Common/Declare_A_New_Function.htm">Declare A New Function</a>. Включите опцию &quot;Temp&quot; для создания переменной метода (первый синтаксис показан выше).</p>
+  <p>В общем случае, однако, вы будете использовать <em>первую </em>форму для методов, а вторую - для определения <a href="Script_Functions.htm">скриптовых функций</a>, поскольку вторая форма будет также присваивать индекс скрипта имени функции, в то время как первая форма будет &quot;истинным&quot; методом (и потребует использования префикса <a href="Variables/Global_Variables.htm"><span class="notranslate">global</span></a> если она используется для определения скриптовой функции).</p>
+  <p class="note"><span class="note">ПРИМЕЧАНИЕ</span> Вы можете проверить это, используя обе формы в проекте, а затем вызвав функцию выполнения <a href="../GML_Reference/Variable_Functions/typeof.htm">typeof()</a> для каждой из них. Одна из них будет классифицирована как &quot;число&quot; - поскольку она возвращает идентификатор индекса сценария - а другая будет классифицирована как &quot;метод&quot;.</p>
+  <p>Поэтому имейте в виду, что в общем случае, говоря о методах и переменных методов, мы всегда будем ссылаться на функции, которые <em>не </em>были определены с помощью индекса сценария. </p>
+  <p>Ниже приведены три простых примера создания переменной метода с использованием различных диапазонов:</p>
   <p class="code">// Local<br />
     var _debug = function(message)<br />
     {<br />
@@ -57,9 +57,9 @@
         return point_distance(_x1, _y1, _x2, _y2);<br />
     }
   </p>
-  <p>Notice that in the above code, the various parameters that are given as inputs for the function are all named and these names are what should be used within the function to refer to the different inputs. Also note that you can use the <span class="inline"><a href="Language_Features/return.htm">return</a></span> statement to return a value from a function for use elsewhere in your code, and that a function with <em>no</em> return value defined, will return <span class="inline">undefined</span>.by default.</p>
-  <p class="note"><span class="note">NOTE</span> While the variable will be in the chosen scope, the actual function will be bound to the scope that it was initially defined in. For example, <a href="Script_Functions.htm">script functions</a> are all global scope and &quot;unbound&quot; (ie: they are not associated with any instances), but if you have a script function that creates another function as a method variable within it and then you call this script function from an instance, the function used within the script will <strong>be bound to the instance variable as a method</strong>. In general this is not something you ever need to think about but for more complex operations with method variables it&#39;s worth taking into consideration. This also applies when using other constructs like <a href="Language_Features/with.htm"><span class="inline">with</span></a> - when you create a method variable inside a with, the function will be bound to the instance that is currently in scope.</p>
-  <p>Once created, the method variable can be used just as you would a runtime function or a script function, for example:</p>
+  <p>Обратите внимание, что в приведенном выше коде различные параметры, заданные в качестве входных данных для функции, имеют имена, и именно эти имена должны использоваться в функции для обозначения различных входных данных. Также обратите внимание, что вы можете использовать оператор <span class="inline"><a href="Language_Features/return.htm">return</a></span> для возврата значения из функции для использования в других частях кода, и что функция, для которой <em>не</em> определено возвращаемое значение, по умолчанию возвращает <span class="inline">undefined</span>.</p>
+  <p class="note"><span class="note">ПРИМЕЧАНИЕ</span> Хотя переменная будет находиться в выбранной области видимости, фактическая функция будет привязана к области видимости, в которой она была изначально определена. Например, <a href="Script_Functions.htm">функции сценария</a> имеют глобальную область видимости и &quot;не привязаны&quot; (т.е. они не связаны ни с какими экземплярами), но если у вас есть функция сценария, которая создает другую функцию как переменную метода внутри нее, а затем вы вызываете эту функцию сценария из экземпляра, функция, используемая в сценарии, <strong>будет привязана к переменной экземпляра как метод</strong>. В общем случае об этом не нужно задумываться, но для более сложных операций с переменными метода это стоит принять во внимание. Это также применимо при использовании других конструкций, таких как <a href="Language_Features/with.htm"><span class="inline">with</span></a> - когда вы создаете переменную метода внутри функции with, функция будет привязана к экземпляру, который в данный момент находится в области видимости.</p>
+  <p>После создания переменную метода можно использовать так же, как, например, функцию времени выполнения или функцию сценария:</p>
   <p class="code">create_vec = function(_x1, _y1, _x2, _y2);<br />
     {<br />
         var _array;<br />
@@ -70,34 +70,33 @@
     <br />
     vec = create_vec(x, y, mouse_x, mouse_y);
   </p>
-  <p>Variables created within a function will follow the same rules as normal and will be scoped according to the keyword used or the scope of the function call. In the above example, we use <span class="inline">var</span> so the array variable is in the <em>local </em>scope of the function. If we didn&#39;t use the keyword, then the variable would have been created on the scope of the instance that called the function.</p>
-  <p>Methods, just like script functions, can also take optional arguments that have default values for when they&#39;re not passed in:</p>
+  <p>Переменные, созданные внутри функции, подчиняются тем же правилам, что и обычные, и имеют локальную область видимости в соответствии с используемым ключевым словом или областью видимости вызова функции. В приведенном выше примере мы используем <span class="inline">var</span>, поэтому переменная массива находится в <em>локальной </em>области видимости функции. Если бы мы не использовали ключевое слово, то переменная была бы создана в области видимости экземпляра, вызвавшего функцию.</p>
+  <p>Методы, как и функции сценария, могут принимать необязательные аргументы, которые имеют значения по умолчанию, когда они не переданы:</p>
   <p class="code">create_attachment = function(_attachment, <strong>_x = x</strong>, <strong>_y = y</strong>)<br />
     {<br />
         return instance_create_layer(_x, _y, layer, _attachment);<br />
     }</p>
-  <p>The above function takes three arguments, where the last two are optional. If they are not passed in when the function is called, then they&#39;ll use the instance&#39;s <span class="inline">x</span> and <span class="inline">y</span> coordinates by default.</p>
-  <p>Note that if an argument is not passed in, and it does not have a default value, then it will be equal to <span class="inline">undefined</span>.</p>
-  <p>Methods can also make use of static variables, which maintain their values throughout every function call. Please <a href="Functions/Static_Variables.htm">read this page</a> for more information.</p>
-  <p>Below we list a few helper functions associated with method variables:</p>
+  <p>Приведенная выше функция принимает три аргумента, причем два последних являются необязательными. Если они не переданы при вызове функции, то по умолчанию будут использоваться координаты экземпляра <span class="inline">x</span> и <span class="inline">y</span>.</p>
+  <p>Обратите внимание, что если аргумент не передан, и у него нет значения по умолчанию, то он будет равен <span class="inline">undefined</span>.</p>
+  <p>Методы также могут использовать статические переменные, которые сохраняют свои значения при каждом вызове функции. Для получения дополнительной информации <a href="Functions/Static_Variables.htm">прочтите эту страницу</a>.</p>
+  <p>Ниже мы перечислим несколько вспомогательных функций, связанных с переменными метода:</p>
   <ul class="colour">
-    <li><a href="../GML_Reference/Variable_Functions/is_method.htm">is_method</a></li>
-    <li><a href="../GML_Reference/Variable_Functions/method.htm">method</a></li>
-    <li><a href="../GML_Reference/Variable_Functions/method_get_self.htm">method_get_self</a></li>
-    <li><a href="../GML_Reference/Variable_Functions/method_get_index.htm">method_get_index</a></li>
-    <li><a href="../GML_Reference/Variable_Functions/method_call.htm">method_call</a></li>
+    <li><a href="../GML_Reference/Variable_Functions/is_method.htm"><span class="notranslate">is_method</span></a></li>
+    <li><a href="../GML_Reference/Variable_Functions/method.htm"><span class="notranslate">method</span></a></li>
+    <li><a href="../GML_Reference/Variable_Functions/method_get_self.htm"><span class="notranslate">method_get_self</span></a></li>
+    <li><a href="../GML_Reference/Variable_Functions/method_get_index.htm"><span class="notranslate">method_get_index</span></a></li>
   </ul>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="GML_Overview.htm">GML Overview</a></div>
-        <div style="float:right">Next: <a data-xref="{title}" href="Script_Functions_vs_Methods.htm">Script Functions vs. Methods</a></div>
+        <div style="float:left">Назад: <a href="GML_Overview.htm">Обзор GML</a></div>
+        <div style="float:right">Следующее: <a data-xref="{title}" href="Script_Functions_vs_Methods.htm">Функции сценария в сравнении с методами</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 Script Functions

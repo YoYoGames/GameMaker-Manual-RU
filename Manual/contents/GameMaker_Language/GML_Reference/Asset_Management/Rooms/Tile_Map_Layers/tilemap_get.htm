@@ -6,7 +6,7 @@
   <title>tilemap_get</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page outlining the function tilemap_get" />
   <meta name="rh-index-keywords" content="tilemap_get" />
@@ -16,57 +16,57 @@
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
   <h1>tilemap_get</h1>
-  <p>Using this function you can retrieve the tile data from a cell of the tile map element. You give the tile map element ID (which you get when you create a tile map element using <a href="layer_tilemap_create.htm"><span class="inline">layer_tilemap_create()</span></a> or when you use the function <a href="layer_tilemap_get_id.htm"><span class="inline">layer_tilemap_get_id()</span></a>), as well as the <i>cell</i> x and y position and the function will return the tile data &quot;blob&quot;. This data is essentially a bit mask that contains the tile index, the flip/rotate/mirror booleans and any mask data that has been applied (see <a href="tilemap_set_mask.htm"><span class="inline">tilemap_set_mask()</span></a> for details), and the resulting data value can then be used in the <span class="inline">tile_*</span> functions to change a tiles properties. Note that we are using x/y cell positions based on the size of the tile map grid and <i>not</i> as a position in the room, so &quot;cell_x&quot; is a value from 0 to <a href="tilemap_get_width.htm">tile map width</a>, and &quot;cell_y&quot; is a value from 0 to <a href="tilemap_get_height.htm">tile map height</a>. If you need to get the data for a tile at a specific room position then you need to use the function <a href="tilemap_get_at_pixel.htm"><span class="inline">tilemap_get_at_pixel()</span></a>.</p>
-  <p class="note"><b>IMPORTANT!</b> If the tiles in the tile map have been unchanged (ie: they are not rotated or flipped etc...), then the return value of the tile set data will be exactly equal to the index of the tile on the tile set. So you can create &quot;collision maps&quot; of tiles using one tile at index 1 in the tile set - for example - then use this function to check for 1 or 0 (an empty tile) to calculate collisions.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p>С помощью этой функции вы можете получить данные о плитке из ячейки элемента карты плитки. Вы указываете ID элемента карты плитки (который вы получаете при создании элемента карты плитки с помощью функции <a href="layer_tilemap_create.htm"><span class="inline">layer_tilemap_create()</span></a> или при использовании функции <a href="layer_tilemap_get_id.htm"><span class="inline">layer_tilemap_get_id()</span></a>), а также позицию x и y <i>ячейки</i>, и функция вернет &quot;сгусток&quot; данных плитки. Эти данные по сути являются битовой маской, содержащей индекс плитки, булевы flip/rotate/mirror и любые примененные данные маски (см. <a href="tilemap_set_mask.htm"><span class="inline">tilemap_set_mask()</span></a> подробности), а полученное значение данных можно использовать в функциях <span class="inline">tile_*</span> для изменения свойств плитки. Обратите внимание, что мы используем позиции ячеек x/y, основанные на размере сетки карты плитки, а <i>не</i> на положении в комнате, поэтому &quot;cell_x&quot; - это значение от 0 до <a href="tilemap_get_width.htm">ширины карты плитки</a>, а &quot;cell_y&quot; - это значение от 0 до <a href="tilemap_get_height.htm">высоты карты плитки</a>. Если вам нужно получить данные для плитки в определенном положении в комнате, то вам нужно использовать функцию <a href="tilemap_get_at_pixel.htm"><span class="inline">tilemap_get_at_pixel()</span></a>.</p>
+  <p class="note"><b>ВАЖНО!</b> Если плитки в карте плиток были неизменны (т.е. они не повернуты, не перевернуты и т.д.), то возвращаемое значение данных набора плиток будет точно равно индексу плитки в наборе плиток. Таким образом, вы можете создавать &quot;карты столкновений&quot; плиток, используя одну плитку с индексом 1 в наборе плиток - например - затем использовать эту функцию для проверки 1 или 0 (пустая плитка) для расчета столкновений.</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
   <p class="code">tilemap_get(tilemap_element_id, cell_x, cell_y);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Аргумент</th>
+        <th>Тип</th>
+        <th>Описание</th>
       </tr>
       <tr>
-        <td>tilemap_element_id</td>
-        <td><span data-keyref="Type_ID_Element_Tilemap"><a data-rhwidget="HyperlinkPopover" href="../../../../../../GameMaker_Language/GML_Reference/Asset_Management/Rooms/Tile_Map_Layers/layer_tilemap_get_id.htm">Tile Map Element ID</a></span></td>
-        <td>The unique ID value of the tile map element to get the tile-data of</td>
+        <td><span class="notranslate">tilemap_element_id</span></td>
+        <td><span data-keyref="Type_ID_Element_Tilemap"><a data-rhwidget="HyperlinkPopover" href="../../../../../../GameMaker_Language/GML_Reference/Asset_Management/Rooms/Tile_Map_Layers/layer_tilemap_get_id.htm">Идентификатор элемента карты плитки</a></span></td>
+        <td><span class="notranslate">The unique ID value of the tile map element to get the tile-data of</span></td>
       </tr>
       <tr>
-        <td>x_cell</td>
-        <td><span data-keyref="Type_Real"><a data-rhwidget="HyperlinkPopover" href="../../../../../../GameMaker_Language/GML_Overview/Data_Types.htm">Real</a></span></td>
-        <td>The cell along the x-axis to get the tile data from</td>
+        <td><span class="notranslate">x_cell</span></td>
+        <td><span data-keyref="Type_Real"><a data-rhwidget="HyperlinkPopover" href="../../../../../../GameMaker_Language/GML_Overview/Data_Types.htm">Реально</a></span></td>
+        <td><span class="notranslate">The cell along the x-axis to get the tile data from</span></td>
       </tr>
       <tr>
-        <td>y_cell</td>
-        <td><span data-keyref="Type_Real"><a data-rhwidget="HyperlinkPopover" href="../../../../../../GameMaker_Language/GML_Overview/Data_Types.htm">Real</a></span></td>
-        <td>The cell along the y-axis to get the tile data from</td>
+        <td><span class="notranslate">y_cell</span></td>
+        <td><span data-keyref="Type_Real"><a data-rhwidget="HyperlinkPopover" href="../../../../../../GameMaker_Language/GML_Overview/Data_Types.htm">Реально</a></span></td>
+        <td><span class="notranslate">The cell along the y-axis to get the tile data from</span></td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
   <p class="code"><span data-keyref="Type_Real_Tile_Data"><a data-rhwidget="HyperlinkPopover" href="../../../../../../LINKGOESHERE">Tile Data</a></span> (-1 if there is an error)</p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Пример:</h4>
   <p class="code">var lay_id = layer_get_id(&quot;Tiles_sky&quot;);<br />
     var map_id = layer_tilemap_get_id(lay_id);<br />
     var data = tilemap_get(map_id, 0, 0);<br />
     data = tile_set_flip(data, true);<br />
     tilemap_set(map_id, data, 0, 0);</p>
-  <p>The above code gets the ID for the tile map on the layer &quot;Tiles_Sky&quot; and then uses that to get the data from the tile at cell (0, 0). This tile data is then flipped before being used to set the tile on the tile map again.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Приведенный выше код получает идентификатор карты плиток на слое &quot;Tiles_Sky&quot;, а затем использует его для получения данных плитки в ячейке (0, 0). Эти данные плитки затем переворачиваются, прежде чем снова использоваться для установки плитки на карте плиток.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Tile_Map_Layers.htm">Tile Map Layers</a></div>
-        <div style="float:right">Next: <a href="tilemap_get_at_pixel.htm">tilemap_get_at_pixel</a></div>
+        <div style="float:left">Назад: <a href="Tile_Map_Layers.htm">Плитка Слои карты</a></div>
+        <div style="float:right">Следующий: <a href="tilemap_get_at_pixel.htm"><span class="notranslate">tilemap_get_at_pixel</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 tilemap_get

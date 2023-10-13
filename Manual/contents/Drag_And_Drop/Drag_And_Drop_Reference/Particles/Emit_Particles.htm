@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Emit Particles</title>
-  <meta name="generator" content="Adobe RoboHelp 2020" />
+  <title>Испускать частицы</title>
+  <meta name="generator" content="Adobe RoboHelp 2019" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
-  <script src="../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page that explains the Emit Particles action" />
   <meta name="rh-index-keywords" content="GML Visual Action - Emit Particles" />
@@ -14,55 +14,59 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1><img alt="Emit Particles Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Particles/i_Particles_Emit_Particles.png" /> Emit Particles</h1>
-  <p>This action is used to create particles from an emitter. You supply the particle system ID that the emitter belongs to (as returned by the action <a href="Create_Particle_System.htm">Create Particle System</a>) and then the actual emitter ID (as returned by the action <a href="Create_Particle_Emitter.htm">Create Particle Emitter</a>), and finally the particle type to create (as returned by the action <a href="Create_Particle_Type.htm">Create Particle Type</a>). You can then select to &quot;Burst&quot; or &quot;Stream&quot; the particles from the emitter, as well as give the number of them you want to create.</p>
-  <p>When you choose to stream particles, you do not need to place this action in a game frame event like the Step Event or the Draw event, but instead simply call it once in the Create Event (for example) and the emitter will stream particles every game frame until you call this action again to stop it (by setting the count value to 0). If you choose to burst the particles, then you can call this in any event you choose and the particles will be created once.</p>
-  <p> </p>
-  <h4>Action Syntax:</h4>
-  <p><img alt="Emit Particles Action" class="center" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Particles/a_Particles_Emit_Particles.png" /></p>
-  <h4>Arguments:</h4>
+  <h1><img> Испускать частицы</h1>
+  <p>Это действие используется для создания частиц из эмиттера. Вы указываете ID системы частиц, к которой принадлежит эмиттер (возвращается действием <a href="Create_Particle_System.htm">Create Particle System</a>), затем фактический ID эмиттера (возвращается действием Create Particle Emitter) и, наконец, тип частицы для создания (возвращается действием Create Particle Type).
+    действием <a href="Create_Particle_Emitter.htm">Create Particle Emitter</a>) и, наконец, тип создаваемой частицы (возвращаемый действием <a href="Create_Particle_Type.htm">Create Particle Type</a>). Затем вы можете выбрать &quot;Burst&quot;
+    или &quot;Поток&quot; частиц из эмиттера, а также указать их количество, которое вы хотите создать.</p>
+  <p>При выборе потоковой передачи частиц вам не нужно помещать это действие в событие игрового кадра, такое как событие Step или событие Draw, а просто вызвать его один раз в событии Create (например), и эмиттер будет передавать частицы каждый игровой кадр, пока вы не вызовете это действие снова, остановив его на 0.
+    пока вы не вызовете это действие снова, чтобы остановить его (установив значение count в 0). Если вы решите разрывать частицы, то вы можете вызвать это действие в любом выбранном вами событии, и частицы будут созданы один раз.</p>
+  <p> </p>
+  <h4>Синтаксис действия:</h4>
+  <p><img alt="Emit Particles Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Particles/i_Particles_Emit_Particles.png" /></p>
+  <h4>Аргументы:</h4>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Description</th>
+        <th>Аргумент</th>
+        <th>Описание</th>
       </tr>
       <tr>
-        <td>System</td>
-        <td>The ID of the system that the emitter is in</td>
+        <td><span class="notranslate">System</span></td>
+        <td>Идентификатор системы, в которой находится излучатель</td>
       </tr>
       <tr>
-        <td>Emitter</td>
-        <td>The ID of the emitter to use</td>
+        <td><span class="notranslate">Emitter</span></td>
+        <td>Идентификатор эмиттера для использования</td>
       </tr>
       <tr>
-        <td>Type</td>
-        <td>The ID of the particle type to create</td>
+        <td><span class="notranslate">Type</span></td>
+        <td>Идентификатор типа частицы для создания</td>
       </tr>
       <tr>
-        <td>Event</td>
-        <td>The event type for the particles, either &quot;Burst&quot; or &quot;Stream&quot;</td>
+        <td><span class="notranslate">Event</span></td>
+        <td>Тип события для частиц, либо &quot;Burst&quot;, либо &quot;Stream&quot;.</td>
       </tr>
       <tr>
-        <td>Count</td>
-        <td>The number of particles to burst or stream</td>
+        <td><span class="notranslate">Count</span></td>
+        <td>Количество частиц для разрыва или потока</td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Example:</h4>
-  <p><img alt="Emit Particles Example" class="center" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Particles/e_Particles_Create_Particle_Emitter.png" />The above action block code will create a particle emitter, set it&#39;s region, and then set it to emit a stream of particles.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p> </p>
+  <h4>Пример:</h4>
+  <p><img>Приведенный выше код блока действий создаст излучатель частиц, установит его регион,
+    а затем настроит его на испускание потока частиц.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Particle_Actions.htm">Particle Actions</a></div>
-        <div style="float:right">Next: <a href="Set_Emitter_Region.htm">Set Emitter Region</a></div>
+        <div style="float:left">Назад: <a href="Particle_Actions.htm">Действия частиц</a></div>
+        <div style="float:right">Следующий: <a href="Set_Emitter_Region.htm">Установка области излучателя</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 Action - Emit Particles

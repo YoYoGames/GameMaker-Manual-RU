@@ -6,7 +6,7 @@
   <title>json_parse</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference page for json_parse" />
   <meta name="rh-index-keywords" content="json_parse" />
@@ -16,48 +16,48 @@
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
   <h1>json_parse</h1>
-  <p>This function can be used to parse a JSON string (either previously created using <a href="json_stringify.htm">json_stringify</a> or from any valid source), and convert it into a collection of arrays or structs, where an array is the equivalent of a JSON array and a struct is the equivalent of a JSON object. You supply the string to parse, and the function will return the top level array or struct which can then be used in your code. If you are not sure of the contents of the JSON, you can use the different <a href="../../Variable_Functions/Variable_Functions.htm">Variable Functions</a> (like <a href="../../Variable_Functions/typeof.htm"><span class="inline">typeof()</span></a> and <a href="../../Variable_Functions/variable_struct_get_names.htm"><span class="inline">variable_struct_get_names()</span></a> in case of a struct) to check the returned contents. Note that trying to parse an invalid value (i.e.: not a string) will throw an exception error.</p>
-  <p>When using this function there are some important things to note:</p>
+  <p>Эта функция может быть использована для разбора строки JSON (либо созданной ранее с помощью функции <a href="json_stringify.htm"><span class="notranslate">json_stringify</span></a> или из любого корректного источника) и преобразовать ее в коллекцию массивов или структур, где массив - это эквивалент массива JSON, а структура - эквивалент объекта JSON. Вы передаете строку для разбора, и функция возвращает массив или структуру верхнего уровня, которые затем можно использовать в вашем коде. Если вы не уверены в содержимом JSON, вы можете использовать различные <a href="../../Variable_Functions/Variable_Functions.htm">функции переменных</a> (такие как <a href="../../Variable_Functions/typeof.htm"><span class="inline">typeof()</span></a> и <a href="../../Variable_Functions/variable_struct_get_names.htm"><span class="inline">variable_struct_get_names()</span></a> в случае со структурой) для проверки возвращаемого содержимого. Обратите внимание, что попытка разобрать недопустимое значение (т.е. не строку) приведет к ошибке исключения.</p>
+  <p>При использовании этой функции следует обратить внимание на некоторые важные моменты:</p>
   <ul class="colour">
-    <li>If the supplied JSON string includes <span class="inline">undefined</span> as a value for any property, it will be converted to <span class="inline">pointer_null</span> upon being parsed.</li>
-    <li>This function only allows you to load JSON files with a maximum nesting limit of 128.</li>
+    <li>Если предоставленная строка JSON содержит <span class="inline">undefined</span> в качестве значения для какого-либо свойства, то при разборе она будет преобразована в <span class="inline">pointer_null</span>.</li>
+    <li>Эта функция позволяет загружать только файлы JSON с максимальным пределом вложенности 128.</li>
   </ul>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p> </p>
+  <h4>Синтаксис:</h4>
   <p class="code">json_parse(json)</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th><th>Type</th>
-        <th>Description</th>
+        <th>Аргумент</th><th>Тип</th>
+        <th>Описание</th>
      </tr>
       <tr>
-        <td>json</td><td><span data-keyref="Type_String"></span></td>
-        <td>The JSON string to parse</td>
+        <td><span class="notranslate">json</span></td><td><span data-keyref="Type_String"></span></td>
+        <td><span class="notranslate">The JSON string to parse</span></td>
      </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
   <p class="code"><span data-keyref="Type_Struct">Struct</span> or <span data-keyref="Type_Array">Array</span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Пример:</h4>
   <p class="code">json = &quot;{\&quot;myObj\&quot;: { \&quot;apples\&quot;:10, \&quot;oranges\&quot;:12, \&quot;potatoes\&quot;:100000, \&quot;avocados\&quot;:0 }, \&quot;myArray\&quot;:[0, 1, 2, 2, 4, 0, 1, 5, 1]}&quot;;<br />
     <br />
     data = json_parse(json);<br />
     show_debug_message(data);
   </p>
-  <p>The above code creates a new string containing a valid JSON object, and then calls <span class="inline">json_parse()</span> to convert that string into a GML struct. It then prints the result to the debug log.</p>
-  <p class="note"><span class="note">NOTE</span> You will notice that the JSON string contains a backslash (<span class="inline2">\</span>) before every double quote (<span class="inline2">&quot;</span>) inside it:<br />
-    <br />
-    <span class="inline2">json = &quot;{ <strong>\&quot; </strong>myObj</span><br />
-    <br />
-    This is to ensure that the double quote is read as an actual character within the string, instead of being read as part of the code and closing the string prematurely. This way we are using a backslash to &quot;escape&quot; the double quote.<br />
-    <br />
-    If you are loading JSON from an external file however, there is no need to escape characters in that file and doing so may result in errors during parsing.
+  <p>Приведенный выше код создает новую строку, содержащую правильный объект JSON, а затем вызывает <span class="inline">json_parse()</span> для преобразования этой строки в структуру <span class="notranslate">GML</span>. Затем он печатает результат в журнал отладки.</p>
+  <p class="note"><span class="note">ПРИМЕЧАНИЕ</span> Вы заметите, что строка JSON содержит обратную косую черту<span class="inline2">(\</span>) перед каждой двойной кавычкой (<span class="inline2">&quot;</span>) внутри нее:<br>
+    <br>
+   <span class="inline2">json = &quot;{ \ <strong>&quot; </strong></span>myObj<br>
+    <br>
+    Это делается для того, чтобы двойная кавычка читалась как реальный символ в строке, а не как часть кода и не закрывала строку преждевременно. Таким образом, мы используем обратную косую черту, чтобы &quot;спасти&quot; двойную кавычку.<br>
+    <br>
+    Однако если вы загружаете JSON из внешнего файла, нет необходимости экранировать символы в этом файле, и это может привести к ошибкам при разборе.
   </p>
   <hr />
-  <p>After parsing the JSON string above, if you know its structure, you can use various <a href="../../Variable_Functions/Variable_Functions.htm">Variable Functions</a> to check and read its contents:</p>
+  <p>После разбора приведенной выше строки JSON, если вы знаете ее структуру, вы можете использовать различные <a href="../../Variable_Functions/Variable_Functions.htm">функции переменных</a> для проверки и чтения ее содержимого:</p>
   <p class="code">data = json_parse(json);<br />
     <br />
     // Check if the struct has myObj variable<br />
@@ -87,23 +87,23 @@
         }<br />
     }
   </p>
-  <p>The above code will parse the given JSON string, generating the following console output:</p>
+  <p>Приведенный выше код разберет заданную строку JSON, выдав следующий консольный вывод:</p>
   <p class="code">oranges: 12<br />
     potatoes: 100000<br />
     avocados: 0<br />
     apples: 10<br />
     [ 0,1,2,2,4,0,1,5,1 ]</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Encoding_And_Hashing.htm">File Encoding</a></div>
-        <div style="float:right">Next: <a href="base64_encode.htm">base64_encode</a></div>
+        <div style="float:left">Назад: <a href="Encoding_And_Hashing.htm">Кодирование файлов</a></div>
+        <div style="float:right">Следующий: <a href="base64_encode.htm"><span class="notranslate">base64_encode</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 json_parse

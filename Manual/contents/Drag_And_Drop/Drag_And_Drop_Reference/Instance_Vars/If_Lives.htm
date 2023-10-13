@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>If Lives</title>
-  <meta name="generator" content="Adobe RoboHelp 2022" />
+  <title>Если жизни</title>
+  <meta name="generator" content="Adobe RoboHelp 2019" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
-  <script src="../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page that explains the If Lives action" />
   <meta name="rh-index-keywords" content="GML Visual Action - If Lives" />
@@ -14,57 +14,61 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1><img alt="If Lives Icon" class="icon" height="32" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Instance_Vars/i_IV_If_Lives.png" width="32" /> If Lives</h1>
-  <p>This action is used to check the value of the instance variable <span class="inline">lives</span> using a specific expression. You give the type of expression to check with and the value to check the current <span class="inline">lives</span> against, and the &quot;if&quot; statement will always return either <span class="inline">true</span> or <span class="inline">false</span> depending on the expressions and values used. The available expressions are:</p>
+  <h1><img> Если жизни</h1>
+  <p>Это действие используется для проверки значения переменной экземпляра <span class="inline">lives</span> с помощью определенного выражения. Вы указываете тип выражения для проверки и значение для проверки текущего <span class="inline">lives</span>, и оператор &quot;if&quot; всегда будет
+    всегда возвращает либо <span class="inline">true</span>, либо <span class="inline">false</span> в зависимости от используемых выражений и значений. Доступными выражениями являются:</p>
   <ul class="colour">
-    <li><b>Equals to</b> - The variable and the value are both exactly equal</li>
-    <li><b>Less than</b> - The variable is less than the value</li>
-    <li><b>Greater than</b> - The variable is greater than the value</li>
-    <li><b>Less than or Equal to</b> - The variable is less than <i>or</i> equal to the value</li>
-    <li><b>Greater than or Equal to</b> - The variable is greater than <i>or</i> equal to the value</li>
+    <li><b>Equals to</b> - Переменная и значение в точности равны.</li>
+    <li><b>Меньше</b> - Переменная меньше значения</li>
+    <li><b>Больше чем</b> - Переменная больше, чем значение</li>
+    <li><b>Less than or Equal to</b> - Переменная меньше <i>или</i> равна значению</li>
+    <li><b>Greater than or Equal to</b> - Переменная больше <i>или</i> равна значению</li>
   </ul>
-  <p>If you flag the <b>Not</b> argument, then the above will be <i>negated expressions</i>, for example &quot;equals to&quot; becomes &quot;<i>not</i> equals to&quot;, so you would be checking if the <span class="inline">lives</span> value is not equals to the given value.</p>
-  <div data-conref="../../../assets/snippets/Note_Important_Floating_Point_Precision.hts"> </div>
-  <p>Note that to add actions into the &quot;if&quot; block, they should be dropped to the side of the action, as shown in the image below:</p>
-  <p><img alt="If Lives drop actions" class="center" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Instance_Vars/a_IV_Drop_If_Lives.png" />These actions will now be run if the &quot;if&quot; evaluates to <span class="inline">true</span>, while any actions dropped elsewhere will be performed after the &quot;if&quot; block.</p>
-  <p> </p>
-  <h4>Action Syntax:</h4>
-  <p><img alt="If Lives Action" class="center" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Instance_Vars/a_IV_If_Lives.png" /></p>
-  <h4>Arguments:</h4>
+  <p>Если вы отметите аргумент <b>Not</b>, то вышеприведенные <i>выражения</i> будут <i>отрицательными</i>, например, &quot;equals to&quot; станет &quot;<i>not</i> equals to&quot;, таким образом, вы будете проверять, не равно ли значение <span class="inline">lives</span> заданному значению.</p>
+  <p class="note"><b>ВАЖНОЕ ПРИМЕЧАНИЕ</b>: Из-за <a href="http://floating-point-gui.de/formats/fp/" target="·_blank&quot;">проблем точности с плавающей запятой</a>, проверка на то, что два значения точно равны, может вернуть <span class="inline">false</span>, так как одно может быть точно 1, в то время как
+    другое может быть 1.00000000000001. Этого можно избежать, используя действие <a href="../Data_Types/Decimal_To_Integer.htm">Decimal to Integer</a> перед проверкой или используя выражения &quot;больше чем&quot; или &quot;меньше чем&quot;.</p>
+  <p>Обратите внимание, что для добавления действий в блок &quot;if&quot;, их следует опустить сбоку от действия, как показано на изображении ниже:</p>
+  <p><img>Теперь эти действия будут выполняться, если &quot;if&quot; оценивается в <span class="inline">true</span>, в то время как любые
+    действия, отброшенные в другом месте, будут выполняться после блока &quot;if&quot;.</p>
+  <p> </p>
+  <h4>Синтаксис действия:</h4>
+  <p><img alt="If Lives Icon" class="icon" height="32" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Instance_Vars/i_IV_If_Lives.png" width="32" /></p>
+  <h4>Аргументы:</h4>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Description</th>
+        <th>Аргумент</th>
+        <th>Описание</th>
       </tr>
       <tr>
-        <td>Not</td>
-        <td>Set to check if the expression does <i>not</i> evaluate to true.</td>
+        <td><span class="notranslate">Not</span></td>
+        <td>Устанавливается для проверки, если выражение <i>не</i> имеет значения true.</td>
       </tr>
       <tr>
-        <td>Expression</td>
-        <td>The type of expression to use for the check.</td>
+        <td><span class="notranslate">Expression</span></td>
+        <td>Тип выражения, используемый для проверки.</td>
       </tr>
       <tr>
-        <td>Value</td>
-        <td>The value to check the <span class="inline">lives</span> against.</td>
+        <td><span class="notranslate">Value</span></td>
+        <td>Значение, по которому проверяется <span class="inline">lives</span>.</td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Example:</h4>
-  <p><img alt="If Lives Example" class="center" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Instance_Vars/e_IV_If_Lives.png" />The above action block code will check the value of <span class="inline">lives</span> to see if it is less than or equal to 0 and if it is then the room will be restarted.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p> </p>
+  <h4>Пример:</h4>
+  <p><img>Приведенный выше код блока действий проверит значение <span class="inline">lives</span>, чтобы узнать, меньше или равно ли оно
+    0, и если да, то комната будет перезапущена.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Instance_Variable_Actions.htm">Instance Variable Actions</a></div>
-        <div style="float:right">Next: <a href="If_Health.htm">If Health</a></div>
+        <div style="float:left">Назад: <a href="Instance_Variable_Actions.htm">Действия переменной экземпляра</a></div>
+        <div style="float:right">Следующее: <a href="If_Health.htm">Если здоровье</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 Action - If Lives

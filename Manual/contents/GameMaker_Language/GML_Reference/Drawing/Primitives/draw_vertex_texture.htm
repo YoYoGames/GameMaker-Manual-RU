@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>draw_vertex_texture</title>
+  <title>рисовать_вершинную_текстуру</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference for draw_vertex_texture" />
   <meta name="rh-index-keywords" content="draw_vertex_texture" />
@@ -15,48 +15,48 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>draw_vertex_texture</h1>
-  <p>This function defines the position of a textured vertex for a primitive. The final look of the primitive will depend on the primitive type chosen to draw (See <a href="draw_primitive_begin.htm"><span class="inline">draw_primitive_begin()</span></a> for more information), the order with which you add the vertexes to it and the position of the start point you set for the texture. To end and draw the primitive you must call <a href="draw_primitive_end.htm"><span class="inline">draw_primitive_end()</span></a>.</p>
-  <p>You can also choose to draw only <i>part</i> of the texture over the surface of the primitive by setting the appropriate xtex/ytex position to sample to (these coordinates are also known as the <b>UV</b> points). This point is defined by a value between 0 and 1 with the top left corner of the image to use being the (0,0) point and the bottom right corner being the (1,1) point. In this way you can texture a primitive with only a part of the source image asset.</p>
-  <p>When drawing a textured primitive, the texture will be blended with the colour set by <a html="../colour And Blending/draw_set_colour.html"><span class="inline">draw_set_colour</span>. This means that to draw the texture with no blending this should be set to <span class="inline">c_white</span>, as shown in the example below.</a></p>
-  <p class="note"><a html="../colour And Blending/draw_set_colour.html"><b><span class="note">NOTE</span></b> For a texture to repeat it must be a power of two in size, ie: 32x32, 128x128, etc...</a></p>
-  <p> </p>
-  <h4><a html="../colour And Blending/draw_set_colour.html">Syntax:</a></h4>
+  <h1>рисовать_вершинную_текстуру</h1>
+  <p>Эта функция определяет положение текстурированной вершины для примитива. Окончательный вид примитива будет зависеть от типа примитива, выбранного для рисования (см. <a href="draw_primitive_begin.htm"><span class="inline">draw_primitive_begin()</span></a> более подробную информацию), порядка добавления вершин и положения начальной точки, заданной для текстуры. Чтобы завершить и нарисовать примитив, необходимо вызвать команду <a href="draw_primitive_end.htm"><span class="inline">draw_primitive_end()</span></a>.</p>
+  <p>Вы также можете выбрать рисование только <i>части</i> текстуры на поверхности примитива, установив соответствующую xtex/ytex позицию для выборки (эти координаты также известны как <b>UV-точки</b> ). Эта точка определяется значением от 0 до 1, причем левый верхний угол используемого изображения является точкой (0,0), а правый нижний угол - точкой (1,1). Таким образом, можно текстурировать примитив, используя только часть исходного изображения.</p>
+  <p>При рисовании текстурированного примитива текстура будет смешиваться с цветом, заданным параметром <a html="../colour And Blending/draw_set_colour.html"><span class="inline">draw_set_colour</span>. Это означает, что для рисования текстуры без смешивания следует установить значение <span class="inline">c_white</span>, как показано в примере ниже.</a></p>
+  <p class="note"><a html="../colour And Blending/draw_set_colour.html"><b><span class="note">ПРИМЕЧАНИЕ</span></b> Для того чтобы текстура повторялась, ее размер должен быть равен степени двойки, т.е.: 32x32, 128x128 и т.д..</a></p>
+  <p> </p>
+  <h4><a html="../colour And Blending/draw_set_colour.html">Синтаксис:</a></h4>
   <p class="code"><a html="../colour And Blending/draw_set_colour.html">draw_vertex_texture(x, y, xtex, ytex)</a></p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Аргумент</th>
+        <th>Тип</th>
+        <th>Описание</th>
       </tr>
       <tr>
-        <td>x</td>
-        <td><span data-keyref="Type_Real">Real</span></td>
-        <td>The x coordinate of the vertex.</td>
+        <td><span class="notranslate">x</span></td>
+        <td><span data-keyref="Type_Real">Реально</span></td>
+        <td><span class="notranslate">The x coordinate of the vertex.</span></td>
       </tr>
       <tr>
-        <td>y</td>
-        <td><span data-keyref="Type_Real">Real</span></td>
-        <td>The y coordinate of the vertex.</td>
+        <td><span class="notranslate">y</span></td>
+        <td><span data-keyref="Type_Real">Реально</span></td>
+        <td><span class="notranslate">The y coordinate of the vertex.</span></td>
       </tr>
       <tr>
-        <td>xtex</td>
-        <td><span data-keyref="Type_Real">Real</span></td>
-        <td>The width of the texture sample to use.</td>
+        <td><span class="notranslate">xtex</span></td>
+        <td><span data-keyref="Type_Real">Реально</span></td>
+        <td><span class="notranslate">The width of the texture sample to use.</span></td>
       </tr>
       <tr>
-        <td>ytex</td>
-        <td><span data-keyref="Type_Real">Real</span></td>
-        <td>The height of the texture sample to use.</td>
+        <td><span class="notranslate">ytex</span></td>
+        <td><span data-keyref="Type_Real">Реально</span></td>
+        <td><span class="notranslate">The height of the texture sample to use.</span></td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4><a html="../colour And Blending/draw_set_colour.html">Returns:</a></h4>
+  <p> </p>
+  <h4><a html="../colour And Blending/draw_set_colour.html">Возвращается:</a></h4>
   <p class="code"><span data-keyref="Type_Void">N/A</span></p>
-  <p> </p>
-  <h4><a html="../colour And Blending/draw_set_colour.html">Example:</a></h4>
+  <p> </p>
+  <h4><a html="../colour And Blending/draw_set_colour.html">Пример:</a></h4>
   <p class="code"><a html="../colour And Blending/draw_set_colour.html">draw_set_colour(c_white);<br />
       var tex = sprite_get_texture(spr_Background, 0);<br />
       draw_primitive_begin_texture(pr_trianglestrip, tex);<br />
@@ -65,18 +65,18 @@
       draw_vertex_texture(0, 480, 0, 1);<br />
       draw_vertex_texture(640, 480, 1, 1);<br />
       draw_primitive_end();</a></p>
-  <p><a html="../colour And Blending/draw_set_colour.html">The above code will draw a 4 vertex triangle strip (making a rectangle) textured with the texture held in the &quot;tex&quot; variable, and the whole texture will be used to cover the completed primitive.</a></p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p><a html="../colour And Blending/draw_set_colour.html">Приведенный выше код нарисует полосу треугольника с 4 вершинами (образуя прямоугольник), текстурированную текстурой, хранящейся в переменной &quot;tex&quot;, и вся текстура будет использована для покрытия готового примитива.</a></p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Primitives_And_Vertex_Formats.htm">Primitives And Vertex Formats</a></div>
-        <div style="float:right">Next: <a href="draw_vertex_texture_colour.htm">draw_vertex_texture_colour</a></div>
+        <div style="float:left">Назад: <a href="Primitives_And_Vertex_Formats.htm">Примитивы и форматы вершин</a></div>
+        <div style="float:right">Следующий: <a href="draw_vertex_texture_colour.htm"><span class="notranslate">draw_vertex_texture_colour</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 draw_vertex_texture

@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>draw_text_ext_colour</title>
+  <title>рисовать_текст_текст_цвет</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference page for draw_text_ext_colour" />
   <meta name="rh-index-keywords" content="draw_text_ext_colour,draw_text_ext_color" />
@@ -15,11 +15,11 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>draw_text_ext_colour</h1>
-  <p>This function is a combination of the base <a href="draw_text.htm"><span class="inline">draw_text</span><span class="inline">()</span><span class="inline"></span></a> function with the <a href="draw_text_ext.htm"><span class="inline">draw_text_ext</span><span class="inline">()</span><span class="inline"></span></a> and <a href="draw_text_colour.htm"><span class="inline">draw_text_colour</span><span class="inline">()</span><span class="inline"></span></a> functions, permitting you to define gradient colours for text as well as the line spacing and maximum width per line all together.</p>
-  <p class="note"><b><span class="note">NOTE</span> </b>Gradient blending is not available for the HTML5 target unless WebGL is enabled, although you can still set the blending colours and it will blend the font with the first given colour. However all blending in this way creates a duplicate font which is then stored in the cache and used when required, which is far from optimal and if you use multiple colour changes it will slow down your games performance. You can set the font cache size to try and limit this should it be necessary using the function <a href="../../Asset_Management/Fonts/font_set_cache_size.htm"><span class="inline">font_set_cache_size()</span></a>.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <h1>рисовать_текст_текст_цвет</h1>
+  <p>Эта функция представляет собой комбинацию базовой <a href="draw_text.htm"><span class="inline">draw_text</span><span class="inline">()</span><span class="inline"></span></a> функции с <a href="draw_text_ext.htm"><span class="inline">draw_text_ext</span><span class="inline">()</span><span class="inline"></span></a> и <a href="draw_text_colour.htm"><span class="inline">draw_text_colour</span><span class="inline">()</span><span class="inline"></span></a> позволяет задавать цвета градиента для текста, а также межстрочный интервал и максимальную ширину строки.</p>
+  <p class="note"><b><span class="note">ПРИМЕЧАНИЕ</span> </b>Градиентное смешивание недоступно для HTML5, если не включен WebGL, хотя вы все равно можете задать цвета смешивания, и шрифт будет смешиваться с первым заданным цветом. Однако при таком смешивании создается дубликат шрифта, который затем сохраняется в кэше и используется при необходимости, что далеко не оптимально, а если вы используете многократное изменение цвета, это замедлит производительность вашей игры. Вы можете установить размер кэша шрифтов, чтобы попытаться ограничить это, если это необходимо, используя функцию <a href="../../Asset_Management/Fonts/font_set_cache_size.htm"><span class="inline">font_set_cache_size()</span></a>.</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
   <p class="code">draw_text_ext_colour(x, y, string, sep, w, c1, c2, c3, c4, alpha);</p>
   <table>
     <colgroup>
@@ -29,80 +29,80 @@
     </colgroup>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Аргумент</th>
+        <th>Тип</th>
+        <th>Описание</th>
       </tr>
       <tr>
-        <td>x</td>
-        <td><span data-keyref="Type_Real">Real</span></td>
-        <td>The x coordinate of the drawn string.</td>
+        <td><span class="notranslate">x</span></td>
+        <td><span data-keyref="Type_Real">Реально</span></td>
+        <td><span class="notranslate">The x coordinate of the drawn string.</span></td>
       </tr>
       <tr>
-        <td>y</td>
-        <td><span data-keyref="Type_Real">Real</span></td>
-        <td>The y coordinate of the drawn string.</td>
+        <td><span class="notranslate">y</span></td>
+        <td><span data-keyref="Type_Real">Реально</span></td>
+        <td><span class="notranslate">The y coordinate of the drawn string.</span></td>
       </tr>
       <tr>
-        <td>string</td>
-        <td><span data-keyref="Type_String">String</span></td>
-        <td>The string to draw.</td>
+        <td><span class="notranslate">string</span></td>
+        <td><span data-keyref="Type_String">Строка</span></td>
+        <td><span class="notranslate">The string to draw.</span></td>
       </tr>
       <tr>
-        <td>sep</td>
-        <td><span data-keyref="Type_Real">Real</span></td>
-        <td>The distance in pixels between lines of text.</td>
+        <td><span class="notranslate">sep</span></td>
+        <td><span data-keyref="Type_Real">Реально</span></td>
+        <td><span class="notranslate">The distance in pixels between lines of text.</span></td>
       </tr>
       <tr>
-        <td>w</td>
-        <td><span data-keyref="Type_Real">Real</span></td>
-        <td>The maximum width in pixels of the string before a line break.</td>
+        <td><span class="notranslate">w</span></td>
+        <td><span data-keyref="Type_Real">Реально</span></td>
+        <td><span class="notranslate">The maximum width in pixels of the string before a line break.</span></td>
       </tr>
       <tr>
-        <td>c1</td>
-        <td><span data-keyref="Type_Constant_Colour">Colour</span></td>
-        <td>The colour for the top left of the drawn text.</td>
+        <td><span class="notranslate">c1</span></td>
+        <td><span data-keyref="Type_Constant_Colour">Цвет</span></td>
+        <td><span class="notranslate">The colour for the top left of the drawn text.</span></td>
       </tr>
       <tr>
-        <td>c2</td>
-        <td><span data-keyref="Type_Constant_Colour">Colour</span></td>
-        <td>The colour for the top right of the drawn text.</td>
+        <td><span class="notranslate">c2</span></td>
+        <td><span data-keyref="Type_Constant_Colour">Цвет</span></td>
+        <td><span class="notranslate">The colour for the top right of the drawn text.</span></td>
       </tr>
       <tr>
-        <td>c3</td>
-        <td><span data-keyref="Type_Constant_Colour">Colour</span></td>
-        <td>The colour for the bottom right of the drawn text.</td>
+        <td><span class="notranslate">c3</span></td>
+        <td><span data-keyref="Type_Constant_Colour">Цвет</span></td>
+        <td><span class="notranslate">The colour for the bottom right of the drawn text.</span></td>
       </tr>
       <tr>
-        <td>c4</td>
-        <td><span data-keyref="Type_Constant_Colour">Colour</span></td>
-        <td>The colour for the bottom left of the drawn text.</td>
+        <td><span class="notranslate">c4</span></td>
+        <td><span data-keyref="Type_Constant_Colour">Цвет</span></td>
+        <td><span class="notranslate">The colour for the bottom left of the drawn text.</span></td>
       </tr>
       <tr>
-        <td>alpha</td>
-        <td><span data-keyref="Type_Real">Real</span></td>
-        <td>The alpha for the text.</td>
+        <td><span class="notranslate">alpha</span></td>
+        <td><span data-keyref="Type_Real">Реально</span></td>
+        <td><span class="notranslate">The alpha for the text.</span></td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
   <p class="code"><span data-keyref="Type_Void">N/A</span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Пример:</h4>
   <p class="code">draw_text_ext_colour(200, 200, keyboard_string, 5, 300, c_blue, c_blue, c_navy, c_navy, 1);</p>
-  <p>The above code will draw whatever text the user types into the keyboard, splitting it onto new lines every time the string length for that line exceeds 300 pixels. the code will also maintain a separation of 5 pixels between lines should this occur. Each line of the text will be coloured using a blue gradient, with light blue at the top and dark blue at the bottom.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Приведенный выше код будет рисовать текст, который пользователь набирает на клавиатуре, разбивая его на новые строки каждый раз, когда длина строки превышает 300 пикселей. Код также будет поддерживать разделение в 5 пикселей между строками, если это произойдет. Каждая строка текста будет окрашена с помощью синего градиента: светло-синий вверху и темно-синий внизу.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Text.htm">Text</a></div>
-        <div style="float:right">Next: <a href="draw_text_ext_transformed.htm">draw_text_ext_transformed</a></div>
+        <div style="float:left">Назад: <a href="Text.htm">Текст</a></div>
+        <div style="float:right">Следующий: <a href="draw_text_ext_transformed.htm"><span class="notranslate">draw_text_ext_transformed</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 draw_text_ext_colour

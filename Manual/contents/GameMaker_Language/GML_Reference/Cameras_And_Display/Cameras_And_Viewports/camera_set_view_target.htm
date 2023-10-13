@@ -6,7 +6,7 @@
   <title>camera_set_view_target</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference page for camera_set_view_target" />
   <meta name="rh-index-keywords" content="camera_set_view_target" />
@@ -15,47 +15,47 @@
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
   <h1>camera_set_view_target</h1>
-  <p>You can use this function to set the follow target of the view camera within the room. You give the unique camera ID value (as returned by the different <a href="camera_create.htm"><span class="inline">camera_create()</span></a> functions) and then give the target instance or object ID that you wish to set the camera view to. Note that if you choose an object ID and there is more than one instance of that object in the room, there is no way for <span data-keyref="GameMaker Name">GameMaker</span> to know which instance you wish to follow and so it could be any of them.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p>Вы можете использовать эту функцию для установки цели следования камеры обзора в помещении. Вы указываете уникальное значение ID камеры (возвращаемое различными <a href="camera_create.htm"><span class="inline">camera_create()</span></a> а затем укажите экземпляр цели или ID объекта, на который вы хотите установить вид камеры. Обратите внимание, что если вы выбираете ID объекта, а в комнате находится более одного экземпляра этого объекта, то <span data-keyref="GameMaker Name">GameMaker</span> никак не может узнать, за каким экземпляром вы хотите следить, поэтому это может быть любой из них.</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
   <p class="code">camera_set_view_target(camera_id, instance_id/object_id)</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Аргумент</th>
+        <th>Тип</th>
+        <th>Описание</th>
       </tr>
       <tr>
-        <td>camera_id</td>
-        <td><span data-keyref="Type_ID_Camera">Camera ID</span></td>
-        <td>The unique camera ID value returned when you created the camera</td>
+        <td><span class="notranslate">camera_id</span></td>
+        <td><span data-keyref="Type_ID_Camera">Идентификатор камеры</span></td>
+        <td><span class="notranslate">The unique camera ID value returned when you created the camera</span></td>
       </tr>
       <tr>
-        <td>instance_id/object_id</td>
-        <td><span data-keyref="Type_Asset_Object">Object Asset</span> or <span data-keyref="Type_ID_Instance">Instance ID</span></td>
-        <td>Instance or object to have the camera target for following</td>
+        <td><span class="notranslate">instance_id/object_id</span></td>
+        <td> <span data-keyref="Type_ID_Instance">Идентификатор</span><span data-keyref="Type_Asset_Object">актива</span> или <span data-keyref="Type_ID_Instance">экземпляра</span><span data-keyref="Type_Asset_Object">объекта</span> </td>
+        <td><span class="notranslate">Instance or object to have the camera target for following</span></td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
   <p class="code"><span data-keyref="Type_Void">N/A</span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Пример:</h4>
   <p class="code">camera_set_view_target(view_camera[0], id);</p>
-  <p>The above code will set the view camera target for the camera assigned to view port[0] to that of the instance running the code.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Приведенный выше код установит цель камеры просмотра для камеры, назначенной порту просмотра[0], на цель экземпляра, выполняющего этот код.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Cameras_And_View_Ports.htm">Cameras And View Ports</a></div>
-        <div style="float:right">Next: <a href="camera_set_default.htm">camera_set_default</a></div>
+        <div style="float:left">Назад: <a href="Cameras_And_View_Ports.htm">Камеры и порты для просмотра</a></div>
+        <div style="float:right">Следующий: <a href="camera_set_default.htm"><span class="notranslate">camera_set_default</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 camera_set_view_target

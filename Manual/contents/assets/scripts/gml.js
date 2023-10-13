@@ -36,150 +36,6 @@ export default function(hljs) {
     "xor",
   ];
   const BUILT_INS = [
-    "texturegroup_get_textures", 
-    "texturegroup_get_sprites", 
-    "texturegroup_get_fonts", 
-    "texturegroup_get_tilesets", 
-    "texturegroup_load", 
-    "texturegroup_unload", 
-    "texturegroup_get_status", 
-    "texturegroup_set_mode", 
-    "skeleton_skin_create", 
-    "audio_effect_create", 
-    "audio_emitter_bus", 
-    "audio_emitter_get_bus", 
-    "audio_bus_create", 
-    "array_last", 
-    "array_reverse", 
-    "array_create_ext", 
-    "array_find_index", 
-    "array_any", 
-    "array_all", 
-    "array_foreach", 
-    "array_reduce", 
-    "array_join", 
-    "array_union", 
-    "array_intersection", 
-    "array_filter", 
-    "array_map", 
-    "array_unique", 
-    "array_copy_while", 
-    "array_filter_ext", 
-    "array_map_ext", 
-    "array_unique_ext", 
-    "array_reverse_ext", 
-    "array_first", 
-    "font_enable_effects",
-    "is_handle",
-    "skeleton_attachment_exists", 
-    "skeleton_attachment_replace", 
-    "skeleton_attachment_replace_colour", 
-    "skeleton_attachment_destroy", 
-    "font_cache_glyph", 
-    "audio_sync_group_is_paused", 
-    "shader_set_uniform_f_buffer", 
-    "string_ext", 
-    "show_debug_message_ext", 
-    "string_trim_start", 
-    "string_trim_end", 
-    "string_trim", 
-    "string_starts_with", 
-    "string_ends_with", 
-    "string_split", 
-    "string_split_ext", 
-    "string_join", 
-    "string_join_ext", 
-    "string_concat", 
-    "string_concat_ext", 
-    "string_foreach", 
-    "audio_group_get_gain", 
-    "audio_play_sound_ext", 
-    "audio_bus_get_emitters", 
-    "array_get_index", 
-    "array_get_index", 
-    "array_contains", 
-    "array_contains_ext", 
-    "array_shuffle", 
-    "array_shuffle_ext", 
-    "method_call", 
-    "tileset_get_info", 
-    "is_instanceof", 
-    "static_get", 
-    "static_set", 
-    "move_and_collide", 
-    "font_enable_sdf", 
-    "font_get_sdf_enabled", 
-    "font_sdf_spread",
-    "font_get_sdf_spread",
-    "audio_bus_clear_emitters", 
-    "audio_system_is_initialised", 
-    "audio_group_get_assets", 
-    "audio_sound_get_audio_group", 
-    "is_callable", 
-    "audio_sound_loop_start", 
-    "audio_sound_get_loop_start", 
-    "audio_sound_loop_end", 
-    "audio_sound_get_loop_end", 
-    "audio_sound_loop", 
-    "audio_sound_get_loop", 
-    "array_shift", 
-    "particle_get_info", 
-    "lin_to_db", 
-    "db_to_lin", 
-    "window_set_showborder", 
-    "window_get_showborder", 
-    "sprite_add_ext", 
-    "extension_get_version", 
-    "struct_foreach", 
-    "struct_get_from_hash", 
-    "struct_set_from_hash", 
-    "variable_get_hash", 
-    "variable_clone", 
-    "wallpaper_set_config", 
-    "ds_grid_to_mp_grid", 
-    "game_change", 
-    "camera_copy_transforms", 
-    "zip_unzip_async", 
-    "zip_create", 
-    "zip_add_file", 
-    "zip_save", 
-    "part_system_color", 
-    "part_system_angle", 
-    "part_system_global_space", 
-    "part_emitter_delay", 
-    "part_emitter_interval", 
-    "part_emitter_enable", 
-    "part_emitter_relative", 
-    "part_type_size_x", 
-    "part_type_size_y", 
-    "part_type_subimage", 
-    "effect_create_layer", 
-    "effect_create_depth", 
-    "part_particles_burst", 
-    "window_mouse_set_locked", 
-    "window_mouse_get_locked", 
-    "window_mouse_get_delta_x", 
-    "window_mouse_get_delta_y", 
-    "nameof", 
-    "gpu_set_depth", 
-    "gpu_get_depth", 
-    "dbg_button", 
-    "dbg_checkbox", 
-    "dbg_color", 
-    "dbg_drop_down", 
-    "ref_create", 
-    "dbg_same_line", 
-    "dbg_section", 
-    "dbg_slider", 
-    "dbg_sprite", 
-    "dbg_text", 
-    "dbg_text_input", 
-    "dbg_view", 
-    "dbg_watch", 
-    "is_debug_overlay_open", 
-    "dbg_view_delete", 
-    "dbg_section_delete", 
-    "show_debug_log", 
     "abs",
     "achievement_available",
     "achievement_event",
@@ -199,6 +55,7 @@ export default function(hljs) {
     "achievement_show_achievements",
     "achievement_show_challenge_notifications",
     "achievement_show_leaderboards",
+
     "ads_disable",
     "ads_enable",
     "ads_engagement_active",
@@ -213,10 +70,13 @@ export default function(hljs) {
     "ads_move",
     "ads_set_reward_callback",
     "ads_setup",
+
     "alarm_get",
     "alarm_set",
+
     "analytics_event",
     "analytics_event_ext",
+
     "angle_difference",
     "ansi_char",
     "animcurve_get",
@@ -228,14 +88,18 @@ export default function(hljs) {
     "animcurve_channel_new",
     "animcurve_point_new",
     "animcurve_destroy",
+
     "application_get_position",
+
     "application_surface_draw_enable",
     "application_surface_enable",
     "application_surface_is_enabled",
+
     "arccos",
     "arcsin",
     "arctan",
     "arctan2",
+
     "array_copy",
     "array_create",
     "array_delete",
@@ -249,8 +113,10 @@ export default function(hljs) {
     "array_push",
     "array_resize",
     "array_sort",
+
     "asset_get_index",
     "asset_get_type",
+
     "audio_channel_num",
     "audio_create_buffer_sound",
     "audio_create_play_queue",
@@ -259,6 +125,7 @@ export default function(hljs) {
     "audio_debug",
     "audio_destroy_stream",
     "audio_destroy_sync_group",
+
     "audio_emitter_create",
     "audio_emitter_exists",
     "audio_emitter_falloff",
@@ -277,10 +144,12 @@ export default function(hljs) {
     "audio_emitter_position",
     "audio_emitter_set_listener_mask",
     "audio_emitter_velocity",
+
     "audio_exists",
     "audio_falloff_set_model",
     "audio_free_buffer_sound",
     "audio_free_play_queue",
+
     "audio_get_listener_count",
     "audio_get_listener_info",
     "audio_get_listener_mask",
@@ -289,6 +158,7 @@ export default function(hljs) {
     "audio_get_recorder_count",
     "audio_get_recorder_info",
     "audio_get_type",
+
     "audio_group_is_loaded",
     "audio_group_load",
     "audio_group_load_progress",
@@ -296,8 +166,10 @@ export default function(hljs) {
     "audio_group_set_gain",
     "audio_group_stop_all",
     "audio_group_unload",
+
     "audio_is_paused",
     "audio_is_playing",
+
     "audio_listener_get_data",
     "audio_listener_orientation",
     "audio_listener_position",
@@ -305,25 +177,33 @@ export default function(hljs) {
     "audio_listener_set_position",
     "audio_listener_set_velocity",
     "audio_listener_velocity",
+
     "audio_master_gain",
+
     "audio_music_gain",
     "audio_music_is_playing",
+
     "audio_pause_all",
     "audio_pause_music",
     "audio_pause_sound",
     "audio_pause_sync_group",
+
     "audio_play_in_sync_group",
     "audio_play_music",
     "audio_play_sound",
     "audio_play_sound_at",
     "audio_play_sound_on",
+
     "audio_queue_sound",
+
     "audio_resume_all",
     "audio_resume_music",
     "audio_resume_sound",
     "audio_resume_sync_group",
+
     "audio_set_listener_mask",
     "audio_set_master_gain",
+
     "audio_sound_gain",
     "audio_sound_get_gain",
     "audio_sound_get_listener_mask",
@@ -335,20 +215,27 @@ export default function(hljs) {
     "audio_sound_set_listener_mask",
     "audio_sound_set_track_position",
     "audio_sound_set_track_position",
+
     "audio_start_recording",
     "audio_start_sync_group",
+
     "audio_stop_all",
     "audio_stop_music",
     "audio_stop_recording",
     "audio_stop_sound",
     "audio_stop_sync_group",
+
     "audio_sync_group_debug",
     "audio_sync_group_get_track_pos",
     "audio_sync_group_is_playing",
+
     "audio_system",
+
     "base64_decode",
     "base64_encode",
+
     "browser_input_capture",
+
     "buffer_async_group_begin",
     "buffer_async_group_end",
     "buffer_async_group_option",
@@ -389,6 +276,7 @@ export default function(hljs) {
     
     "call_later",
     "call_cancel",
+
     "camera_apply",
     "camera_create",
     "camera_create_view",
@@ -422,10 +310,12 @@ export default function(hljs) {
     "camera_set_view_size",
     "camera_set_view_speed",
     "camera_set_view_target",
+
     "ceil",
     "choose",
     "chr",
     "clamp",
+
     "clickable_add",
     "clickable_add_ext",
     "clickable_change",
@@ -433,13 +323,17 @@ export default function(hljs) {
     "clickable_delete",
     "clickable_exists",
     "clickable_set_style",
+
     "clipboard_get_text",
     "clipboard_has_text",
     "clipboard_set_text",
+
     "cloud_file_save",
     "cloud_string_save",
     "cloud_synchronise",
+
     "code_is_compiled",
+
     "collision_circle",
     "collision_circle_list",
     "collision_ellipse",
@@ -450,6 +344,7 @@ export default function(hljs) {
     "collision_point_list",
     "collision_rectangle",
     "collision_rectangle_list",
+
     "color_get_blue",
     "color_get_green",
     "color_get_hue",
@@ -462,11 +357,13 @@ export default function(hljs) {
     "colour_get_red",
     "colour_get_saturation",
     "colour_get_value",
+
     "cos",
     "darccos",
     "darcsin",
     "darctan",
     "darctan2",
+
     "date_compare_date",
     "date_compare_datetime",
     "date_compare_time",
@@ -510,14 +407,18 @@ export default function(hljs) {
     "date_valid_datetime",
     "date_week_span",
     "date_year_span",
+
     "dcos",
     "debug_event",
     "debug_get_callstack",
     "degtorad",
+
     "device_get_tilt_x",
     "device_get_tilt_y",
     "device_get_tilt_z",
+
     "device_is_keypad_open",
+
     "device_mouse_check_button",
     "device_mouse_check_button_pressed",
     "device_mouse_check_button_released",
@@ -528,9 +429,11 @@ export default function(hljs) {
     "device_mouse_x_to_gui",
     "device_mouse_y",
     "device_mouse_y_to_gui",
+
     "directory_create",
     "directory_destroy",
     "directory_exists",
+
     "display_get_dpi_x",
     "display_get_dpi_y",
     "display_get_frequency",
@@ -551,14 +454,17 @@ export default function(hljs) {
     "display_set_sleep_margin",
     "display_set_timing_method",
     "display_set_ui_visibility",
+
     "distance_to_object",
     "distance_to_point",
+
     "dot_product",
     "dot_product_3d",
     "dot_product_3d_normalised",
     "dot_product_3d_normalized",
     "dot_product_normalised",
     "dot_product_normalized",
+
     "draw_arrow",
     "draw_button",
     "draw_circle",
@@ -583,35 +489,44 @@ export default function(hljs) {
     "draw_getpixel_ext",
     "draw_healthbar",
     "draw_highscore",
+
     "draw_light_define_ambient",
     "draw_light_define_direction",
     "draw_light_define_point",
     "draw_light_enable",
     "draw_light_get",
     "draw_light_get_ambient",
+
     "draw_line",
     "draw_line_color",
     "draw_line_colour",
     "draw_line_width",
     "draw_line_width_color",
     "draw_line_width_colour",
+
     "draw_path",
+
     "draw_point",
     "draw_point_color",
     "draw_point_colour",
+
     "draw_primitive_begin",
     "draw_primitive_begin_texture",
     "draw_primitive_end",
+
     "draw_rectangle",
     "draw_rectangle_color",
     "draw_rectangle_colour",
+
     "draw_roundrect",
     "draw_roundrect_color",
     "draw_roundrect_color_ext",
     "draw_roundrect_colour",
     "draw_roundrect_colour_ext",
     "draw_roundrect_ext",
+
     "draw_self",
+
     "draw_set_alpha",
     "draw_set_circle_precision",
     "draw_set_color",
@@ -621,10 +536,12 @@ export default function(hljs) {
     "draw_set_lighting",
     "draw_set_swf_aa_level",
     "draw_set_valign",
+
     "draw_skeleton",
     "draw_skeleton_collision",
     "draw_skeleton_instance",
     "draw_skeleton_time",
+
     "draw_sprite",
     "draw_sprite_ext",
     "draw_sprite_general",
@@ -635,6 +552,7 @@ export default function(hljs) {
     "draw_sprite_stretched_ext",
     "draw_sprite_tiled",
     "draw_sprite_tiled_ext",
+
     "draw_surface",
     "draw_surface_ext",
     "draw_surface_general",
@@ -644,6 +562,7 @@ export default function(hljs) {
     "draw_surface_stretched_ext",
     "draw_surface_tiled",
     "draw_surface_tiled_ext",
+
     "draw_text",
     "draw_text_color",
     "draw_text_colour",
@@ -656,19 +575,25 @@ export default function(hljs) {
     "draw_text_transformed",
     "draw_text_transformed_color",
     "draw_text_transformed_colour",
+
     "draw_texture_flush",
+
     "draw_tile",
     "draw_tilemap",
+
     "draw_triangle",
     "draw_triangle_color",
     "draw_triangle_colour",
+
     "draw_vertex",
     "draw_vertex_color",
     "draw_vertex_colour",
     "draw_vertex_texture",
     "draw_vertex_texture_color",
     "draw_vertex_texture_colour",
+
     "ds_exists",
+
     "ds_grid_add",
     "ds_grid_add_disk",
     "ds_grid_add_grid_region",
@@ -709,6 +634,7 @@ export default function(hljs) {
     "ds_grid_value_y",
     "ds_grid_width",
     "ds_grid_write",
+
     "ds_list_add",
     "ds_list_clear",
     "ds_list_copy",
@@ -728,6 +654,7 @@ export default function(hljs) {
     "ds_list_size",
     "ds_list_sort",
     "ds_list_write",
+
     "ds_map_add",
     "ds_map_add_list",
     "ds_map_add_map",
@@ -754,6 +681,7 @@ export default function(hljs) {
     "ds_map_set",
     "ds_map_size",
     "ds_map_write",
+
     "ds_priority_add",
     "ds_priority_change_priority",
     "ds_priority_clear",
@@ -770,6 +698,7 @@ export default function(hljs) {
     "ds_priority_read",
     "ds_priority_size",
     "ds_priority_write",
+
     "ds_queue_clear",
     "ds_queue_copy",
     "ds_queue_create",
@@ -782,7 +711,9 @@ export default function(hljs) {
     "ds_queue_size",
     "ds_queue_tail",
     "ds_queue_write",
+
     "ds_set_precision",
+
     "ds_stack_clear",
     "ds_stack_copy",
     "ds_stack_create",
@@ -794,27 +725,36 @@ export default function(hljs) {
     "ds_stack_size",
     "ds_stack_top",
     "ds_stack_write",
+
     "dsin",
     "dtan",
+
     "effect_clear",
     "effect_create_above",
     "effect_create_below",
+
     "environment_get_variable",
+
     "event_inherited",
     "event_perform",
     "event_perform_async",
     "event_perform_object",
     "event_user",
+
     "exception_unhandled_handler",
+
     "exp",
+
     "extension_exists",
     "extension_get_option_count",
     "extension_get_option_names",
     "extension_get_option_value",
     "extension_get_options",
+
     "external_call",
     "external_define",
     "external_free",
+
     "facebook_accesstoken",
     "facebook_check_permission",
     "facebook_dialog",
@@ -829,7 +769,9 @@ export default function(hljs) {
     "facebook_send_invite",
     "facebook_status",
     "facebook_user_id",
+
     "file_attributes",
+
     "file_bin_close",
     "file_bin_open",
     "file_bin_position",
@@ -838,6 +780,7 @@ export default function(hljs) {
     "file_bin_seek",
     "file_bin_size",
     "file_bin_write_byte",
+
     "file_copy",
     "file_delete",
     "file_exists",
@@ -845,6 +788,7 @@ export default function(hljs) {
     "file_find_first",
     "file_find_next",
     "file_rename",
+
     "file_text_close",
     "file_text_eof",
     "file_text_eoln",
@@ -858,13 +802,16 @@ export default function(hljs) {
     "file_text_write_real",
     "file_text_write_string",
     "file_text_writeln",
+
     "filename_change_ext",
     "filename_dir",
     "filename_drive",
     "filename_ext",
     "filename_name",
     "filename_path",
+
     "floor",
+
     "font_add",
     "font_add_enable_aa",
     "font_add_get_enable_aa",
@@ -886,7 +833,9 @@ export default function(hljs) {
     "font_replace_sprite_ext",
     "font_set_cache_size",
     "font_texture_page_size",
+
     "frac",
+
     "fx_create",
     "fx_get_name",
     "fx_get_parameter",
@@ -896,6 +845,7 @@ export default function(hljs) {
     "fx_set_parameter",
     "fx_set_parameters",
     "fx_set_single_layer",
+
     "game_end",
     "game_get_speed",
     "game_load",
@@ -904,6 +854,7 @@ export default function(hljs) {
     "game_save",
     "game_save_buffer",
     "game_set_speed",
+
     "gamepad_axis_count",
     "gamepad_axis_value",
     "gamepad_button_check",
@@ -922,6 +873,7 @@ export default function(hljs) {
     "gamepad_set_color",
     "gamepad_set_colour",
     "gamepad_set_vibration",
+
     "gesture_double_tap_distance",
     "gesture_double_tap_time",
     "gesture_drag_distance",
@@ -944,18 +896,26 @@ export default function(hljs) {
     "gesture_rotate_angle",
     "gesture_rotate_time",
     "gesture_tap_count",
+
     "get_integer",
     "get_integer_async",
+
     "get_login_async",
+
     "get_open_filename",
     "get_open_filename_ext",
+
     "get_save_filename",
     "get_save_filename_ext",
+
     "get_string",
     "get_string_async",
+
     "get_timer",
+
     "gml_pragma",
     "gml_release_mode",
+
     "gpu_get_alphatestenable",
     "gpu_get_alphatestfunc",
     "gpu_get_alphatestref",
@@ -1034,14 +994,17 @@ export default function(hljs) {
     "gpu_set_zfunc",
     "gpu_set_ztestenable",
     "gpu_set_zwriteenable",
+
     "highscore_add",
     "highscore_clear",
     "highscore_name",
     "highscore_value",
+
     "http_get",
     "http_get_file",
     "http_post_string",
     "http_request",
+
     "iap_acquire",
     "iap_activate",
     "iap_consume",
@@ -1050,6 +1013,7 @@ export default function(hljs) {
     "iap_purchase_details",
     "iap_restore_all",
     "iap_status",
+
     "ini_close",
     "ini_key_delete",
     "ini_key_exists",
@@ -1061,6 +1025,7 @@ export default function(hljs) {
     "ini_section_exists",
     "ini_write_real",
     "ini_write_string",
+
     "instance_activate_all",
     "instance_activate_layer",
     "instance_activate_object",
@@ -1084,12 +1049,13 @@ export default function(hljs) {
     "instance_place_list",
     "instance_position",
     "instance_position_list",
+
     "instanceof",
     "int64",
     "io_clear",
     "irandom",
     "irandom_range",
-    "bool",
+
     "is_array",
     "is_bool",
     "is_infinity",
@@ -1106,10 +1072,12 @@ export default function(hljs) {
     "is_undefined",
     "is_vec3",
     "is_vec4",
+
     "json_decode",
     "json_encode",
     "json_parse",
     "json_stringify",
+
     "keyboard_check",
     "keyboard_check_direct",
     "keyboard_check_pressed",
@@ -1122,11 +1090,14 @@ export default function(hljs) {
     "keyboard_set_map",
     "keyboard_set_numlock",
     "keyboard_unset_map",
+
     "keyboard_virtual_height",
     "keyboard_virtual_hide",
     "keyboard_virtual_show",
     "keyboard_virtual_status",
+
     "layer_add_instance",
+
     "layer_background_alpha",
     "layer_background_blend",
     "layer_background_change",
@@ -1154,6 +1125,7 @@ export default function(hljs) {
     "layer_background_vtiled",
     "layer_background_xscale",
     "layer_background_yscale",
+
     "layer_clear_fx",
     "layer_create",
     "layer_depth",
@@ -1192,6 +1164,7 @@ export default function(hljs) {
     "layer_set_target_room",
     "layer_set_visible",
     "layer_shader",
+
     "layer_sprite_alpha",
     "layer_sprite_angle",
     "layer_sprite_blend",
@@ -1216,6 +1189,7 @@ export default function(hljs) {
     "layer_sprite_xscale",
     "layer_sprite_y",
     "layer_sprite_yscale",
+
     "layer_tile_alpha",
     "layer_tile_blend",
     "layer_tile_change",
@@ -1237,27 +1211,35 @@ export default function(hljs) {
     "layer_tile_xscale",
     "layer_tile_y",
     "layer_tile_yscale",
+
     "layer_tilemap_create",
     "layer_tilemap_destroy",
     "layer_tilemap_exists",
     "layer_tilemap_get_id",
+
     "layer_vspeed",
+
     "layer_x",
     "layer_y",
+
     "lengthdir_x",
     "lengthdir_y",
+
     "lerp",
     "ln",
     "load_csv",
     "log10",
     "log2",
     "logn",
+
     "make_color_hsv",
     "make_color_rgb",
     "make_colour_hsv",
     "make_colour_rgb",
+
     "math_get_epsilon",
     "math_set_epsilon",
+
     "matrix_build",
     "matrix_build_identity",
     "matrix_build_lookat",
@@ -1275,25 +1257,34 @@ export default function(hljs) {
     "matrix_stack_set",
     "matrix_stack_top",
     "matrix_transform_vertex",
+
     "max",
+
     "md5_file",
     "md5_string_unicode",
     "md5_string_utf8",
+
     "mean",
     "median",
+
+    "merge_color",
     "merge_color",
     "merge_colour",
 	
     "method",
+
     "min",
+
     "motion_add",
     "motion_set",
+
     "mouse_check_button",
     "mouse_check_button_pressed",
     "mouse_check_button_released",
     "mouse_clear",
     "mouse_wheel_down",
     "mouse_wheel_up",
+
     "move_bounce_all",
     "move_bounce_solid",
     "move_contact_all",
@@ -1304,6 +1295,7 @@ export default function(hljs) {
     "move_snap",
     "move_towards_point",
     "move_wrap",
+
     "mp_grid_add_cell",
     "mp_grid_add_instances",
     "mp_grid_add_rectangle",
@@ -1316,15 +1308,18 @@ export default function(hljs) {
     "mp_grid_get_cell",
     "mp_grid_path",
     "mp_grid_to_ds_grid",
+
     "mp_linear_path",
     "mp_linear_path_object",
     "mp_linear_step",
     "mp_linear_step_object",
+
     "mp_potential_path",
     "mp_potential_path_object",
     "mp_potential_settings",
     "mp_potential_step",
     "mp_potential_step_object",
+
     "network_connect",
     "network_connect_raw",
     "network_create_server",
@@ -1340,6 +1335,7 @@ export default function(hljs) {
     "network_send_udp_raw",
     "network_set_config",
     "network_set_timeout",
+
     "object_exists",
     "object_get_mask",
     "object_get_name",
@@ -1355,7 +1351,9 @@ export default function(hljs) {
     "object_set_solid",
     "object_set_sprite",
     "object_set_visible",
+
     "ord",
+
     "os_get_config",
     "os_get_info",
     "os_get_language",
@@ -1363,10 +1361,11 @@ export default function(hljs) {
     "os_is_network_connected",
     "os_is_paused",
     "os_lock_orientation",
-    "os_set_orientation_lock",
     "os_powersave_enable",
+
     "parameter_count",
     "parameter_string",
+
     "part_emitter_burst",
     "part_emitter_clear",
     "part_emitter_create",
@@ -1375,11 +1374,13 @@ export default function(hljs) {
     "part_emitter_exists",
     "part_emitter_region",
     "part_emitter_stream",
+
     "part_particles_clear",
     "part_particles_count",
     "part_particles_create",
     "part_particles_create_color",
     "part_particles_create_colour",
+
     "part_system_automatic_draw",
     "part_system_automatic_update",
     "part_system_clear",
@@ -1394,6 +1395,7 @@ export default function(hljs) {
     "part_system_layer",
     "part_system_position",
     "part_system_update",
+
     "part_type_alpha1",
     "part_type_alpha2",
     "part_type_alpha3",
@@ -1425,6 +1427,7 @@ export default function(hljs) {
     "part_type_speed",
     "part_type_sprite",
     "part_type_step",
+
     "path_add",
     "path_add_point",
     "path_append",
@@ -1460,13 +1463,16 @@ export default function(hljs) {
     "path_set_precision",
     "path_shift",
     "path_start",
+
     "physics_apply_angular_impulse",
     "physics_apply_force",
     "physics_apply_impulse",
     "physics_apply_local_force",
     "physics_apply_local_impulse",
     "physics_apply_torque",
+
     "physics_draw_debug",
+
     "physics_fixture_add_point",
     "physics_fixture_bind",
     "physics_fixture_bind_ext",
@@ -1486,9 +1492,11 @@ export default function(hljs) {
     "physics_fixture_set_polygon_shape",
     "physics_fixture_set_restitution",
     "physics_fixture_set_sensor",
+
     "physics_get_density",
     "physics_get_friction",
     "physics_get_restitution",
+
     "physics_joint_delete",
     "physics_joint_distance_create",
     "physics_joint_enable_motor",
@@ -1502,7 +1510,9 @@ export default function(hljs) {
     "physics_joint_set_value",
     "physics_joint_weld_create",
     "physics_joint_wheel_create",
+
     "physics_mass_properties",
+
     "physics_particle_count",
     "physics_particle_create",
     "physics_particle_delete",
@@ -1547,48 +1557,61 @@ export default function(hljs) {
     "physics_particle_set_group_flags",
     "physics_particle_set_max_count",
     "physics_particle_set_radius",
+
     "physics_pause_enable",
+
     "physics_remove_fixture",
     "physics_set_density",
     "physics_set_friction",
     "physics_set_restitution",
     "physics_test_overlap",
+
     "physics_world_create",
     "physics_world_draw_debug",
     "physics_world_gravity",
     "physics_world_update_iterations",
     "physics_world_update_speed",
+
     "place_empty",
     "place_free",
     "place_meeting",
     "place_snapped",
+
     "point_direction",
     "point_distance",
     "point_distance_3d",
     "point_in_circle",
     "point_in_rectangle",
     "point_in_triangle",
+
     "position_change",
     "position_destroy",
     "position_empty",
     "position_meeting",
+
     "power",
     "ptr",
+
     "push_cancel_local_notification",
     "push_get_first_local_notification",
     "push_get_next_local_notification",
     "push_local_notification",
+
     "radtodeg",
+
     "random",
     "random_get_seed",
     "random_range",
     "random_set_seed",
     "randomise",
     "randomize",
+
     "real",
+
     "rectangle_in_circle",
     "rectangle_in_rectangle",
     "rectangle_in_triangle",
+
     "rollback_create_game",
     "rollback_define_input",
     "rollback_define_input_frame_delay",
@@ -1607,6 +1630,7 @@ export default function(hljs) {
     "rollback_use_player_prefs",
     "rollback_set_player_prefs",
     "rollback_get_player_prefs",
+
     "room_add",
     "room_assign",
     "room_duplicate",
@@ -1631,15 +1655,20 @@ export default function(hljs) {
     "room_set_view_enabled",
     "room_set_viewport",
     "room_set_width",
+
     "round",
+
     "screen_save",
     "screen_save_part",
+
     "script_execute",
     "script_exists",
     "script_get_name",
+
     "sha1_file",
     "sha1_string_unicode",
     "sha1_string_utf8",
+
     "shader_current",
     "shader_enable_corner_id",
     "shader_get_name",
@@ -1655,6 +1684,7 @@ export default function(hljs) {
     "shader_set_uniform_matrix",
     "shader_set_uniform_matrix_array",
     "shaders_are_supported",
+
     "shop_leave_rating",
     "show_debug_message",
     "show_debug_overlay",
@@ -1663,8 +1693,10 @@ export default function(hljs) {
     "show_message_async",
     "show_question",
     "show_question_async",
+
     "sign",
     "sin",
+
     "skeleton_animation_clear",
     "skeleton_animation_get",
     "skeleton_animation_get_duration",
@@ -1679,17 +1711,22 @@ export default function(hljs) {
     "skeleton_animation_set_frame",
     "skeleton_animation_get_position",
     "skeleton_animation_set_position",
+
     "skeleton_attachment_create",
     "skeleton_attachment_get",
     "skeleton_attachment_set",
+
     "skeleton_bone_data_get",
     "skeleton_bone_data_set",
     "skeleton_bone_state_get",
     "skeleton_bone_state_set",
+
     "skeleton_collision_draw_set",
+
     "skeleton_get_bounds",
     "skeleton_get_minmax",
     "skeleton_get_num_bounds",
+
     "skeleton_skin_get",
     "skeleton_skin_list",
     "skeleton_skin_set",
@@ -1697,6 +1734,7 @@ export default function(hljs) {
     
     "skeleton_animation_is_looping",
     "skeleton_animation_is_finished",
+
     "sprite_add",
     "sprite_add_from_surface",
     "sprite_assign",
@@ -1733,8 +1771,10 @@ export default function(hljs) {
     "sprite_set_cache_size_ext",
     "sprite_set_offset",
     "sprite_set_speed",
+
     "sqr",
     "sqrt",
+
     "string",
     "string_byte_at",
     "string_byte_length",
@@ -1761,6 +1801,7 @@ export default function(hljs) {
     "string_upper",
     "string_width",
     "string_width_ext",
+
     "surface_copy",
     "surface_copy_part",
     "surface_create",
@@ -1780,7 +1821,9 @@ export default function(hljs) {
     "surface_save_part",
     "surface_set_target",
     "surface_set_target_ext",
+
     "tan",
+
     "texture_get_height",
     "texture_get_texel_height",
     "texture_get_texel_width",
@@ -1788,10 +1831,7 @@ export default function(hljs) {
     "texture_get_width",
     "texture_global_scale",
     "texture_set_stage",
-    "texture_is_ready",
-    "texture_flush",
-    "texture_prefetch",
-    "texture_debug_messages",
+
     "tile_get_empty",
     "tile_get_flip",
     "tile_get_index",
@@ -1802,6 +1842,7 @@ export default function(hljs) {
     "tile_set_index",
     "tile_set_mirror",
     "tile_set_rotate",
+
     "tilemap_clear",
     "tilemap_get",
     "tilemap_get_at_pixel",
@@ -1824,6 +1865,7 @@ export default function(hljs) {
     "tilemap_tileset",
     "tilemap_x",
     "tilemap_y",
+
     "timeline_add",
     "timeline_clear",
     "timeline_delete",
@@ -1833,30 +1875,14 @@ export default function(hljs) {
     "timeline_moment_add_script",
     "timeline_moment_clear",
     "timeline_size",
-    "time_source_create",
-    "time_source_destroy",
-    "time_source_start",
-    "time_source_stop",
-    "time_source_pause",
-    "time_source_resume",
-    "time_source_reconfigure",
-    "time_source_reset",
-    "time_source_get_children",
-    "time_source_get_parent",
-    "time_source_get_period",
-    "time_source_get_reps_completed",
-    "time_source_get_reps_remaining",
-    "time_source_get_state",
-    "time_source_get_time_remaining",
-    "time_source_get_units",
-    "time_source_exists",
-    "time_seconds_to_bpm",
-    "time_bpm_to_seconds",
+
     "typeof",
+
     "url_get_domain",
     "url_open",
     "url_open_ext",
     "url_open_full",
+
     "variable_global_exists",
     "variable_global_get",
     "variable_global_set",
@@ -1870,15 +1896,18 @@ export default function(hljs) {
     "variable_struct_names_count",
     "variable_struct_remove",
     "variable_struct_set",
+
     "vertex_argb",
     "vertex_begin",
     "vertex_color",
     "vertex_colour",
+
     "vertex_create_buffer",
     "vertex_create_buffer_ext",
     "vertex_create_buffer_from_buffer",
     "vertex_create_buffer_from_buffer_ext",
     "vertex_delete_buffer",
+
     "vertex_end",
     "vertex_float1",
     "vertex_float2",
@@ -1904,6 +1933,7 @@ export default function(hljs) {
     "vertex_submit",
     "vertex_texcoord",
     "vertex_ubyte4",
+
     "video_close",
     "video_draw",
     "video_enable_loop",
@@ -1918,6 +1948,7 @@ export default function(hljs) {
     "video_resume",
     "video_seek_to",
     "video_set_volume",
+
     "view_get_camera",
     "view_get_hport",
     "view_get_surface_id",
@@ -1932,10 +1963,12 @@ export default function(hljs) {
     "view_set_wport",
     "view_set_xport",
     "view_set_yport",
+
     "virtual_key_add",
     "virtual_key_delete",
     "virtual_key_hide",
     "virtual_key_show",
+
     "win8_appbar_add_element",
     "win8_appbar_enable",
     "win8_appbar_remove_element",
@@ -1971,6 +2004,7 @@ export default function(hljs) {
     "win8_share_screenshot",
     "win8_share_text",
     "win8_share_url",
+
     "window_center",
     "window_device",
     "window_get_caption",
@@ -2004,6 +2038,7 @@ export default function(hljs) {
     "window_view_mouse_get_y",
     "window_views_mouse_get_x",
     "window_views_mouse_get_y",
+
     "winphone_license_trial_version",
     "winphone_tile_back_content",
     "winphone_tile_back_content_wide",
@@ -2022,12 +2057,13 @@ export default function(hljs) {
     "winphone_tile_small_icon_image",
     "winphone_tile_title",
     "winphone_tile_wide_content",
+
     "xboxlive_achievement_load_friends",
     "xboxlive_achievement_load_leaderboard",
+
     "zip_unzip",
   ];
   const LITERALS = [
-    "audiogroup_default", 
     "ANSI_CHARSET",
     "ARABIC_CHARSET",
     "BALTIC_CHARSET",
@@ -2066,11 +2102,13 @@ export default function(hljs) {
     "achievement_show_ui",
     "achievement_type_achievement_challenge",
     "achievement_type_score_challenge",
+
     "all",
 	
     "animcurvetype_linear",
     "animcurvetype_catmullrom",
     "animcurvetype_bezier",
+
     "asset_font",
     "asset_object",
     "asset_path",
@@ -2083,6 +2121,7 @@ export default function(hljs) {
     "asset_timeline",
     "asset_unknown",
     "audio_3d",
+
     "audio_falloff_exponent_distance",
     "audio_falloff_exponent_distance_clamped",
     "audio_falloff_exponent_distance_scaled",
@@ -2092,10 +2131,13 @@ export default function(hljs) {
     "audio_falloff_linear_distance",
     "audio_falloff_linear_distance_clamped",
     "audio_falloff_none",
+
     "audio_mono",
     "audio_stereo",
+
     "audio_new_system",
     "audio_old_system",
+
     "bm_add",
     "bm_complex",
     "bm_dest_alpha",
@@ -2116,6 +2158,7 @@ export default function(hljs) {
     "bm_src_colour",
     "bm_subtract",
     "bm_zero",
+
     "browser_chrome",
     "browser_edge",
     "browser_firefox",
@@ -2128,6 +2171,7 @@ export default function(hljs) {
     "browser_tizen",
     "browser_unknown",
     "browser_windows_store",
+
     "buffer_bool",
     "buffer_f16",
     "buffer_f32",
@@ -2155,7 +2199,9 @@ export default function(hljs) {
     "buffer_u8",
     "buffer_vbuffer",
     "buffer_wrap",
+
     "button_type",
+
     "c_aqua",
     "c_black",
     "c_blue",
@@ -2175,6 +2221,7 @@ export default function(hljs) {
     "c_teal",
     "c_white",
     "c_yellow",
+
     "cmpfunc_always",
     "cmpfunc_equal",
     "cmpfunc_greater",
@@ -2183,6 +2230,7 @@ export default function(hljs) {
     "cmpfunc_lessequal",
     "cmpfunc_never",
     "cmpfunc_notequal",
+
     "cr_appstart",
     "cr_arrow",
     "cr_beam",
@@ -2198,9 +2246,11 @@ export default function(hljs) {
     "cr_size_nwse",
     "cr_size_we",
     "cr_uparrow",
+
     "cull_clockwise",
     "cull_counterclockwise",
     "cull_noculling",
+
     "device_emulator",
     "device_ios_ipad",
     "device_ios_ipad_retina",
@@ -2215,14 +2265,17 @@ export default function(hljs) {
     "display_landscape_flipped",
     "display_portrait",
     "display_portrait_flipped",
+
     "dll_cdecl",
     "dll_stdcall",
+
     "ds_type_grid",
     "ds_type_list",
     "ds_type_map",
     "ds_type_priority",
     "ds_type_queue",
     "ds_type_stack",
+
     "ef_cloud",
     "ef_ellipse",
     "ef_explosion",
@@ -2235,6 +2288,7 @@ export default function(hljs) {
     "ef_snow",
     "ef_spark",
     "ef_star",
+
     "ev_alarm",
     "ev_animation_end",
     "ev_boundary",
@@ -2251,6 +2305,7 @@ export default function(hljs) {
     "ev_end_of_path",
     "ev_game_end",
     "ev_game_start",
+
     "ev_gesture",
     "ev_gesture_double_tap",
     "ev_gesture_drag_end",
@@ -2265,6 +2320,7 @@ export default function(hljs) {
     "ev_gesture_rotate_start",
     "ev_gesture_rotating",
     "ev_gesture_tap",
+
     "ev_global_gesture_double_tap",
     "ev_global_gesture_drag_end",
     "ev_global_gesture_drag_start",
@@ -2287,9 +2343,11 @@ export default function(hljs) {
     "ev_global_right_button",
     "ev_global_right_press",
     "ev_global_right_release",
+
     "ev_gui",
     "ev_gui_begin",
     "ev_gui_end",
+
     "ev_joystick1_button1",
     "ev_joystick1_button2",
     "ev_joystick1_button3",
@@ -2343,6 +2401,7 @@ export default function(hljs) {
     "ev_step_end",
     "ev_step_normal",
     "ev_trigger",
+
     "ev_user0",
     "ev_user1",
     "ev_user10",
@@ -2359,29 +2418,37 @@ export default function(hljs) {
     "ev_user7",
     "ev_user8",
     "ev_user9",
+
     "fa_bottom",
     "fa_center",
     "fa_left",
     "fa_middle",
     "fa_right",
     "fa_top",
+
     "fa_archive",
     "fa_directory",
     "fa_hidden",
     "fa_readonly",
     "fa_sysfile",
     "fa_volumeid",
+
     "false",
+
     "fb_login_default",
     "fb_login_fallback_to_webview",
     "fb_login_forcing_safari",
     "fb_login_forcing_webview",
     "fb_login_no_fallback_to_webview",
     "fb_login_use_system_account",
+
     "gamespeed_fps",
     "gamespeed_microseconds",
+
     "ge_lose",
+
     "global",
+
     "gp_axislh",
     "gp_axislv",
     "gp_axisrh",
@@ -2402,6 +2469,7 @@ export default function(hljs) {
     "gp_start",
     "gp_stickl",
     "gp_stickr",
+
     "iap_available",
     "iap_canceled",
     "iap_ev_consume",
@@ -2421,7 +2489,9 @@ export default function(hljs) {
     "iap_storeload_failed",
     "iap_storeload_ok",
     "iap_unavailable",
+
     "input_type",
+
     "kbv_autocapitalize_characters",
     "kbv_autocapitalize_none",
     "kbv_autocapitalize_sentences",
@@ -2445,6 +2515,7 @@ export default function(hljs) {
     "kbv_type_phone",
     "kbv_type_phone_name",
     "kbv_type_url",
+
     "layerelementtype_background",
     "layerelementtype_instance",
     "layerelementtype_oldtilemap",
@@ -2453,24 +2524,29 @@ export default function(hljs) {
     "layerelementtype_tile",
     "layerelementtype_tilemap",
     "layerelementtype_undefined",
+
     "leaderboard_type_number",
     "leaderboard_type_time_mins_secs",
+
     "lighttype_dir",
     "lighttype_point",
+
     "local",
+
     "matrix_projection",
     "matrix_view",
     "matrix_world",
+
     "mb_any",
     "mb_left",
     "mb_middle",
     "mb_none",
     "mb_right",
+
     "mip_markedonly",
     "mip_off",
     "mip_on",
-    "network_config_enable_multicast",
-    "network_config_disable_multicast",
+
     "network_config_connect_timeout",
     "network_config_disable_reliable_udp",
     "network_config_enable_reliable_udp",
@@ -2482,10 +2558,13 @@ export default function(hljs) {
     "network_type_data",
     "network_type_disconnect",
     "network_type_non_blocking_connect",
+
     "noone",
+
     "of_challen",
     "of_challenge_tie",
     "of_challenge_win",
+
     "os_3ds",
     "os_android",
     "os_bb10",
@@ -2508,11 +2587,14 @@ export default function(hljs) {
     "os_winphone",
     "os_xbox360",
     "os_xboxone",
+
     "other",
+
     "path_action_continue",
     "path_action_restart",
     "path_action_reverse",
     "path_action_stop",
+
     "phy_debug_render_aabb",
     "phy_debug_render_collision_pairs",
     "phy_debug_render_coms",
@@ -2520,6 +2602,7 @@ export default function(hljs) {
     "phy_debug_render_joints",
     "phy_debug_render_obb",
     "phy_debug_render_shapes",
+
     "phy_joint_anchor_1_x",
     "phy_joint_anchor_1_y",
     "phy_joint_anchor_2_x",
@@ -2545,6 +2628,7 @@ export default function(hljs) {
     "phy_joint_speed",
     "phy_joint_translation",
     "phy_joint_upper_angle_limit",
+
     "phy_particle_data_flag_category",
     "phy_particle_data_flag_color",
     "phy_particle_data_flag_colour",
@@ -2563,7 +2647,9 @@ export default function(hljs) {
     "phy_particle_flag_zombie",
     "phy_particle_group_flag_rigid",
     "phy_particle_group_flag_solid",
+
     "pi",
+
     "pointer_invalid",
     "pointer_null",
     "pr_linelist",
@@ -2572,6 +2658,7 @@ export default function(hljs) {
     "pr_trianglefan",
     "pr_trianglelist",
     "pr_trianglestrip",
+
     "ps_distr_gaussian",
     "ps_distr_invgaussian",
     "ps_distr_linear",
@@ -2579,6 +2666,7 @@ export default function(hljs) {
     "ps_shape_ellipse",
     "ps_shape_line",
     "ps_shape_rectangle",
+
     "pt_shape_circle",
     "pt_shape_cloud",
     "pt_shape_disk",
@@ -2593,6 +2681,7 @@ export default function(hljs) {
     "pt_shape_sphere",
     "pt_shape_square",
     "pt_shape_star",
+
     "rollback_connect_info",
     "rollback_connected_to_peer",
     "rollback_disconnected_from_peer",
@@ -2603,36 +2692,38 @@ export default function(hljs) {
     "rollback_synchronized_with_peer",
     "rollback_synchronizing_with_peer",
     "rollback_chat_message",
+
     "self",
+
     "spritespeed_framespergameframe",
     "spritespeed_framespersecond",
+
     "text_type",
+
     "tf_anisotropic",
     "tf_linear",
     "tf_point",
+
     "tile_flip",
     "tile_index_mask",
     "tile_mirror",
     "tile_rotate",
+
     "tileset_get_name",
-    "time_source_global",
-    "time_source_game",
-    "time_source_units_seconds",
-    "time_source_units_frames",
-    "time_source_expire_nearest",
-    "time_source_expire_after",
-    "time_source_state_initial",
-    "time_source_state_active",
-    "time_source_state_paused",
-    "time_source_state_stopped",
+
     "timezone_local",
     "timezone_utc",
+
     "tm_countvsyncs",
     "tm_sleep",
+
     "true",
+
     "ty_real",
     "ty_string",
+
     "undefined",
+
     "vertex_type_color",
     "vertex_type_colour",
     "vertex_type_float1",
@@ -2654,12 +2745,14 @@ export default function(hljs) {
     "vertex_usage_tangent",
     "vertex_usage_texcoord",
     "vertex_usage_textcoord",
+
     "video_format_rgba",
     "video_format_yuv",
     "video_status_closed",
     "video_status_paused",
     "video_status_playing",
     "video_status_preparing",
+
     "vk_add",
     "vk_alt",
     "vk_anykey",
@@ -2716,6 +2809,7 @@ export default function(hljs) {
     "vk_subtract",
     "vk_tab",
     "vk_up",
+
     "xboxlive_achievement_filter_all_players",
     "xboxlive_achievement_filter_friends_only",
     "xboxlive_achievement_friends_info",
@@ -2724,8 +2818,6 @@ export default function(hljs) {
   ];
   // many of these look like enumerables to me (see comments below)
   const SYMBOLS = [
-    "audio_bus_main", 
-    "wallpaper_config", 
     "argument_relative",
     "argument",
     "argument0",
@@ -2745,8 +2837,9 @@ export default function(hljs) {
     "argument14",
     "argument15",
     "argument_count",
-    "x",
-    "y",
+
+    "x|0",
+    "y|0",
     "xprevious",
     "yprevious",
     "xstart",
@@ -2773,11 +2866,14 @@ export default function(hljs) {
     "depth",
     "visible",
     "layer",
+
     "instance_count",
     "instance_id",
+
     "room_speed",
     "fps",
     "fps_real",
+
     "current_time",
     "current_year",
     "current_month",
@@ -2786,12 +2882,15 @@ export default function(hljs) {
     "current_hour",
     "current_minute",
     "current_second",
+
     "alarm",
+
     "timeline_index",
     "timeline_position",
     "timeline_speed",
     "timeline_running",
     "timeline_loop",
+
     "room",
     "room_first",
     "room_last",
@@ -2799,26 +2898,35 @@ export default function(hljs) {
     "room_height",
     "room_caption",
     "room_persistent",
+
     "score",
     "lives",
     "health",
+
     "show_score",
     "show_lives",
     "show_health",
+
     "caption_score",
     "caption_lives",
     "caption_health",
+
     "event_type",
     "event_number",
     "event_object",
     "event_action",
+
     "application_surface",
+
     "gamemaker_pro",
     "gamemaker_registered",
     "gamemaker_version",
+
     "error_occurred",
     "error_last",
+
     "debug_mode",
+
     "keyboard_key",
     "keyboard_lastkey",
     "keyboard_lastchar",
@@ -2828,11 +2936,13 @@ export default function(hljs) {
     "mouse_button",
     "mouse_lastbutton",
     "cursor_sprite",
+
     "sprite_index",
     "sprite_width",
     "sprite_height",
     "sprite_xoffset",
     "sprite_yoffset",
+
     "image_number",
     "image_index",
     "image_speed",
@@ -2841,14 +2951,17 @@ export default function(hljs) {
     "image_angle",
     "image_alpha",
     "image_blend",
+
     "bbox_left",
     "bbox_right",
     "bbox_top",
     "bbox_bottom",
+
     "background_colour",
     "background_showcolour",
     "background_color",
     "background_showcolor",
+
     "view_enabled",
     "view_current",
     "view_visible",
@@ -2868,25 +2981,31 @@ export default function(hljs) {
     "view_object",
     "view_surface_id",
     "view_camera",
+
     "game_id",
     "game_display_name",
     "game_project_name",
     "game_save_id",
+
     "working_directory",
     "temp_directory",
     "program_directory",
+
     "browser_width",
     "browser_height",
+
     "os_type",
     "os_device",
     "os_browser",
     "os_version",
+
     "display_aa",
     "async_load",
     "delta_time",
     "webgl_enabled",
     "event_data",
     "iap_data",
+
     "phy_rotation",
     "phy_position_x",
     "phy_position_y",
@@ -2915,6 +3034,7 @@ export default function(hljs) {
     "phy_col_normal_y",
     "phy_position_xprevious",
     "phy_position_yprevious",
+
     "player_id",
     "player_local",
     "player_name",
@@ -2924,12 +3044,14 @@ export default function(hljs) {
     "player_type",
     "player_prefs",
     "managed",
+
     "rollback_current_frame",
     "rollback_event_id",
     "rollback_event_param",
     "rollback_game_running",
     "rollback_confirmed_frame",
     "rollback_api_server",
+
     "player_avatar_sprite",
     "player_avatar_url",
     "player_user_id",

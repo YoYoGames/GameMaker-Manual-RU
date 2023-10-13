@@ -6,7 +6,7 @@
   <title>display_reset</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
-  <script src="../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference section for display_reset" />
   <meta name="rh-index-keywords" content="display_reset,display_aa" />
@@ -15,53 +15,53 @@
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
   <h1>display_reset</h1>
-  <p>This function Resets the display settings to the ones that were set when the game was started, but also allows you to change the current level of full screen anti-aliasing being used and whether to use vertical synchronisation. The available anti-aliasing levels are 0,2,4 and 8, with the default startup value being set to 0, and the default v-sync setting is false (off). Switching v-sync on may give a smoother gaming experience but it will also need more processing power and so its impact must be considered careful before use, and the same goes for the anti-aliasing where the higher the number the more processing that is required.</p>
-  <p>Since not all target devices are the same, some may not support 8x or 4x anti-aliasing for example, and so there is a <b>read only</b> variable available for getting the different levels of AA that the device running the game can display:</p>
+  <p>Эта функция сбрасывает настройки дисплея на те, которые были установлены при запуске игры, а также позволяет изменить текущий уровень используемого полноэкранного сглаживания и использовать ли вертикальную синхронизацию. Доступные уровни сглаживания - 0, 2, 4 и 8, при этом при запуске по умолчанию установлено значение 0, а для v-sync по умолчанию установлено значение false (выключено). Включение v-sync может обеспечить более плавный игровой процесс, но при этом потребуется больше вычислительной мощности, поэтому перед использованием следует внимательно изучить его влияние. То же самое касается и сглаживания, где чем выше число, тем больше требуется обработки.</p>
+  <p>Поскольку не все целевые устройства одинаковы, некоторые могут не поддерживать, например, сглаживание 8x или 4x, поэтому существует переменная, доступная <b>только для чтения</b>, для получения различных уровней AA, которые может отображать устройство, на котором запущена игра:</p>
   <p class="code">display_aa</p>
-  <p>This variable will return an integer value based on the setting of bits for the different levels. So for only 2xAA, this will report 2, for 2x and 4x availability it will report 6. For 8 and 4 it will report 12. For all 3 levels (2,4 and 8) it will report 14.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p>Эта переменная возвращает целочисленное значение, основанное на установке битов для различных уровней. Так, только для 2xAA она сообщит 2, для 2x и 4x доступности она сообщит 6. Для 8 и 4 будет сообщено 12. Для всех трех уровней (2, 4 и 8) она сообщит 14.</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
   <p class="code">display_reset(aa, vsync);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Аргумент</th>
+        <th>Тип</th>
+        <th>Описание</th>
       </tr>
       <tr>
-        <td>aa</td>
-        <td><span data-keyref="Type_Real">Real</span></td>
-        <td>The level of anti-aliasing filtering (0, 2, 4 or 8).</td>
+        <td><span class="notranslate">aa</span></td>
+        <td><span data-keyref="Type_Real">Реально</span></td>
+        <td><span class="notranslate">The level of anti-aliasing filtering (0, 2, 4 or 8).</span></td>
       </tr>
       <tr>
-        <td>vsync</td>
-        <td><span data-keyref="Type_Bool">Boolean</span></td>
-        <td>Toggle vertical synchronisation to on (true) or off (false).</td>
+        <td><span class="notranslate">vsync</span></td>
+        <td><span data-keyref="Type_Bool">Булево</span></td>
+        <td><span class="notranslate">Toggle vertical synchronisation to on (true) or off (false).</span></td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
   <p class="code"><span data-keyref="Type_Real">Real</span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Пример:</h4>
   <p class="code">if (display_aa &gt; 12)<br />
     {<br />
         display_reset(8, true);<br />
     }</p>
-  <p>The above code will set the anti-aliasing level to 8 if supported and switch v-sync to on.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Приведенный выше код установит уровень сглаживания на 8, если поддерживается, и включит v-sync.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Cameras_And_Display.htm">Cameras And Display</a></div>
-        <div style="float:right">Next: <a href="display_get_width.htm">display_get_width</a></div>
+        <div style="float:left">Назад: <a href="Cameras_And_Display.htm">Камеры и дисплей</a></div>
+        <div style="float:right">Следующий: <a href="display_get_width.htm"><span class="notranslate">display_get_width</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 display_reset

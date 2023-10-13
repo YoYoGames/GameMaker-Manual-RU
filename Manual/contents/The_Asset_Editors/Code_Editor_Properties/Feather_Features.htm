@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Feather Features</title>
-  <meta name="generator" content="Adobe RoboHelp 2022" />
+  <title>Особенности пера</title>
+  <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../assets/css/default.css" type="text/css" />
-  <script src="../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Gurpreet S. Matharoo" />
   <meta name="topic-comment" content="Page explaining Feather features for the Code Editor" />
   <meta name="rh-index-keywords" content="Code Editor - JSDoc Comments,JSDoc" />
@@ -14,59 +14,58 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>Feather Features</h1>
-  <p><a href="../../Setting_Up_And_Version_Information/IDE_Preferences/Feather_Settings.htm">Feather</a> provides intelligent code completion and improved syntax checking in your GML Code scripts, along with smart refactoring options.</p>
-  <p>This page lists the features Feather provides in the GML Code editor for <a href="../Scripts.htm">scripts</a> and <a href="../Object_Properties/Object_Events.htm">object events</a>. These features will only be available if Feather is <a href="../../Setting_Up_And_Version_Information/IDE_Preferences/Feather_Settings.htm#s1">enabled</a>.</p>
+  <h1>Особенности пера</h1>
+  <p><a href="../../Setting_Up_And_Version_Information/IDE_Preferences/Feather_Settings.htm">Feather</a> обеспечивает интеллектуальное завершение кода и улучшенную проверку синтаксиса в ваших сценариях <span class="notranslate">GML</span> Code, а также интеллектуальные опции рефакторинга.</p>
+  <p>На этой странице перечислены возможности, которые Feather предоставляет в редакторе кода <span class="notranslate">GML</span> для <a href="../Scripts.htm">скриптов</a> и <a href="../Object_Properties/Object_Events.htm">событий объектов</a>. Эти возможности будут доступны только в том случае, если Feather <a href="../../Setting_Up_And_Version_Information/IDE_Preferences/Feather_Settings.htm#s1"><span class="notranslate">enabled</span></a>.</p>
   <div class="seealso" data-type="seealso" style="">
-    <p class="seealso-caption" data-close-text="" data-expanded="true" data-open-text="See Also" data-type="seealso-caption" style="">See Also (placeholder)</p>
+    <p class="seealso-caption" data-close-text="" data-expanded="true" data-open-text="See Also" data-type="seealso-caption" style="">См. также (placeholder)</p>
     <ol class="seealso-list" data-keywords="" data-type="seealso-list" style="">
-      <li><a class="seealso-list-item" href="#">Topic List</a></li>
+      <li><a class="seealso-list-item" href="#">Список тем</a></li>
     </ol>
   </div>
-  <h2>Hover Information</h2>
-  <p>Hovering over a function, sprite, colour, or any other special value will show you its information. You can see some examples below.</p>
+  <h2>Информация о наведении</h2>
+  <p>Наведя курсор на функцию, <span class="notranslate">sprite</span>, цвет или любое другое специальное значение, вы увидите информацию о нем. Некоторые примеры вы можете увидеть ниже.</p>
   <figure><img class="center" src="../../assets/Images/Asset_Editors/Editor_Scripts_FeatherHoverFunction.png" />
-    <figcaption>Hovering over a function displays its manual description and lists all arguments.</figcaption>
+    <figcaption>При наведении курсора на функцию отображается ее ручное описание и список всех аргументов.</figcaption>
   </figure>
   <figure><img class="center" src="../../assets/Images/Asset_Editors/Editor_Scripts_FeatherHoverSprite.png" />
-    <figcaption>Hovering over a sprite displays its first frame and other information.</figcaption>
+    <figcaption>При наведении курсора на <span class="notranslate">sprite</span> отображается его первый кадр и другая информация.</figcaption>
   </figure>
   <figure><img class="center" src="../../assets/Images/Asset_Editors/Editor_Scripts_FeatherHoverColour.png" />
-    <figcaption>Hovering over a colour displays its RGB and HSV values, along with a CSS hex code.</figcaption>
+    <figcaption>При наведении курсора на цвет отображаются его значения RGB и HSV, а также шестнадцатеричный код CSS.</figcaption>
   </figure>
-  <h2>Asset Refactoring</h2>
-  <p>If you rename an asset in your Asset Browser, Feather will automatically update all mentions of it in your project&#39;s code, so those references don&#39;t break. This can be enabled or disabled in the <a href="../../Setting_Up_And_Version_Information/IDE_Preferences/Feather_Settings.htm">Feather Settings</a>.</p>
-  <p>You can also rename an asset through the Code Editor. Place your text cursor on the asset reference, and press <strong>CTRL/CMD + SHIFT + R</strong>.</p>
+  <h2>Рефакторинг активов</h2>
+  <p>Если вы переименуете актив в браузере активов, Feather автоматически обновит все упоминания о нем в коде вашего проекта, чтобы эти ссылки не нарушались. Это можно включить или отключить в <a href="../../Setting_Up_And_Version_Information/IDE_Preferences/Feather_Settings.htm">настройках Feather</a>.</p>
+  <p>Вы также можете переименовать актив через редактор кода. Установите текстовый курсор на ссылку актива и нажмите <strong>CTRL/CMD + SHIFT + R</strong>.</p>
   <p><img class="center" src="../../assets/Images/Asset_Editors/Editor_Scripts_FeatherRename.png" /></p>
-  <p>Enter a new name and hit &quot;<strong>Apply</strong>&quot;. The asset itself, and all references to it in your project, will be renamed.</p>
-  <h2 id="h1">Quick Fixes</h2>
-  <p>When you get an error or a warning in your code, place your text cursor on the reported line and press <strong>CTRL/CMD + Q</strong> to bring up the Quick Fixes menu. Alternatively, you can click on the <img class="icon" src="../../assets/Images/Icons/Icon_Feather.png" /> Feather icon in the gutter.</p>
-  <p>This menu shows you a quick fix if possible, and allows you to disable the rule for that line, or change its <a href="../../Setting_Up_And_Version_Information/IDE_Preferences/Feather_Settings.htm#s3">severity</a>.</p>
+  <p>Введите новое имя и нажмите &quot;<strong>Применить</strong>&quot;. Сам актив и все ссылки на него в вашем проекте будут переименованы.</p>
+  <h2 id="h1">Быстрые исправления</h2>
+  <p>Когда в коде появляется ошибка или предупреждение, установите текстовый курсор на строку с сообщением и нажмите <strong>CTRL/CMD + Q</strong>, чтобы вызвать меню Quick Fixes. Также вы можете щелкнуть на значке <img> Feather в водостоке.</p>
+  <p>Это меню показывает быстрое исправление, если это возможно, и позволяет отключить правило для этой строки или изменить его <a href="../../Setting_Up_And_Version_Information/IDE_Preferences/Feather_Settings.htm#s3">серьезность</a>.</p>
+  <p><img class="icon" src="../../assets/Images/Icons/Icon_Feather.png" /></p>
+  <p>В примере выше показано быстрое решение, используемое для устранения события, когда цель поверхности не была сброшена после изменения.</p>
+  <p>При создании функции меню Quick Fix позволяет автоматически генерировать комментарии JSDoc для функции.</p>
+  <h2 id="h">Найти все ссылки</h2>
+  <p>Feather позволяет найти все ссылки на переменную во всем проекте.</p>
+  <p>Установите текстовый курсор на переменную и нажмите <strong>F3</strong>. В верхней части рабочей области появится небольшая строка поиска:</p>
   <p><img class="center" src="../../assets/Images/Asset_Editors/Editor_Scripts_FeatherQuickFix.png" /></p>
-  <p>The example above shows a quick fix used for fixing an event where the surface target was not reset after being changed.</p>
-  <p>If you place your text cursor on a function header, you can open the Quick Fixes menu to generate <a data-xref="{title}" href="JSDoc_Script_Comments.htm">JSDoc Script Comments</a> for the function:</p>
-  <p><img class="center" src="../../assets/Images/Asset_Editors/JSDoc_Feather_Generate.png" /></p>
-  <h2>Find All References</h2>
-  <p>Feather allows you to find all references to a variable throughout your project.</p>
-  <p>Place your text cursor on a variable, and hit <strong>F3</strong>. You will see a small Search bar at the top of your workspace:</p>
-  <p><img class="center" src="../../assets/Images/Asset_Editors/Editor_Scripts_FeatherF3.png" /></p>
-  <p>Navigate to the previous or next reference by pressing the corresponding arrow, or close it.</p>
-  <p>This search is smart, so instead of simply <a href="../../IDE_Navigation/Menus/The_Edit_Menu.htm">searching for a text string</a>, it looks for references of the selected variable from its declared scope. This means that two variables that have the same name but exist separately in two different objects, will not match.</p>
-  <h3>List All References</h3>
-  <p>Place your text cursor on a variable, and hit <strong>SHIFT + F3</strong>. This will open the Search Results window and display all references of the selected variable in a list.</p>
-  <figure><img class="center" src="../../assets/Images/Asset_Editors/Editor_Scripts_FeatherShiftF3.png" />
-    <figcaption>In this example, the variable <span class="inline2">surf</span> was selected.</figcaption>
+  <p>Перейдите к предыдущей или следующей ссылке, нажав соответствующую стрелку, или закройте ее.</p>
+  <p>Этот поиск является интеллектуальным, поэтому вместо простого <a href="../../IDE_Navigation/Menus/The_Edit_Menu.htm">поиска текстовой строки</a> он ищет ссылки на выбранную переменную в объявленной области видимости. Это означает, что две переменные, имеющие одинаковое имя, но существующие отдельно в двух разных объектах, не будут совпадать.</p>
+  <h3>Список всех ссылок</h3>
+  <p>Установите текстовый курсор на переменную и нажмите <strong>SHIFT + F3</strong>. Это откроет окно Результаты поиска и отобразит все ссылки на выбранную переменную в виде списка.</p>
+  <figure><img class="center" src="../../assets/Images/Asset_Editors/Editor_Scripts_FeatherF3.png" />
+    <figcaption>В этом примере была выбрана переменная <span class="inline2">surf</span>.</figcaption>
   </figure>
-  <p> </p>
-  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="../Scripts.htm">The Script Editor</a></div>
-        <div style="float:right">Next: <a data-xref="{title}" href="JSDoc_Script_Comments.htm">JSDoc Script Comments</a></div>
+        <div style="float:left">Назад: <a href="../Scripts.htm">Редактор сценариев</a></div>
+        <div style="float:right">Следующий: <a data-xref="{title}" href="JSDoc_Script_Comments.htm">Комментарии к сценариям JSDoc</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 JSDoc Script Comments

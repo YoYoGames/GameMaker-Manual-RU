@@ -6,7 +6,7 @@
   <title>get_integer_async</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference page for get_integer_async" />
   <meta name="rh-index-keywords" content="get_integer_async" />
@@ -16,39 +16,39 @@
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
   <h1>get_integer_async</h1>
-  <p>This function opens a window and displays message as well as a space for the user to input a value (which will contain the supplied default value to start with). This is an asynchronous function, and as such <span data-keyref="GameMaker Name">GameMaker</span> does <i>not</i> block the device it is being run on while waiting for an answer, but rather keeps on running events as normal. Once the user has typed out their string and pressed the &quot;Okay&quot; button, an asynchronous <a href="../../../../The_Asset_Editors/Object_Properties/Async_Events/Dialog.htm"><b>Dialog</b></a> event is triggered which, for the duration of that event <i>only</i>, will have a DS map stored in the variable <a href="../../../GML_Overview/Variables/Builtin_Global_Variables/async_load.htm"><span class="inline">async_load</span></a>.</p>
-  <p>This map will contain the three keys, &quot;<span class="inline">id</span>&quot;, &quot;<span class="inline">status</span>&quot;, and &quot;<span class="inline">value</span>&quot;. &quot;<span class="inline">id</span>&quot; is the value that was returned by the function when called, the &quot;status&quot; will be either <span class="inline">true</span> for the &quot;Okay&quot; button being pressed, or <span class="inline">false</span> if the message was canceled (where applicable as not all target platforms permit messages to be canceled). Finally &quot;<span class="inline">value</span>&quot; will return the integer that the user input as a string (an empty string &quot;&quot; will be returned if no input was given).</p>
-  <p class="note"><strong><em><span class="note">NOTE</span></em></strong><em> This function is <span data-keyref="Dialog for debug only">for <strong>debugging and testing use only</strong> and should not be used in released games. For that purpose you should create a custom user interface to receive input from players so that you have complete control over how the dialogs look and behave.</span></em></p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p>Эта функция открывает окно и отображает сообщение, а также место для ввода пользователем значения (которое для начала будет содержать значение по умолчанию). Это асинхронная функция, поэтому <span data-keyref="GameMaker Name">GameMaker</span> <i>не</i> блокирует устройство, на котором она выполняется, в ожидании ответа, а продолжает выполнять события в обычном режиме. После того как пользователь набрал свою строку и нажал кнопку &quot;Ок&quot;, запускается асинхронное событие <a href="../../../../The_Asset_Editors/Object_Properties/Async_Events/Dialog.htm"><b>Диалог</b></a> срабатывает асинхронное событие, которое <i>только</i> на время этого события будет иметь карту DS, хранящуюся в переменной <a href="../../../GML_Overview/Variables/Builtin_Global_Variables/async_load.htm"><span class="inline">async_load</span></a>.</p>
+  <p>Эта карта будет содержать три ключа: &quot;<span class="inline">id</span>&quot;, &quot;<span class="inline">status</span>&quot; и &quot;<span class="inline">value</span>&quot;. &quot;<span class="inline">id</span>&quot; - это значение, которое было возвращено функцией при вызове, &quot;статус&quot; будет либо <span class="inline">true</span> для нажатия кнопки &quot;Ок&quot;, либо <span class="inline">false</span>, если сообщение было отменено (где это применимо, поскольку не все целевые платформы позволяют отменять сообщения). Наконец, &quot;<span class="inline">value</span>&quot; вернет целое число, которое пользователь ввел как строку (пустая строка &quot;&quot; будет возвращена, если ввод не был произведен).</p>
+  <p class="note"><strong><em><span class="note">ПРИМЕЧАНИЕ</span></em></strong><em> Эта функция <span data-keyref="Dialog for debug only">предназначена <strong>только</strong> для <strong>отладки и тестирования</strong></span>и не должна использоваться в выпущенных играх. Для этих целей вы должны создать пользовательский интерфейс для получения ввода от игроков, чтобы иметь полный контроль над тем, как выглядят и ведут себя диалоги.</em></p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
   <p class="code">get_integer_async(string, default);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Аргумент</th>
+        <th>Тип</th>
+        <th>Описание</th>
       </tr>
       <tr>
-        <td>string</td>
-        <td><span data-keyref="Type_String">String</span></td>
-        <td>The message to show in the dialog.</td>
+        <td><span class="notranslate">string</span></td>
+        <td><span data-keyref="Type_String">Строка</span></td>
+        <td><span class="notranslate">The message to show in the dialog.</span></td>
       </tr>
       <tr>
-        <td>default</td>
-        <td><span data-keyref="Type_Real">Real</span></td>
-        <td>The default value.</td>
+        <td><span class="notranslate">default</span></td>
+        <td><span data-keyref="Type_Real">Реально</span></td>
+        <td><span class="notranslate">The default value.</span></td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
   <p class="code"><span data-keyref="Type_ID_Async_Event">Async Request ID</span></p>
-  <p> </p>
-  <h4>Extended Example:</h4>
-  <p>The <b>left mouse press event</b> (for example) of the object that is showing the message would have the following code:</p>
+  <p> </p>
+  <h4>Расширенный пример:</h4>
+  <p> <b>Событие нажатия левой кнопки мыши</b> (например) объекта, который показывает сообщение, будет иметь следующий код:</p>
   <p class="code">msg = get_integer_async(&quot;How old are you?&quot;, 0);</p>
-  <p>The above will show a message requesting that the user input a string and press &quot;Okay&quot;. The function id is stored in the variable &quot;msg&quot; and will be used in the asynchronous Dialogs event as shown below:</p>
+  <p>Выше будет показано сообщение, требующее, чтобы пользователь ввел строку и нажал кнопку &quot;Ок&quot;. Идентификатор функции хранится в переменной &quot;msg&quot; и будет использован в асинхронном событии Dialogs, как показано ниже:</p>
   <p class="code">var i_d = ds_map_find_value(async_load, &quot;id&quot;);<br />
     if i_d == msg<br />
     {<br />
@@ -57,18 +57,18 @@
             global.Age = ds_map_find_value(async_load, &quot;value&quot;);<br />
         }<br />
     }</p>
-  <p>The above code checks the &quot;<span class="inline">id</span>&quot; key of the returned <span class="inline">DS Map</span> against the value stored in the variable &quot;msg&quot;. If they are the same, it then checks to see if &quot;Okay&quot; was pressed (rather than the window being closed/cancelled) and if it returns <span class="inline">true</span> it then sets a global variable from the integer returned.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Приведенный выше код сверяет ключ &quot;<span class="inline">id</span>&quot; возвращаемого <span class="inline">DS Map</span> со значением, хранящимся в переменной &quot;msg&quot;. Если они совпадают, то проверяется, было ли нажато &quot;Okay&quot; (а не закрыто/отменено окно), и если возвращается <span class="inline">true</span>, то устанавливается глобальная переменная из возвращаемого целого числа.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Dialog.htm">Dialog</a></div>
-        <div style="float:right">Next: <a href="show_message_async.htm">show_message_async</a></div>
+        <div style="float:left">Назад: <a href="Dialog.htm">Диалог</a></div>
+        <div style="float:right">Следующий: <a href="show_message_async.htm"><span class="notranslate">show_message_async</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 get_integer_async

@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Changing GML Visual To Code</title>
+  <title>Изменение визуального представления GML в код</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../assets/css/default.css" type="text/css" />
-  <script src="../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Article explaining how to change GML Visual to GML code" />
   <meta name="rh-index-keywords" content="GML Visual Overview - Changing GML Visual To Code" />
@@ -14,29 +14,29 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>Changing GML Visual To Code</h1>
-  <p>Another feature of GML Visual is that you can convert it into GML Code, and in this way see what exactly is going on behind the scenes when you use actions. Before actually changing the actions into code however, you can first <strong>Preview </strong>them by using the right mouse button <img alt="RMB Icon" class="icon" height="24" src="../../assets/Images/Icons/Icon_RMB.png" width="21" /> menu option <strong>Live Preview</strong>:</p>
-  <p><img alt="Live Preview" class="center" src="../../assets/Images/Scripting_Reference/Drag_And_Drop/Overview/DnD_Preview_RMBMenu.png" />Which will open a new window:</p>
-  <p><img alt="GML VisualLive Preview Window" class="center" src="../../assets/Images/Scripting_Reference/Drag_And_Drop/Overview/DnD_Preview.png" />As you add, change or remove GML Visual actions, the GML Live Preview will update to show you the actual code that is being created &quot;behind the scenes&quot;. The code in the live preview cannot be edited directly, but you can select sections and copy them for pasting into GML scripts or Code Actions (for example).</p>
-  <p>If you decide that you want to convert the GML Visual into code after seeing the preview, then this can be done again by clicking the right mouse button <img alt="RMB Icon" class="icon" height="24" src="../../assets/Images/Icons/Icon_RMB.png" width="21" /> in any event workspace with actions and selecting <strong>Convert To GML Code</strong>.</p>
-  <p><img alt="Convert to GML" class="center" src="../../assets/Images/Scripting_Reference/Drag_And_Drop/Overview/DnD_Code_RMBMenu.png" />The first time you do this you will be given a warning message saying that this is a one way conversion, since you can convert actions to code, but you cannot convert them back to <em>individual </em>actions again later. Clicking &quot;okay&quot; here will perform the conversion for you.</p>
-  <p><img alt="GML Visual as code" class="center" src="../../assets/Images/Scripting_Reference/Drag_And_Drop/Overview/DnD_Code.png" />The resulting code will use <span class="inline">{}</span> to delimit individual actions, and you can clearly see what actions relate to which functions or variable declarations within the code. If the GML Visual is more complex then the code will be too, but the same general rules apply and code will be structures sequentially exactly the same as you have written the GML Visual. Note that sometimes the code will have extra <strong>local </strong>(temporary) variables added in to store certain values that will be used, for example this:</p>
-  <p><img alt="GML Visual If Instance Exists" class="center" src="../../assets/Images/Scripting_Reference/Drag_And_Drop/Overview/DnD_InstanceExists.png" /></p>
-  <p>Will become this code:</p>
-  <p><img alt="GML Visual Converted Instance Exists" class="center" src="../../assets/Images/Scripting_Reference/Drag_And_Drop/Overview/DnD_Code_InstanceExists.png" /></p>
-  <p>Here the code first of all creates a local (temporary) variable and sets it to <span class="inline">false</span>, then it checks if the instance exists and sets the local variable to the return of the function call. The local variable is then checked to see if it is <span class="inline">true</span> or <span class="inline">false</span> and if it is <span class="inline">true</span> the rest of the code is run.</p>
-  <p>When learning to program using GML Visual, this can be an important tool in moving on to using GML at a later stage, but it&#39;s by no means obligatory and you can still make great games using GML Visual! It&#39;s also worth noting that while the conversion process is one way, after converting actions to code, you can go back to using GML Visual again by using the right click <img alt="RMB Icon" class="icon" height="24" src="../../assets/Images/Icons/Icon_RMB.png" width="21" /> menu in the code editor and selecting &quot;<strong>Convert To GML Visual</strong>&quot;. This will place the previously created code within an <a href="../Drag_And_Drop_Reference/Common/Execute_Code.htm">Execute Code</a> action and you can then continue to use GML Visual as before:</p>
-  <p><img alt="GML Visual Execute Code" class="center" src="../../assets/Images/Scripting_Reference/Drag_And_Drop/Overview/DnD_ExecuteCode.png" /></p>
-  <p> </p>
-  <p> </p>
+  <h1>Изменение <span class="notranslate">GML</span> Visual To Code</h1>
+  <p>Еще одной особенностью <span class="notranslate">GML</span> Visual является то, что вы можете преобразовать его в код <span class="notranslate">GML</span> и таким образом увидеть, что именно происходит за кулисами при использовании действий. Однако перед тем, как преобразовать действия в код, вы можете сначала <strong>просмотреть </strong>их, используя правую кнопку мыши <img> меню <strong>Live Preview</strong>:</p>
+  <p><img>В результате откроется новое окно:</p>
+  <p><img>По мере добавления, изменения или удаления <span class="notranslate">GML</span> визуальных действий, <span class="notranslate">GML</span> Live Preview будет обновляться, чтобы показать вам фактический код, который создается &quot;за кулисами&quot;. Код в режиме реального просмотра нельзя редактировать напрямую, но вы можете выбрать разделы и скопировать их для вставки в скрипты <span class="notranslate">GML</span> или, например, в Code Actions.</p>
+  <p>Если после предварительного просмотра вы решите, что хотите преобразовать <span class="notranslate">GML</span> Visual в код, то это можно сделать снова, нажав правую кнопку мыши <img> в любой рабочей области с действиями и выбрав <strong>Convert To <span class="notranslate">GML</span> Code</strong>.</p>
+  <p><img>При первом выполнении этого действия вам будет выдано предупреждение о том, что это одностороннее преобразование, поскольку вы можете преобразовать действия в код, но не сможете впоследствии преобразовать их обратно в <em>отдельные </em>действия. Нажав &quot;ОК&quot;, вы выполните преобразование.</p>
+  <p><img>Полученный код будет использовать <span class="inline">{}</span> для разграничения отдельных действий, и вы сможете четко видеть, какие действия относятся к каким функциям или объявлениям переменных в коде. Если визуал <span class="notranslate">GML</span> более сложный, то и код будет таким же, но действуют те же общие правила, и код будет последовательно структурирован точно так же, как вы писали визуал <span class="notranslate">GML</span>. Обратите внимание, что иногда в код добавляются дополнительные <strong>локальные </strong>(временные) переменные для хранения определенных значений, которые будут использоваться, например, так:</p>
+  <p><img alt="RMB Icon" class="icon" height="24" src="../../assets/Images/Icons/Icon_RMB.png" width="21" /></p>
+  <p>Станет этим кодом:</p>
+  <p><img alt="Live Preview" class="center" src="../../assets/Images/Scripting_Reference/Drag_And_Drop/Overview/DnD_Preview_RMBMenu.png" /></p>
+  <p>Здесь код сначала создает локальную (временную) переменную и устанавливает ее в значение <span class="inline">false</span>, затем проверяет, существует ли экземпляр, и устанавливает локальную переменную в значение возврата вызова функции. Затем локальная переменная проверяется на то, является ли она <span class="inline">true</span> или <span class="inline">false</span>, и если это <span class="inline">true</span>, то выполняется остальная часть кода.</p>
+  <p>При обучении программированию с помощью <span class="notranslate">GML</span> Visual это может стать важным инструментом для перехода к использованию <span class="notranslate">GML</span> на более позднем этапе, но это ни в коем случае не обязательно, и вы все равно сможете создавать отличные игры, используя <span class="notranslate">GML</span> Visual! Стоит также отметить, что хотя процесс конвертации является односторонним, после преобразования действий в код, вы можете вернуться к использованию <span class="notranslate">GML</span> Visual снова, используя меню правой кнопки мыши <img> в редакторе кода и выбрав &quot;<strong>Convert To <span class="notranslate">GML</span> Visual</strong>&quot;. В результате ранее созданный код будет помещен в действие <a href="../Drag_And_Drop_Reference/Common/Execute_Code.htm">Execute Code</a>, и вы сможете продолжать использовать <span class="notranslate">GML</span> Visual, как и раньше:</p>
+  <p><img alt="GML VisualLive Preview Window" class="center" src="../../assets/Images/Scripting_Reference/Drag_And_Drop/Overview/DnD_Preview.png" /></p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="../../Content.htm">Index</a></div>
-        <div style="float:right">Next: <a href="Right_Mouse_Button_Menu_Options.htm">Right Mouse Button Menu Options</a></div>
+        <div style="float:left">Назад: <a href="../../Content.htm">Указатель</a></div>
+        <div style="float:right">Следующий: <a href="Right_Mouse_Button_Menu_Options.htm">Параметры меню правой кнопки мыши</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 GML Visual Change To GML

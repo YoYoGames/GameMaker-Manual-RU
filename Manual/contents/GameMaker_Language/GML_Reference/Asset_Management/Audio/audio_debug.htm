@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>audio_debug</title>
+  <title>аудио_отладка</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page explaining the function audio_debug" />
   <meta name="rh-index-keywords" content="audio_debug" />
@@ -14,61 +14,61 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1><span data-field="title" data-format="default">audio_debug</span></h1>
-  <p>This function can be used to display debug information about the audio system, with <span class="inline">true</span> switching it on and <span class="inline">false</span> to switch it off. When you are debugging audio in this way, the overlay will show the following information:</p>
+  <h1>аудио_отладка</h1>
+  <p>Эта функция может использоваться для отображения отладочной информации об аудиосистеме, при этом <span class="inline">true</span> включает ее, а <span class="inline">false</span> - выключает. При отладке аудио таким образом на оверлее будет отображаться следующая информация:</p>
   <p><img alt="Audio Debug Overview" class="center" src="../../../../assets/Images/Scripting_Reference/GML/Reference/Audio/Audio_Debug.png" /></p>
   <ul class="colour">
-    <li><strong>Handle </strong>- The OpenAL source handle (unique for every sound played)</li>
-    <li><strong>Data Handle</strong> - The OpenAL buffer handle (shows the same value for multiple sounds with the same source handle)</li>
-    <li><strong>Processed Buffers</strong> - how many buffers have been played</li>
-    <li><strong>Queued Buffers</strong> - how many buffers have been queued (and are still waiting to play)</li>
-    <li><strong>Gain </strong>- The gain value for the audio (0 - 65536)</li>
-    <li><strong>Play Offset</strong> - the sample position (current play position) into the current buffer</li>
-    <li><strong>Queued Buffers Bars</strong> - a small box diagram of the processed/queued buffers with the play offset (current position) drawn as a blue line</li>
+    <li><strong>Handle - </strong> хэндл источника OpenAL (уникальный для каждого воспроизводимого звука)</li>
+    <li><strong>Data Handle</strong> - Ручка буфера OpenAL (показывает одно и то же значение для нескольких звуков с одинаковой ручкой источника).</li>
+    <li><strong>Обработанные буферы</strong> - сколько буферов было воспроизведено</li>
+    <li><strong>Очередь буферов</strong> - сколько буферов было поставлено в очередь (и все еще ожидает воспроизведения).</li>
+    <li><strong>Усиление - </strong> Значение усиления для аудио (0 - 65536).</li>
+    <li><strong>Play Offset</strong> - позиция сэмпла (текущая позиция воспроизведения) в текущем буфере</li>
+    <li><strong>Бары буферов в очереди</strong> - небольшая диаграмма обработанных/очередных буферов с смещением воспроизведения (текущая позиция), нарисованная синей линией.</li>
   </ul>
-  <p class="note"><span data-conref="../../../../assets/snippets/Tag_note.hts"> </span> For synchronised groups of audio, you also have the function <span class="inline2"><a data-xref="{title}" href="Audio_Synchronisation/audio_sync_group_debug.htm">audio_sync_group_debug</a></span>.</p>
-  <p class="note"><span data-conref="../../../../assets/snippets/Tag_note.hts"> </span> This function does not work on the HTML5 target platform.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
-  <p class="code"><span data-field="title" data-format="default">audio_debug</span>(enable);</p>
+  <p>Для синхронизированных групп аудио также имеется функция <a href="Audio_Synchronisation/audio_sync_group_debug.htm"><span class="inline">audio_sync_group_debug()</span></a>.</p>
+  <p class="note"><b><span class="note">ПРИМЕЧАНИЕ</span> </b>Эта функция не работает на целевой платформе HTML5.</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
+  <p class="code">audio_debug(enable);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
+        <th>Аргумент</th><th>Тип</th>
+        <th>Описание</th>
+     </tr>
       <tr>
-        <td>enable</td>
-        <td><span data-keyref="Type_Bool"><a href="../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Boolean</a></span></td>
-        <td>Enable (set to <span class="inline">true</span>) or disable (<span class="inline">false</span>) audio debugging.</td>
-      </tr>
+        <td><span class="notranslate">enable</span></td><td><span data-keyref="Type_Bool"></span></td>
+        <td><span class="notranslate">Enable (set to <span class="inline">true</span>) или отключить (<span class="inline">false</span>) отладку звука.</td>
+     </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
-  <p class="code"><span data-keyref="Type_Void">N/A</span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
+  <p class="code"><span data-keyref="Type_Void"></span></p>
+  <p> </p>
+  <h4>Пример:</h4>
   <p class="code">if (debug_mode)<br />
     {<br />
-        <span data-field="title" data-format="default">audio_debug</span>(true);<br />
+        audio_debug(true);<br />
     }<br />
     else<br />
     {<br />
-        <span data-field="title" data-format="default">audio_debug</span>(false);<br />
+        audio_debug(false);<br />
     }</p>
-  <p>The above code will switch on or off the audio debug overlay depending on whether the game is running in debug mode or not.</p>
-  <p> </p>
-  <p> </p>
+  <p>Приведенный выше код будет включать или выключать наложение отладки звука в зависимости от того, запущена игра в режиме отладки или нет.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a data-xref="{title}" href="Audio.htm">Audio</a></div>
-        <div style="float:right">Next: <a data-xref="{title}" href="lin_to_db.htm">lin_to_db</a></div>
+        <div style="float:left">Назад: <a href="Audio.htm">Аудио</a></div>
+        <div style="float:right">Следующий: <a href="audio_system_is_available.htm"><span class="notranslate">audio_system_is_available</span></a></div>
+        
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 audio_debug

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Достижения Steam</title>
+  <meta name="generator" content="Adobe RoboHelp 2020" />
+  <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
+  <script src="../../../../assets/scripts/main_script.js"></script>
+  <meta name="rh-authors" content="Mark Alexander" />
+  <meta name="topic-comment" content="Reference section for the different Steam Achievement and Statistic functions" />
+  <meta name="rh-index-keywords" content="" />
+  <meta name="search-keywords" content="Steam Achievements,Steam Statistics" />
+</head>
+<body>
+  <!--<div class="body-scroll" style="top: 150px;">-->
+  <h1>Достижения и статистика</h1>
+  <p>API <span class="notranslate">Steam</span> Stats and Achievements API предоставляет простой способ для вашей игры обеспечить постоянное, перемещаемое отслеживание достижений и статистики для ваших пользователей. Данные пользователя связаны с его учетной записью <span class="notranslate">Steam</span>, а достижения и статистика каждого пользователя могут быть отформатированы и отображены в его профиле сообщества <span class="notranslate">Steam</span>.</p>
+  <p>Помимо того, что достижения являются ценным вознаграждением для игроков ваших игр, они полезны для поощрения и вознаграждения командной работы и взаимодействия игроков, придания дополнительного измерения игровым целям и вознаграждения пользователей за то, что они проводят больше времени в игре, и поэтому рекомендуется, чтобы в вашей игре их было несколько. Они легко настраиваются на панели инструментов <span class="notranslate">Steam</span>, но для них необходимо создать специальные значки.</p>
+  <p>Статистические данные позволяют отслеживать тонкие фрагменты информации, такие как время игры, количество использованных бонусов и т. д. Вы можете использовать их просто для отслеживания внутренних данных игры - чтобы, например, присвоить достижение на основе статистики игры за несколько сессий, собранной пользователем на нескольких компьютерах. Или вы можете отслеживать интересные игровые данные для отображения на странице сообщества пользователя <span class="notranslate">Steam</span>, где пользователи могут сравнивать свою статистику с данными своих друзей.</p>
+  <p>Статистика бывает трех типов - <strong>целые числа</strong>, <strong>плавающие числа </strong>и <strong>средние значения </strong>- и <span class="notranslate">GameMaker Studio 2</span> позволяет вам изменять каждую из них из вашей игры, но они должны быть предварительно инициализированы из панели управления Steamworks для вашей игры.</p>
+  <p class="note"><b><span class="note">ПРИМЕЧАНИЕ</span></b> Вы должны дождаться, пока <span style="font-size:1px;"><a href="../Steam_API/steam_stats_ready.htm"><tt style="font-size: 14px">steam_stats_ready()</tt></a></span> вернется true, прежде чем пытаться читать или записывать статистику и достижения.</p>
+  <p>Более подробную информацию и инструкции по использованию статистики и достижений можно найти на следующих страницах с описанием функций:</p>
+  <ul class="colour">
+    <li><a href="steam_set_achievement.htm"><span class="notranslate">steam_set_achievement</span></a></li>
+    <li><a href="steam_get_achievement.htm"><span class="notranslate">steam_get_achievement</span></a></li>
+    <li><a href="steam_clear_achievement.htm"><span class="notranslate">steam_clear_achievement</span></a></li>
+    <li><a href="steam_set_stat_int.htm"><span class="notranslate">steam_set_stat_int</span></a></li>
+    <li><a href="steam_set_stat_float.htm"><span class="notranslate">steam_set_stat_float</span></a></li>
+    <li><a href="steam_set_stat_avg_rate.htm"><span class="notranslate">steam_set_stat_avg_rate</span></a></li>
+    <li><a href="steam_get_stat_int.htm"><span class="notranslate">steam_get_stat_int</span></a></li>
+    <li><a href="steam_get_stat_float.htm"><span class="notranslate">steam_get_stat_float</span></a></li>
+    <li><a href="steam_get_stat_avg_rate.htm"><span class="notranslate">steam_get_stat_avg_rate</span></a></li>
+    <li><a href="steam_reset_all_stats.htm"><span class="notranslate">steam_reset_all_stats</span></a></li>
+    <li><a href="steam_reset_all_stats_achievements.htm"><span class="notranslate">steam_reset_all_stats_achievements</span></a></li>
+  </ul>
+  <p> </p>
+  <p>Если пользователь находится в <b>автономном режиме</b>, <span class="notranslate">Steam</span> сохраняет локальный кэш статистики и данных о достижениях, так что API можно использовать в обычном режиме. Все статистические данные, которые не могут быть зафиксированы, сохраняются до следующего появления пользователя в сети. В случае, если изменения были произведены на нескольких машинах, <span class="notranslate">Steam</span> автоматически объединит достижения и выберет тот набор статистики, который имел больший прогресс. Поскольку <span class="notranslate">Steam</span> сохраняет локальный кэш данных статистики, нет необходимости, чтобы игра <i>также</i> сохраняла локальный кэш данных на диске, тем более что такие кэши часто конфликтуют, и когда это происходит, пользователю кажется, что его прогресс был отменен, что вызывает разочарование.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <div class="footer">
+    <div class="buttons">
+      <div class="clear">
+        <div style="float:left">Назад: <a href="../Steam.htm">Steam</a></div>
+        <div style="float:right">Следующий: <a href="../Steam_Cloud/Steam_Cloud.htm">Облако Steam</a></div>
+      </div>
+    </div>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
+  </div>
+  <!-- KEYWORDS
+Steam Achievements
+Steam Statistics
+-->
+  <!-- TAGS
+achievement_stat_functions
+-->
+</body>
+</html>

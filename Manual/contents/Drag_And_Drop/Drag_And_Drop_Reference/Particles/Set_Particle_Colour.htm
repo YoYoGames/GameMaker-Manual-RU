@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Set Particle Colour</title>
-  <meta name="generator" content="Adobe RoboHelp 2020" />
+  <title>Установить цвет частиц</title>
+  <meta name="generator" content="Adobe RoboHelp 2019" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
-  <script src="../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page that explains the Set Particle Colour action" />
   <meta name="rh-index-keywords" content="GML Visual Action - Set Particle Colour" />
@@ -14,52 +14,55 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1><img alt="Set Particle Colour Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Particles/i_Particles_Set_Particle_Colour.png" /> Set Particle Colour</h1>
-  <p>This action will set the colour or colours to use when your sprite is created and over its lifetime. You first specify the particle type ID value (which should be the same as the value returned when you created the particle using the <a href="Create_Particle_Type.htm">Create Particle Type</a> action) and then you can set the colours to use.</p>
-  <p>You can pick three colours to use, and the sprite will blend between them over the lifetime of the particle. For example, if a particle has red, green and yellow colours, and a lifetime of 60 game frames, then when it is created (frame 0) it will be tinted red, then it will fade towards green at half way through its life (frame 30), before fading on into yellow at the end of its life (frame 60). If you are using a custom sprite instead of a particle shape, any colour other than white will blend with the sprite used.<b></b></p>
-  <p class="note"><span data-conref="../../../assets/snippets/Tag_note.hts"> </span> The alpha component of the colour is <b>not</b> used, only the RGB components from the colour picker. To set the alpha use the <a href="Set_Particle_Alpha.htm">Set Particle Alpha</a> action.</p>
-  <p> </p>
-  <h4>Action Syntax:</h4>
-  <p><img alt="Set Particle Colour Action" class="center" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Particles/a_Particles_Set_Particle_Colour.png" /></p>
-  <h4>Arguments:</h4>
+  <h1><img> Установить цвет частиц</h1>
+  <p>Это действие задает цвет или цвета, которые будут использоваться при создании частицы <span class="notranslate">sprite</span> и в течение ее жизни. Сначала вы указываете значение ID типа частицы (оно должно совпадать со значением, полученным при создании частицы с помощью действия <a href="Create_Particle_Type.htm">Create Particle Type</a> ), а затем вы можете задать цвета, которые будут использоваться.</p>
+  <p>Вы можете выбрать три цвета, и <span class="notranslate">sprite</span> будет смешивать их между собой в течение времени жизни частицы. Например, если частица имеет красный, зеленый и желтый цвета, а время ее жизни составляет 60 игровых кадров, то при создании (кадр 0) она будет
+    красный цвет, затем он будет выцветать в сторону зеленого на половине своего времени жизни (кадр 30), а затем перейдет в желтый в конце своего времени жизни (кадр 60). Если вы используете пользовательский <span class="notranslate">sprite</span> вместо формы частицы, любой цвет, кроме белого, будет смешиваться
+    с используемым <span class="notranslate">sprite</span>.<b></b></p>
+  <p class="note"><b>ПРИМЕЧАНИЕ</b>: Альфа-компонент цвета <b>не</b> используется, только RGB-компоненты из палитры цветов. Для установки альфа-компонента используйте действие <a href="Set_Particle_Alpha.htm">Set Particle Alpha</a>.</p>
+  <p> </p>
+  <h4>Синтаксис действия:</h4>
+  <p><img alt="Set Particle Colour Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Particles/i_Particles_Set_Particle_Colour.png" /></p>
+  <h4>Аргументы:</h4>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Description</th>
+        <th>Аргумент</th>
+        <th>Описание</th>
       </tr>
       <tr>
-        <td>Type</td>
-        <td>The unique ID value for the particle type to set the colour of</td>
+        <td><span class="notranslate">Type</span></td>
+        <td>Уникальное значение ID для типа частиц, для которых нужно установить цвет</td>
       </tr>
       <tr>
-        <td>Start</td>
-        <td>The initial colour to use</td>
+        <td><span class="notranslate">Start</span></td>
+        <td>Начальный цвет для использования</td>
       </tr>
       <tr>
-        <td>Middle</td>
-        <td>The in between colour to use</td>
+        <td><span class="notranslate">Middle</span></td>
+        <td>промежуточный цвет для использования</td>
       </tr>
       <tr>
-        <td>End</td>
-        <td>The final colour to use</td>
+        <td><span class="notranslate">End</span></td>
+        <td>Окончательный цвет для использования</td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Example:</h4>
-  <p><img alt="Define Particle Example" class="center" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Particles/e_Particles_Create_Particle_Type.png" />The above action block code will create a new particle type and assign its unique ID value to a global variable. It then proceeds to set all the properties for the particle type.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p> </p>
+  <h4>Пример:</h4>
+  <p><img>Приведенный выше код блока действий создаст новый тип частиц и присвоит его уникальное
+    ID значение глобальной переменной. Затем он переходит к установке всех свойств для типа частицы.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Particle_Actions.htm">Particle Actions</a></div>
-        <div style="float:right">Next: <a href="Set_Particle_Alpha.htm">Set Particle Alpha</a></div>
+        <div style="float:left">Назад: <a href="Particle_Actions.htm">Действия частиц</a></div>
+        <div style="float:right">Следующий: <a href="Set_Particle_Alpha.htm">Установить альфа частицы</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 Action - Set Particle Colour

@@ -6,7 +6,7 @@
   <title>physics_particle_get_group_flags</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference page for physics_particle_get_group_flags" />
   <meta name="rh-index-keywords" content="physics_particle_get_group_flags" />
@@ -16,47 +16,47 @@
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
   <h1>physics_particle_get_group_flags</h1>
-  <p>With this function you can retrieve the group flags for a group of particles. The <span class="inline">group</span> value is that which was returned when you created the group of particles using the function <a href="physics_particle_group_end.htm"><span class="inline">physics_particle_group_end()</span></a>, and the function will return a value which is the combined value of the currently set flags.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p>С помощью этой функции можно получить флаги группы для группы частиц. Значение <span class="inline">group</span> - это значение, которое было возвращено при создании группы частиц с помощью функции <a href="physics_particle_group_end.htm"><span class="inline">physics_particle_group_end()</span></a>, а функция возвращает значение, которое является комбинированным значением текущих установленных флагов.</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
   <p class="code">physics_particle_get_group_flags(group)</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Аргумент</th>
+        <th>Тип</th>
+        <th>Описание</th>
       </tr>
       <tr>
-        <td>group</td>
-        <td><span data-keyref="Type_ID_Phy_Particle_Group">Physics Particle Group ID</span></td>
-        <td>The particle group to get.</td>
+        <td><span class="notranslate">group</span></td>
+        <td><span data-keyref="Type_ID_Phy_Particle_Group">Идентификатор группы физических частиц</span></td>
+        <td><span class="notranslate">The particle group to get.</span></td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
   <p class="code"><span data-keyref="Type_Real">Real</span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Пример:</h4>
   <p class="code">var flags = physics_particle_get_group_flags(group, flags);<br />
     if flags != (phy_particle_group_flag_solid | phy_particle_group_flag_rigid)<br />
     {<br />
         flags = phy_particle_group_flag_solid | phy_particle_group_flag_rigid;<br />
         physics_particle_set_group_flags(group, flags);<br />
     }</p>
-  <p>The above code will create a variable to store the flags value and then use it to check the flags of the group indexed in the variable &quot;group&quot;. If they are not the same, the group is set with these flags.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Приведенный выше код создаст переменную для хранения значения flags, а затем использует ее для проверки флагов группы, проиндексированной в переменной &quot;group&quot;. Если они не совпадают, то группа устанавливается с этими флагами.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Soft_Body_Particles.htm">Soft Body Particles</a></div>
-        <div style="float:right">Next: <a href="physics_particle_group_get_inertia.htm">physics_particle_group_get_inertia</a></div>
+        <div style="float:left">Назад: <a href="Soft_Body_Particles.htm">Частицы мягкого тела</a></div>
+        <div style="float:right">Следующий: <a href="physics_particle_group_get_inertia.htm"><span class="notranslate">physics_particle_group_get_inertia</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 physics_particle_get_group_flags

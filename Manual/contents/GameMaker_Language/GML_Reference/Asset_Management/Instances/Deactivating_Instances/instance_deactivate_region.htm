@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>instance_deactivate_region</title>
+  <title>экземпляр_деактивировать_регион</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page outlining the function instance_deactivate_region" />
   <meta name="rh-index-keywords" content="instance_deactivate_region" />
@@ -15,74 +15,76 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1><span data-field="title" data-format="default">instance_deactivate_region</span></h1>
-  <p>With this function you can define a region within the room to deactivate instances that have previously been activated. This region can either be flagged as &quot;inside&quot; or &quot;outside&quot; as demonstrated in the following image:</p>
-  <p><img alt="Instance deactivate region example" class="center" src="../../../../../assets/Images/Scripting_Reference/GML/Reference/Instances/instance_deactivate_region.png" />You can see in the image above that the &quot;apple&quot; instance is always inactive because, even if the sprite itself doesn&#39;t overlap the region, the bounding box does. So, instances are considered to be within the region specified when their <i>bounding box</i> overlaps with it, and the state of the collision mask (precise or not) is <b>not</b> taken into consideration. Note that deactivation is not instantaneous, and an instance that has been deactivated in this way will not be considered to be inactive until the end of the event in which the function was called.</p>
-  <div data-conref="../../../../../assets/snippets/Note_Deactivate_On_Room_Start_Create_Event.hts"> </div>
-  <div data-conref="../../../../../assets/snippets/Note_Warning_Deactivating_Physics_Instances.hts"> </div>
-  <h4>Syntax:</h4>
-  <p class="code"><span data-field="title" data-format="default">instance_deactivate_region</span>(left, top, width, height, inside, notme);</p>
+  <h1>экземпляр_деактивировать_регион</h1>
+  <p>С помощью этой функции можно определить область в помещении для деактивации экземпляров, которые были ранее активированы. Эта область может быть помечена как &quot;внутри&quot; или &quot;снаружи&quot;, как показано на следующем изображении:</p>
+  <p><img>На изображении выше видно, что экземпляр &quot;яблоко&quot; всегда неактивен, потому что, даже если сам <span class="notranslate">sprite</span> не перекрывает регион, ограничивающая рамка перекрывает. Таким образом, экземпляры считаются находящимися в указанном регионе, когда их <i>ограничительная область</i> перекрывает его, а состояние маски столкновений (точное или нет) <b>не</b> учитывается. Обратите внимание, что деактивация не является мгновенной, и экземпляр, деактивированный таким образом, не будет считаться неактивным до окончания события, в котором была вызвана функция.</p>
+  <p class="note"><b>ПРИМЕЧАНИЕ</b>: Если вы деактивируете экземпляр при запуске комнаты (т.е. из кода создания комнаты или из события создания экземпляра в комнате), то все экземпляры, размещенные в комнате из редактора комнат, <b>будут выполнять свое событие создания</b> до деактивации.</p>
+  <p class="note"><b>ПРЕДУПРЕЖДЕНИЕ</b>: Деактивация экземпляров, у которых включена физика, <b>НЕ</b> остановит взаимодействие их светильников в рамках физической симуляции. Для этого необходимо установить их <a href="../../../Physics/Physics_Variables/phy_active.htm"><span class="inline"><span style="font-size:14px;">phy_active</span></a> <span class="inline">true</span> или <span class="inline">false</span> при активации/деактивации экземпляров.</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
+  <p class="code">instance_deactivate_region(left, top, width, height, inside, notme);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Аргумент</th>
+        <th>Тип</th>
+        <th>Описание</th>
       </tr>
       <tr>
-        <td>left</td>
-        <td><span data-keyref="Type_Real"><a href="../../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
-        <td>The x coordinate of the left of the rectangular region to deactivate.</td>
+        <td><span class="notranslate">left</span></td>
+        <td><span data-keyref="Type_Real">Реально</span></td>
+        <td><span class="notranslate">The x coordinate of the left of the rectangular region to deactivate.</span></td>
       </tr>
       <tr>
-        <td>top</td>
-        <td><span data-keyref="Type_Real"><a href="../../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
-        <td>The y coordinate of the top of the rectangular region to deactivate.</td>
+        <td><span class="notranslate">top</span></td>
+        <td><span data-keyref="Type_Real">Реально</span></td>
+        <td><span class="notranslate">The y coordinate of the top of the rectangular region to deactivate.</span></td>
       </tr>
       <tr>
-        <td>width</td>
-        <td><span data-keyref="Type_Real"><a href="../../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
-        <td>The width of the region to deactivate.</td>
+        <td><span class="notranslate">width</span></td>
+        <td><span data-keyref="Type_Real">Реально</span></td>
+        <td><span class="notranslate">The width of the region to deactivate.</span></td>
       </tr>
       <tr>
-        <td>height</td>
-        <td><span data-keyref="Type_Real"><a href="../../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
-        <td>The height of the region to deactivate.</td>
+        <td><span class="notranslate">height</span></td>
+        <td><span data-keyref="Type_Real">Реально</span></td>
+        <td><span class="notranslate">The height of the region to deactivate.</span></td>
       </tr>
       <tr>
-        <td>inside</td>
-        <td><span data-keyref="Type_Bool"><a href="../../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Boolean</a></span></td>
-        <td>Whether to deactivate instances on the inside of the region (true) or the outside (false).</td>
+        <td><span class="notranslate">inside</span></td>
+        <td><span data-keyref="Type_Bool">Булево</span></td>
+        <td><span class="notranslate">Whether to deactivate instances on the inside of the region (true) or the outside (false).</span></td>
       </tr>
       <tr>
-        <td>notme</td>
-        <td><span data-keyref="Type_Bool"><a href="../../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Boolean</a></span></td>
-        <td>Whether to exclude the calling instance from deactivation (true) or not (false).</td>
+        <td><span class="notranslate">notme</span></td>
+        <td><span data-keyref="Type_Bool">Булево</span></td>
+        <td><span class="notranslate">Whether to exclude the calling instance from deactivation (true) or not (false).</span></td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
   <p class="code"><span data-keyref="Type_Void">N/A</span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Пример:</h4>
   <p class="code">instance_activate_all();<br />
     var _vx = camera_get_view_x(view_camera[0]);<br />
     var _vy = camera_get_view_y(view_camera[0]);<br />
     var _vw = camera_get_view_width(view_camera[0]);<br />
     var _vh = camera_get_view_height(view_camera[0]);<br />
     instance_deactivate_region(_vx - 64, _vy - 64, _vw + 128, _vh + 128, false, false);</p>
-  <p>The above code activates all instances and then deactivates a region within the room.</p>
-  <p> </p>
-  <p> </p>
+  <p>Приведенный выше код активирует все экземпляры, а затем деактивирует область внутри комнаты.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Deactivating_Instances.htm">Deactivating Instances</a></div>
-        <div style="float:right">Next: <a href="instance_deactivate_layer.htm">instance_deactivate_layer</a></div>
+        <div style="float:left">Назад: <a href="Deactivating_Instances.htm">Деактивация экземпляров</a></div>
+        <div style="float:right">Следующий: <a href="instance_deactivate_layer.htm"><span class="notranslate">instance_deactivate_layer</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 instance_deactivate_region

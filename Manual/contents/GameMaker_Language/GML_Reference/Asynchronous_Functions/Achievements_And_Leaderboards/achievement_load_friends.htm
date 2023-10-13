@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>достижение_загрузки_друзей</title>
+  <meta name="generator" content="Adobe RoboHelp 2019" />
+  <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
+  <script src="../../../../assets/scripts/main_script.js"></script>
+  <meta name="rh-authors" content="Mark Alexander" />
+  <meta name="topic-comment" content="Reference page for achievement_load_friends" />
+  <meta name="rh-index-keywords" content="achievement_load_friends" />
+  <meta name="search-keywords" content="achievement_load_friends,achievement_friends_info" />
+</head>
+<body>
+  <!--<div class="body-scroll" style="top: 150px;">-->
+  <h1>достижение_загрузки_друзей</h1>
+  <p>Эта функция отправит запрос на сервер для получения информации обо всех друзьях вошедших в систему пользователей и вызовет обратный вызов <a href="../../../../The_Asset_Editors/Object_Properties/Async_Events/Social.htm">Social Asynchronous Event</a>, который содержит
+    <a href="../../../GML_Overview/Variables/Builtin_Global_Variables/async_load.htm"><tt>async_load</tt></a> карту, заполненную соответствующими парами ключ/значение. Ключ <i>id</i> этой <tt>карты DS</tt> используется для идентификации правильного обратного вызова (может быть
+    может быть более одной триггерной функции для любого данного асинхронного события), и будет сопряжен с <b>константой</b> <tt>achievement_friends_info</tt>, а также рядом других пар ключ/значение для каждого друга. Точное содержимое карты
+    показано ниже:</p>
+  <p class="note"><b>ПРИМЕЧАНИЕ</b>: Эта функция предназначена только для <b>iOS</b>.</p>
+  <ul class="colour">
+    <li>&quot;<b>id</b>&quot; - Для этой функции это должно быть <tt>achievement_friends_info</tt></li>
+    <li>&quot;<b>FriendN</b>&quot; - Имя друга, где &quot;N&quot; - целочисленное значение, соответствующее его положению в списке друзей.</li>
+    <li>&quot;<b>FriendidN</b>&quot; - Уникальный идентификатор пользователя друга, &quot;N&quot;.</li>
+  </ul>
+  <p> </p>
+  <h4><b>Синтаксис:</b></h4>
+  <p class="code">achievement_load_friends()</p>
+  <p> </p>
+  <h4>Возвращается:</h4>
+  <p class="code">N/A</p>
+  <p> </p>
+  <h4>Расширенный пример:</h4>
+  <p>Следующий код, вероятно, будет вызван после того, как игрок войдет в свой игровой аккаунт, используя <a href="achievement_login.htm"><tt>achievement_login()</tt></a> чтобы получить список всех друзей этого пользователя:</p>
+  <p class="code">achievement_friends_info();</p>
+  <p>Это отправит запрос на информацию о друзьях пользователя и сгенерирует асинхронный обратный вызов со специальной картой <tt>async_load</tt> DS, содержащей следующие данные:</p>
+  <p class="code">var ident = ds_map_find_value(async_load, &quot;id&quot;);<br/> if ident == achievement_friends_info<br/>     {
+    <br/>     var numfriends = ds_map_find_value(async_load, &quot;numfriends&quot;);<br/>     global.numfriends = numfriends;<br/>     for(var i=0; i &lt; numfriends; i++;)<br/>         {
+    <br/>         global.friendname[i] = ds_map_find_value(async_load, &quot;Friend&quot; + string(i));<br/>         global.friendid[i] = ds_map_find_value(async_load, &quot;Friendid&quot; + string(i));<br/>         achievement_get_pic(global.friendid[i]);
+    <br/>         }
+    <br/>     }
+  </p>
+  <p>Приведенный выше код проверяет возвращенную <tt>DS Map</tt> в <b>Social Asynchronous Event</b> и, если ее &quot;id&quot; совпадает с проверяемой константой, он затем проходит по карте, сохраняя все различные значения в несколько массивов, и запрашивает
+    изображение для каждой из записей в карте (см. <a href="achievement_get_pic.htm"><tt>achievement_get_pic()</tt></a>).</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <div class="footer">
+    <div class="buttons">
+      <div class="clear">
+        <div style="float:left">Назад: <a href="Achievements_And_Leaderboards.htm">Достижения и таблицы лидеров</a></div>
+        <div style="float:right">Следующий: <a href="achievement_load_leaderboard.htm"><span class="notranslate">achievement_load_leaderboard</span></a></div>
+      </div>
+    </div>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Все права защищены</span></h5>
+  </div>
+  <!-- KEYWORDS
+achievement_load_friends
+achievement_friends_info
+-->
+  <!-- TAGS
+achievement_load_friends
+-->
+</body>
+</html>

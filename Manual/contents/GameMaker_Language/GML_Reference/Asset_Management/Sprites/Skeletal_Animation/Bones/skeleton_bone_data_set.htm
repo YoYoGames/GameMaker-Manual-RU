@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>skeleton_bone_data_set</title>
+  <title>скелетный_бонус_данные_набора</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page explaining the function skeleton_bone_data_set" />
   <meta name="rh-index-keywords" content="skeleton_bone_data_set" />
@@ -14,60 +14,60 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>skeleton_bone_data_set</h1>
-  <p>Your skeletal animation is made up of a number of &quot;bones&quot;, which you will have defined and given names to in your animation program, and this function can be used to set certain data for the named bone at any time. Note that this data refers to the <b>default</b> pose for the skeleton, and <i>not</i> the current pose that is being drawn (for that use the function <a href="skeleton_bone_state_set.htm"><span class="inline">skeleton_bone_state_set()</span></a>), and must be set from a previously created <a href="../../../../Data_Structures/DS_Maps/DS_Maps.htm">DS map</a>, which should have the following keys and their equivalent values:</p>
+  <h1>скелетный_бонус_данные_набора</h1>
+  <p>Ваша скелетная анимация состоит из ряда &quot;костей&quot;, которые вы определили и дали им имена в вашей программе анимации, и эта функция может быть использована для установки определенных данных для названной кости в любое время. Обратите внимание, что эти данные относятся к позе <b>по умолчанию</b> для скелета, а <i>не</i> к текущей позе, которая рисуется (для этого используйте функцию <a href="skeleton_bone_state_set.htm"><span class="inline">skeleton_bone_state_set()</span></a>), и должны быть установлены из ранее созданной <a href="../../../../Data_Structures/DS_Maps/DS_Maps.htm">карты DS</a>, которая должна иметь следующие ключи и их эквивалентные значения:</p>
   <ul class="colour">
-    <li><b>&quot;x&quot;:</b> The local x position of the bone relative to the parent bone.</li>
-    <li><b>&quot;y&quot;:</b> The local y position of the bone relative to the parent bone.</li>
-    <li><b>&quot;angle&quot;:</b> The local rotation of the bone relative to the parent bone.</li>
-    <li><b>&quot;xscale&quot;:</b> The local horizontal scale of the bone.</li>
-    <li><b>&quot;yscale&quot;:</b> The local vertical scale of the bone.</li>
-    <li><b>&quot;parent&quot;:</b> The name (a string) of the parent bone.</li>
+    <li><b>&quot;x&quot;:</b> Локальная x-позиция кости относительно родительской кости.</li>
+    <li><b>&quot;y&quot;:</b> Локальная позиция y кости относительно родительской кости.</li>
+    <li><b>&quot;угол&quot;:</b> Локальный поворот кости относительно родительской кости.</li>
+    <li><b>&quot;xscale&quot;:</b> Локальный горизонтальный масштаб кости.</li>
+    <li><b>&quot;yscale&quot;:</b> Локальный вертикальный масштаб кости.</li>
+    <li><b>&quot;parent&quot;:</b> Имя (строка) родительской кости.</li>
   </ul>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p> </p>
+  <h4>Синтаксис:</h4>
   <p class="code">skeleton_bone_data_set(bone, map);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Аргумент</th>
+        <th>Тип</th>
+        <th>Описание</th>
       </tr>
       <tr>
-        <td>bone</td>
-        <td><span data-keyref="Type_String">String</span></td>
-        <td>The name (as a string) of the bone.</td>
+        <td><span class="notranslate">bone</span></td>
+        <td><span data-keyref="Type_String">Строка</span></td>
+        <td><span class="notranslate">The name (as a string) of the bone.</span></td>
       </tr>
       <tr>
-        <td>map</td>
-        <td><span data-keyref="Type_ID_DS_Map">DS Map ID</span></td>
-        <td>The (previously created) DS map that stores the bone data.</td>
+        <td><span class="notranslate">map</span></td>
+        <td><span data-keyref="Type_ID_DS_Map">Идентификатор карты DS</span></td>
+        <td><span class="notranslate">The (previously created) DS map that stores the bone data.</span></td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
   <p class="code"><span data-keyref="Type_Void">N/A</span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Пример:</h4>
   <p class="code">var bone_map = ds_map_create();<br />
     skeleton_bone_data_get(&quot;head&quot;, bone_map);<br />
     ds_map_replace(bone_map, &quot;parent&quot;, &quot;body&quot;);<br />
     skeleton_bone_data_set(&quot;head&quot;, bone_map);<br />
     ds_map_destroy(bone_map);</p>
-  <p>The above code creates a DS map and then populates it with the data from the bone named &quot;head&quot;. It then replaces the &quot;parent&quot; bone key in the map with a new value and sets the &quot;head&quot; bone again with the new set of data.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Приведенный выше код создает карту DS, а затем заполняет ее данными из кости с именем &quot;голова&quot;. Затем он заменяет ключ кости &quot;parent&quot; в карте новым значением и снова устанавливает кость &quot;head&quot; с новым набором данных.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Bones.htm">Bones</a></div>
-        <div style="float:right">Next: <a href="skeleton_bone_state_get.htm">skeleton_bone_state_get</a></div>
+        <div style="float:left">Спина: <a href="Bones.htm">кости</a></div>
+        <div style="float:right">Следующий: <a href="skeleton_bone_state_get.htm"><span class="notranslate">skeleton_bone_state_get</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 skeleton_bone_data_set

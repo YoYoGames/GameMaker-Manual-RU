@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>physics_mass_properties</title>
+  <title>свойства_массы_физики</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
-  <script src="../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference page for physics_mass_properties" />
   <meta name="rh-index-keywords" content="physics_mass_properties" />
@@ -14,69 +14,64 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>physics_mass_properties</h1>
-  <p>This function can be used to set custom mass and rotational inertia values for a physics enabled instance. Normally the mass, centre of mass, and rotational inertia for an instance are calculated using a combination the surface area of the bound fixtures and their density. However, in very special occasions, you may need to offset the centre of mass or change the inertia, and that is when you would use this function.</p>
-  <h3>Mass</h3>
-  <p>The mass is calculated in real world weight (i.e.: kilograms), so you should always try and keep values realistic for what you are modelling. So if your physics object is meant to represent a person, their mass could be, say, 70 kg, instead of something like 2 kg.</p>
-  <p>The mass cannot be negative.</p>
-  <h3>Centre of Mass</h3>
-  <p>The centre of mass is calculated automatically for you based on the shape of the fixture (or fixtures) you have defined. To get a general idea of where this could be, if you have a sprite that is the same shape as the fixtures you wish to create, then select the &quot;centre origin&quot; option and you will see approximately where the centre of mass will be too.</p>
-  <p>However, this may not be correct or you may be looking for a specific effect from your physics object, in which case this function can also be used to change the x and y coordinates for the centre of mass. These are <b>local/relative</b> values, so <span class="inline2">0,0</span> is the point at which the fixtures are bound to the instance (the origin of the instance). So a centre of mass of <span class="inline2">-4,0</span> would shift the centre of mass to the left of the origin, by 4 pixels.</p>
-  <h3>Rotational Inertia</h3>
-  <p><span>The inertia value defines how resistant this instance is to changes in its rotational velocity. A higher inertia makes it more resistant and a low inertia makes it less resistant.</span></p>
-  <p>The rotational inertia cannot be negative.</p>
-  <p class="note"><span data-conref="../../../assets/snippets/Tag_note.hts"> </span> This function does not set mass and inertia for individual fixtures, but rather for the whole physics enabled instance, no matter how many fixtures are bound to it.</p>
-  <p class="note"><span data-conref="../../../assets/snippets/Tag_note.hts"> </span> This function should only be used when necessary, as the physics simulation is designed for the mass and inertia to be optimal based on the density and size of the fixture. Changing these values may produce unexpected results.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <h1>свойства_массы_физики</h1>
+  <p>Эта функция может использоваться для установки пользовательских значений массы и инерции вращения для экземпляра с поддержкой физики. Обычно масса, центр масс и инерция вращения для экземпляра вычисляются с помощью комбинации площади поверхности связанных приспособлений и их плотности. Однако в особых случаях может потребоваться сместить центр масс или изменить инерцию, и тогда вы можете использовать эту функцию.</p>
+  <h3>Масса</h3>
+  <p>Масса рассчитывается в реальном весе (т.е. в килограммах), поэтому всегда старайтесь сохранять значения реалистичными для того, что вы моделируете. Так, если ваш физический объект должен представлять человека, его масса может быть, скажем, 70 кг, а не 2 кг.</p>
+  <p>Масса не может быть отрицательной.</p>
+  <h3>Центр масс</h3>
+  <p>Центр масс рассчитывается автоматически на основе формы определенного вами приспособления (или приспособлений). Чтобы получить общее представление о том, где он может находиться, если у вас есть <span class="notranslate">sprite</span>, имеющий ту же форму, что и приспособления, которые вы хотите создать, выберите опцию &quot;center origin&quot;, и вы увидите, где примерно будет находиться центр масс.</p>
+  <p>Однако это может быть неверно или вы ищете конкретный эффект от физического объекта, в таком случае эту функцию можно использовать для изменения координат x и y для центра масс. Это <b>локальные/относительные</b> значения, поэтому <span class="inline2">0,0</span> - это точка привязки приспособлений к экземпляру (начало координат экземпляра). Таким образом, при значении центра масс <span class="inline2">-4,0</span> центр масс будет смещен влево от начала координат на 4 пикселя.</p>
+  <h3>Инерция вращения</h3>
+  <p><span>Значение инерции определяет, насколько данный экземпляр устойчив к изменениям скорости вращения. Большая инерция делает его более устойчивым, а малая инерция делает его менее устойчивым.</span></p>
+  <p>Инерция вращения не может быть отрицательной.</p>
+  <p class="note"><span class="note">ПРИМЕЧАНИЕ</span> Эта функция устанавливает массу и инерцию не для отдельных светильников, а для всего экземпляра с включенной физикой, независимо от того, сколько светильников к нему привязано.</p>
+  <p class="note"><span class="note">ПРИМЕЧАНИЕ</span> Эту функцию следует использовать только в случае необходимости, поскольку физическое моделирование рассчитано на то, что масса и инерция будут оптимальными, исходя из плотности и размера приспособления. Изменение этих значений может привести к неожиданным результатам.</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
   <p class="code">physics_mass_properties(mass, local_center_x, local_center_y, inertia)</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
+        <th>Аргумент</th><th>Тип</th>
+        <th>Описание</th>
+     </tr>
       <tr>
-        <td>mass</td>
-        <td><span data-keyref="Type_Real"><a href="../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
-        <td>The new mass that you want the fixture to have.</td>
-      </tr>
+        <td><span class="notranslate">mass</span></td><td><span data-keyref="Type_Real"></span></td>
+        <td><span class="notranslate">The new mass that you want the fixture to have.</span></td>
+     </tr>
       <tr>
-        <td>local_center_x</td>
-        <td><span data-keyref="Type_Real"><a href="../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
-        <td>The local x coordinate of the new center of mass.</td>
-      </tr>
+        <td><span class="notranslate">local_center_x</span></td><td><span data-keyref="Type_Real"></span></td>
+        <td><span class="notranslate">The local x coordinate of the new center of mass.</span></td>
+     </tr>
       <tr>
-        <td>local_center_y</td>
-        <td><span data-keyref="Type_Real"><a href="../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
-        <td>The local y coordinate of the new center of mass.</td>
-      </tr>
+        <td><span class="notranslate">local_center_y</span></td><td><span data-keyref="Type_Real"></span></td>
+        <td><span class="notranslate">The local y coordinate of the new center of mass.</span></td>
+     </tr>
       <tr>
-        <td>inertia</td>
-        <td><span data-keyref="Type_Real"><a href="../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
-        <td>The rotational inertia for the fixture.</td>
-      </tr>
+        <td><span class="notranslate">inertia</span></td><td><span data-keyref="Type_Real"></span></td>
+        <td><span class="notranslate">The rotational inertia for the fixture.</span></td>
+     </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
   <p class="code"><span data-keyref="Type_Void">N/A</span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Пример:</h4>
   <p class="code">physics_mass_properties(phy_mass, -10, -10, phy_inertia);</p>
-  <p>The above code will shift the center of mass of the physical body to the left.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Приведенный выше код сместит центр масс физического тела влево.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Physics.htm">Physics</a></div>
-        <div style="float:right">Next: <a href="physics_test_overlap.htm">physics_test_overlap</a></div>
+        <div style="float:left">Назад: <a href="Physics.htm">Физика</a></div>
+        <div style="float:right">Следующий: <a href="physics_test_overlap.htm"><span class="notranslate">physics_test_overlap</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 physics_mass_properties

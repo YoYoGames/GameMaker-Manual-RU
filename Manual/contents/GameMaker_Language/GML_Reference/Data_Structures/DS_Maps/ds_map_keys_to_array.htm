@@ -6,7 +6,7 @@
   <title>ds_map_keys_to_array</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference page for ds_map_keys_to_array" />
   <meta name="rh-index-keywords" content="ds_map_keys_to_array" />
@@ -16,46 +16,46 @@
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
   <h1>ds_map_keys_to_array</h1>
-  <p>With this function you can retrieve all of the keys that a DS map contains. You supply the DS map ID to get the keys from (as returned by <a href="ds_map_create.htm"><span class="inline">ds_map_create()</span></a>) and the function will return an <a href="../../../GML_Overview/Arrays.htm">array</a> where each entry in the array is a key from the DS map. The function has an optional second argument where you can supply an array that you have created, in which case the map key data will be appended onto any existing data in the array. Note that the function will modify the array supplied directly, but will also return a reference to it (or a reference to a new array if none is supplied).</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p>С помощью этой функции вы можете получить все ключи, которые содержит карта DS. Вы указываете ID карты DS, из которой нужно получить ключи (как возвращается функцией <a href="ds_map_create.htm"><span class="inline">ds_map_create()</span></a>), и функция вернет <a href="../../../GML_Overview/Arrays.htm">массив</a>, каждая запись в котором будет ключом из карты DS. Функция имеет необязательный второй аргумент, в котором вы можете указать созданный вами массив, в этом случае данные ключей карты будут добавлены к существующим данным в массиве. Обратите внимание, что функция изменяет непосредственно массив, но также возвращает ссылку на него (или ссылку на новый массив, если он не указан).</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
   <p class="code">ds_map_keys_to_array(id, [array])</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Аргумент</th>
+        <th>Тип</th>
+        <th>Описание</th>
       </tr>
       <tr>
-        <td>id</td>
-        <td><span data-keyref="Type_ID_DS_Map">DS Map ID</span></td>
-        <td>The id of the map to use.</td>
+        <td><span class="notranslate">id</span></td>
+        <td><span data-keyref="Type_ID_DS_Map">Идентификатор карты DS</span></td>
+        <td><span class="notranslate">The id of the map to use.</span></td>
       </tr>
       <tr>
-        <td>[array]</td>
-        <td><span data-keyref="Type_Array">Array</span></td>
-        <td><span class="optional">OPTIONAL</span> The array to append the DS map keys to.</td>
+        <td><span class="notranslate">[array]</span></td>
+        <td><span data-keyref="Type_Array">Массив</span></td>
+        <td><span class="notranslate"><span class="optional">OPTIONAL</span> Массив для добавления ключей карты DS.</td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
   <p class="code"><span data-keyref="Type_Array">Array</span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Пример:</h4>
   <p class="code">map_keys = ds_map_keys_to_array(inventory);</p>
-  <p>The above code retrieves the keys for a DS map and then stores them as an array for future use.</p>
-  <p> </p>
-  <p> </p>
+  <p>Приведенный выше код извлекает ключи для карты DS, а затем сохраняет их в виде массива для дальнейшего использования.</p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="DS_Maps.htm">DS Maps</a></div>
-        <div style="float:right">Next: <a href="ds_map_values_to_array.htm">ds_map_values_to_array</a></div>
+        <div style="float:left">Назад: <a href="DS_Maps.htm">Карты DS</a></div>
+        <div style="float:right">Следующий: <a href="ds_map_values_to_array.htm"><span class="notranslate">ds_map_values_to_array</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 ds_map_keys_to_array

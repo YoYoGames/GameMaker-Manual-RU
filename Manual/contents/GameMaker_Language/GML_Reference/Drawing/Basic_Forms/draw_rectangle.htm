@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>draw_rectangle</title>
+  <title>нарисовать_прямоугольник</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference for the function draw_rectangle" />
   <meta name="rh-index-keywords" content="draw_rectangle" />
@@ -15,65 +15,65 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1><span data-field="title" data-format="default">draw_rectangle</span></h1>
-  <p>This function draws either an outline of a rectangle or a filled rectangle where the (x1,y1) position is the top left corner and the (x2,y2) position is the bottom right corner. Please note that the rectangle being drawn may need different values (+/-1 on the x, y, or width or height) to be drawn with the desired dimensions due to differences across the various supported platforms.</p>
-  <p class="note"><span data-conref="../../../../assets/snippets/Tag_note.hts"> </span> If you want to draw a shape using a shader, you should be aware that most shaders expect the following inputs: vertex, texture, colour. However, when using this function, only vertex and colour data are being passed in, and so the shader may not draw anything (or draw something but not correctly). If you need to draw shapes in this way then the shader should be customised with this in mind.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
-  <p class="code"><span data-field="title" data-format="default">draw_rectangle</span>(x1, y1, x2, y2, outline);</p>
+  <h1>нарисовать_прямоугольник</h1>
+  <p>С помощью этой функции вы можете нарисовать либо контур прямоугольника, либо заполненный прямоугольник, где позиция (x1,y1) - левый верхний угол, а позиция (x2,y2) - правый нижний угол. Обратите внимание, что для того, чтобы нарисованный прямоугольник имел нужные размеры, могут потребоваться другие значения (+/-1 по x, y, ширине или высоте) из-за различий в различных поддерживаемых платформах.</p>
+  <p class="note"><b>ПРИМЕЧАНИЕ</b>: Если вы хотите нарисовать фигуру с помощью шейдера, вы должны знать, что большинство шейдеров ожидают следующих входных данных: вершина, текстура, цвет. Однако при использовании этой функции передаются только данные вершин и цвета, поэтому шейдер может ничего не нарисовать (или нарисовать, но неправильно). Если вам нужно рисовать фигуры таким образом, то шейдер должен быть настроен с учетом этого.</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
+  <p class="code">draw_rectangle(x1, y1, x2, y2, outline);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Аргумент</th>
+        <th>Тип</th>
+        <th>Описание</th>
       </tr>
       <tr>
-        <td>x1</td>
-        <td><span data-keyref="Type_Real"><a href="../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
-        <td>The x coordinate of the top left corner of the rectangle.</td>
+        <td><span class="notranslate">x1</span></td>
+        <td><span data-keyref="Type_Real">Реально</span></td>
+        <td><span class="notranslate">The x coordinate of the top left corner of the rectangle.</span></td>
       </tr>
       <tr>
-        <td>y1</td>
-        <td><span data-keyref="Type_Real"><a href="../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
-        <td>The y coordinate of the top left corner of the rectangle.</td>
+        <td><span class="notranslate">y1</span></td>
+        <td><span data-keyref="Type_Real">Реально</span></td>
+        <td><span class="notranslate">The y coordinate of the top left corner of the rectangle.</span></td>
       </tr>
       <tr>
-        <td>x2</td>
-        <td><span data-keyref="Type_Real"><a href="../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
-        <td>The x coordinate of the bottom right corner of the rectangle.</td>
+        <td><span class="notranslate">x2</span></td>
+        <td><span data-keyref="Type_Real">Реально</span></td>
+        <td><span class="notranslate">The x coordinate of the bottom right corner of the rectangle.</span></td>
       </tr>
       <tr>
-        <td>y2</td>
-        <td><span data-keyref="Type_Real"><a href="../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
-        <td>The y coordinate of the bottom right corner of the rectangle.</td>
+        <td><span class="notranslate">y2</span></td>
+        <td><span data-keyref="Type_Real">Реально</span></td>
+        <td><span class="notranslate">The y coordinate of the bottom right corner of the rectangle.</span></td>
       </tr>
       <tr>
-        <td>outline</td>
-        <td><span data-keyref="Type_Bool"><a href="../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Boolean</a></span></td>
-        <td>Whether the rectangle is drawn filled (false) or as a one pixel wide outline (true).</td>
+        <td><span class="notranslate">outline</span></td>
+        <td><span data-keyref="Type_Bool">Булево</span></td>
+        <td><span class="notranslate">Whether the rectangle is drawn filled (false) or as a one pixel wide outline (true).</span></td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
   <p class="code"><span data-keyref="Type_Void">N/A</span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Пример:</h4>
   <p class="code">draw_set_colour(c_yellow);<br />
-    <span data-field="title" data-format="default">draw_rectangle</span>(100, 100, 300, 200, true);
-  </p>
-  <p>This will draw a rectangle outline, with its top left corner at (100,100) and its bottom right corner at (300,200).</p>
-  <p> </p>
-  <p> </p>
+    draw_rectangle(100, 100, 300, 200, true);</p>
+  <p>Это позволит нарисовать контур прямоугольника, левый верхний угол которого находится в точке (100,100), а правый нижний - в точке (300,200).</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Basic_Forms.htm">Basic Forms</a></div>
-        <div style="float:right">Next: <a href="draw_rectangle_colour.htm">draw_rectangle_colour</a></div>
+        <div style="float:left">Назад: <a href="Basic_Forms.htm">Основные формы</a></div>
+        <div style="float:right">Следующий: <a href="draw_rectangle_colour.htm"><span class="notranslate">draw_rectangle_colour</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 draw_rectangle

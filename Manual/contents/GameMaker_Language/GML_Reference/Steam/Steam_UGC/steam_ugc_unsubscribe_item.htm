@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>steam_ugc_unsubscribe_item</title>
+  <meta name="generator" content="Adobe RoboHelp 2019" />
+  <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
+  <script src="../../../../assets/scripts/main_script.js"></script>
+  <meta name="rh-authors" content="Mark Alexander" />
+  <meta name="topic-comment" content="Reference page for steam_ugc_unsubscribe_item" />
+  <meta name="rh-index-keywords" content="steam_ugc_unsubscribe_item" />
+  <meta name="search-keywords" content="steam_ugc_unsubscribe_item" />
+</head>
+<body>
+  <!--<div class="body-scroll" style="top: 150px;">-->
+  <h1>steam_ugc_unsubscribe_item</h1>
+  <p>Эта функция может использоваться для отписки от элемента пользовательского контента. Вы предоставляете ID опубликованного файла, а затем функция возвращает уникальное значение async ID, которое можно использовать для проверки правильности отписки от элемента в <a href="../../../../The_Asset_Editors/Object_Properties/Async_Events/Steam.htm">событии Steam Async</a>.
+    Это событие будет иметь <a href="../../../GML_Overview/Variables/Builtin_Global_Variables/async_load.htm"><tt>async_load</tt></a> DS map, которая будет заполнена следующими парами ключ/значение:</p>
+  <ul class="colour">
+    <li>&quot;<b>id</b>&quot; - Идентификатор async, возвращаемый функцией, которая вызвала событие</li>
+    <li>&quot;<b>result</b>&quot; - Результат операции (вещественное значение). Это будет либо константа <span class="notranslate">GML</span> <tt>ugc_result_success</tt>, либо какое-то другое вещественное число. Поэтому вы должны проверить наличие этой константы, чтобы убедиться, что вызов был успешным, и если
+      в противном случае что-то сработало неправильно. Остальные возможные возвращаемые значения отображаются как результат значения <span class="notranslate">Steam</span> &quot;EResult&quot;, и вы должны увидеть <tt>steamclientpublic.h</tt> в заголовках SDK для всех 89 возможных значений.</li>
+    <li>&quot;<b>event_type</b>&quot; - Строка &quot;<b>ugc_unsubscribe_item</b>&quot;.</li>
+    <li>&quot;<b>published_file_id</b>&quot; - Уникальный идентификатор для опубликованного элемента.</li>
+  </ul>
+  <p> </p>
+  <h4>Синтаксис:</h4>
+  <p class="code">steam_ugc_unsubscribe_item(published_file_id);</p>
+  <table>
+    <tbody>
+      <tr>
+        <th>Аргумент</th>
+        <th>Описание</th>
+      </tr>
+      <tr>
+        <td><span class="notranslate">published_file_id</span></td>
+        <td>Уникальный идентификатор файла для UGC, от которого нужно отписаться.</td>
+      </tr>
+    </tbody>
+  </table>
+  <p> </p>
+  <h4>Возвращается:</h4>
+  <p class="code">Async ID</p>
+  <p> </p>
+  <h4>Пример:</h4>
+  <p class="code">steam_sub = steam_ugc_subscribe_item(global.pubFileID);</p>
+  <p>Приведенный выше код подпишется (и загрузит) элемент с идентификатором файла, хранящимся в глобальной переменной &quot;pubFileID&quot;.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <div class="footer">
+    <div class="buttons">
+      <div class="clear">
+        <div style="float:left">Назад: <a href="Steam_UGC.htm">UGC</a></div>
+        <div style="float:right">Следующий: <a href="steam_ugc_num_subscribed_items.htm"><span class="notranslate">steam_ugc_num_subscribed_items</span></a></div>
+      </div>
+    </div>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Все права защищены</span></h5>
+  </div>
+  <!-- KEYWORDS
+steam_ugc_unsubscribe_item
+-->
+  <!-- TAGS
+steam_ugc_unsubscribe_item
+-->
+</body>
+</html>

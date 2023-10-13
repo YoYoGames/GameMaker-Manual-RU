@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>steam_activate_overlay_store</title>
+  <meta name="generator" content="Adobe RoboHelp 2020" />
+  <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
+  <script src="../../../../assets/scripts/main_script.js"></script>
+  <meta name="rh-authors" content="Mark Alexander" />
+  <meta name="topic-comment" content="Reference page for steam_activate_overlay_store" />
+  <meta name="rh-index-keywords" content="steam_activate_overlay_store" />
+  <meta name="search-keywords" content="steam_activate_overlay_store" />
+</head>
+<body>
+  <!--<div class="body-scroll" style="top: 150px;">-->
+  <h1>steam_activate_overlay_store</h1>
+  <p>С помощью этой функции вы можете открыть оверлей <span class="notranslate">Steam</span> на странице магазина для игры, чтобы пользователи могли купить или загрузить DLC (например). Вам необходимо предоставить уникальный App ID для игры или DLC, который вы получите из панели управления <span class="notranslate">Steam</span> при настройке.</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
+  <p class="code">steam_activate_overlay_store(app_id);</p>
+  <table>
+    <tbody>
+      <tr>
+        <th>Аргумент</th>
+        <th>Описание</th>
+      </tr>
+      <tr>
+        <td><span class="notranslate">app_id</span></td>
+        <td>Уникальный идентификатор приложения для вашей игры.</td>
+      </tr>
+    </tbody>
+  </table>
+  <p> </p>
+  <h4>Возвращается:</h4>
+  <p class="code">N/A</p>
+  <p> </p>
+  <h4>Пример:</h4>
+  <p class="code">if keyboard_check_pressed(vk_f1)<br />
+    {<br />
+        steam_activate_overlay_store(global.DLC_id);<br />
+    }</p>
+  <p>Приведенный выше код опрашивает клавиатуру на предмет нажатия клавиши F1, и если она нажата, то на странице открывается оверлей <span class="notranslate">Steam</span> для игрового контента, используя идентификатор приложения, сохраненный в глобальной переменной.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <div class="footer">
+    <div class="buttons">
+      <div class="clear">
+        <div style="float:left">Назад: <a href="Steam_Overlay.htm">Накладка на пар</a></div>
+        <div style="float:right">Следующий: <a href="steam_activate_overlay_user.htm"><span class="notranslate">steam_activate_overlay_user</span></a></div>
+      </div>
+    </div>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
+  </div>
+  <!-- KEYWORDS
+steam_activate_overlay_store
+-->
+  <!-- TAGS
+steam_activate_overlay_store
+-->
+</body>
+</html>

@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>path_shift</title>
+  <title>сдвиг_пути</title>
   <meta name="generator" content="Adobe RoboHelp 2019" />
   <link rel="stylesheet" href="../../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page explaining the function path_shift" />
   <meta name="rh-index-keywords" content="path_shift" />
@@ -14,54 +14,53 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>path_shift</h1>
-  <p>With this function you can shift a path along the horizontal and vertical axis. Please note that this will have no visible effect in-game if the instance following the path being shifted follows it relatively (rather than absolutely) as the path&#39;s
-    position is disregarded then. <strong>This function changes the actual path asset</strong>, and so will permanently affect how the path is used by all instances in the game from the moment the function is used until the end of the game. If this is
-    not what you require, then you should use a function like <span class="inline"><a href="path_duplicate.htm">path_duplicate()</a></span> to create a copy of the path first, then call this function on the duplicated asset (don&#39;t forget to call
-    <span
-      class="inline"><a href="path_delete.htm">path_delete()</a></span> on the asset when it is no longer required).</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <h1>сдвиг_пути</h1>
+  <p>С помощью этой функции можно сдвинуть путь по горизонтальной и вертикальной оси. Обратите внимание, что это не будет иметь видимого эффекта в игре, если экземпляр, следующий за смещаемым путем, следует за ним относительно (а не абсолютно), так как в этом случае его
+    позиция пути в этом случае не учитывается. <strong>Эта функция изменяет фактический актив пути</strong> и, таким образом, постоянно влияет на то, как этот путь используется всеми экземплярами в игре с момента использования функции до конца игры. Если это
+    это не то, что вам нужно, то вам следует использовать функцию типа <span class="inline"><a href="path_duplicate.htm">path_duplicate()</a></span>, чтобы сначала создать копию пути, а затем вызвать эту функцию на дублированном активе (не забудьте вызвать
+    <span class="inline"><a href="path_delete.htm">path_delete()</a></span> на активе, когда он больше не нужен).</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
   <p class="code">path_shift(index, xshift, yshift);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th><th>Type</th>
-        <th>Description</th>
+        <th>Аргумент</th><th>Тип</th>
+        <th>Описание</th>
      </tr>
       <tr>
-        <td>index</td><td><span data-keyref="Type_Asset_Path"></span></td>
-        <td>The index of the path to change.</td>
+        <td><span class="notranslate">index</span></td><td><span data-keyref="Type_Asset_Path"></span></td>
+        <td><span class="notranslate">The index of the path to change.</span></td>
      </tr>
       <tr>
-        <td>xshift</td><td><span data-keyref="Type_Real"></span></td>
-        <td>The number of horizontal pixels to shift the path. Negative=left, positive=right.</td>
+        <td><span class="notranslate">xshift</span></td><td><span data-keyref="Type_Real"></span></td>
+        <td><span class="notranslate">The number of horizontal pixels to shift the path. Negative=left, positive=right.</span></td>
      </tr>
       <tr>
-        <td>yshift</td><td><span data-keyref="Type_Real"></span></td>
-        <td>The number of vertical pixels to shift the path. Negative=up, positive=down.</td>
+        <td><span class="notranslate">yshift</span></td><td><span data-keyref="Type_Real"></span></td>
+        <td><span class="notranslate">The number of vertical pixels to shift the path. Negative=up, positive=down.</span></td>
      </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
   <p class="code"><span data-keyref="Type_Void"></span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Пример:</h4>
   <p class="code">my_path = path_duplicate(pth_AI);<br/> path_shift(my_path, 50, 50);<br/> path_start(my_path, 4, path_action_reverse, true);</p>
-  <p>The above code duplicates a path asset and stores its ID value in a variable. This variable is then used to shift the duplicated path position and then the instance starts the path.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Приведенный выше код дублирует актив пути и сохраняет значение его ID в переменной. Затем эта переменная используется для смещения позиции дублированного пути, после чего экземпляр начинает путь.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Path_Manipulation.htm">Path Manipulation</a></div>
-        <div style="float:right">Next: <a href="../Path_Variables/path_index.htm">path_index</a></div>
+        <div style="float:left">Назад: <a href="Path_Manipulation.htm">Манипуляция путями</a></div>
+        <div style="float:right">Следующий: <a href="../Path_Variables/path_index.htm"><span class="notranslate">path_index</span></a></div>
         
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2021 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 path_shift

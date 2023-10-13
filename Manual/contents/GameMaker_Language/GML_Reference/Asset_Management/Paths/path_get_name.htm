@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>path_get_name</title>
+  <title>имя_пути</title>
   <meta name="generator" content="Adobe RoboHelp 2019" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page explaining the function path_get_name" />
   <meta name="rh-index-keywords" content="path_get_name" />
@@ -15,46 +15,45 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>path_get_name</h1>
-  <p>This function will return the name of the path that is referenced as a string. The name is whatever has been used to define the path in the editor or (if the path has been created through a code function) it will return a string with the format &quot;
-    <span
-      class="inline">_newpathXX</span>&quot; where &quot;<span class="inline">XX</span>&quot; is the number of the path generated, starting at 0 and incrementing by one every time a new path is created. Please note that this is <i>only</i> a
-      string and cannot be used to reference the path directly - for that you would need the <i>path index ID</i>. You can, however, use this string to get the <i>path index ID</i> using the returned string along
-      with the function <a href="../Assets_And_Tags/asset_get_index.htm"><span class="inline">asset_get_index()</span></a>.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <h1>имя_пути</h1>
+  <p>Эта функция возвращает имя пути, на который ссылается, в виде строки. Имя будет тем, которое было использовано для определения пути в редакторе, или (если путь был создан через функцию кода) будет возвращена строка с форматом &quot;
+   <span class="inline">_newpathXX</span>&quot;, где &quot;<span class="inline">XX</span>&quot; - это номер созданного пути, начинающийся с 0 и увеличивающийся на единицу при каждом создании нового пути. Обратите внимание, что это <i>только</i> 
+      и не может быть использована для прямой ссылки на путь - для этого вам понадобится <i>идентификатор индекса пути</i>. Однако вы можете использовать эту строку для получения идентификатора <i>индекса пути</i>, используя возвращаемую строку вместе с функцией
+      с функцией <a href="../Assets_And_Tags/asset_get_index.htm"><span class="inline">asset_get_index()</span></a>.</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
   <p class="code">path_get_name(index);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th><th>Type</th>
-        <th>Description</th>
+        <th>Аргумент</th><th>Тип</th>
+        <th>Описание</th>
      </tr>
       <tr>
-        <td>index</td><td><span data-keyref="Type_Asset_Path"></span></td>
-        <td>The index of the path to check.</td>
+        <td><span class="notranslate">index</span></td><td><span data-keyref="Type_Asset_Path"></span></td>
+        <td><span class="notranslate">The index of the path to check.</span></td>
      </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
   <p class="code"><span data-keyref="Type_String"></span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Пример:</h4>
   <p class="code">path_name = path_get_name(path_array[0]);</p>
-  <p>This will set &quot;path_name&quot; to the name of the path indexed in the given array at position 0.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Это установит &quot;path_name&quot; в имя пути, индексированного в данном массиве в позиции 0.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Paths.htm">Paths</a></div>
-        <div style="float:right">Next: <a href="path_get_number.htm">path_get_number</a></div>
+        <div style="float:left">Назад: <a href="Paths.htm">Пути</a></div>
+        <div style="float:right">Следующий: <a href="path_get_number.htm"><span class="notranslate">path_get_number</span></a></div>
         
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2021 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 path_get_name

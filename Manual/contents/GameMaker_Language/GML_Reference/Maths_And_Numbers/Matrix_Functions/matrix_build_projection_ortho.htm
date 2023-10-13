@@ -6,7 +6,7 @@
   <title>matrix_build_projection_ortho</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference page for matrix_build_projection_ortho" />
   <meta name="rh-index-keywords" content="matrix_build_projection_ortho" />
@@ -16,56 +16,56 @@
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
   <h1>matrix_build_projection_ortho</h1>
-  <p>This function builds an orthographic projection matrix based on the specified parameters listed below (this is the default projection method used when you create a room in <span data-keyref="GameMaker Name">GameMaker</span> without changing anything). Sometimes you need to switch from a perspective projection to an orthographic projection which is what this function is for. It is typically used to draw an overlay, for example, to show the score or other aspects as this gives a &quot;flat&quot; view of the elements drawn (ie: no perspective) in a 3D game. See the image below to get an idea of the difference between orthographic and perspective views.</p>
-  <p class="note"><b>NOTE</b>: You may also need to temporarily switch off hidden surface removal if you want the information to be drawn regardless of the current depth value.</p>
+  <p>Эта функция строит матрицу ортографической проекции на основе указанных ниже параметров (это метод проекции по умолчанию, используемый при создании комнаты в <span data-keyref="GameMaker Name">GameMaker</span> без каких-либо изменений). Иногда требуется переключиться с перспективной проекции на ортографическую, для чего и предназначена эта функция. Обычно она используется для рисования наложения, например, для отображения счета или других аспектов, поскольку это дает &quot;плоский&quot; вид нарисованных элементов (т.е. без перспективы) в 3D-игре. Чтобы получить представление о разнице между ортографическим и перспективным видами, смотрите рисунок ниже.</p>
+  <p class="note"><b>ПРИМЕЧАНИЕ</b>: Вам также может понадобиться временно отключить удаление скрытых поверхностей, если вы хотите, чтобы информация рисовалась независимо от текущего значения глубины.</p>
   <p><img alt="Ortho prjection matrix  example" class="center" src="../../../../assets/Images/Scripting_Reference/GML/Reference/Maths/ortho_persp_image.png" /></p>
-  <h4>Syntax:</h4>
+  <h4>Синтаксис:</h4>
   <p class="code">matrix_build_projection_ortho(width, height, znear, zfar);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th><th>Type</th>
-        <th>Description</th>
+        <th>Аргумент</th><th>Тип</th>
+        <th>Описание</th>
      </tr>
       <tr>
-        <td>w</td><td><span data-keyref="Type_Real"></span></td>
-        <td>The width of the projection.</td>
+        <td><span class="notranslate">w</span></td><td><span data-keyref="Type_Real"></span></td>
+        <td><span class="notranslate">The width of the projection.</span></td>
      </tr>
       <tr>
-        <td>h</td><td><span data-keyref="Type_Real"></span></td>
-        <td>The height of the projection.</td>
+        <td><span class="notranslate">h</span></td><td><span data-keyref="Type_Real"></span></td>
+        <td><span class="notranslate">The height of the projection.</span></td>
      </tr>
       <tr>
-        <td>znear</td><td><span data-keyref="Type_Real"></span></td>
-        <td>The near clipping plane.</td>
+        <td><span class="notranslate">znear</span></td><td><span data-keyref="Type_Real"></span></td>
+        <td><span class="notranslate">The near clipping plane.</span></td>
      </tr>
       <tr>
-        <td>zfar</td><td><span data-keyref="Type_Real"></span></td>
-        <td>The far clipping plane.</td>
+        <td><span class="notranslate">zfar</span></td><td><span data-keyref="Type_Real"></span></td>
+        <td><span class="notranslate">The far clipping plane.</span></td>
      </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
   <p class="code"><span data-keyref="Type_Array_Matrix">Matrix Array</span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Пример:</h4>
   <p class="code">viewmat = matrix_build_lookat(640, 240, -10, 640, 240, 0, 0, 1, 0);<br />
     projmat = matrix_build_projection_ortho(640, 480, 1.0, 32000.0);<br />
     camera_set_view_mat(view_camera[0], viewmat);<br />
     camera_set_proj_mat(view_camera[0], projmat);</p>
-  <p>The above code creates a new look-at matrix and orthographic matrix, stores their IDs in local variables and then uses them to set the view and projection matrices for the camera assigned to view port[0].</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Приведенный выше код создает новую матрицу взгляда и ортографическую матрицу, сохраняет их идентификаторы в локальных переменных, а затем использует их для установки матриц вида и проекции для камеры, назначенной на порт вида[0].</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Matrix_Functions.htm">Matrix Functions</a></div>
-        <div style="float:right">Next: <a href="matrix_build_projection_perspective.htm">matrix_build_projection_perspective</a></div>
+        <div style="float:left">Назад: <a href="Matrix_Functions.htm">Матричные функции</a></div>
+        <div style="float:right">Следующий: <a href="matrix_build_projection_perspective.htm"><span class="notranslate">matrix_build_projection_perspective</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 matrix_build_projection_ortho

@@ -6,7 +6,7 @@
   <title>sprite_get_speed_type</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page explaining the function 
 sprite_get_speed_type" />
@@ -17,7 +17,7 @@ sprite_get_speed_type" />
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
   <h1>sprite_get_speed_type</h1>
-  <p>This function can be used to retrieve the sprite animation type as defined for the sprite resource in the <a href="../../../../../The_Asset_Editors/Sprites.htm">Sprite Editor</a>. The value returned will be one of the following constants:</p>
+  <p>Эта функция может быть использована для получения типа анимации <span class="notranslate">sprite</span>, определенного для ресурса <span class="notranslate">sprite</span> в <a href="../../../../../The_Asset_Editors/Sprites.htm">редакторе спрайтов</a>. Возвращаемое значение будет одной из следующих констант:</p>
   <table>
     <colgroup>
       <col />
@@ -25,64 +25,64 @@ sprite_get_speed_type" />
     </colgroup>
     <tbody>
       <tr>
-        <th colspan="2"><span data-keyref="Type_Constant_Sprite_Speed"><a data-rhwidget="HyperlinkPopover" href="../../../../../../GameMaker_Language/GML_Reference/Asset_Management/Sprites/Sprite_Information/sprite_get_speed_type.htm">Sprite Speed Constant</a></span></th>
+        <th colspan="2"><span data-keyref="Type_Constant_Sprite_Speed"><a data-rhwidget="HyperlinkPopover" href="../../../../../../GameMaker_Language/GML_Reference/Asset_Management/Sprites/Sprite_Information/sprite_get_speed_type.htm">Постоянная скорости спрайта</a></span></th>
       </tr>
       <tr>
-        <th>Constant</th>
-        <th>Description</th>
+        <th>Постоянная</th>
+        <th>Описание</th>
       </tr>
       <tr>
-        <td><span class="inline">spritespeed_framespersecond</span></td>
-        <td>The sprite was defined with animation in <i>frames per second</i>.</td>
+        <td><span class="notranslate"><span class="inline">spritespeed_framespersecond</span></td>
+        <td>На сайте <span class="notranslate">sprite</span> была определена анимация в <i>кадрах в секунду</i>.</td>
       </tr>
       <tr>
-        <td><span class="inline">spritespeed_framespergameframe</span></td>
-        <td>The sprite was defined with in animation in <i>frames per game frame</i>.</td>
+        <td><span class="notranslate"><span class="inline">spritespeed_framespergameframe</span></td>
+        <td>На сайте <span class="notranslate">sprite</span> была определена анимация в <i>кадрах на один игровой кадр</i>.</td>
       </tr>
     </tbody>
   </table>
-  <p>The following two examples illustrate the difference this can make when calculating animation speeds for the sprite:</p>
+  <p>Следующие два примера иллюстрируют разницу, которую это может внести при расчете скорости анимации для спрайта:</p>
   <ul class="colour">
-    <li>If you have a sprite that draws 1 frame per <i>second</i> and set the image speed to 0.5 it will draw at 0.5 frames per second. If your game frame rate is 60 frames per second then the sprite will draw 1 frame for every 120 game frames.</li>
-    <li>If you have a sprite that draws 1 frame per <i>game frame</i> and set the image speed to 0.5 it will draw 0.5 frames per game frame. If your game frame rate is 60 frames per second then the sprite will draw 30 frames for every 60 game frames.</li>
+    <li>Если у вас есть <span class="notranslate">sprite</span>, который рисует 1 кадр в <i>секунду</i>, а скорость изображения установлена на 0,5, он будет рисовать со скоростью 0,5 кадра в секунду. Если частота кадров в игре составляет 60 кадров в секунду, то <span class="notranslate">sprite</span> будет рисовать 1 кадр на каждые 120 игровых кадров.</li>
+    <li>Если у вас есть <span class="notranslate">sprite</span>, который рисует 1 кадр в <i>игровом кадре</i>, а скорость изображения установлена на 0,5, то он будет рисовать 0,5 кадра в игровом кадре. Если частота кадров в игре составляет 60 кадров в секунду, то <span class="notranslate">sprite</span> будет рисовать 30 кадров на каждые 60 игровых кадров.</li>
   </ul>
-  <p>You can find out what the speed value used for the sprite animation was using the function <a href="sprite_get_speed.htm"><span class="inline">sprite_get_speed()</span></a>, and you can set the animation speed <i>and</i> type using the function <a href="../Sprite_Manipulation/sprite_set_speed.htm"><span class="inline">sprite_set_speed()</span></a>.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p>Вы можете узнать, какое значение скорости использовалось для анимации <span class="notranslate">sprite</span>, с помощью функции <a href="sprite_get_speed.htm"><span class="inline">sprite_get_speed()</span></a>, а установить скорость <i>и</i> тип анимации можно с помощью функции <a href="../Sprite_Manipulation/sprite_set_speed.htm"><span class="inline">sprite_set_speed()</span></a>.</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
   <p class="code">sprite_get_speed_type(index)</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Аргумент</th>
+        <th>Тип</th>
+        <th>Описание</th>
       </tr>
       <tr>
-        <td>index</td>
-        <td><span data-keyref="Type_Asset_Sprite"><a data-rhwidget="HyperlinkPopover" href="../../../../../../The_Asset_Editors/Sprites.htm">Sprite Asset</a></span></td>
-        <td>The index of the sprite to get the animation type of</td>
+        <td><span class="notranslate">index</span></td>
+        <td><span data-keyref="Type_Asset_Sprite"><a data-rhwidget="HyperlinkPopover" href="../../../../../../The_Asset_Editors/Sprites.htm">Актив спрайта</a></span></td>
+        <td><span class="notranslate">The index of the sprite to get the animation type of</span></td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
   <p class="code"><span data-keyref="Type_Constant_Sprite_Speed"><a data-rhwidget="HyperlinkPopover" href="../../../../../../GameMaker_Language/GML_Reference/Asset_Management/Sprites/Sprite_Information/sprite_get_speed_type.htm">Sprite Speed Constant</a></span> (see above)</p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Пример:</h4>
   <p class="code">s_speed = sprite_get_speed(sprite_index);<br />
     s_type = sprite_get_speed_type(sprite_index);</p>
-  <p>The above code gets the sprite speed and the sprite animation type and stores them in instance variables for future use.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Приведенный выше код получает скорость <span class="notranslate">sprite</span> и тип анимации <span class="notranslate">sprite</span> и сохраняет их в переменных экземпляра для дальнейшего использования.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Sprite_Information.htm">Sprite Information</a></div>
-        <div style="float:right">Next: <a href="sprite_get_width.htm">sprite_get_width</a></div>
+        <div style="float:left">Назад: <a href="Sprite_Information.htm">Информация о спрайте</a></div>
+        <div style="float:right">Следующий: <a href="sprite_get_width.htm"><span class="notranslate">sprite_get_width</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 sprite_get_speed_type

@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>room_instance_clear</title>
+  <title>комната_инстанция_очистить</title>
   <meta name="generator" content="Adobe RoboHelp 2019" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page outlining the function room_instance_clear" />
   <meta name="rh-index-keywords" content="room_instance_clear" />
@@ -15,43 +15,43 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>room_instance_clear</h1>
-  <p>This function will clear a room of all instances (no destroy events shall be called for the instances that are being removed). Note that calling this function on a room asset created in the Asset Browser <strong>will permanently clear the room of instances</strong>,
-    and even calling <span class="inline">game_restart()</span> will not return the room to it&#39;s original state (only ending the game and opening it again will start with the room in its original state again).</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <h1>комната_инстанция_очистить</h1>
+  <p>Эта функция очистит комнату от всех экземпляров (для удаляемых экземпляров не должны вызываться события уничтожения). Обратите внимание, что вызов этой функции на активе комнаты, созданном в браузере активов, <strong>навсегда очистит комнату от экземпляров</strong>,
+    и даже вызов <span class="inline">game_restart()</span> не вернет комнату в исходное состояние (только завершение игры и ее повторное открытие вернет комнату в исходное состояние).</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
   <p class="code">room_instance_clear(index);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th><th>Type</th>
-        <th>Description</th>
+        <th>Аргумент</th><th>Тип</th>
+        <th>Описание</th>
      </tr>
       <tr>
-        <td>index</td><td><span data-keyref="Type_Asset_Room"></span></td>
-        <td>The index of the room to clear all instances in.</td>
+        <td><span class="notranslate">index</span></td><td><span data-keyref="Type_Asset_Room"></span></td>
+        <td><span class="notranslate">The index of the room to clear all instances in.</span></td>
      </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
   <p class="code"><span data-keyref="Type_Void"></span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Пример:</h4>
   <p class="code">global.rm = room_add();<br/> room_assign(rm_Base, global.rm);<br/> room_instance_clear(global.rm);
   </p>
-  <p>The above code will add a new room to the game and then copy the contents of the room indexed as &quot;rm_Base&quot; into it. It will then clear all instances from this new room.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Приведенный выше код добавит в игру новую комнату, а затем скопирует в нее содержимое комнаты, проиндексированной как &quot;rm_Base&quot;. Затем он очистит все экземпляры из этой новой комнаты.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Rooms.htm">Rooms</a></div>
-        <div style="float:right">Next: <a href="room_set_height.htm">room_set_height</a></div>
+        <div style="float:left">Назад: <a href="Rooms.htm">Номера</a></div>
+        <div style="float:right">Следующий: <a href="room_set_height.htm"><span class="notranslate">room_set_height</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2021 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 room_instance_clear

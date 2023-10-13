@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>layer_sprite_index</title>
+  <title>индекс_слоя</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page outlining the function layer_sprite_index" />
   <meta name="rh-index-keywords" content="layer_sprite_index" />
@@ -14,50 +14,50 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>layer_sprite_index</h1>
-  <p>This function can be used to set the image index of a sprite asset which has multiple sub-images on a layer. You give the sprite element ID (which you get when you create a sprite element using <a href="layer_sprite_create.htm"><span class="inline">layer_sprite_create()</span></a> or when you use the function <a href="layer_sprite_get_id.htm"><span class="inline">layer_sprite_get_id()</span></a>), and then set the image index to use. If you set a value outside of the range of sub-images, then the image index will loop around.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <h1>индекс_слоя</h1>
+  <p>Эта функция может быть использована для установки индекса изображения в активе <span class="notranslate">sprite</span>, который имеет несколько суб-изображений на слое. Вы задаете идентификатор элемента <span class="notranslate">sprite</span> (который вы получаете при создании элемента <span class="notranslate">sprite</span> с помощью функции <a href="layer_sprite_create.htm"><span class="inline">layer_sprite_create()</span></a> или при использовании функции <a href="layer_sprite_get_id.htm"><span class="inline">layer_sprite_get_id()</span></a>), а затем задаете индекс изображения для использования. Если вы зададите значение вне диапазона суб-изображений, то индекс изображения будет зацикливаться.</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
   <p class="code">layer_sprite_index(sprite_element_id, image_index);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Аргумент</th>
+        <th>Тип</th>
+        <th>Описание</th>
       </tr>
       <tr>
-        <td>sprite_element_id</td>
-        <td><span data-keyref="Type_ID_Element_Sprite">Sprite Asset</span></td>
-        <td>The unique ID value of the sprite element to set</td>
+        <td><span class="notranslate">sprite_element_id</span></td>
+        <td><span data-keyref="Type_ID_Element_Sprite">Актив спрайта</span></td>
+        <td><span class="notranslate">The unique ID value of the sprite element to set</span></td>
       </tr>
       <tr>
-        <td>index</td>
-        <td><span data-keyref="Type_Real">Real</span></td>
-        <td>The image index to use for the sprite</td>
+        <td><span class="notranslate">index</span></td>
+        <td><span data-keyref="Type_Real">Реально</span></td>
+        <td><span class="notranslate">The image index to use for the sprite</span></td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
   <p class="code"><span data-keyref="Type_Void">N/A</span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Пример:</h4>
   <p class="code">var lay_id = layer_get_id(&quot;sprite_trees&quot;);<br />
     var spr_id = layer_sprite_get_id(lay_id, &quot;gfc_trees&quot;);<br />
     layer_sprite_index(spr_id, 1);</p>
-  <p>The above code will get the layer ID for the layer named &quot;sprite_trees&quot; and then use that to get the ID of the given sprite element on that layer. This ID is then used to change the element image index.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Приведенный выше код получит идентификатор слоя с именем &quot;sprite_trees&quot;, а затем использует его для получения идентификатора заданного элемента <span class="notranslate">sprite</span> на этом слое. Этот идентификатор затем используется для изменения индекса изображения элемента.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Sprite_Layers.htm">Sprite Layers</a></div>
-        <div style="float:right">Next: <a href="layer_sprite_speed.htm">layer_sprite_speed</a></div>
+        <div style="float:left">Назад: <a href="Sprite_Layers.htm">Слои спрайта</a></div>
+        <div style="float:right">Следующий: <a href="layer_sprite_speed.htm"><span class="notranslate">layer_sprite_speed</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 layer_sprite_index

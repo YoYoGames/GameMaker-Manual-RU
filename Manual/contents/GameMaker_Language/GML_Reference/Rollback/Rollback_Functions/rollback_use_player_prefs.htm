@@ -7,7 +7,7 @@
   <title>rollback_use_player_prefs</title>
   <meta name="topic-status" content="Draft" />
   <link rel="stylesheet" type="text/css" href="../../../../assets/css/default.css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="template" content="../../../../assets/masterpages/Manual_Keyword_Page.htt" />
   <meta name="rh-authors" content="Gurpreet S. Matharoo" />
   <meta name="topic-comment" content="Reference page for rollback_use_player_prefs" />
@@ -17,13 +17,13 @@
 </head>
 <body>
   <h1>rollback_use_player_prefs</h1>
-  <p>This function enables player preferences, and allows you to set the default preferences for all players.</p>
-  <p>The default preferences can be of any type. If you don&#39;t specify default preferences, then all players need to have <a href="rollback_set_player_prefs.htm">preferences set</a> before the game can start.</p>
-  <p>Calling this function will disable auto-start, so you have to <a href="rollback_start_game.htm">start the game</a> manually. See: <a data-xref="{text}" href="../Rollback_System.htm#h4">Manual vs. Auto Start</a></p>
-  <p>If used, this function must run before the <a href="rollback_join_game.htm">join</a>/<a href="rollback_create_game.htm">create</a> function.</p>
-  <p>Please read: <a data-xref="{title}" href="../Rollback_Preferences.htm">Player Preferences</a></p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p>Эта функция включает предпочтения игроков и позволяет установить предпочтения по умолчанию для всех игроков.</p>
+  <p>Настройки по умолчанию могут быть любого типа. Если вы не укажете предпочтения по умолчанию, то все игроки должны иметь <a href="rollback_set_player_prefs.htm">установленные предпочтения</a> перед началом игры.</p>
+  <p>Вызов этой функции отключает автозапуск, поэтому вам придется <a href="rollback_start_game.htm">запускать игру</a> вручную. См: <a data-xref="{text}" href="../Rollback_System.htm#h4">Ручной и автоматический запуск</a></p>
+  <p>Если используется, эта функция должна выполняться до функции <a href="rollback_join_game.htm">join/create</a>.</p>
+  <p>Пожалуйста, прочитайте: <a data-xref="{title}" href="../Rollback_Preferences.htm">Предпочтения игрока</a></p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
   <p class="code">rollback_use_player_prefs([default]);</p>
   <table>
     <colgroup>
@@ -33,37 +33,37 @@
     </colgroup>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Аргумент</th>
+        <th>Тип</th>
+        <th>Описание</th>
       </tr>
       <tr>
-        <td>default</td>
-        <td><span data-keyref="Type_Any"><a href="../../../../../GameMaker_Language/GML_Overview/Data_Types.htm#variable" target="_blank">Any</a></span></td>
-        <td><span class="optional">OPTIONAL</span> The default preferences to set for all players.</td>
+        <td><span class="notranslate">default</span></td>
+        <td><span data-keyref="Type_Any"><a href="../../../../../GameMaker_Language/GML_Overview/Data_Types.htm#variable" target="_blank">Любой</a></span></td>
+        <td><span class="notranslate"><span class="optional">OPTIONAL</span> Предпочтения по умолчанию, устанавливаемые для всех игроков.</td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
   <p class="code"><span data-keyref="Type_Void">N/A</span></p>
-  <p> </p>
-  <h4>Example:</h4>
-  <p class="code" id="p">rollback_use_player_prefs({<br />
-        character: 0,<br />
-        color: c_white<br />
+  <p> </p>
+  <h4>Пример:</h4>
+  <p class="code" id="p">rollback_use_player_prefs({<br>
+        символ: 0,<br>
+        цвет: c_белый<br>
     });</p>
-  <p>The above code enables player preferences, and sets the default preferences in a struct.</p>
-  <p> </p>
-  <p> </p>
+  <p>Приведенный выше код включает предпочтения игрока и устанавливает предпочтения по умолчанию в struct.</p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div>Back: <a data-xref="{title}" href="Rollback_Functions.htm">Rollback Functions</a></div>
-        <div>Next: <a data-xref="{title}" href="rollback_set_player_prefs.htm">rollback_set_player_prefs</a></div>
+        <div>Назад: <a data-xref="{title}" href="Rollback_Functions.htm">Функции отката</a></div>
+        <div>Далее: <a data-xref="{title}" href="rollback_set_player_prefs.htm">rollback_set_player_prefs</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 rollback_use_player_prefs

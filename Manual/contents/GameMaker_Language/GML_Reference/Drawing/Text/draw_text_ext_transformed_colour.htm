@@ -6,7 +6,7 @@
   <title>draw_text_ext_transformed_colour</title>
   <meta name="generator" content="Adobe RoboHelp 2019" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference page for draw_text_ext_transformed_colour" />
   <meta name="rh-index-keywords" content="draw_text_ext_transformed_colour,draw_text_ext_transformed_color" />
@@ -16,95 +16,95 @@
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
   <h1>draw_text_ext_transformed_colour</h1>
-  <p>This function is a combination of the base <a href="draw_text.htm"><span class="inline">draw_text</span><span class="inline">()</span><span class="inline"></span></a> function with the <a href="draw_text_ext.htm"><span class="inline">draw_text_ext</span><span class="inline">()</span><span class="inline"></span></a>, <a href="draw_text_transformed.htm"><span class="inline">draw_text_transformed</span><span class="inline">()</span><span class="inline"></span></a>    and <a href="draw_text_colour.htm"><span class="inline">draw_text_colour</span><span class="inline">()</span><span class="inline"></span></a> functions. As such, this is the most general of all functions for drawing text and gives a large amount of flexibility when drawing. Note that the &quot;width&quot;
-    argument is based on a scale of 1, so if the scale is different, this value should be changed proportionally. For example, if the base width for a line break is 300 and you set the scale to 2, then the text will appear wrong, over-running the given
-    width. Instead you should have set the width to 150 to compensate the scaling.</p>
-  <p class="note"><b>NOTE</b>: Gradient blending is not available for the HTML5 target unless WebGL is enabled, although you can still set the blending colours and it will blend the font with the first given colour. However all blending in this way creates a duplicate
-    font which is then stored in the cache and used when required, which is far from optimal and if you use multiple colour changes it will slow down your games performance. You can set the font cache size to try and limit this should it be necessary
-    using the function <a href="../../Asset_Management/Fonts/font_set_cache_size.htm"><span class="inline">font_set_cache_size()</span></a>.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p>Эта функция представляет собой комбинацию базовой <a href="draw_text.htm"><span class="inline">draw_text</span><span class="inline">()</span><span class="inline"></span></a> функции с <a href="draw_text_ext.htm"><span class="inline">draw_text_ext</span><span class="inline">()</span><span class="inline"></span></a>, <a href="draw_text_transformed.htm"><span class="inline">draw_text_transformed</span><span class="inline">()</span><span class="inline"></span></a>    и <a href="draw_text_colour.htm"><span class="inline">draw_text_colour</span><span class="inline">()</span><span class="inline"></span></a> функциями. Как таковая, это наиболее общая из всех функций для рисования текста и дает большую гибкость при рисовании. Обратите внимание, что аргумент &quot;ширина&quot;
+    основан на масштабе, равном 1, поэтому если масштаб другой, это значение должно быть изменено пропорционально. Например, если базовая ширина для переноса строки равна 300, а масштаб установлен на 2, то текст будет выглядеть неправильно, выходя за заданную
+    ширину. Вместо этого вам следовало бы установить ширину 150, чтобы компенсировать масштабирование.</p>
+  <p class="note"><b>ПРИМЕЧАНИЕ</b>: Градиентное смешивание недоступно для HTML5, если не включен WebGL, хотя вы все равно можете задать цвета смешивания, и шрифт будет смешиваться с первым заданным цветом. Однако при таком смешивании создается дубликат
+    шрифта, который затем сохраняется в кэше и используется по мере необходимости, что далеко не оптимально, а если вы используете многократное изменение цвета, это замедлит производительность вашей игры. Вы можете установить размер кэша шрифтов, чтобы попытаться ограничить это в случае необходимости
+    используя функцию <a href="../../Asset_Management/Fonts/font_set_cache_size.htm"><span class="inline">font_set_cache_size()</span></a>.</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
   <p class="code">draw_text_ext_transformed_colour(x, y, string, sep, w, xscale, yscale, angle, c1, c2, c3, c4, alpha);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th><th>Type</th>
-        <th>Description</th>
+        <th>Аргумент</th><th>Тип</th>
+        <th>Описание</th>
      </tr>
       <tr>
-        <td>x</td><td><span data-keyref="Type_Real"></span></td>
-        <td>The x coordinate of the drawn string.</td>
+        <td><span class="notranslate">x</span></td><td><span data-keyref="Type_Real"></span></td>
+        <td><span class="notranslate">The x coordinate of the drawn string.</span></td>
      </tr>
       <tr>
-        <td>y</td><td><span data-keyref="Type_Real"></span></td>
-        <td>The y coordinate of the drawn string.</td>
+        <td><span class="notranslate">y</span></td><td><span data-keyref="Type_Real"></span></td>
+        <td><span class="notranslate">The y coordinate of the drawn string.</span></td>
      </tr>
       <tr>
-        <td>string</td><td><span data-keyref="Type_String"></span></td>
-        <td>The string to draw.</td>
+        <td><span class="notranslate">string</span></td><td><span data-keyref="Type_String"></span></td>
+        <td><span class="notranslate">The string to draw.</span></td>
      </tr>
       <tr>
-        <td>sep</td><td><span data-keyref="Type_Real"></span></td>
-        <td>The distance in pixels between lines of text.</td>
+        <td><span class="notranslate">sep</span></td><td><span data-keyref="Type_Real"></span></td>
+        <td><span class="notranslate">The distance in pixels between lines of text.</span></td>
      </tr>
       <tr>
-        <td>w</td><td><span data-keyref="Type_Real"></span></td>
-        <td>The maximum width in pixels of the string before a line break.</td>
+        <td><span class="notranslate">w</span></td><td><span data-keyref="Type_Real"></span></td>
+        <td><span class="notranslate">The maximum width in pixels of the string before a line break.</span></td>
      </tr>
       <tr>
-        <td>xscale</td><td><span data-keyref="Type_Real"></span></td>
-        <td>The horizontal scale.</td>
+        <td><span class="notranslate">xscale</span></td><td><span data-keyref="Type_Real"></span></td>
+        <td><span class="notranslate">The horizontal scale.</span></td>
      </tr>
       <tr>
-        <td>yscale</td><td><span data-keyref="Type_Real"></span></td>
-        <td>The vertical scale.</td>
+        <td><span class="notranslate">yscale</span></td><td><span data-keyref="Type_Real"></span></td>
+        <td><span class="notranslate">The vertical scale.</span></td>
      </tr>
       <tr>
-        <td>angle</td><td><span data-keyref="Type_Real"></span></td>
-        <td>The angle of the text.</td>
+        <td><span class="notranslate">angle</span></td><td><span data-keyref="Type_Real"></span></td>
+        <td><span class="notranslate">The angle of the text.</span></td>
      </tr>
       <tr>
-        <td>c1</td><td><span data-keyref="Type_Constant_Colour"></span></td>
-        <td>The colour for the top left of the drawn text.</td>
+        <td><span class="notranslate">c1</span></td><td><span data-keyref="Type_Constant_Colour"></span></td>
+        <td><span class="notranslate">The colour for the top left of the drawn text.</span></td>
      </tr>
       <tr>
-        <td>c2</td><td><span data-keyref="Type_Constant_Colour"></span></td>
-        <td>The colour for the top right of the drawn text.</td>
+        <td><span class="notranslate">c2</span></td><td><span data-keyref="Type_Constant_Colour"></span></td>
+        <td><span class="notranslate">The colour for the top right of the drawn text.</span></td>
      </tr>
       <tr>
-        <td>c3</td><td><span data-keyref="Type_Constant_Colour"></span></td>
-        <td>The colour for the bottom right of the drawn text.</td>
+        <td><span class="notranslate">c3</span></td><td><span data-keyref="Type_Constant_Colour"></span></td>
+        <td><span class="notranslate">The colour for the bottom right of the drawn text.</span></td>
      </tr>
       <tr>
-        <td>c4</td><td><span data-keyref="Type_Constant_Colour"></span></td>
-        <td>The colour for the bottom left of the drawn text.</td>
+        <td><span class="notranslate">c4</span></td><td><span data-keyref="Type_Constant_Colour"></span></td>
+        <td><span class="notranslate">The colour for the bottom left of the drawn text.</span></td>
      </tr>
       <tr>
-        <td>alpha</td><td><span data-keyref="Type_Real"></span></td>
-        <td>The alpha for the text.</td>
+        <td><span class="notranslate">alpha</span></td><td><span data-keyref="Type_Real"></span></td>
+        <td><span class="notranslate">The alpha for the text.</span></td>
      </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
   <p class="code"><span data-keyref="Type_Void"></span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Пример:</h4>
   <p class="code">draw_set_halign(fa_center);<br/> draw_set_valign(fa_middle);
     <br/> draw_text_ext_transformed_colour(200, 200, &quot;My name is&quot; + global.name +&quot;.&quot;, 20, 200, 0.5, 0.5, 180, c_blue, c_blue, c_navy, c_navy, 1);</p>
-  <p>This will draw the given text with a blue to dark blue downward gradient, at position (200,200) in the room, rotated to be upside down and at half the normal point size of the font. There will be 20 pixels between each line should there be more than
-    one line drawn and each line will have a maximum width of 200 pixels.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>В результате будет нарисован заданный текст с нисходящим градиентом от синего к темно-синему, в позиции (200,200) в комнате, повернутый вверх ногами и с размером шрифта вдвое меньше обычного. Между каждой линией должно быть 20 пикселей, если нарисовано более
+    одна линия, а максимальная ширина каждой линии составляет 200 пикселей.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Text.htm">Text</a></div>
-        <div style="float:right">Next: <a href="draw_highscore.htm">draw_highscore</a></div>
+        <div style="float:left">Назад: <a href="Text.htm">Текст</a></div>
+        <div style="float:right">Следующий: <a href="draw_highscore.htm"><span class="notranslate">draw_highscore</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2021 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 draw_text_ext_transformed_colour

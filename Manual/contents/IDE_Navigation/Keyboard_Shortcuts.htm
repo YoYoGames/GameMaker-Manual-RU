@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Keyboard Shortcuts</title>
-  <meta name="generator" content="Adobe RoboHelp 2022" />
+  <title>Ярлыки клавиатуры</title>
+  <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../assets/css/default.css" type="text/css" />
-  <script src="../assets/scripts/main_script.js" type="module"></script>
+  <script src="../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page with all the keyboard shortcuts" />
   <meta name="rh-index-keywords" content="IDE Shortcuts,Shortcuts,Keyboard Shortcuts" />
@@ -14,3001 +14,1913 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1><span data-field="title" data-format="default">Keyboard Shortcuts</span></h1>
-  <p>There are a huge number of keyboard shortcuts available for <span data-keyref="GameMaker Name">GameMaker</span>, and although most of them are marked in the IDE next to the menu items that they relate to, not all of them are or are obvious to the user at the start. Here you can find a complete list of all the keyboard shortcuts for an easy reference guide. In general, shortcuts fall into the following three categories: </p>
+  <h1>Ярлыки клавиатуры</h1>
+  <p>В <span data-keyref="GameMaker Name">GameMaker</span> существует огромное количество сочетаний клавиш, и хотя большинство из них отмечены на сайте <span class="notranslate">IDE</span> рядом с пунктами меню, к которым они относятся, не все из них очевидны для пользователя в самом начале. Здесь вы можете найти полный список всех сочетаний клавиш для удобства пользования. В целом, сочетания клавиш делятся на следующие три категории:</p>
   <ul class="colour">
-    <li><strong>Global</strong> - Global shortcuts are those that work no matter where you are in the <span data-keyref="GameMaker Name">GameMaker</span> IDE, unless your focus is on a specific window or gadget which overrides it.</li>
-    <li><strong>Window</strong> - Window shortcuts are those that are specific to a single window or tab, unless a gadget shortcut overrides it.</li>
-    <li><strong>Gadget</strong> - Gadget shortcuts are very specific and will only work when using a single gadget (the colour picker, for example).</li>
+    <li><strong>Глобальные</strong> - Глобальные ярлыки - это те, которые работают независимо от того, где вы находитесь в <span data-keyref="GameMaker Name">GameMaker</span> <span class="notranslate">IDE</span>, если только ваш фокус не находится на определенном окне или гаджете, который его отменяет.</li>
+    <li><strong>Окно</strong> - ярлыки окна - это ярлыки, которые предназначены для одного окна или вкладки, если только ярлык гаджета не отменяет его.</li>
+    <li><strong>Гаджет</strong> - ярлыки гаджетов очень специфичны и работают только при использовании одного гаджета (например, подборщика цветов).</li>
   </ul>
-  <p>Below is the complete list of shortcuts, broken into sections based on editors: </p>
-  <div class="minitoc" data-minitoc-targetid="drop-down13" data-type="minitoc" style="">
-    <p class="minitoc-caption" data-close-text="" data-expanded="true" data-open-text="Contents" data-type="minitoc-caption" href="#" style="">Mini TOC (placeholder)</p>
-    <ol class="minitoc-list" data-from-selector="h2" data-to-selector="h2" data-type="minitoc-list" style="">
-      <li>Heading</li>
-    </ol>
+  <p>Ниже приведен полный список ярлыков, разбитый на разделы по редакторам:</p>
+  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down" href="#">Общая IDE</a></p>
+  <div class="droptext" data-targetname="drop-down">
+    <table>
+      <tbody>
+        <tr>
+          <th>Привязка клавиш Windows</th>
+          <th>Привязка клавиш macOS</th>
+          <th>Область применения</th>
+          <th>Описание</th>
+        </tr>
+        <tr>
+          <td>F1</td>
+          <td>F1</td>
+          <td>Общий</td>
+          <td>Запуск файла справки</td>
+        </tr>
+        <tr>
+          <td>F5</td>
+          <td>F5</td>
+          <td>Общие сведения</td>
+          <td>Запуск текущего проекта с использованием текущих настроек цели</td>
+        </tr>
+        <tr>
+          <td>F6</td>
+          <td>F6</td>
+          <td>Общие сведения</td>
+          <td>Запустите текущий проект с помощью <a href="../IDE_Tools/The_Debugger.htm">отладчика</a></td>
+        </tr>
+        <tr>
+          <td>CTRL + f7</td>
+          <td>CMD + f7</td>
+          <td>Общие сведения</td>
+          <td>Очистка кэша компилятора</td>
+        </tr>
+        <tr>
+          <td>CTRL + f8</td>
+          <td>CMD + f8</td>
+          <td>Общие сведения</td>
+          <td>Создание исполняемого пакета с использованием текущих настроек цели</td>
+        </tr>
+        <tr>
+          <td>CTRL + N</td>
+          <td>CMD + N</td>
+          <td>Общие сведения</td>
+          <td>Откройте начальную страницу</td>
+        </tr>
+        <tr>
+          <td>CTRL + Z</td>
+          <td>CMD + Z</td>
+          <td>Общие сведения</td>
+          <td>Глобальная отмена</td>
+        </tr>
+        <tr>
+          <td>CTRL + Y</td>
+          <td>CMD + Y</td>
+          <td>Общие сведения</td>
+          <td>Глобальная переделка</td>
+        </tr>
+        <tr>
+          <td>CTRL + E</td>
+          <td>CMD + E</td>
+          <td>Общие сведения</td>
+          <td>Экспорт текущего проекта в файл YYZ</td>
+        </tr>
+        <tr>
+          <td>CTRL + S</td>
+          <td>CMD + S</td>
+          <td>Общий</td>
+          <td>Сохранить текущий проект</td>
+        </tr>
+        <tr>
+          <td>CTRL + C</td>
+          <td>CMD + C</td>
+          <td>Общий</td>
+          <td>Копирование выделенного текста из любого места в IDE</td>
+        </tr>
+        <tr>
+          <td>CTRL + INSERT</td>
+          <td>Н/Д</td>
+          <td>Общий</td>
+          <td>Копирование выделенного текста из любого места в IDE</td>
+        </tr>
+        <tr>
+          <td>CTRL + V</td>
+          <td>CMD + V</td>
+          <td>Общие сведения</td>
+          <td>Вставьте текст из буфера обмена в любое место в IDE</td>
+        </tr>
+        <tr>
+          <td>SHIFT + INSERT</td>
+          <td>Н/Д</td>
+          <td>Общий</td>
+          <td>Вставьте текст из буфера обмена в любое место в IDE</td>
+        </tr>
+        <tr>
+          <td>CTRL + X</td>
+          <td>CMD + X</td>
+          <td>Общие сведения</td>
+          <td>Вырезать выделенный текст в любом месте IDE</td>
+        </tr>
+        <tr>
+          <td>SHIFT + DELETE</td>
+          <td>Н/Д</td>
+          <td>Общие сведения</td>
+          <td>Вырезать выделенный текст в любом месте IDE</td>
+        </tr>
+        <tr>
+          <td>CTRL + SHIFT + S</td>
+          <td>CMD + SHIFT + S</td>
+          <td>Общие сведения</td>
+          <td>Сохраните текущий проект, используя &quot;Сохранить как&quot;</td>
+        </tr>
+        <tr>
+          <td>CTRL + O</td>
+          <td>CMD + O</td>
+          <td>Общие сведения</td>
+          <td>Загрузка проекта с диска</td>
+        </tr>
+        <tr>
+          <td>CTRL + F</td>
+          <td>CMD + F</td>
+          <td>Общий</td>
+          <td>Открытый поиск в сценариях</td>
+        </tr>
+        <tr>
+          <td>CTRL + SHIFT + F</td>
+          <td>CMD + SHIFT + F</td>
+          <td>Общие сведения</td>
+          <td>Откройте окно поиска</td>
+        </tr>
+        <tr>
+          <td>CTRL + SHIFT + P</td>
+          <td>CMD + SHIFT + P</td>
+          <td>Общие сведения</td>
+          <td>Откройте окно предпочтений</td>
+        </tr>
+        <tr>
+          <td>CTRL + SHIFT + [Num0 ... Num9]</td>
+          <td>CMD + CTRL + [Num0 ... Num9]</td>
+          <td>Общий</td>
+          <td>Установите или удалите закладку от 0 до 9</td>
+        </tr>
+        <tr>
+          <td>CTRL + [Num0 ... Num9]</td>
+          <td>CMD + [Num0 ... Num9]</td>
+          <td>Общие сведения</td>
+          <td>Переход к закладке от 0 до 9</td>
+        </tr>
+        <tr>
+          <td>CTRL + ALT + Enter</td>
+          <td>CMD + ALT + Enter</td>
+          <td>Общие сведения</td>
+          <td>Панорамирование и масштабирование в текущем активном окне</td>
+        </tr>
+        <tr>
+          <td>CTRL + ALT + Стрелка вверх</td>
+          <td>CMD + ALT + Вверх</td>
+          <td>Общие сведения</td>
+          <td>Переход к следующему окну вверх</td>
+        </tr>
+        <tr>
+          <td>CTRL + ALT + стрелка вниз</td>
+          <td>CMD + ALT + стрелка вниз</td>
+          <td>Общие сведения</td>
+          <td>Переход к следующему окну вниз</td>
+        </tr>
+        <tr>
+          <td>CTRL + ALT + стрелка влево</td>
+          <td>CMD + ALT + стрелка влево</td>
+          <td>Общие сведения</td>
+          <td>Переход к следующему окну слева</td>
+        </tr>
+        <tr>
+          <td>CTRL + ALT + стрелка вправо</td>
+          <td>CMD + ALT + стрелка вправо</td>
+          <td>Общий</td>
+          <td>Переход к следующему окну вправо</td>
+        </tr>
+        <tr>
+          <td>CTRL + ALT + Вверх + Стрелка влево</td>
+          <td>CMD + ALT + Вверх + Стрелка влево</td>
+          <td>Общий</td>
+          <td>Переход к следующему окну вверх и влево</td>
+        </tr>
+        <tr>
+          <td>CTRL + ALT + Вниз + Стрелка влево</td>
+          <td>CMD + ALT + Вниз + Стрелка влево</td>
+          <td>Общий</td>
+          <td>Переход к следующему окну вниз и влево</td>
+        </tr>
+        <tr>
+          <td>CTRL + ALT + Стрелка вверх + Стрелка вправо</td>
+          <td>CMD + ALT + Стрелка вверх + Стрелка вправо</td>
+          <td>Общие сведения</td>
+          <td>Переход к следующему окну вверх и вправо</td>
+        </tr>
+        <tr>
+          <td>CTRL + ALT + Стрелка вниз + Стрелка вправо</td>
+          <td>CMD + ALT + Стрелка вниз + Стрелка вправо</td>
+          <td>Общие сведения</td>
+          <td>Переход к следующему окну вниз и вправо</td>
+        </tr>
+        <tr>
+          <td>ALT + f4</td>
+          <td>ALT + f4</td>
+          <td>Общие сведения</td>
+          <td>Выход из IDE</td>
+        </tr>
+        <tr>
+          <td colspan="4" height="5px">
+            <hr />
+          </td>
+        </tr>
+        <tr>
+          <td>f12</td>
+          <td>f12</td>
+          <td>Доки</td>
+          <td>Развернуть / Свернуть все активные доки в рабочем пространстве (вручную сжатые доки не будут разворачиваться)</td>
+        </tr>
+        <tr>
+          <td>SHIFT + f12</td>
+          <td>SHIFT + f12</td>
+          <td>Доки</td>
+          <td>Принудительное расширение всех доков в рабочем пространстве</td>
+        </tr>
+        <tr>
+          <td colspan="4" height="5px">
+            <hr />
+          </td>
+        </tr>
+        <tr>
+          <td>CTRL + W</td>
+          <td>CMD + W</td>
+          <td>Рабочее пространство</td>
+          <td>Закрыть текущую вкладку</td>
+        </tr>
+        <tr>
+          <td>CTRL + T</td>
+          <td>CMD + T</td>
+          <td>Рабочее пространство</td>
+          <td>Открывает окно <a href="../Setting_Up_And_Version_Information/IDE_Preferences/General/Go_To.htm">Go To</a> для поиска по проекту</td>
+        </tr>
+        <tr>
+          <td>CTRL + Tab</td>
+          <td>CTRL + Tab</td>
+          <td>Рабочее пространство</td>
+          <td>Обзор открытого рабочего пространства</td>
+        </tr>
+        <tr>
+          <td>CTRL + PageUp</td>
+          <td>CMD + PageUp</td>
+          <td>Рабочее пространство</td>
+          <td>Сфокусированное окно следующей вкладки</td>
+        </tr>
+        <tr>
+          <td>CTRL + PageDown</td>
+          <td>CMD + PageDown</td>
+          <td>Рабочее пространство</td>
+          <td>Сфокусированное окно предыдущей вкладки</td>
+        </tr>
+        <tr>
+          <td>CTRL + Enter / Numpad Enter</td>
+          <td>CMD + Enter / Numpad Enter</td>
+          <td>Рабочее пространство</td>
+          <td>Сброс масштаба рабочей области (без анимированного перехода)</td>
+        </tr>
+        <tr>
+          <td>CTRL + Плюс(+) / Numpad Plus</td>
+          <td>CMD + Плюс(+) / Numpad Plus</td>
+          <td>Рабочее пространство</td>
+          <td>Увеличить рабочую область</td>
+        </tr>
+        <tr>
+          <td>CTRL + Минус(-) / Numpad Minus</td>
+          <td>CMD + Минус(-) / Numpad Minus</td>
+          <td>Рабочее пространство</td>
+          <td>Уменьшить масштаб рабочей области</td>
+        </tr>
+        <tr>
+          <td colspan="4" height="5px">
+            <hr />
+          </td>
+        </tr>
+        <tr>
+          <td>f2</td>
+          <td>f2</td>
+          <td>Браузер активов</td>
+          <td>Переименовать выбранный ресурс</td>
+        </tr>
+        <tr>
+          <td>Удалить</td>
+          <td>Удалить</td>
+          <td>Браузер активов</td>
+          <td>Удалить выбранный ресурс(ы)</td>
+        </tr>
+        <tr>
+          <td>ALT + S</td>
+          <td>ALT + S</td>
+          <td>Браузер активов</td>
+          <td>Создайте новый ресурс <span class="notranslate">sprite</span> </td>
+        </tr>
+        <tr>
+          <td>ALT + U</td>
+          <td>ALT + U</td>
+          <td>Браузер активов</td>
+          <td>Создайте новый звуковой ресурс</td>
+        </tr>
+        <tr>
+          <td>ALT + B</td>
+          <td>ALT + B</td>
+          <td>Браузер активов</td>
+          <td>Создайте новый ресурс набора плиток</td>
+        </tr>
+        <tr>
+          <td>АЛТ + П</td>
+          <td>АЛТ + П</td>
+          <td>Браузер активов</td>
+          <td>Создайте новый ресурс пути</td>
+        </tr>
+        <tr>
+          <td>ALT + C</td>
+          <td>ALT + C</td>
+          <td>Браузер активов</td>
+          <td>Создайте новый ресурс сценария</td>
+        </tr>
+        <tr>
+          <td>ALT + A</td>
+          <td>ALT + A</td>
+          <td>Браузер активов</td>
+          <td>Создайте новый ресурс шейдера</td>
+        </tr>
+        <tr>
+          <td>ALT + F</td>
+          <td>ALT + F</td>
+          <td>Браузер активов</td>
+          <td>Создайте новый ресурс шрифта</td>
+        </tr>
+        <tr>
+          <td>АЛТ + Т</td>
+          <td>АЛТ + Т</td>
+          <td>Браузер активов</td>
+          <td>Создайте новый ресурс временной шкалы</td>
+        </tr>
+        <tr>
+          <td>АЛТ + О</td>
+          <td>АЛТ + О</td>
+          <td>Браузер активов</td>
+          <td>Создайте новый ресурс объекта</td>
+        </tr>
+        <tr>
+          <td>ALT + R</td>
+          <td>ALT + R</td>
+          <td>Браузер активов</td>
+          <td>Создайте новый ресурс комнаты</td>
+        </tr>
+        <tr>
+          <td>ALT + I</td>
+          <td>ALT + I</td>
+          <td>Браузер активов</td>
+          <td>Создайте новый включенный ресурс файла данных</td>
+        </tr>
+        <tr>
+          <td>ALT + N</td>
+          <td>ALT + N</td>
+          <td>Браузер активов</td>
+          <td>Создайте новый ресурс заметки</td>
+        </tr>
+        <tr>
+          <td>ALT + E</td>
+          <td>ALT + E</td>
+          <td>Браузер активов</td>
+          <td>Создайте новый ресурс расширения</td>
+        </tr>
+      </tbody>
+    </table>
+    <p> </p>
   </div>
-  <h2>Anim Curve Editor</h2>
-  <table>
-    <tbody>
-      <tr>
-        <th>Windows Key Binding</th>
-        <th>macOS Key Binding</th>
-        <th>Scope</th>
-        <th>Description</th>
-      </tr>
-      <tr>
-        <td>BackSpace</td>
-        <td>Delete</td>
-        <td>Anim Curve Editor</td>
-        <td>Delete the selected point</td>
-      </tr>
-      <tr>
-        <td>CTRL+W</td>
-        <td>CTRL+W</td>
-        <td>Anim Curve Editor</td>
-        <td>Display path</td>
-      </tr>
-      <tr>
-        <td>Escape</td>
-        <td>Escape</td>
-        <td>Anim Curve Editor</td>
-        <td>Cancel</td>
-      </tr>
-      <tr>
-        <td>CTRL+A</td>
-        <td>CMD+A</td>
-        <td>Anim Curve Editor</td>
-        <td>Add a new curve</td>
-      </tr>
-      <tr>
-        <td>CTRL+R</td>
-        <td>CMD+R</td>
-        <td>Anim Curve Editor</td>
-        <td>Set the range on the y axis</td>
-      </tr>
-    </tbody>
-  </table>
-  <h2>Asset Browser</h2>
-  <table>
-    <tbody>
-      <tr>
-        <th>Windows Key Binding</th>
-        <th>macOS Key Binding</th>
-        <th>Scope</th>
-        <th>Description</th>
-      </tr>
-      <tr>
-        <td>CTRL+SHIFT+Left Bracket</td>
-        <td>CTRL+SHIFT+Left Bracket</td>
-        <td>Asset Browser</td>
-        <td>Move items to the bottom</td>
-      </tr>
-      <tr>
-        <td>CTRL+Left Bracket</td>
-        <td>CTRL+Left Bracket</td>
-        <td>Asset Browser</td>
-        <td>Move items down</td>
-      </tr>
-      <tr>
-        <td>CTRL+SHIFT+Right Bracket</td>
-        <td>CTRL+SHIFT+Right Bracket</td>
-        <td>Asset Browser</td>
-        <td>Move items to the top</td>
-      </tr>
-      <tr>
-        <td>CTRL+Right Bracket</td>
-        <td>CTRL+Right Bracket</td>
-        <td>Asset Browser</td>
-        <td>Move items up</td>
-      </tr>
-    </tbody>
-  </table>
-  <h2>Context Menu</h2>
-  <table>
-    <tbody>
-      <tr>
-        <th>Windows Key Binding</th>
-        <th>macOS Key Binding</th>
-        <th>Scope</th>
-        <th>Description</th>
-      </tr>
-      <tr>
-        <td>1</td>
-        <td>1</td>
-        <td>Context Menu</td>
-        <td>Insert a code block snippet<span> </span>at the cursor position</td>
-      </tr>
-      <tr>
-        <td>F9</td>
-        <td>F9</td>
-        <td>Context Menu</td>
-        <td>Toggle breakpoint on the current line</td>
-      </tr>
-      <tr>
-        <td>F1</td>
-        <td>F1</td>
-        <td>Context Menu</td>
-        <td>Open the function/keyword page in the manual</td>
-      </tr>
-      <tr>
-        <td>7</td>
-        <td>7</td>
-        <td>Context Menu</td>
-        <td>Insert a do-until loop snippet at the cursor position</td>
-      </tr>
-      <tr>
-        <td>CTRL+SHIFT+F</td>
-        <td>CMD+SHIFT+F</td>
-        <td>Context Menu</td>
-        <td>Open project-wide Search &amp; Replace</td>
-      </tr>
-      <tr>
-        <td> </td>
-        <td>CMD+Q</td>
-        <td>Context Menu</td>
-        <td>Exit (Mac)</td>
-      </tr>
-      <tr>
-        <td> </td>
-        <td>CMD+SHIFT+P</td>
-        <td>Context Menu</td>
-        <td>File Menu Preferences</td>
-      </tr>
-      <tr>
-        <td>4</td>
-        <td>4</td>
-        <td>Context Menu</td>
-        <td>Insert a for loop snippet at the cursor position</td>
-      </tr>
-      <tr>
-        <td>5</td>
-        <td>5</td>
-        <td>Context Menu</td>
-        <td>Insert a for loop with counter variable snippet at the cursor position</td>
-      </tr>
-      <tr>
-        <td>CTRL+P</td>
-        <td>CTRL+P</td>
-        <td>Context Menu</td>
-        <td>Pan to selected <span data-keyref="GML_Visual">GML Visual</span> action</td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>2</td>
-        <td>Context Menu</td>
-        <td>Insert an if statement snippet at the cursor position</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>3</td>
-        <td>Context Menu</td>
-        <td>Insert an if-else statement snippet at the cursor position</td>
-      </tr>
-      <tr>
-        <td>Insert</td>
-        <td> </td>
-        <td>Context Menu</td>
-        <td>Insert</td>
-      </tr>
-      <tr>
-        <td>C</td>
-        <td>C</td>
-        <td>Context Menu</td>
-        <td>Insert a single line comment snippet at the cursor position</td>
-      </tr>
-      <tr>
-        <td>M</td>
-        <td>M</td>
-        <td>Context Menu</td>
-        <td>Insert a multi-line comment snippet at the cursor position</td>
-      </tr>
-      <tr>
-        <td>R</td>
-        <td>R</td>
-        <td>Context Menu</td>
-        <td>Insert a region snippet at the cursor position</td>
-      </tr>
-      <tr>
-        <td>8</td>
-        <td>8</td>
-        <td>Context Menu</td>
-        <td>Insert a repeat statement snippet at the cursor position</td>
-      </tr>
-      <tr>
-        <td> </td>
-        <td>CMD+F7</td>
-        <td>Context Menu</td>
-        <td>Clean the compiler cache</td>
-      </tr>
-      <tr>
-        <td> </td>
-        <td>CMD+F8</td>
-        <td>Context Menu</td>
-        <td>Create an executable package using the current target settings</td>
-      </tr>
-      <tr>
-        <td>Del</td>
-        <td>Del</td>
-        <td>Context Menu</td>
-        <td>Delete Points</td>
-      </tr>
-      <tr>
-        <td>9</td>
-        <td>9</td>
-        <td>Context Menu</td>
-        <td>Insert a switch statement snippet at the cursor position</td>
-      </tr>
-      <tr>
-        <td>CTRL+K</td>
-        <td>CMD+K</td>
-        <td>Context Menu</td>
-        <td>Comment the selected text</td>
-      </tr>
-      <tr>
-        <td>CTRL+Alt+Down</td>
-        <td>CMD+ALT+Down</td>
-        <td>Context Menu</td>
-        <td>Move the cursor to the next region</td>
-      </tr>
-      <tr>
-        <td>CTRL+Alt+Up</td>
-        <td>CMD+ALT+Up</td>
-        <td>Context Menu</td>
-        <td>Move the cursor to the previous region</td>
-      </tr>
-      <tr>
-        <td>CTRL+Enter</td>
-        <td>CMD+Enter</td>
-        <td>Context Menu</td>
-        <td>Fold/Unfold the current region (works when )</td>
-      </tr>
-      <tr>
-        <td>CTRL+Shift+K</td>
-        <td>CMD+SHIFT+K</td>
-        <td>Context Menu</td>
-        <td>Uncomment selection</td>
-      </tr>
-      <tr>
-        <td>6</td>
-        <td>6</td>
-        <td>Context Menu</td>
-        <td>Insert a while loop snippet at the cursor position</td>
-      </tr>
-      <tr>
-        <td>0</td>
-        <td>0</td>
-        <td>Context Menu</td>
-        <td>Insert a with statement snippet at the cursor position</td>
-      </tr>
-    </tbody>
-  </table>
-  <h2>Errors</h2>
-  <table>
-    <tbody>
-      <tr>
-        <th>Windows Key Binding</th>
-        <th>macOS Key Binding</th>
-        <th>Scope</th>
-        <th>Description</th>
-      </tr>
-      <tr>
-        <td>CTRL+Insert</td>
-        <td>CTRL+Insert</td>
-        <td>Errors</td>
-        <td>Copy the selected compile error message in the Compile Errors window</td>
-      </tr>
-      <tr>
-        <td>CTRL+SHIFT+A</td>
-        <td>CTRL+SHIFT+A</td>
-        <td>Errors</td>
-        <td>Select all compile errors in the Compile Errors window</td>
-      </tr>
-      <tr>
-        <td>CTRL+Insert</td>
-        <td>CTRL+Insert</td>
-        <td>Errors</td>
-        <td>Copy the selected syntax errors in the Syntax Errors window</td>
-      </tr>
-      <tr>
-        <td>CTRL+SHIFT+A</td>
-        <td>CTRL+SHIFT+A</td>
-        <td>Errors</td>
-        <td>Select all syntax errors in the Syntax Errors window</td>
-      </tr>
-    </tbody>
-  </table>
-  <h2>Font Editor</h2>
-  <table>
-    <tbody>
-      <tr>
-        <th>Windows Key Binding</th>
-        <th>macOS Key Binding</th>
-        <th>Scope</th>
-        <th>Description</th>
-      </tr>
-      <tr>
-        <td>CTRL+A</td>
-        <td>CMD+A</td>
-        <td>Font Editor</td>
-        <td>Open the Font Range window</td>
-      </tr>
-      <tr>
-        <td>CTRL+D</td>
-        <td>CMD+D</td>
-        <td>Font Editor</td>
-        <td>Delete the selected range from the font (select the range on the right first)</td>
-      </tr>
-      <tr>
-        <td>CTRL+SHIFT+O</td>
-        <td>CMD+SHIFT+O</td>
-        <td>Font Editor</td>
-        <td>Open the Font Options window</td>
-      </tr>
-      <tr>
-        <td>CTRL+R</td>
-        <td>CMD+R</td>
-        <td>Font Editor</td>
-        <td>Regenerate the font texture</td>
-      </tr>
-      <tr>
-        <td>CTRL+D</td>
-        <td>CMD+D</td>
-        <td>Font Editor</td>
-        <td>Delete the selected range of characters</td>
-      </tr>
-    </tbody>
-  </table>
-  <h2>Global</h2>
-  <table>
-    <tbody>
-      <tr>
-        <th>Windows Key Binding</th>
-        <th>macOS Key Binding</th>
-        <th>Scope</th>
-        <th>Description</th>
-      </tr>
-      <tr>
-        <td>CTRL</td>
-        <td>CMD</td>
-        <td>Global</td>
-        <td>Add to selection</td>
-      </tr>
-      <tr>
-        <td>Escape</td>
-        <td>Escape</td>
-        <td>Global</td>
-        <td>Cancel</td>
-      </tr>
-      <tr>
-        <td>CTRL+F7</td>
-        <td>CMD+F7</td>
-        <td>Global</td>
-        <td>Clean the compiler cache</td>
-      </tr>
-      <tr>
-        <td>CTRL+W</td>
-        <td>CMD+W</td>
-        <td>Global</td>
-        <td>Close the active IDE tab</td>
-      </tr>
-      <tr>
-        <td>CTRL+C</td>
-        <td>CMD+C</td>
-        <td>Global</td>
-        <td>Confirm the creation of the asset(s) of the selected type in the Create Asset window</td>
-      </tr>
-      <tr>
-        <td>CTRL+C</td>
-        <td>CMD+C</td>
-        <td>Global</td>
-        <td>Copy the selected text from anywhere in the IDE</td>
-      </tr>
-      <tr>
-        <td>ALT+J</td>
-        <td>ALT+J</td>
-        <td>Global</td>
-        <td>Create a new animation curve asset</td>
-      </tr>
-      <tr>
-        <td>CTRL+A</td>
-        <td>CMD+A</td>
-        <td>Global</td>
-        <td>Open the Create Asset window</td>
-      </tr>
-      <tr>
-        <td>CTRL+F8</td>
-        <td>CMD+F8</td>
-        <td>Global</td>
-        <td>Create an executable package using the current target settings</td>
-      </tr>
-      <tr>
-        <td>ALT+E</td>
-        <td>ALT+E</td>
-        <td>Global</td>
-        <td>Create a new extension asset</td>
-      </tr>
-      <tr>
-        <td>ALT+F</td>
-        <td>ALT+F</td>
-        <td>Global</td>
-        <td>Create a new font asset</td>
-      </tr>
-      <tr>
-        <td>ALT+N</td>
-        <td>ALT+N</td>
-        <td>Global</td>
-        <td>Create a new note asset</td>
-      </tr>
-      <tr>
-        <td>ALT+O</td>
-        <td>ALT+O</td>
-        <td>Global</td>
-        <td>Create a new object asset</td>
-      </tr>
-      <tr>
-        <td>ALT+P</td>
-        <td>ALT+P</td>
-        <td>Global</td>
-        <td>Create a new path asset</td>
-      </tr>
-      <tr>
-        <td>ALT+I</td>
-        <td>ALT+I</td>
-        <td>Global</td>
-        <td>Open the included files window</td>
-      </tr>
-      <tr>
-        <td>ALT+R</td>
-        <td>ALT+R</td>
-        <td>Global</td>
-        <td>Create a new room asset</td>
-      </tr>
-      <tr>
-        <td>ALT+C</td>
-        <td>ALT+C</td>
-        <td>Global</td>
-        <td>Create a new script asset</td>
-      </tr>
-      <tr>
-        <td>ALT+G</td>
-        <td>ALT+G</td>
-        <td>Global</td>
-        <td>Create a new sequence asset</td>
-      </tr>
-      <tr>
-        <td>ALT+A</td>
-        <td>ALT+A</td>
-        <td>Global</td>
-        <td>Create a new shader asset</td>
-      </tr>
-      <tr>
-        <td>ALT+U</td>
-        <td>ALT+U</td>
-        <td>Global</td>
-        <td>Create a new sound asset</td>
-      </tr>
-      <tr>
-        <td>ALT+S</td>
-        <td>ALT+S</td>
-        <td>Global</td>
-        <td>Create a new sprite asset</td>
-      </tr>
-      <tr>
-        <td>ALT+B</td>
-        <td>ALT+B</td>
-        <td>Global</td>
-        <td>Create a new tile set asset</td>
-      </tr>
-      <tr>
-        <td>ALT+T</td>
-        <td>ALT+T</td>
-        <td>Global</td>
-        <td>Create a new timeline asset</td>
-      </tr>
-      <tr>
-        <td>ALT+K</td>
-        <td>ALT+K</td>
-        <td>Global</td>
-        <td>Create a new particle system asset</td>
-      </tr>
-      <tr>
-        <td>CTRL+X</td>
-        <td>CMD+X</td>
-        <td>Global</td>
-        <td>Cut</td>
-      </tr>
-      <tr>
-        <td>F6</td>
-        <td>F6</td>
-        <td>Global</td>
-        <td>Run the current project using the debugger</td>
-      </tr>
-      <tr>
-        <td>F5</td>
-        <td>F5</td>
-        <td>Global</td>
-        <td>Continue code execution in the debugger</td>
-      </tr>
-      <tr>
-        <td>F11</td>
-        <td>CMD+SHIFT+I</td>
-        <td>Global</td>
-        <td>Step into the current statement or function in the debugger</td>
-      </tr>
-      <tr>
-        <td>SHIFT+F11</td>
-        <td>CMD+SHIFT+U</td>
-        <td>Global</td>
-        <td>Step out of the current statement or function in the debugger</td>
-      </tr>
-      <tr>
-        <td>F10</td>
-        <td>CMD+SHIFT+O</td>
-        <td>Global</td>
-        <td>Step over the current statement in the debugger</td>
-      </tr>
-      <tr>
-        <td>F7</td>
-        <td>F7</td>
-        <td>Global</td>
-        <td>Decrement the text size in all code editors</td>
-      </tr>
-      <tr>
-        <td>Delete</td>
-        <td>Delete</td>
-        <td>Global</td>
-        <td>Delete</td>
-      </tr>
-      <tr>
-        <td>CTRL+PageUp</td>
-        <td>CMD+PageUp</td>
-        <td>Global</td>
-        <td>Go to next tab</td>
-      </tr>
-      <tr>
-        <td>CTRL+PageDown</td>
-        <td>CMD+PageDown</td>
-        <td>Global</td>
-        <td>Go to previous tab</td>
-      </tr>
-      <tr>
-        <td>SHIFT</td>
-        <td>SHIFT</td>
-        <td>Global</td>
-        <td>Dope Sheet Panel Scroll Command</td>
-      </tr>
-      <tr>
-        <td>CTRL+D</td>
-        <td>CMD+D</td>
-        <td>Global</td>
-        <td>Duplicate</td>
-      </tr>
-      <tr>
-        <td>CTRL+SHIFT+E</td>
-        <td>CMD+SHIFT+E</td>
-        <td>Global</td>
-        <td>Open the image editor when having a sprite selected in the workspace</td>
-      </tr>
-      <tr>
-        <td>CTRL+SHIFT+E</td>
-        <td>CMD+SHIFT+E</td>
-        <td>Global</td>
-        <td>Open the image editor when having a sprite selected in the workspace</td>
-      </tr>
-      <tr>
-        <td>F3</td>
-        <td>F3</td>
-        <td>Global</td>
-        <td>Enumerate References</td>
-      </tr>
-      <tr>
-        <td>CTRL+E</td>
-        <td>CMD+E</td>
-        <td>Global</td>
-        <td>Export the current project as a YYZ file</td>
-      </tr>
-      <tr>
-        <td>CTRL+Q</td>
-        <td>CTRL+Q</td>
-        <td>Global</td>
-        <td>Open Feather&#39;s Quick Fixes menu</td>
-      </tr>
-      <tr>
-        <td>SHIFT+F3</td>
-        <td>SHIFT+F3</td>
-        <td>Global</td>
-        <td>Find All References to the selected asset</td>
-      </tr>
-      <tr>
-        <td>Y</td>
-        <td>Y</td>
-        <td>Global</td>
-        <td>Flip Vertically</td>
-      </tr>
-      <tr>
-        <td>Enter</td>
-        <td>Enter</td>
-        <td>Global</td>
-        <td>Flow Accept</td>
-      </tr>
-      <tr>
-        <td>SHIFT+F12</td>
-        <td>SHIFT+F12</td>
-        <td>Global</td>
-        <td>Force Dock Expansion</td>
-      </tr>
-      <tr>
-        <td>CTRL+0</td>
-        <td>CMD+0</td>
-        <td>Global</td>
-        <td>Go to bookmark 0</td>
-      </tr>
-      <tr>
-        <td>CTRL+1</td>
-        <td>CMD+1</td>
-        <td>Global</td>
-        <td>Go to bookmark 1</td>
-      </tr>
-      <tr>
-        <td>CTRL+2</td>
-        <td>CMD+2</td>
-        <td>Global</td>
-        <td>Go to bookmark 2</td>
-      </tr>
-      <tr>
-        <td>CTRL+3</td>
-        <td>CMD+3</td>
-        <td>Global</td>
-        <td>Go to bookmark 3</td>
-      </tr>
-      <tr>
-        <td>CTRL+4</td>
-        <td>CMD+4</td>
-        <td>Global</td>
-        <td>Go to bookmark 4</td>
-      </tr>
-      <tr>
-        <td>CTRL+5</td>
-        <td>CMD+5</td>
-        <td>Global</td>
-        <td>Go to bookmark 5</td>
-      </tr>
-      <tr>
-        <td>CTRL+6</td>
-        <td>CMD+6</td>
-        <td>Global</td>
-        <td>Go to bookmark 6</td>
-      </tr>
-      <tr>
-        <td>CTRL+7</td>
-        <td>CMD+7</td>
-        <td>Global</td>
-        <td>Go to bookmark 7</td>
-      </tr>
-      <tr>
-        <td>CTRL+8</td>
-        <td>CMD+8</td>
-        <td>Global</td>
-        <td>Go to bookmark 8</td>
-      </tr>
-      <tr>
-        <td>CTRL+9</td>
-        <td>CMD+9</td>
-        <td>Global</td>
-        <td>Go to bookmark 9</td>
-      </tr>
-      <tr>
-        <td>CTRL+T</td>
-        <td>CMD+T</td>
-        <td>Global</td>
-        <td>Search for assets</td>
-      </tr>
-      <tr>
-        <td>CTRL+F7</td>
-        <td>CMD+F7</td>
-        <td>Global</td>
-        <td>Clean the build</td>
-      </tr>
-      <tr>
-        <td>F12</td>
-        <td>F12</td>
-        <td>Global</td>
-        <td>Collapse docks</td>
-      </tr>
-      <tr>
-        <td>F1</td>
-        <td>F1</td>
-        <td>Global</td>
-        <td>Launch the help file</td>
-      </tr>
-      <tr>
-        <td>CTRL+N</td>
-        <td>CMD+N</td>
-        <td>Global</td>
-        <td>Create new project</td>
-      </tr>
-      <tr>
-        <td>CTRL+O</td>
-        <td>CMD+O</td>
-        <td>Global</td>
-        <td>Open project</td>
-      </tr>
-      <tr>
-        <td>CTRL+F8</td>
-        <td>CMD+F8</td>
-        <td>Global</td>
-        <td>Create an executable package using the current target settings</td>
-      </tr>
-      <tr>
-        <td>F8</td>
-        <td>F8</td>
-        <td>Global</td>
-        <td>Increment text size (in text editors)</td>
-      </tr>
-      <tr>
-        <td>PageDown</td>
-        <td>PageDown</td>
-        <td>Global</td>
-        <td>Jump down a page (in text editors)</td>
-      </tr>
-      <tr>
-        <td>PageUp</td>
-        <td>PageUp</td>
-        <td>Global</td>
-        <td>Jump up a page (in text editors)</td>
-      </tr>
-      <tr>
-        <td>CTRL+SHIFT+V</td>
-        <td>CMD+SHIFT+V</td>
-        <td>Global</td>
-        <td>Manage plugins</td>
-      </tr>
-      <tr>
-        <td>X</td>
-        <td>X</td>
-        <td>Global</td>
-        <td>Mirror Horizontally</td>
-      </tr>
-      <tr>
-        <td>Tab</td>
-        <td>Tab,</td>
-        <td>Global</td>
-        <td>Move flow next</td>
-      </tr>
-      <tr>
-        <td>SHIFT+Tab</td>
-        <td>SHIFT+Tab,</td>
-        <td>Global</td>
-        <td>Move flow previous</td>
-      </tr>
-      <tr>
-        <td>Down</td>
-        <td>Down</td>
-        <td>Global</td>
-        <td>Move selection down</td>
-      </tr>
-      <tr>
-        <td>Left</td>
-        <td>Left</td>
-        <td>Global</td>
-        <td>Move selection left</td>
-      </tr>
-      <tr>
-        <td>Right</td>
-        <td>Right</td>
-        <td>Global</td>
-        <td>Move selection right</td>
-      </tr>
-      <tr>
-        <td>Up</td>
-        <td>Up</td>
-        <td>Global</td>
-        <td>Move selection up</td>
-      </tr>
-      <tr>
-        <td>CTRL</td>
-        <td>CMD</td>
-        <td>Global</td>
-        <td>Multi select</td>
-      </tr>
-      <tr>
-        <td>CTRL+N</td>
-        <td>CMD+N</td>
-        <td>Global</td>
-        <td>Open the Start Page</td>
-      </tr>
-      <tr>
-        <td>CTRL+SHIFT+N</td>
-        <td>CMD+SHIFT+N</td>
-        <td>Global</td>
-        <td>Add a new sprite (when an object is selected in the workspace)</td>
-      </tr>
-      <tr>
-        <td>CTRL+SHIFT+B</td>
-        <td>CTRL+SHIFT+B</td>
-        <td>Global</td>
-        <td>Open the asset browser</td>
-      </tr>
-      <tr>
-        <td>CTRL+SHIFT+D</td>
-        <td>CMD+SHIFT+D</td>
-        <td>Global</td>
-        <td>Open the debug info</td>
-      </tr>
-      <tr>
-        <td>SHIFT+O</td>
-        <td>SHIFT+O</td>
-        <td>Global</td>
-        <td>Open in Explorer</td>
-      </tr>
-      <tr>
-        <td>CTRL+SHIFT+I</td>
-        <td>CTRL+SHIFT+I</td>
-        <td>Global</td>
-        <td>Open a new Inspector window</td>
-      </tr>
-      <tr>
-        <td>CTRL+SHIFT+P</td>
-        <td>CMD+SHIFT+P</td>
-        <td>Global</td>
-        <td>Open Preferences</td>
-      </tr>
-      <tr>
-        <td>CTRL+O</td>
-        <td>CMD+O</td>
-        <td>Global</td>
-        <td>Open project</td>
-      </tr>
-      <tr>
-        <td>CTRL+F</td>
-        <td>CMD+F</td>
-        <td>Global</td>
-        <td>Open a code or shader editor&#39;s Find and Replace in Find mode</td>
-      </tr>
-      <tr>
-        <td>CTRL+H</td>
-        <td>CMD+R</td>
-        <td>Global</td>
-        <td>Open a code or shader editor&#39;s Find and Replace in Replace mode</td>
-      </tr>
-      <tr>
-        <td>CTRL+SHIFT+F</td>
-        <td>CMD+SHIFT+F</td>
-        <td>Global</td>
-        <td>Open project-wide Search and Replace</td>
-      </tr>
-      <tr>
-        <td>CTRL+Tab</td>
-        <td>CTRL+Tab,</td>
-        <td>Global</td>
-        <td>Open the Workspace Overview</td>
-      </tr>
-      <tr>
-        <td>Space</td>
-        <td>Space</td>
-        <td>Global</td>
-        <td>Pan</td>
-      </tr>
-      <tr>
-        <td>CTRL+V</td>
-        <td>CMD+V</td>
-        <td>Global</td>
-        <td>Paste</td>
-      </tr>
-      <tr>
-        <td>Space</td>
-        <td>Space</td>
-        <td>Global</td>
-        <td>Play</td>
-      </tr>
-      <tr>
-        <td>CTRL+Space</td>
-        <td>CMD+Space</td>
-        <td>Global</td>
-        <td>Play Preview</td>
-      </tr>
-      <tr>
-        <td>ALT+F4</td>
-        <td>CMD+Q</td>
-        <td>Global</td>
-        <td>Quit</td>
-      </tr>
-      <tr>
-        <td>CTRL+Y</td>
-        <td>CMD+Y</td>
-        <td>Global</td>
-        <td>Redo</td>
-      </tr>
-      <tr>
-        <td>ALT</td>
-        <td>ALT</td>
-        <td>Global</td>
-        <td>Remove from selection (while holding CTRL)</td>
-      </tr>
-      <tr>
-        <td>F2</td>
-        <td>F2</td>
-        <td>Global</td>
-        <td>Rename</td>
-      </tr>
-      <tr>
-        <td>CTRL+SHIFT+R</td>
-        <td>CTRL+SHIFT+R</td>
-        <td>Global</td>
-        <td>Rename the identifier that the cursor is currently at in the Code Editor</td>
-      </tr>
-      <tr>
-        <td>CTRL+R</td>
-        <td>CMD+R</td>
-        <td>Global</td>
-        <td>Reverse path</td>
-      </tr>
-      <tr>
-        <td>F5</td>
-        <td>F5</td>
-        <td>Global</td>
-        <td>Run the current project using the current target settings</td>
-      </tr>
-      <tr>
-        <td>CTRL+SHIFT+M</td>
-        <td>CMD+SHIFT+M</td>
-        <td>Global</td>
-        <td>Run Memory Info and output result to Output window</td>
-      </tr>
-      <tr>
-        <td>F5</td>
-        <td>F5</td>
-        <td>Global</td>
-        <td>Run the program</td>
-      </tr>
-      <tr>
-        <td>CTRL+S</td>
-        <td>CMD+S</td>
-        <td>Global</td>
-        <td>Save the current project</td>
-      </tr>
-      <tr>
-        <td>CTRL+SHIFT+S</td>
-        <td>CMD+SHIFT+S</td>
-        <td>Global</td>
-        <td>Save as</td>
-      </tr>
-      <tr>
-        <td>CTRL+A</td>
-        <td>CMD+A</td>
-        <td>Global</td>
-        <td>Select all</td>
-      </tr>
-      <tr>
-        <td>SHIFT</td>
-        <td>SHIFT</td>
-        <td>Global</td>
-        <td>Select range</td>
-      </tr>
-      <tr>
-        <td>CTRL+SHIFT+S</td>
-        <td>CMD+SHIFT+S</td>
-        <td>Global</td>
-        <td>Select Sprite (in Object Editor)</td>
-      </tr>
-      <tr>
-        <td>CTRL+ALT+SHIFT+Semicolon</td>
-        <td>CTRL+ALT+SHIFT+Semicolon</td>
-        <td>Global</td>
-        <td>Toggle smart guide rulerlock</td>
-      </tr>
-      <tr>
-        <td>CTRL+SHIFT+Semicolon</td>
-        <td>CTRL+SHIFT+Semicolon</td>
-        <td>Global</td>
-        <td>Toggle snapping to smart guides</td>
-      </tr>
-      <tr>
-        <td>CTRL+Semicolon</td>
-        <td>CTRL+Semicolon</td>
-        <td>Global</td>
-        <td>Toggle the smart guides</td>
-      </tr>
-      <tr>
-        <td>CTRL+SHIFT+0</td>
-        <td>CMD+CTRL+0</td>
-        <td>Global</td>
-        <td>Set bookmark 0</td>
-      </tr>
-      <tr>
-        <td>CTRL+SHIFT+1</td>
-        <td>CMD+CTRL+1</td>
-        <td>Global</td>
-        <td>Set bookmark 1</td>
-      </tr>
-      <tr>
-        <td>CTRL+SHIFT+2</td>
-        <td>CMD+CTRL+2</td>
-        <td>Global</td>
-        <td>Set bookmark 2</td>
-      </tr>
-      <tr>
-        <td>CTRL+SHIFT+3</td>
-        <td>CMD+CTRL+3</td>
-        <td>Global</td>
-        <td>Set bookmark 3</td>
-      </tr>
-      <tr>
-        <td>CTRL+SHIFT+4</td>
-        <td>CMD+CTRL+4</td>
-        <td>Global</td>
-        <td>Set bookmark 4</td>
-      </tr>
-      <tr>
-        <td>CTRL+SHIFT+5</td>
-        <td>CMD+CTRL+5</td>
-        <td>Global</td>
-        <td>Set bookmark 5</td>
-      </tr>
-      <tr>
-        <td>CTRL+SHIFT+6</td>
-        <td>CMD+CTRL+6</td>
-        <td>Global</td>
-        <td>Set bookmark 6</td>
-      </tr>
-      <tr>
-        <td>CTRL+SHIFT+7</td>
-        <td>CMD+CTRL+7</td>
-        <td>Global</td>
-        <td>Set bookmark 7</td>
-      </tr>
-      <tr>
-        <td>CTRL+SHIFT+8</td>
-        <td>CMD+CTRL+8</td>
-        <td>Global</td>
-        <td>Set bookmark 8</td>
-      </tr>
-      <tr>
-        <td>CTRL+SHIFT+9</td>
-        <td>CMD+CTRL+9</td>
-        <td>Global</td>
-        <td>Set bookmark 0</td>
-      </tr>
-      <tr>
-        <td>CTRL+G</td>
-        <td>CMD+G</td>
-        <td>Global</td>
-        <td>Toggle snapping to grid for the current editor</td>
-      </tr>
-      <tr>
-        <td>CTRL+Z</td>
-        <td>CMD+Z</td>
-        <td>Global</td>
-        <td>Undo</td>
-      </tr>
-      <tr>
-        <td>CTRL+ALT+Down</td>
-        <td>CMD+ALT+Down</td>
-        <td>Global</td>
-        <td>Workspace Chain Move Down</td>
-      </tr>
-      <tr>
-        <td>CTRL+ALT+Down+Left</td>
-        <td>CMD+ALT+Down+Left</td>
-        <td>Global</td>
-        <td>Workspace Chain Move Down Left</td>
-      </tr>
-      <tr>
-        <td>CTRL+ALT+Down+Right</td>
-        <td>CMD+ALT+Down+Right</td>
-        <td>Global</td>
-        <td>Workspace Chain Move Down Right</td>
-      </tr>
-      <tr>
-        <td>CTRL+ALT+Left</td>
-        <td>CMD+ALT+Left</td>
-        <td>Global</td>
-        <td>Workspace Chain Move Left</td>
-      </tr>
-      <tr>
-        <td>CTRL+ALT+Right</td>
-        <td>CMD+ALT+Right</td>
-        <td>Global</td>
-        <td>Workspace Chain Move Right</td>
-      </tr>
-      <tr>
-        <td>CTRL+ALT+Up</td>
-        <td>CMD+ALT+Up</td>
-        <td>Global</td>
-        <td>Workspace Chain Move Up</td>
-      </tr>
-      <tr>
-        <td>CTRL+ALT+Up+Left</td>
-        <td>CMD+ALT+Up+Left</td>
-        <td>Global</td>
-        <td>Workspace Chain Move Up Left</td>
-      </tr>
-      <tr>
-        <td>CTRL+ALT+Up+Right</td>
-        <td>CMD+ALT+Up+Right</td>
-        <td>Global</td>
-        <td>Workspace Chain Move Up Right</td>
-      </tr>
-      <tr>
-        <td>CTRL</td>
-        <td>CMD</td>
-        <td>Global</td>
-        <td>Zoom in/out</td>
-      </tr>
-      <tr>
-        <td>CTRL+ALT+Enter</td>
-        <td>CMD+ALT+Enter</td>
-        <td>Global</td>
-        <td>Zoom and pan to selected</td>
-      </tr>
-      <tr>
-        <td>CTRL+F</td>
-        <td>CMD+F</td>
-        <td>Global</td>
-        <td>Zoom fit</td>
-      </tr>
-      <tr>
-        <td>CTRL+Equals</td>
-        <td>CMD+Equals</td>
-        <td>Global</td>
-        <td>Zoom in</td>
-      </tr>
-      <tr>
-        <td>CTRL+Minus</td>
-        <td>CMD+Minus</td>
-        <td>Global</td>
-        <td>Zoom out</td>
-      </tr>
-      <tr>
-        <td>CTRL+Enter</td>
-        <td>CMD+Enter</td>
-        <td>Global</td>
-        <td>Reset zoom</td>
-      </tr>
-    </tbody>
-  </table>
-  <h2>Image Editor</h2>
-  <table>
-    <tbody>
-      <tr>
-        <th>Windows Key Binding</th>
-        <th>macOS Key Binding</th>
-        <th>Scope</th>
-        <th>Description</th>
-      </tr>
-      <tr>
-        <td>SHIFT+A</td>
-        <td>SHIFT+A</td>
-        <td>Image Editor</td>
-        <td>Add a new frame</td>
-      </tr>
-      <tr>
-        <td>CTRL</td>
-        <td>CMD</td>
-        <td>Image Editor</td>
-        <td>Arc Move Control Point A</td>
-      </tr>
-      <tr>
-        <td>ALT</td>
-        <td>ALT</td>
-        <td>Image Editor</td>
-        <td>Arc Move Control Point B</td>
-      </tr>
-      <tr>
-        <td>BackSpace</td>
-        <td>Delete</td>
-        <td>Image Editor</td>
-        <td>Backspace</td>
-      </tr>
-      <tr>
-        <td>ALT+F</td>
-        <td>ALT+F</td>
-        <td>Image Editor</td>
-        <td>Fit image to centre</td>
-      </tr>
-      <tr>
-        <td>ALT+C</td>
-        <td>ALT+C</td>
-        <td>Image Editor</td>
-        <td>Show image at actual size</td>
-      </tr>
-      <tr>
-        <td>ALT</td>
-        <td>ALT</td>
-        <td>Image Editor</td>
-        <td>Also replace the alpha value (using the Colour Replace tool)</td>
-      </tr>
-      <tr>
-        <td>Minus</td>
-        <td>Minus</td>
-        <td>Image Editor</td>
-        <td>Decrement current brush size</td>
-      </tr>
-      <tr>
-        <td>KeypadMinus</td>
-        <td>KeypadMinus</td>
-        <td>Image Editor</td>
-        <td>Decrement current brush size</td>
-      </tr>
-      <tr>
-        <td>ALT</td>
-        <td>ALT</td>
-        <td>Image Editor</td>
-        <td>Draw centred shape</td>
-      </tr>
-      <tr>
-        <td>SHIFT</td>
-        <td>SHIFT</td>
-        <td>Image Editor</td>
-        <td>Draw regular shape</td>
-      </tr>
-      <tr>
-        <td>CTRL+Insert</td>
-        <td>CTRL+Insert</td>
-        <td>Image Editor</td>
-        <td>Copy</td>
-      </tr>
-      <tr>
-        <td>SHIFT+Delete</td>
-        <td>SHIFT+Delete</td>
-        <td>Image Editor</td>
-        <td>Cut</td>
-      </tr>
-      <tr>
-        <td>SHIFT+Insert</td>
-        <td>SHIFT+Insert</td>
-        <td>Image Editor</td>
-        <td>Paste</td>
-      </tr>
-      <tr>
-        <td>ALT</td>
-        <td>ALT</td>
-        <td>Image Editor</td>
-        <td>Tile with the current brush (using Fill Tool)</td>
-      </tr>
-      <tr>
-        <td>CTRL+SHIFT+A</td>
-        <td>CMD+SHIFT+A</td>
-        <td>Image Editor</td>
-        <td>Add image from file</td>
-      </tr>
-      <tr>
-        <td>ALT+F</td>
-        <td>ALT+F</td>
-        <td>Image Editor</td>
-        <td>Centre fit the image in the editor</td>
-      </tr>
-      <tr>
-        <td>ALT+C</td>
-        <td>ALT+C</td>
-        <td>Image Editor</td>
-        <td>Centre the image in the editor at unit scale</td>
-      </tr>
-      <tr>
-        <td>CTRL+I</td>
-        <td>CMD+I</td>
-        <td>Image Editor</td>
-        <td>Import from strip</td>
-      </tr>
-      <tr>
-        <td>CTRL+SHIFT+A</td>
-        <td>CMD+SHIFT+A</td>
-        <td>Image Editor</td>
-        <td>Import image files</td>
-      </tr>
-      <tr>
-        <td>CTRL+I</td>
-        <td>CMD+I</td>
-        <td>Image Editor</td>
-        <td>Import from strip</td>
-      </tr>
-      <tr>
-        <td>Equals</td>
-        <td>Equals</td>
-        <td>Image Editor</td>
-        <td>Increment brush size</td>
-      </tr>
-      <tr>
-        <td>KeypadPlus</td>
-        <td>KeypadPlus</td>
-        <td>Image Editor</td>
-        <td>Increment brush size</td>
-      </tr>
-      <tr>
-        <td>Insert</td>
-        <td>Insert</td>
-        <td>Image Editor</td>
-        <td>Insert Frame</td>
-      </tr>
-      <tr>
-        <td>CTRL+I</td>
-        <td>CTRL+I</td>
-        <td>Image Editor</td>
-        <td>Invert Selection</td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>2</td>
-        <td>Image Editor</td>
-        <td>Next Frame</td>
-      </tr>
-      <tr>
-        <td>CTRL</td>
-        <td>CTRL</td>
-        <td>Image Editor</td>
-        <td>Hold to open the Colour Panel on selecting a colour in the Colour Picker, instead of assigning the colour directly</td>
-      </tr>
-      <tr>
-        <td>Period</td>
-        <td>Period</td>
-        <td>Image Editor</td>
-        <td>Pixel Brush</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>3</td>
-        <td>Image Editor</td>
-        <td>Toggle Playback</td>
-      </tr>
-      <tr>
-        <td>1</td>
-        <td>1</td>
-        <td>Image Editor</td>
-        <td>Previous Frame</td>
-      </tr>
-      <tr>
-        <td>Z</td>
-        <td>Z</td>
-        <td>Image Editor</td>
-        <td>Rotate brush by 90 degrees (all tools using a brush)</td>
-      </tr>
-      <tr>
-        <td>A</td>
-        <td>A</td>
-        <td>Image Editor</td>
-        <td>Select the Arc tool</td>
-      </tr>
-      <tr>
-        <td>O</td>
-        <td>O</td>
-        <td>Image Editor</td>
-        <td>Select the Colour Picker tool</td>
-      </tr>
-      <tr>
-        <td>H</td>
-        <td>H</td>
-        <td>Image Editor</td>
-        <td>Select the Colour remove tool</td>
-      </tr>
-      <tr>
-        <td>V</td>
-        <td>V</td>
-        <td>Image Editor</td>
-        <td>Select the Colour replace tool</td>
-      </tr>
-      <tr>
-        <td>C</td>
-        <td>C</td>
-        <td>Image Editor</td>
-        <td>Select the Ellipse tool</td>
-      </tr>
-      <tr>
-        <td>E</td>
-        <td>E</td>
-        <td>Image Editor</td>
-        <td>Select the Erase tool</td>
-      </tr>
-      <tr>
-        <td>F</td>
-        <td>F</td>
-        <td>Image Editor</td>
-        <td>Select the Fill tool</td>
-      </tr>
-      <tr>
-        <td>U</td>
-        <td>U</td>
-        <td>Image Editor</td>
-        <td>Select the Rotate brush tool</td>
-      </tr>
-      <tr>
-        <td>L</td>
-        <td>L</td>
-        <td>Image Editor</td>
-        <td>Select the Line tool</td>
-      </tr>
-      <tr>
-        <td>W</td>
-        <td>W</td>
-        <td>Image Editor</td>
-        <td>Select the Magic wand tool</td>
-      </tr>
-      <tr>
-        <td>D</td>
-        <td>D</td>
-        <td>Image Editor</td>
-        <td>Select the Paintbrush tool</td>
-      </tr>
-      <tr>
-        <td>M</td>
-        <td>M</td>
-        <td>Image Editor</td>
-        <td>Select the Pan tool</td>
-      </tr>
-      <tr>
-        <td>P</td>
-        <td>P</td>
-        <td>Image Editor</td>
-        <td>Select the Polygon tool</td>
-      </tr>
-      <tr>
-        <td>R</td>
-        <td>R</td>
-        <td>Image Editor</td>
-        <td>Select the Rectangle tool</td>
-      </tr>
-      <tr>
-        <td>S</td>
-        <td>S</td>
-        <td>Image Editor</td>
-        <td>Select the Rectangle select tool</td>
-      </tr>
-      <tr>
-        <td>Q</td>
-        <td>Q</td>
-        <td>Image Editor</td>
-        <td>Select the Paint selection tool</td>
-      </tr>
-      <tr>
-        <td>T</td>
-        <td>T</td>
-        <td>Image Editor</td>
-        <td>Select the Text tool</td>
-      </tr>
-      <tr>
-        <td>SHIFT</td>
-        <td>SHIFT</td>
-        <td>Image Editor</td>
-        <td>Snap Tool Modifier</td>
-      </tr>
-      <tr>
-        <td>SHIFT+C</td>
-        <td>SHIFT+C</td>
-        <td>Image Editor</td>
-        <td>Toggle the Ellipse tool between outline/filled</td>
-      </tr>
-      <tr>
-        <td>ALT+H</td>
-        <td>ALT+H</td>
-        <td>Image Editor</td>
-        <td>Toggle horizontal split view</td>
-      </tr>
-      <tr>
-        <td>SHIFT+P</td>
-        <td>SHIFT+P</td>
-        <td>Image Editor</td>
-        <td>Toggle the Polygon tool between outline/filled</td>
-      </tr>
-      <tr>
-        <td>SHIFT+R</td>
-        <td>SHIFT+R</td>
-        <td>Image Editor</td>
-        <td>Toggle the Rectangle tool between outline/filled</td>
-      </tr>
-      <tr>
-        <td>B</td>
-        <td>B</td>
-        <td>Image Editor</td>
-        <td>Toggle the brush</td>
-      </tr>
-      <tr>
-        <td>ALT+V</td>
-        <td>ALT+V</td>
-        <td>Image Editor</td>
-        <td>Toggle vertical split view</td>
-      </tr>
-      <tr>
-        <td>Enter</td>
-        <td>Enter</td>
-        <td>Image Editor</td>
-        <td>Commit tool changes</td>
-      </tr>
-      <tr>
-        <td>CTRL+B</td>
-        <td>CTRL+B</td>
-        <td>Image Editor</td>
-        <td>Create a brush from the current selection</td>
-      </tr>
-      <tr>
-        <td>SHIFT+Z</td>
-        <td>SHIFT+Z</td>
-        <td>Image Editor</td>
-        <td>This enables the brush scaler subtool, hold this key combination while using a draw tool and left-click to scale the brush</td>
-      </tr>
-    </tbody>
-  </table>
-  <h2>Object Editor</h2>
-  <table>
-    <tbody>
-      <tr>
-        <th>Windows Key Binding</th>
-        <th>macOS Key Binding</th>
-        <th>Scope</th>
-        <th>Description</th>
-      </tr>
-      <tr>
-        <td>CTRL+L</td>
-        <td>CMD+L</td>
-        <td>Object Editor</td>
-        <td>Add a child object to the current object</td>
-      </tr>
-      <tr>
-        <td>CTRL+A</td>
-        <td>CMD+A</td>
-        <td>Object Editor</td>
-        <td>Add an event to the current object</td>
-      </tr>
-      <tr>
-        <td>CTRL+ALT+T</td>
-        <td>CMD+ALT+T</td>
-        <td>Object Editor</td>
-        <td>Add a new variable to the current object&#39;s Variable Definitions</td>
-      </tr>
-      <tr>
-        <td>CTRL+K</td>
-        <td>CMD+K</td>
-        <td>Object Editor</td>
-        <td>Edit the mask sprite</td>
-      </tr>
-      <tr>
-        <td>CTRL+SHIFT+O</td>
-        <td>CMD+SHIFT+O</td>
-        <td>Object Editor</td>
-        <td>Edit the parent object</td>
-      </tr>
-      <tr>
-        <td>CTRL+B</td>
-        <td>CMD+B</td>
-        <td>Object Editor</td>
-        <td>Modify the object&#39;s physics collision shape</td>
-      </tr>
-      <tr>
-        <td>CTRL+Insert</td>
-        <td>CTRL+Insert</td>
-        <td>Object Editor</td>
-        <td>Copy event</td>
-      </tr>
-      <tr>
-        <td>SHIFT+Delete</td>
-        <td>SHIFT+Delete</td>
-        <td>Object Editor</td>
-        <td>Cut event</td>
-      </tr>
-      <tr>
-        <td>SHIFT+Insert</td>
-        <td>SHIFT+Insert</td>
-        <td>Object Editor</td>
-        <td>Paste event</td>
-      </tr>
-      <tr>
-        <td>CTRL+F</td>
-        <td>CMD+F</td>
-        <td>Object Editor</td>
-        <td>Open Events window</td>
-      </tr>
-      <tr>
-        <td>CTRL+G</td>
-        <td>CMD+G</td>
-        <td>Object Editor</td>
-        <td>Open Parent window</td>
-      </tr>
-      <tr>
-        <td>CTRL+H</td>
-        <td>CMD+H</td>
-        <td>Object Editor</td>
-        <td>Open Physics window</td>
-      </tr>
-      <tr>
-        <td>CTRL+J</td>
-        <td>CMD+J</td>
-        <td>Object Editor</td>
-        <td>Open Variable Definitions window</td>
-      </tr>
-      <tr>
-        <td>CTRL+U</td>
-        <td>CMD+U</td>
-        <td>Object Editor</td>
-        <td>Toggle grid snapping in the Physics Collision Shape window</td>
-      </tr>
-      <tr>
-        <td>CTRL+SHIFT+Y</td>
-        <td>CMD+Y</td>
-        <td>Object Editor</td>
-        <td>Toggle grid on or off in the Physics Collision Shape window</td>
-      </tr>
-      <tr>
-        <td>CTRL+SHIFT+M</td>
-        <td>CMD+SHIFT+M</td>
-        <td>Object Editor</td>
-        <td>Select a mask for the object</td>
-      </tr>
-      <tr>
-        <td>CTRL+P</td>
-        <td>CMD+P</td>
-        <td>Object Editor</td>
-        <td>Select parent</td>
-      </tr>
-    </tbody>
-  </table>
-  <h2>Path Editor</h2>
-  <table>
-    <tbody>
-      <tr>
-        <th>Windows Key Binding</th>
-        <th>macOS Key Binding</th>
-        <th>Scope</th>
-        <th>Description</th>
-      </tr>
-      <tr>
-        <td>CTRL+SHIFT+O</td>
-        <td>CMD+SHIFT+O</td>
-        <td>Path Editor</td>
-        <td>Open the Shift Path window</td>
-      </tr>
-      <tr>
-        <td>CTRL+P</td>
-        <td>CMD+P</td>
-        <td>Path Editor</td>
-        <td>Pan to path</td>
-      </tr>
-      <tr>
-        <td>R</td>
-        <td>R</td>
-        <td>Path Editor</td>
-        <td>Rotate path (hold while dragging LMB)</td>
-      </tr>
-      <tr>
-        <td>S</td>
-        <td>S</td>
-        <td>Path Editor</td>
-        <td>Scale path (hold while dragging LMB)</td>
-      </tr>
-      <tr>
-        <td>Down</td>
-        <td>Down</td>
-        <td>Path Editor</td>
-        <td>Shift down</td>
-      </tr>
-      <tr>
-        <td>Left</td>
-        <td>Left</td>
-        <td>Path Editor</td>
-        <td>Shift left</td>
-      </tr>
-      <tr>
-        <td>Right</td>
-        <td>Right</td>
-        <td>Path Editor</td>
-        <td>Shift right</td>
-      </tr>
-      <tr>
-        <td>Up</td>
-        <td>Up</td>
-        <td>Path Editor</td>
-        <td>Shift up</td>
-      </tr>
-      <tr>
-        <td>T</td>
-        <td>T</td>
-        <td>Path Editor</td>
-        <td>Translate path (hold while dragging LMB)</td>
-      </tr>
-    </tbody>
-  </table>
-  <h2>Room Editor</h2>
-  <table>
-    <tbody>
-      <tr>
-        <th>Windows Key Binding</th>
-        <th>macOS Key Binding</th>
-        <th>Scope</th>
-        <th>Description</th>
-      </tr>
-      <tr>
-        <td>A</td>
-        <td>A</td>
-        <td>Room Editor</td>
-        <td>Select auto tile tool (when working on a tile layer)</td>
-      </tr>
-      <tr>
-        <td>E</td>
-        <td>E</td>
-        <td>Room Editor</td>
-        <td>Select tile eraser tool (when working on a tile layer)</td>
-      </tr>
-      <tr>
-        <td>F</td>
-        <td>F</td>
-        <td>Room Editor</td>
-        <td>Select tile fill tool (when working on a tile layer)</td>
-      </tr>
-      <tr>
-        <td>I</td>
-        <td>I</td>
-        <td>Room Editor</td>
-        <td>Select tile inheritance tool (when working on a tile layer)</td>
-      </tr>
-      <tr>
-        <td>L</td>
-        <td>L</td>
-        <td>Room Editor</td>
-        <td>Select tile line tool (when working on a tile layer)</td>
-      </tr>
-      <tr>
-        <td>D</td>
-        <td>D</td>
-        <td>Room Editor</td>
-        <td>Select tile pen tool (when working on a tile layer)</td>
-      </tr>
-      <tr>
-        <td>R</td>
-        <td>R</td>
-        <td>Room Editor</td>
-        <td>Select tile rect tool (when working on a tile layer)</td>
-      </tr>
-      <tr>
-        <td>Z</td>
-        <td>Z</td>
-        <td>Room Editor</td>
-        <td>Select tile rotate tool (when working on a tile layer)</td>
-      </tr>
-      <tr>
-        <td>S</td>
-        <td>S</td>
-        <td>Room Editor</td>
-        <td>Select tile selection tool (when working on a tile layer)</td>
-      </tr>
-      <tr>
-        <td>CTRL+ALT+S</td>
-        <td>CTRL+ALT+S</td>
-        <td>Room Editor</td>
-        <td>Activate the tile select window</td>
-      </tr>
-      <tr>
-        <td>CTRL+A</td>
-        <td>CMD+A</td>
-        <td>Room Editor</td>
-        <td>Add new asset layer</td>
-      </tr>
-      <tr>
-        <td>CTRL+B</td>
-        <td>CMD+B</td>
-        <td>Room Editor</td>
-        <td>Add new background layer</td>
-      </tr>
-      <tr>
-        <td>CTRL+F</td>
-        <td>CMD+F</td>
-        <td>Room Editor</td>
-        <td>Add new folder layer</td>
-      </tr>
-      <tr>
-        <td>CTRL+P</td>
-        <td>CMD+P</td>
-        <td>Room Editor</td>
-        <td>Add new path layer</td>
-      </tr>
-      <tr>
-        <td>CTRL+ALT+T</td>
-        <td>CMD+ALT+T</td>
-        <td>Room Editor</td>
-        <td>Add new tile layer</td>
-      </tr>
-      <tr>
-        <td>CTRL+Insert</td>
-        <td>CTRL+Insert</td>
-        <td>Room Editor</td>
-        <td>Copy selection</td>
-      </tr>
-      <tr>
-        <td>SHIFT+Delete</td>
-        <td>SHIFT+Delete</td>
-        <td>Room Editor</td>
-        <td>Cut selection</td>
-      </tr>
-      <tr>
-        <td>Y</td>
-        <td>Y</td>
-        <td>Room Editor</td>
-        <td>Flip selection as group vertically</td>
-      </tr>
-      <tr>
-        <td>SHIFT+Y</td>
-        <td>SHIFT+Y</td>
-        <td>Room Editor</td>
-        <td>Flip individual elements of selection vertically</td>
-      </tr>
-      <tr>
-        <td>CTRL+ALT+G</td>
-        <td>CMD+ALT+G</td>
-        <td>Room Editor</td>
-        <td>Generate tile map</td>
-      </tr>
-      <tr>
-        <td>X</td>
-        <td>X</td>
-        <td>Room Editor</td>
-        <td>Mirror horizontally as group</td>
-      </tr>
-      <tr>
-        <td>SHIFT+X</td>
-        <td>SHIFT+X</td>
-        <td>Room Editor</td>
-        <td>Mirror individual elements of selection horizontally</td>
-      </tr>
-      <tr>
-        <td>CTRL+ALT+I</td>
-        <td>CMD+ALT+I</td>
-        <td>Room Editor</td>
-        <td>Open instance creation order</td>
-      </tr>
-      <tr>
-        <td>CTRL+ALT+L</td>
-        <td>CMD+ALT+L</td>
-        <td>Room Editor</td>
-        <td>Open layer view</td>
-      </tr>
-      <tr>
-        <td>ALT</td>
-        <td>ALT</td>
-        <td>Room Editor</td>
-        <td>Paint using the selected resource</td>
-      </tr>
-      <tr>
-        <td>SHIFT+Insert</td>
-        <td>SHIFT+Insert</td>
-        <td>Room Editor</td>
-        <td>Paste selection</td>
-      </tr>
-      <tr>
-        <td>CTRL</td>
-        <td>CTRL</td>
-        <td>Room Editor</td>
-        <td>Disable snap to grid for precise item placement</td>
-      </tr>
-      <tr>
-        <td>B</td>
-        <td>B</td>
-        <td>Room Editor</td>
-        <td>Room Editor Paint Brush</td>
-      </tr>
-      <tr>
-        <td>P</td>
-        <td>P</td>
-        <td>Room Editor</td>
-        <td>Select from any layer (hold while clicking elements on the canvas)</td>
-      </tr>
-      <tr>
-        <td>Y</td>
-        <td>Y</td>
-        <td>Room Editor</td>
-        <td>Tile flip tool</td>
-      </tr>
-      <tr>
-        <td>X</td>
-        <td>X</td>
-        <td>Room Editor</td>
-        <td>Tile mirror tool</td>
-      </tr>
-      <tr>
-        <td>G</td>
-        <td>G</td>
-        <td>Room Editor</td>
-        <td>Toggle grid</td>
-      </tr>
-      <tr>
-        <td>CTRL+E</td>
-        <td>CTRL+E</td>
-        <td>Room Editor</td>
-        <td>Toggle Macro Editing Mode</td>
-      </tr>
-    </tbody>
-  </table>
-  <h2>Sequence Editor</h2>
-  <table>
-    <tbody>
-      <tr>
-        <th>Windows Key Binding</th>
-        <th>macOS Key Binding</th>
-        <th>Scope</th>
-        <th>Description</th>
-      </tr>
-      <tr>
-        <td>Down</td>
-        <td>Down</td>
-        <td>Sequence Editor</td>
-        <td>Move the selected items down on the canvas</td>
-      </tr>
-      <tr>
-        <td>SHIFT+Down</td>
-        <td>SHIFT+Down</td>
-        <td>Sequence Editor</td>
-        <td>Move the selected items down on the canvas (10x)</td>
-      </tr>
-      <tr>
-        <td>Left</td>
-        <td>Left</td>
-        <td>Sequence Editor</td>
-        <td>Move the selected items left on the canvas</td>
-      </tr>
-      <tr>
-        <td>SHIFT+Left</td>
-        <td>SHIFT+Left</td>
-        <td>Sequence Editor</td>
-        <td>Move the selected items left on the canvas (10x)</td>
-      </tr>
-      <tr>
-        <td>Right</td>
-        <td>Right</td>
-        <td>Sequence Editor</td>
-        <td>Move the selected items right on the canvas</td>
-      </tr>
-      <tr>
-        <td>SHIFT+Right</td>
-        <td>SHIFT+Right</td>
-        <td>Sequence Editor</td>
-        <td>Move the selected items right on the canvas (10x)</td>
-      </tr>
-      <tr>
-        <td>Up</td>
-        <td>Up</td>
-        <td>Sequence Editor</td>
-        <td>Move the selected items up on the canvas</td>
-      </tr>
-      <tr>
-        <td>SHIFT+Up</td>
-        <td>SHIFT+Up</td>
-        <td>Sequence Editor</td>
-        <td>Move the selected items up on the canvas (10x)</td>
-      </tr>
-      <tr>
-        <td>F9</td>
-        <td>F9</td>
-        <td>Sequence Editor</td>
-        <td>Add a keyframe at the playhead position for all selected items on the canvas</td>
-      </tr>
-      <tr>
-        <td>CTRL+SHIFT+Home</td>
-        <td>CTRL+SHIFT+Home</td>
-        <td>Sequence Editor</td>
-        <td>Center the selected items around their origins</td>
-      </tr>
-      <tr>
-        <td>BackSpace</td>
-        <td>Delete</td>
-        <td>Sequence Editor</td>
-        <td>Delete the selected items</td>
-      </tr>
-      <tr>
-        <td>CTRL+U</td>
-        <td>CTRL+U</td>
-        <td>Sequence Editor</td>
-        <td>Toggle expand/collapse for all tracks</td>
-      </tr>
-      <tr>
-        <td>U</td>
-        <td>U</td>
-        <td>Sequence Editor</td>
-        <td>Toggle expand/collapse for the selected tracks in the Track Panel</td>
-      </tr>
-      <tr>
-        <td>End</td>
-        <td>End</td>
-        <td>Sequence Editor</td>
-        <td>Move the playhead to the end of the sequence</td>
-      </tr>
-      <tr>
-        <td>SHIFT+End</td>
-        <td>SHIFT+End</td>
-        <td>Sequence Editor</td>
-        <td>Move the playhead to the end of the selection</td>
-      </tr>
-      <tr>
-        <td>SHIFT+8</td>
-        <td>SHIFT+8</td>
-        <td>Sequence Editor</td>
-        <td>Move the playhead to the next moment</td>
-      </tr>
-      <tr>
-        <td>SHIFT+9</td>
-        <td>SHIFT+9</td>
-        <td>Sequence Editor</td>
-        <td>Move the playhead to the previous moment</td>
-      </tr>
-      <tr>
-        <td>Home</td>
-        <td>Home</td>
-        <td>Sequence Editor</td>
-        <td>Move the playhead to the start of the sequence</td>
-      </tr>
-      <tr>
-        <td>SHIFT+Home</td>
-        <td>SHIFT+Home</td>
-        <td>Sequence Editor</td>
-        <td>Move the playhead to the start of the selection</td>
-      </tr>
-      <tr>
-        <td>CTRL+Left</td>
-        <td>CTRL+Left</td>
-        <td>Sequence Editor</td>
-        <td>Move the selected keys left by 1 frame</td>
-      </tr>
-      <tr>
-        <td>CTRL+SHIFT+Left</td>
-        <td>CTRL+SHIFT+Left</td>
-        <td>Sequence Editor</td>
-        <td>Move the selected keys left by 10 frames</td>
-      </tr>
-      <tr>
-        <td>CTRL+Right</td>
-        <td>CTRL+Right</td>
-        <td>Sequence Editor</td>
-        <td>Move the selected keys right by 1 frame</td>
-      </tr>
-      <tr>
-        <td>CTRL+SHIFT+Right</td>
-        <td>CTRL+SHIFT+Right</td>
-        <td>Sequence Editor</td>
-        <td>Move the selected keys right by 10 frames</td>
-      </tr>
-      <tr>
-        <td>ALT+Left</td>
-        <td>ALT+Left</td>
-        <td>Sequence Editor</td>
-        <td>Move the playhead left by 1 frame</td>
-      </tr>
-      <tr>
-        <td>ALT+SHIFT+Left</td>
-        <td>ALT+SHIFT+Left</td>
-        <td>Sequence Editor</td>
-        <td>Move the playhead left by 10 frames</td>
-      </tr>
-      <tr>
-        <td>ALT+Right</td>
-        <td>ALT+Right</td>
-        <td>Sequence Editor</td>
-        <td>Move the playhead right by 1 frame</td>
-      </tr>
-      <tr>
-        <td>ALT+SHIFT+Right</td>
-        <td>ALT+SHIFT+Right</td>
-        <td>Sequence Editor</td>
-        <td>Move the playhead right by 10 frames</td>
-      </tr>
-      <tr>
-        <td>CTRL+8</td>
-        <td>CTRL+8</td>
-        <td>Sequence Editor</td>
-        <td>Add a new broadcast message at the playhead position</td>
-      </tr>
-      <tr>
-        <td>CTRL+M</td>
-        <td>CTRL+M</td>
-        <td>Sequence Editor</td>
-        <td>Add a new clipping mask track</td>
-      </tr>
-      <tr>
-        <td>ALT+G</td>
-        <td>ALT+G</td>
-        <td>Sequence Editor</td>
-        <td>Create a new group track and add the selected tracks to it</td>
-      </tr>
-      <tr>
-        <td>CTRL+9</td>
-        <td>CTRL+9</td>
-        <td>Sequence Editor</td>
-        <td>Add a new moment at the playhead position</td>
-      </tr>
-      <tr>
-        <td>N</td>
-        <td>N</td>
-        <td>Sequence Editor</td>
-        <td>Move the playhead to the next keyframe in the selected parameter tracks</td>
-      </tr>
-      <tr>
-        <td>M</td>
-        <td>M</td>
-        <td>Sequence Editor</td>
-        <td>Move the playhead to the previous keyframe in the selected parameter tracks</td>
-      </tr>
-      <tr>
-        <td>F8</td>
-        <td>F8</td>
-        <td>Sequence Editor</td>
-        <td>Remove the keyframes at the playhead position on the currently selected tracks</td>
-      </tr>
-      <tr>
-        <td>CTRL+Home</td>
-        <td>CTRL+Home</td>
-        <td>Sequence Editor</td>
-        <td>Reset the position on the canvas of the currently selected items</td>
-      </tr>
-      <tr>
-        <td>SHIFT+N</td>
-        <td>SHIFT+N</td>
-        <td>Sequence Editor</td>
-        <td>Move the playhead to the next key</td>
-      </tr>
-      <tr>
-        <td>SHIFT+M</td>
-        <td>SHIFT+M</td>
-        <td>Sequence Editor</td>
-        <td>Move the playhead to the previous key</td>
-      </tr>
-      <tr>
-        <td>ALT+Up</td>
-        <td>ALT+Up</td>
-        <td>Sequence Editor</td>
-        <td>Select the track above the current track in the Track Panel</td>
-      </tr>
-      <tr>
-        <td>CTRL+ALT+Up</td>
-        <td>CTRL+ALT+Up</td>
-        <td>Sequence Editor</td>
-        <td>Add the track above the current track to the selection in the Track Panel</td>
-      </tr>
-      <tr>
-        <td>ALT+Down</td>
-        <td>ALT+Down</td>
-        <td>Sequence Editor</td>
-        <td>Select the track above the current track in the Track Panel</td>
-      </tr>
-      <tr>
-        <td>CTRL+ALT+Down</td>
-        <td>CTRL+ALT+Down</td>
-        <td>Sequence Editor</td>
-        <td>Add the track below the current track to the selection in the Track Panel</td>
-      </tr>
-      <tr>
-        <td>CTRL+ALT+D</td>
-        <td>CTRL+ALT+D</td>
-        <td>Sequence Editor</td>
-        <td>Split Key Two Tracks</td>
-      </tr>
-      <tr>
-        <td>F7</td>
-        <td>F7</td>
-        <td>Sequence Editor</td>
-        <td>Split Keyframe</td>
-      </tr>
-      <tr>
-        <td>SHIFT+Left Bracket</td>
-        <td>SHIFT+Left Bracket</td>
-        <td>Sequence Editor</td>
-        <td>Stretch the selected keys left</td>
-      </tr>
-      <tr>
-        <td>SHIFT+Right Bracket</td>
-        <td>SHIFT+Right Bracket</td>
-        <td>Sequence Editor</td>
-        <td>Stretch the selected keys right</td>
-      </tr>
-      <tr>
-        <td>F10</td>
-        <td>F10</td>
-        <td>Sequence Editor</td>
-        <td>Toggle autokey</td>
-      </tr>
-      <tr>
-        <td>Q</td>
-        <td>Q</td>
-        <td>Sequence Editor</td>
-        <td>Toggle multiselect origin</td>
-      </tr>
-      <tr>
-        <td>CTRL+ALT+P</td>
-        <td>CTRL+ALT+P</td>
-        <td>Sequence Editor</td>
-        <td>Toggle translation paths on the canvas</td>
-      </tr>
-      <tr>
-        <td>Left Bracket</td>
-        <td>Left Bracket</td>
-        <td>Sequence Editor</td>
-        <td>Trim selected keys left</td>
-      </tr>
-      <tr>
-        <td>Right Bracket</td>
-        <td>Right Bracket</td>
-        <td>Sequence Editor</td>
-        <td>Trim selected keys right</td>
-      </tr>
-      <tr>
-        <td>CTRL+R</td>
-        <td>CTRL+R</td>
-        <td>Sequence Editor</td>
-        <td>Toggle the canvas rulers</td>
-      </tr>
-      <tr>
-        <td>Y</td>
-        <td>Y</td>
-        <td>Sequence Editor</td>
-        <td>Select the Origin tool</td>
-      </tr>
-      <tr>
-        <td>R</td>
-        <td>R</td>
-        <td>Sequence Editor</td>
-        <td>Select the Rotate tool</td>
-      </tr>
-      <tr>
-        <td>S</td>
-        <td>S</td>
-        <td>Sequence Editor</td>
-        <td>Select the Scale tool</td>
-      </tr>
-      <tr>
-        <td>T</td>
-        <td>T</td>
-        <td>Sequence Editor</td>
-        <td>Select the Translate tool</td>
-      </tr>
-    </tbody>
-  </table>
-  <h2>Sound Editor</h2>
-  <table>
-    <tbody>
-      <tr>
-        <th>Windows Key Binding</th>
-        <th>macOS Key Binding</th>
-        <th>Scope</th>
-        <th>Description</th>
-      </tr>
-      <tr>
-        <td>CTRL+SHIFT+O</td>
-        <td>CMD+SHIFT+O</td>
-        <td>Sound Editor</td>
-        <td>Load sound</td>
-      </tr>
-      <tr>
-        <td>L</td>
-        <td>L</td>
-        <td>Sound Editor</td>
-        <td>Toggle loop sound</td>
-      </tr>
-      <tr>
-        <td>M</td>
-        <td>M</td>
-        <td>Sound Editor</td>
-        <td>Toggle mute sound</td>
-      </tr>
-      <tr>
-        <td>CTRL+SHIFT+M</td>
-        <td>CMD+SHIFT+M</td>
-        <td>Sound Editor</td>
-        <td>Open the Sound Mixer</td>
-      </tr>
-      <tr>
-        <td>Space</td>
-        <td>Space</td>
-        <td>Sound Editor</td>
-        <td>Play/Pause/Resume sound</td>
-      </tr>
-      <tr>
-        <td>R</td>
-        <td>R</td>
-        <td>Sound Editor</td>
-        <td>Rewind and stop sound</td>
-      </tr>
-    </tbody>
-  </table>
-  <h2>Sound Mixer</h2>
-  <table>
-    <tbody>
-      <tr>
-        <th>Windows Key Binding</th>
-        <th>macOS Key Binding</th>
-        <th>Scope</th>
-        <th>Description</th>
-      </tr>
-      <tr>
-        <td>L</td>
-        <td>L</td>
-        <td>Sound Mixer</td>
-        <td>Loop all</td>
-      </tr>
-      <tr>
-        <td>M</td>
-        <td>M</td>
-        <td>Sound Mixer</td>
-        <td>Mute all (all mixer columns)</td>
-      </tr>
-      <tr>
-        <td>Space</td>
-        <td>Space</td>
-        <td>Sound Mixer</td>
-        <td>Play all sounds (all mixer columns)</td>
-      </tr>
-      <tr>
-        <td>R</td>
-        <td>R</td>
-        <td>Sound Mixer</td>
-        <td>Stop and rewind all</td>
-      </tr>
-    </tbody>
-  </table>
-  <h2>Sprite Editor</h2>
-  <table>
-    <tbody>
-      <tr>
-        <th>Windows Key Binding</th>
-        <th>macOS Key Binding</th>
-        <th>Scope</th>
-        <th>Description</th>
-      </tr>
-      <tr>
-        <td>SHIFT+A</td>
-        <td>SHIFT+A</td>
-        <td>Sprite Editor</td>
-        <td>Add sprite frame</td>
-      </tr>
-      <tr>
-        <td>CTRL+Insert</td>
-        <td>CTRL+Insert</td>
-        <td>Sprite Editor</td>
-        <td>Copy sprite frames</td>
-      </tr>
-      <tr>
-        <td>SHIFT+Delete</td>
-        <td>SHIFT+Delete</td>
-        <td>Sprite Editor</td>
-        <td>Cut sprite frames</td>
-      </tr>
-      <tr>
-        <td>CTRL+I</td>
-        <td>CMD+I</td>
-        <td>Sprite Editor</td>
-        <td>Import image</td>
-      </tr>
-      <tr>
-        <td>Insert</td>
-        <td>Insert</td>
-        <td>Sprite Editor</td>
-        <td>Insert sprite frame</td>
-      </tr>
-      <tr>
-        <td>SHIFT+Insert</td>
-        <td>SHIFT+Insert</td>
-        <td>Sprite Editor</td>
-        <td>Paste sprite frames</td>
-      </tr>
-      <tr>
-        <td>CTRL+R</td>
-        <td>CMD+R</td>
-        <td>Sprite Editor</td>
-        <td>Open the Resize Properties window</td>
-      </tr>
-      <tr>
-        <td>CTRL+8</td>
-        <td>CTRL+8</td>
-        <td>Sprite Editor</td>
-        <td>Add broadcast message to sprite</td>
-      </tr>
-    </tbody>
-  </table>
-  <h2>Text Editor</h2>
-  <table>
-    <tbody>
-      <tr>
-        <th>Windows Key Binding</th>
-        <th>macOS Key Binding</th>
-        <th>Scope</th>
-        <th>Description</th>
-      </tr>
-      <tr>
-        <td>Down</td>
-        <td>Down</td>
-        <td>Text Editor</td>
-        <td>Move cursor down</td>
-      </tr>
-      <tr>
-        <td>ALT+SHIFT+Down</td>
-        <td>ALT+SHIFT+Down</td>
-        <td>Text Editor</td>
-        <td>Move cursor down while doing column select (rectangular area)</td>
-      </tr>
-      <tr>
-        <td>CTRL+SHIFT+Down</td>
-        <td>CTRL+SHIFT+PageDown</td>
-        <td>Text Editor</td>
-        <td>Move cursor down while selecting lines</td>
-      </tr>
-      <tr>
-        <td>SHIFT+Down</td>
-        <td>SHIFT+Down</td>
-        <td>Text Editor</td>
-        <td>Move cursor down while selecting lines</td>
-      </tr>
-      <tr>
-        <td>Left</td>
-        <td>Left</td>
-        <td>Text Editor</td>
-        <td>Move cursor left</td>
-      </tr>
-      <tr>
-        <td>ALT+SHIFT+Left</td>
-        <td> </td>
-        <td>Text Editor</td>
-        <td>Move cursor left while doing column select (rectangular area)</td>
-      </tr>
-      <tr>
-        <td>SHIFT+Left</td>
-        <td>SHIFT+Left</td>
-        <td>Text Editor</td>
-        <td>Move cursor left while selecting lines</td>
-      </tr>
-      <tr>
-        <td>Right</td>
-        <td>Right</td>
-        <td>Text Editor</td>
-        <td>Move cursor right</td>
-      </tr>
-      <tr>
-        <td>ALT+SHIFT+Right</td>
-        <td> </td>
-        <td>Text Editor</td>
-        <td>Move cursor right while doing column select (rectangular area)</td>
-      </tr>
-      <tr>
-        <td>SHIFT+Right</td>
-        <td>SHIFT+Right</td>
-        <td>Text Editor</td>
-        <td>Move cursor right while selecting lines</td>
-      </tr>
-      <tr>
-        <td>Up</td>
-        <td>Up</td>
-        <td>Text Editor</td>
-        <td>Move cursor up</td>
-      </tr>
-      <tr>
-        <td>ALT+SHIFT+Up</td>
-        <td>ALT+SHIFT+Up</td>
-        <td>Text Editor</td>
-        <td>Move cursor up while doing column select (rectangular area)</td>
-      </tr>
-      <tr>
-        <td>CTRL+SHIFT+Up</td>
-        <td>CTRL+SHIFT+PageUp</td>
-        <td>Text Editor</td>
-        <td>Move cursor up while selecting lines</td>
-      </tr>
-      <tr>
-        <td>SHIFT+Up</td>
-        <td>SHIFT+Up</td>
-        <td>Text Editor</td>
-        <td>Move cursor up while selecting lines</td>
-      </tr>
-      <tr>
-        <td>CTRL+K</td>
-        <td>CMD+K</td>
-        <td>Text Editor</td>
-        <td>Comment line or selection</td>
-      </tr>
-      <tr>
-        <td>SHIFT+Tab</td>
-        <td>SHIFT+Tab,</td>
-        <td>Text Editor</td>
-        <td>Tab backwards</td>
-      </tr>
-      <tr>
-        <td>BackSpace</td>
-        <td>Delete</td>
-        <td>Text Editor</td>
-        <td>Backspace</td>
-      </tr>
-      <tr>
-        <td>CTRL+Delete</td>
-        <td>CTRL+Delete</td>
-        <td>Text Editor</td>
-        <td>Delete from the cursor position to the end of the word</td>
-      </tr>
-      <tr>
-        <td>Delete</td>
-        <td>Delete</td>
-        <td>Text Editor</td>
-        <td>Delete</td>
-      </tr>
-      <tr>
-        <td> </td>
-        <td>CTRL+K</td>
-        <td>Text Editor</td>
-        <td>Delete line after cursor</td>
-      </tr>
-      <tr>
-        <td> </td>
-        <td>CMD+Delete</td>
-        <td>Text Editor</td>
-        <td>Delete line before cursor</td>
-      </tr>
-      <tr>
-        <td>CTRL+BackSpace</td>
-        <td>ALT+Delete</td>
-        <td>Text Editor</td>
-        <td>Delete from the cursor position to the start of the word</td>
-      </tr>
-      <tr>
-        <td>CTRL+End</td>
-        <td>CTRL+End</td>
-        <td>Text Editor</td>
-        <td>Move cursor to the end of the document</td>
-      </tr>
-      <tr>
-        <td>CTRL+SHIFT+End</td>
-        <td>CTRL+SHIFT+End</td>
-        <td>Text Editor</td>
-        <td>Move cursor to the end of the document and select everything in between</td>
-      </tr>
-      <tr>
-        <td>CTRL+Home</td>
-        <td>CTRL+Home</td>
-        <td>Text Editor</td>
-        <td>Move cursor to the start of the document</td>
-      </tr>
-      <tr>
-        <td>CTRL+SHIFT+Home</td>
-        <td>CTRL+SHIFT+Home</td>
-        <td>Text Editor</td>
-        <td>Move cursor to the start of the document and select everything in between</td>
-      </tr>
-      <tr>
-        <td>End</td>
-        <td>End</td>
-        <td>Text Editor</td>
-        <td>Move cursor to end of line</td>
-      </tr>
-      <tr>
-        <td>ALT+SHIFT+End</td>
-        <td>ALT+SHIFT+End</td>
-        <td>Text Editor</td>
-        <td>Move cursor to end of line and column select</td>
-      </tr>
-      <tr>
-        <td>SHIFT+End</td>
-        <td>SHIFT+End</td>
-        <td>Text Editor</td>
-        <td>Move cursor to end of line and select text in between</td>
-      </tr>
-      <tr>
-        <td>CTRL+Enter</td>
-        <td>CMD+Enter</td>
-        <td>Text Editor</td>
-        <td>Expand/Collapse region</td>
-      </tr>
-      <tr>
-        <td>CTRL+M</td>
-        <td>CTRL+M</td>
-        <td>Text Editor</td>
-        <td>Fold regions</td>
-      </tr>
-      <tr>
-        <td>Home</td>
-        <td>Home</td>
-        <td>Text Editor</td>
-        <td>Move cursor to start of line</td>
-      </tr>
-      <tr>
-        <td>ALT+SHIFT+Home</td>
-        <td>ALT+SHIFT+Home</td>
-        <td>Text Editor</td>
-        <td>Move cursor to start of line and column select</td>
-      </tr>
-      <tr>
-        <td>SHIFT+Home</td>
-        <td>SHIFT+Home</td>
-        <td>Text Editor</td>
-        <td>Move cursor to start of line and select</td>
-      </tr>
-      <tr>
-        <td>Enter</td>
-        <td>Enter</td>
-        <td>Text Editor</td>
-        <td>Line break</td>
-      </tr>
-      <tr>
-        <td>KeypadEnter</td>
-        <td>KeypadEnter</td>
-        <td>Text Editor</td>
-        <td>Line break</td>
-      </tr>
-      <tr>
-        <td>CTRL+ALT+Down</td>
-        <td>CMD+ALT+Down</td>
-        <td>Text Editor</td>
-        <td>Next region</td>
-      </tr>
-      <tr>
-        <td>PageDown</td>
-        <td>PageDown</td>
-        <td>Text Editor</td>
-        <td>Page down</td>
-      </tr>
-      <tr>
-        <td>SHIFT+PageDown</td>
-        <td>SHIFT+PageDown</td>
-        <td>Text Editor</td>
-        <td>Page down + select</td>
-      </tr>
-      <tr>
-        <td>PageUp</td>
-        <td>PageUp</td>
-        <td>Text Editor</td>
-        <td>Page up</td>
-      </tr>
-      <tr>
-        <td>SHIFT+PageUp</td>
-        <td>SHIFT+PageUp</td>
-        <td>Text Editor</td>
-        <td>Page up + select</td>
-      </tr>
-      <tr>
-        <td>CTRL+ALT+Up</td>
-        <td>CMD+ALT+Up</td>
-        <td>Text Editor</td>
-        <td>Previous region</td>
-      </tr>
-      <tr>
-        <td>F6</td>
-        <td>F6</td>
-        <td>Text Editor</td>
-        <td>Restart game</td>
-      </tr>
-      <tr>
-        <td>CTRL+Down</td>
-        <td>CTRL+PageDown</td>
-        <td>Text Editor</td>
-        <td>Scroll down (move cursor down and scroll down)</td>
-      </tr>
-      <tr>
-        <td>CTRL+Up</td>
-        <td>CTRL+PageUp</td>
-        <td>Text Editor</td>
-        <td>Scroll up (move cursor up and scroll up)</td>
-      </tr>
-      <tr>
-        <td>CTRL+Space</td>
-        <td>CTRL+Space</td>
-        <td>Text Editor</td>
-        <td>Show code completion</td>
-      </tr>
-      <tr>
-        <td>F4</td>
-        <td>F4</td>
-        <td>Text Editor</td>
-        <td>Show snippets</td>
-      </tr>
-      <tr>
-        <td>Tab</td>
-        <td>Tab,</td>
-        <td>Text Editor</td>
-        <td>Tab</td>
-      </tr>
-      <tr>
-        <td>CTRL+G</td>
-        <td>CMD+G</td>
-        <td>Text Editor</td>
-        <td>Goto line number</td>
-      </tr>
-      <tr>
-        <td>Insert</td>
-        <td>Insert</td>
-        <td>Text Editor</td>
-        <td>Toggle Insert/Overwrite</td>
-      </tr>
-      <tr>
-        <td>CTRL+SHIFT+K</td>
-        <td>CMD+SHIFT+K</td>
-        <td>Text Editor</td>
-        <td>Uncomment line/selection</td>
-      </tr>
-      <tr>
-        <td>CTRL+U</td>
-        <td>CTRL+U</td>
-        <td>Text Editor</td>
-        <td>Unfold regions</td>
-      </tr>
-      <tr>
-        <td>CTRL+Left</td>
-        <td>ALT+Left</td>
-        <td>Text Editor</td>
-        <td>Move cursor to word on the left</td>
-      </tr>
-      <tr>
-        <td>CTRL+SHIFT+Left</td>
-        <td>ALT+SHIFT+Left</td>
-        <td>Text Editor</td>
-        <td>Move cursor to word on the left and select text in between</td>
-      </tr>
-      <tr>
-        <td>CTRL+Right</td>
-        <td>ALT+Right</td>
-        <td>Text Editor</td>
-        <td>Move cursor to word on the right</td>
-      </tr>
-      <tr>
-        <td>CTRL+SHIFT+Right</td>
-        <td>ALT+SHIFT+Right</td>
-        <td>Text Editor</td>
-        <td>Move cursor to word on the right and select text in between</td>
-      </tr>
-    </tbody>
-  </table>
-  <h2>Tileset Editor</h2>
-  <table>
-    <tbody>
-      <tr>
-        <th>Windows Key Binding</th>
-        <th>macOS Key Binding</th>
-        <th>Scope</th>
-        <th>Description</th>
-      </tr>
-      <tr>
-        <td>Insert</td>
-        <td>Insert</td>
-        <td>Tileset Editor</td>
-        <td>Add animation (Tile Animation window)</td>
-      </tr>
-      <tr>
-        <td>CTRL+F</td>
-        <td>CMD+F</td>
-        <td>Tileset Editor</td>
-        <td>Add full auto tile set (Auto Tiling window)</td>
-      </tr>
-      <tr>
-        <td>CTRL+R</td>
-        <td>CMD+R</td>
-        <td>Tileset Editor</td>
-        <td>Add auto tile transition set (Auto Tiling window)</td>
-      </tr>
-      <tr>
-        <td>Del</td>
-        <td>Del</td>
-        <td>Tileset Editor</td>
-        <td>Delete auto tile set (Auto Tiling window)</td>
-      </tr>
-      <tr>
-        <td>G</td>
-        <td>G</td>
-        <td>Tileset Editor</td>
-        <td>Toggle auto tile guide</td>
-      </tr>
-      <tr>
-        <td>KeypadMinus</td>
-        <td>KeypadMinus</td>
-        <td>Tileset Editor</td>
-        <td>Decrease brush size</td>
-      </tr>
-      <tr>
-        <td>KeypadMinus</td>
-        <td>KeypadMinus</td>
-        <td>Tileset Editor</td>
-        <td>Decrease brush size</td>
-      </tr>
-      <tr>
-        <td>Delete</td>
-        <td>Delete</td>
-        <td>Tileset Editor</td>
-        <td>Delete selection</td>
-      </tr>
-      <tr>
-        <td>KeypadPlus</td>
-        <td>KeypadPlus</td>
-        <td>Tileset Editor</td>
-        <td>Increase brush size</td>
-      </tr>
-      <tr>
-        <td>KeypadPlus</td>
-        <td>KeypadPlus</td>
-        <td>Tileset Editor</td>
-        <td>Decrease brush size</td>
-      </tr>
-      <tr>
-        <td>CTRL+I</td>
-        <td>CTRL+I</td>
-        <td>Tileset Editor</td>
-        <td>Invert tile selection</td>
-      </tr>
-      <tr>
-        <td>SHIFT+Down</td>
-        <td>SHIFT+Down</td>
-        <td>Tileset Editor</td>
-        <td>Move animation down (Tile Animation window)</td>
-      </tr>
-      <tr>
-        <td>SHIFT+Left</td>
-        <td>SHIFT+Left</td>
-        <td>Tileset Editor</td>
-        <td>Move animation frame left (Tile Animation window)</td>
-      </tr>
-      <tr>
-        <td>SHIFT+Right</td>
-        <td>SHIFT+Right</td>
-        <td>Tileset Editor</td>
-        <td>Move animation frame right (Tile Animation window)</td>
-      </tr>
-      <tr>
-        <td>SHIFT+Up</td>
-        <td>SHIFT+Up</td>
-        <td>Tileset Editor</td>
-        <td>Move animation up (Tile Animation window)</td>
-      </tr>
-      <tr>
-        <td>Down</td>
-        <td>Down</td>
-        <td>Tileset Editor</td>
-        <td>Next animation (Tile Animation window)</td>
-      </tr>
-      <tr>
-        <td>Right</td>
-        <td>Right</td>
-        <td>Tileset Editor</td>
-        <td>Next animation frame (Tile Animation window)</td>
-      </tr>
-      <tr>
-        <td>CTRL+A</td>
-        <td>CMD+A</td>
-        <td>Tileset Editor</td>
-        <td>Open Auto Tiling window</td>
-      </tr>
-      <tr>
-        <td>CTRL+B</td>
-        <td>CMD+B</td>
-        <td>Tileset Editor</td>
-        <td>Open Brush Builder window</td>
-      </tr>
-      <tr>
-        <td>CTRL+ALT+T</td>
-        <td>CMD+ALT+T</td>
-        <td>Tileset Editor</td>
-        <td>Open Tile Animation window</td>
-      </tr>
-      <tr>
-        <td>CTRL+SHIFT+O</td>
-        <td>CMD+SHIFT+O</td>
-        <td>Tileset Editor</td>
-        <td>Open Tile Set Properties window</td>
-      </tr>
-      <tr>
-        <td>Up</td>
-        <td>Up</td>
-        <td>Tileset Editor</td>
-        <td>Previous animation (Tile Animation window)</td>
-      </tr>
-      <tr>
-        <td>Left</td>
-        <td>Left</td>
-        <td>Tileset Editor</td>
-        <td>Previous animation frame (Tile Animation window)</td>
-      </tr>
-      <tr>
-        <td>Z</td>
-        <td>Z</td>
-        <td>Tileset Editor</td>
-        <td>Rotate</td>
-      </tr>
-      <tr>
-        <td>A</td>
-        <td>A</td>
-        <td>Tileset Editor</td>
-        <td>Select Autotile tool (Brush Builder Tools)</td>
-      </tr>
-      <tr>
-        <td>E</td>
-        <td>E</td>
-        <td>Tileset Editor</td>
-        <td>Select Eraser tool (Brush Builder Tools)</td>
-      </tr>
-      <tr>
-        <td>F</td>
-        <td>F</td>
-        <td>Tileset Editor</td>
-        <td>Select Fill tool (Brush Builder Tools)</td>
-      </tr>
-      <tr>
-        <td>L</td>
-        <td>L</td>
-        <td>Tileset Editor</td>
-        <td>Select Line tool (Brush Builder Tools)</td>
-      </tr>
-      <tr>
-        <td>D</td>
-        <td>D</td>
-        <td>Tileset Editor</td>
-        <td>Select Pen tool (Brush Builder Tools)</td>
-      </tr>
-      <tr>
-        <td>R</td>
-        <td>R</td>
-        <td>Tileset Editor</td>
-        <td>Select Rectangle tool (Brush Builder Tools)</td>
-      </tr>
-      <tr>
-        <td>S</td>
-        <td>S</td>
-        <td>Tileset Editor</td>
-        <td>Select Select Tiles tool (Brush Builder Tools)</td>
-      </tr>
-    </tbody>
-  </table>
-  <h2>Timeline Editor</h2>
-  <table>
-    <tbody>
-      <tr>
-        <th>Windows Key Binding</th>
-        <th>macOS Key Binding</th>
-        <th>Scope</th>
-        <th>Description</th>
-      </tr>
-      <tr>
-        <td>Insert</td>
-        <td>Enter</td>
-        <td>Timeline Editor</td>
-        <td>Add new moment</td>
-      </tr>
-      <tr>
-        <td>CTRL+SHIFT+E</td>
-        <td>CMD+SHIFT+E</td>
-        <td>Timeline Editor</td>
-        <td>Change selected moment</td>
-      </tr>
-      <tr>
-        <td>CTRL+Insert</td>
-        <td>CTRL+Insert</td>
-        <td>Timeline Editor</td>
-        <td>Copy selected moments</td>
-      </tr>
-      <tr>
-        <td>SHIFT+Delete</td>
-        <td>SHIFT+Delete</td>
-        <td>Timeline Editor</td>
-        <td>Cut selected moments</td>
-      </tr>
-      <tr>
-        <td>ALT+Enter</td>
-        <td>ALT+Enter</td>
-        <td>Timeline Editor</td>
-        <td>Edit moment (jump to code editor)</td>
-      </tr>
-      <tr>
-        <td>CTRL+SHIFT+M</td>
-        <td>CMD+SHIFT+M</td>
-        <td>Timeline Editor</td>
-        <td>Merge selected moments</td>
-      </tr>
-      <tr>
-        <td>SHIFT+Insert</td>
-        <td>SHIFT+Insert</td>
-        <td>Timeline Editor</td>
-        <td>Paste moments</td>
-      </tr>
-      <tr>
-        <td>CTRL+U</td>
-        <td>CMD+U</td>
-        <td>Timeline Editor</td>
-        <td>Unselect moments</td>
-      </tr>
-    </tbody>
-  </table>
-  <p> </p>
-  <p> </p>
+  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down1" href="#">Редактор путей</a></p>
+  <div class="droptext" data-targetname="drop-down1">
+    <table>
+      <tbody>
+        <tr>
+          <th>Привязка клавиш Windows</th>
+          <th>Привязка клавиш macOS</th>
+          <th>Область применения</th>
+          <th>Описание</th>
+        </tr>
+        <tr>
+          <td>Удалить</td>
+          <td>Удалить</td>
+          <td>Редактор путей</td>
+          <td>Удалить выделенные точки из контура</td>
+        </tr>
+        <tr>
+          <td>T</td>
+          <td>T</td>
+          <td>Редактор путей</td>
+          <td>Удерживая эту клавишу, щелкните и перетащите, чтобы перевести весь путь.</td>
+        </tr>
+        <tr>
+          <td>R</td>
+          <td>R</td>
+          <td>Редактор путей</td>
+          <td>Удерживая эту клавишу, щелкните и перетащите, чтобы повернуть весь путь.</td>
+        </tr>
+        <tr>
+          <td>S</td>
+          <td>S</td>
+          <td>Редактор путей</td>
+          <td>Удерживая эту клавишу, щелкните и перетащите, чтобы масштабировать весь путь.</td>
+        </tr>
+        <tr>
+          <td>X</td>
+          <td>X</td>
+          <td>Редактор путей</td>
+          <td>Зеркальный путь</td>
+        </tr>
+        <tr>
+          <td>Y</td>
+          <td>Y</td>
+          <td>Редактор путей</td>
+          <td>Перевернуть путь</td>
+        </tr>
+        <tr>
+          <td>CTRL + P</td>
+          <td>CMD + P</td>
+          <td>Редактор путей</td>
+          <td>Панорамирование пути</td>
+        </tr>
+        <tr>
+          <td>CTRL + R</td>
+          <td>CMD + R</td>
+          <td>Редактор путей</td>
+          <td>Обратный путь</td>
+        </tr>
+      </tbody>
+    </table>
+    <p> </p>
+  </div>
+  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down2" href="#">Редактор спрайтов</a></p>
+  <div class="droptext" data-targetname="drop-down2">
+    <table>
+      <tbody>
+        <tr>
+          <th>Привязка клавиш Windows</th>
+          <th>Привязка клавиш macOS</th>
+          <th>Область применения</th>
+          <th>Описание</th>
+        </tr>
+        <tr>
+          <td>CTRL + A</td>
+          <td>CTRL + A</td>
+          <td>Редактор спрайтов</td>
+          <td>Выберите все кадры в представлении кадров</td>
+        </tr>
+        <tr>
+          <td>CTRL + C</td>
+          <td>CTRL + C</td>
+          <td>Редактор спрайтов</td>
+          <td>Копирование выбранных кадров</td>
+        </tr>
+        <tr>
+          <td>CTRL + INSERT</td>
+          <td>Н/Д</td>
+          <td>Редактор спрайтов</td>
+          <td>Копирование выбранных кадров</td>
+        </tr>
+        <tr>
+          <td>CTRL + V</td>
+          <td>CTRL + V</td>
+          <td>Редактор спрайтов</td>
+          <td>Вставить выбранные кадры</td>
+        </tr>
+        <tr>
+          <td>SHIFT + INSERT</td>
+          <td>Н/Д</td>
+          <td>Редактор спрайтов</td>
+          <td>Вставить выбранные кадры</td>
+        </tr>
+        <tr>
+          <td>CTRL + X</td>
+          <td>CTRL + V</td>
+          <td>Редактор спрайтов</td>
+          <td>Вырезать выбранные кадры</td>
+        </tr>
+        <tr>
+          <td>SHIFT + УДАЛИТЬ</td>
+          <td>Н/Д</td>
+          <td>Редактор спрайтов</td>
+          <td>Вырезать выбранные кадры</td>
+        </tr>
+        <tr>
+          <td>Удалить</td>
+          <td>Удалить</td>
+          <td>Редактор спрайтов</td>
+          <td>Удалить выбранные кадры</td>
+        </tr>
+        <tr>
+          <td>Вставка <i>или</i> SHIFT + A</td>
+          <td>Вставка <i>или</i> SHIFT + A</td>
+          <td>Редактор спрайтов</td>
+          <td>Добавьте новый кадр в конец списка кадров</td>
+        </tr>
+        <tr>
+          <td>SHIFT + A</td>
+          <td>SHIFT + A</td>
+          <td>Редактор спрайтов</td>
+          <td>Добавьте новый кадр в конец списка кадров</td>
+        </tr>
+      </tbody>
+    </table>
+    <p> </p>
+  </div>
+  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down3" href="#">Редактор наборов плиток</a></p>
+  <div class="droptext" data-targetname="drop-down3">
+    <table>
+      <tbody>
+        <tr>
+          <th>Привязка клавиш Windows</th>
+          <th>Привязка клавиш macOS</th>
+          <th>Область применения</th>
+          <th>Описание</th>
+        </tr>
+        <tr>
+          <td>Побег</td>
+          <td>Побег</td>
+          <td>Редактор кистей</td>
+          <td>Отменить выделение выбранных плиток</td>
+        </tr>
+        <tr>
+          <td>Плюс(+) / Numpad Plus</td>
+          <td>Плюс(+) / Numpad Plus</td>
+          <td>Редактор кистей</td>
+          <td>Увеличьте размер кисти</td>
+        </tr>
+        <tr>
+          <td>Минус(-) / Numpad Minus</td>
+          <td>Минус(-) / Numpad Minus</td>
+          <td>Редактор кистей</td>
+          <td>Уменьшить размер кисти</td>
+        </tr>
+        <tr>
+          <td>X</td>
+          <td>X</td>
+          <td>Редактор кистей</td>
+          <td>Зеркальная плитка</td>
+        </tr>
+        <tr>
+          <td>Y</td>
+          <td>Y</td>
+          <td>Редактор кистей</td>
+          <td>Переверните плитку</td>
+        </tr>
+        <tr>
+          <td colspan="4" height="5px">
+            <hr />
+          </td>
+        </tr>
+        <tr>
+          <td>Удалить</td>
+          <td>Удалить</td>
+          <td>Автоплитка / Анимация</td>
+          <td>Удалить текущую сфокусированную автоплитку или набор анимации</td>
+        </tr>
+        <tr>
+          <td>f2</td>
+          <td>f2</td>
+          <td>Автоплитка / Анимация</td>
+          <td>Переименование текущей сфокусированной автоплитки или набора анимации</td>
+        </tr>
+        <tr>
+          <td colspan="4" height="5px">
+            <hr />
+          </td>
+        </tr>
+        <tr>
+          <td>Вставка</td>
+          <td>Вставка</td>
+          <td>Анимация</td>
+          <td>Добавить новую анимацию</td>
+        </tr>
+        <tr>
+          <td>Стрелка вверх</td>
+          <td>Стрелка вверх</td>
+          <td>Анимация</td>
+          <td>Выберите предыдущий набор анимации</td>
+        </tr>
+        <tr>
+          <td>Стрелка вниз</td>
+          <td>Стрелка вниз</td>
+          <td>Анимация</td>
+          <td>Выберите следующий набор анимации</td>
+        </tr>
+        <tr>
+          <td>Левая стрелка</td>
+          <td>Левая стрелка</td>
+          <td>Анимация</td>
+          <td>Выберите предыдущий кадр анимации</td>
+        </tr>
+        <tr>
+          <td>Стрелка вправо</td>
+          <td>Стрелка вправо</td>
+          <td>Анимация</td>
+          <td>Выберите следующий кадр анимации</td>
+        </tr>
+        <tr>
+          <td>SHIFT + стрелка вверх</td>
+          <td>SHIFT + стрелка вверх</td>
+          <td>Анимация</td>
+          <td>Переместить текущую настройку анимации</td>
+        </tr>
+        <tr>
+          <td>SHIFT + стрелка вниз</td>
+          <td>SHIFT + стрелка вниз</td>
+          <td>Анимация</td>
+          <td>Переместить текущий набор анимации вниз</td>
+        </tr>
+        <tr>
+          <td>SHIFT + стрелка влево</td>
+          <td>SHIFT + стрелка влево</td>
+          <td>Анимация</td>
+          <td>Переместить текущий кадр анимации влево</td>
+        </tr>
+        <tr>
+          <td>SHIFT + стрелка вправо</td>
+          <td>SHIFT + стрелка вправо</td>
+          <td>Анимация</td>
+          <td>Переместить текущий кадр анимации вправо</td>
+        </tr>
+      </tbody>
+    </table>
+    <p> </p>
+  </div>
+  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down4" href="#">Редактор изображений</a></p>
+  <div class="droptext" data-targetname="drop-down4">
+    <table>
+      <tbody>
+        <tr>
+          <th>Привязка клавиш Windows</th>
+          <th>Привязка клавиш macOS</th>
+          <th>Область применения</th>
+          <th>Описание</th>
+        </tr>
+        <tr>
+          <td>Побег</td>
+          <td>Побег</td>
+          <td>Общие сведения</td>
+          <td>Отменить текущий выбор / прервать текущую дугу или многоугольник</td>
+        </tr>
+        <tr>
+          <td>O</td>
+          <td>O</td>
+          <td>Общие сведения</td>
+          <td>Откройте инструмент выбора цвета</td>
+        </tr>
+        <tr>
+          <td>f2</td>
+          <td>f2</td>
+          <td>Общие сведения</td>
+          <td>Переименовать слой</td>
+        </tr>
+        <tr>
+          <td>CTRL + S</td>
+          <td>CMD + S</td>
+          <td>Общие сведения</td>
+          <td>Сохранить изображение</td>
+        </tr>
+        <tr>
+          <td>CTRL + X</td>
+          <td>CMD + X</td>
+          <td>Общие сведения</td>
+          <td>Выбор среза</td>
+        </tr>
+        <tr>
+          <td>SHIFT + УДАЛИТЬ</td>
+          <td>Н/Д</td>
+          <td>Общие сведения</td>
+          <td>Выбор среза</td>
+        </tr>
+        <tr>
+          <td>CTRL + C</td>
+          <td>CMD + C</td>
+          <td>Общие сведения</td>
+          <td>Выбор копии / рамка копирования</td>
+        </tr>
+        <tr>
+          <td>CTRL + INSERT</td>
+          <td>Н/Д</td>
+          <td>Общие сведения</td>
+          <td>Выбор копии / рамка копирования</td>
+        </tr>
+        <tr>
+          <td>CTRL + V</td>
+          <td>CMD + V</td>
+          <td>Общие сведения</td>
+          <td>Вставить буфер обмена в кисть / вставить скопированный кадр</td>
+        </tr>
+        <tr>
+          <td>SHIFT + INSERT</td>
+          <td>Н/Д</td>
+          <td>Общие сведения</td>
+          <td>Вставить буфер обмена в кисть / вставить скопированный кадр</td>
+        </tr>
+        <tr>
+          <td>CTRL + SHIFT + A</td>
+          <td>CMD + SHIFT + A</td>
+          <td>Общие сведения</td>
+          <td>Импортное изображение</td>
+        </tr>
+        <tr>
+          <td colspan="4" height="5px">
+            <hr />
+          </td>
+        </tr>
+        <tr>
+          <td>Удалить</td>
+          <td>Удалить</td>
+          <td>Вид рамы</td>
+          <td>Удаление выбранных кадров в режиме просмотра кадров</td>
+        </tr>
+        <tr>
+          <td>Вставка</td>
+          <td>Вставка</td>
+          <td>Вид рамы</td>
+          <td>Добавить рамку</td>
+        </tr>
+        <tr>
+          <td>SHIFT + A</td>
+          <td>SHIFT + A</td>
+          <td>Вид рамы</td>
+          <td>Добавьте пустую рамку</td>
+        </tr>
+        <tr>
+          <td>(клавиатура) 1</td>
+          <td>(клавиатура) 1</td>
+          <td>Вид рамы</td>
+          <td>Предыдущая рамка</td>
+        </tr>
+        <tr>
+          <td>(клавиатура) 2</td>
+          <td>(клавиатура) 2</td>
+          <td>Вид рамы</td>
+          <td>Следующий кадр</td>
+        </tr>
+        <tr>
+          <td colspan="4" height="5px">
+            <hr />
+          </td>
+        </tr>
+        <tr>
+          <td>B</td>
+          <td>B</td>
+          <td>Ящик для инструментов</td>
+          <td>Переключение между предустановленной и выбранной кистью</td>
+        </tr>
+        <tr>
+          <td>D</td>
+          <td>D</td>
+          <td>Ящик для инструментов</td>
+          <td>Выберите инструмент рисования (карандаш)</td>
+        </tr>
+        <tr>
+          <td>E</td>
+          <td>E</td>
+          <td>Ящик для инструментов</td>
+          <td>Выберите инструмент "Ластик</td>
+        </tr>
+        <tr>
+          <td>F</td>
+          <td>F</td>
+          <td>Ящик для инструментов</td>
+          <td>Выберите инструмент заливки</td>
+        </tr>
+        <tr>
+          <td>L</td>
+          <td>L</td>
+          <td>Ящик для инструментов</td>
+          <td>Выберите инструмент "Линия</td>
+        </tr>
+        <tr>
+          <td>A</td>
+          <td>A</td>
+          <td>Ящик для инструментов</td>
+          <td>Выберите инструмент "Дуга</td>
+        </tr>
+        <tr>
+          <td>R</td>
+          <td>R</td>
+          <td>Ящик для инструментов</td>
+          <td>Выберите инструмент прямоугольник</td>
+        </tr>
+        <tr>
+          <td>C</td>
+          <td>C</td>
+          <td>Ящик для инструментов</td>
+          <td>Выберите инструмент "Эллипс</td>
+        </tr>
+        <tr>
+          <td>P</td>
+          <td>P</td>
+          <td>Ящик для инструментов</td>
+          <td>Выберите инструмент многоугольник</td>
+        </tr>
+        <tr>
+          <td>T</td>
+          <td>T</td>
+          <td>Ящик для инструментов</td>
+          <td>Выберите инструмент "Текст</td>
+        </tr>
+        <tr>
+          <td>S</td>
+          <td>S</td>
+          <td>Ящик для инструментов</td>
+          <td>Выберите инструмент выделения прямоугольника</td>
+        </tr>
+        <tr>
+          <td>Q</td>
+          <td>Q</td>
+          <td>Ящик для инструментов</td>
+          <td>Выберите инструмент выделения краской</td>
+        </tr>
+        <tr>
+          <td>W</td>
+          <td>W</td>
+          <td>Ящик для инструментов</td>
+          <td>Выберите волшебную палочку</td>
+        </tr>
+        <tr>
+          <td>M</td>
+          <td>M</td>
+          <td>Ящик для инструментов</td>
+          <td>Выберите инструмент панорамирования</td>
+        </tr>
+        <tr>
+          <td>U</td>
+          <td>U</td>
+          <td>Ящик для инструментов</td>
+          <td>Выберите инструмент "Поворот</td>
+        </tr>
+        <tr>
+          <td>Z</td>
+          <td>Z</td>
+          <td>Ящик для инструментов</td>
+          <td>Поверните текущую кисть на 90°</td>
+        </tr>
+        <tr>
+          <td>X</td>
+          <td>X</td>
+          <td>Ящик для инструментов</td>
+          <td>Зеркальное отображение текущей кисти вдоль оси X</td>
+        </tr>
+        <tr>
+          <td>Y</td>
+          <td>Y</td>
+          <td>Ящик для инструментов</td>
+          <td>Перевернуть текущую кисть вдоль оси Y</td>
+        </tr>
+        <tr>
+          <td>SHIFT + R</td>
+          <td>SHIFT + R</td>
+          <td>Ящик для инструментов</td>
+          <td>Выберите инструмент "Залитый прямоугольник</td>
+        </tr>
+        <tr>
+          <td>SHIFT + C</td>
+          <td>SHIFT + C</td>
+          <td>Ящик для инструментов</td>
+          <td>Выберите инструмент "Залитый эллипс</td>
+        </tr>
+        <tr>
+          <td>SHIFT + P</td>
+          <td>SHIFT + P</td>
+          <td>Ящик для инструментов</td>
+          <td>Выберите инструмент "Заполненный многоугольник</td>
+        </tr>
+        <tr>
+          <td>SHIFT + Z</td>
+          <td>SHIFT + Z</td>
+          <td>Ящик для инструментов</td>
+          <td>Растягивание / масштабирование текущей кисти</td>
+        </tr>
+        <tr>
+          <td>Плюс(+) / Numpad Plus</td>
+          <td>Плюс(+) / Numpad Plus</td>
+          <td>Ящик для инструментов</td>
+          <td>Увеличить текущий размер кисти</td>
+        </tr>
+        <tr>
+          <td>Минус(-) / Numpad Minus</td>
+          <td>Минус(-) / Numpad Minus</td>
+          <td>Ящик для инструментов</td>
+          <td>Уменьшить текущий размер кисти</td>
+        </tr>
+        <tr>
+          <td>Период (.)</td>
+          <td>Период (.)</td>
+          <td>Ящик для инструментов</td>
+          <td>Выберите кисть</td>
+        </tr>
+        <tr>
+          <td>CTRL</td>
+          <td>CMD</td>
+          <td>Ящик для инструментов</td>
+          <td>Переключение инструмента выбора цвета при удержании кнопки</td>
+        </tr>
+        <tr>
+          <td colspan="4" height="5px">
+            <hr />
+          </td>
+        </tr>
+        <tr>
+          <td>G</td>
+          <td>G</td>
+          <td>Холст</td>
+          <td>Переключает наложение сетки</td>
+        </tr>
+        <tr>
+          <td>CTRL + G</td>
+          <td>CMD + G</td>
+          <td>Холст</td>
+          <td>Включение/выключение привязки сетки</td>
+        </tr>
+        <tr>
+          <td>ALT + V</td>
+          <td>ALT + V</td>
+          <td>Холст</td>
+          <td>Переключение вида вертикального разделения</td>
+        </tr>
+        <tr>
+          <td>ALT + H</td>
+          <td>ALT + H</td>
+          <td>Холст</td>
+          <td>Переключение вида горизонтального разделения</td>
+        </tr>
+        <tr>
+          <td>ALT + C</td>
+          <td>ALT + C</td>
+          <td>Холст</td>
+          <td>Центральное изображение с единичным масштабом</td>
+        </tr>
+        <tr>
+          <td>ALT + F</td>
+          <td>ALT + F</td>
+          <td>Холст</td>
+          <td>Центрирование изображения и масштабирование для заполнения текущего вида</td>
+        </tr>
+        <tr>
+          <td>CTRL + A</td>
+          <td>CMD + A</td>
+          <td>Холст</td>
+          <td>Выбрать все</td>
+        </tr>
+        <tr>
+          <td>CTRL + SHIFT + I</td>
+          <td>CMD + SHIFT + I</td>
+          <td>Холст</td>
+          <td>Выбор инверсии</td>
+        </tr>
+        <tr>
+          <td>Стрелка вверх</td>
+          <td>Стрелка вверх</td>
+          <td>Холст</td>
+          <td>Переместить выбранные пиксели на 1 пиксель вверх</td>
+        </tr>
+        <tr>
+          <td>Стрелка вниз</td>
+          <td>Стрелка вниз</td>
+          <td>Холст</td>
+          <td>Переместить выбранные пиксели на 1 пиксель вниз</td>
+        </tr>
+        <tr>
+          <td>Стрелка влево</td>
+          <td>Стрелка влево</td>
+          <td>Холст</td>
+          <td>Переместить выбранные пиксели на 1 пиксель влево</td>
+        </tr>
+        <tr>
+          <td>Стрелка вправо</td>
+          <td>Стрелка вправо</td>
+          <td>Холст</td>
+          <td>Переместить выбранные пиксели на 1 пиксель вправо</td>
+        </tr>
+        <tr>
+          <td>CTRL + Плюс (+)</td>
+          <td>CMD + плюс (+)</td>
+          <td>Холст</td>
+          <td>Увеличение масштаба просмотра холста</td>
+        </tr>
+        <tr>
+          <td>CTRL + Минус (-)</td>
+          <td>CMD + Минус (-)</td>
+          <td>Холст</td>
+          <td>Уменьшение масштаба просмотра холста</td>
+        </tr>
+      </tbody>
+    </table>
+    <p><br />
+       </p>
+    <p><br />
+       </p>
+  </div>
+  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down5" href="#">Редактор номеров</a></p>
+  <div class="droptext" data-targetname="drop-down5">
+    <table>
+      <tbody>
+        <tr>
+          <th>Привязка клавиш Windows</th>
+          <th style="">Привязка клавиш macOS</th>
+          <th style="">Область применения</th>
+          <th>Описание</th>
+        </tr>
+        <tr>
+          <td>P</td>
+          <td style="">P</td>
+          <td style="">Общие сведения</td>
+          <td>Удерживание этой кнопки при нажатии включает опцию &quot;выбрать из любого слоя&quot;. Отпустив ее, вы снова отключите эту опцию</td>
+        </tr>
+        <tr>
+          <td>CTRL +ALT + G</td>
+          <td style="">CMD + ALT + G</td>
+          <td style="">Общий</td>
+          <td>Переключение привязки сетки</td>
+        </tr>
+        <tr>
+          <td>CTRL + X</td>
+          <td style="">CMD + X</td>
+          <td style="">Общий</td>
+          <td>Вырезать выбранные элементы из текущего слоя</td>
+        </tr>
+        <tr>
+          <td>SHIFT + УДАЛИТЬ</td>
+          <td style="">Н/Д</td>
+          <td style="">Общие сведения</td>
+          <td>Вырезать выбранные элементы из текущего слоя</td>
+        </tr>
+        <tr>
+          <td>CTRL + C</td>
+          <td style="">CMD + C</td>
+          <td style="">Общие сведения</td>
+          <td>Копирование выбранных элементов из текущего слоя</td>
+        </tr>
+        <tr>
+          <td>CTRL + INSERT</td>
+          <td style="">Н/Д</td>
+          <td style="">Общие сведения</td>
+          <td>Копирование выбранных элементов из текущего слоя</td>
+        </tr>
+        <tr>
+          <td>CTRL + V</td>
+          <td style="">CMD + V</td>
+          <td style="">Общие сведения</td>
+          <td>Вставка элементов буфера обмена в текущий слой</td>
+        </tr>
+        <tr>
+          <td>SHIFT + INSERT</td>
+          <td style="">Н/Д</td>
+          <td style="">Общий</td>
+          <td>Вставка элементов буфера обмена в текущий слой</td>
+        </tr>
+        <tr>
+          <td>CTRL + ALT + R</td>
+          <td style="">CMD + ALT + R</td>
+          <td style="">Общий</td>
+          <td>Откройте окно свойств помещения</td>
+        </tr>
+        <tr>
+          <td>CTRL + ALT + P</td>
+          <td style="">CMD + ALT + P</td>
+          <td style="">Общие сведения</td>
+          <td>Откройте окно свойств слоя</td>
+        </tr>
+        <tr>
+          <td>CTRL + ALT + L</td>
+          <td style="">CMD + ALT + L</td>
+          <td style="">Общие сведения</td>
+          <td>Откройте окно просмотра слоев</td>
+        </tr>
+        <tr>
+          <td>CTRL + ALT + I</td>
+          <td style="">CMD + ALT + I</td>
+          <td style="">Общие сведения</td>
+          <td>Откройте окно порядка создания экземпляра</td>
+        </tr>
+        <tr>
+          <td colspan="4" height="5px">
+            <hr />
+          </td>
+        </tr>
+        <tr>
+          <td>T</td>
+          <td style="">T</td>
+          <td style="">Редактор слоев контура</td>
+          <td>Удерживая эту клавишу, щелкните и перетащите, чтобы перевести весь путь.</td>
+        </tr>
+        <tr>
+          <td>R</td>
+          <td style="">R</td>
+          <td style="">Редактор слоев контура</td>
+          <td>Удерживая эту клавишу, щелкните и перетащите, чтобы повернуть весь путь.</td>
+        </tr>
+        <tr>
+          <td>S</td>
+          <td style="">S</td>
+          <td style="">Редактор слоев контура</td>
+          <td>Удерживая эту клавишу, щелкните и перетащите, чтобы масштабировать весь путь.</td>
+        </tr>
+        <tr>
+          <td>X</td>
+          <td style="">X</td>
+          <td style="">Редактор слоев контура</td>
+          <td>Зеркальный путь</td>
+        </tr>
+        <tr>
+          <td>Y</td>
+          <td style="">Y</td>
+          <td style="">Редактор слоев контура</td>
+          <td>Перевернуть путь</td>
+        </tr>
+        <tr>
+          <td colspan="4" height="5px">
+            <hr />
+          </td>
+        </tr>
+        <tr>
+          <td>D</td>
+          <td style="">D</td>
+          <td style="">Редактор слоев плитки</td>
+          <td>Выберите инструмент "Карандаш</td>
+        </tr>
+        <tr>
+          <td>E</td>
+          <td style="">E</td>
+          <td style="">Редактор слоев плитки</td>
+          <td>Выберите инструмент рисования "Ластик</td>
+        </tr>
+        <tr>
+          <td>F</td>
+          <td style="">F</td>
+          <td style="">Редактор слоев плитки</td>
+          <td>Выберите инструмент рисования заливки</td>
+        </tr>
+        <tr>
+          <td>L</td>
+          <td style="">L</td>
+          <td style="">Редактор слоев плитки</td>
+          <td>Выберите инструмент Рисование линии</td>
+        </tr>
+        <tr>
+          <td>R</td>
+          <td style="">R</td>
+          <td style="">Редактор слоев плитки</td>
+          <td>Выберите инструмент рисования прямоугольника</td>
+        </tr>
+        <tr>
+          <td>S</td>
+          <td style="">S</td>
+          <td style="">Редактор слоев плитки</td>
+          <td>Выберите инструмент Выделение плитки</td>
+        </tr>
+        <tr>
+          <td>A</td>
+          <td style="">A</td>
+          <td style="">Редактор слоев плитки</td>
+          <td>Выберите инструмент Autotile</td>
+        </tr>
+        <tr>
+          <td>I</td>
+          <td style="">I</td>
+          <td style="">Редактор слоев плитки</td>
+          <td>Выберите инструмент Наследование плитки</td>
+        </tr>
+        <tr>
+          <td>X</td>
+          <td style="">X</td>
+          <td style="">Редактор слоев плитки</td>
+          <td>Зеркальная плитка или щетка</td>
+        </tr>
+        <tr>
+          <td>Y</td>
+          <td style="">Y</td>
+          <td style="">Редактор слоев плитки</td>
+          <td>Переверните плитку или щетку</td>
+        </tr>
+        <tr>
+          <td>Z</td>
+          <td style="">Z</td>
+          <td style="">Редактор слоев плитки</td>
+          <td>Поверните плитку или щетку на 90°</td>
+        </tr>
+        <tr>
+          <td colspan="4" height="5px">
+            <hr />
+          </td>
+        </tr>
+        <tr>
+          <td>Левая стрелка</td>
+          <td style="">Левая стрелка</td>
+          <td style="">Полотно для комнаты</td>
+          <td>Переместить выбранные элементы влево</td>
+        </tr>
+        <tr>
+          <td>Стрелка вправо</td>
+          <td style="">Стрелка вправо</td>
+          <td style="">Полотно для комнаты</td>
+          <td>Переместить выбранные элементы вправо</td>
+        </tr>
+        <tr>
+          <td>Стрелка вверх</td>
+          <td style="">Стрелка вверх</td>
+          <td style="">Полотно для комнаты</td>
+          <td>Переместить выбранные элементы вверх</td>
+        </tr>
+        <tr>
+          <td>Стрелка вниз</td>
+          <td style="">Стрелка вниз</td>
+          <td style="">Полотно для комнаты</td>
+          <td>Переместить выбранные элементы вниз</td>
+        </tr>
+      </tbody>
+    </table>
+    <p><br />
+      <br />
+       
+    </p>
+  </div>
+  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down6" href="#">Редактор временной шкалы</a></p>
+  <div class="droptext" data-targetname="drop-down6">
+    <table>
+      <tbody>
+        <tr>
+          <th>Привязка клавиш Windows</th>
+          <th>Привязка клавиш macOS</th>
+          <th>Область применения</th>
+          <th>Описание</th>
+        </tr>
+        <tr>
+          <td>Вставка</td>
+          <td>Вставка</td>
+          <td>Общие сведения</td>
+          <td>Добавить момент на временную шкалу</td>
+        </tr>
+        <tr>
+          <td>Удалить</td>
+          <td>Удалить</td>
+          <td>Общие сведения</td>
+          <td>Удаление выбранных моментов с временной шкалы</td>
+        </tr>
+        <tr>
+          <td>CTRL + X</td>
+          <td>CMD + X</td>
+          <td>Общие сведения</td>
+          <td>Вырезать выбранные моменты из временной шкалы</td>
+        </tr>
+        <tr>
+          <td>SHIFT + УДАЛИТЬ</td>
+          <td>Н/Д</td>
+          <td>Общие сведения</td>
+          <td>Вырезать выбранные моменты из временной шкалы</td>
+        </tr>
+        <tr>
+          <td>CTRL + C</td>
+          <td>CMD + C</td>
+          <td>Общий</td>
+          <td>Копирование выбранных моментов с временной шкалы</td>
+        </tr>
+        <tr>
+          <td>CTRL + INSERT</td>
+          <td>Н/Д</td>
+          <td>Общий</td>
+          <td>Копирование выбранных моментов с временной шкалы</td>
+        </tr>
+        <tr>
+          <td>CTRL + V</td>
+          <td>CMD + V</td>
+          <td>Общие сведения</td>
+          <td>Вставьте моменты буфера обмена на временную шкалу</td>
+        </tr>
+        <tr>
+          <td>SHIFT + INSERT</td>
+          <td>Н/Д</td>
+          <td>Общие сведения</td>
+          <td>Вставьте моменты буфера обмена на временную шкалу</td>
+        </tr>
+        <tr>
+          <td>CTRL + E</td>
+          <td>CMD + E</td>
+          <td>Общие сведения</td>
+          <td>Изменить выбранный момент</td>
+        </tr>
+        <tr>
+          <td>CTRL + R</td>
+          <td>CMD + R</td>
+          <td>Общие сведения</td>
+          <td>Изменение описания выбранного момента</td>
+        </tr>
+        <tr>
+          <td>CTRL + D</td>
+          <td>CMD + D</td>
+          <td>Общие сведения</td>
+          <td>Дублировать выбранный момент</td>
+        </tr>
+        <tr>
+          <td>CTRL + M</td>
+          <td>CMD + M</td>
+          <td>Общие сведения</td>
+          <td>Объединить выбранные моменты</td>
+        </tr>
+        <tr>
+          <td>CTRL + A</td>
+          <td>CMD + A</td>
+          <td>Общие сведения</td>
+          <td>Выберите все моменты</td>
+        </tr>
+        <tr>
+          <td>CTRL + U</td>
+          <td>CMD + U</td>
+          <td>Общие сведения</td>
+          <td>Снять выделение всех моментов</td>
+        </tr>
+        <tr>
+          <td>ALT + Enter</td>
+          <td>ALT + Enter</td>
+          <td>Общие сведения</td>
+          <td>Редактирование всех выбранных моментов</td>
+        </tr>
+      </tbody>
+    </table>
+    <p><br />
+       </p>
+    <p><br />
+       </p>
+  </div>
+  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down7" href="#">Редактор кода / сценариев</a></p>
+  <div class="droptext" data-targetname="drop-down7">
+    <table>
+      <tbody>
+        <tr>
+          <th>Привязка клавиш Windows</th>
+          <th>Привязка клавиш macOS</th>
+          <th>Область применения</th>
+          <th>Описание</th>
+        </tr>
+        <tr>
+          <td>ALT</td>
+          <td>ALT</td>
+          <td>Общие сведения</td>
+          <td>Удерживая ALT при нажатии и перетаскивании, можно выделить колонки текста</td>
+        </tr>
+        <tr>
+          <td>HOME</td>
+          <td>HOME</td>
+          <td>Общий</td>
+          <td>Переход курсора к началу сценария или события</td>
+        </tr>
+        <tr>
+          <td>КОНЕЦ</td>
+          <td>КОНЕЦ</td>
+          <td>Общие сведения</td>
+          <td>Переход курсора к концу сценария или события</td>
+        </tr>
+        <tr>
+          <td>CTRL + M</td>
+          <td>CMD + M</td>
+          <td>Общий</td>
+          <td>Согните все открытые области</td>
+        </tr>
+        <tr>
+          <td>CTRL + U</td>
+          <td>CMD + U</td>
+          <td>Общие сведения</td>
+          <td>Развернуть все регионы</td>
+        </tr>
+        <tr>
+          <td>CTRL + Enter</td>
+          <td>CMD + Enter</td>
+          <td>Общие сведения</td>
+          <td>Переключение региона между свернутым и развернутым состояниями</td>
+        </tr>
+        <tr>
+          <td>CTRL + ALT + Стрелка вверх</td>
+          <td>CMD + стрелка вверх</td>
+          <td>Общие сведения</td>
+          <td>Переход к предыдущему региону</td>
+        </tr>
+        <tr>
+          <td>CTRL + ALT + стрелка вниз</td>
+          <td>CMD + стрелка вниз</td>
+          <td>Общие сведения</td>
+          <td>Перейти к следующему региону</td>
+        </tr>
+        <tr>
+          <td>CTRL + C</td>
+          <td>CMD + C</td>
+          <td>Общие сведения</td>
+          <td>Копирование любого выделенного текста в буфер обмена</td>
+        </tr>
+        <tr>
+          <td>SHIFT + DELETE</td>
+          <td>Н/Д</td>
+          <td>Общий</td>
+          <td>Вырезать любой выделенный текст в буфер обмена</td>
+        </tr>
+        <tr>
+          <td>CTRL + X</td>
+          <td>CMD + X</td>
+          <td>Общий</td>
+          <td>Вырезать любой выделенный текст в буфер обмена</td>
+        </tr>
+        <tr>
+          <td>CTRL + INSERT</td>
+          <td>Н/Д</td>
+          <td>Общий</td>
+          <td>Вырезать любой выделенный текст в буфер обмена</td>
+        </tr>
+        <tr>
+          <td>CTRL + V</td>
+          <td>CMD + V</td>
+          <td>Общие сведения</td>
+          <td>Вставьте любой текст из буфера обмена в редактор</td>
+        </tr>
+        <tr>
+          <td>SHIFT + INSERT</td>
+          <td>Н/Д</td>
+          <td>Общие сведения</td>
+          <td>Вставьте любой текст из буфера обмена в редактор</td>
+        </tr>
+        <tr>
+          <td>CTRL + D</td>
+          <td>CMD + D</td>
+          <td>Общие сведения</td>
+          <td>Дублировать текущую строку (или несколько строк, если они были выделены)</td>
+        </tr>
+        <tr>
+          <td>CTRL + K</td>
+          <td>CMD + K</td>
+          <td>Общие сведения</td>
+          <td>Закомментировать выделенную строку (или строки) текста</td>
+        </tr>
+        <tr>
+          <td>CTRL + F</td>
+          <td>CMD + F</td>
+          <td>Общие сведения</td>
+          <td>Откройте окно локального поиска</td>
+        </tr>
+        <tr>
+          <td>CTRL + H</td>
+          <td>CMD + H</td>
+          <td>Общие сведения</td>
+          <td>Откройте поле локального поиска и замены</td>
+        </tr>
+        <tr>
+          <td>CTRL + SHIFT + K</td>
+          <td>CMD + SHIFT + K</td>
+          <td>Общий</td>
+          <td>Отменить комментирование выбранной строки (или строк) текста</td>
+        </tr>
+        <tr>
+          <td>f4</td>
+          <td>f4</td>
+          <td>Общий</td>
+          <td>Откройте меню фрагментов кода</td>
+        </tr>
+        <tr>
+          <td>f7</td>
+          <td>f7</td>
+          <td>Общие сведения</td>
+          <td>Уменьшите размер шрифта в любом из редакторов кода</td>
+        </tr>
+        <tr>
+          <td>f8</td>
+          <td>f8</td>
+          <td>Общие сведения</td>
+          <td>Увеличьте размер шрифта в любом из редакторов кода</td>
+        </tr>
+        <tr>
+          <td>f9</td>
+          <td>f9</td>
+          <td>Общие сведения</td>
+          <td>Установите точку перерыва</td>
+        </tr>
+      </tbody>
+    </table>
+    <p> </p>
+  </div>
+  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down8" href="#">Редактор объектов</a></p>
+  <div class="droptext" data-targetname="drop-down8">
+    <table>
+      <tbody>
+        <tr>
+          <th>Привязка клавиш Windows</th>
+          <th>Привязка клавиш macOS</th>
+          <th>Область применения</th>
+          <th>Описание</th>
+        </tr>
+        <tr>
+          <td>Удалить</td>
+          <td>Удалить</td>
+          <td>Общие сведения</td>
+          <td>Удалить текущий сфокусированный элемент редактора объектов</td>
+        </tr>
+        <tr>
+          <td colspan="4" height="5px">
+            <hr />
+          </td>
+        </tr>
+        <tr>
+          <td>CTRL + D</td>
+          <td>CMD + D</td>
+          <td>Редактор событий</td>
+          <td>Дублировать выбранное событие</td>
+        </tr>
+        <tr>
+          <td>CTRL + C</td>
+          <td>CMD + C</td>
+          <td>Редактор событий</td>
+          <td>Копирование выбранного события в буфер обмена</td>
+        </tr>
+        <tr>
+          <td>SHIFT + DELETE</td>
+          <td>Н/Д</td>
+          <td>Редактор событий</td>
+          <td>Вырезать любые выбранные события в буфер обмена</td>
+        </tr>
+        <tr>
+          <td>CTRL + X</td>
+          <td>CMD + X</td>
+          <td>Редактор событий</td>
+          <td>Вырезать любые выбранные события в буфер обмена</td>
+        </tr>
+        <tr>
+          <td>CTRL + INSERT</td>
+          <td>Н/Д</td>
+          <td>Редактор событий</td>
+          <td>Вырезать любые выбранные события в буфер обмена</td>
+        </tr>
+        <tr>
+          <td>CTRL + V</td>
+          <td>CMD + V</td>
+          <td>Редактор событий</td>
+          <td>Вставьте любые события из буфера обмена в редактор</td>
+        </tr>
+        <tr>
+          <td>SHIFT + INSERT</td>
+          <td>Н/Д</td>
+          <td>Редактор событий</td>
+          <td>Вставьте любые события из буфера обмена в редактор</td>
+        </tr>
+        <tr>
+          <td colspan="4" height="5px">
+            <hr />
+          </td>
+        </tr>
+        <tr>
+          <td>F9</td>
+          <td>F9</td>
+          <td>Визуальный редактор GML</td>
+          <td>Отменить текущий выбор</td>
+        </tr>
+        <tr>
+          <td>Побег</td>
+          <td>Побег</td>
+          <td>Визуальный редактор GML</td>
+          <td>Отменить текущий выбор</td>
+        </tr>
+        <tr>
+          <td>Удалить</td>
+          <td>Удалить</td>
+          <td>Визуальный редактор GML</td>
+          <td>Удалить все выбранные действия</td>
+        </tr>
+        <tr>
+          <td>CTRL + A</td>
+          <td>CMD + A</td>
+          <td>Визуальный редактор GML</td>
+          <td>Выберите все действия в рабочей области</td>
+        </tr>
+        <tr>
+          <td>CTRL + K</td>
+          <td>CMD + K</td>
+          <td>Визуальный редактор GML</td>
+          <td>Переключение включено/выключено для выбранных действий</td>
+        </tr>
+        <tr>
+          <td>CTRL + C</td>
+          <td>CMD + C</td>
+          <td>Визуальный редактор GML</td>
+          <td>Копировать любые выбранные действия в буфер обмена</td>
+        </tr>
+        <tr>
+          <td>CTRL + INSERT</td>
+          <td>Н/Д</td>
+          <td>Визуальный редактор GML</td>
+          <td>Копировать любые выбранные действия в буфер обмена</td>
+        </tr>
+        <tr>
+          <td>CTRL + X</td>
+          <td>CMD + X</td>
+          <td>Визуальный редактор GML</td>
+          <td>Вырезать любые выбранные действия в буфер обмена</td>
+        </tr>
+        <tr>
+          <td>SHIFT + DELETE</td>
+          <td>Н/Д</td>
+          <td>Визуальный редактор GML</td>
+          <td>Вырезать любые выбранные действия в буфер обмена</td>
+        </tr>
+        <tr>
+          <td>CTRL + V</td>
+          <td>CMD + V</td>
+          <td>Визуальный редактор GML</td>
+          <td>Вставьте любые действия из буфера обмена в редактор</td>
+        </tr>
+        <tr>
+          <td>SHIFT + INSERT</td>
+          <td>Н/Д</td>
+          <td>Визуальный редактор GML</td>
+          <td>Вставьте любые действия из буфера обмена в редактор</td>
+        </tr>
+        <tr>
+          <td>CTRL + P</td>
+          <td>CMD + P</td>
+          <td>Визуальный редактор GML</td>
+          <td>Переход к указанному действию</td>
+        </tr>
+      </tbody>
+    </table>
+    <p> </p>
+  </div>
+  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down12" href="#">Редактор последовательностей</a></p>
+  <div class="droptext" data-targetname="drop-down12">
+    <table>
+      <tbody>
+        <tr>
+          <th>Привязка клавиш Windows</th>
+          <th>Привязка клавиш macOS</th>
+          <th>Область применения</th>
+          <th>Описание</th>
+        </tr>
+        <tr>
+          <td>CTRL + X</td>
+          <td>CMD + X</td>
+          <td>Общие сведения</td>
+          <td>Вырезать выбранные элементы из текущего слоя</td>
+        </tr>
+        <tr>
+          <td>CTRL + C</td>
+          <td>CMD + C</td>
+          <td>Общие сведения</td>
+          <td>Копирование выбранных элементов из текущего слоя</td>
+        </tr>
+        <tr>
+          <td>CTRL + V</td>
+          <td>CMD + V</td>
+          <td>Общие сведения</td>
+          <td>Вставка элементов буфера обмена в текущий слой</td>
+        </tr>
+        <tr>
+          <td>CTRL + NUMPA D &quot;+&quot;</td>
+          <td>CMD + NUMPAD+</td>
+          <td>Общие сведения</td>
+          <td>Увеличить масштаб холста или доп. листа</td>
+        </tr>
+        <tr>
+          <td>CTRL + MouseWheel UP</td>
+          <td>CMD + MouseWheel UP</td>
+          <td>Общие сведения</td>
+          <td>Увеличьте масштаб холста или наклеенного листа</td>
+        </tr>
+        <tr>
+          <td>CTRL + NUMPAD &quot;-&quot;</td>
+          <td>CMD + NUMPAD+</td>
+          <td>Общие сведения</td>
+          <td>Увеличить масштаб холста или доп. листа</td>
+        </tr>
+        <tr>
+          <td>CTRL + MouseWheel UP</td>
+          <td>CMD + MouseWheel UP</td>
+          <td>Общие сведения</td>
+          <td>Увеличьте масштаб холста или наклеенного листа</td>
+        </tr>
+        <tr>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+        </tr>
+        <tr>
+          <td colspan="4" height="5px">
+            <hr />
+          </td>
+        </tr>
+        <tr>
+          <td>CTRL+ HOME</td>
+          <td>CMD + HOME</td>
+          <td>Холст</td>
+          <td>Выравнивание элемента по центру</td>
+        </tr>
+        <tr>
+          <td>CTRL + SHIFT + HOME</td>
+          <td>CMD + SHIFT + HOME</td>
+          <td>Холст</td>
+          <td>Выравнивание по центру</td>
+        </tr>
+        <tr>
+          <td>CTRL + ALT + SHIFT+ ;</td>
+          <td>CMD + ALT + SHIFT + ;</td>
+          <td>Холст</td>
+          <td>Блокировка и разблокировка линеек</td>
+        </tr>
+        <tr>
+          <td>CTRL + SHIFT + ;</td>
+          <td>CMD + SHIFT + ;</td>
+          <td>Холст</td>
+          <td>Включить/выключить привязку к линейкам и направляющим</td>
+        </tr>
+        <tr>
+          <td>CTRL + ALT + P</td>
+          <td>CMD + ALT + P</td>
+          <td>Холст</td>
+          <td>Показать/скрыть путь</td>
+        </tr>
+        <tr>
+          <td>Стрелка вверх</td>
+          <td>Стрелка вверх</td>
+          <td>Холст</td>
+          <td><span>Переместить выбранный элемент вверх на 1px</span></td>
+        </tr>
+        <tr>
+          <td>Стрелка ВНИЗ</td>
+          <td>Стрелка ВНИЗ</td>
+          <td>Холст</td>
+          <td><span>Переместить выбранный элемент вниз на 1px</span></td>
+        </tr>
+        <tr>
+          <td>Стрелка влево</td>
+          <td>Стрелка влево</td>
+          <td>Холст</td>
+          <td><span>Переместить выбранный элемент влево на 1px</span></td>
+        </tr>
+        <tr>
+          <td>Стрелка ПРЯМОЙ</td>
+          <td>Стрелка ПРЯМОЙ</td>
+          <td>Холст</td>
+          <td><span>Переместить выбранный элемент вправо на 1px</span></td>
+        </tr>
+        <tr>
+          <td>SHIFT + Стрелка вверх</td>
+          <td>SHIFT + Стрелка вверх</td>
+          <td>Холст</td>
+          <td><span>Переместить выбранный элемент вверх на 10px</span></td>
+        </tr>
+        <tr>
+          <td>SHIFT + Стрелка вниз</td>
+          <td>SHIFT + Стрелка вниз</td>
+          <td>Холст</td>
+          <td><span>Переместить выбранный элемент вниз на 10px</span></td>
+        </tr>
+        <tr>
+          <td>SHIFT + Стрелка влево</td>
+          <td>SHIFT + Стрелка влево</td>
+          <td>Холст</td>
+          <td><span>Переместить выбранный элемент влево на 10px</span></td>
+        </tr>
+        <tr>
+          <td>SHIFT + стрелка вправо</td>
+          <td>SHIFT + стрелка вправо</td>
+          <td>Холст</td>
+          <td><span>Переместить выбранный элемент вправо на 10px</span></td>
+        </tr>
+        <tr>
+          <td>ALT + Перетащить элемент</td>
+          <td>ALT + Перетащить элемент</td>
+          <td>Холст</td>
+          <td><span>Дублирует элемент</span></td>
+        </tr>
+        <tr>
+          <td>ALT + инструменты трансформации</td>
+          <td>ALT + инструменты трансформации</td>
+          <td>Холст</td>
+          <td>Масштаб от начала координат</td>
+        </tr>
+        <tr>
+          <td>CTRL + Перетащить элемент</td>
+          <td>CMD + перетащить элемент</td>
+          <td>Холст</td>
+          <td>Отключение привязки для точного управления</td>
+        </tr>
+        <tr>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+        </tr>
+        <tr>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+        </tr>
+        <tr>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+        </tr>
+        <tr>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+        </tr>
+        <tr>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+        </tr>
+        <tr>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+        </tr>
+        <tr>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+        </tr>
+        <tr>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+        </tr>
+        <tr>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+        </tr>
+      </tbody>
+    </table>
+    <p> </p>
+  </div>
+  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down11" href="#">Модуль отладки</a></p>
+  <div class="droptext" data-targetname="drop-down11">
+    <table>
+      <tbody>
+        <tr>
+          <th>Привязка клавиш Windows</th>
+          <th>Привязка клавиш macOS</th>
+          <th>Область применения</th>
+          <th>Описание</th>
+        </tr>
+        <tr>
+          <td>f5</td>
+          <td>f5</td>
+          <td>Общие сведения</td>
+          <td>Это позволяет запустить игру снова после того, как она была приостановлена</td>
+        </tr>
+        <tr>
+          <td>f9</td>
+          <td>f9</td>
+          <td>Общие сведения</td>
+          <td>Добавить/удалить точку останова в строке, на которой находится курсор</td>
+        </tr>
+        <tr>
+          <td>f10</td>
+          <td>CMD + Shift + I</td>
+          <td>Общие сведения</td>
+          <td>Перейдите к блоку кода или сценарию</td>
+        </tr>
+        <tr>
+          <td>f11</td>
+          <td>CMD + Shift + O</td>
+          <td>Общие сведения</td>
+          <td>Войдите в блок кода или сценарий</td>
+        </tr>
+        <tr>
+          <td>SHIFT + f11</td>
+          <td>CMD + Shift + U</td>
+          <td>Общий</td>
+          <td>Выйти из блока кода или сценария</td>
+        </tr>
+      </tbody>
+    </table>
+    <p> </p>
+  </div>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="IDE_Input.htm">IDE Input And Navigation</a></div>
-        <div style="float:right">Next: <a data-xref="{title}" href="Menus.htm">Menus</a></div>
+        <div style="float:left">Назад: <a href="IDE_Input.htm">IDE-ввод и навигация</a></div>
+        <div style="float:right">Следующее: <a href="Bookmarks.htm">Закладки</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 Keyboard Shortcuts

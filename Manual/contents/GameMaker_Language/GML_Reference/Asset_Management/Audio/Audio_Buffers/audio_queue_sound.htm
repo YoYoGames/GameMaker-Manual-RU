@@ -6,7 +6,7 @@
   <title>audio_queue_sound</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page explaining the function audio_queue_sound" />
   <meta name="rh-index-keywords" content="audio_queue_sound" />
@@ -15,61 +15,61 @@
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
   <h1>audio_queue_sound</h1>
-  <p>This function will add the data from a buffer into the audio queue that you previously created using the function <a href="audio_create_play_queue.htm"><span class="inline">audio_create_play_queue()</span></a>. You specify the queue index to add to, and the buffer ID to get the data from as well as the position (offset) within the buffer and the number of bytes to add. Once you have added audio from a buffer to a queue, the buffer cannot be deleted until you have first freed the queue using the function <a href="audio_free_play_queue.htm"><span class="inline">audio_free_play_queue()</span></a>, and the buffer properties should match those of the queue that you are adding the sound to.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p>Эта функция добавит данные из буфера в очередь аудио, которую вы ранее создали с помощью функции <a href="audio_create_play_queue.htm"><span class="inline">audio_create_play_queue()</span></a>. Вы указываете индекс очереди для добавления, ID буфера для получения данных, а также позицию (смещение) в буфере и количество байт для добавления. После добавления звука из буфера в очередь, буфер не может быть удален до тех пор, пока вы не освободите очередь с помощью функции <a href="audio_free_play_queue.htm"><span class="inline">audio_free_play_queue()</span></a>, а свойства буфера должны соответствовать свойствам очереди, в которую вы добавляете звук.</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
   <p class="code">audio_queue_sound(queueIndex, bufferId, bufferOffset, bufferLength);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Аргумент</th>
+        <th>Тип</th>
+        <th>Описание</th>
       </tr>
       <tr>
-        <td>queueIndex</td>
-        <td><span data-keyref="Type_ID_Audio_Queue"><a href="../../../../../../GameMaker_Language/GML_Reference/Asset_Management/Audio/Audio_Buffers/audio_create_play_queue.htm" target="_blank">Audio Queue ID</a></span></td>
-        <td>The index of the queue to add to.</td>
+        <td><span class="notranslate">queueIndex</span></td>
+        <td><span data-keyref="Type_ID_Audio_Queue">Идентификатор очереди аудио</span></td>
+        <td><span class="notranslate">The index of the queue to add to.</span></td>
       </tr>
       <tr>
-        <td>bufferId</td>
-        <td><span data-keyref="Type_ID_Buffer"><a href="../../../../../../GameMaker_Language/GML_Reference/Buffers/buffer_create.htm" target="_blank">Buffer ID</a></span></td>
-        <td>The buffer to add to the queue.</td>
+        <td><span class="notranslate">bufferId</span></td>
+        <td><span data-keyref="Type_ID_Buffer">Идентификатор буфера</span></td>
+        <td><span class="notranslate">The buffer to add to the queue.</span></td>
       </tr>
       <tr>
-        <td>bufferOffset</td>
-        <td><span data-keyref="Type_Real"><a href="../../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
-        <td>The offset within the source buffer to start from.</td>
+        <td><span class="notranslate">bufferOffset</span></td>
+        <td><span data-keyref="Type_Real">Реально</span></td>
+        <td><span class="notranslate">The offset within the source buffer to start from.</span></td>
       </tr>
       <tr>
-        <td>bufferLength</td>
-        <td><span data-keyref="Type_Real"><a href="../../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
-        <td>The length of the buffer (the number of the bytes in the buffer).</td>
+        <td><span class="notranslate">bufferLength</span></td>
+        <td><span data-keyref="Type_Real">Реально</span></td>
+        <td><span class="notranslate">The length of the buffer (the number of the bytes in the buffer).</span></td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
   <p class="code"><span data-keyref="Type_Void">N/A</span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Пример:</h4>
   <p class="code">len = async_load[? &quot;data_len&quot;];<br />
     audio_buff = buffer_create(len, buffer_fast, 1);<br />
     buffer_copy(async_load[? &quot;buffer_id&quot;], 0, len, buff, 0);<br />
     audio_queue_sound(audio_queue, audio_buff, 0, len);<br />
     audio_play_sound(audio_queue, 10, 0);</p>
-  <p>The above code would be called in the asynchronous <a href="../../../../../The_Asset_Editors/Object_Properties/Async_Events/Audio_Recording.htm">Audio Recording</a> event and assigns some recorded data to a buffer, which is then added to an audio queue. This is then played.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Приведенный выше код будет вызван в асинхронном событии <a href="../../../../../The_Asset_Editors/Object_Properties/Async_Events/Audio_Recording.htm">Audio Recording</a> и присвоит некоторые записанные данные буферу, который затем будет добавлен в очередь аудио. Затем происходит воспроизведение.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="../Audio.htm">Audio Buffers</a></div>
-        <div style="float:right">Next: <a href="audio_start_recording.htm">audio_start_recording</a></div>
+        <div style="float:left">Назад: <a href="../Audio.htm">Аудио буферы</a></div>
+        <div style="float:right">Следующий: <a href="audio_start_recording.htm"><span class="notranslate">audio_start_recording</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 audio_queue_sound

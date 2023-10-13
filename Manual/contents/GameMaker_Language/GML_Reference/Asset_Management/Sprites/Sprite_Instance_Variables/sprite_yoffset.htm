@@ -6,7 +6,7 @@
   <title>sprite_yoffset</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page explaining the variable sprite_yoffset" />
   <meta name="rh-index-keywords" content="sprite_yoffset" />
@@ -15,32 +15,32 @@
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
   <h1>sprite_yoffset</h1>
-  <p>This <b>read only</b> variable returns the local yoffset (the y component of the origin as defined in the sprite editor) of the sprite that has been assigned to the instance. This yoffset is returned in pixels and will be dependent on the <a href="image_yscale.htm"><span class="inline">image_yscale</span></a>, so that (for example) if a square 32x32 sprite is defined as having the y origin at 16, when that sprite is scaled by 2 this variable will return 32. If you need the un-scaled yoffset you should use <a href="../Sprite_Information/sprite_get_yoffset.htm"><span class="inline">sprite_get_yoffset()</span></a>.</p>
+  <p>Эта переменная, доступная <b>только для чтения</b>, возвращает локальное смещение y (компонент y начала координат, определенный в редакторе <span class="notranslate">sprite</span> ) объекта <span class="notranslate">sprite</span>, который был назначен данному экземпляру. Смещение по оси y возвращается в пикселях и зависит от размера объекта. <a href="image_yscale.htm"><span class="inline">image_yscale</span></a>так что (например) если квадрат 32x32 <span class="notranslate">sprite</span> определен как имеющий начало координат y на 16, то при масштабировании этого <span class="notranslate">sprite</span> на 2 эта переменная вернет 32. Если вам нужно немасштабированное смещение y, используйте <a href="../Sprite_Information/sprite_get_yoffset.htm"><span class="inline">sprite_get_yoffset()</span></a>.</p>
   <p><img alt="Y Offset Example" class="center" src="../../../../../assets/Images/Scripting_Reference/GML/Reference/Sprites/yoffset_image.png" /></p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p> </p>
+  <h4>Синтаксис:</h4>
   <p class="code">sprite_yoffset;</p>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
   <p class="code"><span data-keyref="Type_Real">Real</span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Пример:</h4>
   <p class="code">if y - sprite_yoffset &lt; 0<br />
     {<br />
         y = sprite_yoffset;<br />
     }</p>
-  <p>The above code checks to see if the top edge of the sprite of the instance is outside the room and if it is it moves the instance so that the whole sprite is visible.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Приведенный выше код проверяет, находится ли верхний край <span class="notranslate">sprite</span> экземпляра за пределами комнаты, и если да, то перемещает экземпляр так, чтобы был виден весь <span class="notranslate">sprite</span>.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Sprite_Instance_Variables.htm">Sprite Instance Variables</a></div>
-        <div style="float:right">Next: <a href="image_alpha.htm">image_alpha</a></div>
+        <div style="float:left">Назад: <a href="Sprite_Instance_Variables.htm">Переменные экземпляра спрайта</a></div>
+        <div style="float:right">Следующий: <a href="image_alpha.htm"><span class="notranslate">image_alpha</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 sprite_yoffset

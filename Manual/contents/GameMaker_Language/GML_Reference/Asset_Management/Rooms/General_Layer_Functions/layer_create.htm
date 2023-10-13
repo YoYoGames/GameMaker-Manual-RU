@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>layer_create</title>
-  <meta name="generator" content="Adobe RoboHelp 2022" />
+  <title>слой_создать</title>
+  <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page outlining the function layer_create" />
   <meta name="rh-index-keywords" content="layer_create" />
@@ -15,51 +15,51 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>layer_create</h1>
-  <p>This function is used to create a new layer within the current room. You supply the depth that the new layer is to occupy and the function returns the unique Layer ID value that can then be used to access the layer in further functions. You can also supply an optional &quot;name&quot; argument, which will enable you to give the layer a specific name (as a string), and instead of using the layer ID to access the layer, you can use this name string instead, although it should be noted that using name strings will have a greater impact on performance than using just the ID value. If you do not specify the name of the layer, then the created layer will be assigned a name with the format &quot;<span class="inline">_layer_XXX</span>&quot;, where &quot;XXX&quot; is a hex value used to give the layer a unique name.</p>
-  <p>When giving a depth value, this will be higher the &quot;further away&quot; from the camera the layer is and lower the &quot;closer&quot; to the camera the layer is, so if you have three layers with depths -100, 0, 100, the layers will draw in the order 100, 0, -100, so that the &quot;top&quot; layer (ie, the closest to the camera view and so drawn over everything else) will be the layer with the -100 depth.</p>
-  <p>The following image shows a schematic of how depth works for layers:</p>
-  <p><img alt="Layer depth example" class="center" src="../../../../../assets/Images/Scripting_Reference/GML/Reference/Rooms/Layer_Depths.png" style="cursor: nwse-resize;" />It is worth noting that while you <i>can</i> assign more than one layer to a single depth, <i>there is no way that you can guarantee that layers on the same depth will be drawn in any given order</i> and as such it is best to assign only one layer to any given depth. Also note that the minimum and maximum layer depths are <span data-keyref="Const_Depth_Min">-16000</span> to <span data-keyref="Const_Depth_Max">16000</span>, and anything outside of those depths <b>will not be rendered</b>. If you require a depth outside of that range then you will need to use the function <a href="layer_force_draw_depth.htm"><span class="inline">layer_force_draw_depth()</span></a>.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <h1>слой_создать</h1>
+  <p>Эта функция используется для создания нового слоя в текущей комнате. Вы указываете глубину, которую должен занять новый слой, и функция возвращает уникальное значение Layer ID, которое затем может быть использовано для доступа к слою в дальнейших функциях. Вы также можете указать дополнительный аргумент &quot;имя&quot;, который позволит вам дать слою определенное имя (в виде строки), и вместо ID слоя для доступа к слою вы можете использовать эту строку имени, хотя следует отметить, что использование строк имен будет иметь большее влияние на производительность, чем использование только значения ID. Если вы не укажете имя слоя, то созданному слою будет присвоено имя в формате &quot;<span class="inline">_layer_XXX</span>&quot;, где &quot;XXX&quot; - шестнадцатеричное значение, используемое для присвоения слою уникального имени.</p>
+  <p>Когда задается значение глубины, оно будет тем выше, чем &quot;дальше&quot; от камеры находится слой, и тем ниже, чем &quot;ближе&quot; к камере находится слой, поэтому если у вас есть три слоя с глубинами -100, 0, 100, слои будут рисоваться в порядке 100, 0, -100, так что &quot;верхним&quot; слоем (т.е. самым близким к виду камеры и поэтому рисуемым поверх всех остальных) будет слой с глубиной -100.</p>
+  <p>На следующем изображении показана схема работы глубины для слоев:</p>
+  <p><img>Стоит отметить, что хотя вы <i>можете</i> назначить более одного слоя на одну глубину, <i>вы никак не можете гарантировать, что слои на одной глубине будут отрисованы в определенном порядке</i>, поэтому лучше всего назначать только один слой на любую глубину. Также обратите внимание, что минимальная и максимальная глубина слоя составляет от -16000 до 16000, и все, что находится за пределами этих глубин, <b>не</b> будет отрисовано. Если вам нужна глубина за пределами этого диапазона, то вам нужно использовать функцию <a href="layer_force_draw_depth.htm"><span class="inline">layer_force_draw_depth()</span></a>.</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
   <p class="code">layer_create(depth, [name])</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Аргумент</th>
+        <th>Тип</th>
+        <th>Описание</th>
       </tr>
       <tr>
-        <td>depth</td>
-        <td><span data-keyref="Type_Real"><a href="GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
-        <td>The depth that the layer has to be created at.</td>
+        <td><span class="notranslate">depth</span></td>
+        <td><span data-keyref="Type_Real">Реально</span></td>
+        <td><span class="notranslate">The depth that the layer has to be created at.</span></td>
       </tr>
       <tr>
-        <td>name</td>
-        <td><span data-keyref="Type_String"><a href="GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">String</a></span></td>
-        <td><span class="optional">OPTIONAL</span> The name to give the layer (a string).</td>
+        <td><span class="notranslate">name</span></td>
+        <td><span data-keyref="Type_String">Строка</span></td>
+        <td><span class="notranslate"><span class="optional">OPTIONAL</span> Имя, которое нужно дать слою (строка).</td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
-  <p class="code"><span data-keyref="Type_ID_Layer"><a href="GameMaker_Language/GML_Reference/Asset_Management/Rooms/General_Layer_Functions/layer_get_id.htm" target="_blank">Layer ID</a></span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
+  <p class="code"><span data-keyref="Type_ID_Layer">Layer ID</span></p>
+  <p> </p>
+  <h4>Пример:</h4>
   <p class="code">global.Bullet_Layer = layer_create(-100);</p>
-  <p>The above code will create a new layer with a depth value of -100 and assign its ID value to a global variable.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Приведенный выше код создаст новый слой со значением глубины -100 и присвоит его ID значение глобальной переменной.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="General_Layer_Functions.htm">General Layer Functions</a></div>
-        <div style="float:right">Next: <a href="layer_destroy.htm">layer_destroy</a></div>
+        <div style="float:left">Назад: <a href="General_Layer_Functions.htm">Общие функции слоя</a></div>
+        <div style="float:right">Следующий: <a href="layer_destroy.htm"><span class="notranslate">layer_destroy</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 layer_create

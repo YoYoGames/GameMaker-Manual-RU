@@ -6,7 +6,7 @@
   <title>Android</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../assets/css/default.css" type="text/css" />
-  <script src="../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page that details theAndroid Platform Preferences" />
   <meta name="rh-index-keywords" content="Prefs - Android" />
@@ -14,45 +14,46 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1><span data-field="title" data-format="default">Android</span> Preferences</h1>
-  <p>The <strong>Android</strong> preferences are split into various sections listed below:</p>
-  <p><img alt="Android Preferences Packaging" class="center" src="../../assets/Images/Setup_And_Version/Platform_Preferences/Android_Prefs_1.png" />At the top of the preferences you can set the maximum size of the <strong>JDK Memory Heap</strong> (default is 2GB). Next you have to set up the various different <strong>Paths </strong>so that <span data-keyref="GameMaker Name">GameMaker</span> knows where to look for the various tools required to build the final executable package and test your game. This is split into three sections for the <strong>Android SDK</strong>, <strong>Android NDK </strong>and <strong>Java JDK</strong>. These paths should have been filled in automatically for you, but should you have any issues you can click the button to the right to open the file explorer and manually select the locations for each element. You can find details of what versions are required for each of the SDK elements <a href="https://help.yoyogames.com/hc/en-us/articles/227860547">here</a>. Paths should be validated as you apply them and a message will show &quot;<em>Found</em>&quot; or tell you of any errors (in which case you should revise all the information to make sure it is correct).</p>
-  <p>Below that you have a section for Packaging options, which only contains one checkbox:</p>
+  <h1>Предпочтения Android</h1>
+  <p>Предпочтения <strong>Android</strong> разделены на различные разделы, перечисленные ниже:</p>
+  <p><img>В верхней части предпочтений вы можете установить максимальный размер <strong>кучи памяти JDK</strong> (по умолчанию 2 ГБ). Далее необходимо настроить различные <strong>пути </strong>, чтобы <span data-keyref="GameMaker Name">GameMaker</span> знал, где искать различные инструменты, необходимые для создания конечного исполняемого пакета и тестирования вашей игры. Здесь есть три раздела для <strong>Android SDK</strong>, <strong>Android NDK </strong>и <strong>Java JDK</strong>. Эти пути должны быть заполнены автоматически, но если у вас возникнут проблемы, вы можете нажать кнопку справа, чтобы открыть проводник файлов и вручную выбрать местоположение каждого элемента. Подробную информацию о том, какие версии требуются для каждого из элементов SDK, можно найти <a href="https://help.yoyogames.com/hc/en-us/articles/227860547">здесь</a>. Пути должны проверяться по мере их применения, и в сообщении будет показано &quot;<em>Found</em>&quot; или сообщено о каких-либо ошибках (в этом случае вам следует пересмотреть всю информацию, чтобы убедиться в ее правильности).</p>
+  <p>Ниже представлены различные варианты упаковки:</p>
   <ul class="colour">
-    <li><strong>Always do full install of APK</strong>: Flagging this will make <span data-keyref="GameMaker Name">GameMaker</span> remove any previous runners of your game from your device, as well as all associated files (for example, <span class="inline">*.ini</span> files) from your test device before installing a new version of the game.</li>
+    <li><strong>Всегда делать полную установку APK</strong>: Отметив этот флажок, <span data-keyref="GameMaker Name">GameMaker</span> удалит все предыдущие версии вашей игры с вашего устройства, а также все связанные с ней файлы (например, <span class="inline">*.ini</span> ) с вашего тестового устройства перед установкой новой версии игры.</li>
+    <li><strong>Установить на пакет</strong>: Когда эта опция отмечена, компиляция конечного исполняемого пакета <span class="inline">*.apk</span> также автоматически установит его на выбранное в данный момент целевое устройство.</li>
   </ul>
-  <p>Finally we come to the <strong>Keystore</strong>. This is a file that will be used to &quot;sign&quot; all your Android apps so please fill in all the details correctly and keep in mind that this file will be required to create and update all your Android apps in the future, meaning that after setting <em></em>it up<em><strong> it is advised to take a screenshot of the settings used and make a backup of the final file</strong></em>. If you lose this file you will <strong>not </strong>be able to update any existing games that have been uploaded to the store.</p>
-  <p>To create a new keystore file the following details are required:</p>
-  <p><img alt="Android Preferences Keystore" class="center" src="../../assets/Images/Setup_And_Version/Platform_Preferences/Android_Prefs_2.png" /></p>
+  <p>Наконец, мы переходим к <strong>хранилищу ключей</strong>. Это файл, который будет использоваться для &quot;подписи&quot; всех ваших приложений <span class="notranslate">Android</span>, поэтому заполните все данные правильно и помните, что этот файл будет необходим для создания и обновления всех ваших приложений Android в будущем, а это значит, что после установки <em></em>он должен быть сохранен.<em><strong> рекомендуется сделать скриншот используемых настроек и создать резервную копию конечного файла.</strong></em>. Если вы потеряете этот файл, вы <strong>не </strong>сможете обновить ни одну из существующих игр, загруженных в магазин.</p>
+  <p>Для создания нового файла keystore необходимы следующие данные:</p>
+  <p><img alt="Android Preferences Packaging" class="center" src="../../assets/Images/Setup_And_Version/Platform_Preferences/Android_Prefs_1.png" /></p>
   <ul class="colour">
-    <li><strong>Filename</strong>: This is the name of the keystore file.</li>
+    <li><strong>Filename</strong>: Это имя файла хранилища ключей.</li>
   </ul>
-  <p class="note"><strong>NOTE</strong>: <em>This is not your name or the company name, but the name of the file to be generated! If you already have a keystore file from previous projects then you can click the file browser button here and direct <span data-keyref="GameMaker Name">GameMaker</span> to the previously created keystore file (or click the <strong>Import </strong>button). In this case, you must still fill out the rest of the required information (<strong>exactly as it was when you first generated the file</strong>) but you must <strong>not </strong>click the <strong>Generate Keystore </strong>button!. That will generate a new keystore file, overwriting the previous one.</em></p>
+  <p class="note"><strong>ПРИМЕЧАНИЕ</strong>: <em>Это не ваше имя или название компании, а имя генерируемого файла! Если у вас уже есть файл keystore из предыдущих проектов, вы можете нажать здесь кнопку браузера файлов и направить <span data-keyref="GameMaker Name">GameMaker</span> к ранее созданному файлу keystore (или нажать кнопку <strong>Import </strong>). В этом случае вы должны заполнить остальную необходимую информацию (<strong>точно так же, как и при первом создании файла</strong>), но вы <strong>не </strong>должны нажимать кнопку <strong>Generate Keystore </strong></em>! Это приведет к созданию нового файла keystore, который перезапишет предыдущий.</p>
   <ul class="colour">
-    <li><strong>Common Name</strong>: This would normally be your name.</li>
-    <li><strong>Password</strong>: Your security password for the keystore file which must be at least six characters long.</li>
-    <li><strong>Alias</strong>: This is another name that can be used for the keystore file and should be different to the name entered above.</li>
-    <li><strong>Alias Password</strong>: Your alias security password for the keystore file which must be at least six characters long.<br />
-      <br />
-      <span class="note">NOTE</span> If your Android Studio version is 4.2 or above, you must use the same password for the &quot;Password&quot; and &quot;Alias Password&quot; fields above. Using a different password and alias password will cause your builds to fail.
+    <li><strong>Общее имя</strong>: Обычно это ваше имя.</li>
+    <li><strong>Пароль</strong>: Ваш пароль безопасности для файла keystore, который должен состоять не менее чем из шести символов.</li>
+    <li><strong>Псевдоним</strong>: Это другое имя, которое может быть использовано для файла keystore и должно отличаться от имени, введенного выше.</li>
+    <li><strong>Alias Password</strong>: Ваш псевдонимный пароль безопасности для файла keystore, который должен состоять не менее чем из шести символов.<br>
+      <br>
+     <span class="note">ПРИМЕЧАНИЕ</span> Если версия вашего <span class="notranslate">Android</span> Studio 4.2 или выше, вы должны использовать один и тот же пароль для полей &quot;Пароль&quot; и &quot;Псевдонимный пароль&quot;. Использование разных паролей и псевдонимов приведет к сбою сборки.
     </li>
-    <li><strong>Organisational Unit</strong>: The department within the company that you are a part of.</li>
-    <li><strong>Organisation</strong>: The name of your company.</li>
-    <li><strong>Location</strong>: The name of the town or city where you are based.</li>
-    <li><strong>Country</strong>: The standard <a href="https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2">two letter code</a> for the country where you are based.</li>
+    <li><strong>Организационное подразделение</strong>: Отдел в компании, частью которого вы являетесь.</li>
+    <li><strong>Организация</strong>: Название вашей компании.</li>
+    <li><strong>Местонахождение</strong>: Название города или населенного пункта, в котором вы находитесь.</li>
+    <li><strong>Страна</strong>: Стандартный <a href="https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2">двухбуквенный код</a> страны, в которой вы находитесь.</li>
   </ul>
-  <p>Once this information is filled in and you are happy with it, press the button marked <strong>Generate Keystore</strong> for <span data-keyref="GameMaker Name">GameMaker</span> to create the necessary keystore file. This may take a moment but once it is finished, it normally will not need to be changed again. Note that you can click the <strong>Import </strong>button to import a previously created keystore file (see the <strong>Filename </strong>section, above) and you can also retrieve the keystore SHA1 hash by clicking the <strong>Generate Key Hash </strong>button. Pressing this will generate two special security hash keys directly linked to your keystore file that some web sites require for correct functionality (for example, Facebook, or Google Play for the Sha1 hash). Should you need this, simply press the button, then copy and paste the hash keys that are generated.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Когда эта информация будет заполнена и вас все устроит, нажмите кнопку с надписью <strong>Generate Keystore</strong> for <span data-keyref="GameMaker Name">GameMaker</span>, чтобы создать необходимый файл keystore. Это может занять некоторое время, но после завершения работы его, как правило, не нужно будет менять снова. Обратите внимание, что вы можете нажать кнопку <strong>Import </strong>, чтобы импортировать ранее созданный файл keystore (см. раздел <strong>Filename </strong>, выше), а также получить SHA1-хэш файла keystore, нажав кнопку <strong>Generate Key Hash </strong>. При нажатии этой кнопки будут сгенерированы два специальных хэш-ключа безопасности, непосредственно связанных с вашим файлом keystore, которые требуются некоторым веб-сайтам для корректной работы (например, Facebook или Google Play для хэша Sha1). Если вам это понадобится, просто нажмите кнопку, а затем скопируйте и вставьте созданные хэш-ключи.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="../Platform_Preferences.htm">Platform Preferences</a></div>
-        <div style="float:right">Next: <a href="HTML5.htm">HTML5</a></div>
+        <div style="float:left">Назад: <a href="../Platform_Preferences.htm">Предпочтения платформы</a></div>
+        <div style="float:right">Следующий: <a href="HTML5.htm">HTML5</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 Android Preferences

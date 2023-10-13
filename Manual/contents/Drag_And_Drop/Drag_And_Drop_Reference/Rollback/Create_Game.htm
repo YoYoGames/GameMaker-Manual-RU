@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Create Rollback Game</title>
+  <title>Создать игру с откатом</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
-  <script src="../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Gurpreet S. Matharoo" />
   <meta name="topic-comment" content="" />
   <meta name="rh-index-keywords" content="GML Visual Action - Create Game" />
@@ -15,46 +15,46 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1><img alt="Get Random Number Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Rollback/i_create_game.jpg" /> Create Rollback Game</h1>
-  <p>This action hosts a new multiplayer game. It takes the number of players that must be connected for the game to start, and optionally allows you to disable <a data-xref="{text}" href="../../../GameMaker_Language/GML_Reference/Rollback/Rollback_System.htm#h">Sync Test</a>.</p>
-  <p>When called with Sync Test disabled, the system waits for the given amount of players to join before <a href="../../../GameMaker_Language/GML_Reference/Rollback/Rollback_Events.htm">starting</a> the game. Make sure to not create or modify any managed instances until the game starts.</p>
-  <p class="note"><span class="tip">TIP</span> You can optionally force the game to start before all players have joined, by running <a data-xref="{title}" href="Start_Game.htm">Start Game</a>.</p>
-  <p>Currently you can only have up to 4 players in one game.</p>
-  <p class="note"><span class="warning">WARNING</span> It is not recommended to set a default region in this action unless you are allowing the player to select it through a menu.</p>
-  <p> </p>
-  <h4>Action Syntax:</h4>
-  <p><img alt="Get Random Number Action" class="center" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Rollback/Action_Create_Game.png" /></p>
-  <h4>Arguments:</h4>
+  <h1><img> Создать игру с откатом</h1>
+  <p>Это действие запускает новую многопользовательскую игру. Оно принимает количество игроков, которые должны быть подключены для начала игры, и по желанию позволяет отключить <a data-xref="{text}" href="../../../GameMaker_Language/GML_Reference/Rollback/Rollback_System.htm#h">проверку синхронизации</a>.</p>
+  <p>При вызове с отключенным Sync Test система ждет, пока заданное количество игроков присоединится к игре, прежде чем <a href="../../../GameMaker_Language/GML_Reference/Rollback/Rollback_Events.htm">начать</a> игру. Убедитесь, что не создаете и не изменяете управляемые экземпляры до начала игры.</p>
+  <p class="note"><span class="tip">СОВЕТ</span> Вы можете по желанию заставить игру начаться до того, как все игроки присоединятся к ней, выполнив команду <a data-xref="{title}" href="Start_Game.htm">Начать игру</a>.</p>
+  <p>В настоящее время в одной игре могут участвовать не более 4 игроков.</p>
+  <p class="note"><span class="warning">ПРЕДУПРЕЖДЕНИЕ</span> Не рекомендуется устанавливать регион по умолчанию в этом действии, если только вы не позволяете игроку выбрать его через меню.</p>
+  <p> </p>
+  <h4>Синтаксис действия:</h4>
+  <p><img alt="Get Random Number Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Rollback/i_create_game.jpg" /></p>
+  <h4>Аргументы:</h4>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Description</th>
+        <th>Аргумент</th>
+        <th>Описание</th>
       </tr>
       <tr>
-        <td>Count of players</td>
-        <td>The number of players that must be connected for the game to start. If <a data-xref="{title}" href="Define_Player.htm">Define Player</a> is used, this is the number of instances that are automatically created.</td>
+        <td><span class="notranslate">Count of players</span></td>
+        <td>Количество игроков, которые должны быть подключены для начала игры. Если используется <a data-xref="{title}" href="Define_Player.htm">Define Player</a>, это количество экземпляров, которые создаются автоматически.</td>
       </tr>
       <tr>
-        <td>Sync test</td>
-        <td>Specifies whether Sync Test should be enabled, and is enabled by default. When disabled, online functionality is enabled.</td>
+        <td><span class="notranslate">Sync test</span></td>
+        <td>Определяет, должен ли быть включен Sync Test; по умолчанию он включен. При отключении функции онлайн функциональность включена.</td>
       </tr>
       <tr>
-        <td>Region</td>
-        <td>Specifies the region where the virtual room will be created. For info on getting regions, see <a href="../../../GameMaker_Language/GML_Reference/Rollback/Rollback_Functions/rollback_create_game.htm"><span class="inline">rollback_create_game()</span></a>.</td>
+        <td><span class="notranslate">Region</span></td>
+        <td>Указывает регион, в котором будет создана виртуальная комната. Для получения информации о получении регионов см. <a href="../../../GameMaker_Language/GML_Reference/Rollback/Rollback_Functions/rollback_create_game.htm"><span class="inline">rollback_create_game()</span></a>.</td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a data-xref="{title}" href="Rollback_Actions.htm">Rollback Multiplayer Actions</a></div>
-        <div style="float:right">Next: <a data-xref="{title}" href="Join_Game.htm">Join Game</a></div>
+        <div style="float:left">Назад: <a data-xref="{title}" href="Rollback_Actions.htm">Откат Многопользовательские действия</a></div>
+        <div style="float:right">Следующий: <a data-xref="{title}" href="Join_Game.htm">Присоединиться к игре</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 Action - Create Game

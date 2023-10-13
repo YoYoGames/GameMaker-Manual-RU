@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Draw Instance Lives</title>
-  <meta name="generator" content="Adobe RoboHelp 2020" />
+  <title>Нарисовать жизнь экземпляра</title>
+  <meta name="generator" content="Adobe RoboHelp 2019" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
-  <script src="../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page that explains the Draw Instance Lives action" />
   <meta name="rh-index-keywords" content="GML Visual Action - Draw Instance Lives" />
@@ -14,53 +14,58 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1><img alt="Draw Instance Lives Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Drawing/i_Drawing_Draw_Instance_Lives.png" /> Draw Instance Lives</h1>
-  <p>This action will draw a sprite to represent each of the lives the instance currently have. The number to draw is taken from the current value of the local instance variable <span class="inline">lives</span>, which is a special variable that is created automatically within the instance if you use any of the actions that require it. You give the sprite to draw for the lives and the stack order, which can be either <b>Row</b> (horizontally, left to right), or <b>column</b> (vertically, top to bottom), as well as the position. The position can be an absolute position within the room, or one relative to the position of the instance doing the drawing, and the spacing between images will be based on the width or height of the sprite. Note that this simply draws a static image - the initial single image (frame 0) of the given sprite - and any further frames will be ignored, as will any transforms that have been added to the instance through changing the instance variables (like <span class="inline">image_xscale</span> or <span class="inline">image_blend</span>). Caption text will be drawn preceding the lives value and if it is text it should be wrapped with &quot;&quot;, and both will be formatted using the current draw font , colour and alignment.</p>
+  <h1><img> Нарисовать жизнь экземпляра</h1>
+  <p>Это действие нарисует <span class="notranslate">sprite</span>, чтобы представить каждую из жизней, которые в настоящее время есть у экземпляра. Число для рисования берется из текущего значения локальной переменной экземпляра <span class="inline">lives</span>, которая является специальной переменной, автоматически создаваемой в экземпляре, если вы используете какие-либо действия, требующие ее наличия.
+    экземпляра, если вы используете любое из действий, требующих ее наличия. Вы указываете <span class="notranslate">sprite</span> для рисования жизней и порядок стека, который может быть либо <b>строкой</b> (горизонтально, слева направо), либо <b>столбцом</b> (вертикально, сверху вниз), а также позицию.
+    Позиция может быть абсолютной позицией в комнате или относительной позицией экземпляра, выполняющего рисование, а расстояние между изображениями будет основано на ширине или высоте <span class="notranslate">sprite</span>. Обратите внимание, что это просто рисует статическое изображение.
+    - начальное одиночное изображение (кадр 0) данного <span class="notranslate">sprite</span> - и все последующие кадры будут проигнорированы, как и любые преобразования, которые были добавлены к экземпляру путем изменения переменных экземпляра (например, <span class="inline">image_xscale</span> или <span class="inline">image_blend</span>).
+    Текст подписи будет нарисован перед значением lives, и если это текст, то он должен быть обернут символом &quot;&quot;, и оба текста будут отформатированы с использованием текущего шрифта, цвета и выравнивания.</p>
   <p><b></b></p>
-  <p class="note"><span data-conref="../../../assets/snippets/Tag_note.hts"> </span> This action is only for use in the various <a href="../../../The_Asset_Editors/Object_Properties/Draw_Events.htm">Draw Events</a>, and will not draw anything if used elsewhere.</p>
-  <p> </p>
-  <p> </p>
-  <h4>Action Syntax:</h4>
-  <p><img alt="Draw Instance Lives" class="center" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Drawing/a_Drawing_Draw_Instance_Lives.png" /></p>
-  <h4>Arguments:</h4>
+  <p class="note"><b>ПРИМЕЧАНИЕ</b>: Это действие предназначено только для использования в различных <a href="../../../The_Asset_Editors/Object_Properties/Draw_Events.htm">событиях рисования</a> и не будет рисовать ничего, если использовать его в других местах.</p>
+  <p> </p>
+  <p> </p>
+  <h4>Синтаксис действия:</h4>
+  <p><img alt="Draw Instance Lives Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Drawing/i_Drawing_Draw_Instance_Lives.png" /></p>
+  <h4>Аргументы:</h4>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Description</th>
+        <th>Аргумент</th>
+        <th>Описание</th>
       </tr>
       <tr>
-        <td>Caption</td>
-        <td>The string to draw along with the score value (preceding and can be left blank)</td>
+        <td><span class="notranslate">Caption</span></td>
+        <td>Строка, которую нужно нарисовать вместе со значением оценки (предшествует и может быть оставлена пустой)</td>
       </tr>
       <tr>
-        <td>Stack Order</td>
-        <td>The order to draw in (either Row or Column)</td>
+        <td><span class="notranslate">Stack Order</span></td>
+        <td>Порядок рисования (в строке или столбце)</td>
       </tr>
       <tr>
-        <td>x</td>
-        <td>The x position to draw the lives at</td>
+        <td><span class="notranslate">x</span></td>
+        <td>Позиция x для рисования жизней</td>
       </tr>
       <tr>
-        <td>y</td>
-        <td>The y position to draw the lives at</td>
+        <td><span class="notranslate">y</span></td>
+        <td>Позиция y для рисования жизней</td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Example:</h4>
-  <p><img alt="Draw Instance Lives Example" class="center" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Drawing/e_Drawing_Draw_Instance_Lives.png" />The above action block code draws sprites relative to the instance to represent the current <span class="inline">lives</span> value.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p> </p>
+  <h4>Пример:</h4>
+  <p><img>Приведенный выше код блока действий рисует <span class="notranslate">sprites</span> относительно экземпляра для представления
+    текущее значение <span class="inline">lives</span>.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Drawing_Actions.htm">Drawing Actions</a></div>
-        <div style="float:right">Next: <a href="Set_Draw_Colour.htm">Set Draw Colour</a></div>
+        <div style="float:left">Назад: <a href="Drawing_Actions.htm">Действия при рисовании</a></div>
+        <div style="float:right">Следующий: <a href="Set_Draw_Colour.htm">Установить цвет рисунка</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 Action - Draw Instance Lives

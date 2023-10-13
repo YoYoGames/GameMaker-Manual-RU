@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Standard Workflow</title>
+  <title>Стандартный рабочий процесс</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../assets/css/default.css" type="text/css" />
-  <script src="../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Section that covers Source Control standard workflow
 " />
@@ -15,40 +15,40 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>Standard Workflow</h1>
-  <p>As you work on your project, you will naturally create sprites, edit scripts, delete timelines, and whatever else is required as your project develops over time. These are all actions which you may want to keep track of and get back should something go wrong. This is the main reason to use Source Control - so that any accidents can be reverted - and we will quickly take you through the basic workflow from start so you understand how this works.</p>
-  <p>Starting from the beginning, create a new GML project and then activate source control through the <a href="../../Settings/Game_Options.htm">main options</a>. This gives us access to the Source Control menu on the top, so we&#39;ll immediately go and select <strong>Create Project Repository</strong>. If you look at the room resources, you can see that the default room has gained a red exclamation <img alt="SCM Modified Icon" class="icon" src="../../assets/Images/Icons/SCM_Modified.png" />, meaning that it has been <strong>modified </strong>from it&#39;s last state. If we had other resources in the project, you&#39;d see that they all have the same icon as shown in the image below:</p>
-  <p><img alt="Source Control Modified Assets" class="center" src="../../assets/Images/IDE Tools/SCM_ModifiedState.png" />We now have the option of either committing the blank project as it is, or getting it to a base state. For now, we&#39;ll do our first commit so click <strong>Source Control</strong> &gt; <strong>Commit Changes</strong>. We&#39;ll now get a new window opened which is split into three areas:</p>
-  <p><img alt="Source Control Commit Window" class="center" src="../../assets/Images/IDE Tools/SCM_CommitWindow.png" /></p>
+  <h1>Стандартный рабочий процесс</h1>
+  <p>По мере работы над проектом вы будете создавать <span class="notranslate">sprites</span>, редактировать сценарии, удалять графики и все остальное, что потребуется по мере развития проекта. Это все действия, которые вы, возможно, захотите отследить и вернуть, если что-то пойдет не так. Это основная причина для использования Source Control - чтобы можно было исправить любые ошибки - и мы быстро проведем вас через основной рабочий процесс с самого начала, чтобы вы поняли, как это работает.</p>
+  <p>Начиная с самого начала, создайте новый проект <span class="notranslate">GML</span>, а затем активируйте контроль исходных текстов через <a href="../../Settings/Game_Options.htm">основные опции</a>. Это даст нам доступ к меню Source Control в верхней части, поэтому мы сразу же перейдем и выберем <strong>Create Project Repository</strong>. Если вы посмотрите на ресурсы комнат, то увидите, что комната по умолчанию приобрела красный восклицательный знак <img>, означающий, что она была <strong>изменена </strong>по сравнению с предыдущим состоянием. Если бы у нас были другие ресурсы в проекте, вы бы увидели, что все они имеют одинаковый значок, как показано на изображении ниже:</p>
+  <p><img>Теперь у нас есть возможность либо зафиксировать пустой проект как есть, либо довести его до базового состояния. Сейчас мы сделаем первую фиксацию, поэтому нажмите <strong>Source Control</strong> &gt; <strong>Commit Changes</strong>. Теперь у нас откроется новое окно, разделенное на три области:</p>
+  <p><img alt="SCM Modified Icon" class="icon" src="../../assets/Images/Icons/SCM_Modified.png" /></p>
   <ul class="colour">
-    <li><strong>Staged Changes</strong>: This represent the changes which will be committed to source. This will likely be blank, but it may show a Main Options change, which is fine.</li>
-    <li><strong>Unstaged Changes</strong>: This shows the files that have changed, but that we haven&#39;t told Git that we want to commit them - they&#39;re &quot;pending&quot; changes.</li>
-    <li><strong>Commit Message</strong>: This is a note that we can add to explain what the changes are.</li>
+    <li><strong>Поэтапные изменения</strong>: Здесь представлены изменения, которые будут зафиксированы в исходном тексте. Скорее всего, здесь будет пусто, но может быть показано изменение Main Options, что вполне нормально.</li>
+    <li><strong>Неустановленные изменения</strong>: Здесь показаны файлы, которые изменились, но мы не сообщили <span class="notranslate">Git</span>, что хотим зафиксировать их - это &quot;ожидающие&quot; изменения.</li>
+    <li><strong>Commit Message</strong>: Это примечание, которое мы можем добавить, чтобы объяснить суть изменений.</li>
   </ul>
-  <p>For now, click the <strong>Stage All</strong> button, as we want to commit all the changes, and type something like &quot;First Commit!&quot; into the Commit Message and click <strong>Commit</strong>. All our resources should now have a green tick<img alt="SCM Committed Icon" class="icon" src="../../assets/Images/Icons/SCM_Committed.png" /> , meaning there&#39;s no modifications found.</p>
-  <p>It is worth noting that as you work within this window, the various <strong>Staged </strong>and <strong>Unstaged </strong>messages will be prefixed by a symbol. The symbol being used will vary depending on the operation and file, with the following being used:</p>
+  <p>Пока что нажмите кнопку <strong>Stage All</strong>, так как мы хотим зафиксировать все изменения, введите что-то вроде &quot;First Commit!&quot; в Commit Message и нажмите <strong>Commit</strong>. Теперь на всех наших ресурсах должна стоять зеленая галочка<img>, означающая, что изменений не обнаружено.</p>
+  <p>Стоит отметить, что при работе в этом окне различные сообщения <strong>Staged </strong>и <strong>Unstaged </strong>будут сопровождаться символом. Используемый символ зависит от операции и файла, при этом используются следующие:</p>
   <ul class="colour">
-    <li><span class="inline">[...]</span> - Staged Change (was previously [A])</li>
-    <li><span class="inline">[+]</span> - Newly Added</li>
-    <li><span class="inline">[-&gt;]</span> - Renamed/Moved</li>
-    <li><span class="inline">[-]</span> - Removed</li>
-    <li><span class="inline">[M]</span> - Unstaged Changes</li>
-    <li><span class="inline">[?]</span> - Untracked File</li>
-    <li><span class="inline">[!]</span> - Missing File</li>
+    <li><span class="inline">[...]</span> - Поэтапное изменение (ранее было [A])</li>
+    <li><span class="inline">[+]</span> - добавлено недавно</li>
+    <li><span class="inline">[-&gt;]</span> - Переименовано/перемещено</li>
+    <li><span class="inline">[-]</span> - удалено</li>
+    <li><span class="inline">[M]</span> - Непостановочные изменения</li>
+    <li><span class="inline">[?]</span> - Неотслеживаемый файл</li>
+    <li><span class="inline">[!]</span> - Отсутствующий файл</li>
   </ul>
-  <p>Our work process can now begin, and we can start to build our project and save and commit changes, just as we&#39;ve done in the paragraphs above.</p>
-  <p>After working for a while, you may want to check and see what you&#39;ve committed at any given time, and so for that you&#39;ll want to open the <strong>Commit History</strong>. To open the history window you simply go to <strong>Source Control</strong> &gt; <strong>View History</strong> which opens another window with three panes:</p>
-  <p><img alt="Source Control History Window" class="center" src="../../assets/Images/IDE Tools/SCM_HistoryWindow.png" />The top pane describes the commits, the middle pane describes the comment given to the selected commit, and the bottom pane describes the files that have been modified in this commit. Note that if you have set up a <a href="External_Merge_Diff_Tools.htm">Diff Tool</a>, then double-clicking on any file in this window will open the diff tool and you&#39;ll be able to see the changes between the files.</p>
-  <p> </p>
-  <p> </p>
+  <p>Теперь наш рабочий процесс может начаться, и мы можем приступить к созданию нашего проекта, сохранению и фиксации изменений, как мы это делали в пунктах выше.</p>
+  <p>Поработав некоторое время, вы можете захотеть проверить и посмотреть, что вы зафиксировали в тот или иной момент времени, и для этого вам понадобится открыть <strong>историю коммитов</strong>. Чтобы открыть окно истории, просто перейдите в <strong>Source Control</strong> &gt; <strong>View History</strong>, что откроет еще одно окно с тремя панелями:</p>
+  <p><img>Верхняя панель описывает коммиты, средняя панель описывает комментарий к выбранному коммиту, а нижняя панель описывает файлы, которые были изменены в этом коммите. Обратите внимание, что если вы настроили <a href="External_Merge_Diff_Tools.htm">инструмент Diff Tool</a>, то двойной щелчок на любом файле в этом окне откроет инструмент diff, и вы сможете увидеть изменения между файлами.</p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="../Source_Control.htm">Source Control</a></div>
-        <div style="float:right">Next: <a href="Reverting_Files.htm">Reverting Files</a> </div>
+        <div style="float:left">Назад: <a href="../Source_Control.htm">Контроль источников</a></div>
+        <div style="float:right">Следующее: <a href="Reverting_Files.htm">Восстановление файлов</a> </div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2021 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 Source Control Workflow

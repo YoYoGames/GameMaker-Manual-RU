@@ -6,7 +6,7 @@
   <title>tile_set_empty</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page outlining the function tile_set_empty" />
   <meta name="rh-index-keywords" content="tile_set_empty" />
@@ -15,29 +15,29 @@
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
   <h1>tile_set_empty</h1>
-  <p>This function can be used to set a given set of tile-data to be an empty tile. You give the tile-data, which can be retrieved using the function <a href="tilemap_get.htm"><span class="inline">tilemap_get()</span></a>. The function will return a modified tile-data set which can then be applied using the <span class="inline"><a href="tilemap_set.htm">tilemap_set()</a></span> function.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p>Эта функция может быть использована для установки заданного набора данных плитки в качестве пустой плитки. Вы передаете данные тайла, которые можно получить с помощью функции <a href="tilemap_get.htm"><span class="inline">tilemap_get()</span></a>, и функция вернет <span class="inline">true</span>, если плитка пуста, или <span class="inline">false</span>, если есть индекс плитки. Функция вернет модифицированный набор данных плитки, который затем может быть применен с помощью функции <span class="inline"><a href="tilemap_set.htm">tilemap_set()</a></span>.</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
   <p class="code">tile_set_empty(tiledata)</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Аргумент</th>
+        <th>Тип</th>
+        <th>Описание</th>
       </tr>
       <tr>
-        <td>tiledata</td>
-        <td><span data-keyref="Type_Real_Tile_Data"><a href="../../../../../../GameMaker_Language/GML_Reference/Asset_Management/Rooms/Tile_Map_Layers/tilemap_get.htm" target="_blank">Tile Data</a></span></td>
-        <td>the tile-data to set</td>
+        <td><span class="notranslate">tiledata</span></td>
+        <td><span data-keyref="Type_Real_Tile_Data">Данные о плитке</span></td>
+        <td><span class="notranslate">the tile-data to set</span></td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
-  <p class="code"><span data-keyref="Type_Real_Tile_Data"><a href="../../../../../../GameMaker_Language/GML_Reference/Asset_Management/Rooms/Tile_Map_Layers/tilemap_get.htm" target="_blank">Tile Data</a></span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
+  <p class="code"><span data-keyref="Type_Real_Tile_Data">Tile Data</span></p>
+  <p> </p>
+  <h4>Пример:</h4>
   <p class="code">var lay_id = layer_get_id(&quot;Tiles_sky&quot;);<br />
     var map_id = layer_tilemap_get_id(lay_id);<br />
     for (var i = 0; i &lt; tilemap_get_width(map_id); i++;)<br />
@@ -52,18 +52,18 @@
             }<br />
         }<br />
     }</p>
-  <p>The above code gets the tile map ID from the given layer and then proceeds to check every tile cell on the map to see if it has data or not. If it does, the tile is set to empty.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Приведенный выше код получает ID карты тайлов из заданного слоя и затем проверяет каждую ячейку тайла на карте на наличие или отсутствие данных. Если есть, то плитка устанавливается пустой.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Tile_Map_Layers.htm">Tile Map Layers</a></div>
-        <div style="float:right">Next: <a href="tile_set_index.htm">tile_set_index</a></div>
+        <div style="float:left">Назад: <a href="Tile_Map_Layers.htm">Плитка Слои карты</a></div>
+        <div style="float:right">Следующий: <a href="tile_set_index.htm"><span class="notranslate">tile_set_index</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 tile_set_empty
