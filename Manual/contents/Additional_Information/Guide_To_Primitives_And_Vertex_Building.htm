@@ -3,13 +3,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<<<<<<< HEAD
+
   <title>Руководство по примитивам и построению вершин</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
-=======
-  <title>Guide To Primitives And Vertex Building</title>
-  <meta name="generator" content="Adobe RoboHelp 2022" />
->>>>>>> e8f331b1b74476a144e051c0d836bf120b342735
   <link rel="stylesheet" href="../assets/css/default.css" type="text/css" />
   <script src="../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
@@ -19,27 +15,15 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-<<<<<<< HEAD
   <h1>Руководство по примитивам и построению вершин</h1>
   <p>Это руководство кратко описывает, как создавать и использовать <a href="../GameMaker_Language/GML_Reference/Drawing/Primitives/Primitives_And_Vertex_Formats.htm">примитивы</a>, используя пользовательские <strong>форматы вершин</strong> и <strong>вершинные буферы</strong>. </p>
   <p>Обычно, когда вы начинаете работать с 3D, спецэффектами, сложными процессами рисования или шейдерами, вам не нужно слишком беспокоиться об используемом формате вершин, поскольку <span data-keyref="GameMaker Name">GameMaker</span> автоматически установит и передаст <a class="glossterm" data-glossterm="вершина" href="#">вершинные</a> данные за вас. Однако иногда необходимо создать собственные вершинные данные и отформатировать их в соответствии с требованиями, особенно если вам нужно увеличить скорость или передать дополнительную информацию. Например, стандартный формат вершин включает x, y, z 3D позицию, цвет (с альфой) и UV координаты текстуры, которые, если бы вы создавали их самостоятельно, выглядели бы примерно так:</p>
-=======
-  <h1><span data-field="title" data-format="default">Guide To Primitives And Vertex Building</span></h1>
-  <p>This guide briefly covers how to build and use <a href="../GameMaker_Language/GML_Reference/Drawing/Primitives/Primitives_And_Vertex_Formats.htm">primitives</a> using custom <strong>vertex formats</strong> and <strong>vertex buffers</strong>.</p>
-  <p>In general when you start working with 3D, special effects, complex drawing processes or shaders you don&#39;t need to worry too much about the vertex format being used, since <span data-keyref="GameMaker Name">GameMaker</span> will automatically set up and pass through the <a class="glossterm" data-glossterm="vertex" href="#">vertex</a> data for you. However, sometimes it is necessary to create your own vertex data and format it to suit, especially when you need to boost speed, or wish to pass in extra information. For example the standard vertex format includes an x, y, z 3D position, colour (with alpha), and UV texture coordinates, which, if you were creating it yourself, would look something like this: </p>
-  <h4 id="passthrough_vertex_format">Passthrough Vertex Format:</h4>
->>>>>>> e8f331b1b74476a144e051c0d836bf120b342735
   <p class="code">vertex_format_begin();<br />
     vertex_format_add_position_3d();<br />
     vertex_format_add_colour();<br />
     vertex_format_add_textcoord();<br />
     my_format = vertex_format_end();</p>
-<<<<<<< HEAD
   <p>Однако если вы используете (например) шейдер только для манипулирования положением вершины, то нет необходимости передавать данные цвета или текстуры. В этом случае вы создадите свой собственный формат следующим образом:</p>
-=======
-  <p>However, if you are only using (for example) a shader to manipulate the position of the vertex, then there would be no need to pass through colour or texture data. In this case you would create your own format as follows: </p>
-  <h4>Custom Vertex Format:</h4>
->>>>>>> e8f331b1b74476a144e051c0d836bf120b342735
   <p class="code">vertex_format_begin();<br />
     vertex_format_add_position_3d();<br />
     my_format = vertex_format_end();</p>
@@ -51,21 +35,12 @@
     <li>Положение 3D</li>
     <li>Координата текстуры</li>
   </ul>
-<<<<<<< HEAD
   <p>В общем случае вы <em>всегда</em> должны указывать позицию или 3D-позицию как часть формата, но все остальные параметры являются необязательными.</p>
   <p>Следует отметить, что после создания формата вершин, порядок, в котором вы определили атрибуты вершин, <i>должен соблюдаться</i> при создании <strong>примитивов</strong>. Так, если вы определили формат вершины как позицию, цвет и координату текстуры, то <b>вы <i>должны</i></b> добавить эти атрибуты в примитив в том же порядке, иначе вы получите ошибку. Также обратите внимание, что, как и любой другой динамический ресурс, формат вершины требует памяти и поэтому должен быть удален, когда он не нужен, с помощью функции<a href="../GameMaker_Language/GML_Reference/Drawing/Primitives/vertex_format_delete.htm"><span class="inline">vertex_format_delete()</span></a>.</p>
   <p>Все примитивы, которые вы создаете, хранятся в <b>буфере вершин</b>. Он должен быть создан заранее, а затем на него ссылаются функции, которые используются для создания вашего примитива. Буфер вершин можно использовать повторно столько раз, сколько необходимо для создания различных примитивов, или его можно &quot;заморозить&quot;, чтобы сохранить определенный тип примитива на все время игры или уровня (это самый быстрый подход, поэтому если вы знаете, что созданный вами примитив не изменится, всегда используйте этот вариант).</p>
   <p>Пример построения примитива с одним треугольником показан в следующем коде:</p>
   <p class="code">// CREATE EVENT<br />
     v_buff = vertex_create_buffer();<br />
-=======
-  <p>In general you must <em>always</em> provide position or 3D position as part of the format, but all the others are optional.</p>
-  <p>You should note that once you have created your vertex format, the order in which you have defined the vertex attributes <i>must be honoured</i> when building your <strong>primitives</strong>. So, if you have defined a vertex format as position, colour, and texture coordinate, then <b>you <i>must</i> add these attributes to the primitive in the same order otherwise you will get an error</b>. Also note that like any other dynamic resource, a vertex format requires memory and therefore should be removed when not needed using the function <span class="inline3_func"><a data-xref="{title}" href="../GameMaker_Language/GML_Reference/Drawing/Primitives/vertex_format_delete.htm">vertex_format_delete</a></span>.</p>
-  <p>Any primitives that you build are held in a <b>vertex buffer</b>. This must be created beforehand and then referenced by the functions that are used to build your primitive. The vertex buffer can be reused as many times as necessary to create different primitives, or it can be &quot;frozen&quot; to maintain a specific primitive type for the duration of your game or level (which is the fastest approach, so if you know that a primitive you build will not change then you should always use this option).</p>
-  <p>An example of a single triangle primitive being built is shown in the following code:</p>
-  <p class="code_heading">Create Event</p>
-  <p class="code">v_buff = vertex_create_buffer();<br />
->>>>>>> e8f331b1b74476a144e051c0d836bf120b342735
     vertex_begin(v_buff, global.my_format);<br />
     vertex_position(v_buff, 10, 10);<br />
     vertex_colour(v_buff, c_white, 1);<br />
@@ -82,7 +57,6 @@
     var tex = sprite_get_texture(spr_Background, 0);<br />
     shader_set(shd_shimmer);<br />
     vertex_submit(v_buff, pr_trianglelist, tex);<br />
-<<<<<<< HEAD
     shader_reset();
   </p>
   <p>Здесь мы сначала создаем буфер вершин в событии Create экземпляра, затем начинаем определение различных вершин, составляющих наш треугольный примитив, указывая положение, цвет и UV-координаты текстуры для каждой из трех точек, которые мы хотим использовать. Затем мы завершаем определение вершин и узнаем, что буфер вершин с данными вершин хранится в переменной &quot;v_buff&quot;.  </p>
@@ -91,15 +65,6 @@
   <p>Вы заметите, что когда мы передаем буфер вершин для отрисовки, мы предоставляем тип примитива. Тип используемого примитива может быть точкой, списком или полосой линий, списком или полосой треугольников, но вы <i>не</i> можете использовать веер треугольников, так как большинство мобильных устройств не принимают этот тип примитива. Не забудьте правильно отформатировать вершинный буфер для типа примитива, который будет использоваться для его отрисовки. Например, для рисования примитива с двумя треугольниками в виде списка треугольников требуется 6 точек, а в виде полосы треугольников - только 4 точки. Какой тип использовать - решать вам, это зависит от того, что вы хотите нарисовать, и от эффекта, которого вы хотите добиться.</p>
   <p>Последний важный момент, который следует отметить при использовании собственных вершинных буферов таким образом, - это то, как это влияет на пакеты вершин, которые отправляются на GPU. Когда вы создаете вершинный буфер, вы создаете самый низкий уровень графических данных, поэтому при рисовании все, что происходит, это то, что <span data-keyref="GameMaker Name">GameMaker</span> отправляет ваш буфер непосредственно на видеокарту. Поэтому, если вы хотите улучшить пакетную обработку, вы должны сделать это самостоятельно и хранить то, что вы хотите пакетно обрабатывать, в одном и том же буфере.</p>
   <p>Как мы уже говорили выше, вершинные форматы строятся с помощью следующих 5 типов атрибутов (добавляются с помощью соответствующей функции <span class="inline">vertex_format_add_*</span> ):</p>
-=======
-    shader_reset();</p>
-  <p>Here we have first created our vertex buffer in the Create Event of the instance, then we begin the definition of the different vertices that make up our triangle primitive, giving the position, the colour, and the texture UV coordinate for each of the three points that we want to use. We then end the vertex definition, and we know that the vertex buffer with this vertex data is stored in the variable &quot;v_buff&quot;.  </p>
-  <p class="note"><span data-conref="../assets/snippets/Tag_note.hts"> </span> If the contents of the vertex buffer are going to be updated constantly, it would be created, given the vertex data, and then be destroyed again - after it&#39;s been drawn - all in the same step.</p>
-  <p>We then draw the contents of the vertex buffer in the Draw Event using a shader. This is a very simple example, and is basically how <span data-keyref="GameMaker Name">GameMaker</span> works internally, i.e.: When you draw a sprite, <span data-keyref="GameMaker Name">GameMaker</span> creates a vertex buffer with four vertices creating two triangles (which make a square, also called a &quot;quad&quot;), and textures these two triangles with the sprite image. When we draw this sprite, we are submitting the vertex buffer which draws its contents to the screen.</p>
-  <p>You&#39;ll notice when we submit the vertex buffer for drawing, we supply a primitive type. The type of primitive you use can be a point, a line list or strip, or a triangle list or strip, but you are <i>not</i> permitted triangle fans since most mobile hardware will not accept that primitive type. Don&#39;t forget to format your vertex buffer correctly for the type of primitive that is going to be used to draw it. For example, drawing a two triangle primitive as a triangle list requires 6 points, but as a triangle strip it only requires 4 points. Which type you use is up to you and will depend on what you want to draw and the effect that you want to achieve.</p>
-  <p>One final important point to note when using your own vertex buffers in this way is how it affects the vertex batches that are sent to the GPU. When you create a vertex buffer you are creating the lowest level of graphics data, so when you draw all that happens is that <span data-keyref="GameMaker Name">GameMaker</span> sends your buffer directly to the graphics card. Because of this, if you want better batching, you must work it out yourself and store the things you want to batch inside the same buffer.</p>
-  <p>As we have already mentioned above, vertex formats are built up by using together the following 5 attribute types (added via the appropriate <span class="inline3_func">vertex_format_add_*</span> function):</p>
->>>>>>> e8f331b1b74476a144e051c0d836bf120b342735
   <ul class="colour">
     <li>Цвет</li>
     <li>Нормальный</li>
@@ -145,13 +110,8 @@
     attribute vec4 in_Colour0;       // (r,g,b,a)<br />
     attribute vec4 in_Colour1;       // (r,g,b,a)<br />
     attribute vec2 in_TextureCoord;  // (u,v)</p>
-<<<<<<< HEAD
   <p>В этом случае <span class="inline">in_Colour0</span> сопоставляется с первым <span class="inline">vertex_format_add_colour()</span>, а <span class="inline">in_Colour1</span> - со вторым.</p>
   <p>Координаты текстуры обрабатываются несколько иначе, чем цвет. В основном, все, что не называется <span class="inline">in_Position</span>, <span class="inline">in_Normal</span> или одним из атрибутов <span class="inline">in_Colour[0 ... ]</span>, рассматривается как текстурная координата. Порядок, в котором они определены в списке атрибутов в шейдере, обозначает, с каким атрибутом в формате вершин они связаны. Смотрите следующий пример <span class="notranslate">GML</span>:</p>
-=======
-  <p>In this case <span class="inline">in_Colour0</span> maps to the first <span class="inline">vertex_format_add_colour()</span> and <span class="inline">in_Colour1</span> maps to the second.</p>
-  <p>Texture coordinates are handled slightly differently to colour. Basically, anything which isn&#39;t called <span class="inline">in_Position</span>, <span class="inline">in_Normal</span> or one of the <span class="inline">in_Colour[0 ... ]</span> attributes is treated as a texture coordinate. The order they are defined in, in the list of attributes in the shader, is what denotes which attribute in the vertex format they map to. See the following <span data-keyref="GML_Code">GML Code</span> example:</p>
->>>>>>> e8f331b1b74476a144e051c0d836bf120b342735
   <p class="code">vertex_format_begin();<br />
     vertex_format_add_position_3d();<br />
     vertex_format_add_colour();<br />
