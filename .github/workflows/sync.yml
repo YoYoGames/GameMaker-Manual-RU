@@ -26,7 +26,14 @@ jobs:
           target_repo_token: ${{ secrets.GH_TOKEN }}
           upstream_sync_branch: develop
           upstream_sync_repo: YoYoGames/GameMaker-Manual
+<<<<<<< HEAD
           upstream_repo_access_token: ${{ secrets.GH_TOKEN }}     
+=======
+          upstream_repo_access_token: ${{ secrets.GH_TOKEN }} 
+          git_config_user: ksuchitra532 
+          git_config_email: null
+          git_config_pull_rebase: true      
+>>>>>>> e8f331b1b74476a144e051c0d836bf120b342735
     - name: Sync upstream changes
       id: sync-lts
       uses: aormsby/Fork-Sync-With-Upstream-action@v3.4
@@ -36,4 +43,8 @@ jobs:
             target_repo_token: ${{ secrets.GH_TOKEN }}
             upstream_sync_branch: main-lts
             upstream_sync_repo: YoYoGames/GameMaker-Manual
+<<<<<<< HEAD
             upstream_repo_access_token: ${{ secrets.GH_TOKEN }}              
+=======
+            upstream_repo_access_token: ${{ secrets.GH_TOKEN }}              
+>>>>>>> e8f331b1b74476a144e051c0d836bf120b342735

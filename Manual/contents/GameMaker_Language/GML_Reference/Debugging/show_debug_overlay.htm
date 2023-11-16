@@ -14,6 +14,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
+<<<<<<< HEAD
   <h1>show_debug_overlay</h1>
   <p>Эта функция может использоваться для включения и выключения стандартной отладочной накладки при тестировании вашей игры и по умолчанию отключена. Отладочная накладка показывает графическую полосу использования CPU/GPU в самом игровом окне, а также текущее реальное значение fps, количество смен текстур и количество вершинных батчей (обратите внимание, что смены текстур и вершинных батчей никогда не будут равны нулю и обычно показывают значения 2 или 3, поскольку даже в пустой комнате без объектов <span data-keyref="GameMaker Name">GameMaker</span> все равно должен рисовать и батчить).</p>
   <p><img>Эта полоса разделена на секции, каждая из которых составляет 1/60 секунды. Как видно из изображения выше, полоса состоит из различных цветов:</p>
@@ -33,6 +34,18 @@
   <p> </p>
   <h4>Синтаксис:</h4>
   <p class="code">show_debug_overlay(enable);</p>
+=======
+  <h1><span data-field="title" data-format="default">show_debug_overlay</span></h1>
+  <p>This function toggles <a data-xref="{title}" href="The_Debug_Overlay.htm">The Debug Overlay</a>. This overlay is disabled by default.</p>
+  <p>The debug overlay enables a menu with three options: <strong>FPS</strong> (open by default), <strong>Log</strong>, and <strong>Audio</strong>. It displays the <span data-keyref="GameMaker Name">GameMaker</span> version in the top-right corner, along with the version and name of the project: </p>
+  <p><img class="center" src="../../../assets/Images/Scripting_Reference/GML/Reference/Debug/debug_overlay_1.png" style="cursor: nesw-resize;" />If the optional <span class="inline2">minimised</span> parameter is set to <span class="inline2">false</span>, the overlay is opened with the <strong>FPS</strong> window minimised, only showing basic info in the header.</p>
+  <p>To create custom debug views that will appear under the <strong>Views</strong> menu, see <a href="The_Debug_Overlay.htm#creating_debug_views">Creating Debug Views</a>.</p>
+  <p class="note"><span data-conref="../../../assets/snippets/Tag_note.hts"> </span> This function will not work on the HTML5 target due to the different way it works compared to all the other targets.</p>
+  <p class="note"><span data-conref="../../../assets/snippets/Tag_note.hts"> </span> To bring up <a data-xref="{title}" href="The_Debug_Overlay.htm">The Debug Overlay</a> with the <strong>Log</strong> window open, use <span class="inline3_func"><a data-xref="{title}" href="show_debug_log.htm">show_debug_log</a></span> instead.</p>
+  <p> </p>
+  <h4>Syntax:</h4>
+  <p class="code"><span data-field="title" data-format="default">show_debug_overlay</span>(enable[, minimised, scale, alpha]);</p>
+>>>>>>> e8f331b1b74476a144e051c0d836bf120b342735
   <table>
     <tbody>
       <tr>
@@ -40,9 +53,31 @@
         <th>Описание</th>
      </tr>
       <tr>
+<<<<<<< HEAD
         <td><span class="notranslate">enable</span></td><td><span data-keyref="Type_Bool"></span></td>
         <td><span class="notranslate">switch on (<span class="inline">true</span>) или выключить (<span class="inline">false<span class="inline">) the debug overlay.</span></td>
      </tr>
+=======
+        <td>enable</td>
+        <td><span data-keyref="Type_Bool"><a href="../../GML_Overview/Data_Types.htm" target="_blank">Boolean</a></span></td>
+        <td>Enable (<span class="inline2">true</span>) or disable (<span class="inline2">false</span>) the debug overlay</td>
+      </tr>
+      <tr>
+        <td>minimised</td>
+        <td><span data-keyref="Type_Bool"><a href="../../GML_Overview/Data_Types.htm" target="_blank">Boolean</a></span></td>
+        <td><span data-conref="../../../assets/snippets/Tag_optional.hts"> </span> Whether to open the <strong>FPS</strong> window minimised (doesn&#39;t apply to any other windows or debug views)</td>
+      </tr>
+      <tr>
+        <td>scale</td>
+        <td><span data-keyref="Type_Real"><a href="../../GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
+        <td><span data-conref="../../../assets/snippets/Tag_optional.hts"> </span> The scale factor to draw the overlay with (default is <span data-keyref="DebugOverlay_Scale_Default">1</span>)</td>
+      </tr>
+      <tr>
+        <td>alpha</td>
+        <td><span data-keyref="Type_Real"><a href="../../GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
+        <td><span data-conref="../../../assets/snippets/Tag_optional.hts"> </span> The alpha value to draw the overlay with (default is <span data-keyref="DebugOverlay_Alpha_Default">0.8</span>)</td>
+      </tr>
+>>>>>>> e8f331b1b74476a144e051c0d836bf120b342735
     </tbody>
   </table>
   <p> </p>

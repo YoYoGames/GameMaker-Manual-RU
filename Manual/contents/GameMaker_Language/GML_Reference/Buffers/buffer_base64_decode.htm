@@ -15,12 +15,22 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
+<<<<<<< HEAD
   <h1>buffer_base64_decode</h1>
   <p>С помощью этой функции вы можете декодировать строку в кодировке base64 (созданную с помощью функции <a href="buffer_base64_encode.htm"><span class="inline">buffer_base64_encode()</span></a> ) в буфер. Эта функция создаст буфер (как выровненный по 1 байту &quot;растущий&quot; буфер&quot;) и вернет уникальный индекс для буфера, который будет использоваться во всех дальнейших вызовах функции.</p>
   <p class="note"><b>ПРИМЕЧАНИЕ</b>: Важно, чтобы вы удаляли любые динамически созданные ресурсы, подобные этому, из памяти, когда они вам больше не нужны, чтобы предотвратить утечку памяти, поэтому, когда вы закончите работу с созданным буфером, вы должны освободить его снова, используя <span style="font-size:1px;"><a href="buffer_delete.htm"><span class="inline">buffer_delete()</span></a></span>.</p>
   <p> </p>
   <h4>Синтаксис:</h4>
   <p class="code">buffer_base64_decode(string);</p>
+=======
+  <h1><span data-field="title" data-format="default">buffer_base64_decode</span></h1>
+  <p>This function decodes a base64 encoded string (created using the <span class="inline3_func"><a data-xref="{title}" href="buffer_base64_encode.htm">buffer_base64_encode</a></span> function) into a new buffer.</p>
+  <p>The buffer is created as a 1 byte aligned &quot;grow&quot; buffer.<b></b></p>
+  <div data-conref="../../../assets/snippets/Note_Buffer_Delete_Dynamic.hts"> </div>
+  <p> </p>
+  <h4>Syntax:</h4>
+  <p class="code"><span data-field="title" data-format="default">buffer_base64_decode</span>(string);</p>
+>>>>>>> e8f331b1b74476a144e051c0d836bf120b342735
   <table>
     <tbody>
       <tr>
@@ -28,6 +38,7 @@
         <th>Описание</th>
      </tr>
       <tr>
+<<<<<<< HEAD
         <td><span class="notranslate">string</span></td><td><span data-keyref="Type_String"></span></td>
         <td><span class="notranslate">The base64 encoded string to decode</span></td>
      </tr>
@@ -38,13 +49,32 @@
   <p class="code"><span data-keyref="Type_ID_Buffer">Buffer ID</span></p>
   <p> </p>
   <h4>Пример:</h4>
+=======
+        <td>string</td>
+        <td><span data-keyref="Type_String"><a href="../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">String</a></span></td>
+        <td>The base64 encoded string to decode</td>
+      </tr>
+    </tbody>
+  </table>
+  <p> </p>
+  <h4>Returns:</h4>
+  <p class="code"><span data-keyref="Type_ID_Buffer"><a href="../../../../GameMaker_Language/GML_Reference/Buffers/buffer_create.htm" target="_blank">Buffer</a></span></p>
+  <p> </p>
+  <h4>Example:</h4>
+>>>>>>> e8f331b1b74476a144e051c0d836bf120b342735
   <p class="code">ini_open(&quot;Save.ini&quot;);<br />
-    buff = buffer_base64_decode(ini_read_string(&quot;Save&quot;, &quot;Slot1&quot;, &quot;&quot;));<br />
+    buff = <span data-field="title" data-format="default">buffer_base64_decode</span>(ini_read_string(&quot;Save&quot;, &quot;Slot1&quot;, &quot;&quot;));<br />
     ini_close();</p>
+<<<<<<< HEAD
   <p>Приведенный выше код откроет файл ini, а затем прочитает из него строку в функцию decode. Эта функция вернет индекс буфера, который хранится в переменной &quot;buff&quot;, содержащей данные, ранее закодированные и сохраненные. Затем файл ini закрывается.</p>
   <p> </p>
   <p> </p>
   <p> </p>
+=======
+  <p>The above code will open an INI file and then read a string from it into the <span class="inline3_func"><span data-field="title" data-format="default">buffer_base64_decode</span></span> function. The function will return a buffer, which is stored in the variable <span class="inline2">buff</span>, containing the data previously encoded and saved. The INI file is then closed.</p>
+  <p> </p>
+  <p> </p>
+>>>>>>> e8f331b1b74476a144e051c0d836bf120b342735
   <div class="footer">
     <div class="buttons">
       <div class="clear">

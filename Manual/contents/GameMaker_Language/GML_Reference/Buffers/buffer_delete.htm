@@ -14,6 +14,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
+<<<<<<< HEAD
   <h1>буфер_удалить</h1>
   <p>С помощью этой функции вы можете удалить буфер, ранее созданный с помощью функции <a href="buffer_create.htm"><span class="inline">buffer_create()</span></a> из памяти, освобождая ресурсы, использованные для его создания, и удаляя любые данные, которые он может содержать в данный момент.</p>
   <p class="note"><b>ПРИМЕЧАНИЕ</b>: Важно всегда удалять любые динамически создаваемые ресурсы из памяти, когда они больше не нужны, чтобы предотвратить утечку памяти.</p>
@@ -22,6 +23,15 @@
   <p> </p>
   <h4>Синтаксис:</h4>
   <p class="code">buffer_delete(buffer)</p>
+=======
+  <h1><span data-field="title" data-format="default">buffer_delete</span></h1>
+  <p>This function deletes a buffer previously created using <span class="inline3_func"><a data-xref="{title}" href="buffer_create.htm">buffer_create</a></span> from memory, releasing the resources used to create it and removing any data that it may currently contain.</p>
+  <p class="note"><b><span data-conref="../../../assets/snippets/Tag_note.hts"> </span></b> It&#39;s important to always remove any dynamically created resources from memory when you no longer need them to prevent memory leaks.</p>
+  <p class="note"><span data-conref="../../../assets/snippets/Tag_important.hts"> </span> When you create a buffer, a reference to the new buffer is returned. After the buffer is destroyed, we recommend that you set the variable that holds a buffer reference to <span class="inline2">-1</span>.</p>
+  <p> </p>
+  <h4>Syntax:</h4>
+  <p class="code"><span data-field="title" data-format="default">buffer_delete</span>(buffer)</p>
+>>>>>>> e8f331b1b74476a144e051c0d836bf120b342735
   <table>
     <tbody>
       <tr>
@@ -29,6 +39,7 @@
         <th>Описание</th>
      </tr>
       <tr>
+<<<<<<< HEAD
         <td><span class="notranslate">buffer</span></td><td><span data-keyref="Type_ID_Buffer"></span></td>
         <td><span class="notranslate">The index of the buffer to delete.</span></td>
      </tr>
@@ -44,6 +55,24 @@
   <p> </p>
   <p> </p>
   <p> </p>
+=======
+        <td>buffer</td>
+        <td><span data-keyref="Type_ID_Buffer"><a href="../../../../GameMaker_Language/GML_Reference/Buffers/buffer_create.htm" target="_blank">Buffer</a></span></td>
+        <td>The buffer to delete.</td>
+      </tr>
+    </tbody>
+  </table>
+  <p> </p>
+  <h4>Returns:</h4>
+  <p class="code"><span data-keyref="Type_Void">N/A</span></p>
+  <p> </p>
+  <h4>Example:</h4>
+  <p class="code"><span data-field="title" data-format="default">buffer_delete</span>(player_buffer);<br />
+    player_buffer = -1;</p>
+  <p>The above code deletes the buffer stored in the variable <span class="inline2">player_buffer</span> and then sets the variable to <span class="inline2">-1</span>.</p>
+  <p> </p>
+  <p> </p>
+>>>>>>> e8f331b1b74476a144e051c0d836bf120b342735
   <div class="footer">
     <div class="buttons">
       <div class="clear">

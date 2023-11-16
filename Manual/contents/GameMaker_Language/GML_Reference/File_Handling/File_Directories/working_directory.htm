@@ -3,8 +3,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<<<<<<< HEAD
   <title>рабочий_каталог</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
+=======
+  <title>working_directory</title>
+  <meta name="generator" content="Adobe RoboHelp 2022" />
+>>>>>>> e8f331b1b74476a144e051c0d836bf120b342735
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
@@ -14,6 +19,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
+<<<<<<< HEAD
   <h1>рабочий_каталог</h1>
   <p><span class="inline">Working_directory</span> может возвращать два разных значения в зависимости от того, для чего вы его используете.</p>
   <p>Если вы записываете файл на диск, <span class="inline">working_directory</span> указывает на область локального хранилища, зарезервированную для вашей игры на целевом устройстве (в <span class="notranslate">Windows</span> это &quot;<span class="inline">%LOCALAPPDATA%/gamedir/</span>&quot;, где &quot;gamedir&quot; - каталог с именем вашей игры).</p>
@@ -21,9 +27,21 @@
   <p class="note"><span class="note">ПРИМЕЧАНИЕ</span> Переменная <span class="inline">working_directory</span> возвращает путь, <b>включая</b> последний обратный слэш.</p>
   <p>Например, если вы включили в игру файл по умолчанию <span class="inline">*.txt</span> и считываете его в память с помощью <span class="inline">working_directory</span>, то этот файл будет взят из области, где хранятся файлы Included Files. Если затем вы решите записать эту информацию в текстовый файл с помощью <span class="inline">working_directory</span>, то файл будет записан в локальное хранилище целевой платформы, откуда он будет считан в следующий раз, если только вы не дадите <span data-keyref="GameMaker Name">GameMaker</span> указание удалить файл, в этом случае <span class="inline">working_directory</span> снова будет указывать на область, где хранятся Включенные файлы.</p>
   <p>Стоит отметить, что <em>в общем случае</em> вам не нужно использовать это и достаточно просто указать само имя файла (плюс любую дополнительную информацию о пути), чего вполне достаточно. Например, это:</p>
+=======
+  <h1><span data-field="title" data-format="default">working_directory</span></h1>
+  <p><span data-field="title" data-format="default">working_directory</span> can actually return two different values depending on what you are using it for: </p>
+  <ul class="Disc">
+    <li>If you are writing a file to disk, <span class="inline2"><span data-field="title" data-format="default">working_directory</span></span> points to the area of local storage that is reserved for your game on the target device (in Windows this is <span class="inline2">&quot;%LOCALAPPDATA%/gamedir/&quot;</span> where the <span class="inline2">&quot;gamedir&quot;</span> is the directory with the name of your game).</li>
+    <li>However, when reading from disk, <span class="inline2"><span data-field="title" data-format="default">working_directory</span></span> can be <i>either</i> the local storage (<span class="inline2"><a data-xref="{title}" href="../../General_Game_Control/game_save_id.htm">game_save_id</a></span>) <i>or</i> the area where the <a data-xref="{text}" href="../../../../Settings/Included_Files.htm#h">Included Files</a> are stored.</li>
+  </ul>
+  <p class="note"><span data-conref="../../../../assets/snippets/Tag_note.hts"> </span> The <span class="inline2"><span data-field="title" data-format="default">working_directory</span></span> variable will return the path <b>including</b> the final backslash.</p>
+  <p>For example, if you have a default <span class="inline">*.txt</span> file included with your game and read it into memory using <span class="inline2"><span data-field="title" data-format="default">working_directory</span></span>, then that file will be taken from the area where the Included Files are stored. If you then choose to write that information to a text file using <span class="inline2"><span data-field="title" data-format="default">working_directory</span></span>, this will write the file to the target platform&#39;s local storage, where it will be read from the next time unless you instruct <span data-keyref="GameMaker Name">GameMaker</span> to delete the file, in which case <span class="inline2"><span data-field="title" data-format="default">working_directory</span></span> will once more point to the area where the Included Files are stored.</p>
+  <p>It is worth noting that <em>in general</em> you do not need to use this and simply specify the file name itself (plus any additional path information), which is sufficient. For example, this:</p>
+>>>>>>> e8f331b1b74476a144e051c0d836bf120b342735
   <p class="code">file_text_open_read(working_directory + &quot;my_file.txt&quot;);</p>
   <p>было бы лучше сделать так:</p>
   <p class="code">file_text_open_read(&quot;my_file.txt&quot;);</p>
+<<<<<<< HEAD
   <p class="note"><span class="warning">ПРЕДУПРЕЖДЕНИЕ</span> Эта функция может работать не так, как вы ожидаете, из-за того, что <span data-keyref="GameMaker Name">GameMaker</span> находится в "песочнице"! Пожалуйста, обратитесь к разделу о <a href="../../../../Additional_Information/The_File_System.htm">файловой системе</a> для получения дополнительной информации.</p>
   <p> </p>
   <h4>Синтаксис:</h4>
@@ -38,6 +56,21 @@
   <p> </p>
   <p> </p>
   <p> </p>
+=======
+  <div data-conref="../../../../assets/snippets/Note_Warning_GM_FileSystem_Sandboxed.hts"> </div>
+  <p> </p>
+  <h4>Syntax:</h4>
+  <p class="code"><span data-field="title" data-format="default">working_directory</span></p>
+  <p> </p>
+  <h4>Returns:</h4>
+  <p class="code"><span data-keyref="Type_String"><a href="../../../GML_Overview/Data_Types.htm" target="_blank">String</a></span></p>
+  <p> </p>
+  <h4>Example:</h4>
+  <p class="code">ini_open(working_directory + &quot;temp_ini.ini&quot;);</p>
+  <p>This will open an INI file from the working directory of the game (creating it if it does not already exist). This could be the local storage, or the area where the included files are depending on whether the file being looked for exists in either place.</p>
+  <p> </p>
+  <p> </p>
+>>>>>>> e8f331b1b74476a144e051c0d836bf120b342735
   <div class="footer">
     <div class="buttons">
       <div class="clear">
@@ -45,7 +78,11 @@
         <div style="float:right">Следующий: <a href="program_directory.htm"><span class="notranslate">program_directory</span></a></div>
       </div>
     </div>
+<<<<<<< HEAD
     <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
+=======
+    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+>>>>>>> e8f331b1b74476a144e051c0d836bf120b342735
   </div>
   <!-- KEYWORDS
 working_directory

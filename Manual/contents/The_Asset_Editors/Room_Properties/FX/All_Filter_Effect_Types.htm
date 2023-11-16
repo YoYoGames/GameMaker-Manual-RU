@@ -14,8 +14,13 @@
   <meta name="search-keywords" content="filters, effects, types, fx" />
 </head>
 <body>
+<<<<<<< HEAD
   <h1>Типы и параметры FX</h1>
   <p>На этой странице перечислены все типы фильтров/эффектов, предусмотренные в <span data-keyref="GameMaker Name">GameMaker</span>, а также следующая информация о каждом FX:</p>
+=======
+  <h1><span data-field="title" data-format="default">FX Types &amp; Parameters</span></h1>
+  <p>This page lists all the Filter/Effect types provided in <span data-keyref="GameMaker Name">GameMaker</span>, along with the following information about each FX:</p>
+>>>>>>> e8f331b1b74476a144e051c0d836bf120b342735
   <ul class="colour">
     <li>Внутреннее имя (например, <span class="inline2">&quot;_filter_tintfilter&quot;</span>), которое может быть передано в <span class="inline"><a href="../../../GameMaker_Language/GML_Reference/Asset_Management/Rooms/Filter_Effect_Layers/fx_create.htm">fx_create()</a></span> для создания FX во время выполнения.</li>
     <li>Описание</li>
@@ -236,8 +241,30 @@
           </td>
         </tr>
         <tr>
+<<<<<<< HEAD
           <td style=""><strong>Тепловая дымка</strong><br>
             <br>
+=======
+          <td style=""><strong>Hard Drop Shadow</strong><br />
+            <br />
+            &quot;_filter_hard_drop_shadow&quot;
+          </td>
+          <td>Creates a hard drop shadow that&#39;s drawn at the given (x, y) offset.</td>
+          <td> <img src="../../../assets/Images/Asset_Editors/FXs/hard_drop_shadow.png" /></td>
+          <td style="">X Displacement<br />
+            Y Displacement<br />
+            Opacity<br />
+            Colour</td>
+          <td><span class="inline"><strong>g_DisplacementX</strong></span> (Real)<br />
+            <span class="inline"><strong>g_DisplacementY</strong></span> (Real)<br />
+            <span class="inline"><strong>g_Opacity</strong></span> (Real)<br />
+            <span class="inline"><strong>g_Colour</strong></span> (Array)
+          </td>
+        </tr>
+        <tr>
+          <td style=""><strong>Heat Haze</strong><br />
+            <br />
+>>>>>>> e8f331b1b74476a144e051c0d836bf120b342735
             &quot;_filter_heathaze&quot;
           </td>
           <td>Создает анимированный эффект тепловой дымки и полезен для отображения жарких сред.</td>
@@ -320,8 +347,60 @@
           </td>
         </tr>
         <tr>
+<<<<<<< HEAD
           <td style=""><strong>Pixelate</strong><br>
             <br>
+=======
+          <td style=""><strong>Panorama Background</strong><br />
+            <br />
+            &quot;_filter_panorama&quot;
+          </td>
+          <td style="">Allows you to draw a panorama image with perspective parameters.</td>
+          <td style=""> <video src="../../../assets/Images/Asset_Editors/FXs/panorama.mp4" width="480" height="320" controls=""></video></td>
+          <td style="">View Direction<br />
+            Perspective<br />
+            Cylinder<br />
+            Panorama Texture</td>
+          <td><span class="inline">g_PanoramaDirection</span> (Array)<br />
+            <span class="inline">g_PanoramaPerspective</span> (Real)<br />
+            <span class="inline">g_PanoramaCylinder</span> (Real)<br />
+            <span class="inline">g_PanoramaTexture</span> (Sampler)
+          </td>
+        </tr>
+        <tr>
+          <td style=""><strong>Parallax Background</strong><br />
+            <br />
+            &quot;_filter_parallax&quot;
+          </td>
+          <td style="">Allows you to draw an image with a flat 3D perspective, with fog and texture depth parameters.<br />
+            <br />
+            <strong><strong><span data-conref="../../../assets/snippets/Tag_note.hts"> </span></strong> This effect may reduce your game&#39;s performance on weaker devices.</strong>
+          </td>
+          <td style=""> <video src="../../../assets/Images/Asset_Editors/FXs/parallax.mp4" width="480" height="320" controls=""></video></td>
+          <td style="">View Direction<br />
+            Perspective<br />
+            View Position<br />
+            Texture Scale<br />
+            Texture Depth<br />
+            Fog Colour<br />
+            Fog Range<br />
+            Fog Depth<br />
+            Parallax Texture</td>
+          <td><span class="inline">g_ParallaxDirection</span> (Array)<br />
+            <span class="inline">g_ParallaxPerspective</span> (Real)<br />
+            <span class="inline">g_ParallaxPosition</span> (Array)<br />
+            <span class="inline">g_ParallaxScale</span> (Real)<br />
+            <span class="inline">g_ParallaxDepth</span> (Real)<br />
+            <span class="inline">g_ParallaxFogColour</span> (Array)<br />
+            <span class="inline">g_ParallaxFogRange</span> (Array)<br />
+            <span class="inline">g_ParallaxFogDepth</span> (Real)<br />
+            <span class="inline">g_ParallaxTexture</span> (Sampler)
+          </td>
+        </tr>
+        <tr>
+          <td style=""><strong>Pixelate</strong><br />
+            <br />
+>>>>>>> e8f331b1b74476a144e051c0d836bf120b342735
             &quot;_filter_pixelate&quot;
           </td>
           <td style="">Делает рендеринг содержимого пиксельным, позволяя изменять размер каждого пикселя. Это придает отображаемому содержимому вид низкого разрешения.</td>
@@ -544,6 +623,7 @@
             Это эффект, и его нельзя предварительно просмотреть в редакторе комнат.
           </td>
           <td style=""><video src="../../../assets/Images/Asset_Editors/FXs/windblown_particles.mp4" width="336" height="224" controls=""></video></td>
+<<<<<<< HEAD
           <td>Спрайт<br>
             Количество частиц<br>
             Время появления<br>
@@ -691,6 +771,155 @@
             <span class="inline">param_wind_vector_y</span> (Реальный)<br>
             <span class="inline">param_dragcoeff</span> (Реальный)<br>
             <span class="inline">param_grav_accel</span> (Real)<br>
+=======
+          <td>Sprite<br />
+            Number of particles<br />
+            Spawn time<br />
+            Spawn all at start<br />
+            Warmup frames<br />
+            Particle mass Min<br />
+            Particle mass Max<br />
+            Particle sprite scale (Start)<br />
+            Particle sprite scale (End)<br />
+            Particle colour 1<br />
+            Particle colour 1 Alt<br />
+            Particle colour 2<br />
+            Particle colour 2 Alt<br />
+            Particle colour 2 Pos<br />
+            Particle colour 2 Enabled<br />
+            Particle colour 3<br />
+            Particle colour 3 Alt<br />
+            Particle colour 3 Pos<br />
+            Particle colour 3 Enabled<br />
+            Particle colour 4<br />
+            Particle colour 4 Alt<br />
+            Particle initial velocity x Min<br />
+            Particle initial velocity x Max<br />
+            Particle initial velocity y Min<br />
+            Particle initial velocity y Max<br />
+            Particle initial rotation Min<br />
+            Particle initial rotation Max<br />
+            Particle rotation speed Min<br />
+            Particle rotation speed Max<br />
+            Particle align with velocity<br />
+            Particle lifetime Min<br />
+            Particle lifetime Max<br />
+            Particle update skip<br />
+            Particle spawn border margin<br />
+            Particle source blend<br />
+            Particle dest blend<br />
+            Draw trails only<br />
+            Trail spawn chance<br />
+            Trail lifetime Min<br />
+            Trail lifetime Max<br />
+            Trail thickness Min<br />
+            Trail thickness Max<br />
+            Trail colour 1<br />
+            Trail colour 1 Alt<br />
+            Trail colour 2<br />
+            Trail colour 2 Alt<br />
+            Trail colour 2 Pos<br />
+            Trail colour 2 Enabled<br />
+            Trail colour 3<br />
+            Trail colour 3 Alt<br />
+            Trail colour 3 Pos<br />
+            Trail colour 3 Enabled<br />
+            Trail colour 4<br />
+            Trail colour 4 Alt<br />
+            Trail min segment length<br />
+            Trail source blend<br />
+            Trail dest blend<br />
+            Number of blowers<br />
+            Blower size Min<br />
+            Blower size Max<br />
+            Blower speed Min<br />
+            Blower speed Max<br />
+            Blower rotation speed Min<br />
+            Blower rotation speed Max<br />
+            Blower force Min<br />
+            Blower force Max<br />
+            Blower camera offset scale<br />
+            Force grid resolution X<br />
+            Force grid resolution Y<br />
+            Wind force X<br />
+            Wind force Y<br />
+            Particle drag<br />
+            Gravity<br />
+            Enable debug mode</td>
+          <td><span class="inline">param_sprite</span> (Sprite)<br />
+            <span class="inline">param_num_particles</span> (Real)<br />
+            <span class="inline">param_particle_spawn_time</span> (Real)<br />
+            <span class="inline">param_particle_spawn_all_at_start</span> (Bool)<br />
+            <span class="inline">param_warmup_frames</span> (Real)<br />
+            <span class="inline">param_particle_mass_min</span> (Real)<br />
+            <span class="inline">param_particle_mass_max</span> (Real)<br />
+            <span class="inline">param_particle_start_sprite_scale</span> (Real)<br />
+            <span class="inline">param_particle_end_sprite_scale</span> (Real)<br />
+            <span class="inline">param_particle_col_1</span> (Array)<br />
+            <span class="inline">param_particle_col_alt_1</span> (Array)<br />
+            <span class="inline">param_particle_col_2</span> (Array)<br />
+            <span class="inline">param_particle_col_alt_2</span> (Array)<br />
+            <span class="inline">param_particle_col_2_pos</span> (Real)<br />
+            <span class="inline">param_particle_col_enabled_2</span> (Bool)<br />
+            <span class="inline">param_particle_col_3</span> (Array)<br />
+            <span class="inline">param_particle_col_alt_3</span> (Array)<br />
+            <span class="inline">param_particle_col_3_pos</span> (Real)<br />
+            <span class="inline">param_particle_col_enabled_3</span> (Bool)<br />
+            <span class="inline">param_particle_col_4</span> (Array)<br />
+            <span class="inline">param_particle_col_alt_4</span> (Array)<br />
+            <span class="inline">param_particle_initial_velocity_range_x_min</span> (Real)<br />
+            <span class="inline">param_particle_initial_velocity_range_x_max</span> (Real)<br />
+            <span class="inline">param_particle_initial_velocity_range_y_min</span> (Real)<br />
+            <span class="inline">param_particle_initial_velocity_range_y_max</span> (Real)<br />
+            <span class="inline">param_particle_initial_rotation_min</span> (Real)<br />
+            <span class="inline">param_particle_initial_rotation_max</span> (Real)<br />
+            <span class="inline">param_particle_rot_speed_min</span> (Real)<br />
+            <span class="inline">param_particle_rot_speed_max</span> (Real)<br />
+            <span class="inline">param_particle_align_vel</span> (Real)<br />
+            <span class="inline">param_particle_lifetime_min</span> (Real)<br />
+            <span class="inline">param_particle_lifetime_max</span> (Real)<br />
+            <span class="inline">param_particle_update_skip</span> (Real)<br />
+            <span class="inline">param_particle_spawn_border_prop</span> (Real)<br />
+            <span class="inline">param_particle_src_blend</span> (<span data-keyref="Type_Constant_Draw_Blend_Mode_Factor"><a target="_blank" href="../../../GameMaker_Language/GML_Reference/Drawing/GPU_Control/gpu_get_blendmode_ext.htm">Blend Mode Factor Constant</a></span>)<br />
+            <span class="inline">param_particle_dest_blend</span> (<span data-keyref="Type_Constant_Draw_Blend_Mode_Factor"><a target="_blank" href="../../../GameMaker_Language/GML_Reference/Drawing/GPU_Control/gpu_get_blendmode_ext.htm">Blend Mode Factor Constant</a></span>)<br />
+            <span class="inline">param_trails_only</span> (Bool)<br />
+            <span class="inline">param_trail_chance</span> (Real)<br />
+            <span class="inline">param_trail_lifetime_min</span> (Real)<br />
+            <span class="inline">param_trail_lifetime_max</span> (Real)<br />
+            <span class="inline">param_trail_thickness_min</span> (Real)<br />
+            <span class="inline">param_trail_thickness_max</span> (Real)<br />
+            <span class="inline">param_trail_col_1</span> (Array)<br />
+            <span class="inline">param_trail_col_alt_1</span> (Array)<br />
+            <span class="inline">param_trail_col_2</span> (Array)<br />
+            <span class="inline">param_trail_col_alt_2</span> (Array)<br />
+            <span class="inline">param_trail_col_2_pos</span> (Real)<br />
+            <span class="inline">param_trail_col_enabled_2</span> (Bool)<br />
+            <span class="inline">param_trail_col_3</span> (Array)<br />
+            <span class="inline">param_trail_col_alt_3</span> (Array)<br />
+            <span class="inline">param_trail_col_3_pos</span> (Real)<br />
+            <span class="inline">param_trail_col_enabled_3</span> (Bool)<br />
+            <span class="inline">param_trail_col_4</span> (Array)<br />
+            <span class="inline">param_trail_col_alt_4</span> (Array)<br />
+            <span class="inline">param_trail_min_segment_length</span> (Real)<br />
+            <span class="inline">param_trail_src_blend</span> (<span data-keyref="Type_Constant_Draw_Blend_Mode_Factor"><a target="_blank" href="../../../GameMaker_Language/GML_Reference/Drawing/GPU_Control/gpu_get_blendmode_ext.htm">Blend Mode Factor Constant</a></span>)<br />
+            <span class="inline">param_trail_dest_blend</span> (<span data-keyref="Type_Constant_Draw_Blend_Mode_Factor"><a target="_blank" href="../../../GameMaker_Language/GML_Reference/Drawing/GPU_Control/gpu_get_blendmode_ext.htm">Blend Mode Factor Constant</a></span>)<br />
+            <span class="inline">param_num_blowers</span> (Real)<br />
+            <span class="inline">param_blower_size_min</span> (Real)<br />
+            <span class="inline">param_blower_size_max</span> (Real)<br />
+            <span class="inline">param_blower_speed_min</span> (Real)<br />
+            <span class="inline">param_blower_speed_max</span> (Real)<br />
+            <span class="inline">param_blower_rot_speed_min</span> (Real)<br />
+            <span class="inline">param_blower_rot_speed_max</span> (Real)<br />
+            <span class="inline">param_blower_force_min</span> (Real)<br />
+            <span class="inline">param_blower_force_max</span> (Real)<br />
+            <span class="inline">param_blower_camvec_scale</span> (Real)<br />
+            <span class="inline">param_force_grid_sizex</span> (Real)<br />
+            <span class="inline">param_force_grid_sizey</span> (Real)<br />
+            <span class="inline">param_wind_vector_x</span> (Real)<br />
+            <span class="inline">param_wind_vector_y</span> (Real)<br />
+            <span class="inline">param_dragcoeff</span> (Real)<br />
+            <span class="inline">param_grav_accel</span> (Real)<br />
+>>>>>>> e8f331b1b74476a144e051c0d836bf120b342735
             <span class="inline">param_debug_grid</span> (Bool)
           </td>
         </tr>

@@ -3,8 +3,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<<<<<<< HEAD
   <title>размер_поверхности</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
+=======
+  <title>surface_resize</title>
+  <meta name="generator" content="Adobe RoboHelp 2022" />
+>>>>>>> e8f331b1b74476a144e051c0d836bf120b342735
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
@@ -14,6 +19,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
+<<<<<<< HEAD
   <h1>размер_поверхности</h1>
   <p>Эта функция изменит размер поверхности до заданных размеров (в пикселях). В качестве &quot;surface_id&quot; указывается ранее созданная поверхность, или номер поверхности <a href="application_surface.htm"><span class="inline">application_suface</span></a>, и функция изменит размер этой поверхности. Обратите внимание, что функция не обрезает и не растягивает содержимое поверхности, а уничтожает текущую поверхность и воссоздает ее заново с той же ручкой (surface_id) с новыми размерами, что означает, что ее нужно будет очистить и нарисовать заново (если только это не <span class="inline">application_surface</span>, в этом случае <span data-keyref="GameMaker Name">GameMaker</span> сделает это автоматически).</p>
   <p class="note"><b>ПРИМЕЧАНИЕ</b>: Если вы изменяете размер поверхности приложения, эти изменения не будут зарегистрированы до начала следующего кадра рисования, что означает, что вызов функции <span style="font-size:1px;"><a href="surface_get_width.htm"><span class="inline">surface_get_width()</span></a></span> или <span style="font-size:1px;"><a href="surface_get_height.htm"><span class="inline">surface_get_height()</span></a></span> в том же событии или шаге вернет предыдущие значения.</p>
@@ -45,14 +51,58 @@
   <p class="code"><span data-keyref="Type_Void"></span></p>
   <p> </p>
   <h4>Пример:</h4>
+=======
+  <h1><span data-field="title" data-format="default">surface_resize</span></h1>
+  <p>This function resizes a surface to the given dimensions (in pixels).</p>
+  <p>The &quot;surface_id&quot; is that of a surface you have created previously, or the <span class="inline2"><a data-xref="{title}" href="application_surface.htm">application_surface</a></span>, and the function will resize that surface. Note that this will neither crop nor stretch the contents of the surface, but rather it destroys the current surface and recreates it with the same handle (surface_id) with the new dimensions, meaning that it will need to be cleared and drawn to again (unless it&#39;s the <span class="inline2"><a data-xref="{title}" href="application_surface.htm">application_surface</a></span> in which case <span data-keyref="GameMaker Name">GameMaker</span> will do this automatically).</p>
+  <p class="note"><b><span data-conref="../../../../assets/snippets/Tag_note.hts"> </span> </b>If you are resizing the application surface, these changes will not be registered until the start of the next draw frame, meaning that calling the <span class="inline3_func"><a data-xref="{title}" href="surface_get_width.htm">surface_get_width</a></span> or <span class="inline3_func"><a data-xref="{title}" href="surface_get_height.htm">surface_get_height</a></span> functions in the same event or step will return the previous values.</p>
+  <p> </p>
+  <h4>Syntax:</h4>
+  <p class="code"><span data-field="title" data-format="default">surface_resize</span>(surface_id, w, h);</p>
+  <table>
+    <tbody>
+      <tr>
+        <th>Argument</th>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>surface_id</td>
+        <td><span data-keyref="Type_ID_Surface"><a href="../../../../../GameMaker_Language/GML_Reference/Drawing/Surfaces/surface_create.htm" target="_blank">Surface</a></span></td>
+        <td>The surface to resize.</td>
+      </tr>
+      <tr>
+        <td>w</td>
+        <td><span data-keyref="Type_Real"><a href="../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
+        <td>The new width of the surface.</td>
+      </tr>
+      <tr>
+        <td>h</td>
+        <td><span data-keyref="Type_Real"><a href="../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
+        <td>The new height of the surface.</td>
+      </tr>
+    </tbody>
+  </table>
+  <p> </p>
+  <h4>Returns:</h4>
+  <p class="code"><span data-keyref="Type_Void">N/A</span></p>
+  <p> </p>
+  <h4>Example:</h4>
+>>>>>>> e8f331b1b74476a144e051c0d836bf120b342735
   <p class="code">if view_wport[0] != surface_get_width(application_surface) || view_hport[0] != surface_get_height(application_surface)<br />
     {<br />
-        surface_resize(application_surface, view_wport[0],view_hport[0]);<br />
+        <span data-field="title" data-format="default">surface_resize</span>(application_surface, view_wport[0],view_hport[0]);<br />
     }</p>
+<<<<<<< HEAD
   <p>Приведенный выше код проверяет размер порта представления на соответствие размеру поверхности &quot;aplication_surface&quot;, и если они отличаются, то размер поверхности изменяется.</p>
   <p> </p>
   <p> </p>
   <p> </p>
+=======
+  <p>The above code checks the view port size against that of the <span class="inline2"><a data-xref="{title}" href="application_surface.htm">application_surface</a></span> surface. If it is different, the surface is resized.</p>
+  <p> </p>
+  <p> </p>
+>>>>>>> e8f331b1b74476a144e051c0d836bf120b342735
   <div class="footer">
     <div class="buttons">
       <div class="clear">
@@ -60,7 +110,11 @@
         <div style="float:right">Следующий: <a href="surface_set_target.htm"><span class="notranslate">surface_set_target</span></a></div>
       </div>
     </div>
+<<<<<<< HEAD
     <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Все права защищены</span></h5>
+=======
+    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+>>>>>>> e8f331b1b74476a144e051c0d836bf120b342735
   </div>
   <!-- KEYWORDS
 surface_resize

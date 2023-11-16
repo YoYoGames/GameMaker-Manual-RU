@@ -4,7 +4,11 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>sprite_flush</title>
+<<<<<<< HEAD
   <meta name="generator" content="Adobe RoboHelp 2019" />
+=======
+  <meta name="generator" content="Adobe RoboHelp 2022" />
+>>>>>>> e8f331b1b74476a144e051c0d836bf120b342735
   <link rel="stylesheet" href="../../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
@@ -14,6 +18,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
+<<<<<<< HEAD
   <h1>sprite_flush</h1>
   <p>С помощью этой функции вы можете удалить из текстурной памяти данную текстурную страницу для данного <span class="notranslate">sprite</span>. Вы указываете индекс <span class="notranslate">sprite</span> (как определено при создании ресурса <span class="notranslate">sprite</span> ), и текстурная страница, которой она назначена, будет удалена из текстурной памяти.
     Обратите внимание, что если страница текстуры используется в другом месте комнаты (другим экземпляром <span class="notranslate">sprite</span> или фоном, и т.д.), вы можете получить небольшое снижение производительности, так как страница будет немедленно перезагружена, поэтому при использовании этой функции следует соблюдать осторожность. Обратите внимание, что
@@ -21,6 +26,15 @@
   <p> </p>
   <h4>Синтаксис:</h4>
   <p class="code">sprite_flush(ind)</p>
+=======
+  <h1><span data-field="title" data-format="default">sprite_flush</span></h1>
+  <p>This function removes the texture page for the given sprite from texture memory (VRAM). The texture will stay in RAM after being flushed.</p>
+  <p>You supply the sprite (as defined when creating the sprite) and the texture page it is assigned to will be removed from texture memory. The function will return <span class="inline2">-1</span> if flush is not supported for the chosen asset, or it will return <span class="inline2">0</span> if all worked correctly.</p>
+  <p class="note"><span data-conref="../../../../../assets/snippets/Tag_note.hts"> </span> If the texture page is used elsewhere in the room (by another instance sprite, a background, etc.) you may get a minor performance hit as the page is immediately reloaded, so care should be taken when using this function.</p>
+  <p> </p>
+  <h4>Syntax:</h4>
+  <p class="code"><span data-field="title" data-format="default">sprite_flush</span>(ind)</p>
+>>>>>>> e8f331b1b74476a144e051c0d836bf120b342735
   <table>
     <tbody>
       <tr>
@@ -28,6 +42,7 @@
         <th>Описание</th>
      </tr>
       <tr>
+<<<<<<< HEAD
         <td><span class="notranslate">ind</span></td><td><span data-keyref="Type_Asset_Sprite"></span></td>
         <td><span class="notranslate">The index (resource name) of the sprite asset to flush</span></td>
      </tr>
@@ -43,6 +58,23 @@
   <p> </p>
   <p> </p>
   <p> </p>
+=======
+        <td>ind</td>
+        <td><span data-keyref="Type_Asset_Sprite"><a href="../../../../../The_Asset_Editors/Sprites.htm" target="_blank">Sprite Asset</a></span></td>
+        <td>The sprite asset to flush</td>
+      </tr>
+    </tbody>
+  </table>
+  <p> </p>
+  <h4>Returns:</h4>
+  <p class="code"><span data-keyref="Type_Real"><a href="../../../../GML_Overview/Data_Types.htm" target="_blank">Real</a></span> (-1 or 0)</p>
+  <p> </p>
+  <h4>Example:</h4>
+  <p class="code"><span data-field="title" data-format="default">sprite_flush</span>(spr_Player_Aura);</p>
+  <p>The above code flushes the sprite <span class="inline2">spr_Player_Aura</span> from memory.</p>
+  <p> </p>
+  <p> </p>
+>>>>>>> e8f331b1b74476a144e051c0d836bf120b342735
   <div class="footer">
     <div class="buttons">
       <div class="clear">
@@ -50,7 +82,11 @@
         <div style="float:right">Следующий: <a href="sprite_flush_multi.htm"><span class="notranslate">sprite_flush_multi</span></a></div>
       </div>
     </div>
+<<<<<<< HEAD
     <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Все права защищены</span></h5>
+=======
+    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+>>>>>>> e8f331b1b74476a144e051c0d836bf120b342735
   </div>
   <!-- KEYWORDS
 sprite_flush

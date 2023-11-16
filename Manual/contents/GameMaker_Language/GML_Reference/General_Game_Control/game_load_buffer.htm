@@ -3,8 +3,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<<<<<<< HEAD
   <title>игровой_загрузочный_буфер</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
+=======
+  <title>game_load_buffer</title>
+  <meta name="generator" content="Adobe RoboHelp 2022" />
+>>>>>>> e8f331b1b74476a144e051c0d836bf120b342735
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
   <script src="../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
@@ -14,6 +19,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
+<<<<<<< HEAD
   <h1>игровой_загрузочный_буфер</h1>
   <p>С помощью этой функции вы можете загрузить состояние игры, которое было сохранено ранее. Игра загружается из ранее созданного буфера &quot;grow&quot; (см. раздел &quot; <a href="../Buffers/Buffers.htm">Буферы&quot;</a>), и в этом буфере должно быть сохранено состояние игры с помощью функции <a href="game_save_buffer.htm"><span class="inline">game_save_buffer()</span></a> функция.</p>
   <p> </p>
@@ -36,10 +42,37 @@
   <p class="code"><span data-keyref="Type_Void"></span></p>
   <p> </p>
   <h4>Пример:</h4>
+=======
+  <h1><span data-field="title" data-format="default">game_load_buffer</span></h1>
+  <p>This function loads a game state that has been saved previously. The game is loaded from a previously created &quot;grow&quot; buffer (see <a href="../Buffers/Buffers.htm">Buffers</a>) and the buffer must have had a game state saved to it using the <span class="inline3_func"><a data-xref="{title}" href="game_save_buffer.htm">game_save_buffer</a></span> function.</p>
+  <p> </p>
+  <h4>Syntax:</h4>
+  <p class="code"><span data-field="title" data-format="default">game_load_buffer</span>(buffer);</p>
+  <table>
+    <tbody>
+      <tr>
+        <th>Argument</th>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>buffer</td>
+        <td><span data-keyref="Type_ID_Buffer"><a href="../../../../GameMaker_Language/GML_Reference/Buffers/buffer_create.htm" target="_blank">Buffer</a></span></td>
+        <td>The buffer to load from.</td>
+      </tr>
+    </tbody>
+  </table>
+  <p> </p>
+  <h4>Returns:</h4>
+  <p class="code"><span data-keyref="Type_Void">N/A</span></p>
+  <p> </p>
+  <h4>Example:</h4>
+>>>>>>> e8f331b1b74476a144e051c0d836bf120b342735
   <p class="code">if keyboard_check_pressed(ord(&quot;L&quot;))<br />
     {<br />
         if global.Checkpoint game_load_buffer(save_buff);<br />
     }</p>
+<<<<<<< HEAD
   <p>Приведенный выше код загрузит ранее сохраненное состояние игры из буфера, указанного в переменной &quot;save_buff&quot;, только если глобальная переменная имеет значение <span class="inline">true</span>, когда игрок нажмет клавишу &quot;L&quot;.</p>
   <p> </p>
   <p> </p>
@@ -52,6 +85,19 @@
       </div>
     </div>
     <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Все права защищены</span></h5>
+=======
+  <p>The above code will load a previously saved game state from the buffer st<span data-offset-key="5eku6-0-0"><span data-text="true">ored</span></span> in the variable <span class="inline2">save_buff</span>, only if the global variable is <span class="inline2">true</span>, when the player presses the &quot;L&quot; key.</p>
+  <p> </p>
+  <p> </p>
+  <div class="footer">
+    <div class="buttons">
+      <div class="clear">
+        <div style="float:left">Back: <a href="General_Game_Control.htm">General Game Control</a></div>
+        <div style="float:right">Next: <a data-xref="{title}" href="game_save_buffer.htm">game_save_buffer</a></div>
+      </div>
+    </div>
+    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+>>>>>>> e8f331b1b74476a144e051c0d836bf120b342735
   </div>
   <!-- KEYWORDS
 game_load_buffer

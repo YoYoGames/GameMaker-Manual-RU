@@ -3,8 +3,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<<<<<<< HEAD
   <title>Примитивы и форматы вершин</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
+=======
+  <title>Primitives And Vertex Formats</title>
+  <meta name="generator" content="Adobe RoboHelp 2022" />
+>>>>>>> e8f331b1b74476a144e051c0d836bf120b342735
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
@@ -27,6 +32,7 @@
     <li><a href="draw_vertex_texture.htm"><span class="notranslate">draw_vertex_texture</span></a></li>
     <li><a href="draw_vertex_texture_colour.htm"><span class="notranslate">draw_vertex_texture_colour</span></a></li>
   </ul>
+<<<<<<< HEAD
   <p> </p>
   <p><span data-keyref="GameMaker Name">GameMaker</span> позволяет вам определять собственные <strong>форматы вершин</strong>, на основе которых вы можете создавать свои собственные примитивы. Это может значительно ускорить работу шейдеров или расширить их возможности и создать неожиданные эффекты. Информацию об этом вы найдете в следующих разделах:</p>
   <ul class="colour">
@@ -39,10 +45,27 @@
     <li><a href="vertex_format_add_custom.htm"><span class="notranslate">vertex_format_add_custom</span></a></li>
     <li><a href="vertex_format_end.htm"><span class="notranslate">vertex_format_end</span></a></li>
     <li><a href="vertex_format_delete.htm"><span class="notranslate">vertex_format_delete</span></a></li>
+=======
+  <h3 id="func_ref_vertex_formats">Vertex Formats</h3>
+  <p><span data-keyref="GameMaker Name">GameMaker</span> permits you to define your own vertex formats from which you can create your own custom primitives. This can greatly speed up shader operations or can be used to extend their capabilities and create surprising effects.</p>
+  <p>A <strong>vertex format</strong> lists the attributes that are stored for a vertex in order. You start defining one with <span class="inline3_func"><a data-xref="{title}" href="vertex_format_begin.htm">vertex_format_begin</a></span>, then add the attributes using the <span class="inline2">vertex_format_add_*</span> functions and finally end it using <span class="inline3_func"><a data-xref="{title}" href="vertex_format_end.htm">vertex_format_end</a></span>.</p>
+  <ul class="colour">
+    <li><a href="vertex_format_begin.htm">vertex_format_begin</a></li>
+    <li><a href="vertex_format_add_colour.htm">vertex_format_add_colour</a></li>
+    <li><a href="vertex_format_add_position.htm">vertex_format_add_position</a></li>
+    <li><a href="vertex_format_add_position_3d.htm">vertex_format_add_position_3d</a></li>
+    <li><a href="vertex_format_add_texcoord.htm">vertex_format_add_texcoord</a></li>
+    <li><a href="vertex_format_add_normal.htm">vertex_format_add_normal</a></li>
+    <li><a href="vertex_format_add_custom.htm">vertex_format_add_custom</a></li>
+    <li><a href="vertex_format_end.htm">vertex_format_end</a></li>
+    <li><a href="vertex_format_delete.htm">vertex_format_delete</a></li>
+    <li><a data-xref="{title}" href="vertex_format_get_info.htm">vertex_format_get_info</a></li>
+>>>>>>> e8f331b1b74476a144e051c0d836bf120b342735
   </ul>
   <p> </p>
   <p>После создания формата вершин (см. раздел выше) вы можете использовать его для создания примитивов, которые вы хотите нарисовать, используя следующие функции буфера veretx:</p>
   <ul class="colour">
+<<<<<<< HEAD
     <li><a href="vertex_create_buffer.htm"><span class="notranslate">vertex_create_buffer</span></a></li>
     <li><a href="vertex_create_buffer_ext.htm"><span class="notranslate">vertex_create_buffer_ext</span></a></li>
     <li><a href="vertex_create_buffer_from_buffer.htm"><span class="notranslate">vertex_create_buffer_from_buffer</span></a></li>
@@ -65,6 +88,32 @@
     <li><a href="vertex_end.htm"><span class="notranslate">vertex_end</span></a></li>
     <li><a href="vertex_freeze.htm"><span class="notranslate">vertex_freeze</span></a></li>
     <li><a href="vertex_submit.htm"><span class="notranslate">vertex_submit</span></a></li>
+=======
+    <li><a href="vertex_create_buffer.htm">vertex_create_buffer</a></li>
+    <li><a href="vertex_create_buffer_ext.htm">vertex_create_buffer_ext</a></li>
+    <li><a href="vertex_create_buffer_from_buffer.htm">vertex_create_buffer_from_buffer</a></li>
+    <li><a href="vertex_create_buffer_from_buffer_ext.htm">vertex_create_buffer_from_buffer_ext</a></li>
+    <li><a data-xref="{title}" href="vertex_update_buffer_from_buffer.htm">vertex_update_buffer_from_buffer</a></li>
+    <li><a data-xref="{title}" href="vertex_update_buffer_from_vertex.htm">vertex_update_buffer_from_vertex</a></li>
+    <li><a href="vertex_get_buffer_size.htm">vertex_get_buffer_size</a></li>
+    <li><a href="vertex_get_number.htm">vertex_get_number</a></li>
+    <li><a href="vertex_delete_buffer.htm">vertex_delete_buffer</a></li>
+    <li><a href="vertex_begin.htm">vertex_begin</a></li>
+    <li><a href="vertex_colour.htm">vertex_colour</a></li>
+    <li><a href="vertex_normal.htm">vertex_normal</a></li>
+    <li><a href="vertex_position.htm">vertex_position</a></li>
+    <li><a href="vertex_position_3d.htm">vertex_position_3d</a></li>
+    <li><a href="vertex_argb.htm">vertex_argb</a></li>
+    <li><a href="vertex_texcoord.htm">vertex_texcoord</a></li>
+    <li><a href="vertex_float1.htm">vertex_float1</a></li>
+    <li><a href="vertex_float2.htm">vertex_float2</a></li>
+    <li><a href="vertex_float3.htm">vertex_float3</a></li>
+    <li><a href="vertex_float4.htm">vertex_float4</a></li>
+    <li><a href="vertex_ubyte4.htm">vertex_ubyte4</a></li>
+    <li><a href="vertex_end.htm">vertex_end</a></li>
+    <li><a href="vertex_freeze.htm">vertex_freeze</a></li>
+    <li><a href="vertex_submit.htm">vertex_submit</a></li>
+>>>>>>> e8f331b1b74476a144e051c0d836bf120b342735
   </ul>
   <p class="note"><b>ВАЖНО!</b> Примитивы, которые вы строите, должны соответствовать формату, который вы задали с помощью функций Vertex Format, поэтому если вы определили формат вершин только с позиционными данными, нет смысла строить примитив с цветовыми данными. Следует отметить, что порядок добавления свойств в создаваемый примитив определяется порядком добавления этих свойств при создании вершинного формата, поэтому если вы определили векторный формат с порядком позиция, цвет и координата текстуры, то вы <i>должны</i> добавить эти свойства в создаваемый примитив в том же порядке, иначе вы получите ошибки.</p>
   <p>Обзор того, как строить примитивы с помощью функций вершин, см. в статье:</p>

@@ -3,8 +3,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<<<<<<< HEAD
   <title>поверхность_сохранить_часть</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
+=======
+  <title>surface_save_part</title>
+  <meta name="generator" content="Adobe RoboHelp 2022" />
+>>>>>>> e8f331b1b74476a144e051c0d836bf120b342735
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
@@ -14,11 +19,21 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
+<<<<<<< HEAD
   <h1>поверхность_сохранить_часть</h1>
   <p>Эта функция сохранит часть поверхности на диск, используя заданное имя файла. Поверхность <i>должна</i> быть сохранена как файл формата <span class="inline">*.png</span>, а положение (x,y) должно быть задано как локальные координаты поверхности, учитывая, что левый верхний угол поверхности всегда (0,0).</p>
   <p> </p>
   <h4>Синтаксис:</h4>
   <p class="code">surface_save_part(surface_id, fname, x, y, width, height);</p>
+=======
+  <h1><span data-field="title" data-format="default">surface_save_part</span></h1>
+  <p>This function saves part of a surface to disc using the given filename.</p>
+  <p>The surface <i>must</i> be saved as a <span class="inline">*.png</span> format file, and the (x, y) position must be given as local coordinates to the surface, bearing in mind that the top left corner of the surface is always (0, 0).</p>
+  <div data-conref="../../../../assets/snippets/Note_surface_only_rgba8unorm.hts"> </div>
+  <p> </p>
+  <h4>Syntax:</h4>
+  <p class="code"><span data-field="title" data-format="default">surface_save_part</span>(surface_id, fname, x, y, width, height);</p>
+>>>>>>> e8f331b1b74476a144e051c0d836bf120b342735
   <table>
     <tbody>
       <tr>
@@ -26,9 +41,16 @@
         <th>Описание</th>
      </tr>
       <tr>
+<<<<<<< HEAD
         <td><span class="notranslate">surface_id</span></td><td><span data-keyref="Type_ID_Surface"></span></td>
         <td><span class="notranslate">The ID of the surface to set as the drawing target.</span></td>
      </tr>
+=======
+        <td>surface_id</td>
+        <td><span data-keyref="Type_ID_Surface"><a href="../../../../../GameMaker_Language/GML_Reference/Drawing/Surfaces/surface_create.htm" target="_blank">Surface</a></span></td>
+        <td>The surface to set as the drawing target.</td>
+      </tr>
+>>>>>>> e8f331b1b74476a144e051c0d836bf120b342735
       <tr>
         <td><span class="notranslate">fname</span></td><td><span data-keyref="Type_String"></span></td>
         <td><span class="notranslate">The name of the saved image file.</span></td>
@@ -51,19 +73,34 @@
      </tr>
     </tbody>
   </table>
+<<<<<<< HEAD
   <p> </p>
   <h4>Возвращается:</h4>
   <p class="code"><span data-keyref="Type_Void"></span></p>
   <p> </p>
   <h4>Пример:</h4>
   <p class="code">if keyboard_check_pressed(ord(&quot;S&quot;)<br />
+=======
+  <p> </p>
+  <h4>Returns:</h4>
+  <p class="code"><span data-keyref="Type_Void">N/A</span></p>
+  <p> </p>
+  <h4>Example:</h4>
+  <p class="code">if keyboard_check_pressed(ord(&quot;S&quot;))<br />
+>>>>>>> e8f331b1b74476a144e051c0d836bf120b342735
     {<br />
-        surface_save_part(surf, &quot;test.png&quot;, 0, 0, 100, 100);<br />
+        <span data-field="title" data-format="default">surface_save_part</span>(surf, &quot;test.png&quot;, 0, 0, 100, 100);<br />
     }</p>
+<<<<<<< HEAD
   <p>Приведенный выше код проверит, нажимает ли пользователь клавишу &quot;S&quot; на клавиатуре, и если нажимает, то сохранит часть поверхности, проиндексированной в переменной &quot;surf&quot;, на диск.</p>
   <p> </p>
   <p> </p>
   <p> </p>
+=======
+  <p>The above code will check to see if the user presses the &quot;S&quot; key on the keyboard and if they do it will save a part of the surface indexed in the variable <span class="inline2">surf</span> to disc.</p>
+  <p> </p>
+  <p> </p>
+>>>>>>> e8f331b1b74476a144e051c0d836bf120b342735
   <div class="footer">
     <div class="buttons">
       <div class="clear">

@@ -4,7 +4,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>texture_set_stage</title>
-  <meta name="generator" content="Adobe RoboHelp 2020" />
+  <meta name="generator" content="Adobe RoboHelp 2022" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
@@ -14,12 +14,22 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
+<<<<<<< HEAD
   <h1>texture_set_stage</h1>
   <p>Эта функция задаст заданному &quot;слоту&quot; сцены текстуру, которая будет использоваться. Количество доступных &quot;слотов&quot; сцены зависит от платформы, под которую вы компилируете, максимум 8 для <span class="notranslate">Windows</span>, Mac и <span class="notranslate">Linux</span>, но на более дешевых устройствах <span class="notranslate">Android</span> (например) это количество может быть всего 2. Стоит также отметить, что первый слот сцены (1) всегда автоматически используется <span data-keyref="GameMaker Name">GameMaker</span>.</p>
   <p class="note"><b>ПРИМЕЧАНИЕ</b>: Эта функция ничего не делает вне контекста запущенного шейдера! Более подробную информацию смотрите в разделе <a href="../../Asset_Management/Shaders/Shaders.htm">Шейдеры </a>.</p>
   <p> </p>
   <h4>Синтаксис:</h4>
   <p class="code">texture_set_stage(stage, tex);</p>
+=======
+  <h1><span data-field="title" data-format="default">texture_set_stage</span></h1>
+  <p>This function will set the given stage &quot;slot&quot; a texture to be used.</p>
+  <p>The number of stage &quot;slots&quot; available will depend on the platform you are compiling to, with a maximum of 8 being available for Windows, Mac and Linux, but on lower end Android devices (for example) this number can be as low as 2. It is also worth noting that the first stage slot (1) is always used automatically by <span data-keyref="GameMaker Name">GameMaker</span>.</p>
+  <p class="note"><b><span data-conref="../../../../assets/snippets/Tag_note.hts"> </span> </b>This function will do nothing outside of the context of a running shader! See <a data-xref="{title}" href="../../Asset_Management/Shaders/Shaders.htm">Shaders</a> for more information.</p>
+  <p> </p>
+  <h4>Syntax:</h4>
+  <p class="code"><span data-field="title" data-format="default">texture_set_stage</span>(stage, tex);</p>
+>>>>>>> e8f331b1b74476a144e051c0d836bf120b342735
   <table>
     <tbody>
       <tr>
@@ -28,6 +38,7 @@
         <th>Описание</th>
       </tr>
       <tr>
+<<<<<<< HEAD
         <td><span class="notranslate">stage</span></td>
         <td><span data-keyref="Type_Real">Реально</span></td>
         <td><span class="notranslate">The texture &quot;slot&quot; to use.</span></td>
@@ -36,6 +47,16 @@
         <td><span class="notranslate">tex</span></td>
         <td><span data-keyref="Type_Pointer_Texture">Указатель текстуры</span></td>
         <td><span class="notranslate">The texture to use.</span></td>
+=======
+        <td>stage</td>
+        <td><span data-keyref="Type_Real"><a href="../../../GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
+        <td>The texture &quot;slot&quot; to use.</td>
+      </tr>
+      <tr>
+        <td>tex</td>
+        <td><span data-keyref="Type_Pointer_Texture"><a href="../../Asset_Management/Sprites/Sprite_Information/sprite_get_texture.htm" target="_blank">Texture</a></span></td>
+        <td>The texture to use.</td>
+>>>>>>> e8f331b1b74476a144e051c0d836bf120b342735
       </tr>
     </tbody>
   </table>
@@ -47,12 +68,21 @@
   <p class="code">glassshader_bgsampler = shader_get_sampler_index(GlassShader, &quot;s_BackgroundSampler&quot;)<br />
     spr = sprite_get_texture(sprite_index, 0);<br />
     shader_set(GlassShader);<br />
+<<<<<<< HEAD
     texture_set_stage(glassshader_bgsampler, spr);<br />
     shader_reset();</p>
   <p>Приведенный выше код получит <i>хэндл</i> для сэмплера в шейдере с индексом &quot;GlassShader&quot;, а затем установит константу этого шейдера на заданную текстуру <span class="notranslate">sprite</span>.</p>
   <p> </p>
   <p> </p>
   <p> </p>
+=======
+    <span data-field="title" data-format="default">texture_set_stage</span>(glassshader_bgsampler, spr);<br />
+    shader_reset();
+  </p>
+  <p>The above code will get the <i>handle</i> for the sampler within the shader indexed as <span class="inline2">GlassShader</span> and then set that shader constant to the given sprite texture.</p>
+  <p> </p>
+  <p> </p>
+>>>>>>> e8f331b1b74476a144e051c0d836bf120b342735
   <div class="footer">
     <div class="buttons">
       <div class="clear">
@@ -60,7 +90,11 @@
         <div style="float:right">Следующий: <a href="texture_global_scale.htm"><span class="notranslate">texture_global_scale</span></a></div>
       </div>
     </div>
+<<<<<<< HEAD
     <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
+=======
+    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+>>>>>>> e8f331b1b74476a144e051c0d836bf120b342735
   </div>
   <!-- KEYWORDS
 texture_set_stage

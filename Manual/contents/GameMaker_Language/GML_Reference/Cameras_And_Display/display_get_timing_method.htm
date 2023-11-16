@@ -4,7 +4,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>display_get_timing_method</title>
-  <meta name="generator" content="Adobe RoboHelp 2020" />
+  <meta name="generator" content="Adobe RoboHelp 2022" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
   <script src="../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
@@ -15,6 +15,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
+<<<<<<< HEAD
   <h1>display_get_timing_method</h1>
   <p>Эта функция может использоваться для получения метода синхронизации, который будет использоваться для рендеринга вашей игры. Метод может быть одной из констант, перечисленных ниже.</p>
   <p>Для получения дополнительной информации о различных методах определения времени см. <a href="display_set_timing_method.htm"><span class="inline">display_set_timing_method()</span></a>.</p>
@@ -49,6 +50,21 @@
   </table>
   <p> </p>
   <h4>Пример:</h4>
+=======
+  <h1><span data-field="title" data-format="default">display_get_timing_method</span></h1>
+  <p>This function returns the timing method to be used for rendering your game.</p>
+  <p>The method can be one of the constants listed below:</p>
+  <div data-conref="../../../assets/snippets/Table_Display_Timing_Method_Constant.hts"> </div>
+  <p>For more information on the different timing methods, please see <span class="inline3_func"><a data-xref="{title}" href="display_set_timing_method.htm">display_set_timing_method</a></span>.</p>
+  <p> </p>
+  <h4>Syntax:</h4>
+  <p class="code"><span data-field="title" data-format="default">display_get_timing_method</span>();</p>
+  <p> </p>
+  <h4>Returns:</h4>
+  <p class="code"><span data-keyref="Type_Constant_Display_Timing_Method"><a href="display_get_timing_method.htm" target="_blank">Display Timing Method Constant</a></span></p>
+  <p> </p>
+  <h4>Example:</h4>
+>>>>>>> e8f331b1b74476a144e051c0d836bf120b342735
   <p class="code">if display_get_timing_method() != tm_sleep<br />
     {<br />
         display_set_timing_method(tm_sleep);<br />
@@ -57,6 +73,7 @@
             display_set_sleep_margin(20);<br />
         }<br />
     }</p>
+<<<<<<< HEAD
   <p>Приведенный выше код проверит метод синхронизации, и если он не установлен на <span class="inline">tm_sleep</span>, то он будет установлен на это значение, а запас сна будет установлен на 20.</p>
   <p> </p>
   <p> </p>
@@ -69,6 +86,19 @@
       </div>
     </div>
     <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
+=======
+  <p>The above code will check the timing method and if it&#39;s not set to <span class="inline2">tm_sleep</span> it will be set to that and the sleep margin set to 20.</p>
+  <p> </p>
+  <p> </p>
+  <div class="footer">
+    <div class="buttons">
+      <div class="clear">
+        <div style="float:left">Back: <a data-xref="{title}" href="Cameras_And_Display.htm">Cameras And Display</a></div>
+        <div style="float:right">Next: <a data-xref="{title}" href="display_get_sleep_margin.htm">display_get_sleep_margin</a></div>
+      </div>
+    </div>
+    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+>>>>>>> e8f331b1b74476a144e051c0d836bf120b342735
   </div>
   <!-- KEYWORDS
 display_get_timing_method

@@ -4,7 +4,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>room_get_viewport</title>
-  <meta name="generator" content="Adobe RoboHelp 2020" />
+  <meta name="generator" content="Adobe RoboHelp 2022" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
@@ -15,6 +15,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
+<<<<<<< HEAD
   <h1>room_get_viewport</h1>
   <p>С помощью этой функции вы можете получить информацию о видовом порте в комнате, отличной от текущей. Вы указываете ID комнаты и индекс порта просмотра, который необходимо получить (от 0 до 7), и функция возвращает <a href="../../../GML_Overview/Arrays.htm">массив</a> из 5 индексов, где:</p>
   <ul class="colour">
@@ -23,6 +24,17 @@
     <li>[2] = положение y (реальное)</li>
     <li>[3] = ширина (реальная)</li>
     <li>[4] = высота (реальная)</li>
+=======
+  <h1><span data-field="title" data-format="default">room_get_viewport</span></h1>
+  <p>This function retrieves the details of a view port in a room other than the current one.</p>
+  <p>You give the room and the index of the view port to retrieve (from 0 to 7) and the function will return an <a href="../../../GML_Overview/Arrays.htm">array</a> of 5 indices, where:</p>
+  <ul class="colour">
+    <li>[0] = visible (Boolean: <span class="inline2">true</span> / <span class="inline2">false</span>)</li>
+    <li>[1] = x position (real)</li>
+    <li>[2] = y position (real)</li>
+    <li>[3] = width (real)</li>
+    <li>[4] = height (real)</li>
+>>>>>>> e8f331b1b74476a144e051c0d836bf120b342735
   </ul>
   <p> </p>
   <h4>Синтаксис:</h4>
@@ -35,6 +47,7 @@
         <th>Описание</th>
       </tr>
       <tr>
+<<<<<<< HEAD
         <td><span class="notranslate">rm</span></td>
         <td><span data-keyref="Type_Asset_Room">Комнатный актив</span></td>
         <td><span class="notranslate">The index of the room to get viewport data from</span></td>
@@ -62,6 +75,30 @@
   <p> </p>
   <p> </p>
   <p> </p>
+=======
+        <td>rm</td>
+        <td><span data-keyref="Type_Asset_Room"><a href="../../../../The_Asset_Editors/Rooms.htm" target="_blank">Room Asset</a></span></td>
+        <td>The room to get viewport data from</td>
+      </tr>
+      <tr>
+        <td>vind</td>
+        <td><span data-keyref="Type_Real"><a href="../../../GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
+        <td>The index of the view port to get</td>
+      </tr>
+    </tbody>
+  </table>
+  <p> </p>
+  <h4>Returns:</h4>
+  <p class="code"><span data-keyref="Type_Array"><a href="../../../GML_Overview/Arrays.htm" target="_blank">Array</a></span> (5 elements: visible, x, y, width, height)</p>
+  <p> </p>
+  <h4>Example:</h4>
+  <p class="code">var _view_values = <span data-field="title" data-format="default">room_get_viewport</span>(rm_Game, 0);<br />
+    var _visible_text = _view_values[0] ? &quot;visible&quot; : &quot;invisible&quot;;<br />
+    show_debug_message($&quot;Viewport 0 in rm_Game is {_visible_text} and drawn at the position: {_view_values[1]}, {_view_values[2]}. Its dimensions are {_view_values[3]}x{_view_values[4]}.&quot;);</p>
+  <p>The above code retrieves the view port data for the given room then checks to see if the port is flagged as visible. If it is not, the view port data is set to make it visible.</p>
+  <p> </p>
+  <p> </p>
+>>>>>>> e8f331b1b74476a144e051c0d836bf120b342735
   <div class="footer">
     <div class="buttons">
       <div class="clear">

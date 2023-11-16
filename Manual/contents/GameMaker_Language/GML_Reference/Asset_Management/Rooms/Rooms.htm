@@ -3,8 +3,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<<<<<<< HEAD
   <title>Номера</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
+=======
+  <title>Rooms</title>
+  <meta name="generator" content="Adobe RoboHelp 2022" />
+>>>>>>> e8f331b1b74476a144e051c0d836bf120b342735
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
@@ -14,6 +19,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
+<<<<<<< HEAD
   <h1>Номера</h1>
   <p>Комнаты создаются в <a href="../../../../The_Asset_Editors/Rooms.htm">редакторе комнат</a> в <span data-keyref="GameMaker Name">GameMaker</span><span>, и </span>именно в них происходит все, что происходит в вашей игре. Для запуска игры в любой игре должна быть хотя бы одна комната, но в зависимости от типа игры и структуры проекта вам может понадобиться гораздо больше комнат. В этом разделе собраны все общие функции и переменные <span class="notranslate">GML</span>, связанные с комнатами, для получения информации о них, а также для установки определенных свойств в них.</p>
   <p>Следующие <a href="../../../GML_Overview/Variables/Global_Variables.htm">глобальные переменные</a> и функции могут быть использованы для получения базовой информации о любом помещении:</p>
@@ -27,11 +33,29 @@
     <li><a href="room_height.htm"><span class="notranslate">room_height</span></a></li>
     <li><a href="room_width.htm"><span class="notranslate">room_width</span></a></li>
     <li><a href="room_persistent.htm"><span class="notranslate">room_persistent</span></a></li>
+=======
+  <h1><span data-field="title" data-format="default">Rooms</span></h1>
+  <p>Rooms are created in <a data-xref="{title}" href="../../../../The_Asset_Editors/Rooms.htm">The Room Editor</a> in <span data-keyref="GameMaker Name">GameMaker</span><span> and </span>are where everything happens in your game. You must have at least one room in any game for it to run, but you may need many more depending on the type of game and how you structure your project. This section has all the general GML functions and variables related to rooms and for getting information about them as well as for setting certain properties within them.</p>
+  <h2 id="func_ref">Function Reference</h2>
+  <h3 id="global">Global</h3>
+  <p>The following <a href="../../../GML_Overview/Variables/Global_Variables.htm">global variables</a> and functions can be used for getting basic information about any given room:</p>
+  <ul class="colour">
+    <li><a data-xref="{title}" href="room_first.htm">room_first</a></li>
+    <li><a data-xref="{title}" href="room_last.htm">room_last</a></li>
+    <li><a data-xref="{title}" href="room_next.htm">room_next</a></li>
+    <li><a data-xref="{title}" href="room_previous.htm">room_previous</a></li>
+    <li><a data-xref="{title}" href="room.htm">room</a></li>
+    <li><a data-xref="{title}" href="room_speed.htm">room_speed</a> <span data-conref="../../../../assets/snippets/Tag_deprecated.hts"> </span></li>
+    <li><a data-xref="{title}" href="room_height.htm">room_height</a></li>
+    <li><a data-xref="{title}" href="room_width.htm">room_width</a></li>
+    <li><a data-xref="{title}" href="room_persistent.htm">room_persistent</a></li>
+>>>>>>> e8f331b1b74476a144e051c0d836bf120b342735
   </ul>
   <p class="note"><span class="note">ПРИМЕЧАНИЕ</span> Перечисленные выше переменные не будут действительны в сценарии, так как сценарии выполняются до загрузки первой комнаты.<br>
     <br>
     Это относится только к коду, написанному в корне сценария, но не к функциям, созданным внутри сценариев, так как эти функции могут быть выполнены в любое время во время игры.
   </p>
+<<<<<<< HEAD
   <p>Вы также можете использовать следующие функции для получения названия текущей комнаты (как определено в <a href="../../../../Introduction/The_Asset_Browser.htm">браузере активов</a>), а также для перемещения между комнатами:</p>
   <ul class="colour">
     <li><a href="room_get_name.htm"><span class="notranslate">room_get_name</span></a></li>
@@ -60,6 +84,42 @@
   </ul>
   <p> </p>
   <p>Существует также ряд различных функций, связанных с созданием и манипулированием различными типами элементов, которые могут быть размещены на слоях в помещении. Эти функции перечислены в соответствующих разделах для каждого типа элементов, перечисленных ниже:</p>
+=======
+  <h3 id="information">Information</h3>
+  <p>You can also use the following functions to find out if a room exists, get its name (as defined in <a data-xref="{title}" href="../../../../Introduction/The_Asset_Browser.htm">The Asset Browser</a>) and general inf<span>o: </span></p>
+  <ul class="colour">
+    <li><a data-xref="{title}" href="room_exists.htm">room_exists</a></li>
+    <li><a data-xref="{title}" href="room_get_name.htm">room_get_name</a></li>
+    <li><a data-xref="{title}" href="room_get_info.htm">room_get_info</a></li>
+  </ul>
+  <h3 id="switching_rooms">Switching Rooms</h3>
+  <ul class="colour">
+    <li><a data-xref="{title}" href="room_goto.htm">room_goto</a></li>
+    <li><a data-xref="{title}" href="room_goto_next.htm">room_goto_next</a></li>
+    <li><a data-xref="{title}" href="room_goto_previous.htm">room_goto_previous</a></li>
+    <li><a data-xref="{title}" href="room_restart.htm">room_restart</a></li>
+  </ul>
+  <h3 id="modifying_rooms">Modifying Rooms</h3>
+  <p class="note"><span data-conref="../../../../assets/snippets/Tag_note.hts"> </span> These functions should <i>never be run from within the room that you wish to change</i>, but rather be run from an instance in another room first.</p>
+  <p class="note"><span data-conref="../../../../assets/snippets/Tag_note.hts"> </span> If you change any room asset in this way, the change is <strong>permanent</strong> and will be maintained for the entire duration of the game, even if you call the <span class="inline3_func"><a data-xref="{title}" href="room_restart.htm">room_restart</a></span> function (closing and restarting the game will reset the room properties though).</p>
+  <ul class="colour">
+    <li><a data-xref="{title}" href="room_add.htm">room_add</a></li>
+    <li><a data-xref="{title}" href="room_duplicate.htm">room_duplicate</a></li>
+    <li><a data-xref="{title}" href="room_assign.htm">room_assign</a></li>
+    <li><a data-xref="{title}" href="room_instance_add.htm">room_instance_add</a></li>
+    <li><a data-xref="{title}" href="room_instance_clear.htm">room_instance_clear</a></li>
+    <li><a data-xref="{title}" href="room_set_height.htm">room_set_height</a></li>
+    <li><a data-xref="{title}" href="room_set_width.htm">room_set_width</a></li>
+    <li><a data-xref="{title}" href="room_set_persistent.htm">room_set_persistent</a></li>
+    <li><a data-xref="{title}" href="room_set_view_enabled.htm">room_set_view_enabled</a></li>
+    <li><a data-xref="{title}" href="room_set_viewport.htm">room_set_viewport</a></li>
+    <li><a data-xref="{title}" href="room_get_viewport.htm">room_get_viewport</a></li>
+    <li><a data-xref="{title}" href="room_set_camera.htm">room_set_camera</a></li>
+    <li><a data-xref="{title}" href="room_get_camera.htm">room_get_camera</a></li>
+  </ul>
+  <h3 id="room_layers_elements">Room Layers &amp; Elements</h3>
+  <p>There are also a number of different functions related to creating and manipulating the different types of elements that can be placed on layers in the room. These functions are listed in the appropriate sections for each element type listed below:</p>
+>>>>>>> e8f331b1b74476a144e051c0d836bf120b342735
   <ul class="colour">
     <li><a href="General_Layer_Functions/General_Layer_Functions.htm">Функции общего уровня</a></li>
     <li><a href="Tile_Map_Layers/Tile_Map_Layers.htm">Плитка Слои карты</a></li>
@@ -68,6 +128,7 @@
     <li><a href="Sequence_Layers/Sequence_Layers.htm">Слои последовательности</a></li>
     <li><a href="Filter_Effect_Layers/Filter_Effect_Functions.htm">Функции фильтров и эффектов</a></li>
   </ul>
+<<<<<<< HEAD
   <p> </p>
   <p>При создании слоев комнат важно учитывать, что <i>на одном слое можно разместить несколько различных типов элементов</i>. Так, например, у вас может быть слой для врагов, и на этом слое будут находиться экземпляры врагов, а также определенные активы <span class="notranslate">sprite</span>, относящиеся только к этому врагу. Или у вас может быть элемент фона с элементом карты тайлов, чтобы создать вид комнаты. В редакторе комнат это недопустимо, но при динамическом создании вещей это можно сделать, для чего и существуют такие функции, как <a href="General_Layer_Functions/layer_get_all_elements.htm"><span class="inline">layer_get_all_elements()</span></a> существуют.</p>
   <p> </p>
@@ -78,6 +139,16 @@
       <div class="clear">
         <div style="float:left">Назад: <a href="../Asset_Management.htm">Управление активами</a></div>
         <div style="float:right">Следующий: <a data-xref="{title}" href="../Extensions/Extensions.htm">Расширения</a></div>
+=======
+  <p class="note"><span data-conref="../../../../assets/snippets/Tag_important.hts"> </span> When creating room layers <i>you can have multiple different element types on one layer</i>. So, for example, you may have a layer for enemies, and on that layer have the enemy instances as well as certain sprite assets that are only related to that enemy. Or you could have a background element with a tile map element to create the look of a room. This is not permitted in <a data-xref="{title}" href="../../../../The_Asset_Editors/Rooms.htm">The Room Editor</a>, but when creating things dynamically you can do this, which is why functions like <span class="inline3_func"><a data-xref="{title}" href="General_Layer_Functions/layer_get_all_elements.htm">layer_get_all_elements</a></span> exist.</p>
+  <p> </p>
+  <p> </p>
+  <div class="footer">
+    <div class="buttons">
+      <div class="clear">
+        <div style="float:left">Back: <a data-xref="{title}" href="../Asset_Management.htm">Asset Management</a></div>
+        <div style="float:right">Next: <a data-xref="{title}" href="../Extensions/Extensions.htm">Extensions</a></div>
+>>>>>>> e8f331b1b74476a144e051c0d836bf120b342735
       </div>
     </div>
     <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>

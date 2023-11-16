@@ -3,8 +3,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<<<<<<< HEAD
   <title>буферная_загрузка</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
+=======
+  <title>buffer_load</title>
+  <meta name="generator" content="Adobe RoboHelp 2022" />
+>>>>>>> e8f331b1b74476a144e051c0d836bf120b342735
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
   <script src="../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
@@ -14,14 +19,23 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
+<<<<<<< HEAD
   <h1>буферная_загрузка</h1>
   <p>Эта функция используется для загрузки буфера, который был ранее сохранен с помощью <a href="buffer_save.htm"><span class="inline">buffer_save()</span></a> функции, а также любые <a href="../../../Settings/Included_Files.htm" title="Included Files">Включенные файлы</a> или файлы, загруженные извне. Она вернет идентификатор нового буфера, который создается функцией как &quot;растущий&quot; буфер (см. <a href="buffer_create.htm">здесь</a>) с выравниванием по байтам 1. Этот идентификатор должен храниться в переменной и использоваться во всех последующих вызовах функций к этому буферу. Если по какой-либо причине загрузка не удалась, функция вернет -1, а в окне вывода компилятора появится сообщение о том, что загрузка не удалась.</p>
   <p class="note"><span class="note">ПРИМЕЧАНИЕ</span> Важно, чтобы вы удаляли любые динамически созданные ресурсы, подобные этому, из памяти, когда они вам больше не нужны, чтобы предотвратить утечку памяти, поэтому, когда вы закончите работу с созданным буфером, вы должны освободить его снова, используя <a href="buffer_delete.htm"><span class="inline">buffer_delete()</span></a>.</p>
   <h2>Примечания для конкретной платформы</h2>
+=======
+  <h1><span data-field="title" data-format="default">buffer_load</span></h1>
+  <p>This function loads a buffer that was previously saved using the <span class="inline3_func"><a data-xref="{title}" href="buffer_save.htm">buffer_save</a></span> functions, as well as any <a data-xref="{title}" href="../../../Settings/Included_Files.htm">Included Files</a> or other files stored externally.</p>
+  <p>It returns a new buffer which is created by the function as a &quot;grow&quot; buffer (see <a href="buffer_create.htm">here</a>) with a byte alignment of 1. The buffer should be stored in a variable and used in all further function calls to this buffer. If the load fails for whatever reason, the function will return <span class="inline2">-1</span> and a message will be shown in the compiler output window saying that the load has failed.</p>
+  <div data-conref="../../../assets/snippets/Note_Buffer_Delete_Dynamic.hts"> </div>
+  <h3>Platform-specific notes</h3>
+>>>>>>> e8f331b1b74476a144e051c0d836bf120b342735
   <ul class="colour">
     <li>На HTML5 любые буферы, загруженные из <strong>локального хранилища</strong>, будут декодированы с использованием base64 (поскольку они сохраняются как строки base64), однако использование этой функции для Included Files или любых внешних файлов не будет использовать декодирование base64, поскольку не ожидается, что они будут в формате base64.</li>
     <li>На HTML5 все Включенные файлы хранятся как текст в кодировке UTF-8, что может привести к увеличению размера загружаемого буфера по сравнению с оригинальным файлом, так как версия файла в кодировке UTF-8 может иметь другой размер, чем ваш оригинальный файл (из-за изменения формата).</li>
   </ul>
+<<<<<<< HEAD
   <p> </p>
   <p> </p>
   <h4>Синтаксис:</h4>
@@ -48,6 +62,34 @@
   <p> </p>
   <p> </p>
   <p> </p>
+=======
+  <p> </p>
+  <h4>Syntax:</h4>
+  <p class="code"><span data-field="title" data-format="default">buffer_load</span>(filename);</p>
+  <table>
+    <tbody>
+      <tr>
+        <th>Argument</th>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>filename</td>
+        <td><span data-keyref="Type_String"><a href="../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">String</a></span></td>
+        <td>The name of the file to load from.</td>
+      </tr>
+    </tbody>
+  </table>
+  <p> </p>
+  <h4>Returns:</h4>
+  <p class="code"><span data-keyref="Type_ID_Buffer"><a href="../../../../GameMaker_Language/GML_Reference/Buffers/buffer_create.htm" target="_blank">Buffer</a></span></p>
+  <p> </p>
+  <h4>Example:</h4>
+  <p class="code">player_buffer = buffer_load(&quot;Player_Save.sav&quot;);</p>
+  <p>The above code loads a previously saved buffer into memory, creating a new buffer. It is stored in a variable <span class="inline2">player_buffer</span>.</p>
+  <p> </p>
+  <p> </p>
+>>>>>>> e8f331b1b74476a144e051c0d836bf120b342735
   <div class="footer">
     <div class="buttons">
       <div class="clear">
@@ -55,7 +97,11 @@
         <div style="float:right">Следующий: <a href="buffer_load_ext.htm"><span>buffer_load_ext</span></a></div>
       </div>
     </div>
+<<<<<<< HEAD
     <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
+=======
+    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+>>>>>>> e8f331b1b74476a144e051c0d836bf120b342735
   </div>
   <!-- KEYWORDS
 buffer_load

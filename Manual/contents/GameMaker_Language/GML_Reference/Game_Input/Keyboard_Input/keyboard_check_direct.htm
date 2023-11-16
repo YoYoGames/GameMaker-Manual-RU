@@ -4,7 +4,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>keyboard_check_direct</title>
-  <meta name="generator" content="Adobe RoboHelp 2020" />
+  <meta name="generator" content="Adobe RoboHelp 2022" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
@@ -15,12 +15,22 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
+<<<<<<< HEAD
   <h1>keyboard_check_direct</h1>
   <p>Эта функция возвращает <span class="inline">true</span>, если клавиша с определенным кодом нажата, или <span class="inline">false</span>, если нет, проверяя аппаратное обеспечение напрямую. Она позволяет выполнить несколько дополнительных проверок, в частности, вы можете использовать коды <b>vk_lshift</b>, <b>vk_lcontrol</b>, <b>vk_lalt</b>, <b>vk_rshift</b>, <b>vk_rcontrol</b> и <b>vk_ralt</b> для проверки того, нажата ли левая или правая клавиша shift, control или alt. Функция принимает значение кода клавиши, возвращаемое функцией <a href="../../Strings/ord.htm"><span class="inline">ord()</span></a> (только <i>заглавные</i> буквы от A-Z или цифры от 0-9), или любую из констант <span class="inline">vk_*</span>, перечисленных на главной странице <a href="Keyboard_Input.htm">ввода с клавиатуры</a>.</p>
   <p class="note"><b><span class="note">ПРИМЕЧАНИЕ</span> </b>Эта функция доступна только для стандартной цели <span class="notranslate">Windows</span>, и результат не зависит от того, какое приложение находится в фокусе.</p>
   <p> </p>
   <h4><b>Синтаксис:</b></h4>
   <p class="code">keyboard_check_direct(key);</p>
+=======
+  <h1><span data-field="title" data-format="default">keyboard_check_direct</span></h1>
+  <p>This function will return <span class="inline2">true</span> if the key with the particular keycode is pressed, or <span class="inline2">false</span> if it is not, by checking the hardware directly.</p>
+  <p>It allows for a few more checks, in particular you can use keycodes <b>vk_lshift</b>, <b>vk_lcontrol</b>, <b>vk_lalt</b>, <b>vk_rshift</b>, <b>vk_rcontrol</b> and <b>vk_ralt</b> to check whether the left or right shift, control or alt key is pressed. The function will take a keycode value as returned by the function <span class="inline3_func"><a data-xref="{title}" href="../../Strings/ord.htm">ord</a></span> (only <i>capital</i> letters from A-Z or numbers from 0-9), or any of the <span class="inline">vk_*</span> constants listed on the main <a data-xref="{title}" href="Keyboard_Input.htm">Keyboard Input</a> page.</p>
+  <p class="note"><span data-conref="../../../../assets/snippets/Tag_note.hts"> </span> This function is only available for the standard Windows target and the result is independent of which application has focus. On all other platforms it behaves the same as <span class="inline3_func"><a data-xref="{title}" href="keyboard_check.htm">keyboard_check</a></span>.</p>
+  <p> </p>
+  <h4><b>Syntax:</b></h4>
+  <p class="code"><span data-field="title" data-format="default">keyboard_check_direct</span>(key);</p>
+>>>>>>> e8f331b1b74476a144e051c0d836bf120b342735
   <table>
     <tbody>
       <tr>
@@ -28,6 +38,7 @@
         <th>Описание</th>
      </tr>
       <tr>
+<<<<<<< HEAD
         <td><span class="notranslate">key</span></td><td><span data-keyref="Type_Constant_VK"></span></td>
         <td><span class="notranslate">The key to check the down state of.</span></td>
      </tr>
@@ -39,6 +50,20 @@
   <p> </p>
   <h4><b>Пример:</b></h4>
   <p class="code">if keyboard_check_direct(vk_ralt) || keyboard_check_direct(vk_lalt)<br />
+=======
+        <td>key</td>
+        <td><span data-keyref="Type_Constant_VK"><a href="Keyboard_Input.htm" target="_blank">Virtual Key Constant (vk_*)</a></span></td>
+        <td>The key to check the down state of.</td>
+      </tr>
+    </tbody>
+  </table>
+  <p> </p>
+  <h4><b>Returns:</b></h4>
+  <p class="code"><span data-keyref="Type_Bool"><a href="../../../GML_Overview/Data_Types.htm" target="_blank">Boolean</a></span></p>
+  <p> </p>
+  <h4><b>Example:</b></h4>
+  <p class="code">if <span data-field="title" data-format="default">keyboard_check_direct</span>(vk_ralt) || <span data-field="title" data-format="default">keyboard_check_direct</span>(vk_lalt)<br />
+>>>>>>> e8f331b1b74476a144e051c0d836bf120b342735
     {<br />
         crouch = true;<br />
     }</p>

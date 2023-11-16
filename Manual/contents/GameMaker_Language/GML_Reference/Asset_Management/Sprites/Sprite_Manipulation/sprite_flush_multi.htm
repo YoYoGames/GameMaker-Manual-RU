@@ -4,7 +4,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>sprite_flush_multi</title>
-  <meta name="generator" content="Adobe RoboHelp 2019" />
+  <meta name="generator" content="Adobe RoboHelp 2022" />
   <link rel="stylesheet" href="../../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
@@ -14,6 +14,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
+<<<<<<< HEAD
   <h1>sprite_flush_multi</h1>
   <p>С помощью этой функции вы можете удалить из текстурной памяти любое количество текстурных страниц для данного <span class="notranslate">sprites</span>. Вы передаете индексы <span class="notranslate">sprite</span> в виде массива, и текстурные страницы, которым они присвоены, будут удалены из текстурной памяти. Обратите внимание, что если одна из
     текстурных страниц используется где-либо в комнате (другим экземпляром <span class="notranslate">sprite</span> или фоном, и т.д.), вы можете получить небольшое снижение производительности, так как страница будет немедленно перезагружена обратно в память, поэтому при использовании этой функции следует соблюдать осторожность.
@@ -44,6 +45,43 @@
   <p> </p>
   <p> </p>
   <p> </p>
+=======
+  <h1><span data-field="title" data-format="default">sprite_flush_multi</span></h1>
+  <p>This function removes any number of texture pages for the given sprites from texture memory (VRAM).</p>
+  <p>You supply the sprites as an array and the texture pages they are assigned to will be removed from texture memory. The function will return <span class="inline2">-1</span> if flush is not supported for the chosen assets, or it will return <span class="inline2">0</span> if all worked correctly.</p>
+  <p class="note"><span data-conref="../../../../../assets/snippets/Tag_note.hts"> </span> If one of the texture pages is used elsewhere in the room (by another instance sprite, background, etc.) you may get a minor performance hit as the page is immediately reloaded back into memory again, so care should be taken when using this function.</p>
+  <p> </p>
+  <h4>Syntax:</h4>
+  <p class="code"><span data-field="title" data-format="default">sprite_flush_multi</span>(array);</p>
+  <table>
+    <tbody>
+      <tr>
+        <th>Argument</th>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>array</td>
+        <td><span data-keyref="Type_Array"><a href="../../../../GML_Overview/Arrays.htm" target="_blank">Array</a></span></td>
+        <td>Array with the sprites to flush</td>
+      </tr>
+    </tbody>
+  </table>
+  <p> </p>
+  <h4>Returns:</h4>
+  <p class="code"><span data-keyref="Type_Real"><a href="../../../../GML_Overview/Data_Types.htm" target="_blank">Real</a></span> (-1 or 0)</p>
+  <p> </p>
+  <h4>Example:</h4>
+  <p class="code">spr_a[0] = spr_Player_Aura1;<br />
+    spr_a[1] = spr_Player_Aura2;<br />
+    spr_a[2] = spr_Player_Aura3;<br />
+    spr_a[3] = spr_Player_Aura4;<br />
+    <span data-field="title" data-format="default">sprite_flush_multi</span>(spr_a);
+  </p>
+  <p>The above code creates an array where each element holds a sprite index. This array is then used to clear those sprites&#39; textures from memory.</p>
+  <p> </p>
+  <p> </p>
+>>>>>>> e8f331b1b74476a144e051c0d836bf120b342735
   <div class="footer">
     <div class="buttons">
       <div class="clear">
@@ -51,7 +89,11 @@
         <div style="float:right">Следующий: <a href="sprite_prefetch.htm"><span class="notranslate">sprite_prefetch</span></a></div>
       </div>
     </div>
+<<<<<<< HEAD
     <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Все права защищены</span></h5>
+=======
+    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+>>>>>>> e8f331b1b74476a144e051c0d836bf120b342735
   </div>
   <!-- KEYWORDS
 sprite_flush_multi

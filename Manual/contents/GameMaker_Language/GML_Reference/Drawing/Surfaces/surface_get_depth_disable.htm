@@ -4,7 +4,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>surface_get_depth_disable</title>
-  <meta name="generator" content="Adobe RoboHelp 2020" />
+  <meta name="generator" content="Adobe RoboHelp 2022" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
@@ -15,6 +15,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
+<<<<<<< HEAD
   <h1>surface_get_depth_disable</h1>
   <p>Эта функция проверяет, включена ли автоматическая генерация буферов глубины для поверхностей. Обычно все поверхности имеют буферы глубины, поэтому если вы рисуете 3D объекты на них, то они будут правильно сортироваться по глубине, однако выделение буферов глубины, по сути, удваивает размер поверхностей, что может быть чрезмерным и ненужным накладным расходом, особенно если ваша игра очень требовательна к памяти или преимущественно 2D. В таких случаях вы можете проверить это с помощью данной функции и при необходимости отключить буфер глубины для поверхностей с помощью функции <a href="surface_depth_disable.htm"><span class="inline">surface_depth_disable()</span></a>.</p>
   <p> </p>
@@ -25,18 +26,37 @@
   <p class="code"><span data-keyref="Type_Bool"></span></p>
   <p> </p>
   <h4>Пример:</h4>
+=======
+  <h1><span data-field="title" data-format="default">surface_get_depth_disable</span></h1>
+  <p>This function checks to see if the automatic depth buffer generation for surfaces is enabled.</p>
+  <p>Normally all surfaces have depth buffers so if you draw 3D objects to them then it&#39;ll sort them properly by depth, however allocating depth buffers essentially doubles the size of surfaces, which could be an excessive and unnecessary overhead especially if your game is very memory intensive or predominantly 2D. In these cases you can check this using this function and disable the depth buffer for surfaces if required using the function <span class="inline3_func"><a data-xref="{title}" href="surface_depth_disable.htm">surface_depth_disable</a></span>.</p>
+  <p> </p>
+  <h4>Syntax:</h4>
+  <p class="code"><span data-field="title" data-format="default">surface_get_depth_disable</span>();</p>
+  <p> </p>
+  <h4>Returns:</h4>
+  <p class="code"><span data-keyref="Type_Bool"><a href="../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Boolean</a></span></p>
+  <p> </p>
+  <h4>Example:</h4>
+>>>>>>> e8f331b1b74476a144e051c0d836bf120b342735
   <p class="code">if (!surface_exists(surf))<br />
     {<br />
-        if surface_get_depth_disable() == false<br />
+        if <span data-field="title" data-format="default">surface_get_depth_disable</span>() == false<br />
         {<br />
             surface_depth_disable(true);<br />
         }<br />
         surf = surface_create(room_width, room_height);<br />
     }</p>
+<<<<<<< HEAD
   <p>Приведенный выше код проверит, существует ли заданная поверхность, и если нет, то проверит текущее состояние буфера глубины поверхности, и если он включен, то отключит его, после чего окончательно создаст поверхность.</p>
   <p> </p>
   <p> </p>
   <p> </p>
+=======
+  <p>The above code will check to see if the given surface exists, and if it does not, then it checks the current state of the surface depth buffer and if it is enabled, it will disable it instead, before finally creating the surface.</p>
+  <p> </p>
+  <p> </p>
+>>>>>>> e8f331b1b74476a144e051c0d836bf120b342735
   <div class="footer">
     <div class="buttons">
       <div class="clear">
@@ -44,7 +64,11 @@
         <div style="float:right">Следующий: <a href="surface_getpixel.htm"><span class="notranslate">surface_getpixel</span></a></div>
       </div>
     </div>
+<<<<<<< HEAD
     <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Все права защищены</span></h5>
+=======
+    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+>>>>>>> e8f331b1b74476a144e051c0d836bf120b342735
   </div>
   <!-- KEYWORDS
 surface_get_depth_disable

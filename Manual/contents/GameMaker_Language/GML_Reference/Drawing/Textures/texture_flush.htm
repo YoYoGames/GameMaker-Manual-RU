@@ -3,8 +3,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<<<<<<< HEAD
   <title>текстурная_промывка</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
+=======
+  <title>texture_flush</title>
+  <meta name="generator" content="Adobe RoboHelp 2022" />
+>>>>>>> e8f331b1b74476a144e051c0d836bf120b342735
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
@@ -14,11 +19,20 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
+<<<<<<< HEAD
   <h1>текстурная_промывка</h1>
   <p>Эта функция может использоваться для &quot;прошивки&quot; текстурной страницы или группы текстурных страниц, т.е. для удаления их из VRAM, когда они больше не нужны. Вы можете указать уникальный <b>ID текстурной страницы</b> (возвращаемый функциями <span class="inline">texturegroup_*</span> ), чтобы прошить одну страницу, или указать <b>имя группы текстур</b> (определенное в <a href="../../../../Settings/Texture_Groups.htm">редакторе групп текстур</a>), чтобы прошить все текстурные страницы в группе.</p>
   <p> </p>
   <h4>Синтаксис:</h4>
   <p class="code">texture_flush(tex_id);</p>
+=======
+  <h1><span data-field="title" data-format="default">texture_flush</span></h1>
+  <p>This function can be used to &quot;flush&quot; a texture page or a group of texture pages, i.e.: remove them from VRAM when no longer required. The textures stay in RAM.</p>
+  <p>You supply the unique <b>texture page ID</b> (as returned by the <span class="inline3_func">texturegroup_*</span> functions) to flush a single page, or you can supply a <b>texture group name</b> (as defined in the <a href="../../../../Settings/Texture_Groups.htm">Texture Group Editor</a>) to flush all the texture pages in the group.</p>
+  <p> </p>
+  <h4>Syntax:</h4>
+  <p class="code"><span data-field="title" data-format="default">texture_flush</span>(tex_id);</p>
+>>>>>>> e8f331b1b74476a144e051c0d836bf120b342735
   <table>
     <tbody>
       <tr>
@@ -27,9 +41,15 @@
         <th>Описание</th>
       </tr>
       <tr>
+<<<<<<< HEAD
         <td><span class="notranslate">tex_id</span></td>
         <td><span data-keyref="Type_Pointer_Texture">Указатель текстуры</span> или <span data-keyref="Type_String">строка</span></td>
         <td><span class="notranslate">The texture page pointer <i>or</i> a texture group name (a string)</span></td>
+=======
+        <td>tex_id</td>
+        <td><span data-keyref="Type_Pointer_Texture"><a href="../../Asset_Management/Sprites/Sprite_Information/sprite_get_texture.htm" target="_blank">Texture</a></span> or <span data-keyref="Type_String"><a href="../../../GML_Overview/Data_Types.htm" target="_blank">String</a></span></td>
+        <td>The texture page pointer <i>or</i> a texture group name (a string)</td>
+>>>>>>> e8f331b1b74476a144e051c0d836bf120b342735
       </tr>
     </tbody>
   </table>
@@ -43,10 +63,16 @@
     {<br />
         texture_flush(_tex_array[i]);<br />
     }</p>
+<<<<<<< HEAD
   <p>Приведенный выше код прошьет все страницы текстур под группой текстур &quot;MainMenu&quot;.</p>
   <p> </p>
   <p> </p>
   <p> </p>
+=======
+  <p>The above code will flush all the texture pages under the texture group &quot;MainMenu&quot;.</p>
+  <p> </p>
+  <p> </p>
+>>>>>>> e8f331b1b74476a144e051c0d836bf120b342735
   <div class="footer">
     <div class="buttons">
       <div class="clear">
@@ -54,7 +80,11 @@
         <div style="float:right">Следующий: <a href="texture_debug_messages.htm"><span class="notranslate">texture_debug_messages</span></a></div>
       </div>
     </div>
+<<<<<<< HEAD
     <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
+=======
+    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+>>>>>>> e8f331b1b74476a144e051c0d836bf120b342735
   </div>
   <!-- KEYWORDS
 texture_flush

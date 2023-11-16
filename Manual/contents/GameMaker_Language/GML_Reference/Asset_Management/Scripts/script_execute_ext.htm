@@ -4,7 +4,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>script_execute_ext</title>
-  <meta name="generator" content="Adobe RoboHelp 2020" />
+  <meta name="generator" content="Adobe RoboHelp 2022" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
@@ -14,11 +14,20 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
+<<<<<<< HEAD
   <h1>script_execute_ext</h1>
   <p>Эта функция работает аналогично функции <a href="script_execute.htm">script_execute()</a>, только вы можете предоставить <a href="../../../GML_Overview/Arrays.htm">массив</a>, содержащий аргументы, необходимые для вызываемой функции/скрипта. Вы также можете передать функции два необязательных аргумента, чтобы указать смещение в массиве для получения аргументов, а также количество аргументов из массива (оно должно быть максимум равно array_length - offset). </p>
   <p> </p>
   <h4>Синтаксис:</h4>
   <p class="code">script_execute_ext(scr, array_args, [offset], [num_args]);</p>
+=======
+  <h1><span data-field="title" data-format="default">script_execute_ext</span></h1>
+  <p>This function works similarly to the function <span class="inline3_func"><a data-xref="{title}" href="script_execute.htm">script_execute</a></span> but allows you to pass the arguments required for the function/script as an <a href="../../../GML_Overview/Arrays.htm">array</a>.</p>
+  <p>You can also pass two optional arguments to the function to specify an offset into the array to get the arguments from, as well as the number of arguments to use from the array (this must be a maximum of array_length - offset).</p>
+  <p> </p>
+  <h4>Syntax:</h4>
+  <p class="code"><span data-field="title" data-format="default">script_execute_ext</span>(scr, [array_args], [offset], [num_args]);</p>
+>>>>>>> e8f331b1b74476a144e051c0d836bf120b342735
   <table>
     <tbody>
       <tr>
@@ -27,6 +36,7 @@
         <th>Описание</th>
       </tr>
       <tr>
+<<<<<<< HEAD
         <td><span class="notranslate">scr</span></td>
         <td><span data-keyref="Type_Asset_Script">Ассет сценария</span> или <span data-keyref="Type_Function_Script">функция сценария</span></td>
         <td><span class="notranslate">The function/script that you want to call</span></td>
@@ -59,6 +69,38 @@
   <p> </p>
   <p> </p>
   <p> </p>
+=======
+        <td>scr</td>
+        <td><span data-keyref="Type_Asset_Script"><a href="../../../../The_Asset_Editors/Scripts.htm" target="_blank">Script Asset</a></span> or <span data-keyref="Type_Function_Script"><a href="../../../GML_Overview/Script_Functions.htm" target="_blank">Script Function</a></span></td>
+        <td>The function/script that you want to call</td>
+      </tr>
+      <tr>
+        <td>array_args</td>
+        <td><span data-keyref="Type_Array"><a href="../../../GML_Overview/Arrays.htm" target="_blank">Array</a></span></td>
+        <td><span data-conref="../../../../assets/snippets/Tag_optional.hts"> </span> The array containing the arguments for the function/script. Can be omitted if the function/script takes no arguments.</td>
+      </tr>
+      <tr>
+        <td>[offset]</td>
+        <td><span data-keyref="Type_Real"><a href="../../../GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
+        <td><span data-conref="../../../../assets/snippets/Tag_optional.hts"> </span> The offset into the argument array</td>
+      </tr>
+      <tr>
+        <td>[num_args]</td>
+        <td><span data-keyref="Type_Real"><a href="../../../GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
+        <td><span data-conref="../../../../assets/snippets/Tag_optional.hts"> </span> The number of arguments to use (from the offset onwards)</td>
+      </tr>
+    </tbody>
+  </table>
+  <p> </p>
+  <h4>Returns:</h4>
+  <p class="code"><span data-keyref="Type_Any"><a href="../../../GML_Overview/Data_Types.htm#variable" target="_blank">Any</a></span> (Will depend on the return value from the function/script being called)</p>
+  <p> </p>
+  <h4>Example:</h4>
+  <p class="code"><span data-field="title" data-format="default">script_execute_ext</span>(move_inst, move_array, floor(random(4)), 1);</p>
+  <p>The above example code will use <span class="inline3_func"><span data-field="title" data-format="default">script_execute_ext</span></span> to call the given function, supplying an array of four arguments, but only using one of them at random.</p>
+  <p> </p>
+  <p> </p>
+>>>>>>> e8f331b1b74476a144e051c0d836bf120b342735
   <div class="footer">
     <div class="buttons">
       <div class="clear">
@@ -66,7 +108,11 @@
         <div style="float:right">Следующий: <a href="script_exists.htm"><span class="notranslate">script_exists</span></a></div>
       </div>
     </div>
+<<<<<<< HEAD
     <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
+=======
+    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+>>>>>>> e8f331b1b74476a144e051c0d836bf120b342735
   </div>
   <!-- KEYWORDS
 script_execute_ext
