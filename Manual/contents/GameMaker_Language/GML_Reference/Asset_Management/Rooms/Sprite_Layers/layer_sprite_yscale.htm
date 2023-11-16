@@ -6,7 +6,7 @@
   <title>layer_sprite_yscale</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page outlining the function layer_sprite_yscale" />
   <meta name="rh-index-keywords" content="layer_sprite_yscale" />
@@ -15,49 +15,49 @@
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
   <h1>layer_sprite_yscale</h1>
-  <p>Using this function you can change whether the given sprite element on a layer should be scaled along the y axis or not. You give the sprite element ID (which you get when you create a sprite element using <a href="layer_sprite_create.htm"><span class="inline">layer_sprite_create()</span></a> or when you use the function <a href="layer_sprite_get_id.htm"><span class="inline">layer_sprite_get_id()</span></a>), and then set the scale value. A scale of 1 indicates no scaling (1:1), smaller values will scale down (0.5, for example, will half the height of the sprite used), larger values will scale up, and negative values will mirror the sprite and scale it unless the value used is exactly -1 (in which case the sprite used is just mirrored top-to-bottom about its (0, 0) position with no scaling).</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p>С помощью этой функции можно изменить, должен ли данный элемент <span class="notranslate">sprite</span> на слое масштабироваться по оси y или нет. Вы задаете идентификатор элемента <span class="notranslate">sprite</span> (который вы получаете при создании элемента <span class="notranslate">sprite</span> с помощью функции <a href="layer_sprite_create.htm"><span class="inline">layer_sprite_create()</span></a> или при использовании функции <a href="layer_sprite_get_id.htm"><span class="inline">layer_sprite_get_id()</span></a>), а затем задаете значение масштаба. Значение масштаба 1 означает отсутствие масштабирования (1:1), меньшие значения масштабируют вниз (0,5, например, уменьшает высоту используемого <span class="notranslate">sprite</span> вдвое), большие значения масштабируют вверх, а отрицательные значения зеркально отражают <span class="notranslate">sprite</span> и масштабируют его, за исключением случая, когда используемое значение равно -1 (в этом случае используемый <span class="notranslate">sprite</span> просто зеркально отражается сверху вниз относительно своей позиции (0, 0) без масштабирования).</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
   <p class="code">layer_sprite_yscale(sprite_element_id, yscale);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th><th>Type</th>
-        <th>Description</th>
+        <th>Аргумент</th><th>Тип</th>
+        <th>Описание</th>
      </tr>
       <tr>
-        <td>sprite_element_id</td><td><span data-keyref="Type_ID_Element_Sprite"></span></td>
-        <td>The unique ID value of the sprite element to change</td>
+        <td><span class="notranslate">sprite_element_id</span></td><td><span data-keyref="Type_ID_Element_Sprite"></span></td>
+        <td><span class="notranslate">The unique ID value of the sprite element to change</span></td>
      </tr>
       <tr>
-        <td>yscale</td><td><span data-keyref="Type_Real"></span></td>
-        <td>The yscale value (default is 1)</td>
+        <td><span class="notranslate">yscale</span></td><td><span data-keyref="Type_Real"></span></td>
+        <td><span class="notranslate">The yscale value (default is 1)</span></td>
      </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
   <p class="code"><span data-keyref="Type_Void"></span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Пример:</h4>
   <p class="code">var asset_sprite = layer_sprite_get_id(layer, &quot;gfc_Trees&quot;);<br />
     if layer_sprite_get_xscale(asset_sprite) != 1 || layer_sprite_get_yscale(asset_sprite) != 1<br />
     {<br />
         layer_sprite_xscale(asset_sprite, 1);<br />
         layer_sprite_yscale(asset_sprite, 1);<br />
     }</p>
-  <p>The above code will check the sprite element assigned to the layer the instance running the code is on and if it is scaled in either direction it will set both the x-axis scale and y-axis scale to 1.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Приведенный выше код проверит элемент <span class="notranslate">sprite</span>, назначенный слою, на котором находится экземпляр, выполняющий код, и если он масштабирован в любом направлении, то установит масштаб по оси x и масштаб по оси y равным 1.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Sprite_Layers.htm">Sprite Layers</a></div>
-        <div style="float:right">Next: <a href="layer_sprite_angle.htm">layer_sprite_angle</a></div>
+        <div style="float:left">Назад: <a href="Sprite_Layers.htm">Слои спрайта</a></div>
+        <div style="float:right">Следующий: <a href="layer_sprite_angle.htm"><span class="notranslate">layer_sprite_angle</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2021 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 layer_sprite_yscale

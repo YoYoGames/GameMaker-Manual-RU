@@ -1,57 +1,54 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Local Asset Packages</title>
-  <meta name="generator" content="Adobe RoboHelp 2020" />
-  <link rel="stylesheet" href="../assets/css/default.css" type="text/css" />
-  <script src="../assets/scripts/main_script.js" type="module"></script>
-  <meta name="rh-authors" content="Mark Alexander" />
-  <meta name="topic-comment" content="Section that covers creating and installing local asset packages" />
-  <meta name="rh-index-keywords" content="Local Asset Packages" />
-  <meta name="search-keywords" content="local asset packages,asset packages,local packages" />
-</head>
-<body>
-  <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1><span data-field="title" data-format="default">Local Asset Packages</span></h1>
-  <p>A Local Asset Package is a group of resources saved using the <span class="inline2">*.yymps</span> file format that can be easily installed into existing projects.</p>
-  <p>What this means is that you can create your own library of packages for commonly used resources, like script libraries, splash screen intros, menu systems, etc., without having to use the <span data-keyref="GameMaker Name">GameMaker</span> <a href="../Introduction/The_Marketplace.htm">Marketplace</a>.</p>
-  <p>Under the <a href="../IDE_Navigation/Menus/The_Tools_Menu.htm">Tools Menu</a> you have two options for creating and importing <strong><span data-field="title" data-format="default">Local Asset Packages</span></strong>.</p>
-  <h2>Creating An Asset Package</h2>
-  <p>To create an asset package, you must first have created the resources that you want to save out in a project, and then from the <a href="../IDE_Navigation/Menus/The_Tools_Menu.htm">Tools</a> menu select the option <strong>Create Local Package</strong>. This will open the following window:</p>
-  <p><img alt="Create Local Asset Package Window" class="center" src="../assets/Images/IDE Tools/Local_Asset_Package_Create.png" />In this window you can supply an optional <strong>Publisher Name</strong> and a required <strong>Display Name</strong> and <strong>Package ID</strong>. The Package ID will be used to generate the file name that the package will be saved with, and will be automatically appended with the <span class="inline2">*.yymps</span> file extension on creation. You can also set the <a class="glossterm" data-glossterm="Version Number" href="#">Version Number</a> of the package, and choose to sign it or not (this is off by default). Signing a package requires you to have created a <strong>signing certificate</strong> (you can do this from the <a data-xref="{title}" href="../Setting_Up_And_Version_Information/IDE_Preferences/Marketplace_Preferences.htm">Marketplace Preferences</a>), and means that any asset that has been signed will not be able to be imported if it has been tampered with after creation.</p>
-  <p>Once you have filled in the details of the package, you can then go ahead and select the assets that you want to include from the &quot;<strong>Project</strong>&quot; section on the right (using the left mouse button <img alt="LMB Icon" class="icon" height="22" src="../assets/Images/Icons/Icon_LMB.png" width="20" /> or a combination of <img alt="Control Icon" class="icon" height="20" src="../assets/Images/Icons/Icon_Ctrl.png" width="55" /> / <img alt="CMD Icon" class="icon" height="20" src="../assets/Images/Icons/Icon_Cmd.png" width="55" /> and <img alt="Shift Icon" class="icon" height="20" src="../assets/Images/Icons/Icon_Shift.png" width="55" /> along with the left mouse button). Selected resources can be moved to the &quot;<strong>Asset Package</strong>&quot; view, using the <strong>Add </strong>or<strong> Add All</strong> buttons and can be removed again using the <strong>Remove </strong>and <strong>Remove All</strong> buttons.</p>
-  <p>Once you are happy with the resource selection and have filled in the required details, clicking the <strong>OK </strong>button will open a file explorer where you can choose the location to save the package to. Once selected the package will be created and a confirmation window will be shown, with an option to open the package location in the OS file explorer.</p>
-  <p> </p>
-  <h2>Importing An Asset Package</h2>
-  <p>There are two ways to import a Local Asset Package:</p>
-  <ul class="colour">
-    <li>the first is simply to drag the <span class="inline2">*.yymps</span> file from an explorer window onto the <span data-keyref="GameMaker Name">GameMaker</span> IDE</li>
-    <li>the second is to select the &quot;<strong>Import Local Package</strong>&quot; option from the <a href="../IDE_Navigation/Menus/The_Tools_Menu.htm">Tools Menu</a>.</li>
-  </ul>
-  <p>When using the Tools Menu, an explorer window will open and you can browse to the package location then select it for importing. Either way will then open the following window in <span data-keyref="GameMaker Name">GameMaker</span>:</p>
-  <p><img alt="Import Local Asset Package Window" class="center" src="../assets/Images/IDE Tools/Local_Asset_Package_Import.png" />On the left are the contents of the package and on the right are the parts of it that you want to import. You can select one or more resources from the package (using the left mouse button <img alt="LMB Icon" class="icon" height="24" src="../assets/Images/Icons/Icon_LMB.png" width="21" /> or a combination of <img alt="Control Icon" class="icon" height="20" src="../assets/Images/Icons/Icon_Ctrl.png" width="55" /> / <img alt="CMD Icon" class="icon" height="20" src="../assets/Images/Icons/Icon_Cmd.png" width="55" /> and <img alt="Shift Icon" class="icon" height="20" src="../assets/Images/Icons/Icon_Shift.png" width="55" /> along with the left mouse button) and then use the <strong>Add </strong>button to add them for importing, or use the <strong>Add All </strong>button to add everything for importing.</p>
-  <p>When you have everything ready, you can then click the <strong>Import </strong>button to add the selected resources to your project. Note that you also have the option to <strong>Import all</strong> resources to a new project, which will create a new project for you (and prompt you to give a location to save it to) and then add the package resources to that.</p>
-  <p>Please note that asset packages created using a version older than <span data-keyref="GameMaker Name">GameMaker</span> 2.3 will require conversion as the project file format changed with the 2.3 update. This means it may be preferable to import the entire project and convert everything then export it as a new package to a new location if the assets are imported frequently into other projects.</p>
-  <p> </p>
-  <p> </p>
-  <div class="footer">
-    <div class="buttons">
-      <div class="clear">
-        <div style="float:left">Back: <a href="Additional_IDE_Tools.htm">Additional IDE Tools</a></div>
-        <div style="float:right">Next: <a href="Project_Image_Generator.htm">Project Image Generator</a></div>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Пакеты местных активов</title>
+    <meta name="generator" content="Adobe RoboHelp 2020" />
+    <link rel="stylesheet" href="../assets/css/default.css" type="text/css" />
+    <script src="../assets/scripts/main_script.js"></script>
+    <meta name="rh-authors" content="Mark Alexander" />
+    <meta name="topic-comment" content="Section that covers creating and installing local asset packages" />
+    <meta name="rh-index-keywords" content="Local Asset Packages" />
+    <meta name="search-keywords" content="local asset packages,asset packages,local packages" />
+  </head>
+  <body><!--<div class="body-scroll" style="top: 150px;">-->
+    <h1>Пакеты местных активов</h1>
+    <p>В <a href="../IDE_Navigation/Menus/The_Tools_Menu.htm">меню Инструменты</a> есть две опции для создания и импорта <strong>пакетов локальных активов</strong>. Пакет локальных активов - это группа ресурсов, сохраненных с помощью формата файла <span class="inline">*.yymp</span>, которые можно легко установить в существующие проекты. Это означает, что вы можете создать собственную библиотеку пакетов для часто используемых ресурсов, таких как библиотеки сценариев, заставки, системы меню и т.д., не прибегая к помощи <span class="notranslate">GameMaker</span> <a href="../Introduction/The_Marketplace.htm">Marketplace</a>.</p>
+    <p> </p>
+    <h2>Создание пакета активов</h2>
+    <p>Чтобы создать пакет активов, необходимо сначала создать ресурсы, которые вы хотите сохранить в проекте, а затем в меню <a href="../IDE_Navigation/Menus/The_Tools_Menu.htm">Инструменты</a> выбрать опцию <strong>Создать локальный пакет</strong>. Откроется следующее окно:</p>
+    <p><img>В этом окне вы можете указать необязательное <strong>имя издателя</strong> и обязательные <strong>отображаемое имя</strong> и <strong>идентификатор пакета</strong>. Идентификатор пакета будет использоваться для создания имени файла, под которым будет сохранен пакет, и к нему автоматически будет добавлено расширение <span class="inline">*.yymp</span> при создании. Вы также можете задать <a class="glossterm" data-glossterm="Номер версии" href="#">номер версии</a> пакета и выбрать, подписывать его или нет (по умолчанию эта функция отключена). Подписание пакета требует создания <strong>сертификата подписи</strong> (вы можете сделать это в <a href="../Setting_Up_And_Version_Information/IDE_Preferences/Marketplace_Preferences.htm">Предпочтениях Marketplace</a>), и означает, что любой актив, который был подписан, не сможет быть импортирован, если он был подделан после создания.</p>
+    <p>После того, как вы заполнили детали пакета, вы можете перейти к выбору активов, которые вы хотите включить, из раздела &quot;<strong>Проект</strong>&quot; справа (используя левую кнопку мыши <img> или комбинацию <img> / <img> и <img> вместе с левой кнопкой мыши). Выбранные ресурсы могут быть перемещены в представление &quot;<strong>Пакет активов</strong>&quot; с помощью кнопок <strong>Добавить </strong>или<strong> Добавить все</strong> и могут быть снова удалены с помощью кнопок <strong>Удалить </strong>и <strong>Удалить все</strong>.</p>
+    <p>Когда вы будете довольны выбором ресурсов и заполните необходимые данные, при нажатии кнопки <strong>Ok </strong>откроется проводник файлов, где вы сможете выбрать место для сохранения пакета. После выбора пакет будет создан и появится окно подтверждения с возможностью открыть местоположение пакета в проводнике файлов ОС.</p>
+    <p> </p>
+    <h2>Импорт пакета активов</h2>
+    <p>Существует два способа импорта локального пакета активов:</p>
+    <ul class="colour">
+      <li>первый - просто перетащить файл <span class="inline">*.yymp</span> из окна проводника в <span data-keyref="GameMaker Name">GameMaker</span> IDE.</li>
+      <li>второй - выбрать опцию &quot;<strong>Импорт локального пакета</strong>&quot; в <a href="../IDE_Navigation/Menus/The_Tools_Menu.htm">меню Инструменты</a>.</li>
+    </ul>
+    <p>При использовании меню Tools откроется окно проводника, в котором можно перейти к расположению пакета и выбрать его для импорта. В любом случае в <span data-keyref="GameMaker Name">GameMaker</span> откроется следующее окно:</p>
+    <p><img>Слева находится содержимое пакета, а справа - те его части, которые вы хотите импортировать. Вы можете выбрать один или несколько ресурсов из пакета (используя левую кнопку мыши <img> или комбинацию <img> / <img> и <img> вместе с левой кнопкой мыши) и затем использовать кнопку <strong>Добавить </strong>, чтобы добавить их для импорта, или использовать кнопку <strong>Добавить все </strong>, чтобы добавить все для импорта.</p>
+    <p>Когда все готово, вы можете нажать кнопку <strong>Импорт </strong>, чтобы добавить выбранные ресурсы в ваш проект. Обратите внимание, что у вас также есть возможность <strong>Импортировать все</strong> ресурсы в новый проект, что создаст для вас новый проект (и предложит указать место для его сохранения), а затем добавит в него ресурсы пакета.</p>
+    <p>Обратите внимание, что пакеты активов, созданные с помощью версии, предшествующей <span data-keyref="GameMaker Name">GameMaker</span>.3, потребуют конвертации, поскольку формат файла проекта изменился с обновлением 2.3. Это означает, что если активы часто импортируются в другие проекты, предпочтительнее импортировать весь проект и преобразовать все файлы, а затем экспортировать их как новый пакет в новое место.</p>
+    <p> </p>
+    <p> </p>
+    <p> </p>
+    <div class="footer">
+      <div class="buttons">
+        <div class="clear">
+          <div style="float:left">Назад: <a href="Additional_IDE_Tools.htm">Дополнительные инструменты <span class="notranslate">IDE</span> </a></div>
+          <div style="float:right">Следующий: <a href="Project_Image_Generator.htm">Генератор изображений проекта</a></div>
+        </div>
       </div>
+      <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Все права защищены</span></h5>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
-  </div>
-  <!-- KEYWORDS
+    <!-- KEYWORDS
 Local Asset Packages
 Asset Packages
 Local Packages
--->
-  <!-- TAGS
+--><!-- TAGS
 local_asset_packages
--->
-</body>
+--></body>
 </html>

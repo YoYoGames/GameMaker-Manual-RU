@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Data Structure Actions</title>
-  <meta name="generator" content="Adobe RoboHelp 2020" />
+  <title>Действия со структурой данных</title>
+  <meta name="generator" content="Adobe RoboHelp 2019" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
-  <script src="../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Section detailing all the Data Structure actions" />
   <meta name="rh-index-keywords" content="GML Visual Overview - Data Structure Actions Library" />
@@ -14,171 +14,175 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>Data Structure Action Library</h1>
+  <h1>Библиотека действий со структурой данных</h1>
   <p><img alt="Data Structure Library" class="center" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Data_Structures/Lib_DS.png" /></p>
-  <p>In games you often need to store information in a precise and ordered way. For example, you may need to store lists of items that a person carries or you may want to store a grid of places that still need to be visited. Now, you can use multiple variables for this, but if you want to do more complicated operations, like sorting the data or searching for a particular item, you need to write large chunks of action block code which can be slow to execute, difficult to debug and a real pain to write!</p>
-  <p>To remedy this, <span data-keyref="GameMaker Name">GameMaker</span> has a number of built-in data structures that can be accessed through specialist functions. There are four different types of data structure available through GML Visual (there are six if you use <a href="../../../GameMaker_Language/GML_Reference/Data_Structures/Data_Structures.htm">GML</a>), each one having its own pros and cons depending on the type of information that you are looking to store and how you wish to manipulate it later - the four types are:</p>
+  <p>В играх часто требуется хранить информацию в точном и упорядоченном виде. Например, вам может понадобиться хранить списки предметов, которые несет человек, или сетку мест, которые еще нужно посетить. Теперь вы можете использовать несколько переменных
+    но если вы хотите выполнить более сложные операции, такие как сортировка данных или поиск определенного элемента, вам придется писать большие куски кода блока действий, который может быть медленным в исполнении, трудным в отладке и настоящей мукой в написании!</p>
+  <p>Для решения этой проблемы в <span data-keyref="GameMaker Name">GameMaker</span> имеется ряд встроенных структур данных, доступ к которым можно получить с помощью специальных функций. Существует четыре различных типа структур данных, доступных через <span class="notranslate">GML</span> Visual (если вы используете <a href="../../../GameMaker_Language/GML_Reference/Data_Structures/Data_Structures.htm">GML</a>, то их шесть),
+    Каждый из них имеет свои плюсы и минусы в зависимости от типа информации, которую вы хотите хранить, и от того, как вы хотите манипулировать ею в дальнейшем - четыре типа:</p>
   <table class="icons" style="margin-left: 32auto">
     <tbody>
       <tr>
         <td class="icons" style="text-align: center"><img alt="Create List Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Data_Structures/i_DS_Create_List.png" /></td>
-        <td class="icons"><b>Lists</b></td>
-        <td class="text"><span>A list is a data-structure that stores information sequentially as it is added. List indexes start at 0 and will go up for each item that is added onto the end of the list, although you can also insert data into a position other than the last one. Unlike the Stack data structure (explained below) you can access the data from any index of the list at any time.</span></td>
+        <td class="icons"><b>Списки</b></td>
+        <td class="text"><span>Список - это структура данных, которая хранит информацию последовательно, по мере ее добавления. Индексы списка начинаются с 0 и увеличиваются для каждого элемента, который добавляется в конец списка, хотя вы также можете вставить данные в позицию, отличную от последней. В отличие от структуры данных Stack (описанной ниже), вы можете получить доступ к данным из любого индекса списка в любое время.</span></td>
       </tr>
       <tr>
         <td class="icons" style="text-align: center"><img alt="Create Map Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Data_Structures/i_DS_Create_Map.png" /></td>
-        <td class="icons"><strong>Maps</strong></td>
-        <td class="text"><span>The map data structure is an exceptionally useful one as it lets you store </span><i>key</i><span> and </span><i>value</i><span> pairs. For example, a character in your game can have a quantity of different items (keys) and for each individual item he can have a number of them (values), like in an RPG where you can have 10 health potions, 5 mana potions and 100 gold. Maps maintain such pairs all together in the one place and you can add pairs to the map and search for the value corresponding to certain keys as well using some simple functions. Maps are not sorted in any (recognisable) way, meaning that to find a certain key you may have to iterate through the whole thing (which is very slow), and there is also no way to hold two keys that are the same, nor can you assign one key two values.</span></td>
+        <td class="icons"><strong>Карты</strong></td>
+        <td class="text"><span>Структура данных map является исключительно полезной, поскольку она позволяет хранить </span><i>ключ</i><span> и </span><i>значение</i><span> пары. Например, персонаж вашей игры может иметь некоторое количество различных предметов (ключи), а для каждого отдельного предмета он может иметь некоторое их количество (значения), как в ролевой игре, где у вас может быть 10 зелий здоровья, 5 зелий маны и 100 золотых. Карты хранят такие пары в одном месте, и вы можете добавлять пары на карту и искать значение, соответствующее определенным ключам, используя некоторые простые функции. Карты не сортируются каким-либо (узнаваемым) способом, что означает, что для поиска определенного ключа вам придется просмотреть все карты (что очень медленно), а также нет возможности хранить два одинаковых ключа или присваивать одному ключу два значения.</span></td>
       </tr>
       <tr>
         <td class="icons" style="text-align: center"><img alt="Create Grid Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Data_Structures/i_DS_Create_Grid.png" /></td>
-        <td class="icons"><strong>Grids</strong></td>
-        <td class="text"><span>A grid is two-dimensional array of values where you define its width and height. This sets the total number of grid &quot;cells&quot; within the grid (the width and height multiplied) and these cells are then used to hold different data values, which can be any of the permitted data types. This type of structure allows you to set and retrieve the value of cells in the grid by giving the x (column) and y (row) position of it (both rows and columns start at 0 and go up to the grid width - 1 and the grid height -1). When accessing grid data structures, you should always try to use integer values for the cell position, and all non-integer indices will be floored by </span>GameMaker Studio 2<span> if you do not. If that is not what you require, then you will need to do the rounding yourself previously before passing the index that you wish to check.</span></td>
+        <td class="icons"><strong>Сетки</strong></td>
+        <td class="text"><span>Сетка - это двумерный массив значений, где вы определяете его ширину и высоту. Это задает общее количество &quot;ячеек&quot; сетки (ширина и высота перемножаются), и эти ячейки затем используются для хранения различных значений данных, которые могут быть любыми из разрешенных типов данных. Этот тип структуры позволяет задавать и извлекать значения ячеек в сетке, задавая их положение по x (столбец) и y (строка) (и строки, и столбцы начинаются с 0 и идут до ширины сетки - 1 и высоты сетки -1). При обращении к структурам данных сетки всегда старайтесь использовать целочисленные значения для позиции ячейки, все нецелые индексы будут сбрасываться </span>программой GameMaker
+          Studio 2,<span> если вы этого не сделаете. Если это не то, что вам требуется, то вам нужно будет выполнить округление самостоятельно перед передачей индекса, который вы хотите проверить.</span></td>
       </tr>
       <tr>
         <td class="icons" style="text-align: center"><img alt="Create Stack Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Data_Structures/i_DS_Create_Stack.png" /></td>
-        <td class="icons"><strong>Stacks</strong></td>
-        <td class="text"><span>A stack data structure is a so called last-in-first-out (LIFO) structure. You can push values onto a stack and the remove them again by popping them from the stack, and the value that was pushed on the stack most recently is the first to be popped from it again (just think of a stack of coins, where each coin that you add has to be removed again first before you can get to the rest of the coins beneath). Stacks are often used when there are interrupts to handle, or when having recursive functions, or even when constructing a rudimentary AI for your games.</span></td>
+        <td class="icons"><strong>Стеки</strong></td>
+        <td class="text"><span>Стековая структура данных - это так называемая структура "последний по порядку" (LIFO). Вы можете помещать значения в стек, а затем удалять их, вынимая из стека, причем значение, которое было помещено в стек последним, первым вынимается из стека (вспомните стопку монет, где каждая добавленная монета должна быть сначала вынута, прежде чем вы сможете добраться до остальных монет). Стеки часто используются при обработке прерываний, рекурсивных функций или даже при создании элементарного искусственного интеллекта для ваших игр.</span></td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <p>Essentially, all data structures work in the same way - You create a data structure and store its index value in a variable. You then use this index to reference the data structure in all further function calls that can perform operations on it. Finally, once you are done you destroy the data structure again to remove it from memory. You can use as many of the structures at the same time as you need, and all structures can store both strings and real values.</p>
-  <p class="note"><span data-conref="../../../assets/snippets/Tag_note.hts"> </span> As with all dynamic resources, data structures take up memory and so should <b>always be destroyed when no longer needed</b> to prevent memory leaks which will slow down and eventually crash your game.</p>
-  <p>The <b>Data Structure</b> library has the following actions:</p>
-  <p> </p>
+  <p> </p>
+  <p>По сути, все структуры данных работают одинаково - вы создаете структуру данных и сохраняете значение ее индекса в переменной. Затем вы используете этот индекс для ссылки на структуру данных во всех последующих вызовах функций, которые могут выполнять операции над ней. Наконец,
+    после завершения работы вы снова уничтожаете структуру данных, чтобы удалить ее из памяти. Вы можете использовать столько структур одновременно, сколько вам нужно, и все структуры могут хранить как строки, так и реальные значения.</p>
+  <p class="note"><b>ПРИМЕЧАНИЕ</b>: Как и все динамические ресурсы, структуры данных занимают память, поэтому их <b>всегда следует уничтожать, когда они больше не нужны</b>, чтобы предотвратить утечку памяти, которая замедлит и в конечном итоге приведет к краху вашей игры.</p>
+  <p>Библиотека <b>Data Structure</b> имеет следующие действия:</p>
+  <p> </p>
   <table class="dnd" style="text-align: left;margin-left:">
     <tbody>
       <tr style="height: 1px;">
         <td class="icons" style="margin-left: 16px;"><img alt="Create List Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Data_Structures/i_DS_Create_List.png" /></td>
-        <td class="dnd" style=""><a href="Create_List.htm">Create List</a></td>
+        <td class="dnd" style=""><a href="Create_List.htm">Создать список</a></td>
       </tr>
       <tr>
         <td class="dnd_icons" style="margin-left: 16px;"><img alt="Create Map Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Data_Structures/i_DS_Create_Map.png" /></td>
-        <td class="dnd" style=""><a href="Create_Map.htm">Create Map</a></td>
+        <td class="dnd" style=""><a href="Create_Map.htm">Создать карту</a></td>
       </tr>
       <tr>
         <td class="dnd_icons" style="margin-left: 16px;"><img alt="Create Grid Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Data_Structures/i_DS_Create_Grid.png" /></td>
-        <td class="dnd" style=""><a href="Create_Grid.htm">Create Grid</a></td>
+        <td class="dnd" style=""><a href="Create_Grid.htm">Создать сетку</a></td>
       </tr>
       <tr>
         <td class="dnd_icons" style="margin-left: 16px;"><img alt="Create Stack Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Data_Structures/i_DS_Create_Stack.png" /></td>
-        <td class="dnd" style=""><a href="Create_Stack.htm">Create Stack</a></td>
+        <td class="dnd" style=""><a href="Create_Stack.htm">Создать стек</a></td>
       </tr>
       <tr>
         <td class="dnd_icons" style="margin-left: 16px;"><img alt="Clear Data Structure Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Data_Structures/i_DS_Clear_Data_Structure.png" /></td>
-        <td class="dnd" style=""><a href="Clear_Data_Structure.htm">Clear Data Structure</a></td>
+        <td class="dnd" style=""><a href="Clear_Data_Structure.htm">Очистить структуру данных</a></td>
       </tr>
       <tr>
         <td class="dnd_icons" style="margin-left: 16px;"><img alt="Free Data Structure Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Data_Structures/i_DS_Free_Data_Structure.png" /></td>
-        <td class="dnd" style=""><a href="Free_Data_Structure.htm">Free Data Structure</a></td>
+        <td class="dnd" style=""><a href="Free_Data_Structure.htm">Свободная структура данных</a></td>
       </tr>
       <tr>
         <td class="dnd_icons" style="margin-left: 16px;"><img alt="Add To List Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Data_Structures/i_DS_Add_To_List.png" /></td>
-        <td class="dnd" style=""><a href="Add_To_List.htm">Add To List</a></td>
+        <td class="dnd" style=""><a href="Add_To_List.htm">Добавить в список</a></td>
       </tr>
       <tr>
         <td class="dnd_icons" style="margin-left: 16px;"><img alt="Remove From List Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Data_Structures/i_DS_Remove_From_List.png" /></td>
-        <td class="dnd" style=""><a href="Remove_From_List.htm">Remove From List</a></td>
+        <td class="dnd" style=""><a href="Remove_From_List.htm">Удалить из списка</a></td>
       </tr>
       <tr>
         <td class="dnd_icons" style="margin-left: 16px;"><img alt="Get List Item At Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Data_Structures/i_DS_Get_List_Item_At.png" /></td>
-        <td class="dnd" style=""><a href="Get_List_Item_At.htm">Get List Item At</a></td>
+        <td class="dnd" style=""><a href="Get_List_Item_At.htm">Получить элемент списка At</a></td>
       </tr>
       <tr>
         <td class="dnd_icons" style="margin-left: 16px;"><img alt="Get Index Of List Item Icon" class="icon" height="32" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Data_Structures/i_DS_Get_Index_Of_List_Item.png" width="32" /></td>
-        <td class="dnd" style=""><a href="Get_Index_Of_List_Item.htm">Get Index Of List Item</a></td>
+        <td class="dnd" style=""><a href="Get_Index_Of_List_Item.htm">Получить индекс элемента списка</a></td>
       </tr>
       <tr>
         <td class="dnd_icons" style="margin-left: 16px;"><img alt="Insert Into List Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Data_Structures/i_DS_Insert_Into_List.png" /></td>
-        <td class="dnd" style=""><a href="Insert_Into_List.htm">Insert Into List</a></td>
+        <td class="dnd" style=""><a href="Insert_Into_List.htm">Вставка в список</a></td>
       </tr>
       <tr>
         <td class="dnd_icons" style="margin-left: 16px;"><img alt="Get List Item Count" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Data_Structures/i_DS_Get_List_Item_Count.png" /></td>
-        <td class="dnd" style=""><a href="Get_List_Item_Count.htm">Get List Item Count</a></td>
+        <td class="dnd" style=""><a href="Get_List_Item_Count.htm">Получить количество элементов списка</a></td>
       </tr>
       <tr>
         <td class="dnd_icons" style="margin-left: 16px;"><img alt="Set Map Value Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Data_Structures/i_DS_Set_Map_Value.png" /></td>
-        <td class="dnd" style=""><a href="Set_Map_Value.htm">Set Map Value</a></td>
+        <td class="dnd" style=""><a href="Set_Map_Value.htm">Установить значение карты</a></td>
       </tr>
       <tr>
         <td class="dnd_icons" style="margin-left: 16px;"><img alt="Get Map Value Icon" class="icon" height="32" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Data_Structures/i_DS_Get_Map_Value.png" width="32" /></td>
-        <td class="dnd" style=""><a href="Get_Map_Value.htm">Get Map Value</a></td>
+        <td class="dnd" style=""><a href="Get_Map_Value.htm">Получить значение карты</a></td>
       </tr>
       <tr>
         <td class="dnd_icons" style="margin-left: 16px;"><img alt="Remove Map Value Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Data_Structures/i_DS_Remove_Map_Entry.png" /></td>
-        <td class="dnd" style=""><a href="Remove_Map_Entry.htm">Remove Map Entry</a></td>
+        <td class="dnd" style=""><a href="Remove_Map_Entry.htm">Удалить запись на карте</a></td>
       </tr>
       <tr>
         <td class="dnd_icons" style="margin-left: 16px;"><img alt="Set Grid Value Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Data_Structures/i_DS_Set_Grid_Value.png" /></td>
-        <td class="dnd" style=""><a href="Set_Grid_Value.htm">Set Grid Value</a></td>
+        <td class="dnd" style=""><a href="Set_Grid_Value.htm">Установить значение сетки</a></td>
       </tr>
       <tr>
         <td class="dnd_icons" style="margin-left: 16px;"><img alt="Get Grid Value Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Data_Structures/i_DS_Get_Grid_Value.png" /></td>
-        <td class="dnd" style=""><a href="Get_Grid_Value.htm">Get Grid Value</a></td>
+        <td class="dnd" style=""><a href="Get_Grid_Value.htm">Получить значение сетки</a></td>
       </tr>
       <tr>
         <td class="dnd_icons" style="margin-left: 16px;"><img alt="Clear Grid Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Data_Structures/i_DS_Clear_Grid.png" /></td>
-        <td class="dnd" style=""><a href="Clear_Grid.htm">Clear Grid</a></td>
+        <td class="dnd" style=""><a href="Clear_Grid.htm">Четкая сетка</a></td>
       </tr>
       <tr>
         <td class="dnd_icons" style="margin-left: 16px;"><img alt="Push Onto Stack Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Data_Structures/i_DS_Push_Onto_Stack.png" /></td>
-        <td class="dnd" style=""><a href="Push_Onto_Stack.htm">Push Onto Stack</a></td>
+        <td class="dnd" style=""><a href="Push_Onto_Stack.htm">Перемещение в стек</a></td>
       </tr>
       <tr>
         <td class="dnd_icons" style="margin-left: 16px;"><img alt="Pop Stack Icon" class="icon" height="32" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Data_Structures/i_DS_Pop_Stack.png" width="32" /></td>
-        <td class="dnd" style=""><a href="Push_Onto_Stack.htm">Pop Stack</a></td>
+        <td class="dnd" style=""><a href="Push_Onto_Stack.htm">Поп-стек</a></td>
       </tr>
       <tr>
         <td class="dnd_icons" style="margin-left: 16px;"><img alt="If Data Structure Exists Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Data_Structures/i_DS_If_Data_Structure_Exists.png" /></td>
-        <td class="dnd" style=""><a href="If_Data_Structure_Exists.htm">If Data Structure Exists</a></td>
+        <td class="dnd" style=""><a href="If_Data_Structure_Exists.htm">Если структура данных существует</a></td>
       </tr>
       <tr>
         <td class="dnd_icons" style="margin-left: 16px;"><img alt="If Data Structure Empty Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Data_Structures/i_DS_If_Data_Structure_Empty.png" /></td>
-        <td class="dnd" style=""><a href="If_Data_Structure_Empty.htm">If Data Structure Empty</a></td>
+        <td class="dnd" style=""><a href="If_Data_Structure_Empty.htm">Если структура данных пуста</a></td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="../DnD_Reference.htm">Index</a></div>
-        <div style="float:right">Next: <a href="../Buffers/Buffer_Actions.htm">Buffer Actions</a></div>
+        <div style="float:left">Назад: <a href="../DnD_Reference.htm">Указатель</a></div>
+        <div style="float:right">Следующий: <a href="../Buffers/Buffer_Actions.htm">Действия с буфером</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 GML Visual Data Structure Actions

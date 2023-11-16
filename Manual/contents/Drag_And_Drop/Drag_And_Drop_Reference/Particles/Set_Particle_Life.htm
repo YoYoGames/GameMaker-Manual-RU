@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Set Particle Life</title>
+  <title>Установить срок службы частиц</title>
   <meta name="generator" content="Adobe RoboHelp 2019" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
-  <script src="../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page that explains the Set Particle Life action" />
   <meta name="rh-index-keywords" content="GML Visual Action - Set Particle Life" />
@@ -14,51 +14,51 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1><img alt="Set Particle Life Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Particles/i_Particles_Set_Particle_Life.png" /> Set Particle Life</h1>
-  <p>This action will set the lifespan of the given particle type. You first specify the particle type ID value (which is the value returned when you created the particle using the <a href="Create_Particle_Type.htm">Create Particle Type</a> action) and then
-    you can set the minimum and maximum lifespan of the particle in game frames. For example, if your game has a frames per second of 60, then setting both the lifespan values here to 60 will mean that the particles will last 1 second on screen before
-    disappearing. If you use two different values then each particle spawned will have a random lifespan set within the given minimum and maximum. Note that all values should be positive integers.</p>
-  <p class="note"><b>IMPORTANT!</b> Setting very long lifespans and then emitting hundreds of particles, can cause issues on less powerful machines and on mobile devices. Take care when setting particle lifespan to maximise the visual effect but minimise the performance
-    cost, and only use very long lifespan particles sparingly.</p>
-  <p> </p>
-  <h4>Action Syntax:</h4>
-  <p><img alt="Set Particle Life Action" class="center" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Particles/a_Particles_Set_Particle_Life.png" /></p>
-  <h4>Arguments:</h4>
+  <h1><img> Установить срок службы частиц</h1>
+  <p>Это действие устанавливает продолжительность жизни данного типа частиц. Сначала вы указываете значение ID типа частицы (это значение возвращается при создании частицы с помощью действия <a href="Create_Particle_Type.htm">Create Particle Type</a> ), а затем
+    вы можете задать минимальное и максимальное время жизни частицы в игровых кадрах. Например, если в вашей игре частота кадров в секунду равна 60, то установка обоих значений времени жизни 60 будет означать, что частицы продержатся на экране 1 секунду, прежде чем
+    исчезновением. Если вы используете два разных значения, то каждая порожденная частица будет иметь случайное время жизни в пределах заданного минимума и максимума. Обратите внимание, что все значения должны быть целыми положительными числами.</p>
+  <p class="note"><b>ВАЖНО!</b> Установка очень длительного времени жизни и последующее испускание сотен частиц может вызвать проблемы на менее мощных машинах и мобильных устройствах. Будьте внимательны при установке времени жизни частиц, чтобы максимизировать визуальный эффект, но минимизировать затраты на производительность.
+    и используйте очень долгоживущие частицы только в редких случаях.</p>
+  <p> </p>
+  <h4>Синтаксис действия:</h4>
+  <p><img alt="Set Particle Life Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Particles/i_Particles_Set_Particle_Life.png" /></p>
+  <h4>Аргументы:</h4>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Description</th>
+        <th>Аргумент</th>
+        <th>Описание</th>
       </tr>
       <tr>
-        <td>Type</td>
-        <td>The ID value for the global type to set the lifespan of</td>
+        <td><span class="notranslate">Type</span></td>
+        <td>Значение идентификатора глобального типа для установки продолжительности жизни</td>
       </tr>
       <tr>
-        <td>Min Life</td>
-        <td>The minimum lifespan for a particle (in game frames)</td>
+        <td><span class="notranslate">Min Life</span></td>
+        <td>Минимальное время жизни частицы (в игровых кадрах)</td>
       </tr>
       <tr>
-        <td>Max Life</td>
-        <td>The maximum lifespan for a particle (in game frames)</td>
+        <td><span class="notranslate">Max Life</span></td>
+        <td>Максимальное время жизни частицы (в игровых кадрах)</td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Example:</h4>
-  <p><img alt="Define Particle Example" class="center" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Particles/e_Particles_Create_Particle_Type.png" />The above action block code will create a new particle type and assign its unique
-    ID value to a global variable. It then proceeds to set all the properties for the particle type.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p> </p>
+  <h4>Пример:</h4>
+  <p><img>Приведенный выше код блока действий создаст новый тип частиц и присвоит его уникальное
+    ID значение глобальной переменной. Затем он переходит к установке всех свойств для типа частицы.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Particle_Actions.htm">Particle Actions</a></div>
-        <div style="float:right">Next: <a href="Set_Particle_Speed.htm">Set Particle Speed</a></div>
+        <div style="float:left">Назад: <a href="Particle_Actions.htm">Действия частиц</a></div>
+        <div style="float:right">Следующее: <a href="Set_Particle_Speed.htm">Установить скорость частиц</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2021 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 Action - Set Particle Life

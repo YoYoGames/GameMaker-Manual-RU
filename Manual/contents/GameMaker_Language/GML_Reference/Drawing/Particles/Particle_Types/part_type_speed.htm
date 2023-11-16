@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>part_type_speed</title>
+  <title>тип_детали_скорость</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference page for part_type_speed" />
   <meta name="rh-index-keywords" content="part_type_speed" />
@@ -14,53 +14,52 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>part_type_speed</h1>
-  <p>This function is used to set the movement speed of the particle when it is created and can also be used to make the particle increase or decrease its speed over its lifetime. The minimum and maximum speed values default at 1, which means that the particle will move 1 pixel each step, and if they are set to the same value, the initial speed for all particles will be the same, but if set to different values, each particle will start with a random speed from within the given range. For example if you have a minimum of 3 and a maximum of 6, all particles will be created with a speed between three and six pixels per step.</p>
-  <p>You can also set an increment value that will make the particle move faster (if a positive number) or slower (if a negative number) over its lifetime, with the given amount being added to the particle speed each and every step. This value can be a minimum of (+/-)0.01.</p>
-  <p>Finally, you can set the &quot;wiggle&quot; factor. This is a value that will be added or subtracted randomly to the speed each step of the particles lifetime. Obviously larger values are more pronounced than smaller ones, and this value can even be a negative with the maximum range being between -20 and 20.</p>
-  <div data-conref="../../../../../assets/snippets/Note_Particle_Property_Can_Be_Changed.hts"> </div>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <h1>тип_детали_скорость</h1>
+  <p>Эта функция используется для установки скорости движения частицы при ее создании, а также может использоваться для увеличения или уменьшения скорости частицы в течение ее жизни. Минимальное и максимальное значения скорости по умолчанию равны 1, что означает, что частица будет перемещаться на 1 пиксель каждый шаг. Если они установлены в одно и то же значение, начальная скорость для всех частиц будет одинаковой, но если они установлены в разные значения, каждая частица будет стартовать со случайной скоростью из заданного диапазона. Например, если вы задали минимальное значение 3 и максимальное 6, все частицы будут созданы со скоростью от трех до шести пикселей за шаг.</p>
+  <p>Вы также можете задать значение приращения, которое заставит частицу двигаться быстрее (если число положительное) или медленнее (если число отрицательное) в течение ее жизни, причем заданное значение будет добавляться к скорости частицы на каждом шаге. Это значение может составлять минимум (+/-)0,01.</p>
+  <p>Наконец, вы можете задать коэффициент &quot;вихляния&quot;. Это значение, которое будет случайным образом прибавляться или вычитаться к скорости на каждом шаге времени жизни частиц. Очевидно, что большие значения более выражены, чем меньшие, и это значение может быть даже отрицательным с максимальным диапазоном от -20 до 20.</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
   <p class="code">part_type_speed(ind, speed_min, speed_max, speed_incr, speed_wiggle);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Аргумент</th>
+        <th>Тип</th>
+        <th>Описание</th>
       </tr>
       <tr>
-        <td>ind</td>
-        <td><span data-keyref="Type_ID_PartType"><a href="../../../../../../GameMaker_Language/GML_Reference/Drawing/Particles/Particle_Types/part_type_create.htm" target="_blank">Particle Type ID</a></span></td>
-        <td>The index of the particle type to change.</td>
+        <td><span class="notranslate">ind</span></td>
+        <td><span data-keyref="Type_ID_PartType">Идентификатор типа частицы</span></td>
+        <td><span class="notranslate">The index of the particle type to change.</span></td>
       </tr>
       <tr>
-        <td>speed_min</td>
-        <td><span data-keyref="Type_Real"><a href="../../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
-        <td>The minimum speed the particle can start at.</td>
+        <td><span class="notranslate">speed_min</span></td>
+        <td><span data-keyref="Type_Real">Реально</span></td>
+        <td><span class="notranslate">The minimum speed the particle can start at.</span></td>
       </tr>
       <tr>
-        <td>speed_max</td>
-        <td><span data-keyref="Type_Real"><a href="../../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
-        <td>The maximum speed the particle can start at.</td>
+        <td><span class="notranslate">speed_max</span></td>
+        <td><span data-keyref="Type_Real">Реально</span></td>
+        <td><span class="notranslate">The maximum speed the particle can start at.</span></td>
       </tr>
       <tr>
-        <td>speed_incr</td>
-        <td><span data-keyref="Type_Real"><a href="../../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
-        <td>How much the particle speed should increase or decrease per step.</td>
+        <td><span class="notranslate">speed_incr</span></td>
+        <td><span data-keyref="Type_Real">Реально</span></td>
+        <td><span class="notranslate">How much the particle speed should increase or decrease per step.</span></td>
       </tr>
       <tr>
-        <td>speed_wiggle</td>
-        <td><span data-keyref="Type_Real"><a href="../../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
-        <td>How much should randomly be added or subtracted from the particle&#39;s speed per step.</td>
+        <td><span class="notranslate">speed_wiggle</span></td>
+        <td><span data-keyref="Type_Real">Реально</span></td>
+        <td><span class="notranslate">How much should randomly be added or subtracted from the particle&#39;s speed per step.</span></td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
   <p class="code"><span data-keyref="Type_Void">N/A</span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Пример:</h4>
   <p class="code">part_type_shape(particle2, pt_shape_flare);<br />
     part_type_size(particle2, 0.01, 0.50, 0.01, 20);<br />
     part_type_scale(particle2, 0.10, 0.10);<br />
@@ -72,18 +71,18 @@
     part_type_orientation(particle2, 0, 359, 0, 20, 1);<br />
     part_type_blend(particle2, 1);<br />
     part_type_life(particle2, 1, 20);</p>
-  <p>The above code will set various particle values including the speed which sets a minimum speed of five and a maximum speed of ten, with the speed slowing down by a value of -0.2 each step. The speed will also wiggle by a random value between 0 and 20 each step.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Приведенный выше код установит различные значения частиц, включая скорость, которая устанавливает минимальную скорость 5 и максимальную скорость 10, при этом скорость замедляется на значение -0,2 каждый шаг. Скорость также будет колебаться на случайное значение от 0 до 20 на каждом шаге.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Particle_Types.htm">Particle Types</a></div>
-        <div style="float:right">Next: <a href="part_type_direction.htm">part_type_direction</a></div>
+        <div style="float:left">Назад: <a href="Particle_Types.htm">Типы частиц</a></div>
+        <div style="float:right">Следующий: <a href="part_type_direction.htm"><span class="notranslate">part_type_direction</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 part_type_speed

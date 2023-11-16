@@ -6,7 +6,7 @@
   <title>draw_enable_swf_aa</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference page for draw_enable_swf_aa" />
   <meta name="rh-index-keywords" content="draw_enable_swf_aa" />
@@ -15,44 +15,44 @@
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
   <h1>draw_enable_swf_aa</h1>
-  <p>With this function you can enable or disable anti-aliasing (AA) for SWF format vector sprites. AA simply smooths the edges of vector images to give them a nicer look. The amount of AA used will depend on the value set using the function <a href="draw_set_swf_aa_level.htm"><span class="inline">draw_set_swf_aa_level()</span></a>. By default this is disabled.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p>С помощью этой функции вы можете включить или отключить сглаживание (AA) для векторного формата SWF <span class="notranslate">sprites</span>. AA просто сглаживает края векторных изображений, чтобы придать им более приятный вид. Количество используемого сглаживания зависит от значения, установленного с помощью функции <a href="draw_set_swf_aa_level.htm"><span class="inline">draw_set_swf_aa_level()</span></a>. По умолчанию эта функция отключена.</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
   <p class="code">draw_enable_swf_aa(enable);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th><th>Type</th>
-        <th>Description</th>
+        <th>Аргумент</th><th>Тип</th>
+        <th>Описание</th>
      </tr>
       <tr>
-        <td>enable</td><td><span data-keyref="Type_Bool"></span></td>
-        <td>Enable (<span class="inline">true</span>) or disable (<span class="inline">false</span>) AA for all SWF sprites.</td>
+        <td><span class="notranslate">enable</span></td><td><span data-keyref="Type_Bool"></span></td>
+        <td><span class="notranslate">Enable (<span class="inline">true</span>) или отключить (<span class="inline">false</span>) AA для всех SWF <span class="notranslate">sprites</span>.</td>
      </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
   <p class="code"><span data-keyref="Type_Void"></span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Пример:</h4>
   <p class="code">if draw_get_swf_aa_level() == 0<br />
     {<br />
         draw_enable_swf_aa(true);<br />
         draw_set_swf_aa_level(0.5);<br />
     }</p>
-  <p>The above code will check the AA value for SWF format sprites, and if it is 0 it enables AA and sets the value to 0.5.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Приведенный выше код проверит значение AA для формата SWF <span class="notranslate">sprites</span>, и если оно равно 0, то включит AA и установит значение 0,5.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Sprites_And_Tiles.htm">Sprites And Tiles</a></div>
-        <div style="float:right">Next: <a href="draw_set_swf_aa_level.htm">draw_set_swf_aa_level</a></div>
+        <div style="float:left">Назад: <a href="Sprites_And_Tiles.htm">Спрайты и плитки</a></div>
+        <div style="float:right">Следующий: <a href="draw_set_swf_aa_level.htm"><span class="notranslate">draw_set_swf_aa_level</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2021 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 draw_enable_swf_aa

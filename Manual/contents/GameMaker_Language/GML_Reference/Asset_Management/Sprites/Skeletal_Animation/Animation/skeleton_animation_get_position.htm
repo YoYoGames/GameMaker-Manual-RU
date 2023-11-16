@@ -6,7 +6,7 @@
   <title>skeleton_animation_get_position</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Bart Teunis" />
   <meta name="topic-comment" content="Page explaining the function skeleton_animation_get_position" />
   <meta name="rh-index-keywords" content="skeleton_animation_get_position" />
@@ -16,45 +16,46 @@
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
   <h1><span data-field="title" data-format="default">skeleton_animation_get_position</span></h1>
-  <p>This function will return the position of the animation on the specified animation track as a value ranging from 0 to 1. This way you can get the track position as a percentage where the value 0 corresponds to 0% and the value 1 to 100%.</p>
-  <p>It will return -1 if no animation is assigned to the specific track given or if the instance has no sprite set.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p>Эта функция возвращает позицию анимации на указанном анимационном треке в виде значения от 0 до 1. Таким образом, вы можете получить позицию трека в процентах, где значение 0 соответствует 0%, а значение 1 - 100%.</p>
+  <p>Возвращает -1, если для конкретного трека не назначена анимация или если для экземпляра не установлен <span class="notranslate">sprite</span>.</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
   <p class="code"><span data-field="title" data-format="default">skeleton_animation_get_position</span>(track);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Аргумент</th>
+        <th>Тип</th>
+        <th>Описание</th>
       </tr>
       <tr>
-        <td>track</td>
-        <td><span data-keyref="Type_Real"><a href="../../../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
-        <td>The animation track to get the position of.</td>
+        <td><span class="notranslate">track</span></td>
+        <td><span data-keyref="Type_Real"><a href="../../../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Реально</a></span></td>
+        <td><span class="notranslate">The animation track to get the position of.</span></td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
   <p class="code"><span data-keyref="Type_Real"><a href="../../../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Пример:</h4>
   <p class="code">var _position = <span data-field="title" data-format="default">skeleton_animation_get_position</span>(0);<br />
     var _position_percent = _position * 100;<br />
     show_debug_message(&quot;The skeleton animation position on track 0 is at &quot; + string(_position_percent) + &quot;%.&quot;);</p>
-  <p>The above code checks the current position of the skeleton animation assigned to track 0 and stores it in a temporary variable <span class="inline2">_position</span>. It then converts that value to a percentage by multiplying it by 100 and stores the result of that in another temporary variable <span class="inline2">_position_percent</span>.<br />
-    Finally it shows a debug message that displays the percent value.</p>
-  <p> </p>
-  <p> </p>
+  <p>Приведенный выше код проверяет текущую позицию скелетной анимации, назначенной дорожке 0, и сохраняет ее во временной переменной <span class="inline2">_position</span>. Затем он преобразует это значение в проценты, умножая его на 100, и сохраняет результат в другой временной переменной <span class="inline2">_position_percent</span>.<br>
+    Наконец, он выводит отладочное сообщение, в котором отображается значение процента.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Animation.htm">Animation</a></div>
-        <div style="float:right">Next: <a href="skeleton_animation_set_position.htm">skeleton_animation_set_position</a></div>
+        <div style="float:left">Назад: <a href="Animation.htm">Анимация</a></div>
+        <div style="float:right">Далее: <a href="skeleton_animation_set_position.htm">skeleton_animation_set_position</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 skeleton_animation_get_frame

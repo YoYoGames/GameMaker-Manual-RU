@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>steam_download_scores</title>
+  <meta name="generator" content="Adobe RoboHelp 2020" />
+  <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
+  <script src="../../../../assets/scripts/main_script.js"></script>
+  <meta name="rh-authors" content="Mark Alexander" />
+  <meta name="topic-comment" content="Reference page for steam_download_scores" />
+  <meta name="rh-index-keywords" content="steam_download_scores" />
+  <meta name="search-keywords" content="steam_download_scores" />
+</head>
+<body>
+  <!--<div class="body-scroll" style="top: 150px;">-->
+  <h1>steam_download_scores</h1>
+  <p>Эта функция используется для получения последовательного диапазона записей в таблице лидеров по их рейтингу. Параметры <tt>start_idx</tt> и <tt>end_idx</tt> управляют запрашиваемым диапазоном рангов, например, вы можете отобразить топ-10 в таблице лидеров вашей игры, задав значение start равным 1, а значение end равным 10. Имя таблицы лидеров - это строка, которая была задана при создании таблицы лидеров с помощью функции <a href="steam_create_leaderboard.htm"><tt>steam_create_leaderboard()</tt></a>, а функция вернет значение, которое затем может быть использовано для идентификации обратного вызова в <a href="../../../../The_Asset_Editors/Object_Properties/Async_Events/Steam.htm">событии Steam Async Event</a>, или вернет -1 в случае неудачи. Обратите внимание, что при загрузке таблицы лидеров ключ &quot;entries&quot; в <a href="../../../GML_Overview/Variables/Builtin_Global_Variables/async_load.htm"><tt>асинхронная_загрузка</tt></a> map может иметь дополнительный ключ &quot;data&quot;, если вместе с результатом были загружены дополнительные данные буфера (см. <a href="steam_upload_score_buffer.htm"><tt>steam_upload_score_buffer()</tt></a>). Этот буфер данных будет <b>закодирован в Base 64</b>, поэтому вам необходимо использовать функцию <a href="../../Buffers/buffer_base64_decode.htm"><tt>buffer_base64_decode()</tt></a> на буфере перед чтением данных.</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
+  <p class="code">steam_download_scores(lb_name, start_idx, end_idx);</p>
+  <table>
+    <tbody>
+      <tr>
+        <th>Аргумент</th>
+        <th>Описание</th>
+      </tr>
+      <tr>
+        <td><span class="notranslate">lb_name</span></td>
+        <td>Название таблицы лидеров, с которой вы загружаете результаты (строка).</td>
+      </tr>
+      <tr>
+        <td><span class="notranslate">start_idx</span></td>
+        <td>Стартовая позиция в таблице лидеров.</td>
+      </tr>
+      <tr>
+        <td><span class="notranslate">end_idx</span></td>
+        <td>Конечная позиция в таблице лидеров.</td>
+      </tr>
+    </tbody>
+  </table>
+  <p> </p>
+  <h4>Возвращается:</h4>
+  <p class="code">Real</p>
+  <p> </p>
+  <h4>Расширенный пример:</h4>
+  <p>В этом расширенном примере мы запросим первую десятку рейтинга для заданной таблицы лидеров и разберем ее результаты в <b>Steam Async Event</b>. Для начала нам нужно запросить баллы с помощью следующего кода:</p>
+  <p class="code">score_get = steam_download_scores(&quot;Game Scores&quot;, 1, 10);</p>
+  <p>Это отправит запрос на сервер <span class="notranslate">Steam</span> для получения очков из таблицы лидеров &quot;Game Scores&quot;, сохраняя <b>асинхронный идентификатор</b> запроса в переменной &quot;score_get&quot;. Затем он будет обработан в <b>событии Steam Async Event</b> следующим образом:</p>
+  <p class="code">var async_id = ds_map_find_value(async_load, &quot;id&quot;);<br />
+    if async_id == score_get<br />
+    {<br />
+        var entries = ds_map_find_value(async_load, &quot;entries&quot;);<br />
+        var map = json_decode(entries);<br />
+        if ds_map_exists(map, &quot;default&quot;)<br />
+        {<br />
+            ds_map_destroy(map);<br />
+            exit;<br />
+        }<br />
+        else<br />
+        {<br />
+            var list = ds_map_find_value(map, &quot;entries&quot;);<br />
+            var len = ds_list_size(list);<br />
+            var entry;<br />
+            for(var i = 0; i &lt; len; i++;)<br />
+            {<br />
+                entry = ds_list_find_value(list, i );<br />
+                steam_name[i] = ds_map_find_value(entry, &quot;name&quot;);<br />
+                steam_score[i] = ds_map_find_value(entry, &quot;score&quot;);<br />
+                steam_rank[i] = ds_map_find_value(entry, &quot;rank&quot;);<br />
+            }<br />
+        }<br />
+        ds_map_destroy(map)<br />
+    }</p>
+  <p>Здесь мы сначала проверяем ключ &quot;id&quot; специальной карты <tt>async_load</tt> DS. Если это значение совпадает со значением исходной функции обратного вызова (хранится в переменной &quot;score_get&quot;), мы продолжаем обработку данных. Первое, что мы делаем, это анализируем <tt>async_load</tt> ds_map для ключа &quot;entries&quot;, который будет содержать объект JSON, содержащий данные таблицы лидеров. Затем этот JSON-объект декодируется (см. <a href="../../File_Handling/Encoding_And_Hashing/json_decode.htm"><tt>json_decode()</tt></a>) в другую DS-карту, и этот новый идентификатор карты сохраняется в переменной &quot;map&quot;.</p>
+  <p>Эта карта проверяется на наличие ключа &quot;default&quot;, и если он найден, то карта уничтожается и событие завершается. Если ключ &quot;default&quot; не найден, код разбирает карту для извлечения необходимой информации о таблице лидеров, сначала извлекая список DS из ключа &quot;entries&quot; карты DS, а затем перебирая каждую запись списка для получения <i>другой</i> карты DS с именем, оценкой и рангом каждой записи. Затем эти значения сохраняются в массивах.</p>
+  <p>После завершения цикла карта DS JSON уничтожается (что в свою очередь уничтожает все внутренние карты и списки). Нет необходимости уничтожать карту DS <tt>async_load</tt>, так как за вас это сделает <span class="notranslate">GameMaker Studio 2</span>.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <div class="footer">
+    <div class="buttons">
+      <div class="clear">
+        <div style="float:left">Назад: <a href="Steam_Leaderboards.htm">Таблицы лидеров</a></div>
+        <div style="float:right">Следующий: <a href="steam_download_scores_around_user.htm"><span class="notranslate">steam_download_scores_around_user</span></a></div>
+      </div>
+    </div>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
+  </div>
+  <!-- KEYWORDS
+steam_download_scores
+-->
+  <!-- TAGS
+steam_download_scores
+-->
+</body>
+</html>

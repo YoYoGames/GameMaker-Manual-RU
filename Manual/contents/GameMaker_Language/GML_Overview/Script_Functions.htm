@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Script Functions And Variables</title>
-  <meta name="generator" content="Adobe RoboHelp 2022" />
+  <title>Функции и переменные сценария</title>
+  <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../assets/css/default.css" type="text/css" />
-  <script src="../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Gurpreet S. Matharoo" />
   <meta name="topic-comment" content="Page outlining the use of scripts to create functions and global variables and macros" />
   <meta name="rh-index-keywords" content="Script Functions And Variables" />
@@ -14,13 +14,13 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>Script Functions And Variables</h1>
-  <p>Script assets are essentially a collection of one or more user defined functions or variables that you write yourself as snippets of code in the <a href="../../The_Asset_Editors/Scripts.htm">Script Editor</a>. The functions you define in a script can resolve expressions, return values or do anything else that the GameMaker Language permits, just like the built in <a href="Runtime_Functions.htm">runtime functions</a>.</p>
-  <p>Script functions should generally be used if you have a block of code that you use in more than one place or object, or when you want a block of code to be used across multiple objects in a modular fashion. Using scripts to define functions means that you can change the function just once when required and the change will be &quot;picked up&quot; by every object that has a call to the function.</p>
-  <p>Scripts can also be very handy from an organisational point of view, as they permit you to create groups of functions that belong to a certain category - for example, you might have several functions all related to collisions between instances in your game, so you would create a &quot;<span class="inline">Collision_Functions</span>&quot; script and store all these functions together in it.</p>
-  <p>Also see: <a data-xref="{title}" href="Script_Functions_vs_Methods.htm">Script Functions vs. Methods</a></p>
-  <h2>Creating Functions</h2>
-  <p>When creating a script with functions in it, the functions must be created using the following formats:</p>
+  <h1>Функции и переменные сценария</h1>
+  <p>Активы сценария - это, по сути, набор одной или нескольких функций или переменных, определенных пользователем, которые вы сами записываете в виде фрагментов кода в <a href="../../The_Asset_Editors/Scripts.htm">редакторе сценариев</a>. Функции, которые вы определяете в сценарии, могут разрешать выражения, возвращать значения или делать все остальное, что разрешено на сайте <span class="notranslate">GameMaker Language</span>, как и встроенные <a href="Runtime_Functions.htm">функции времени выполнения</a>.</p>
+  <p>Функции сценариев обычно используются, если у вас есть блок кода, который вы используете в нескольких местах или объектах, или когда вы хотите, чтобы блок кода использовался в нескольких объектах модульно. Использование скриптов для определения функций означает, что при необходимости вы можете изменить функцию всего один раз, и это изменение будет &quot;подхвачено&quot; каждым объектом, в котором есть вызов функции.</p>
+  <p>Скрипты также могут быть очень удобны с организационной точки зрения, поскольку они позволяют создавать группы функций, относящихся к определенной категории - например, у вас может быть несколько функций, связанных со столкновениями между объектами в вашей игре, поэтому вы создадите скрипт &quot;<span class="inline">Collision_Functions</span>&quot; и будете хранить в нем все эти функции вместе.</p>
+  <p>Также см: <a data-xref="{title}" href="Script_Functions_vs_Methods.htm">Функции сценария в сравнении с методами</a></p>
+  <h2>Создание функций</h2>
+  <p>При создании сценария с функциями в нем, функции должны быть созданы с использованием следующих форматов:</p>
   <p class="code"><span>function name( parameter1, parameter2, ... )<br />
       {</span><br />
     <span>    statement1;</span><br />
@@ -28,7 +28,7 @@
     <span>    ...</span><br />
     <span>}</span>
   </p>
-  <p>or:</p>
+  <p>или:</p>
   <p class="code"><span><span>name = </span>function( parameter1, parameter2, ... )</span><br />
     <span>{</span><br />
     <span>    statement1;</span><br />
@@ -36,56 +36,37 @@
     <span>    ...</span><br />
     <span>}</span>
   </p>
-  <p class="note">To create a function in GML Visual, use <a data-xref="{title}" href="../../Drag_And_Drop/Drag_And_Drop_Reference/Common/Declare_A_New_Function.htm">Declare A New Function</a>. Enable its &quot;Temp&quot; option to create a method variable (second syntax shown above).</p>
-  <p>In general, however, you would use the <em>first </em>form for script functions as it will define the function as specifically being a script function, meaning that it will be <strong>global </strong>in <a href="Variables_And_Variable_Scope.htm">scope</a>, be assigned a <strong>script index</strong>, and not require the <span class="inline">global</span> prefix to identify it since the compiler will recognise it as a script function.</p>
-  <p>Using the second form will instead be generating a global scope <a href="Method_Variables.htm">method variable</a>, and as such it will <em>not </em>be recognised as a script function by the IDE and will require the use of the <span class="inline">global</span> prefix when being referenced in your code.</p>
-  <p class="note"><span class="note">NOTE</span> You can check this by using both forms in a script and then calling the runtime function <a href="../GML_Reference/Variable_Functions/typeof.htm">typeof()</a> on each of them. One will be classed as a &quot;number&quot; - since it returns a script index ID - and the other will be classed as a &quot;method&quot;.</p>
-  <h2>Parameters/Arguments</h2>
-  <p>You can define your own parameters/arguments for a function, which will be available to the function as local variables and can be used for any purpose within that function:</p>
+  <p class="note">Чтобы создать функцию в <span class="notranslate">GML</span> Visual, используйте <a data-xref="{title}" href="../../Drag_And_Drop/Drag_And_Drop_Reference/Common/Declare_A_New_Function.htm">Declare A New Function</a>. Включите опцию &quot;Temp&quot; для создания переменной метода (второй синтаксис показан выше).</p>
+  <p>В целом, однако, для скриптовых функций следует использовать <em>первую </em>форму, так как она определяет функцию именно как скриптовую, то есть она будет <strong>глобальной </strong>по <a href="Variables_And_Variable_Scope.htm">области видимости</a>, ей будет присвоен <strong>индекс скрипта</strong> и не потребуется префикс <span class="inline">global</span> для ее идентификации, так как компилятор распознает ее как скриптовую функцию.</p>
+  <p>При использовании второй формы вместо этого будет создана <a href="Method_Variables.htm">переменная метода</a> глобальной области видимости, и как таковая она <em>не </em>будет распознана <span class="notranslate">IDE</span> как функция сценария и потребует использования префикса <span class="inline">global</span> при ссылках в вашем коде.</p>
+  <p class="note"><span class="note">ПРИМЕЧАНИЕ</span> Вы можете проверить это, используя обе формы в сценарии, а затем вызвав функцию выполнения <a href="../GML_Reference/Variable_Functions/typeof.htm">typeof()</a> для каждой из них. Одна из них будет классифицирована как &quot;число&quot; - поскольку она возвращает идентификатор индекса сценария - а другая будет классифицирована как &quot;метод&quot;.</p>
+  <h2>Параметры/Аргументы</h2>
+  <p>Вы можете определить свои собственные параметры/аргументы для функции, которые будут доступны функции как локальные переменные и могут быть использованы для любых целей внутри этой функции:</p>
   <p class="code">function move(<strong>spd, dir</strong>)<br />
     {<br />
         speed = <strong>spd</strong>;<br />
         direction = <strong>dir</strong>;<br />
     }</p>
-  <p>This function takes two arguments and applies their values to the instance&#39;s <span class="inline">speed</span> and <span class="inline">direction</span> variables. It can now be called like any runtime function and arguments can be passed into it:</p>
+  <p>Эта функция принимает два аргумента и применяет их значения к переменным экземпляра <span class="inline">speed</span> и <span class="inline">direction</span>. Теперь ее можно вызывать как любую функцию времени выполнения и передавать в нее аргументы:</p>
   <p class="code">var _mouse_dir = point_direction(x, y, mouse_x, mouse_y);<br />
     <br />
     <strong>move(4, _mouse_dir);</strong>
   </p>
-  <h2>Index-Based Arguments</h2>
-  <p>Arguments passed into a function can also be accessed through the <span class="inline">argumentN</span> variables (<em>argument0, argument1, etc.</em>) or the <a href="Variables/Builtin_Global_Variables/argument.htm"><span class="inline">argument[]</span></a> array (<em>argument[0], argument[1], etc.</em>).</p>
-  <p>You can get the number of arguments passed into the function using <a href="Variables/Builtin_Global_Variables/argument_count.htm"><span class="inline">argument_count</span></a>, thus allowing a variable number of arguments to be passed in.</p>
-  <p class="code">function print(){<br />
-        var _str = &quot;&quot;;<br />
-    <br />
-        for (var i = 0; i &lt; argument_count; i ++)<br />
-        {<br />
-            _str += string(argument[i]);<br />
-        }<br />
-    <br />
-        show_debug_message(_str);<br />
-    }<br />
-    <br />
-    // In an object<br />
-    print(&quot;Player : &quot;, current_time, &quot; : &quot;, id, &quot; : fired&quot;);
-  </p>
-  <p>This <span class="inline2">print()</span> function loops through all the passed arguments, and adds them to a string variable. That string is then printed to the output log.</p>
-  <p>You can now call this function with as many strings as you like, which will all be joined together.</p>
-  <h2>Optional Arguments</h2>
-  <p>If an argument is not given to a function, its value will be <span class="inline">undefined</span>. You can use this to define <em>optional</em> arguments, and check whether an argument is passed in or not by checking if it is equal to <span class="inline">undefined</span>. However, you can also explicitly define a default value for an argument which will be used instead of <span class="inline">undefined</span> when it is not passed in.</p>
-  <p>You can assign such a default value to a parameter using the equal (<span class="inline">=</span>) sign, making it an optional variable:</p>
+  <h2>Необязательные аргументы</h2>
+  <p>Если аргумент не передан функции, его значением будет <span class="inline">undefined</span>. Вы можете использовать это для определения <em>необязательных</em> аргументов и проверять, передан аргумент или нет, проверяя, равен ли он <span class="inline">undefined</span>. Однако вы также можете явно определить значение по умолчанию для аргумента, которое будет использоваться вместо <span class="inline">undefined</span>, когда он не передан.</p>
+  <p>Вы можете присвоить такое значение по умолчанию параметру с помощью знака равенства (<span class="inline">=</span>), сделав его необязательной переменной:</p>
   <p class="code">function move(spd, <strong>dir = 90</strong>)<br />
     {<br />
         speed = spd;<br />
         direction = dir;<br />
     }</p>
-  <p>If the <span class="inline">dir</span> argument is not passed in when calling the above function, then its value will default to <span class="inline">90</span>, moving the instance in an upward direction.</p>
-  <p class="note"><span class="tip">TIP</span> You can omit arguments from function calls and they will default to <span class="inline">undefined</span> (or the default value for that argument as defined by the function).<br />
-    <br />
-    For example, writing <span class="inline">my_func(0,,,1)</span> is the same as writing <span class="inline">my_func(0, undefined, undefined, 1)</span>.
+  <p>Если аргумент <span class="inline">dir</span> не передан при вызове вышеуказанной функции, то его значение по умолчанию будет равно <span class="inline">90</span>, перемещая экземпляр в направлении вверх.</p>
+  <p class="note"><span class="tip">СОВЕТ</span> Вы можете опустить аргументы в вызовах функций, и они будут иметь значение по умолчанию <span class="inline">undefined</span> (или значение по умолчанию для этого аргумента, определенное функцией).<br>
+    <br>
+    Например, написать <span class="inline">my_func(0,,,1)</span> - это то же самое, что написать <span class="inline">my_func(0, undefined, undefined, 1)</span>.
   </p>
   <hr />
-  <p>The default value of an optional variable can be an expression, so for example, you can use variables and call functions while defining an optional variable. Note that such an expression will only be executed if its optional argument is not provided in the function call. See the following example of a logging function:</p>
+  <p>Значением по умолчанию необязательной переменной может быть выражение, поэтому, например, при определении необязательной переменной можно использовать переменные и вызывать функции. Обратите внимание, что такое выражение будет выполнено только в том случае, если его необязательный аргумент не указан в вызове функции. См. следующий пример функции протоколирования:</p>
   <p class="code">function log(text = &quot;Log&quot;, object = object_index, time = date_datetime_string(date_current_datetime()))<br />
     {<br />
         var _string = &quot;[&quot; + string(time) + &quot;] &quot;;<br />
@@ -94,7 +75,7 @@
         <br />
         show_debug_message(_string);<br />
     }</p>
-  <p>This function takes three arguments, where the first argument defaults to a string constant, the second argument defaults to an instance variable (in the scope of the calling instance) and the third argument defaults to an expression calling a function to retrieve the current date and time. This function can now be called with up to three arguments, as seen in the following example:</p>
+  <p>Эта функция принимает три аргумента, где первый аргумент по умолчанию является строковой константой, второй аргумент по умолчанию является переменной экземпляра (в области видимости вызывающего экземпляра), а третий аргумент по умолчанию является выражением, вызывающим функцию для получения текущей даты и времени. Теперь эта функция может быть вызвана с тремя аргументами, как показано в следующем примере:</p>
   <p class="code">log();<br />
     // Prints: [09-Jun-21 12:34:37 PM] Object1: Log<br />
     <br />
@@ -102,7 +83,7 @@
     // Prints: [10] obj_player: Player Shot
   </p>
   <h2>JSDoc</h2>
-  <p>We also recommend that you add comments to define the properties of the function (see the section on <a href="../../The_Asset_Editors/Code_Editor_Properties/JSDoc_Script_Comments.htm">JSDoc Comments</a> for more details), such that a simple script would look like this:</p>
+  <p>Мы также рекомендуем добавить комментарии для определения свойств функции (подробнее см. раздел " <a href="../../The_Asset_Editors/Code_Editor_Properties/JSDoc_Script_Comments.htm">Комментарии JSDoc"</a> ), чтобы простой сценарий выглядел следующим образом:</p>
   <p class="code">/// @function                 log(message);<br />
     /// @param {string}  message  The message to show<br />
     /// @description              Show a message whenever the function is called.<br />
@@ -112,12 +93,12 @@
         show_debug_message(message);<br />
     }
   </p>
-  <p>Additional functions for the script can be added using the same format as shown above, one after the other within the script asset.</p>
+  <p>Дополнительные функции для скрипта могут быть добавлены в том же формате, как показано выше, одна за другой внутри актива скрипта.</p>
   <p><img alt="Multiple Functions In One Script" class="center" src="../../assets/Images/Scripting_Reference/GML/Overview/Multiple_Functions_Scripts.png" /></p>
-  <h2>Return Value</h2>
-  <p>Functions in scripts can also return a value, just as runtime functions can, and as such they can be used in expressions. For this you would use the <a href="Language_Features/return.htm"><span class="inline">return</span></a> statement:</p>
+  <h2>Возвращаемое значение</h2>
+  <p>Функции в сценариях также могут возвращать значение, как и функции времени выполнения, и поэтому их можно использовать в выражениях. Для этого вы можете использовать <a href="Language_Features/return.htm"><span class="inline">return</span></a> выражение:</p>
   <p class="code">return &lt;expression&gt;</p>
-  <p>It should be noted that the <strong><i>execution of the function ends at the return statement</i></strong>, meaning that any code which comes after <strong>return </strong>has been called <i>will not be run</i>. Here is a short example function from a function called &quot;<span class="inline">sqr_calc</span>&quot; which calculates the square of whatever value is passed to it, and in case the given value is not a real number, it uses <strong>return</strong> to end the function early so the actual calculation never runs:</p>
+  <p>Следует заметить, что оператор return <strong><i>выполнение функции заканчивается на операторе возврата</i></strong>означает, что любой код, пришедший после вызова <strong>return </strong>, <i>не будет выполнен</i>. Вот короткий пример функции под названием &quot;<span class="inline">sqr_calc</span>&quot;, которая вычисляет квадрат любого переданного ей значения, и в случае, если данное значение не является действительным числом, она использует <strong>return</strong> для досрочного завершения функции, так что фактическое вычисление никогда не выполняется:</p>
   <p class="code">/// @function           sqr_calc(val);<br />
     /// @param {real}  val  The value to calculate the square of<br />
     /// @description        Calculate the square of the given value<br />
@@ -132,15 +113,15 @@
         return (val * val);<br />
     }
   </p>
-  <p>Note that if you create a script function with <em>no</em> return value then in your code check for one, you will get the value <span class="inline">undefined</span> by default.</p>
-  <p>To call a script function from within a piece of code, just use it the same way as when calling any runtime function - that is, write the function name with the parameter values in parentheses. So, the above script would be called like this:</p>
+  <p>Обратите внимание, что если вы создадите функцию скрипта <em>без</em> возвращаемого значения, а затем в своем коде проверите его наличие, то по умолчанию вы получите значение <span class="inline">undefined</span>.</p>
+  <p>Чтобы вызвать функцию скрипта из кода, просто используйте ее так же, как и при вызове любой функции времени выполнения - то есть напишите имя функции со значениями параметров в круглых скобках. Таким образом, приведенный выше сценарий будет вызываться следующим образом:</p>
   <p class="code">if keyboard_check_pressed(vk_enter)<br />
     {<br />
         val = scr_sqr(amount);<br />
     }</p>
-  <p class="note"><span data-conref="../../assets/snippets/Tag_note.hts"> </span> When using your own functions from scripts in the code editor, you can press<span> <img alt="F1 Icon" class="icon" height="20" src="../../assets/Images/Icons/Icon_f1.png" width="55" /></span> or click the middle mouse button <span><img alt="MMB Icon" class="icon" src="../../assets/Images/Icons/Icon_MMB.png" /> </span>on the function name to open the script that contains it for editing directly.</p>
-  <h2>Script Names vs. Function Names</h2>
-  <p>It is important to understand that script <i>names</i> are <b>independent of the functions that they contain</b>, so you can name your scripts in a more &quot;common sense&quot; way, ie: all your AI functions could go in a script &quot;<span class="inline">Enemy_AI</span>&quot; (following the standard asset naming conventions of alpha-numeric characters and the under-bar &quot;_&quot; only). However, you can still call scripts in your game - and you can name scripts the same as a function that you define in them - which can give rise to a issues due to the way that <span data-keyref="GameMaker Name">GameMaker</span> stores asset references. To give an example consider this code, called from an instance:</p>
+  <p class="note"><strong>ПРИМЕЧАНИЕ</strong>: При использовании собственных функций из скриптов в редакторе кода можно нажать кнопку<span> <img></span> или нажать среднюю кнопку мыши <span><img> </span>на имени функции, чтобы открыть содержащий ее сценарий для редактирования.</p>
+  <h2>Имена сценариев в сравнении с именами функций</h2>
+  <p>Важно понимать, что <i>имена</i> скриптов <b>не зависят от функций, которые они содержат</b>, поэтому вы можете называть свои скрипты более &quot;здравым&quot; образом, т.е. все ваши функции AI могут быть помещены в скрипт &quot;<span class="inline">Enemy_AI</span>&quot; (следуя стандартным соглашениям об именовании активов, состоящим только из буквенно-цифровых символов и нижнего символа &quot;_&quot;). Однако вы все равно можете вызывать скрипты в своей игре - и вы можете называть скрипты так же, как и функции, которые вы в них определяете - что может привести к проблемам из-за способа, которым <span data-keyref="GameMaker Name">GameMaker</span> хранит ссылки на активы. В качестве примера рассмотрим этот код, вызываемый из экземпляра:</p>
   <p class="code">function indirectCall(func, arg)<br />
     {<br />
         func(arg);<br />
@@ -148,7 +129,7 @@
     <br />
     indirectCall(myscript, arg);
   </p>
-  <p>The above code is attempting to call a script called &quot;myscript&quot; within a method, which in this case will fail. This is because the in-line function is actually using the <em>index</em> for the script asset and <strong>not </strong>actually calling the script function - eg: if the script index resolves to &quot;4&quot;, essentially the function is calling <span class="inline">4(arg);</span>, which makes no sense. The code should instead be structured in one of the following two ways:</p>
+  <p>Приведенный выше код пытается вызвать скрипт под названием &quot;myscript&quot; внутри метода, что в данном случае приведет к неудаче. Это происходит потому, что встроенная функция фактически использует <em>индекс</em> актива скрипта, а <strong>не </strong>вызывает функцию скрипта - например: если индекс скрипта разрешается в &quot;4&quot;, то функция вызывает <span class="inline">4(arg);</span>, что не имеет смысла. Вместо этого код должен быть структурирован одним из следующих двух способов:</p>
   <p class="code">function indirectCall(func, arg)<br />
     {<br />
         func(arg);<br />
@@ -165,10 +146,10 @@
     <br />
     indirectCall(myscript, arg);
   </p>
-  <p>This is important to note, especially when working with legacy projects where scripts contain one single function, and the function is named the same as the script. However, you really should <em>never</em> do this, and your scripts should be named independently of the functions they contain.</p>
+  <p>Это важно отметить, особенно при работе со старыми проектами, где скрипты содержат одну единственную функцию, и функция называется так же, как и скрипт. Однако на самом деле так делать <em>никогда не</em> следует, и ваши скрипты должны называться независимо от функций, которые они содержат.</p>
   <div data-conref="../../assets/snippets/Script_empty_reference_error.hts"> </div>
-  <h2>Script Scope</h2>
-  <p>This leads us to the final and most important thing to know about scripts and the functions they contain: scripts are parsed on a <b>global</b> level and will be <strong>compiled at the very start of the game</strong>. This means that <em>technically</em> all functions in a script are &quot;unbound&quot; <a href="Method_Variables.htm">method variables</a>, and any variables declared outside of a function in the script will be considered <a href="Variables/Global_Variables.htm">global variables</a>. For example, consider this script:</p>
+  <h2>Объем сценария</h2>
+  <p>Это подводит нас к последней и самой важной вещи, которую необходимо знать о скриптах и функциях, которые они содержат: скрипты анализируются на <b>глобальном</b> уровне и <strong>компилируются в самом начале игры</strong>. Это означает, что <em>технически</em> все функции в скрипте являются &quot;несвязанными&quot; <a href="Method_Variables.htm">переменными метода</a>, а любые переменные, объявленные вне функции в скрипте, будут считаться <a href="Variables/Global_Variables.htm">глобальными переменными</a>. Например, рассмотрим этот скрипт:</p>
   <p class="code">function Foo()<br />
     {<br />
         // Do something<br />
@@ -178,9 +159,9 @@
     {<br />
         // Do something else<br />
     }</p>
-  <p>In the above case, not only have we defined the functions <span class="inline">Foo</span> and <span class="inline">Bar</span> but also the variable <span class="inline">blah</span> and all of them are considered to have been created in the <b>global</b> scope. The functions don&#39;t need the <span class="inline">global</span> keyword to be recognized as the compiler understands that these functions are part of the script, but if you wanted to access <span class="inline">blah</span> then you would need to do:</p>
+  <p>В приведенном выше случае мы определили не только функции <span class="inline">Foo</span> и <span class="inline">Bar</span>, но и переменную <span class="inline">blah</span>, и все они считаются созданными в <b>глобальной</b> области видимости. Для распознавания функций не требуется ключевое слово <span class="inline">global</span>, так как компилятор понимает, что эти функции являются частью сценария, но если бы вы захотели получить доступ к <span class="inline">blah</span>, то вам пришлось бы это сделать:</p>
   <p class="code">val = global.blah;</p>
-  <p>That said, we recommend that you <b>always explicitly type global variables</b> when creating them in scripts to prevent any issues later. Scripts are also an ideal place to define any <strong>Macros</strong> or <strong>Enums</strong> (<a href="Variables/Constants.htm">constants</a>), as adding them to a script outside of a function also means that they will be created for use before the game code actually starts running. Below is an example of a script that is creating different global scope values for a game:</p>
+  <p>Тем не менее, мы рекомендуем <b>всегда явно указывать глобальные переменные</b> при их создании в скриптах, чтобы избежать проблем в дальнейшем. Скрипты также являются идеальным местом для определения любых <strong>макросов</strong> или <strong>Enums</strong><a href="Variables/Constants.htm">(констант</a>), поскольку добавление их в скрипт вне функции означает, что они будут созданы для использования до того, как код игры начнет выполняться. Ниже приведен пример скрипта, который создает различные значения глобальной области видимости для игры:</p>
   <p class="code">/// Initialise All Global Scope Values And Constants<br />
     global.player_score = 0;<br />
     global.player_hp = 100;<br />
@@ -204,7 +185,7 @@
     #macro weapon_bomb 1<br />
     #macro weapon_knife 2
   </p>
-  <p>Note how all these constants are set up outside of any function call, meaning they will be initialised before everything else and at a <em>global </em>scope. This means that if you want to use a script to initialise variables on an <em>instance </em>scope then you must wrap them in a function, for example:</p>
+  <p>Обратите внимание, что все эти константы устанавливаются вне вызова любой функции, то есть они инициализируются до всего остального и в <em>глобальной </em>области видимости. Это означает, что если вы хотите использовать скрипт для инициализации переменных в области <em>видимости экземпляра </em>, вы должны обернуть их в функцию, например:</p>
   <p class="code">/// @function                init_enemy();<br />
     /// @description             Initialise enemy instance vars<br />
     <br />
@@ -215,22 +196,22 @@
         mana = 50;<br />
     }
   </p>
-  <p>So, scripts can be used to generate macros, enums and global variables before the game starts so they are ready for use at any time, and they can also be used to create &quot;unbound&quot; methods (user-defined functions) that can be used in your game like GML runtime functions.</p>
-  <p>One final thing to note about script functions is that if you are developing for <strong>Web </strong>(ie: targeting <strong>HTML5</strong>), then there is an additional function protocol that you can use when adding functions to scripts, which is to prefix a function name with <span class="inline">gmcallback_</span>, for example:</p>
+  <p>Так, скрипты можно использовать для создания макросов, перечислений и глобальных переменных до запуска игры, чтобы они были готовы к использованию в любое время, а также для создания &quot;несвязанных&quot; методов (пользовательских функций), которые можно использовать в вашей игре подобно функциям времени выполнения <span class="notranslate">GML</span>.</p>
+  <p>И последнее, что следует отметить о функциях скрипта: если вы разрабатываете для <strong>Web </strong>(т.е. ориентируетесь на <strong>HTML5</strong>), то существует дополнительный протокол функций, который вы можете использовать при добавлении функций в скрипты, который заключается в префиксе имени функции с <span class="inline">gmcallback_</span>, например:</p>
   <p class="code">gmcallback_create_button</p>
-  <p>Using the above function name would mean that the function <span class="inline">gmcallback_create_button()</span> will not be obfuscated and so can be used in JavaScript extensions and other areas of your game, for example, when using the <a href="../GML_Reference/Web_And_HTML5/Web_And_HTML5.htm"><span class="inline">clickable_*</span></a> functions.</p>
-  <h2>Static Variables</h2>
-  <p>Functions can also make use of static variables, which maintain their values throughout every function call. Please <a href="Functions/Static_Variables.htm">read this page</a> for more information.</p>
-  <p> </p>
-  <p> </p>
+  <p>Использование приведенного выше имени функции означает, что функция <span class="inline">gmcallback_create_button()</span> не будет обфусцирована и поэтому может быть использована в расширениях JavaScript и других областях вашей игры, например, при использовании <a href="../GML_Reference/Web_And_HTML5/Web_And_HTML5.htm"><span class="inline">clickable_*</span></a> функции.</p>
+  <h2>Статические переменные</h2>
+  <p>Функции также могут использовать статические переменные, которые сохраняют свои значения при каждом вызове функции. Для получения дополнительной информации <a href="Functions/Static_Variables.htm">прочтите эту страницу</a>.</p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="GML_Overview.htm">GML Overview</a></div>
-        <div style="float:right">Next: <a href="Method_Variables.htm">Method Variables</a></div>
+        <div style="float:left">Назад: <a href="GML_Overview.htm">Обзор GML</a></div>
+        <div style="float:right">Следующий: <a href="Method_Variables.htm">Переменные метода</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 Script Functions

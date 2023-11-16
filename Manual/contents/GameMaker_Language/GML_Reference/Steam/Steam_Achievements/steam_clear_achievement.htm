@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>steam_clear_achievement</title>
+  <meta name="generator" content="Adobe RoboHelp 2020" />
+  <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
+  <script src="../../../../assets/scripts/main_script.js"></script>
+  <meta name="rh-authors" content="Mark Alexander" />
+  <meta name="topic-comment" content="Reference page for steam_clear_achievement" />
+  <meta name="rh-index-keywords" content="steam_clear_achievement" />
+  <meta name="search-keywords" content="steam_clear_achievement" />
+</head>
+<body>
+  <!--<div class="body-scroll" style="top: 150px;">-->
+  <h1>steam_clear_achievement</h1>
+  <p>С помощью этой функции вы можете указать API <span class="notranslate">Steam</span> на очистку (сброс) определенного достижения. Достижение должно быть предварительно определено на странице учетных записей панели управления Steamworks для вашей игры, а строка, передаваемая в функцию, должна совпадать со строкой, используемой в качестве <b>имени API</b> на панели управления.</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
+  <p class="code">steam_clear_achievement(ach_name);</p>
+  <table>
+    <tbody>
+      <tr>
+        <th>Аргумент</th>
+        <th>Описание</th>
+      </tr>
+      <tr>
+        <td><span class="notranslate">ach_name</span></td>
+        <td>Имя достижения, которое нужно очистить (строка).</td>
+      </tr>
+    </tbody>
+  </table>
+  <p> </p>
+  <h4>Возвращается:</h4>
+  <p class="code">N/A</p>
+  <p> </p>
+  <h4>Пример:</h4>
+  <p class="code">if mouse_check_button_pressed(mb_left)<br />
+    {<br />
+        steam_clear_achievement(&quot;Ach_Game_Win&quot;);<br />
+        steam_clear_achievement(&quot;Ach_Died_10_Times&quot;);<br />
+        steam_clear_achievement(&quot;Ach_Killed_100_Enemies&quot;);<br />
+        steam_clear_achievement(&quot;Ach_Beat_Boss_Level_1&quot;);<br />
+    }</p>
+  <p>Приведенный выше код сбросит достижения игры, когда пользователь нажмет левую кнопку мыши.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <div class="footer">
+    <div class="buttons">
+      <div class="clear">
+        <div style="float:left">Назад: <a href="Steam_Achievements.htm">Достижения и статистика</a></div>
+        <div style="float:right">Следующий: <a href="steam_set_stat_int.htm"><span class="notranslate">steam_set_stat_int</span></a></div>
+      </div>
+    </div>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
+  </div>
+  <!-- KEYWORDS
+steam_clear_achievement
+-->
+  <!-- TAGS
+steam_clear_achievement
+-->
+</body>
+</html>

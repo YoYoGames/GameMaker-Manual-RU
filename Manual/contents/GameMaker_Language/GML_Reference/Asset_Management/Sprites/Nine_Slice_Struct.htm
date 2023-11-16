@@ -3,21 +3,21 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Nine Slice Struct</title>
+  <title>Структура из девяти ломтиков</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Gurpreet Matharoo" />
   <meta name="topic-comment" content="Page explaining the contents of a Nine Slice struct" />
-  <meta name="rh-index-keywords" content="The Nine Slice Struct,nineslice_center,nineslice_left,nineslice_top,nineslice_right,nineslice_bottom,nineslice_centre,nineslice_stretch,nineslice_repeat,nineslice_mirror,nineslice_blank,nineslice_hide" />
-  <meta name="search-keywords" content="Nine Slice,9slice,9-slice,9 slice,nineslice_left,nineslice_top,nineslice_right,nineslice_bottom,nineslice_centre,nineslice_stretch,nineslice_repeat,nineslice_mirror,nineslice_blank,nineslice_hide,nineslice_center" />
+  <meta name="rh-index-keywords" content="" />
+  <meta name="search-keywords" content="Nine Slice,9slice,9-slice,9 slice" />
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>The Nine Slice Struct</h1>
-  <p>A Nine Slice <a href="../../../GML_Overview/Structs.htm">struct</a> can be created using <a href="Sprite_Manipulation/sprite_nineslice_create.htm" title="sprite_nineslice_create"><span class="inline">sprite_nineslice_create()</span></a>, or retrieved from a sprite using <a href="Sprite_Information/sprite_get_nineslice.htm" title="sprite_get_nineslice"><span class="inline">sprite_get_nineslice()</span></a>. This struct will contain properties that can be changed and applied to a sprite using <a href="Sprite_Manipulation/sprite_set_nineslice.htm" title="sprite_set_nineslice"><span class="inline">sprite_set_nineslice()</span></a>.</p>
-  <p>If retrieved from a sprite, changing values in this struct <strong>will </strong>affect the original sprite.</p>
-  <p>The following properties will be available in this struct:</p>
+  <h1>Структура девяти ломтиков</h1>
+  <p> <a href="../../../GML_Overview/Structs.htm">Структуру</a> Nine Slice можно создать с помощью функции <a href="Sprite_Manipulation/sprite_nineslice_create.htm" title="sprite_nineslice_create"><span class="inline">sprite_nineslice_create()</span></a>, или получить из <span class="notranslate">sprite</span> с помощью <a href="Sprite_Information/sprite_get_nineslice.htm" title="sprite_get_nineslice"><span class="inline">sprite_get_nineslice()</span></a>. Эта структура будет содержать свойства, которые могут быть изменены и применены к <span class="notranslate">sprite</span> с помощью <a href="Sprite_Manipulation/sprite_set_nineslice.htm" title="sprite_set_nineslice"><span class="inline">sprite_set_nineslice()</span></a>.</p>
+  <p>При извлечении из <span class="notranslate">sprite</span>, изменение значений в этой структуре повлияет <strong>на </strong>исходный <span class="notranslate">sprite</span>.</p>
+  <p>В этой структуре будут доступны следующие свойства:</p>
   <table>
     <colgroup>
       <col />
@@ -26,48 +26,48 @@
     </colgroup>
     <tbody>
       <tr>
-        <th colspan="3"><span data-keyref="Type_Struct_NineSlice"><a href="../../../../../GameMaker_Language/GML_Reference/Asset_Management/Sprites/Nine_Slice_Struct.htm" target="_blank">Nine Slice Struct</a></span></th>
+        <th colspan="3"><span data-keyref="Type_Struct_NineSlice"><a data-rhwidget="HyperlinkPopover" href="../../../../../GameMaker_Language/GML_Reference/Asset_Management/Sprites/Nine_Slice_Struct.htm">Структура из девяти ломтиков</a></span></th>
       </tr>
       <tr>
-        <th>Variable</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Переменная</th>
+        <th>Тип</th>
+        <th>Описание</th>
       </tr>
       <tr>
         <td><span class="inline">enabled</span></td>
-        <td><span data-keyref="Type_Bool"><a href="../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Boolean</a></span></td>
-        <td>This <a class="glossterm" data-glossterm="boolean" href="#">boolean</a> will be <strong>true </strong>if <span data-keyref="Nine Slicing">Nine Slicing</span> is enabled for the sprite, and <strong>false </strong>if it is disabled. You can modify this to enable or disable <span data-keyref="Nine Slicing">Nine Slicing</span> for the sprite.</td>
+        <td><span data-keyref="Type_Bool"><a data-rhwidget="HyperlinkPopover" href="../../../../../GameMaker_Language/GML_Overview/Data_Types.htm">Булево</a></span></td>
+        <td>Это <a class="glossterm" data-glossterm="булево" href="#">булево</a> значение будет <strong>истинным </strong>, если <span data-keyref="Nine Slicing">Nine Slicing</span> включен для <span class="notranslate">sprite</span>, и <strong>ложным </strong>, если он отключен. Вы можете изменить это значение, чтобы включить или отключить <span data-keyref="Nine Slicing">Nine Slicing</span> для <span class="notranslate">sprite</span>.</td>
       </tr>
       <tr>
         <td><span class="inline">left</span></td>
-        <td><span data-keyref="Type_Real"><a href="../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
-        <td>This is the offset for the left guide on the x axis, relative to the left edge of the sprite.</td>
+        <td><span data-keyref="Type_Real"><a data-rhwidget="HyperlinkPopover" href="../../../../../GameMaker_Language/GML_Overview/Data_Types.htm">Реально</a></span></td>
+        <td>Это смещение левой направляющей по оси x относительно левого края <span class="notranslate">sprite</span>.</td>
       </tr>
       <tr>
         <td><span class="inline">right</span></td>
-        <td><span data-keyref="Type_Real"><a href="../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
-        <td>This is the offset for the right guide on the x axis, relative to the right edge of the sprite.</td>
+        <td><span data-keyref="Type_Real"><a data-rhwidget="HyperlinkPopover" href="../../../../../GameMaker_Language/GML_Overview/Data_Types.htm">Реально</a></span></td>
+        <td>Это смещение правой направляющей по оси x относительно правого края <span class="notranslate">sprite</span>.</td>
       </tr>
       <tr>
         <td><span class="inline">top</span></td>
-        <td><span data-keyref="Type_Real"><a href="../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
-        <td>This is the offset for the top guide on the y axis, relative to the top edge of the sprite.</td>
+        <td><span data-keyref="Type_Real"><a data-rhwidget="HyperlinkPopover" href="../../../../../GameMaker_Language/GML_Overview/Data_Types.htm">Реально</a></span></td>
+        <td>Это смещение верхней направляющей по оси y относительно верхнего края <span class="notranslate">sprite</span>.</td>
       </tr>
       <tr>
         <td><span class="inline">bottom</span></td>
-        <td><span data-keyref="Type_Real"><a href="../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
-        <td>This is the offset for the bottom guide on the y axis, relative to the bottom edge of the sprite.</td>
+        <td><span data-keyref="Type_Real"><a data-rhwidget="HyperlinkPopover" href="../../../../../GameMaker_Language/GML_Overview/Data_Types.htm">Реально</a></span></td>
+        <td>Это смещение нижней направляющей по оси y относительно нижнего края <span class="notranslate">sprite</span>.</td>
       </tr>
       <tr>
         <td><span class="inline">tilemode</span></td>
-        <td><span data-keyref="Type_Array"><a href="../../../../../GameMaker_Language/GML_Overview/Arrays.htm" target="_blank">Array</a></span> of <span data-keyref="Type_Constant_Nineslice_Slice_Type"><a href="../../../../../GameMaker_Language/GML_Reference/Asset_Management/Sprites/Nine_Slice_Struct.htm" target="_blank">Tile Mode Constant</a></span>s</td>
-        <td>This returns an <a href="../../../GML_Overview/Arrays.htm">array</a> containing the <strong>Tile Modes</strong> for the edge and centre slices.</td>
+        <td><span data-keyref="Type_Array"><a data-rhwidget="HyperlinkPopover" href="../../../../../GameMaker_Language/GML_Overview/Arrays.htm">Массив</a></span> из <span data-keyref="Type_Constant_Nineslice_Slice_Type"><a data-rhwidget="HyperlinkPopover" href="../../../../../GameMaker_Language/GML_Reference/Asset_Management/Sprites/Nine_Slice_Struct.htm">Режим плитки Постоянная</a></span>s</td>
+        <td>Возвращает <a href="../../../GML_Overview/Arrays.htm">массив</a>, содержащий <strong>режимы плитки</strong> для краевого и центрального срезов.</td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h2>Tile Modes</h2>
-  <p>The <strong>Tile Mode</strong> of each slice can be read or modified using these constants as the array index:</p>
+  <p> </p>
+  <h2>Режимы плитки</h2>
+  <p> <strong>Режим Tile Mode</strong> каждого фрагмента может быть прочитан или изменен с использованием этих констант в качестве индекса массива:</p>
   <table>
     <colgroup>
       <col />
@@ -75,35 +75,35 @@
     </colgroup>
     <tbody>
       <tr>
-        <th colspan="2"><span data-keyref="Type_Constant_Nineslice_Edge"><a href="../../../../../GameMaker_Language/GML_Reference/Asset_Management/Sprites/Nine_Slice_Struct.htm" target="_blank">Nine Slice Edge Constant</a></span></th>
+        <th colspan="2"><span data-keyref="Type_Constant_Nineslice_Edge"><a data-rhwidget="HyperlinkPopover" href="../../../../../GameMaker_Language/GML_Reference/Asset_Management/Sprites/Nine_Slice_Struct.htm">Девять ломтиков кромки Постоянная</a></span></th>
       </tr>
       <tr>
-        <th>Constant</th>
-        <th>Description</th>
+        <th>Постоянная</th>
+        <th>Описание</th>
       </tr>
       <tr>
-        <td><span class="inline">nineslice_left</span></td>
-        <td>The left edge slice</td>
+        <td><span class="notranslate"><span class="inline">nineslice_left</span></td>
+        <td>Левый краевой срез</td>
       </tr>
       <tr>
-        <td><span class="inline">nineslice_top</span></td>
-        <td>The top edge slice</td>
+        <td><span class="notranslate"><span class="inline">nineslice_top</span></td>
+        <td>Верхний краевой срез</td>
       </tr>
       <tr>
-        <td><span class="inline">nineslice_right</span></td>
-        <td>The right edge slice</td>
+        <td><span class="notranslate"><span class="inline">nineslice_right</span></td>
+        <td>Правый краевой срез</td>
       </tr>
       <tr>
-        <td><span class="inline">nineslice_bottom</span></td>
-        <td>The bottom edge slice</td>
+        <td><span class="notranslate"><span class="inline">nineslice_bottom</span></td>
+        <td>Нижний краевой срез</td>
       </tr>
       <tr>
-        <td><span class="inline">nineslice_centre</span></td>
-        <td>The centre slice</td>
+        <td><span class="notranslate"><span class="inline">nineslice_centre</span></td>
+        <td>Центральный ломтик</td>
       </tr>
     </tbody>
   </table>
-  <p>The <strong>Tile Mode</strong> for a slice will be (or can be set to) one of the following constants:</p>
+  <p> <strong>Режим плитки</strong> для среза будет (или может быть установлен) одной из следующих констант:</p>
   <table>
     <colgroup>
       <col />
@@ -111,50 +111,50 @@
     </colgroup>
     <tbody>
       <tr>
-        <th colspan="2"><span data-keyref="Type_Constant_Nineslice_Slice_Type"><a href="../../../../../GameMaker_Language/GML_Reference/Asset_Management/Sprites/Nine_Slice_Struct.htm" target="_blank">Tile Mode Constant</a></span></th>
+        <th colspan="2"><span data-keyref="Type_Constant_Nineslice_Slice_Type"><a data-rhwidget="HyperlinkPopover" href="../../../../../GameMaker_Language/GML_Reference/Asset_Management/Sprites/Nine_Slice_Struct.htm">Режим плитки Постоянная</a></span></th>
       </tr>
       <tr>
-        <th>Constant</th>
-        <th>Description</th>
+        <th>Постоянная</th>
+        <th>Описание</th>
       </tr>
       <tr>
-        <td><span class="inline">nineslice_stretch</span></td>
-        <td>The slice will be stretched</td>
+        <td><span class="notranslate"><span class="inline">nineslice_stretch</span></td>
+        <td>Ломтик будет растянут</td>
       </tr>
       <tr>
-        <td><span class="inline">nineslice_repeat</span></td>
-        <td>The slice will be repeated</td>
+        <td><span class="notranslate"><span class="inline">nineslice_repeat</span></td>
+        <td>Нарезка будет повторяться</td>
       </tr>
       <tr>
-        <td><span class="inline">nineslice_mirror</span></td>
-        <td>The slice will be repeated by mirroring</td>
+        <td><span class="notranslate"><span class="inline">nineslice_mirror</span></td>
+        <td>Срез будет повторяться путем зеркального отображения</td>
       </tr>
       <tr>
-        <td><span class="inline">nineslice_blank</span></td>
-        <td>The slice will not be stretched or repeated, resulting in a blank area after it</td>
+        <td><span class="notranslate"><span class="inline">nineslice_blank</span></td>
+        <td>Ломтик не будет растягиваться или повторяться, в результате чего после него останется пустая область</td>
       </tr>
       <tr>
-        <td><span class="inline">nineslice_hide</span></td>
-        <td>The slice will not appear at all</td>
+        <td><span class="notranslate"><span class="inline">nineslice_hide</span></td>
+        <td>Ломтик не появится вообще</td>
       </tr>
     </tbody>
   </table>
-  <p>Since <strong>tilemode </strong>is an array, you need to use the array syntax to change the Tile Mode of a slice. The code example below sets the Tile Mode of the top slice to <strong>Repeat</strong>:</p>
-  <h4>Example:</h4>
+  <p>Поскольку <strong>tilemode </strong>является массивом, для изменения режима плитки среза необходимо использовать синтаксис массива. Приведенный ниже пример кода устанавливает режим черепицы верхнего фрагмента на <strong>Repeat</strong>:</p>
+  <h4>Пример:</h4>
   <p class="code"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Calibri,sans-serif"><span style="font-family:Consolas">var _nineslice = sprite_get_nineslice(spr_box);<br />
             <br />
             _nineslice.tilemode[<strong>nineslice_top</strong>] = <strong>nineslice_repeat</strong>;</span></span> </span> </span></p>
-  <p>See <a href="../../../../The_Asset_Editors/Sprite_Properties/Nine_Slices.htm" title="Nine Slice">this page</a> for more information on the Nine Slice technique.</p>
-  <p> </p>
-  <p> </p>
+  <p>Более подробную информацию о технике "Девять ломтиков" см. на <a href="../../../../The_Asset_Editors/Sprite_Properties/Nine_Slices.htm" title="Nine Slice">этой странице</a>.</p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="../Asset_Management.htm">Asset Management</a></div>
-        <div style="float:right">Next: <a href="../Tilsets/Tile_Sets.htm">Tile Sets</a></div>
+        <div style="float:left">Назад: <a href="../Asset_Management.htm">Управление активами</a></div>
+        <div style="float:right">Следующий: <a href="../Tilsets/Tile_Sets.htm">Комплекты плитки</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 Sprites

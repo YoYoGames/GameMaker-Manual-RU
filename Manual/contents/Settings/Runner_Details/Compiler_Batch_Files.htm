@@ -3,8 +3,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta name="generator" content="Adobe RoboHelp 2022" />
-  <title>Compiler Batch Files / Scripts</title>
+  <meta name="generator" content="Adobe RoboHelp 2020" />
+  <title>Пакетные файлы/скрипты компилятора</title>
   <meta name="topic-status" content="Draft" />
   <link rel="stylesheet" type="text/css" href="../../assets/css/default.css" />
   <meta name="template" content="../../assets/masterpages/Manual_Page.htt" />
@@ -14,14 +14,14 @@
   <meta name="search-keywords" content="compiler, batch, files, shell, scripts, asset compiler, run, build" />
 </head>
 <body>
-  <h1>Compiler Batch Files / Scripts</h1>
-  <p>The <span data-keyref="GameMaker Name">GameMaker</span> compiler allows you to place Batch files (Windows) or Shell scripts (on macOS and Linux) in your project directory, and in the directory for each extension in your project.</p>
-  <h2>Placement</h2>
-  <p>A script file may be placed at the root of your project directory, alongside the project&#39;s <span class="inline2">.yyp</span> file.</p>
-  <p>A script file may also be placed in the directory of an extension, which may look like this: <span class="inline2">&lt;project_directory&gt;/extensions/&lt;extension_folder&gt;/</span>.</p>
-  <p>The extension versions of a script file will be executed first, and its root version will be executed last. The order in which extensions are executed can&#39;t be controlled, so an extension developer must ensure that one extension&#39;s scripts don&#39;t rely on another extension&#39;s scripts.</p>
-  <h2>Execution</h2>
-  <p>Script files with specific names, placed in any of the directories described above, are executed at various points during the compilation process:</p>
+  <h1>Пакетные файлы/скрипты компилятора</h1>
+  <p>Компилятор <span data-keyref="GameMaker Name">GameMaker</span> позволяет размещать Batch-файлы (<span class="notranslate">Windows</span>) или Shell-скрипты (на сайтах <span class="notranslate">macOS</span> и <span class="notranslate">Linux</span>) в каталоге вашего проекта, а также в каталоге для каждого расширения в вашем проекте.</p>
+  <h2>Размещение</h2>
+  <p>Файл сценария может быть помещен в корень каталога вашего проекта, рядом с файлом <span class="inline2">.yyp</span> проекта.</p>
+  <p>Файл сценария также может быть помещен в каталог расширения, который может выглядеть следующим образом: <span class="inline2">&lt;каталог_проекта&gt;/extensions/&lt;папка_расширения&gt;/</span>.</p>
+  <p>Версии расширения файла сценария будут выполняться первыми, а его корневая версия будет выполняться последней. Порядок выполнения расширений нельзя контролировать, поэтому разработчик расширений должен убедиться, что сценарии одного расширения не зависят от сценариев другого расширения.</p>
+  <h2>Исполнение</h2>
+  <p>Файлы сценариев с определенными именами, помещенные в любой из описанных выше каталогов, выполняются в различные моменты процесса компиляции:</p>
   <table border="1" cellpadding="1" cellspacing="1">
     <colgroup>
       <col style="width:33.33%" />
@@ -30,77 +30,65 @@
     </colgroup>
     <tbody>
       <tr>
-        <th>Windows Batch File Name</th>
-        <th>macOS/Linux Shell Script Name</th>
-        <th>Description</th>
+        <th>Имя пакетного файла Windows</th>
+        <th>macOS/Linux Имя сценария оболочки</th>
+        <th>Описание</th>
       </tr>
       <tr>
         <td><strong>pre_run_step.bat</strong></td>
         <td><strong>pre_run_step.sh</strong></td>
-        <td>This is executed before the game deployment is about to start</td>
+        <td>Выполняется перед началом развертывания игры</td>
       </tr>
       <tr>
         <td><strong>post_run_step.bat</strong></td>
         <td><strong>post_run_step.sh</strong></td>
-        <td>This is executed when the game is prepared and ready to run; after the script&#39;s execution the game is started</td>
+        <td>Он выполняется, когда игра подготовлена и готова к запуску; после выполнения скрипта игра запускается</td>
       </tr>
       <tr>
         <td><strong>pre_build_step.bat</strong></td>
         <td><strong>pre_build_step.sh</strong></td>
-        <td>This is executed before the asset compiler is started for building the game</td>
+        <td>Выполняется перед запуском компилятора активов для создания игры</td>
       </tr>
       <tr>
         <td><strong>post_build_step.bat</strong></td>
         <td><strong>post_build_step.sh</strong></td>
-        <td>This is executed after the asset compiler has been started for building the game</td>
+        <td>Выполняется после запуска компилятора активов для создания игры</td>
       </tr>
       <tr>
         <td><strong>pre_package_step.bat</strong></td>
         <td><strong>pre_package_step.sh</strong></td>
-        <td>This is executed before the final packaging step, which is when all files are ready but the final ZIP file or store package is about to be created</td>
+        <td>Этот шаг выполняется перед заключительным этапом упаковки, когда все файлы готовы, но окончательный ZIP-файл или пакет для хранения вот-вот будет создан.</td>
       </tr>
       <tr>
         <td><strong>post_package_step.bat</strong></td>
         <td><strong>post_package_step.sh</strong></td>
-        <td>This is executed after the final packaging step has completed and the final ZIP file or store package has been prepared</td>
+        <td>Выполняется после завершения последнего этапа упаковки и подготовки окончательного ZIP-файла или упаковки для магазина.</td>
       </tr>
       <tr>
         <td><strong>post_textures.bat</strong></td>
         <td><strong>post_textures.sh</strong></td>
-        <td>This is executed after the textures for your game have been generated. You can use this step to optimise your game textures manually.<br />
-          <br />
-          This script receives an environment variable called <span class="inline2">TexturesDir</span>, which stores the path to the generated textures.
+        <td>Этот шаг выполняется после того, как сгенерированы текстуры для вашей игры. Вы можете использовать этот шаг для оптимизации текстур игры вручную.<br>
+          <br>
+          Этот скрипт получает переменную окружения <span class="inline2">TexturesDir</span>, которая хранит путь к сгенерированным текстурам.
         </td>
-      </tr>
-      <tr>
-        <td><strong>remote_build_step.bat</strong></td>
-        <td><strong>remote_build_step.sh</strong></td>
-        <td>This is executed on the remote machine, when you are on a Windows machine and compiling remotely for macOS/iOS/tvOS or Ubuntu.</td>
       </tr>
     </tbody>
   </table>
-  <p>These script files are supported when building on all target platforms.</p>
-  <h2>Extension Version and Options Environment Variables</h2>
-  <p>You can retrieve the extension version and any of the extension options in the Batch files/Shell scripts: </p>
-  <ul class="colour">
-    <li>Extension option: <span class="inline2">YYEXTOPT_&lt;ExtensionName&gt;_&lt;OptionName&gt;</span></li>
-    <li>Version number: <span class="inline2">GMEXT_&lt;ExtensionName&gt;_version</span></li>
-  </ul>
-  <p>Replace <span class="inline2">&lt;ExtensionName&gt;</span> here with the name of the extension you&#39;re using.</p>
-  <h2>Disabling Scripts for an Extension</h2>
-  <p>If you use multiple extensions that run scripts, for example, Steamworks and GDK, then you&#39;ll want to disable Steamworks when exporting to GDK, and vice-versa.</p>
-  <p>For that, see: <a data-xref="{title}" href="../../The_Asset_Editors/Extension_Creation/Disabling_Extensions.htm">How to Disable Extensions?</a></p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Эти файлы сценариев поддерживаются при сборке на всех целевых платформах.</p>
+  <h2>Отключение сценариев для расширения</h2>
+  <p>Если вы используете несколько расширений, выполняющих скрипты, например, Steamworks и GDK, то вам нужно отключить Steamworks при экспорте в GDK, и наоборот.</p>
+  <p>Об этом см: <a data-xref="{title}" href="../../The_Asset_Editors/Extension_Creation/Disabling_Extensions.htm">Как отключить расширения?</a></p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div>Back: <a data-xref="{title}" href="Runner_Details.htm">Runner &amp; Compiler</a></div>
-        <div>Next: <a data-xref="{title}" href="../Command_Line_Parameters.htm">Command Line Parameters</a></div>
+        <div>Назад: <a data-xref="{title}" href="Runner_Details.htm">Бегун и компилятор</a></div>
+        <div>Следующий: <a data-xref="{title}" href="../Command_Line_Parameters.htm">Параметры командной строки</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
 </body>
 </html>

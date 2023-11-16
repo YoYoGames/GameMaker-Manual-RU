@@ -6,7 +6,7 @@
   <title>sprite_assign</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page explaining the function sprite_assign" />
   <meta name="rh-index-keywords" content="sprite_assign" />
@@ -16,31 +16,31 @@
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
   <h1>sprite_assign</h1>
-  <p>This function takes two previously created (or included) sprite indexes, and copies the image from one to the other. In this way you can copy (or &quot;clone&quot;) one sprite into another index. Note that <i>you cannot copy to a game resource</i>. You have to have created the sprite to be copied to previously using the <a href="sprite_add.htm"><span class="inline">sprite_add()</span></a> or <a href="sprite_duplicate.htm"><span class="inline">sprite_duplicate()</span></a> functions.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p>Эта функция берет два ранее созданных (или включенных) индекса <span class="notranslate">sprite</span> и копирует изображение из одного в другой. Таким образом, вы можете скопировать (или &quot;клонировать&quot;) один <span class="notranslate">sprite</span> в другой индекс. Обратите внимание, что <i>вы не можете копировать в игровой ресурс</i>. Вы должны были создать <span class="notranslate">sprite</span> для копирования ранее с помощью функции <a href="sprite_add.htm"><span class="inline">sprite_add()</span></a> или <a href="sprite_duplicate.htm"><span class="inline">sprite_duplicate()</span></a> функции.</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
   <p class="code">sprite_assign(index, sprite);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th><th>Type</th>
-        <th>Description</th>
+        <th>Аргумент</th><th>Тип</th>
+        <th>Описание</th>
      </tr>
       <tr>
-        <td>index</td><td><span data-keyref="Type_Asset_Sprite"></span></td>
-        <td>The index of the sprite to be copied to (ie: overwritten).</td>
+        <td><span class="notranslate">index</span></td><td><span data-keyref="Type_Asset_Sprite"></span></td>
+        <td><span class="notranslate">The index of the sprite to be copied to (ie: overwritten).</span></td>
      </tr>
       <tr>
-        <td>sprite</td><td><span data-keyref="Type_Asset_Sprite"></span></td>
-        <td>The sprite to be copied from.</td>
+        <td><span class="notranslate">sprite</span></td><td><span data-keyref="Type_Asset_Sprite"></span></td>
+        <td><span class="notranslate">The sprite to be copied from.</span></td>
      </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns</h4>
+  <p> </p>
+  <h4>Возвращает</h4>
   <p class="code"><span data-keyref="Type_Void"></span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Пример:</h4>
   <p class="code">if sprite_exists(global.Player_Sprite)<br />
     {<br />
         var t_spr = sprite_add(&quot;player.png&quot;, 16, true, true, 0, 0);<br />
@@ -51,18 +51,18 @@
     {<br />
         global.Player_Sprite = sprite_add(&quot;player.png&quot;, 16, true, true, 0, 0);<br />
     }</p>
-  <p>The above code checks to see if the global variable &quot;Player_Sprite&quot; contains a sprite and if it does it uses sprite_assign to change it for one that has been loaded from an external file. If it does not contain a sprite one is loaded and its index is stored in that variable.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Приведенный выше код проверяет, содержит ли глобальная переменная &quot;Player_Sprite&quot; <span class="notranslate">sprite</span>, и если содержит, то с помощью sprite_assign меняет его на тот, который был загружен из внешнего файла. Если переменная не содержит <span class="notranslate">sprite</span>, она загружается, и ее индекс сохраняется в этой переменной.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Sprite_Manipulation.htm">Sprite Manipulation</a></div>
-        <div style="float:right">Next: <a href="sprite_merge.htm">sprite_merge</a></div>
+        <div style="float:left">Назад: <a href="Sprite_Manipulation.htm">Манипуляция спрайтом</a></div>
+        <div style="float:right">Следующий: <a href="sprite_merge.htm"><span class="notranslate">sprite_merge</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2021 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 sprite_assign

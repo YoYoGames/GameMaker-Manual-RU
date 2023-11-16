@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>screen_save_part</title>
+  <title>экран_сохранить_часть</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
-  <script src="../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference section for screen_save_part" />
   <meta name="rh-index-keywords" content="screen_save_part" />
@@ -14,62 +14,62 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>screen_save_part</h1>
-  <p>With this function you can save a screenshot of a part of the game as it currently appears in the game display. The selection coordinates are based on the <i>absolute</i> size of the display (or window if not fullscreen), so (0,0) is always the top left hand corner of the screen (or window). Below is an image that shows how this function works:</p>
-  <p><img alt="Saving part of the screen example" class="center" src="../../../assets/Images/Scripting_Reference/GML/Reference/Cameras_Display/screen_save.png" />The file will be saved to the <a href="../File_Handling/File_Directories/working_directory.htm">working directory</a> of the game. It is important to note that the function is designed to be called in the <b>Draw GUI End Event</b>, which should give consistent results across all platforms. Using it in any other event may not work as expected, and may give different results across different targets and even devices.</p>
-  <p class="note"><b><span class="note">NOTE</span> </b>This function does not work on the HTML5 target.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <h1>экран_сохранить_часть</h1>
+  <p>С помощью этой функции можно сохранить скриншот части игры в том виде, в котором она отображается на экране. Координаты выделения основаны на <i>абсолютном</i> размере дисплея (или окна, если оно не полноэкранное), поэтому (0,0) - это всегда левый верхний угол экрана (или окна). Ниже приведено изображение, показывающее, как работает эта функция:</p>
+  <p><img>Файл будет сохранен в <a href="../File_Handling/File_Directories/working_directory.htm">рабочем каталоге</a> игры. Важно отметить, что функция предназначена для вызова в <b>событии Draw GUI End Event</b>, что должно дать согласованные результаты на всех платформах. Использование ее в любом другом событии может не сработать, как ожидалось, и дать разные результаты на разных платформах и даже устройствах.</p>
+  <p class="note"><b><span class="note">ПРИМЕЧАНИЕ</span> </b>Эта функция не работает на цели HTML5.</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
   <p class="code">screen_save_part(fname,x,y,w,h);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th><th>Type</th>
-        <th>Description</th>
+        <th>Аргумент</th><th>Тип</th>
+        <th>Описание</th>
      </tr>
       <tr>
-        <td>fname</td><td><span data-keyref="Type_String"></span></td>
-        <td>The filename for the screenshot to save</td>
+        <td><span class="notranslate">fname</span></td><td><span data-keyref="Type_String"></span></td>
+        <td><span class="notranslate">The filename for the screenshot to save</span></td>
      </tr>
       <tr>
-        <td>x</td><td><span data-keyref="Type_Real"></span></td>
-        <td>The x coordinate of the top left corner of the area of the screen to capture</td>
+        <td><span class="notranslate">x</span></td><td><span data-keyref="Type_Real"></span></td>
+        <td><span class="notranslate">The x coordinate of the top left corner of the area of the screen to capture</span></td>
      </tr>
       <tr>
-        <td>y</td><td><span data-keyref="Type_Real"></span></td>
-        <td>The y coordinate of the top left corner of the area of the screen to capture</td>
+        <td><span class="notranslate">y</span></td><td><span data-keyref="Type_Real"></span></td>
+        <td><span class="notranslate">The y coordinate of the top left corner of the area of the screen to capture</span></td>
      </tr>
       <tr>
-        <td>w</td><td><span data-keyref="Type_Real"></span></td>
-        <td>The width of the area of the screen to capture</td>
+        <td><span class="notranslate">w</span></td><td><span data-keyref="Type_Real"></span></td>
+        <td><span class="notranslate">The width of the area of the screen to capture</span></td>
      </tr>
       <tr>
-        <td>h</td><td><span data-keyref="Type_Real"></span></td>
-        <td>The height of the area of the screen to capture</td>
+        <td><span class="notranslate">h</span></td><td><span data-keyref="Type_Real"></span></td>
+        <td><span class="notranslate">The height of the area of the screen to capture</span></td>
      </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
   <p class="code"><span data-keyref="Type_Void"></span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Пример:</h4>
   <p class="code">if keyboard_check_pressed(ord(&quot;S&quot;))<br />
     {<br />
         screen_save_part(&quot;Screens\Screen_&quot; + string(num++) + &quot;.png&quot;, 0, 0, 100, 100)<br />
     }</p>
-  <p>The above code takes a screenshot of a part of the game screen that is 100 pixels square when the user presses the &quot;S&quot; key. This screen shot is saved to a specific folder and numbered using a variable which is then incremented.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Приведенный выше код делает скриншот части игрового экрана размером 100 пикселей в квадрате, когда пользователь нажимает клавишу &quot;S&quot;. Этот снимок экрана сохраняется в определенной папке и нумеруется с помощью переменной, которая затем увеличивается.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Cameras_And_Display.htm">Cameras And Display</a></div>
-        <div style="float:right">Next: <a href="gif_open.htm">gif_open</a></div>
+        <div style="float:left">Назад: <a href="Cameras_And_Display.htm">Камеры и дисплей</a></div>
+        <div style="float:right">Следующий: <a href="gif_open.htm"><span class="notranslate">gif_open</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2021 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 screen_save_part

@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>game_load</title>
-  <meta name="generator" content="Adobe RoboHelp 2022" />
+  <title>игровая_загрузка</title>
+  <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
-  <script src="../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="This page outlines the function game_load" />
   <meta name="rh-index-keywords" content="game_load" />
@@ -14,47 +14,46 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1><span data-field="title" data-format="default">game_load</span> <span data-conref="../../../assets/snippets/Tag_deprecated.hts"> </span></h1>
-  <p>With this function you can load a game that has been previously saved using <span class="inline3_func"><a data-xref="{title}" href="game_save.htm">game_save</a></span>.</p>
-  <p>Note that it will restore the version of the game that was used to create the save, so any updates made after it will not be visible.</p>
-  <p>For more info, read the page on <span class="inline3_func"><a data-xref="{title}" href="game_save.htm">game_save</a></span>.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
-  <p class="code"><span data-field="title" data-format="default">game_load</span>(filename);</p>
+  <h1>игровая_загрузка</h1>
+  <p>С помощью этой функции вы можете загрузить игру, которая была ранее сохранена с использованием <a href="game_save.htm"><span class="inline">game_save()</span></a>. Обратите внимание, что при этом будет восстановлена версия игры, которая использовалась для создания сохранения, поэтому любые обновления, сделанные после него, не будут видны. Для получения дополнительной информации прочтите страницу <a href="game_save.htm"><span class="inline">game_save()</span></a>.</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
+  <p class="code">game_load(filename);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Аргумент</th>
+        <th>Тип</th>
+        <th>Описание</th>
       </tr>
       <tr>
-        <td>filename</td>
-        <td><span data-keyref="Type_String"><a href="GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">String</a></span></td>
-        <td>The name of the file to load from.</td>
+        <td><span class="notranslate">filename</span></td>
+        <td><span data-keyref="Type_String">Строка</span></td>
+        <td><span class="notranslate">The name of the file to load from.</span></td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
   <p class="code"><span data-keyref="Type_Void">N/A</span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Пример:</h4>
   <p class="code">if keyboard_check_pressed(ord(&quot;L&quot;))<br />
     {<br />
         if (global.Save) game_load(&quot;Save.dat&quot;);<br />
     }</p>
-  <p>The above code will load a previously saved game if a global variable is <span class="inline">true</span> when the player presses the &quot;L&quot; key.</p>
-  <p> </p>
-  <p> </p>
+  <p>Приведенный выше код загрузит ранее сохраненную игру, если при нажатии игроком клавиши &quot;L&quot; глобальная переменная <span class="inline">true</span>.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="General_Game_Control.htm">General Game Control</a></div>
-        <div style="float:right">Next: <a href="game_load_buffer.htm">game_load_buffer</a></div>
+        <div style="float:left">Назад: <a href="General_Game_Control.htm">Общее управление игрой</a></div>
+        <div style="float:right">Следующий: <a href="game_load_buffer.htm"><span class="notranslate">game_load_buffer</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 game_load

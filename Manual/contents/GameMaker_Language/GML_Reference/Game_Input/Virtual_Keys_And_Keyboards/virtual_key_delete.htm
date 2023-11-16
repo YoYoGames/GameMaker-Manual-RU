@@ -6,7 +6,7 @@
   <title>virtual_key_delete</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference page for virtual_key_delete" />
   <meta name="rh-index-keywords" content="virtual_key_delete" />
@@ -15,44 +15,44 @@
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
   <h1>virtual_key_delete</h1>
-  <p>If your game has different rooms or instances to control menus and game-play and other things, then it is probable that you will need to change the position and key maps of your virtual keys at some point. For that you can use this function to delete the old ones before creating the new ones (if necessary). The function requires that you supply the ID of the virtual key to delete - as returned by <a href="virtual_key_add.htm"><span class="inline">virtual_key_add()</span></a>.</p>
-  <p>Note that any virtual keys will be automatically removed from the room when the room is changed, so this function is <em>only</em> necessary when you wish to manually remove the keys before the room itself has finished.</p>
-  <p> </p>
-  <h4>Syntax</h4>
+  <p>Если в вашей игре есть различные комнаты или инстансы для управления меню, игровым процессом и другими вещами, то вполне вероятно, что в какой-то момент вам понадобится изменить положение и карты клавиш ваших виртуальных клавиш. Для этого вы можете использовать данную функцию, чтобы удалить старые клавиши перед созданием новых (если это необходимо). Функция требует, чтобы вы указали ID виртуальной клавиши, которую нужно удалить - как возвращается функцией <a href="virtual_key_add.htm"><span class="inline">virtual_key_add()</span></a>.</p>
+  <p>Обратите внимание, что все виртуальные ключи будут автоматически удалены из комнаты, когда комната будет изменена, поэтому эта функция необходима <em>только</em> в том случае, если вы хотите вручную удалить ключи до завершения работы самой комнаты.</p>
+  <p> </p>
+  <h4>Синтаксис</h4>
   <p class="code">virtual_key_delete(index);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Аргумент</th>
+        <th>Тип</th>
+        <th>Описание</th>
       </tr>
       <tr>
-        <td>index</td>
-        <td><span data-keyref="Type_ID_Virtual_Key_OnScreen">Virtual Key ID</span></td>
-        <td>The index of the virtual key to delete.</td>
+        <td><span class="notranslate">index</span></td>
+        <td><span data-keyref="Type_ID_Virtual_Key_OnScreen">Идентификатор виртуального ключа</span></td>
+        <td><span class="notranslate">The index of the virtual key to delete.</span></td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
   <p class="code"><span data-keyref="Type_Void">N/A</span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Пример:</h4>
   <p class="code">virtual_key_delete(global.Left);</p>
-  <p>The above code deletes the virtual key indexed in the global variable &quot;global.Left&quot;.</p>
+  <p>Приведенный выше код удаляет виртуальный ключ, индексированный в глобальной переменной &quot;global.Left&quot;.</p>
   <p><b></b></p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Virtual_Keys_And_Keyboards.htm">Virtual Keys And Keyboards</a></div>
-        <div style="float:right">Next: <a href="keyboard_virtual_show.htm">keyboard_virtual_show</a></div>
+        <div style="float:left">Назад: <a href="Virtual_Keys_And_Keyboards.htm">Виртуальные клавиши и клавиатуры</a></div>
+        <div style="float:right">Следующий: <a href="keyboard_virtual_show.htm"><span class="notranslate">keyboard_virtual_show</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 virtual_key_delete

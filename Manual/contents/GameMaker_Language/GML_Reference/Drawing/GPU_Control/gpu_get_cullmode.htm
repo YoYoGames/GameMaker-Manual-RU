@@ -6,7 +6,7 @@
   <title>gpu_get_cullmode</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference for the function gpu_get_cullmode" />
   <meta name="rh-index-keywords" content="gpu_get_cullmode,cull_noculling,cull_clockwise,cull_counterclockwise" />
@@ -16,7 +16,7 @@
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
   <h1>gpu_get_cullmode</h1>
-  <p>This function can be used to retrieve the backface culling mode. The returned value will be one of the following constants (the default value is <span class="inline">cull_noculling</span>):</p>
+  <p>Эта функция может быть использована для получения режима выбраковки задней поверхности. Возвращаемое значение будет одной из следующих констант (значение по умолчанию <span class="inline">cull_noculling</span>):</p>
   <table>
     <colgroup>
       <col />
@@ -24,50 +24,50 @@
     </colgroup>
     <tbody>
       <tr>
-        <th colspan="2"><span data-keyref="Type_Constant_CullMode"><a data-rhwidget="HyperlinkPopover" href="../../../../../GameMaker_Language/GML_Reference/Drawing/GPU_Control/gpu_get_cullmode.htm">Culling Mode Constant</a></span></th>
+        <th colspan="2"><span data-keyref="Type_Constant_CullMode"><a data-rhwidget="HyperlinkPopover" href="../../../../../GameMaker_Language/GML_Reference/Drawing/GPU_Control/gpu_get_cullmode.htm">Режим выбраковки Постоянный</a></span></th>
       </tr>
       <tr>
-        <th>Constant</th>
-        <th>Description</th>
+        <th>Постоянная</th>
+        <th>Описание</th>
       </tr>
       <tr>
-        <td><span class="inline">cull_noculling</span></td>
-        <td>No culling will be done</td>
+        <td><span class="notranslate"><span class="inline">cull_noculling</span></td>
+        <td>Выбраковка не будет проводиться</td>
       </tr>
       <tr>
-        <td><span class="inline">cull_clockwise</span></td>
-        <td>All clockwise triangles will be culled</td>
+        <td><span class="notranslate"><span class="inline">cull_clockwise</span></td>
+        <td>Все треугольники по часовой стрелке будут удалены</td>
       </tr>
       <tr>
-        <td><span class="inline">cull_counterclockwise</span></td>
-        <td>All counter-clockwise triangles will be culled</td>
+        <td><span class="notranslate"><span class="inline">cull_counterclockwise</span></td>
+        <td>Все треугольники против часовой стрелки будут удалены</td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p> </p>
+  <h4>Синтаксис:</h4>
   <p class="code">gpu_get_cullmode();</p>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
   <p class="code"><span data-keyref="Type_Constant_CullMode"><a data-rhwidget="HyperlinkPopover" href="../../../../../GameMaker_Language/GML_Reference/Drawing/GPU_Control/gpu_get_cullmode.htm">Culling Mode Constant</a></span> (see above for constants)</p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Пример:</h4>
   <p class="code">if gpu_get_cullmode() != cull_clockwise<br />
     {<br />
         gpu_set_cullmode(cull_clockwise);<br />
     }</p>
-  <p>The above code gets the current cull mode and if it is not <span class="inline">cull_clockwise</span> it is set to that constant.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Приведенный выше код получает текущий режим cull и, если он не <span class="inline">cull_clockwise</span>, то устанавливается на эту константу.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="GPU_Control.htm">GPU Control</a></div>
-        <div style="float:right">Next: <a href="gpu_get_blendmode.htm">gpu_get_blendmode</a></div>
+        <div style="float:left">Назад: <a href="GPU_Control.htm">Управление графическим процессором</a></div>
+        <div style="float:right">Следующий: <a href="gpu_get_blendmode.htm"><span class="notranslate">gpu_get_blendmode</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 gpu_get_cullmode

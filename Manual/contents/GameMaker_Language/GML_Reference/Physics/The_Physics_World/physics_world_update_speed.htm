@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>physics_world_update_speed</title>
+  <title>физика_мира_обновление_скорости</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference page for physics_world_update_speed" />
   <meta name="rh-index-keywords" content="physics_world_update_speed" />
@@ -14,43 +14,44 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1><span data-field="title" data-format="default">physics_world_update_speed</span></h1>
-  <p><span data-keyref="GameMaker Name">GameMaker</span> updates things based on the <a href="../../General_Game_Control/game_get_speed.htm">game speed</a>, so that if you <a href="../../General_Game_Control/game_set_speed.htm">set</a> it to ,say, 30, <span data-keyref="GameMaker Name">GameMaker</span> will run 30 steps in the course of a second. However, for the physics functions that may not be enough and you may want things to be updated at a slightly faster speed to increase stability or precision. To that end we use the function <span class="inline3_func"><span data-field="title" data-format="default">physics_world_update_speed</span></span> which sets the update speed for the physics system <i>independently</i> of the game speed. This means that you could have a game speed of 30, but set the physics to 60, effectively doubling the speed at which the physics system updates and performs its calculations compared to the speed at which the step are updated.</p>
-  <p class="note"><span data-conref="../../../../assets/snippets/Tag_note.hts"> </span> you cannot currently set this to any less than room speed, but future updates may change this.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
-  <p class="code"><span data-field="title" data-format="default">physics_world_update_speed</span>(speed)</p>
+  <h1>физика_мира_обновление_скорости</h1>
+  <p>Скорость обновления в<span data-keyref="GameMaker Name">GameMaker</span> зависит от скорости комнаты, поэтому если вы установите ее, скажем, на 30, <span data-keyref="GameMaker Name">GameMaker</span> будет выполнять 30 шагов в течение секунды. Однако для функций физики этого может быть недостаточно, и вы можете захотеть обновлять данные с немного большей скоростью для повышения стабильности или точности. Для этого мы используем функцию <span class="inline">physics_world_update_speed()</span>, которая устанавливает скорость обновления для системы физики <i>независимо</i> от скорости комнаты. Это означает, что вы можете иметь скорость комнаты 30, но установить физику на 60, эффективно удваивая скорость, с которой система физики обновляется и выполняет свои вычисления по сравнению со скоростью, с которой обновляется шаг.</p>
+  <p class="note"><b>ПРИМЕЧАНИЕ</b>: в настоящее время вы не можете установить значение меньше, чем комнатная скорость, но будущие обновления могут изменить это.</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
+  <p class="code">physics_world_update_speed(speed)</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Аргумент</th>
+        <th>Тип</th>
+        <th>Описание</th>
       </tr>
       <tr>
-        <td>speed</td>
-        <td><span data-keyref="Type_Real"><a href="../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
-        <td>The number of times per second that the physics system updates</td>
+        <td><span class="notranslate">speed</span></td>
+        <td><span data-keyref="Type_Real">Реально</span></td>
+        <td><span class="notranslate">The number of times per second that the physics system updates</span></td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
   <p class="code"><span data-keyref="Type_Void">N/A</span></p>
-  <p> </p>
-  <h4>Example:</h4>
-  <p class="code"><span data-field="title" data-format="default">physics_world_update_speed</span>(game_get_speed(gamespeed_fps) * 2);</p>
-  <p>The code above sets the physics system update speed to be twice that of the game speed.</p>
-  <p> </p>
-  <p> </p>
+  <p> </p>
+  <h4>Пример:</h4>
+  <p class="code">physics_world_update_speed(room_speed * 2);</p>
+  <p>Приведенный выше код устанавливает скорость обновления системы физики в два раза выше скорости обновления комнаты.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="The_Physics_World.htm">The Physics World</a></div>
-        <div style="float:right">Next: <a href="physics_world_draw_debug.htm">physics_world_draw_debug</a></div>
+        <div style="float:left">Назад: <a href="The_Physics_World.htm">Мир физики</a></div>
+        <div style="float:right">Следующий: <a href="physics_world_draw_debug.htm"><span class="notranslate">physics_world_draw_debug</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 physics_world_update_speed

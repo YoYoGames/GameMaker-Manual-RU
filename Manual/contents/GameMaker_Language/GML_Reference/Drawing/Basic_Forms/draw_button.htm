@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>draw_button</title>
-  <meta name="generator" content="Adobe RoboHelp 2022" />
+  <title>нарисовать_кнопку</title>
+  <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference for the function draw_button" />
   <meta name="rh-index-keywords" content="draw_button" />
@@ -15,65 +15,64 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>draw_button</h1>
-  <p>This function will draw a very simple, rectangular &quot;button&quot; using the currently selected draw colour and alpha where the <i>up</i> argument defines how the beveled edge effect looks, as shown in the image below:</p>
-  <p><img alt="Draw button exmple" class="center" src="../../../../assets/Images/Scripting_Reference/GML/Reference/Drawing/draw_button.png" /></p>
-  <div data-conref="../../../../assets/snippets/Note_Shape_Shader_Attributes_Are_Different.hts"> </div>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <h1>нарисовать_кнопку</h1>
+  <p>Эта функция нарисует очень простую прямоугольную &quot;кнопку&quot;, используя выбранный в данный момент цвет рисунка и альфа, где аргумент <i>up</i> определяет, как будет выглядеть эффект скошенного края, как показано на изображении ниже:</p>
+  <p><img><b>ПРИМЕЧАНИЕ</b>: Если вы хотите нарисовать фигуру с помощью шейдера, вы должны знать, что большинство шейдеров ожидают следующих входных данных: вершина, текстура, цвет. Однако при использовании этой функции передаются только данные вершин и цвета, поэтому шейдер может ничего не нарисовать (или нарисовать, но неправильно). Если вам нужно рисовать фигуры таким образом, то шейдер должен быть настроен с учетом этого.</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
   <p class="code">draw_button(x1, y1, x2, y2, up);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Аргумент</th>
+        <th>Тип</th>
+        <th>Описание</th>
       </tr>
       <tr>
-        <td>x1</td>
-        <td><span data-keyref="Type_Real"><a href="GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
-        <td>The x coordinate of the left of the button</td>
+        <td><span class="notranslate">x1</span></td>
+        <td><span data-keyref="Type_Real">Реально</span></td>
+        <td><span class="notranslate">The x coordinate of the left of the button</span></td>
       </tr>
       <tr>
-        <td>y1</td>
-        <td><span data-keyref="Type_Real"><a href="GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
-        <td>The y coordinate of the top of the button</td>
+        <td><span class="notranslate">y1</span></td>
+        <td><span data-keyref="Type_Real">Реально</span></td>
+        <td><span class="notranslate">The y coordinate of the top of the button</span></td>
       </tr>
       <tr>
-        <td>x2</td>
-        <td><span data-keyref="Type_Real"><a href="GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
-        <td>The x coordinate of the right of the button</td>
+        <td><span class="notranslate">x2</span></td>
+        <td><span data-keyref="Type_Real">Реально</span></td>
+        <td><span class="notranslate">The x coordinate of the right of the button</span></td>
       </tr>
       <tr>
-        <td>y2</td>
-        <td><span data-keyref="Type_Real"><a href="GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
-        <td>The y coordinate of the bottom of the button</td>
+        <td><span class="notranslate">y2</span></td>
+        <td><span data-keyref="Type_Real">Реально</span></td>
+        <td><span class="notranslate">The y coordinate of the bottom of the button</span></td>
       </tr>
       <tr>
-        <td>up</td>
-        <td><span data-keyref="Type_Bool"><a href="GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Boolean</a></span></td>
-        <td>Whether the button is up (<span class="inline">true</span>) or down (<span class="inline">false</span>)</td>
+        <td><span class="notranslate">up</span></td>
+        <td><span data-keyref="Type_Bool">Булево</span></td>
+        <td><span class="notranslate">Whether the button is up (<span class="inline">true</span>) или вниз (<span class="inline">false</span>)</td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
   <p class="code"><span data-keyref="Type_Void">N/A</span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Пример:</h4>
   <p class="code">draw_button(100, 100, 200, 150, !mouse_check_button(mb_left));</p>
-  <p>This will draw a button which will appear pressed if the left mouse button is held down.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Это нарисует кнопку, которая будет выглядеть нажатой, если удерживать левую кнопку мыши.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Basic_Forms.htm">Basic Forms</a></div>
-        <div style="float:right">Next: <a href="draw_healthbar.htm">draw_healthbar</a></div>
+        <div style="float:left">Назад: <a href="Basic_Forms.htm">Основные формы</a></div>
+        <div style="float:right">Следующий: <a href="draw_healthbar.htm"><span class="notranslate">draw_healthbar</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 draw_button

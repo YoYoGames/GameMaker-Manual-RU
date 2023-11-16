@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>steam_set_stat_avg_rate</title>
+  <meta name="generator" content="Adobe RoboHelp 2019" />
+  <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
+  <script src="../../../../assets/scripts/main_script.js"></script>
+  <meta name="rh-authors" content="Mark Alexander" />
+  <meta name="topic-comment" content="Reference page for steam_set_stat_avg_rate" />
+  <meta name="rh-index-keywords" content="steam_set_stat_avg_rate" />
+  <meta name="search-keywords" content="steam_set_stat_avg_rate" />
+</head>
+<body>
+  <!--<div class="body-scroll" style="top: 150px;">-->
+  <h1>steam_set_stat_avg_rate</h1>
+  <p>Эта функция позволяет установить средний тип статистики с эффектом &quot;скользящего окна&quot; для среднего значения. Значение &quot;session_count&quot; - это текущее значение, которое вы хотите усреднить, а &quot;session_length&quot; - это количество
+    игрового времени с момента последнего вызова функции. Более подробную информацию о том, как это можно использовать, смотрите в <b>расширенном примере</b> ниже.</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
+  <p class="code">steam_set_stat_avg_rate(stat_name, session_count, session_length);</p>
+  <table>
+    <tbody>
+      <tr>
+        <th>Аргумент</th>
+        <th>Описание</th>
+      </tr>
+      <tr>
+        <td><span class="notranslate">stat_name</span></td>
+        <td>Имя статистики, которую нужно установить (строка).</td>
+      </tr>
+      <tr>
+        <td><span class="notranslate">session_count</span></td>
+        <td>Значение для получения среднего значения (вещественное число)</td>
+      </tr>
+      <tr>
+        <td><span class="notranslate">session_length</span></td>
+        <td>Время, прошедшее с момента последней установки статистики (вещественное число).</td>
+      </tr>
+    </tbody>
+  </table>
+  <p> </p>
+  <h4>Возвращается:</h4>
+  <p class="code">N/A</p>
+  <p> </p>
+  <h4>Расширенный пример:</h4>
+  <p>Поскольку функция средней статистики может быть сложной для понимания, мы проиллюстрируем ее использование на следующем примере. Рассмотрим случай, когда вы хотите отследить среднюю статистику, например, &quot;Очки, заработанные за час&quot;. Один из подходов заключается в том, чтобы
+    иметь две статистики: <i>целочисленную</i> &quot;TotalPoints&quot; и <i>плавающую</i> &quot;TotalPlayTimeHours&quot;, а затем разделить общее количество очков на общее время, чтобы получить значение &quot;Points per Hour&quot;.</p>
+  <p>Однако, как только игрок накопит значительное количество игрового времени, рассчитанное среднее значение будет меняться крайне медленно, и чем больше пользователь играет в игру, тем меньше будет реагировать это среднее значение. Если пользователь провел в игре 100 часов
+    в игру, рассчитанное среднее значение &quot;отстанет&quot; примерно на 50 часов из этого времени, и если пользователь повысит свой навык, он не увидит ожидаемого увеличения &quot;очков в час&quot;. Чтобы обойти эту проблему, мы можем использовать &quot;скользящее окно&quot;.
+    для расчета &quot;Очков в час&quot; только за последние 10 часов игры.</p>
+  <p>Итак, чтобы использовать эту функцию, нам нужно создать статистику <span class="notranslate">Steam</span> (в панели управления игрой на Workshop) под названием &quot;AvgPointsPerHour&quot; и установить ее свойство <b>Window</b> на 10. Теперь в вашей игре вам нужно добавить несколько глобальных переменных
+    в экземпляр в самом начале:</p>
+  <p class="code">global.Points = 0;<br/> global.Time = 0;</p>
+  <p>Затем у вас будет некоторый объект контроллера для подсчета глобальной переменной &quot;Время&quot; в будильнике (например) каждую секунду, в то время как ваш игровой процесс будет влиять на глобальную переменную &quot;Очки&quot;. Через регулярные промежутки времени во время игры (опять же,
+    в объекте контроллера, возможно, в будильнике, или в интервалах от опроса значения &quot;Time&quot;) вы бы устанавливали статистику следующим образом:</p>
+  <p class="code">steam_set_stat_avg_rate(&quot;AvgPointsPerHour&quot;, global.Points, (global.Time / 3600));<br/> global.Points = 0;<br/> global.Time = 0;</p>
+  <p>Обратите внимание, что мы делим время на 3600, поскольку нам нужно время в <i>часах</i>, а не в секундах, и после этого мы сбрасываем глобальную переменную &quot;Points&quot; и глобальную переменную &quot;Time&quot; в 0, чтобы при следующем вызове функции мы
+    получим новое среднее значение для статистики. Теперь, что сделает <span class="notranslate">Steam</span>, это возьмет это значение, которое вы отправили, и создаст среднее значение за время, которое было установлено для нашего &quot;окна&quot;.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <div class="footer">
+    <div class="buttons">
+      <div class="clear">
+        <div style="float:left">Назад: <a href="Steam_Achievements.htm">Достижения и статистика</a></div>
+        <div style="float:right">Следующий: <a href="steam_get_stat_int.htm"><span class="notranslate">steam_get_stat_int</span></a></div>
+      </div>
+    </div>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Все права защищены</span></h5>
+  </div>
+  <!-- KEYWORDS
+steam_set_avg_rate
+-->
+  <!-- TAGS
+steam_set_avg_rate
+-->
+</body>
+</html>

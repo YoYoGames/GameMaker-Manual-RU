@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Primitives And Vertex Formats</title>
+  <title>Примитивы и форматы вершин</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference section for the Primitive And Vertex Format functions and variables" />
   <meta name="rh-index-keywords" content="" />
@@ -14,74 +14,73 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1><span data-field="title" data-format="default">Primitives And Vertex Formats</span></h1>
-  <p>A primitive is a type of drawing done using points to define what is shown on the screen. They can be made up of single points, lines, or triangles and can be coloured, have alpha blending and even be given a texture, which means that they can be used to create some very exciting effects in a 2D game! For example, you can create a rectangle using multiple triangle primitives, then texture it with a flag sprite and in the draw event of an instance have that flag &quot;wave&quot; in the wind and distort the sprite you used by simply modifying the points that form the primitive.</p>
-  <p class="note"><b><span data-conref="../../../../assets/snippets/Tag_warning.hts"> </span> </b>These functions do not work with the HTML5 module unless you have enabled OpenGL in the <a href="../../../../Settings/Game_Options/HTML5.htm">Game Options</a>.</p>
-  <h2 id="func_ref">Function Reference</h2>
-  <h3 id="func_ref_primitives">Primitives</h3>
+  <h1>Примитивы и форматы вершин</h1>
+  <p>Примитив - это тип рисунка, созданный с помощью точек для определения того, что отображается на экране. Они могут состоять из отдельных точек, линий или треугольников, могут быть цветными, иметь альфа-смешение и даже текстуру, что означает, что они могут быть использованы для создания некоторых очень интересных эффектов в 2D-игре! Например, вы можете создать прямоугольник, используя несколько треугольных примитивов, затем текстурировать его флагом <span class="notranslate">sprite</span> и в событии рисования экземпляра заставить этот флаг &quot;развеваться&quot; на ветру и исказить используемый вами <span class="notranslate">sprite</span>, просто изменив точки, образующие примитив.</p>
+  <p class="note"><b>ВНИМАНИЕ! </b>Эти функции не работают с модулем HTML5, если вы не включили OpenGL в <a href="../../../../Settings/Game_Options/HTML5.htm">Опциях игры</a>.</p>
+  <p>Информацию о примитивах рисования можно найти на следующих страницах:</p>
   <ul class="colour">
-    <li><a href="draw_primitive_begin.htm">draw_primitive_begin</a></li>
-    <li><a href="draw_primitive_begin_texture.htm">draw_primitive_begin_texture</a></li>
-    <li><a href="draw_primitive_end.htm">draw_primitive_end</a></li>
-    <li><a href="draw_vertex.htm">draw_vertex</a></li>
-    <li><a href="draw_vertex_colour.htm">draw_vertex_colour</a></li>
-    <li><a href="draw_vertex_texture.htm">draw_vertex_texture</a></li>
-    <li><a href="draw_vertex_texture_colour.htm">draw_vertex_texture_colour</a></li>
+    <li><a href="draw_primitive_begin.htm"><span class="notranslate">draw_primitive_begin</span></a></li>
+    <li><a href="draw_primitive_begin_texture.htm"><span class="notranslate">draw_primitive_begin_texture</span></a></li>
+    <li><a href="draw_primitive_end.htm"><span class="notranslate">draw_primitive_end</span></a></li>
+    <li><a href="draw_vertex.htm"><span class="notranslate">draw_vertex</span></a></li>
+    <li><a href="draw_vertex_colour.htm"><span class="notranslate">draw_vertex_colour</span></a></li>
+    <li><a href="draw_vertex_texture.htm"><span class="notranslate">draw_vertex_texture</span></a></li>
+    <li><a href="draw_vertex_texture_colour.htm"><span class="notranslate">draw_vertex_texture_colour</span></a></li>
   </ul>
-  <h3 id="func_ref_vertex_formats">Vertex Formats</h3>
-  <p><span data-keyref="GameMaker Name">GameMaker</span> permits you to define your own <strong>vertex formats</strong> from which you can create your own custom primitives. This can greatly speed up shader operations or can be used to extend their capabilities and create surprising effects. You can find information on this in the following sections:</p>
+  <p> </p>
+  <p><span data-keyref="GameMaker Name">GameMaker</span> позволяет вам определять собственные <strong>форматы вершин</strong>, на основе которых вы можете создавать свои собственные примитивы. Это может значительно ускорить работу шейдеров или расширить их возможности и создать неожиданные эффекты. Информацию об этом вы найдете в следующих разделах:</p>
   <ul class="colour">
-    <li><a href="vertex_format_begin.htm">vertex_format_begin</a></li>
-    <li><a href="vertex_format_add_colour.htm">vertex_format_add_colour</a></li>
-    <li><a href="vertex_format_add_position.htm">vertex_format_add_position</a></li>
-    <li><a href="vertex_format_add_position_3d.htm">vertex_format_add_position_3d</a></li>
-    <li><a href="vertex_format_add_texcoord.htm">vertex_format_add_texcoord</a></li>
-    <li><a href="vertex_format_add_normal.htm">vertex_format_add_normal</a></li>
-    <li><a href="vertex_format_add_custom.htm">vertex_format_add_custom</a></li>
-    <li><a href="vertex_format_end.htm">vertex_format_end</a></li>
-    <li><a href="vertex_format_delete.htm">vertex_format_delete</a></li>
+    <li><a href="vertex_format_begin.htm"><span class="notranslate">vertex_format_begin</span></a></li>
+    <li><a href="vertex_format_add_colour.htm"><span class="notranslate">vertex_format_add_colour</span></a></li>
+    <li><a href="vertex_format_add_position.htm"><span class="notranslate">vertex_format_add_position</span></a></li>
+    <li><a href="vertex_format_add_position_3d.htm"><span class="notranslate">vertex_format_add_position_3d</span></a></li>
+    <li><a href="vertex_format_add_texcoord.htm"><span class="notranslate">vertex_format_add_texcoord</span></a></li>
+    <li><a href="vertex_format_add_normal.htm"><span class="notranslate">vertex_format_add_normal</span></a></li>
+    <li><a href="vertex_format_add_custom.htm"><span class="notranslate">vertex_format_add_custom</span></a></li>
+    <li><a href="vertex_format_end.htm"><span class="notranslate">vertex_format_end</span></a></li>
+    <li><a href="vertex_format_delete.htm"><span class="notranslate">vertex_format_delete</span></a></li>
   </ul>
-  <h3 id="func_ref_vertex_buffers">Vertex Buffers</h3>
-  <p>Once you have created your vertex format (see the section above) you can then use it to build the primitives that you want to draw using the following vertex buffer functions:</p>
+  <p> </p>
+  <p>После создания формата вершин (см. раздел выше) вы можете использовать его для создания примитивов, которые вы хотите нарисовать, используя следующие функции буфера veretx:</p>
   <ul class="colour">
-    <li><a href="vertex_create_buffer.htm">vertex_create_buffer</a></li>
-    <li><a href="vertex_create_buffer_ext.htm">vertex_create_buffer_ext</a></li>
-    <li><a href="vertex_create_buffer_from_buffer.htm">vertex_create_buffer_from_buffer</a></li>
-    <li><a href="vertex_create_buffer_from_buffer_ext.htm">vertex_create_buffer_from_buffer_ext</a></li>
-    <li><a href="vertex_get_buffer_size.htm">vertex_get_buffer_size</a></li>
-    <li><a href="vertex_get_number.htm">vertex_get_number</a></li>
-    <li><a href="vertex_delete_buffer.htm">vertex_delete_buffer</a></li>
-    <li><a href="vertex_begin.htm">vertex_begin</a></li>
-    <li><a href="vertex_colour.htm">vertex_colour</a></li>
-    <li><a href="vertex_normal.htm">vertex_normal</a></li>
-    <li><a href="vertex_position.htm">vertex_position</a></li>
-    <li><a href="vertex_position_3d.htm">vertex_position_3d</a></li>
-    <li><a href="vertex_argb.htm">vertex_argb</a></li>
-    <li><a href="vertex_texcoord.htm">vertex_texcoord</a></li>
-    <li><a href="vertex_float1.htm">vertex_float1</a></li>
-    <li><a href="vertex_float2.htm">vertex_float2</a></li>
-    <li><a href="vertex_float3.htm">vertex_float3</a></li>
-    <li><a href="vertex_float4.htm">vertex_float4</a></li>
-    <li><a href="vertex_ubyte4.htm">vertex_ubyte4</a></li>
-    <li><a href="vertex_end.htm">vertex_end</a></li>
-    <li><a href="vertex_freeze.htm">vertex_freeze</a></li>
-    <li><a href="vertex_submit.htm">vertex_submit</a></li>
+    <li><a href="vertex_create_buffer.htm"><span class="notranslate">vertex_create_buffer</span></a></li>
+    <li><a href="vertex_create_buffer_ext.htm"><span class="notranslate">vertex_create_buffer_ext</span></a></li>
+    <li><a href="vertex_create_buffer_from_buffer.htm"><span class="notranslate">vertex_create_buffer_from_buffer</span></a></li>
+    <li><a href="vertex_create_buffer_from_buffer_ext.htm"><span class="notranslate">vertex_create_buffer_from_buffer_ext</span></a></li>
+    <li><a href="vertex_get_buffer_size.htm"><span class="notranslate">vertex_get_buffer_size</span></a></li>
+    <li><a href="vertex_get_number.htm"><span class="notranslate">vertex_get_number</span></a></li>
+    <li><a href="vertex_delete_buffer.htm"><span class="notranslate">vertex_delete_buffer</span></a></li>
+    <li><a href="vertex_begin.htm"><span class="notranslate">vertex_begin</span></a></li>
+    <li><a href="vertex_colour.htm"><span class="notranslate">vertex_colour</span></a></li>
+    <li><a href="vertex_normal.htm"><span class="notranslate">vertex_normal</span></a></li>
+    <li><a href="vertex_position.htm"><span class="notranslate">vertex_position</span></a></li>
+    <li><a href="vertex_position_3d.htm"><span class="notranslate">vertex_position_3d</span></a></li>
+    <li><a href="vertex_argb.htm"><span class="notranslate">vertex_argb</span></a></li>
+    <li><a href="vertex_texcoord.htm"><span class="notranslate">vertex_texcoord</span></a></li>
+    <li><a href="vertex_float1.htm"><span class="notranslate">vertex_float1</span></a></li>
+    <li><a href="vertex_float2.htm"><span class="notranslate">vertex_float2</span></a></li>
+    <li><a href="vertex_float3.htm"><span class="notranslate">vertex_float3</span></a></li>
+    <li><a href="vertex_float4.htm"><span class="notranslate">vertex_float4</span></a></li>
+    <li><a href="vertex_ubyte4.htm"><span class="notranslate">vertex_ubyte4</span></a></li>
+    <li><a href="vertex_end.htm"><span class="notranslate">vertex_end</span></a></li>
+    <li><a href="vertex_freeze.htm"><span class="notranslate">vertex_freeze</span></a></li>
+    <li><a href="vertex_submit.htm"><span class="notranslate">vertex_submit</span></a></li>
   </ul>
-  <p class="note"><span data-conref="../../../../assets/snippets/Tag_important.hts"> </span> The primitives that you build should follow the format that you have set using the Vertex Format functions, so if you have defined a vertex format with only positional data, there is no point building your primitive with colour data. You should note that the order in which you add properties to the primitive you are building is defined by the order in which you added these properties when creating the vertex format, so if you have defined the vector format with the order position, colour and texture coordinate, you <i>must</i> add these properties to the primitive being built in the same order otherwise you will get errors.</p>
-  <p>For an overview of how to build primitives using the vertex functions, see:</p>
+  <p class="note"><b>ВАЖНО!</b> Примитивы, которые вы строите, должны соответствовать формату, который вы задали с помощью функций Vertex Format, поэтому если вы определили формат вершин только с позиционными данными, нет смысла строить примитив с цветовыми данными. Следует отметить, что порядок добавления свойств в создаваемый примитив определяется порядком добавления этих свойств при создании вершинного формата, поэтому если вы определили векторный формат с порядком позиция, цвет и координата текстуры, то вы <i>должны</i> добавить эти свойства в создаваемый примитив в том же порядке, иначе вы получите ошибки.</p>
+  <p>Обзор того, как строить примитивы с помощью функций вершин, см. в статье:</p>
   <ul class="colour">
-    <li><a href="../../../../Additional_Information/Guide_To_Primitives_And_Vertex_Building.htm">Guide To Primitives And Vertex Building</a></li>
+    <li><a href="../../../../Additional_Information/Guide_To_Primitives_And_Vertex_Building.htm">Руководство по примитивам и построению вершин</a></li>
   </ul>
-  <p> </p>
-  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="../Drawing.htm">Drawing</a></div>
-        <div style="float:right">Next: <a href="../Surfaces/Surfaces.htm">Surfaces</a></div>
+        <div style="float:left">Назад: <a href="../Drawing.htm">Рисунок</a></div>
+        <div style="float:right">Следующий: <a href="../Surfaces/Surfaces.htm">Поверхности</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 Primitives And Vertex Formats

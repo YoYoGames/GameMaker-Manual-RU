@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>draw_ellipse</title>
-  <meta name="generator" content="Adobe RoboHelp 2022" />
+  <title>нарисовать_эллипс</title>
+  <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference for the function draw_ellipse" />
   <meta name="rh-index-keywords" content="draw_ellipse" />
@@ -15,65 +15,65 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>draw_ellipse</h1>
-  <p>With this function you can draw either an outline of an ellipse or a filled ellipse by defining a rectangular area that will then have the ellipse created to fit. You can define how precise the drawing is with the function <a href="draw_set_circle_precision.htm"><span class="inline">draw_set_circle_precision()</span></a>.</p>
-  <div data-conref="../../../../assets/snippets/Note_Shape_Shader_Attributes_Are_Different.hts"> </div>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <h1>нарисовать_эллипс</h1>
+  <p>С помощью этой функции можно нарисовать либо контур эллипса, либо заполненный эллипс, определив прямоугольную область, под которую затем будет создан эллипс. Вы можете определить, насколько точным будет рисунок, с помощью функции <a href="draw_set_circle_precision.htm"><span class="inline">draw_set_circle_precision()</span></a>.</p>
+  <p class="note"><b>ПРИМЕЧАНИЕ</b>: Если вы хотите нарисовать фигуру с помощью шейдера, вы должны знать, что большинство шейдеров ожидают следующих входных данных: вершина, текстура, цвет. Однако при использовании этой функции передаются только данные вершин и цвета, поэтому шейдер может ничего не нарисовать (или нарисовать, но неправильно). Если вам нужно рисовать фигуры таким образом, то шейдер должен быть настроен с учетом этого.</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
   <p class="code">draw_ellipse(x1, y1, x2, y2, outline);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Аргумент</th>
+        <th>Тип</th>
+        <th>Описание</th>
       </tr>
       <tr>
-        <td>x1</td>
-        <td><span data-keyref="Type_Real"><a href="GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
-        <td>The x coordinate of the left of the ellipse.</td>
+        <td><span class="notranslate">x1</span></td>
+        <td><span data-keyref="Type_Real">Реально</span></td>
+        <td><span class="notranslate">The x coordinate of the left of the ellipse.</span></td>
       </tr>
       <tr>
-        <td>y1</td>
-        <td><span data-keyref="Type_Real"><a href="GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
-        <td>The y coordinate of the top of the ellipse.</td>
+        <td><span class="notranslate">y1</span></td>
+        <td><span data-keyref="Type_Real">Реально</span></td>
+        <td><span class="notranslate">The y coordinate of the top of the ellipse.</span></td>
       </tr>
       <tr>
-        <td>x2</td>
-        <td><span data-keyref="Type_Real"><a href="GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
-        <td>The x coordinate of the right of the ellipse.</td>
+        <td><span class="notranslate">x2</span></td>
+        <td><span data-keyref="Type_Real">Реально</span></td>
+        <td><span class="notranslate">The x coordinate of the right of the ellipse.</span></td>
       </tr>
       <tr>
-        <td>y2</td>
-        <td><span data-keyref="Type_Real"><a href="GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
-        <td>The y coordinate of the bottom of the ellipse.</td>
+        <td><span class="notranslate">y2</span></td>
+        <td><span data-keyref="Type_Real">Реально</span></td>
+        <td><span class="notranslate">The y coordinate of the bottom of the ellipse.</span></td>
       </tr>
       <tr>
-        <td>outline</td>
-        <td><span data-keyref="Type_Bool"><a href="GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Boolean</a></span></td>
-        <td>Whether the ellipse is drawn filled (false) or as a one pixel wide outline (true).</td>
+        <td><span class="notranslate">outline</span></td>
+        <td><span data-keyref="Type_Bool">Булево</span></td>
+        <td><span class="notranslate">Whether the ellipse is drawn filled (false) or as a one pixel wide outline (true).</span></td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
   <p class="code"><span data-keyref="Type_Void">N/A</span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Пример:</h4>
   <p class="code">draw_set_colour(c_white);<br />
     draw_ellipse(100, 100, 300, 200, false);</p>
-  <p>This will draw a filled ellipse within the defined rectangular area.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Это позволит нарисовать заполненный эллипс в пределах заданной прямоугольной области.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Basic_Forms.htm">Basic Forms</a></div>
-        <div style="float:right">Next: <a href="draw_ellipse_colour.htm">draw_ellipse_colour</a></div>
+        <div style="float:left">Назад: <a href="Basic_Forms.htm">Основные формы</a></div>
+        <div style="float:right">Следующий: <a href="draw_ellipse_colour.htm"><span class="notranslate">draw_ellipse_colour</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 draw_ellipse

@@ -2,58 +2,58 @@
 
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"><head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>keyboard_key_press</title>
-  <meta name="generator" content="Adobe RoboHelp 2019"/>
-  <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css"/>
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
-  <meta name="rh-authors" content="Mark Alexander"/>
-  <meta name="topic-comment" content="Reference page for keyboard_key_press"/>
-  <meta name="rh-index-keywords" content="keyboard_key_press"/>
-  <meta name="search-keywords" content="keyboard_key_press"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>клавиатура_клавиша_нажатия</title>
+  <meta name="generator" content="Adobe RoboHelp 2019" />
+  <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
+  <script src="../../../../assets/scripts/main_script.js"></script>
+  <meta name="rh-authors" content="Mark Alexander" />
+  <meta name="topic-comment" content="Reference page for keyboard_key_press" />
+  <meta name="rh-index-keywords" content="keyboard_key_press" />
+  <meta name="search-keywords" content="keyboard_key_press" />
   <meta name="is_pure" content="true" />
 </head>
 
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>keyboard_key_press</h1>
-  <p>With this function you can simulate the press of any key on the keyboard. When used, the key will be flagged as being pressed until the corresponding release function is called (see <a href="keyboard_key_release.htm"><span class="inline">keyboard_key_release()</span></a>).
-    The function will take a keycode value as returned by the function <a href="../../Strings/ord.htm"><span class="inline">ord()</span></a> (only <i>capital</i> letters from A-Z or numbers from 0-9), or any of the <span class="inline">vk_*</span> constants listed on the main <a href="Keyboard_Input.htm">Keyboard Input</a>    page.</p>
-  <p>Note that after calling this function, if the key is <i>physically</i> pressed on the keyboard, this press event will <i>not</i> be registered again until the key has been physically released (triggering the release event and stopping this function),
-    or the corresponding release key function has been called, and the key pressed again.</p>
-  <p> </p>
-  <h4><b>Syntax:</b></h4>
+  <h1>клавиатура_клавиша_нажатия</h1>
+  <p>С помощью этой функции можно имитировать нажатие любой клавиши на клавиатуре. При ее использовании клавиша будет отмечена как нажатая до тех пор, пока не будет вызвана соответствующая функция отпускания (см. <a href="keyboard_key_release.htm"><span class="inline">keyboard_key_release()</span></a>).
+    Функция принимает значение кода клавиши, возвращаемое функцией <a href="../../Strings/ord.htm"><span class="inline">ord()</span></a> (только <i>заглавные</i> буквы от A-Z или цифры от 0-9), или любую из констант <span class="inline">vk_*</span>, перечисленных на главной странице " <a href="Keyboard_Input.htm">Ввод с клавиатуры</a> ".</p>
+  <p>Обратите внимание, что после вызова этой функции, если клавиша <i>физически</i> нажата на клавиатуре, это событие нажатия <i>не</i> будет зарегистрировано снова, пока клавиша не будет физически отпущена (срабатывает событие отпускания и останавливает эту функцию),
+    или была вызвана соответствующая функция освобождения клавиши, и клавиша была нажата снова.</p>
+  <p> </p>
+  <h4><b>Синтаксис:</b></h4>
   <p class="code">keyboard_key_press(key);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th><th>Type</th>
-        <th>Description</th>
+        <th>Аргумент</th><th>Тип</th>
+        <th>Описание</th>
      </tr>
       <tr>
-        <td>key</td><td><span data-keyref="Type_Constant_VK"></span></td>
-        <td>The key to simulate a press of.</td>
+        <td><span class="notranslate">key</span></td><td><span data-keyref="Type_Constant_VK"></span></td>
+        <td><span class="notranslate">The key to simulate a press of.</span></td>
      </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4><b>Returns:</b></h4>
+  <p> </p>
+  <h4><b>Возвращается:</b></h4>
   <p class="code"><span data-keyref="Type_Void"></span></p>
-  <p> </p>
-  <h4><b>Example:</b></h4>
+  <p> </p>
+  <h4><b>Пример:</b></h4>
   <p class="code">keyboard_key_press(vk_space);</p>
-  <p>This will simulate a spacebar press.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Это будет имитировать нажатие пробела.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Keyboard_Input.htm">Keyboard Input</a></div>
-        <div style="float:right">Next: <a href="keyboard_key_release.htm">keyboard_key_release</a></div>
+        <div style="float:left">Назад: <a href="Keyboard_Input.htm">Ввод с клавиатуры</a></div>
+        <div style="float:right">Следующий: <a href="keyboard_key_release.htm"><span class="notranslate">keyboard_key_release</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2021 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 keyboard_key_press

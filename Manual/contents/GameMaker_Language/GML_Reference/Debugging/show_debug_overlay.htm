@@ -4,9 +4,9 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>show_debug_overlay</title>
-  <meta name="generator" content="Adobe RoboHelp 2022" />
+  <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
-  <script src="../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference page for show_debug_overlay" />
   <meta name="rh-index-keywords" content="show_debug_overlay" />
@@ -14,70 +14,62 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1><span data-field="title" data-format="default">show_debug_overlay</span></h1>
-  <p>This function opens <a data-xref="{title}" href="The_Debug_Overlay.htm">The Debug Overlay</a> with the <a href="The_Debug_Overlay.htm#fps"><strong>FPS</strong></a> window open. This overlay is disabled by default.</p>
-  <p>The debug overlay enables a menu with three options: <strong>FPS</strong> (open by default), <strong>Log</strong>, and <strong>Audio</strong>. It displays the <span data-keyref="GameMaker Name">GameMaker</span> version in the top-right corner, along with the version and name of the project: </p>
-  <p><img class="center" src="../../../assets/Images/Scripting_Reference/GML/Reference/Debug/debug_overlay_1.png" style="cursor: nesw-resize;" />If the optional <span class="inline2">minimised</span> parameter is set to <span class="inline2">false</span>, the overlay is opened with the <strong>FPS</strong> window minimised, only showing basic info in the header.</p>
-  <p>To create custom debug views that will appear under the <strong>Views</strong> menu, see <a href="The_Debug_Overlay.htm#creating_debug_views">Creating Debug Views</a>.</p>
-  <p class="note"><span data-conref="../../../assets/snippets/Tag_note.hts"> </span> This function will not work on the HTML5 target due to the different way it works compared to all the other targets.</p>
-  <p class="note"><span data-conref="../../../assets/snippets/Tag_note.hts"> </span> To bring up <a data-xref="{title}" href="The_Debug_Overlay.htm">The Debug Overlay</a> with the <strong>Log</strong> window open, use <span class="inline3_func"><a data-xref="{title}" href="show_debug_log.htm">show_debug_log</a></span> instead.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
-  <p class="code"><span data-field="title" data-format="default">show_debug_overlay</span>(enable[, minimised, scale, alpha]);</p>
+  <h1>show_debug_overlay</h1>
+  <p>Эта функция может использоваться для включения и выключения стандартной отладочной накладки при тестировании вашей игры и по умолчанию отключена. Отладочная накладка показывает графическую полосу использования CPU/GPU в самом игровом окне, а также текущее реальное значение fps, количество смен текстур и количество вершинных батчей (обратите внимание, что смены текстур и вершинных батчей никогда не будут равны нулю и обычно показывают значения 2 или 3, поскольку даже в пустой комнате без объектов <span data-keyref="GameMaker Name">GameMaker</span> все равно должен рисовать и батчить).</p>
+  <p><img>Эта полоса разделена на секции, каждая из которых составляет 1/60 секунды. Как видно из изображения выше, полоса состоит из различных цветов:</p>
+  <ul class="colour">
+    <li><b>Зеленый</b> - обработка ввода/вывода (т.е.: клавиатура, мышь, геймпад, сеть и т.д...)</li>
+    <li><b>Красный</b> - Скорость обновления события шага</li>
+    <li><b>Желтый</b> - Время, необходимое для проведения розыгрыша</li>
+    <li><b>Оранжевый</b> -Время обновления отладки, которое обычно видно только при использовании модуля отладки</li>
+    <li><b>Белый</b> - оставшееся время GPU, то есть время, потраченное на ожидание, пока GPU закончит рендеринг кадра, прежде чем начнется следующий.</li>
+    <li><b>Cyan</b> - Время отрисовки текста</li>
+    <li><b>Grey</b> - Время, необходимое для очистки экрана на каждом этапе рисования</li>
+    <li><strong>Blue</strong> - Время, необходимое для работы <a href="../Garbage_Collection/Garbage_Collection.htm">сборщика мусора</a> </li>
+    <li><b>Темно-красный</b> цвет - промывка GPU, т.е. сколько времени требуется GPU для очистки изображений из памяти.</li>
+  </ul>
+  <p>Используя эту функцию, вы можете добавить оверлей в режиме отладки или нет, и таким образом вы сможете увидеть, насколько эффективно работает ваша игра, и получить визуальную подсказку о том, как она использует доступные ресурсы, без накладных расходов, связанных с запуском отладчика.</p>
+  <p class="note"><b>ПРИМЕЧАНИЕ</b>: Эта функция не будет работать на цели HTML5 из-за того, что она работает иначе, чем все остальные цели.</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
+  <p class="code">show_debug_overlay(enable);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
+        <th>Аргумент</th><th>Тип</th>
+        <th>Описание</th>
+     </tr>
       <tr>
-        <td>enable</td>
-        <td><span data-keyref="Type_Bool"><a href="GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Boolean</a></span></td>
-        <td>Enable (<span class="inline2">true</span>) or disable (<span class="inline2">false</span>) the debug overlay</td>
-      </tr>
-      <tr>
-        <td>minimised</td>
-        <td><span data-keyref="Type_Bool"><a href="GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Boolean</a></span></td>
-        <td><span data-conref="../../../assets/snippets/Tag_optional.hts"> </span> Whether to open the <strong>FPS</strong> window minimised (doesn&#39;t apply to any other windows or debug views)</td>
-      </tr>
-      <tr>
-        <td>scale</td>
-        <td><span data-keyref="Type_Real"><a href="GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
-        <td><span data-conref="../../../assets/snippets/Tag_optional.hts"> </span> The scale factor to draw the overlay with (default is <span data-keyref="DebugOverlay_Scale_Default">1</span>)</td>
-      </tr>
-      <tr>
-        <td>alpha</td>
-        <td><span data-keyref="Type_Real"><a href="GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
-        <td><span data-conref="../../../assets/snippets/Tag_optional.hts"> </span> The alpha value to draw the overlay with (default is <span data-keyref="DebugOverlay_Alpha_Default">0.8</span>)</td>
-      </tr>
+        <td><span class="notranslate">enable</span></td><td><span data-keyref="Type_Bool"></span></td>
+        <td><span class="notranslate">switch on (<span class="inline">true</span>) или выключить (<span class="inline">false<span class="inline">) the debug overlay.</span></td>
+     </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
-  <p class="code"><span data-keyref="Type_Void">N/A</span></p>
-  <p> </p>
-  <h4><b>Example 1: Basic Use</b></h4>
-  <p class="code">if keyboard_check_pressed(ord(&quot;O&quot;))<br />
+  <p> </p>
+  <h4>Возвращается:</h4>
+  <p class="code"><span data-keyref="Type_Void"></span></p>
+  <p> </p>
+  <h4><b>Пример:</b></h4>
+  <p class="code">if global.debug<br />
     {<br />
-        global.debug = !global.debug;<br />
-        <span data-field="title" data-format="default">show_debug_overlay</span>(global.debug);<br />
+        show_debug_overlay(true);<br />
+    }<br />
+    else<br />
+    {<br />
+        show_debug_overlay(false);<br />
     }</p>
-  <p>The above code toggles the debug on or off whenever the &quot;O&quot; key is pressed.</p>
-  <p> </p>
-  <h4>Example 2: Additional Parameters</h4>
-  <p class="code"><span data-field="title" data-format="default">show_debug_overlay</span>(true, true, 2, 0.5);</p>
-  <p>The above code opens the debug overlay minimised and draws it with a scale factor of 2 and an alpha of 0.5.</p>
-  <p> </p>
-  <p> </p>
+  <p>Приведенный выше код будет включать или выключать отладку в зависимости от значения глобальной переменной.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a data-xref="{title}" href="The_Debug_Overlay.htm">The Debug Overlay</a></div>
-        <div style="float:right">Next: <a data-xref="{title}" href="show_debug_log.htm">show_debug_log</a></div>
+        <div style="float:left">Назад: <a href="Debugging.htm">Отладка</a></div>
+        <div style="float:right">Следующий: <a href="code_is_compiled.htm"><span class="notranslate">code_is_compiled</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 show_debug_overlay

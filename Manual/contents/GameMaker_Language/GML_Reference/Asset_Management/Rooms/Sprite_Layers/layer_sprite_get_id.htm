@@ -6,7 +6,7 @@
   <title>layer_sprite_get_id</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page outlining the function layer_sprite_get_id" />
   <meta name="rh-index-keywords" content="layer_sprite_get_id" />
@@ -16,50 +16,50 @@
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
   <h1>layer_sprite_get_id</h1>
-  <p>This function can be used to retrieve the unique ID value of a sprite element on a layer. You supply the layer ID (which you get when you create the layer using <a href="../General_Layer_Functions/layer_create.htm"><span class="inline">layer_create()</span></a> or when you use the layer name along with <a href="../General_Layer_Functions/layer_get_id.htm"><span class="inline">layer_get_id()</span></a>) and the name of the sprite element as defined in the Room Editor. The function will return the ID value associated with that sprite element on the layer.</p>
-  <p>Note that this function is specifically designed for use with sprites that have been added in the IDE on an asset layer, and if you added a sprite to a layer through code using the function <a href="layer_sprite_create.htm"><span class="inline">layer_sprite_create()</span></a>, then the ID returned by that function should be used for all future reference (as that sprite element will have no name to be passed into this function).</p>
-  <p>If the specified layer does not exist, or the given sprite element cannot be found, the function will return -1.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p>Эта функция может использоваться для получения уникального значения ID элемента <span class="notranslate">sprite</span> на слое. Вы передаете идентификатор слоя (который вы получаете при создании слоя с помощью функции <a href="../General_Layer_Functions/layer_create.htm"><span class="inline">layer_create()</span></a> или при использовании имени слоя вместе с <a href="../General_Layer_Functions/layer_get_id.htm"><span class="inline">layer_get_id()</span></a>) и имя элемента <span class="notranslate">sprite</span>, определенное в редакторе помещений. Функция вернет значение ID, связанное с этим элементом <span class="notranslate">sprite</span> на слое.</p>
+  <p>Обратите внимание, что эта функция специально предназначена для использования с <span class="notranslate">sprites</span>, которые были добавлены в <span class="notranslate">IDE</span> на слой актива, и если вы добавили <span class="notranslate">sprite</span> на слой через код с помощью функции <a href="layer_sprite_create.htm"><span class="inline">layer_sprite_create()</span></a>, то для всех дальнейших ссылок следует использовать идентификатор, возвращаемый этой функцией (поскольку у этого элемента <span class="notranslate">sprite</span> не будет имени, которое можно передать в эту функцию).</p>
+  <p>Если указанный слой не существует, или заданный элемент <span class="notranslate">sprite</span> не может быть найден, функция вернет -1.</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
   <p class="code">layer_sprite_get_id(layer_id, sprite_element_name)</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Аргумент</th>
+        <th>Тип</th>
+        <th>Описание</th>
       </tr>
       <tr>
-        <td>layer_id</td>
-        <td><span data-keyref="Type_String">String</span> or <span data-keyref="Type_ID_Layer">Layer ID</span></td>
-        <td>The unique ID value of the layer to target</td>
+        <td><span class="notranslate">layer_id</span></td>
+        <td><span data-keyref="Type_String">Строка</span> или <span data-keyref="Type_ID_Layer">идентификатор слоя</span></td>
+        <td><span class="notranslate">The unique ID value of the layer to target</span></td>
       </tr>
       <tr>
-        <td>sprite_element_name</td>
-        <td><span data-keyref="Type_String">String</span></td>
-        <td>The unique name of the sprite element on the layer as defined in the Room Editor</td>
+        <td><span class="notranslate">sprite_element_name</span></td>
+        <td><span data-keyref="Type_String">Строка</span></td>
+        <td><span class="notranslate">The unique name of the sprite element on the layer as defined in the Room Editor</span></td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
   <p class="code"><span data-keyref="Type_ID_Element_Sprite">Sprite Element ID</span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Пример:</h4>
   <p class="code">var lay_id = layer_get_id(&quot;Assets_trees&quot;);<br />
     var back_id = layer_sprite_get_id(lay_id, &quot;graphic_254367CB&quot;);<br />
     layer_sprite_change(back_id, spr_Trees_Winter);</p>
-  <p>The above code will get the layer ID for the layer named &quot;Assets_trees&quot; and then use that to retrieve the ID of the sprite element &quot;graphic_254367CB&quot; on that layer. The retrieved sprite element ID is then used to change the element&#39;s sprite.</p>
-  <p> </p>
-  <p> </p>
+  <p>Приведенный выше код получит идентификатор слоя &quot;Assets_trees&quot; и затем использует его для получения идентификатора элемента <span class="notranslate">sprite</span> &quot;graphic_254367CB&quot; на этом слое. Полученный идентификатор элемента <span class="notranslate">sprite</span> затем используется для изменения элемента <span class="notranslate">sprite</span>.</p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Sprite_Layers.htm">Sprite Layers</a></div>
-        <div style="float:right">Next: <a href="layer_sprite_exists.htm">layer_sprite_exists</a></div>
+        <div style="float:left">Назад: <a href="Sprite_Layers.htm">Слои спрайта</a></div>
+        <div style="float:right">Следующий: <a href="layer_sprite_exists.htm"><span class="notranslate">layer_sprite_exists</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 layer_sprite_get_id

@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Joints</title>
+  <title>Суставы</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference section for Physics Joint functions" />
   <meta name="rh-index-keywords" content="" />
@@ -14,45 +14,45 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>Joints</h1>
-  <p>In the <span data-keyref="GameMaker Name">GameMaker</span> physics world, joints are used to constrain instances to the world or to each other. Typical examples in games include ragdolls, teeters, and pulleys, but joints can be combined in many different ways to create interesting motions or add realism to your game world.</p>
-  <p class="note"><b>NOTE</b>: A joint does not need to be deleted when you destroy an instance joined to another instance, nor does it need to be deleted at the end of a room. Except in very specific cases (see the <a href="physics_joint_gear_create.htm">gear joint</a>) as this is dealt with automatically by <span data-keyref="GameMaker Name">GameMaker</span>.</p>
-  <p>The following pages explain the available joints and how they can be created:</p>
+  <h1>Суставы</h1>
+  <p>В мире физики <span data-keyref="GameMaker Name">GameMaker</span> шарниры используются для привязки объектов к миру или друг к другу. Типичными примерами в играх являются рэгдоллы, титеры и шкивы, но шарниры можно комбинировать различными способами для создания интересных движений или придания реализма вашему игровому миру.</p>
+  <p class="note"><b>ПРИМЕЧАНИЕ</b>: Соединение не нужно удалять при уничтожении экземпляра, соединенного с другим экземпляром, также его не нужно удалять в конце комнаты. За исключением очень специфических случаев (см. <a href="physics_joint_gear_create.htm">шарнир шестеренки</a>), поскольку <span data-keyref="GameMaker Name">GameMaker</span> справляется с этим автоматически.</p>
+  <p>На следующих страницах описаны доступные соединения и способы их создания:</p>
   <ul class="colour">
-    <li><a href="physics_joint_distance_create.htm">physics_joint_distance_create</a></li>
-    <li><a href="physics_joint_revolute_create.htm">physics_joint_revolute_create</a></li>
-    <li><a href="physics_joint_prismatic_create.htm">physics_joint_prismatic_create</a></li>
-    <li><a href="physics_joint_pulley_create.htm">physics_joint_pulley_create</a></li>
-    <li><a href="physics_joint_gear_create.htm">physics_joint_gear_create</a></li>
-    <li><a href="physics_joint_rope_create.htm">physics_joint_rope_create</a></li>
-    <li><a href="physics_joint_wheel_create.htm">physics_joint_wheel_create</a></li>
-    <li><a href="physics_joint_weld_create.htm">physics_joint_weld_create</a></li>
-    <li><a href="physics_joint_friction_create.htm">physics_joint_friction_create</a></li>
-    <li><a href="physics_joint_delete.htm">physics_joint_delete</a></li>
+    <li><a href="physics_joint_distance_create.htm"><span class="notranslate">physics_joint_distance_create</span></a></li>
+    <li><a href="physics_joint_revolute_create.htm"><span class="notranslate">physics_joint_revolute_create</span></a></li>
+    <li><a href="physics_joint_prismatic_create.htm"><span class="notranslate">physics_joint_prismatic_create</span></a></li>
+    <li><a href="physics_joint_pulley_create.htm"><span class="notranslate">physics_joint_pulley_create</span></a></li>
+    <li><a href="physics_joint_gear_create.htm"><span class="notranslate">physics_joint_gear_create</span></a></li>
+    <li><a href="physics_joint_rope_create.htm"><span class="notranslate">physics_joint_rope_create</span></a></li>
+    <li><a href="physics_joint_wheel_create.htm"><span class="notranslate">physics_joint_wheel_create</span></a></li>
+    <li><a href="physics_joint_weld_create.htm"><span class="notranslate">physics_joint_weld_create</span></a></li>
+    <li><a href="physics_joint_friction_create.htm"><span class="notranslate">physics_joint_friction_create</span></a></li>
+    <li><a href="physics_joint_delete.htm"><span class="notranslate">physics_joint_delete</span></a></li>
   </ul>
-  <p> </p>
-  <p>Once a joint has been created, it can often be necessary to know its properties in order to change them at specific times in your game. The following functions (with their corresponding internal constants) are available to test and change joint values:</p>
+  <p> </p>
+  <p>После создания сустава часто бывает необходимо знать его свойства, чтобы изменять их в определенные моменты игры. Для проверки и изменения значений суставов доступны следующие функции (с соответствующими внутренними константами):</p>
   <ul class="colour">
-    <li><a href="physics_joint_enable_motor.htm">physics_joint_enable_motor</a></li>
-    <li><a href="physics_joint_get_value.htm">physics_joint_get_value</a></li>
-    <li><a href="physics_joint_set_value.htm">physics_joint_set_value</a></li>
+    <li><a href="physics_joint_enable_motor.htm"><span class="notranslate">physics_joint_enable_motor</span></a></li>
+    <li><a href="physics_joint_get_value.htm"><span class="notranslate">physics_joint_get_value</span></a></li>
+    <li><a href="physics_joint_set_value.htm"><span class="notranslate">physics_joint_set_value</span></a></li>
   </ul>
-  <p> </p>
-  <p>Additionally, you can use a number of constants from within <span data-keyref="GameMaker Name">GameMaker</span> functions to get (or set) different properties of certain joints. These constants can all be found in the following section:</p>
+  <p> </p>
+  <p>Кроме того, вы можете использовать ряд констант в функциях <span data-keyref="GameMaker Name">GameMaker</span> для получения (или установки) различных свойств определенных суставов. Все эти константы можно найти в следующем разделе:</p>
   <ul class="colour">
-    <li><a href="Physics_Joint_Constants.htm">Physics Joint Constants</a></li>
+    <li><a href="Physics_Joint_Constants.htm">Физика Совместные константы</a></li>
   </ul>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="../Physics.htm">Physics</a></div>
-        <div style="float:right">Next: <a href="../Soft_Body_Particles/Soft_Body_Particles.htm">Soft Body Particles</a></div>
+        <div style="float:left">Назад: <a href="../Physics.htm">Физика</a></div>
+        <div style="float:right">Следующий: <a href="../Soft_Body_Particles/Soft_Body_Particles.htm">Частицы мягких тел</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 Joints

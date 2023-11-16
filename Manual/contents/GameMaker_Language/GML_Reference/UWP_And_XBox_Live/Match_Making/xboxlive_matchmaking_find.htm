@@ -6,7 +6,7 @@
   <title>xboxlive_matchmaking_find</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference page for xboxlive_matchmaking_find" />
   <meta name="rh-index-keywords" content="xboxlive_matchmaking_find" />
@@ -15,71 +15,71 @@
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
   <h1>xboxlive_matchmaking_find</h1>
-  <p>This function will search for a multi-player session using the Session Template, matchmaking hopper and Secure Device Association template, which you should have created beforehand in the XDP dashboard. The user ID you can retrieve for a particular game pad by calling the <a href="../Users_And_Accounts/xboxlive_user_for_pad.htm"><span class="inline">xboxlive_user_for_pad()</span></a> function. The function will return a unique Request ID value, which can then be used to identify the correct <a href="../../../../The_Asset_Editors/Object_Properties/Async_Events/Social.htm">Social Asynchronous Event</a> for this function. This event will be triggered when the session has been created and will contain a DS Map in the variable <a href="../../../GML_Overview/Variables/Builtin_Global_Variables/async_load.htm"><span class="inline">async_load</span></a> with the following key/value pairs:</p>
+  <p>Эта функция будет искать многопользовательскую сессию, используя шаблон сессии, бункер подбора и шаблон Secure Device Association, который вы должны были предварительно создать на панели управления XDP. Идентификатор пользователя, который вы можете получить для конкретного игрового планшета, вызвав функцию <a href="../Users_And_Accounts/xboxlive_user_for_pad.htm"><span class="inline">xboxlive_user_for_pad()</span></a> функцию. Функция вернет уникальное значение Request ID, которое затем может быть использовано для определения правильного <a href="../../../../The_Asset_Editors/Object_Properties/Async_Events/Social.htm">социального асинхронного события</a> для этой функции. Это событие будет запущено после создания сессии и будет содержать DS Map в переменной <a href="../../../GML_Overview/Variables/Builtin_Global_Variables/async_load.htm"><span class="inline">async_load</span></a> со следующими парами ключ/значение:</p>
   <ul class="colour">
-    <li>&quot;requestid&quot; – contains the request ID as returned by the calling function</li>
-    <li>&quot;status&quot; – contains the string &quot;session_created&quot; to inform you of what type of event has been triggered.</li>
-    <li>&quot;num_results&quot; – contains 1 or more if a session has been found, otherwise contains 0.</li>
-    <li>&quot;sessionid<i>&lt;index&gt;</i>&quot; – contains the session ID, or -1 in case of failure  (<i>&lt;index/gt;</i> is a value from 0 to &quot;num_results&quot; - 1).</li>
-    <li>&quot;sessionOwner<i>&lt;index&gt;</i>&quot; – contains the ID of the session host if a session has been found  (<i>&lt;index&gt;</i> is a value from 0 to &quot;num_results&quot; - 1).</li>
-    <li>&quot;error&quot; – contains 0 on success, or -1 in case of failure</li>
+    <li>&quot;requestid&quot; - содержит идентификатор запроса, возвращенный вызывающей функцией</li>
+    <li>&quot;status&quot; - содержит строку &quot;session_created&quot; для информирования о том, какой тип события был вызван.</li>
+    <li>&quot;num_results&quot; - содержит 1 или более, если сессия была найдена, в противном случае содержит 0.</li>
+    <li>&quot;sessionid&lt;index&gt; &quot; - содержит идентификатор сессии, или -1 в случае неудачи<i>(&lt;index/gt;</i> является значением от 0 до &quot;num_results&quot; - 1).</li>
+    <li>&quot;sessionOwner&lt;index&gt; &quot; - содержит ID хозяина сессии, если сессия была найдена<i>(&lt;index&gt;</i> - это значение от 0 до &quot;num_results&quot; - 1).</li>
+    <li>&quot;error&quot; - содержит 0 в случае успеха, или -1 в случае неудачи</li>
   </ul>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p> </p>
+  <h4>Синтаксис:</h4>
   <p class="code">xboxlive_matchmaking_find(user_id, template, hopper, sdatemplate, [matchattributes]);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Аргумент</th>
+        <th>Тип</th>
+        <th>Описание</th>
       </tr>
       <tr>
-        <td>user_id</td>
-        <td><span data-keyref="Type_ID_Xbox_User">Xbox User ID</span></td>
-        <td>The user ID pointer to use</td>
+        <td><span class="notranslate">user_id</span></td>
+        <td><span data-keyref="Type_ID_Xbox_User">Идентификатор пользователя Xbox</span></td>
+        <td><span class="notranslate">The user ID pointer to use</span></td>
       </tr>
       <tr>
-        <td>template</td>
-        <td><span data-keyref="Type_String">String</span></td>
-        <td>The name of the session template</td>
+        <td><span class="notranslate">template</span></td>
+        <td><span data-keyref="Type_String">Строка</span></td>
+        <td><span class="notranslate">The name of the session template</span></td>
       </tr>
       <tr>
-        <td>hopper</td>
-        <td><span data-keyref="Type_String">String</span></td>
-        <td>The name of the matchmaking hopper</td>
+        <td><span class="notranslate">hopper</span></td>
+        <td><span data-keyref="Type_String">Строка</span></td>
+        <td><span class="notranslate">The name of the matchmaking hopper</span></td>
       </tr>
       <tr>
-        <td>sdatemplate</td>
-        <td><span data-keyref="Type_String">String</span></td>
-        <td>The name of the secure device association template</td>
+        <td><span class="notranslate">sdatemplate</span></td>
+        <td><span data-keyref="Type_String">Строка</span></td>
+        <td><span class="notranslate">The name of the secure device association template</span></td>
       </tr>
       <tr>
-        <td>matchattributes</td>
-        <td><span data-keyref="Type_Real">Real</span></td>
-        <td><span class="optional">OPTIONAL</span> The match attributes</td>
+        <td><span class="notranslate">matchattributes</span></td>
+        <td><span data-keyref="Type_Real">Реально</span></td>
+        <td><span class="notranslate"><span class="optional">OPTIONAL</span> Атрибуты соответствия</td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
   <p class="code"><span data-keyref="Type_ID_Async_Event">Async Request ID</span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Пример:</h4>
   <p class="code">var userID = xboxone_user_for_pad(global.PadIndex);<br />
     result = xboxone_matchmaking_find(userID, &quot;MatchTicketSession&quot;, &quot;MatchTicketHopper&quot;, &quot;PeerServerTraffic&quot;);</p>
-  <p>The above will retrieve the user ID for the user on the given gamepad and then try to find a matchmaking session for them.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Вышеприведенная команда получит идентификатор пользователя на данном геймпаде, а затем попытается найти для него сеанс подбора.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Match_Making.htm">Match Making</a></div>
-        <div style="float:right">Next: <a href="xboxlive_matchmaking_session_get_users.htm">xboxlive_matchmaking_session_get_users</a></div>
+        <div style="float:left">Назад: <a href="Match_Making.htm">Сопоставление</a></div>
+        <div style="float:right">Следующий: <a href="xboxlive_matchmaking_session_get_users.htm"><span class="notranslate">xboxlive_matchmaking_session_get_users</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 xboxlive_matchmaking_find

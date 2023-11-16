@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>steam_is_user_logged_on</title>
+  <meta name="generator" content="Adobe RoboHelp 2020" />
+  <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
+  <script src="../../../../assets/scripts/main_script.js"></script>
+  <meta name="rh-authors" content="Mark Alexander" />
+  <meta name="topic-comment" content="Reference page for steam_is_user_logged_on" />
+  <meta name="rh-index-keywords" content="steam_is_user_logged_on" />
+  <meta name="search-keywords" content="steam_is_user_logged_on" />
+</head>
+<body>
+  <!--<div class="body-scroll" style="top: 150px;">-->
+  <h1>steam_is_user_logged_on</h1>
+  <p>Эта функция возвращает <tt>true</tt>, если клиент <span class="notranslate">Steam</span> в настоящее время имеет активное соединение с серверами <span class="notranslate">Steam</span>. Если возвращается <tt>false</tt>, это означает, что активного соединения нет из-за сетевых проблем на локальной машине, либо сервер <span class="notranslate">Steam</span> не работает или занят.</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
+  <p class="code">steam_is_user_logged_on();</p>
+  <p> </p>
+  <h4>Возвращается:</h4>
+  <p class="code">String</p>
+  <p> </p>
+  <h4>Пример:</h4>
+  <p class="code">if steam_is_user_logged_on()<br />
+    {<br />
+        global.user_id = steam_get_user_account_id();<br />
+    }</p>
+  <p>Приведенный выше код проверит, вошел ли пользователь на сервер <span class="notranslate">Steam</span>, и если вошел, то сохранит идентификатор пользователя в глобальной переменной.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <div class="footer">
+    <div class="buttons">
+      <div class="clear">
+        <div style="float:left">Назад: <a href="Steam_API.htm">Общий <span class="notranslate">Steam</span> API</a></div>
+        <div style="float:right">Следующий: <a href="steam_current_game_language.htm"><span class="notranslate">steam_current_game_language</span></a></div>
+      </div>
+    </div>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
+  </div>
+  <!-- KEYWORDS
+steam_is_user_logged_on
+-->
+  <!-- TAGS
+steam_is_user_logged_on
+-->
+</body>
+</html>

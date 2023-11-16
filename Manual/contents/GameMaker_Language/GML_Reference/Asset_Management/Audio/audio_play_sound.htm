@@ -4,9 +4,9 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>audio_play_sound</title>
-  <meta name="generator" content="Adobe RoboHelp 2022" />
+  <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page explaining the function audio_play_sound" />
   <meta name="rh-index-keywords" content="audio_play_sound" />
@@ -14,86 +14,84 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1><span data-field="title" data-format="default">audio_play_sound</span></h1>
-  <p>With this function you can play any <span data-keyref="Type_Asset_Sound"><a href="../../../../../The_Asset_Editors/Sounds.htm" target="_blank">Sound Asset</a></span> in your game.</p>
-  <p>You provide the sound asset and assign it a priority, which is then used to determine how sounds are dealt with when the number of sounds playing is over the limit set by the function <a href="audio_channel_num.htm"><span class="inline">audio_channel_num()</span></a>. Lower priority sounds will be stopped in favour of higher priority sounds, and the priority value can be any real number (the actual value is arbitrary, and can be from 0 to 1 or 0 to 100, as <span data-keyref="GameMaker Name">GameMaker</span> will prioritise them the same). The <i>higher</i> the number the <i>higher</i> the priority, so a sound with priority 100 will be favoured over a sound with priority 1.</p>
-  <p>The third argument is for making the sound loop and setting it to <span class="inline">true</span> will make the sound repeat until it&#39;s stopped manually, and setting it to <span class="inline">false</span> will play the sound once only.</p>
-  <p>This function will also return a unique index for the sound being played, which can be stored in a variable so you can later <a href="audio_pause_sound.htm">pause it</a> or <a href="audio_stop_sound.htm">stop it</a>. This means that if you have multiple instances of the same sound playing at any one time, you can target just one instance of that sound using the <a href="Audio.htm">audio functions</a>.</p>
+  <h1>audio_play_sound</h1>
+  <p>С помощью этой функции вы можете воспроизводить любой звуковой ресурс в вашей игре. Вы предоставляете индекс звука и присваиваете ему приоритет, который затем используется для определения того, как звуки будут обрабатываться, когда количество воспроизводимых звуков превысит предел, установленный функцией <a href="audio_channel_num.htm"><span class="inline">audio_channel_num()</span></a>. Звуки с более низким приоритетом будут остановлены в пользу звуков с более высоким приоритетом, а значение приоритета может быть любым реальным числом (фактическое значение произвольно и может быть от 0 до 1 или от 0 до 100, поскольку <span data-keyref="GameMaker Name">GameMaker</span> будет определять их приоритет одинаково). Обратите внимание, что при работе с приоритетами, чем <i>выше</i> число, тем <i>выше</i> приоритет, так что звук с приоритетом 100 будет предпочтительнее звука с приоритетом 1. Третий аргумент предназначен для зацикливания звука, и если установить его в <span class="inline">true</span>, то звук будет повторяться до тех пор, пока его не остановят, а если установить его в <span class="inline">false</span>, то звук будет воспроизводиться только один раз.</p>
   <div data-conref="../../../../assets/snippets/audio_play_sound_last_arguments.hts"> </div>
-  <p> </p>
-  <h4>Syntax:</h4>
-  <p class="code"><span data-field="title" data-format="default">audio_play_sound</span>(index, priority, loop, [gain], [offset], [pitch], [listener_mask]);</p>
+  <p>Эта функция также возвращает уникальный индексный номер воспроизводимого звука, который можно сохранить в переменной, чтобы затем поставить его на паузу или остановить с помощью соответствующих функций. Это означает, что если у вас есть несколько экземпляров одного и того же звука, воспроизводимого в любой момент времени, вы можете выбрать только один экземпляр этого звука для работы с ним с помощью аудиофункций.</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
+  <p class="code">audio_play_sound(index, priority, loop, [gain], [offset], [pitch], [listener_mask]);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Аргумент</th>
+        <th>Тип</th>
+        <th>Описание</th>
       </tr>
       <tr>
-        <td>index</td>
-        <td><span data-keyref="Type_Asset_Sound"><a href="../../../../../The_Asset_Editors/Sounds.htm" target="_blank">Sound Asset</a></span> or <span data-keyref="Type_ID_Audio_Queue"><a href="../../../../../GameMaker_Language/GML_Reference/Asset_Management/Audio/Audio_Buffers/audio_create_play_queue.htm" target="_blank">Audio Queue ID</a></span></td>
-        <td>The index of the sound to play.</td>
+        <td><span class="notranslate">index</span></td>
+        <td><span data-keyref="Type_Asset_Sound"><a href="../../../../../The_Asset_Editors/Sounds.htm" target="_blank">Звуковой актив</a></span></td>
+        <td><span class="notranslate">The index of the sound to play.</span></td>
       </tr>
       <tr>
-        <td>priority</td>
-        <td><span data-keyref="Type_Real"><a href="../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
-        <td>Set the channel priority for the sound.</td>
+        <td><span class="notranslate">priority</span></td>
+        <td><span data-keyref="Type_Real"><a href="../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Реально</a></span></td>
+        <td><span class="notranslate">Set the channel priority for the sound.</span></td>
       </tr>
       <tr>
-        <td>loop</td>
-        <td><span data-keyref="Type_Bool"><a href="../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Boolean</a></span></td>
-        <td>Sets the sound to loop or not.</td>
+        <td><span class="notranslate">loop</span></td>
+        <td><span data-keyref="Type_Bool"><a href="../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Булево</a></span></td>
+        <td><span class="notranslate">Sets the sound to loop or not.</span></td>
       </tr>
       <tr>
-        <td>gain</td>
-        <td><span data-keyref="Type_Real"><a href="../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
-        <td><span class="optional">OPTIONAL</span> Value for the gain.</td>
+        <td><span class="notranslate">gain</span></td>
+        <td><span data-keyref="Type_Real"><a href="../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Реально</a></span></td>
+        <td><span class="notranslate"><span class="optional">OPTIONAL</span> Ценность выигрыша.</td>
       </tr>
       <tr>
-        <td>offset</td>
-        <td><span data-keyref="Type_Real"><a href="../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
-        <td><span class="optional">OPTIONAL</span> The time (in seconds) to set the start point to. Values beyond the end of the sound are clamped to its length.</td>
+        <td><span class="notranslate">offset</span></td>
+        <td><span data-keyref="Type_Real"><a href="../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Реально</a></span></td>
+        <td><span class="notranslate"><span class="optional">OPTIONAL</span> Время (в секундах), на которое нужно установить начальную точку. Значения, превышающие длину заданного звука, игнорируются.</td>
       </tr>
       <tr>
-        <td>pitch</td>
-        <td><span data-keyref="Type_Real"><a href="../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
-        <td><span class="optional">OPTIONAL</span> The pitch multiplier (default 1).</td>
+        <td><span class="notranslate">pitch</span></td>
+        <td><span data-keyref="Type_Real"><a href="../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Реально</a></span></td>
+        <td><span class="notranslate"><span class="optional">OPTIONAL</span> Множитель шага (по умолчанию 1).</td>
       </tr>
       <tr>
-        <td>listener_mask</td>
-        <td><span data-keyref="Type_Real"><a href="../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
-        <td><span class="optional">OPTIONAL</span> The bitmask data to set for the sound. On the HTML5 target  this will have no effect as the target does not support more than one listener.</td>
+        <td><span class="notranslate">listener_mask</span></td>
+        <td><span data-keyref="Type_Real"><a href="../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Реально</a></span></td>
+        <td><span class="notranslate"><span class="optional">OPTIONAL</span> Данные битовой маски, которые нужно установить для звука. Для цели HTML5 это не будет иметь никакого эффекта, поскольку цель не поддерживает более одного слушателя.</td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
   <p class="code"><span data-keyref="Type_ID_Sound_Instance"><a href="../../../../../GameMaker_Language/GML_Reference/Asset_Management/Audio/audio_play_sound.htm" target="_blank">Sound Instance ID</a></span></p>
-  <p> </p>
-  <h4>Example 1:</h4>
+  <p> </p>
+  <h4>Пример 1:</h4>
   <p class="code">if health &lt;= 0<br />
     {<br />
         lives -= 1;<br />
         audio_play_sound(snd_PlayerDead, 10, false);<br />
     }</p>
-  <p>The above code checks the &quot;health&quot; global variable and if it is less than or equal to 0, it will remove 1 from the &quot;lives&quot; global variable and play a sound.</p>
-  <h4>Example 2:</h4>
+  <p>Приведенный выше код проверяет глобальную переменную &quot;health&quot;, и если она меньше или равна 0, то удаляет 1 из глобальной переменной &quot;lives&quot; и воспроизводит звук.</p>
+  <h4>Пример 2:</h4>
   <p class="code">if bbox_left &gt; room_width<br />
     {<br />
-        <span data-field="title" data-format="default">audio_play_sound</span>(snd_Goodbye, 10, false, 1.1, 0, 2);<br />
+        audio_play_sound(snd_Goodbye, 10, false, 1.1, 0, 2);<br />
     }</p>
-  <p>The above code checks if the instance is past the right bound of the room and plays a sound with a gain of 1.1 and a pitch of 2 (twice the normal pitch).</p>
-  <p> </p>
-  <p> </p>
+  <p>Приведенный выше код проверяет, находится ли экземпляр за правой границей комнаты, и воспроизводит звук с коэффициентом усиления 1,1 и высотой тона 2 (в два раза выше обычного).</p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a data-xref="{title}" href="Audio.htm">Audio</a></div>
-        <div style="float:right">Next: <a data-xref="{title}" href="audio_play_sound_ext.htm">audio_play_sound_ext</a></div>
+        <div style="float:left">Назад: <a href="Audio.htm">Аудио</a></div>
+        <div style="float:right">Следующий: <a href="audio_play_sound_at.htm"><span class="notranslate">audio_play_sound_at</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 audio_play_sound

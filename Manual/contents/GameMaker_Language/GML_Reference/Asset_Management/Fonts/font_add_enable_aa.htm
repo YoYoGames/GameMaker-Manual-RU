@@ -6,7 +6,7 @@
   <title>font_add_enable_aa</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page outlining the function font_add_enable_aa" />
   <meta name="rh-index-keywords" content="font_add_enable_aa" />
@@ -15,43 +15,43 @@
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
   <h1>font_add_enable_aa</h1>
-  <p>This function can be used to enable or disable anti-aliasing (AA) for fonts added using <a href="font_add.htm"><span class="inline">font_add()</span></a>. This function needs to be called <i>before</i> you add any fonts and setting it to <span class="inline">true</span> will enable AA, and setting it to <span class="inline">false</span> will disable it. By default AA is enabled. Note that this will have no effect on fonts that have been added before the function was called, and the function only needs to be called once when the font is added, and not every draw/step that the font is being used.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p>Эту функцию можно использовать для включения или отключения сглаживания (AA) для шрифтов, добавленных с помощью функции <a href="font_add.htm"><span class="inline">font_add()</span></a>. Эта функция должна быть вызвана <i>до</i> добавления шрифтов, и установка ее в <span class="inline">true</span> включит AA, а установка в <span class="inline">false</span> отключит его. По умолчанию AA включен. Обратите внимание, что это не влияет на шрифты, которые были добавлены до вызова этой функции, и функция должна вызываться только один раз при добавлении шрифта, а не на каждом отрисовке/шаге, когда шрифт используется.</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
   <p class="code">font_add_enable_aa(enable);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th><th>Type</th>
-        <th>Description</th>
+        <th>Аргумент</th><th>Тип</th>
+        <th>Описание</th>
      </tr>
       <tr>
-        <td>enable</td><td><span data-keyref="Type_Bool"></span></td>
-        <td>Whether to enable (<span class="inline">true</span>) or disable (<span class="inline">false</span>) AA for added fonts.</td>
+        <td><span class="notranslate">enable</span></td><td><span data-keyref="Type_Bool"></span></td>
+        <td><span class="notranslate">Whether to enable (<span class="inline">true</span>) или отключить (<span class="inline">false</span>) AA для добавленных шрифтов.</td>
      </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
   <p class="code"><span data-keyref="Type_Void"></span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Пример:</h4>
   <p class="code">if !font_add_get_enable_aa()<br />
     {<br />
         font_add_enable_aa(true);<br />
     }</p>
-  <p>The above code checks the status of anti-aliasing for added fonts and if it not enabled, then we enable it.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Приведенный выше код проверяет состояние сглаживания для добавленных шрифтов, и если оно не включено, то мы включаем его.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Fonts.htm">Fonts</a></div>
-        <div style="float:right">Next: <a href="font_add_get_enable_aa.htm">font_add_get_enable_aa</a></div>
+        <div style="float:left">Назад: <a href="Fonts.htm">Шрифты</a></div>
+        <div style="float:right">Следующий: <a href="font_add_get_enable_aa.htm"><span class="notranslate">font_add_get_enable_aa</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2021 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 font_add_enable_aa

@@ -6,7 +6,7 @@
   <title>font_replace_sprite_ext</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page outlining the function font_replace_sprite_ext" />
   <meta name="rh-index-keywords" content="font_replace_sprite_ext" />
@@ -15,65 +15,65 @@
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
   <h1>font_replace_sprite_ext</h1>
-  <p>This function will replace a sprite font that you created previously using the function <a href="font_add_sprite_ext.htm"><span class="inline">font_add_sprite_ext()</span></a>. It uses a &quot;sprite strip&quot;, where each sub-image is be an individual symbol or letter, and the images are mapped to letters based on the argument &quot;string_map&quot; of the function. This argument is a string that you can use to tell <span data-keyref="GameMaker Name">GameMaker</span> what order the sub-images of the sprite font are and it will map these automatically when writing text. So, for example, if you have a string-map of &quot;AaBbCcDdEeFfGgHh&quot;, your sprite font <i>must</i> have the sub-images ordered in this way.</p>
-  <p>You can also set the spacing for the font to be proportional (<span class="inline">true</span>) or not (<span class="inline">false</span>), where a proportional font is spaced based on the actual width of the letters (so the letter &quot;i&quot; takes less room than the letter &quot;w&quot;, for example) while a non-proportional font will be spaced based on the sub-image width, like a monospaced font. Finally, you can define the space to leave between each letter when writing, and this can be any integer value, with 0 being no space (the letters will &quot;touch&quot; if proportional). The function returns an <i>index</i> value that should be stored in a variable as this will be needed in all further codes that refer to this font.</p>
-  <p>If the function fails, then it will fail silently without replacing the given sprite font.</p>
-  <p class="note"><b><span class="note">NOTE</span> </b>This function requires you to have previously added a sprite font using <span style="font-size:1px;"><a href="font_add_sprite.htm"><span class="inline">font_add_sprite()</span></a></span>, as it will replace that and cannot be used on fonts that are included as part of the game resources.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p>Эта функция заменит шрифт <span class="notranslate">sprite</span>, который вы создали ранее с помощью функции <a href="font_add_sprite_ext.htm"><span class="inline">font_add_sprite_ext()</span></a>. Она использует &quot;спрайтовую полосу&quot;, где каждое подизображение является отдельным символом или буквой, а изображения отображаются на буквы на основе аргумента &quot;string_map&quot; функции. Этот аргумент представляет собой строку, с помощью которой вы можете указать <span data-keyref="GameMaker Name">GameMaker</span>, в каком порядке расположены суб-изображения шрифта <span class="notranslate">sprite</span>, и он будет автоматически сопоставлять их при написании текста. Так, например, если у вас есть string-map &quot;AaBbCcDdEeFfGgHh&quot;, то ваш шрифт <span class="notranslate">sprite</span> <i>должен</i> иметь суб-изображения, упорядоченные таким образом.</p>
+  <p>Вы также можете задать пропорциональный (<span class="inline">true</span>) или непропорциональный (<span class="inline">false</span>) интервал для шрифта, при этом пропорциональный шрифт использует фактическую ширину букв (например, буква &quot;i&quot; занимает меньше места, чем буква &quot;w&quot;), а непропорциональный - ширину подрисуночного изображения, как моноширинный шрифт. Наконец, вы можете определить пространство, которое нужно оставить между каждой буквой при написании, и это может быть любое целое значение, при этом 0 означает отсутствие пространства (буквы будут &quot;соприкасаться&quot;, если шрифт пропорциональный). Функция возвращает значение <i>индекса</i>, которое следует сохранить в переменной, так как оно понадобится во всех дальнейших кодах, которые будут ссылаться на этот шрифт.</p>
+  <p>Если функция завершится неудачно, то она завершится молча, не заменив заданный шрифт <span class="notranslate">sprite</span>.</p>
+  <p class="note"><b><span class="note">ПРИМЕЧАНИЕ</span> </b>Эта функция требует, чтобы вы предварительно добавили шрифт <span class="notranslate">sprite</span> с помощью функции <span style="font-size:1px;"><a href="font_add_sprite.htm"><span class="inline">font_add_sprite()</span></a></span>, так как она заменит его и не может быть использована для шрифтов, включенных в ресурсы игры.</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
   <p class="code">font_replace_sprite_ext(font, spr, string_map, prop, sep);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Аргумент</th>
+        <th>Тип</th>
+        <th>Описание</th>
       </tr>
       <tr>
-        <td>font</td>
-        <td><span data-keyref="Type_Asset_Font">Font Asset</span></td>
-        <td>The font to replace.</td>
+        <td><span class="notranslate">font</span></td>
+        <td><span data-keyref="Type_Asset_Font">Шрифтовой актив</span></td>
+        <td><span class="notranslate">The font to replace.</span></td>
       </tr>
       <tr>
-        <td>spr</td>
-        <td><span data-keyref="Type_Asset_Sprite">Sprite Asset</span></td>
-        <td>The sprite to add a font based on.</td>
+        <td><span class="notranslate">spr</span></td>
+        <td><span data-keyref="Type_Asset_Sprite">Актив спрайта</span></td>
+        <td><span class="notranslate">The sprite to add a font based on.</span></td>
       </tr>
       <tr>
-        <td>string_map</td>
-        <td><span data-keyref="Type_String">String</span></td>
-        <td>String from which sprite sub-image order is taken.</td>
+        <td><span class="notranslate">string_map</span></td>
+        <td><span data-keyref="Type_String">Строка</span></td>
+        <td><span class="notranslate">String from which sprite sub-image order is taken.</span></td>
       </tr>
       <tr>
-        <td>prop</td>
-        <td><span data-keyref="Type_Bool">Boolean</span></td>
-        <td>Set as proportional font or not.</td>
+        <td><span class="notranslate">prop</span></td>
+        <td><span data-keyref="Type_Bool">Булево</span></td>
+        <td><span class="notranslate">Set as proportional font or not.</span></td>
       </tr>
       <tr>
-        <td>sep</td>
-        <td><span data-keyref="Type_Real">Real</span></td>
-        <td>The space to leave between each letter.</td>
+        <td><span class="notranslate">sep</span></td>
+        <td><span data-keyref="Type_Real">Реально</span></td>
+        <td><span class="notranslate">The space to leave between each letter.</span></td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
   <p class="code"><span data-keyref="Type_Void">N/A</span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Пример:</h4>
   <p class="code">font_replace_sprite_ext(global.Font, spr_CalcFont, &quot;0123456789+-*/=&quot;, true, 2);</p>
-  <p>The above code will replace a sprite font asset that is indexed in the variable &quot;global.Font&quot; with sprite images indexed in the variable &quot;spr_CalcFont&quot;.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Приведенный выше код заменит актив шрифта <span class="notranslate">sprite</span>, который индексируется в переменной &quot;global.Font&quot;, на изображения <span class="notranslate">sprite</span>, индексируемые в переменной &quot;spr_CalcFont&quot;.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Fonts.htm">Fonts</a></div>
-        <div style="float:right">Next: <a href="font_delete.htm">font_delete</a></div>
+        <div style="float:left">Назад: <a href="Fonts.htm">Шрифты</a></div>
+        <div style="float:right">Следующий: <a href="font_delete.htm"><span class="notranslate">font_delete</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 font_replace_sprite_ext

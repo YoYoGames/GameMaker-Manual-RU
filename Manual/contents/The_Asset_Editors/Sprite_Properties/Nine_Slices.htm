@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Nine Slice</title>
+  <title>Девять ломтиков</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../assets/css/default.css" type="text/css" />
-  <script src="../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Gurpreet Matharoo" />
   <meta name="topic-comment" content="Page detailing how the Nine Slice technique works" />
   <meta name="rh-index-keywords" content="Sprite Editor" />
@@ -14,28 +14,28 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>Nine Slice</h1>
-  <p><span data-keyref="Nine Slicing">Nine Slicing</span> (also known as 9-slicing) is a technique used to scale rectangular images for preserving details, making them retain their original form after scaling.</p>
-  <p>This is achieved by dividing the image into nine separate parts or &quot;slices&quot;. The corner slices are moved during scaling and drawn at the same scale, then the edge and centre slices are stretched or repeated (depending on your setting) to fill the space.</p>
-  <p><img class="center" src="../../assets/Images/Asset_Editors/Nine_Slice_0_Preview.png" />Four <strong>guides </strong>are placed on a sprite to divide the image into nine slices. The following visual demonstrates how the guides stay in place after the sprite is scaled using Nine Slice:</p>
-  <p><img class="center" src="../../assets/Images/Asset_Editors/Nine_Slice_1_Guides.png" />The <strong>Tile Mode</strong> of a slice determines how that slice is displayed when the sprite is scaled. It can only be set for the edge and centre slices (as corner slices are not scaled).</p>
-  <p>The following visual demonstrates each Tile Mode when applied to the centre slice:<img class="center" height="746" src="../../assets/Images/Asset_Editors/Nine_Slice_3_TileModes.png" width="1258" />If <strong>Nine Slicing</strong> is enabled for a sprite, it will be used for resizing the sprite wherever it appears, and will work in any existing places where the sprite was used without any other changes being required.</p>
-  <p class="note"><strong>NOTE</strong>: Nine Slicing will not work with functions that draw only a part of the sprite or distort it, such as <span class="inline"><a href="../../GameMaker_Language/GML_Reference/Drawing/Sprites_And_Tiles/draw_sprite_part.htm">draw_sprite_part()</a> </span>or <span class="inline"><a href="../../GameMaker_Language/GML_Reference/Drawing/Sprites_And_Tiles/draw_sprite_pos.htm">draw_sprite_pos()</a></span>.</p>
-  <p>In conjunction with <a href="../Sequences.htm">Sequences</a>, this feature can be used to build user interfaces, and can be used, for example, to create rectangular walls in a game level. Texture memory can also be saved using <strong><span data-keyref="Nine Slicing">Nine Slicing</span></strong>, as a smaller image can be used to cover a larger area on-screen.</p>
-  <p><span data-keyref="Nine Slicing">Nine Slicing</span> can be enabled on Sprites in the IDE. For more information, see <a href="../Sprites.htm">The Sprite Editor</a>.</p>
-  <p>For information on the <a class="glossterm" data-glossterm="Runtime" href="#">Runtime</a> functions available for <span data-keyref="Nine Slicing">Nine Slicing</span>, see the following page:</p>
+  <h1>Девять ломтиков</h1>
+  <p><span data-keyref="Nine Slicing">Девятикратная нарезка</span> (также известная как 9-кратная нарезка) - это техника, используемая для масштабирования прямоугольных изображений с целью сохранения деталей, благодаря чему они сохраняют свою первоначальную форму после масштабирования.</p>
+  <p>Это достигается путем разделения изображения на девять отдельных частей или &quot;кусочков&quot;. Угловые фрагменты перемещаются во время масштабирования и рисуются в том же масштабе, затем краевые и центральные фрагменты растягиваются или повторяются (в зависимости от настроек), чтобы заполнить пространство.</p>
+  <p><img>Четыре <strong>направляющие </strong>размещаются на <span class="notranslate">sprite</span> для разделения изображения на девять фрагментов. На следующем рисунке показано, как направляющие остаются на месте после масштабирования <span class="notranslate">sprite</span> с помощью Nine Slice:</p>
+  <p><img><strong>Режим плитки</strong> среза определяет, как этот срез будет отображаться при масштабировании <span class="notranslate">sprite</span>. Его можно установить только для краевых и центральных срезов (угловые срезы не масштабируются).</p>
+  <p>Следующий пример демонстрирует каждый режим плитки при применении к центральному срезу:<img>Если для <span class="notranslate">sprite</span> включена функция <strong>Nine Slicing</strong>, она будет использоваться для изменения размера <span class="notranslate">sprite</span> везде, где он появляется, и будет работать в любых существующих местах, где использовался <span class="notranslate">sprite</span>, без необходимости внесения каких-либо других изменений.</p>
+  <p class="note"><strong>ПРИМЕЧАНИЕ</strong>: Девятикратная нарезка не будет работать с функциями, которые рисуют только часть <span class="notranslate">sprite</span> или искажают ее, например, <span class="inline"><a href="../../GameMaker_Language/GML_Reference/Drawing/Sprites_And_Tiles/draw_sprite_part.htm">draw_sprite_part()</a> </span>или <span class="inline"><a href="../../GameMaker_Language/GML_Reference/Drawing/Sprites_And_Tiles/draw_sprite_pos.htm">draw_sprite_pos()</a></span>.</p>
+  <p>В сочетании с <a href="../Sequences.htm">последовательностями</a> эта функция может использоваться для построения пользовательских интерфейсов, а также, например, для создания прямоугольных стен в игровом уровне. Память текстур также можно экономить с помощью <strong><span data-keyref="Nine Slicing">Девять нарезок</span></strong>, так как меньшее изображение может быть использовано для покрытия большей области на экране.</p>
+  <p><span data-keyref="Nine Slicing">Девятикратное нарезание</span> может быть включено на <span class="notranslate">Sprites</span> в <span class="notranslate">IDE</span>. Для получения дополнительной информации см. раздел <a href="../Sprites.htm">Редактор <span class="notranslate">Sprite</span> </a>.</p>
+  <p>Информацию о функциях <a class="glossterm" data-glossterm="Время выполнения" href="#">Runtime</a>, доступных для <span data-keyref="Nine Slicing">Nine Slicing</span>, см. на следующей странице:</p>
   <ul class="colour">
-    <li><a href="../../GameMaker_Language/GML_Reference/Asset_Management/Sprites/Nine_Slice_Functions.htm" title="Nine Slice Functions">Nine Slice Functions</a></li>
+    <li><a href="../../GameMaker_Language/GML_Reference/Asset_Management/Sprites/Nine_Slice_Functions.htm" title="Nine Slice Functions">Девять функций нарезки</a></li>
   </ul>
-  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="../Sprites.htm">The Sprite Editor</a></div>
-        <div style="float:right">Next: <a data-xref="{title}" href="Sprite_Strips.htm">Sprite Strips</a></div>
+        <div style="float:left">Назад: <a href="../Sprites.htm">Редактор спрайтов</a></div>
+        <div style="float:right">Следующий: <a href="../Tile_Sets.htm">Комплекты плитки</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 Nine Slice

@@ -6,7 +6,7 @@
   <title>ds_priority_find_min</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference page for ds_priority_find_min" />
   <meta name="rh-index-keywords" content="ds_priority_find_min" />
@@ -16,46 +16,43 @@
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
   <h1>ds_priority_find_min</h1>
-  <p>With this function you can find the value stored in the priority queue with the lowest priority, and if more than one value has the same priority then any one of them could be returned in any order. However, unlike <a href="ds_priority_delete_min.htm"><span class="inline">ds_priority_delete_min()</span></a>, this function will not remove the value from the queue.</p>
-  <div data-conref="../../../../assets/snippets/Note_Priority_queue_empty_return.hts"> </div>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p>С помощью этой функции можно найти значение, хранящееся в очереди приоритетов с наименьшим приоритетом, а если несколько значений имеют одинаковый приоритет, то любое из них может быть возвращено в любом порядке. Однако, в отличие от <a href="ds_priority_delete_min.htm"><span class="inline">ds_priority_delete_min()</span></a>эта функция не удаляет значение из очереди.</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
   <p class="code">ds_priority_find_min(id);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
+        <th>Аргумент</th><th>Тип</th>
+        <th>Описание</th>
+     </tr>
       <tr>
-        <td>id</td>
-        <td><span data-keyref="Type_ID_DS_Priority"><a href="../../../../../GameMaker_Language/GML_Reference/Data_Structures/DS_Priority_Queues/ds_priority_create.htm" target="_blank">DS Priority ID</a></span></td>
-        <td>The id of the priority queue to use.</td>
-      </tr>
+        <td><span class="notranslate">id</span></td><td><span data-keyref="Type_ID_DS_Priority"></span></td>
+        <td><span class="notranslate">The id of the priority queue to use.</span></td>
+     </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
-  <p class="code"><span data-keyref="Type_Any"><a href="../../../../../GameMaker_Language/GML_Overview/Data_Types.htm#variable" target="_blank">Any</a></span> (Data type stored in the priority)</p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
+  <p class="code"><span data-keyref="Type_Real">Real</span> or <span data-keyref="Type_String">String</span></p>
+  <p> </p>
+  <h4>Пример:</h4>
   <p class="code">if ai_move<br />
     {<br />
         script_execute(ds_priority_find_min(ai_priority));<br />
     }</p>
-  <p>The above code checks an instance variable and if it returns <span class="inline">true</span> it will execute a script function indexed in the priority queue with the lowest priority value.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Приведенный выше код проверяет переменную экземпляра, и если она возвращает значение <span class="inline">true</span>, то выполняется функция сценария, проиндексированная в очереди приоритетов с наименьшим значением приоритета.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="DS_Priority_Queues.htm">DS Priority Queues</a></div>
-        <div style="float:right">Next: <a href="ds_priority_find_priority.htm">ds_priority_find_priority</a></div>
+        <div style="float:left">Назад: <a href="DS_Priority_Queues.htm">Очереди приоритетов DS</a></div>
+        <div style="float:right">Следующий: <a href="ds_priority_find_priority.htm"><span class="notranslate">ds_priority_find_priority</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 ds_priority_find_min

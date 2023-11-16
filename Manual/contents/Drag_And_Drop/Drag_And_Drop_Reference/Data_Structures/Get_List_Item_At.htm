@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Get List Item At</title>
-  <meta name="generator" content="Adobe RoboHelp 2020" />
+  <title>Получить элемент списка At</title>
+  <meta name="generator" content="Adobe RoboHelp 2019" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
-  <script src="../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page that explains the Get List Item At action" />
   <meta name="rh-index-keywords" content="GML Visual Action - Get List Item At" />
@@ -14,47 +14,49 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1><img alt="Get List Item At Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Data_Structures/i_DS_Get_List_Item_At.png" /> Get List Item At</h1>
-  <p>With this action you can recover the index position of an item within the given list. You supply the variable that stores the list index (as returned by the action <a href="Create_List.htm">Create List</a>) and the index position within the list to get the item value from, as well as a target variable to store the returned item value (which can be flagged as a temporary local variable to be used until the end of the script or event).<b></b></p>
-  <p class="note"><span data-conref="../../../assets/snippets/Tag_note.hts"> </span> If you give a position that is outside of the given list size (ie: position 11 in a 10 value list) then the action will return <span class="inline">undefined</span>. You can check for this using the <a href="../Common/If_Undefined.htm">If Undefined</a> action.</p>
-  <p> </p>
-  <h4>Action Syntax:</h4>
-  <p><img alt="Get List Item At Action" class="center" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Data_Structures/a_DS_Get_List_Item_At.png" /></p>
-  <h4>Arguments:</h4>
+  <h1><img> Получить элемент списка At</h1>
+  <p>С помощью этого действия вы можете восстановить индексную позицию элемента в заданном списке. Вы предоставляете переменную, которая хранит индекс списка (возвращенный действием <a href="Create_List.htm">Создать список</a>) и позицию индекса в списке, чтобы
+    а также целевую переменную для хранения возвращаемого значения элемента (которая может быть помечена как временная локальная переменная, которая будет использоваться до конца сценария или события).<b></b></p>
+  <p class="note"><b>ПРИМЕЧАНИЕ</b>: Если вы зададите позицию, которая находится за пределами заданного размера списка (т.е. позиция 11 в списке из 10 значений), то действие вернет <span class="inline">undefined</span>. Проверить это можно с помощью действия <a href="../Common/If_Undefined.htm">If Undefined</a>.</p>
+  <p> </p>
+  <h4>Синтаксис действия:</h4>
+  <p><img alt="Get List Item At Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Data_Structures/i_DS_Get_List_Item_At.png" /></p>
+  <h4>Аргументы:</h4>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Description</th>
+        <th>Аргумент</th>
+        <th>Описание</th>
       </tr>
       <tr>
-        <td>List</td>
-        <td>The index (stored in a variable) of the list to remove from</td>
+        <td><span class="notranslate">List</span></td>
+        <td>Индекс (хранится в переменной) списка, из которого нужно удалить список</td>
       </tr>
       <tr>
-        <td>Index</td>
-        <td>The index position within the list to get the item from</td>
+        <td><span class="notranslate">Index</span></td>
+        <td>Позиция индекса в списке, из которого нужно получить элемент</td>
       </tr>
       <tr>
-        <td>Target</td>
-        <td>The target variable to store the returned value</td>
+        <td><span class="notranslate">Target</span></td>
+        <td>Целевая переменная для хранения возвращаемого значения</td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Example:</h4>
-  <p><img class="center" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Data_Structures/e_DS_Free_Data_Structure.png" />The above action block code gets the size of the list referenced in the global variable and then uses a for loop to loop through it and destroy the instances with the IDs stored in the list. After the loop is finished, the list is freed from memory.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p> </p>
+  <h4>Пример:</h4>
+  <p><img>Приведенный выше код блока действий получает размер списка, на который ссылается глобальная переменная, а затем использует цикл for
+    чтобы пройти по нему и уничтожить экземпляры с идентификаторами, хранящимися в списке. После завершения цикла список освобождается из памяти.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Data_Structure_Actions.htm">Data Structure Actions</a></div>
-        <div style="float:right">Next: <a href="Get_Index_Of_List_Item.htm">Get Index Of List Item</a></div>
+        <div style="float:left">Назад: <a href="Data_Structure_Actions.htm">Действия со структурой данных</a></div>
+        <div style="float:right">Следующий: <a href="Get_Index_Of_List_Item.htm">Получить индекс элемента списка</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 Action - Get List Item At

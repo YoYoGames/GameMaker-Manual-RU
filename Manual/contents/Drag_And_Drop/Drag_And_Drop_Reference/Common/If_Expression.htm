@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>If Expression</title>
+  <title>Если выражение</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
-  <script src="../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Section detailing If Expression" />
   <meta name="rh-index-keywords" content="GML Visual Action - If Expression" />
@@ -14,49 +13,51 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1><img alt="If Expression Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Common/i_Common_If_Expression.png" /> If Expression</h1>
-  <p>This action is used to check that an expression as either <span class="inline">true</span> or <span class="inline">false</span>, and you can check any logical expression here as long as it evaluates to one or the other value. For example, any of the following expressions could be used:</p>
-  <p class="code">x &lt; (room_width / 2)<br />
-    a == b<br />
-    ++val &gt;= 100</p>
-  <p>If you flag the &quot;Not&quot; argument, then the above will be negated expressions, for example &quot;<span class="inline">==</span>&quot; becomes &quot;<span class="inline"><i>not</i>=</span>&quot;. Also note that the <a class="glossterm" data-glossterm="expression" href="#">expression</a> is not limited to numeric values and you can check strings, pointers, resource IDs or anything else that a function can return or use (see the section on <a href="../../../GameMaker_Language/GML_Overview/Data_Types.htm">data types</a> for more information), but you cannot compare two different data types without getting an error - for example if you try to use a string and an integer in the expression you will get an error. For more information on expressions, see <a href="../../../GameMaker_Language/GML_Overview/Expressions_And_Operators.htm">here</a> .</p>
-  <p class="note"><span data-conref="../../../assets/snippets/Tag_important.hts"> </span> Due to <a href="http://floating-point-gui.de/formats/fp/" target="·_blank&quot;">floating point precision issues</a>, checking to see if two values are exactly equal may return <span class="inline">false</span>, since one may be exactly 1, while the other may be 1.00000000000001. This can be avoided by using the <a href="../Data_Types/Decimal_To_Integer.htm">Decimal to Integer</a> action before checking or using the &quot;greater than (&gt;)&quot; or &quot;less than (&lt;)&quot; expressions.</p>
-  <p>Note that to add actions into the &quot;<span class="inline">if</span>&quot; block, they should be dropped to the side of the action, as shown in the image below:</p>
-  <p><img alt="If Expression drop actions exmaple" class="center" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Common/drop_if_expression.png" />These actions will now be run if the &quot;if&quot; evaluates to <span class="inline">true</span>, while any actions dropped elsewhere will be performed after the &quot;if&quot; block. Note that you can &quot;stack&quot; expressions in the same action by clicking the plus icon <span><img src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Icon_Expand_Arguments.png" /> </span>beside the action, and giving another expression to check. This will check if <i>all</i> the expressions given return <span class="inline">true</span> in one check and only perform the added action code if they do (see the example given below).</p>
-  <p> </p>
-  <h4>Action Syntax:</h4>
-  <p><img alt="If Expression Action" class="center" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Common/a_common_if_expression.png" /></p>
-  <h4>Arguments:</h4>
+  <h1><img> Если выражение</h1>
+  <p>Это действие используется для проверки выражения <span class="inline">true</span> или <span class="inline">false</span>, и вы можете проверить здесь любое логическое выражение, если оно оценивается в одно или другое значение. Например, можно использовать любое из следующих выражений:</p>
+  <p class="code">x &lt; (room_width / 2)<br/> a == b<br/> ++val &gt;= 100</p>
+  <p>Если вы отметите аргумент &quot;Not&quot;, то вышеперечисленные выражения будут отрицаемыми, например, &quot;<span class="inline">==</span>&quot; станет &quot;<span class="inline"><i>not</i>=</span>&quot;. Также обратите внимание, что <a class="glossterm" data-glossterm="выражение" href="#">выражение</a> не ограничивается числовыми значениями, и вы можете проверять строки, указатели, идентификаторы ресурсов или все остальное, что может возвращать или использовать функция (подробнее см. раздел о <a href="../../../GameMaker_Language/GML_Overview/Data_Types.htm">типах данных</a> ), но вы не можете сравнивать два разных типа данных без получения ошибки - например, если вы попытаетесь использовать в выражении строку и целое число, вы получите ошибку. Более подробную информацию о выражениях см. <a href="../../../GameMaker_Language/GML_Overview/Expressions_And_Operators.htm">здесь</a>.</p>
+  <p class="note"><b>ВАЖНОЕ ПРИМЕЧАНИЕ</b>: Из-за <a href="http://floating-point-gui.de/formats/fp/" target="·_blank&quot;">проблем точности с плавающей запятой</a>, проверка на то, что два значения точно равны, может вернуть <span class="inline">false</span>, так как одно может быть точно 1, в то время как
+    другое может быть 1.00000000000001. Этого можно избежать, используя перед проверкой действие <a href="../Data_Types/Decimal_To_Integer.htm">Decimal to Integer</a> или используя выражения &quot;больше (&gt;)&quot; или &quot;меньше (&lt;)&quot;.</p>
+  <p>Обратите внимание, что для добавления действий в блок &quot;<span class="inline">if</span>&quot;, их следует опустить сбоку от действия, как показано на изображении ниже:</p>
+  <p><img>Теперь эти действия будут выполняться, если &quot;if&quot; имеет значение <span class="inline">true</span>, в то время как
+    любые действия, брошенные в другом месте, будут выполняться после блока &quot;if&quot;. Обратите внимание, что вы можете &quot;складывать&quot; выражения в одно и то же действие, нажав на значок плюса <span><img> </span>рядом с
+    и указать еще одно выражение для проверки. Это позволит проверить, <i>все</i> ли приведенные выражения возвращают <span class="inline">true</span> за одну проверку, и выполнить добавленный код действия, только если они возвращают (см. пример, приведенный ниже).</p>
+  <p> </p>
+  <h4>Синтаксис действия:</h4>
+  <p><img alt="If Expression Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Common/i_Common_If_Expression.png"/></p>
+  <h4>Аргументы:</h4>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Description</th>
+        <th>Аргумент</th>
+        <th>Описание</th>
       </tr>
       <tr>
-        <td>Expression</td>
-        <td>The expression to check.</td>
+        <td><span class="notranslate">Expression</span></td>
+        <td>Выражение для проверки.</td>
       </tr>
       <tr>
-        <td>Not</td>
-        <td>Set to check if the expression does <i>not</i> evaluate to true.</td>
+        <td><span class="notranslate">Not</span></td>
+        <td>Устанавливается для проверки, если выражение <i>не</i> имеет значения true.</td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Example:</h4>
-  <p><img alt="If Expression Example" class="center" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Common/e_common_if_expression.png" />The above action block code checks to see if the instance variable &quot;<span class="inline">player_score</span>&quot; is greater than 1000 <i>and</i> that the instance variable &quot;<span class="inline">player_level</span>&quot; is less than 10. if both checks return <span class="inline">true</span> then the action code goes on to assign new values to these variables.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p> </p>
+  <h4>Пример:</h4>
+  <p><img>Приведенный выше код блока действий проверяет, больше ли переменная экземпляра &quot;<span class="inline">player_score</span>&quot;
+    больше 1000 <i>, а</i> переменная экземпляра &quot;<span class="inline">player_level</span>&quot; меньше 10. Если обе проверки возвращают <span class="inline">true</span>, то код действия переходит к присвоению новых значений этим переменным.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Common_Actions_Library.htm">Common Actions</a></div>
-        <div style="float:right">Next: <a href="If_Undefined.htm">If Undefined</a></div>
+        <div style="float:left">Назад: <a href="Common_Actions_Library.htm">Общие действия</a></div>
+        <div style="float:right">Следующий: <a href="If_Undefined.htm">Если не определено</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 Action - If Expression
@@ -64,5 +65,5 @@ Action - If Expression
   <!-- TAGS
 action_if_expression
 -->
-</body>
-</html>
+
+</body></html>

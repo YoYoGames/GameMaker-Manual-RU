@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>sequence_get</title>
+  <title>последовательность_get</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page outlining function sequence_get" />
   <meta name="rh-index-keywords" content="sequence_get" />
@@ -15,44 +15,44 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>sequence_get</h1>
-  <p>With this function you can retrieve the <a href="Sequence_Structs/The_Sequence_Object_Struct.htm">Sequence Object Struct</a> from a sequence asset index. You supply the asset index for the sequence as defined in the asset browser, and the function will return the sequence object struct that can then be accessed, or -1 if the sequence doesn&#39;t exist or the asset index given is not a sequence.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <h1>последовательность_get</h1>
+  <p>С помощью этой функции вы можете получить <a href="Sequence_Structs/The_Sequence_Object_Struct.htm">структуру объекта последовательности</a> из индекса актива последовательности. Вы указываете индекс актива для последовательности, как определено в браузере активов, и функция возвращает структуру объекта последовательности, к которой можно получить доступ, или -1, если последовательность не существует или указанный индекс актива не является последовательностью.</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
   <p class="code">sequence_get(sequence_index);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Аргумент</th>
+        <th>Тип</th>
+        <th>Описание</th>
       </tr>
       <tr>
-        <td>sequence_index</td>
-        <td><span data-keyref="Type_Asset_Sequence">Sequence Asset</span></td>
-        <td>The sequence asset as defined in the Asset Browser.</td>
+        <td><span class="notranslate">sequence_index</span></td>
+        <td><span data-keyref="Type_Asset_Sequence">Активы последовательности</span></td>
+        <td><span class="notranslate">The sequence asset as defined in the Asset Browser.</span></td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
   <p class="code"><span data-keyref="Type_Struct_Sequence_Object">Sequence Object Struct</span> or -1</p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Пример:</h4>
   <p class="code">var _seq = sequence_get(seq_Logo);<br />
     seq.loopmode = seqplay_pingpong;</p>
-  <p>The above code retrieves the sequence object struct from the sequence object &quot;seq_Loop&quot; and then sets the loop mode for the sequence (all subsequently created sequence instances will now use this loop mode).</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Приведенный выше код извлекает структуру объекта последовательности из объекта последовательности &quot;seq_Loop&quot;, а затем устанавливает режим цикла для последовательности (все последующие созданные экземпляры последовательности теперь будут использовать этот режим цикла).</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Sequences.htm">Sequences</a></div>
-        <div style="float:right">Next: <a href="sequence_track_new.htm">sequence_track_new</a></div>
+        <div style="float:left">Назад: <a href="Sequences.htm">Последовательности</a></div>
+        <div style="float:right">Следующий: <a href="sequence_track_new.htm"><span class="notranslate">sequence_track_new</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 sequence_get

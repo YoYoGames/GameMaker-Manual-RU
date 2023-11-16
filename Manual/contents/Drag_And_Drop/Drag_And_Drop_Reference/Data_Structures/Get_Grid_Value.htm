@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Get Grid Value</title>
+  <title>Получить значение сетки</title>
   <meta name="generator" content="Adobe RoboHelp 2019" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
-  <script src="../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page that explains the Get Grid Value action" />
   <meta name="rh-index-keywords" content="GML Visual Action - Get Grid Value" />
@@ -14,53 +14,53 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1><img alt="Get Grid Value Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Data_Structures/i_DS_Get_Grid_Value.png" /> Get Grid Value</h1>
-  <p>With this action you can set a specific cell within the grid data structure to a value. You supply the variable that holds the grid index (as returned by the action <a href="Create_Grid.htm">Create Grid</a>) and then give the x and y position (the column
-    and row) for the cell to set, and then finally the value for that cell. You must also set a target variable (which can be flagged as a temporary local variable) to store the returned cell value, and the value can be any valid data type. Note that
-    the x and y position for the cell must be whole integers within the bounds of the grid.</p>
-  <p> </p>
-  <h4>Action Syntax:</h4>
-  <p><img alt="Get Grid Value Action" class="center" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Data_Structures/a_DS_Get_Grid_Value.png" /></p>
-  <h4>Arguments:</h4>
+  <h1><img> Получить значение сетки</h1>
+  <p>С помощью этого действия вы можете установить значение для определенной ячейки в структуре данных сетки. Вы передаете переменную, которая содержит индекс сетки (возвращается действием <a href="Create_Grid.htm">Создать сетку</a>), затем указываете позицию x и y (столбец
+    и строка) для ячейки, которую нужно установить, и, наконец, значение для этой ячейки. Вы также должны задать целевую переменную (которая может быть помечена как временная локальная переменная) для хранения возвращаемого значения ячейки, причем значение может быть любым допустимым типом данных. Обратите внимание, что
+    позиции x и y для ячейки должны быть целыми целыми числами в пределах сетки.</p>
+  <p> </p>
+  <h4>Синтаксис действия:</h4>
+  <p><img alt="Get Grid Value Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Data_Structures/i_DS_Get_Grid_Value.png" /></p>
+  <h4>Аргументы:</h4>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Description</th>
+        <th>Аргумент</th>
+        <th>Описание</th>
       </tr>
       <tr>
-        <td>Grid</td>
-        <td>The index (stored in a variable) of the grid to get</td>
+        <td><span class="notranslate">Grid</span></td>
+        <td>Индекс (хранится в переменной) сетки, которую нужно получить</td>
       </tr>
       <tr>
-        <td>x</td>
-        <td>The cell position along the x axis to get (the column)</td>
+        <td><span class="notranslate">x</span></td>
+        <td>Положение ячейки вдоль оси x для получения (столбец)</td>
       </tr>
       <tr>
-        <td>y</td>
-        <td>The cell position along the y axis to get (the row)</td>
+        <td><span class="notranslate">y</span></td>
+        <td>Положение ячейки вдоль оси y для получения (строка)</td>
       </tr>
       <tr>
-        <td>Target</td>
-        <td>The target variable to use to store the returned value</td>
+        <td><span class="notranslate">Target</span></td>
+        <td>Целевая переменная, которая будет использоваться для хранения возвращаемого значения</td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Example:</h4>
-  <p><img alt="Get Grid Value Example" class="center" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Data_Structures/e_DS_Get_Grid_Value.png" />The above action block code gets the value in the grid stored in a global variable that
-    corresponds to the instances position within the room. This value is then checked and if it is an instance ID value, that instance is destroyed and the grid cell set to the keyword <span class="inline">noone</span>.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p> </p>
+  <h4>Пример:</h4>
+  <p><img>Приведенный выше код блока действий получает значение в сетке, хранящееся в глобальной переменной, которая
+    соответствует положению экземпляра в комнате. Затем это значение проверяется, и если оно является значением ID экземпляра, то этот экземпляр уничтожается, а ячейка сетки устанавливается на ключевое слово <span class="inline">noone</span>.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Data_Structure_Actions.htm">Data Structure Actions</a></div>
-        <div style="float:right">Next: <a href="Clear_Grid.htm">Clear Grid</a></div>
+        <div style="float:left">Назад: <a href="Data_Structure_Actions.htm">Действия со структурой данных</a></div>
+        <div style="float:right">Следующий: <a href="Clear_Grid.htm">Очистить сетку</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2021 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 Action - Get Grid Value

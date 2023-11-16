@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Start Following Path</title>
+  <title>Начните следовать по пути</title>
   <meta name="generator" content="Adobe RoboHelp 2019" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
-  <script src="../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page that explains the Start Following Path action" />
   <meta name="rh-index-keywords" content="GML Visual Action - Start Following Path" />
@@ -14,66 +14,66 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1><img alt="Start Following Path Icon" class="icon" height="32" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Paths/i_Paths_Start_Following_Path.png" width="32" /> Start Following Path</h1>
-  <p>This action will start an instance following along a path that has been created in the Asset Browser. You would then use this action to tell your instance which path to follow, what speed to follow the path (measured in pixels per game frame), how to
-    behave when it reaches the end of the path, and whether to follow the absolute or relative path position. When setting the speed you can use negative values to signify that the instance should follow the path in reverse and it&#39;s worth noting that
-    the speed you set here can be modified by the speed modifier set in the path editor for each path point, so if you set the path speed to 2 and in the path one of the points has a speed modifier of 200%, then the actual speed at that point will be
-    4 pixels per game frame.</p>
-  <p>Once you&#39;ve set the initial path speed you can set how the instance should behave when it reaches the end of the path from the following options (note that when an instance reaches the end of a path this will also trigger an <a href="../../../The_Asset_Editors/Object_Properties/Other_Events.htm">Other - Path Ended Event</a>):</p>
+  <h1><img> Начните следовать по пути</h1>
+  <p>Это действие запускает экземпляр, следующий по пути, который был создан в браузере активов. Вы можете использовать это действие, чтобы указать экземпляру, по какому пути следовать, с какой скоростью (измеряется в пикселях на игровой кадр), как вести себя, когда он достигнет конца пути, и следовать ли абсолютной или относительной позиции пути.
+    вести себя, когда он достигнет конца пути, и следовать ли абсолютному или относительному положению пути. При установке скорости можно использовать отрицательные значения, чтобы указать, что экземпляр должен следовать по пути в обратном направлении, и стоит отметить, что
+    заданная здесь скорость может быть изменена модификатором скорости, установленным в редакторе пути для каждой точки пути, поэтому если вы установите скорость пути равной 2, а в пути одна из точек имеет модификатор скорости 200%, то фактическая скорость в этой точке будет равна
+    4 пикселя на игровой кадр.</p>
+  <p>После установки начальной скорости пути вы можете задать поведение экземпляра при достижении конца пути, выбрав следующие параметры (обратите внимание, что когда экземпляр достигнет конца пути, это также вызовет <a href="../../../The_Asset_Editors/Object_Properties/Other_Events.htm">событие Other - Path Ended Event</a>):</p>
   <ul class="colour">
-    <li><b>Stop</b>: End the path, stopping the instance on the last path point.</li>
-    <li><b>Restart</b>: Continue the path from the start, jumping to the start position again if the path is not marked as closed in the Path Editor.</li>
-    <li><b>Loop</b>: Continue from the current position to run the path again.</li>
-    <li><b>Reverse</b>: Go backwards along the path again (achieved by reversing the path follow speed), and when it reaches the start of the path, it will reverse again, etc...</li>
+    <li><b>Стоп</b>: завершение пути, остановка экземпляра на последней точке пути.</li>
+    <li><b>Перезапустить</b>: Продолжить путь с самого начала, снова переходя к начальной позиции, если путь не отмечен как закрытый в редакторе путей.</li>
+    <li><b>Петля</b>: Продолжите движение из текущей позиции, чтобы снова пройти путь.</li>
+    <li><b>Реверс</b>: Снова двигаться назад по пути (достигается путем изменения скорости следования по пути), а когда он достигнет начала пути, он снова будет двигаться назад и т.д...</li>
   </ul>
-  <p>Finally, you can flag the path as being <i>Absolute </i>or not. By default the instance will start following the path from its current position (the relative position), but if you flag the <em>Absolute</em> checkbox then it will start following the
-    path exactly as you designed and placed it in the Path Editor (the absolute position). The image below illustrates this:</p>
-  <p><img alt="Path Relative Example" class="center" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Paths/path_relative_image.png" />As you can see in the image above, the two instances are following the <i>same</i> path started
-    with this action, but one of the instances is following the <i>absolute</i> path while the other is following the <i>relative</i> path. It should be noted that when <em>Absolute </em>is flagged the instance will &quot;jump&quot; to the start of the
-    path no matter where in the room it is placed.</p>
-  <p> </p>
-  <h4>Action Syntax:</h4>
-  <p><img alt="Path Start Action" class="center" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Paths/a_Paths_Start_Following_Path.png" /></p>
-  <h4>Arguments:</h4>
+  <p>Наконец, вы можете отметить путь как <i>абсолютный </i>или нет. По умолчанию экземпляр начнет следовать по пути с текущей позиции (относительная позиция), но если вы установите флажок <em>Абсолютный</em>, то он начнет следовать по
+    путь именно так, как вы его спроектировали и разместили в редакторе путей (абсолютная позиция). Это показано на рисунке ниже:</p>
+  <p><img>Как видно на изображении выше, два экземпляра следуют по одному и тому <i>же</i> пути, начатому
+    с помощью этого действия, но один из экземпляров следует по <i>абсолютному</i> пути, а другой - по <i>относительному</i>. Следует отметить, что при установке флажка <em>Absolute </em>экземпляр будет &quot;прыгать&quot; к началу
+    независимо от того, в каком месте комнаты он находится.</p>
+  <p> </p>
+  <h4>Синтаксис действия:</h4>
+  <p><img alt="Start Following Path Icon" class="icon" height="32" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Paths/i_Paths_Start_Following_Path.png" width="32" /></p>
+  <h4>Аргументы:</h4>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Description</th>
+        <th>Аргумент</th>
+        <th>Описание</th>
       </tr>
       <tr>
-        <td>Path</td>
-        <td>The path asset to start following</td>
+        <td><span class="notranslate">Path</span></td>
+        <td>Актив пути, по которому нужно начать следовать</td>
       </tr>
       <tr>
-        <td>Speed</td>
-        <td>The speed (in pixels per game frame) to follow the path</td>
+        <td><span class="notranslate">Speed</span></td>
+        <td>Скорость (в пикселях на игровой кадр) следования по траектории</td>
       </tr>
       <tr>
-        <td>On End</td>
-        <td>The response to reaching the end of the path</td>
+        <td><span class="notranslate">On End</span></td>
+        <td>Реакция на достижение конца пути</td>
       </tr>
       <tr>
-        <td>Absolute</td>
-        <td>Whether to start at absolute or relative position</td>
+        <td><span class="notranslate">Absolute</span></td>
+        <td>Начинать ли с абсолютной или относительной позиции</td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Example:</h4>
-  <p><img alt="Path Start Example" class="center" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Paths/e_Paths_Start_Following_Path.png" />The above action block will make the calling instance follow a path (starting at its absolute
-    position and continuing at end) when a key is pressed.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p> </p>
+  <h4>Пример:</h4>
+  <p><img>Приведенный выше блок действий заставит вызывающий экземпляр следовать по пути (начиная с его абсолютной
+    позиции и до конца) при нажатии клавиши.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Path_Actions.htm">Path Actions</a></div>
-        <div style="float:right">Next: <a href="Stop_Following_Path.htm">Stop Following Path</a></div>
+        <div style="float:left">Назад: <a href="Path_Actions.htm">Действия на пути</a></div>
+        <div style="float:right">Следующий: <a href="Stop_Following_Path.htm">Остановитесь на пути</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2021 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 Action - Start Following Path

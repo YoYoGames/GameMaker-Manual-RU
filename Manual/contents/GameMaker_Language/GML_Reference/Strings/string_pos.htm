@@ -6,7 +6,7 @@
   <title>string_pos</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
-  <script src="../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference page for string_pos" />
   <meta name="rh-index-keywords" content="string_pos" />
@@ -15,51 +15,48 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1><span data-field="title" data-format="default">string_pos</span></h1>
-  <p>This function will return the character position of an instance of a sub-string within a string, searching from the beginning of the string (to search from the end, use the function <a href="string_last_pos.htm"><span class="inline">string_last_pos()</span></a>). The function will return 0 if it&#39;s not found at all, or the position of the first character of the sub-string if it is found. Keep in mind that for legacy support strings are indexed from 1, so 1 is the first position in the string, not 0 as you may expect. One use for this is for filtering words that may be considered offensive, or for finding the correct place to insert some text into another string.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <h1>string_pos</h1>
+  <p>Эта функция возвращает позицию символа экземпляра подстроки в строке при поиске с начала строки (для поиска с конца используйте функцию <a href="string_last_pos.htm"><span class="inline">string_last_pos()</span></a>). Функция вернет 0, если подстрока не найдена, или позицию первого символа подстроки, если она найдена. Имейте в виду, что для старой поддержки строки индексируются с 1, поэтому 1 - это первая позиция в строке, а не 0, как вы могли бы ожидать. Это можно использовать для фильтрации слов, которые могут считаться оскорбительными, или для поиска правильного места для вставки текста в другую строку.</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
   <p class="code">string_pos(substr, str);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
+        <th>Аргумент</th><th>Тип</th>
+        <th>Описание</th>
+     </tr>
       <tr>
-        <td>substr</td>
-        <td><span data-keyref="Type_String"><a href="../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">String</a></span></td>
-        <td>The substring to look for in the string.</td>
-      </tr>
+        <td><span class="notranslate">substr</span></td><td><span data-keyref="Type_String"></span></td>
+        <td><span class="notranslate">The substring to look for in the string.</span></td>
+     </tr>
       <tr>
-        <td>str</td>
-        <td><span data-keyref="Type_String"><a href="../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">String</a></span></td>
-        <td>The string.</td>
-      </tr>
+        <td><span class="notranslate">str</span></td><td><span data-keyref="Type_String"></span></td>
+        <td><span class="notranslate">The string.</span></td>
+     </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
-  <p class="code"><span data-keyref="Type_Real"><a href="../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
+  <p class="code"><span data-keyref="Type_Real"></span></p>
+  <p> </p>
+  <h4>Пример:</h4>
   <p class="code">if (string_pos(&quot;,&quot;, text) != 0)<br />
     {<br />
         string_insert(name, text, string_pos(&quot;,&quot;, text));<br />
     }</p>
-  <p>The above code searches the string stored in the variable &quot;text&quot; for a comma, and if it finds one it inserts the substring &quot;name&quot; at that position.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Приведенный выше код ищет в строке, хранящейся в переменной &quot;text&quot;, запятую, и если находит ее, то вставляет в эту позицию подстроку &quot;name&quot;.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a data-xref="{title}" href="Strings.htm">Strings</a></div>
-        <div style="float:right">Next: <a data-xref="{title}" href="string_pos_ext.htm">string_pos_ext</a></div>
+        <div style="float:left">Назад: <a href="Strings.htm">Струны</a></div>
+        <div style="float:right">Следующий: <a href="string_pos_ext.htm"><span class="notranslate">string_pos_ext</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 string_pos

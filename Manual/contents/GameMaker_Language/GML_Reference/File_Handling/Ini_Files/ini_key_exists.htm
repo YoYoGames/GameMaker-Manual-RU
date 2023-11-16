@@ -6,7 +6,7 @@
   <title>ini_key_exists</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference page for ini_key_exists" />
   <meta name="rh-index-keywords" content="ini_key_exists" />
@@ -16,49 +16,49 @@
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
   <h1>ini_key_exists</h1>
-  <p>This function checks to see if a key exists in the currently open ini and will return <span class="inline">true</span> if it does or <span class="inline">false</span> otherwise. This is not a necessary check to prevent errors as, when a key does not exist, reading from a non-existent key will just return a default value. It can be useful to see if an ini file has saved specific data and a few other things, however.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p>Эта функция проверяет, существует ли ключ в текущем открытом ini, и возвращает <span class="inline">true</span>, если существует, или <span class="inline">false</span> в противном случае. Эта проверка не является необходимой для предотвращения ошибок, поскольку, если ключ не существует, чтение из несуществующего ключа просто вернет значение по умолчанию. Однако это может быть полезно, чтобы узнать, сохранил ли ini файл определенные данные и некоторые другие вещи.</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
   <p class="code">ini_key_exists(section, key);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th><th>Type</th>
-        <th>Description</th>
+        <th>Аргумент</th><th>Тип</th>
+        <th>Описание</th>
      </tr>
       <tr>
-        <td>section</td><td><span data-keyref="Type_String"></span></td>
-        <td>The section in the open .ini file to check a key in.</td>
+        <td><span class="notranslate">section</span></td><td><span data-keyref="Type_String"></span></td>
+        <td><span class="notranslate">The section in the open .ini file to check a key in.</span></td>
      </tr>
       <tr>
-        <td>key</td><td><span data-keyref="Type_String"></span></td>
-        <td>The key to check for.</td>
+        <td><span class="notranslate">key</span></td><td><span data-keyref="Type_String"></span></td>
+        <td><span class="notranslate">The key to check for.</span></td>
      </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
   <p class="code"><span data-keyref="Type_Bool"></span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Пример:</h4>
   <p class="code">ini_open(&quot;savedata.ini&quot;);<br />
     if !ini_key_exists(&quot;save1&quot;, &quot;name&quot;)<br />
     {<br />
         global.name = &quot;Player1&quot;;<br />
     }<br />
     ini_close();</p>
-  <p>This will set variable global.name to &quot;Player1&quot; if no such key as &quot;name&quot; exists.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Это установит переменную global.name в значение &quot;Player1&quot;, если не существует такого ключа &quot;name&quot;.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Ini_Files.htm">Ini Files</a></div>
-        <div style="float:right">Next: <a href="ini_section_exists.htm">ini_section_exists</a></div>
+        <div style="float:left">Назад: <a href="Ini_Files.htm">Ini Files</a></div>
+        <div style="float:right">Следующий: <a href="ini_section_exists.htm"><span class="notranslate">ini_section_exists</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 ini_key_exists

@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>buffer_get_address</title>
-  <meta name="generator" content="Adobe RoboHelp 2020" />
+  <title>буфер_get_address</title>
+  <meta name="generator" content="Adobe RoboHelp 2019" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
-  <script src="../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference page for buffer_get_address" />
   <meta name="rh-index-keywords" content="buffer_get_address" />
@@ -15,50 +15,48 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1><span data-field="title" data-format="default">buffer_get_address</span></h1>
-  <p>This function gets a <i>pointer</i> to the raw, <i>aligned</i> buffer address.</p>
-  <p>This is primarily for use with extensions as you can pass this value through to them, allowing them to access the buffer data.</p>
-  <h3>Usage Notes</h3>
+  <h1>буфер_get_address</h1>
+  <p>С помощью этой функции вы можете получить <i>указатель</i> на необработанный, <i>выровненный</i> адрес буфера. Это в первую очередь предназначено для использования расширениями, так как вы можете передать им это значение, позволяя им получить доступ к данным буфера. Обратите внимание, что есть несколько вещей
+    которые нельзя делать с буфером при доступе из расширения:</p>
   <ul class="colour">
-    <li>You cannot free the memory.</li>
-    <li>You cannot resize the memory.</li>
-    <li>You cannot write past the buffer address plus the buffer size (you can use the <span class="inline3_func"><a data-xref="{title}" href="buffer_get_size.htm">buffer_get_size</a></span> function for this) or you will get an out of bounds error.</li>
+    <li>Вы не можете освободить память.</li>
+    <li>Изменить размер памяти невозможно.</li>
+    <li>Вы не можете писать дальше адреса буфера плюс размер буфера (вы можете использовать <a href="buffer_get_size.htm"><span class="inline">buffer_get_size()</span></a> для этого), иначе вы получите ошибку выхода за границы.</li>
   </ul>
-  <p> </p>
-  <h4>Syntax:</h4>
-  <p class="code"><span data-field="title" data-format="default">buffer_get_address</span>(buffer);</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
+  <p class="code">buffer_get_address(buffer);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
+        <th>Аргумент</th><th>Тип</th>
+        <th>Описание</th>
+     </tr>
       <tr>
-        <td>buffer</td>
-        <td><span data-keyref="Type_ID_Buffer"><a href="../../../../GameMaker_Language/GML_Reference/Buffers/buffer_create.htm" target="_blank">Buffer ID</a></span></td>
-        <td>The index of the buffer to use.</td>
-      </tr>
+        <td><span class="notranslate">buffer</span></td><td><span data-keyref="Type_ID_Buffer"></span></td>
+        <td><span class="notranslate">The index of the buffer to use.</span></td>
+     </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
-  <p class="code"><span data-keyref="Type_Pointer"><a href="../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Pointer</a></span></p>
-  <p> </p>
-  <h4>Example:</h4>
-  <p class="code">var _address = <span data-field="title" data-format="default">buffer_get_address</span>(buff_model);<br />
-    var _end_address = _address + buffer_get_size(buff_model);</p>
-  <p>The above code will get the memory address of the buffer indexed in the variable <span class="inline2">buff_model</span> and then get the memory address for the end of the buffer using the <span class="inline3_func"><a data-xref="{title}" href="buffer_get_size.htm">buffer_get_size</a></span> function, storing both values in local variables for further use.</p>
-  <p> </p>
-  <p> </p>
+  <p> </p>
+  <h4>Возвращается:</h4>
+  <p class="code"><span data-keyref="Type_Pointer"></span></p>
+  <p> </p>
+  <h4>Пример:</h4>
+  <p class="code">var b_address = buffer_get_address(buff_model);<br/> var b_end_address = b_address + buffer_get_size(buff_model);</p>
+  <p>Приведенный выше код получит адрес памяти буфера, индексированного в переменной &quot;buff_model&quot;, а затем получит адрес памяти для конца буфера с помощью функции <span class="inline">buffer_get_size()</span>, сохранив оба значения в локальных переменных для дальнейшего использования.
+    дальнейшего использования.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a data-xref="{title}" href="Buffers.htm">Buffers</a></div>
-        <div style="float:right">Next: <a data-xref="{title}" href="buffer_get_size.htm">buffer_get_size</a></div>
+        <div style="float:left">Назад: <a href="Buffers.htm">Буферы</a></div>
+        <div style="float:right">Следующий: <a href="buffer_get_size.htm"><span class="notranslate">buffer_get_size</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 buffer_get_address

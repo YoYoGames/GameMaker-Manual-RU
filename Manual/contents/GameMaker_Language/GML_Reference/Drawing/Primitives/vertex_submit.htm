@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>vertex_submit</title>
+  <title>вершина_подписать</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference for vertex_submit" />
   <meta name="rh-index-keywords" content="vertex_submit,pr_pointlist,pr_linelist,pr_linestrip,pr_trianglelist,pr_trianglestrip" />
@@ -14,86 +14,86 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>vertex_submit</h1>
-  <p>You can use this function to submit the contents of a vertex buffer to the graphics pipeline for use with a shader. You supply the buffer index to use, the base primitive type to use (see the constants below) and the texture that is to be used. The base primitive type is only used for assigning the order in which the vertexes that you stored in the buffer are drawn and connected, but the actual data used for each of the vertexes will be that which you defined when creating the vertex buffer.</p>
-  <p class="note"><b>NOTE</b>: This function can only be used in the <b>Draw Event</b>.</p>
-  <p>For a visual example of the different base primitives available, see the image below:</p>
+  <h1>вершина_подписать</h1>
+  <p>Вы можете использовать эту функцию для передачи содержимого вершинного буфера в графический конвейер для использования в шейдере. Вы указываете индекс буфера, базовый тип примитива (см. константы ниже) и текстуру, которая будет использоваться. Базовый тип примитива используется только для назначения порядка, в котором вершины, сохраненные в буфере, будут рисоваться и соединяться, но фактические данные, используемые для каждой из вершин, будут теми, которые вы определили при создании буфера вершин.</p>
+  <p class="note"><b>ПРИМЕЧАНИЕ</b>: Эта функция может быть использована только в <b>событии Draw Event</b>.</p>
+  <p>В качестве наглядного примера различных доступных базовых примитивов см. рисунок ниже:</p>
   <p><img alt="The different primitive types" class="center" src="../../../../assets/Images/Scripting_Reference/GML/Reference/Drawing/primitive_types.png" /></p>
   <table>
     <tbody>
       <tr>
-        <th>Constant</th>
-        <th>Description</th>
+        <th>Постоянная</th>
+        <th>Описание</th>
       </tr>
       <tr>
-        <td>pr_pointlist</td>
-        <td>A primitive consisting of a list of points.</td>
+        <td><span class="notranslate">pr_pointlist</span></td>
+        <td>Примитив, состоящий из списка точек.</td>
       </tr>
       <tr>
-        <td>pr_linelist</td>
-        <td>A primitive made up of a individual lines in a list.</td>
+        <td><span class="notranslate">pr_linelist</span></td>
+        <td>Примитив, состоящий из отдельных строк в списке.</td>
       </tr>
       <tr>
-        <td>pr_linestrip</td>
-        <td>A primitive made up of a consecutive strip of lines.</td>
+        <td><span class="notranslate">pr_linestrip</span></td>
+        <td>Примитив, состоящий из последовательной полосы линий.</td>
       </tr>
       <tr>
-        <td>pr_trianglelist</td>
-        <td>A primitive made up of individual triangles in a list.</td>
+        <td><span class="notranslate">pr_trianglelist</span></td>
+        <td>Примитив, состоящий из отдельных треугольников в списке.</td>
       </tr>
       <tr>
-        <td>pr_trianglestrip</td>
-        <td>A primitive made up of a consecutive strip of triangles.</td>
+        <td><span class="notranslate">pr_trianglestrip</span></td>
+        <td>Примитив, состоящий из последовательной полосы треугольников.</td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p> </p>
+  <h4>Синтаксис:</h4>
   <p class="code">vertex_submit(buffer, primitive, texture);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Аргумент</th>
+        <th>Тип</th>
+        <th>Описание</th>
       </tr>
       <tr>
-        <td>buffer</td>
-        <td><span data-keyref="Type_ID_Buffer_Vertex"><a data-rhwidget="HyperlinkPopover" href="../../../../../LINKGOESHERE">Vertex Buffer ID</a></span></td>
-        <td>The buffer to use.</td>
+        <td><span class="notranslate">buffer</span></td>
+        <td><span data-keyref="Type_ID_Buffer_Vertex"><a data-rhwidget="HyperlinkPopover" href="../../../../../LINKGOESHERE">Идентификатор буфера вершин</a></span></td>
+        <td><span class="notranslate">The buffer to use.</span></td>
       </tr>
       <tr>
-        <td>primitive</td>
-        <td><span data-keyref="Type_Constant_Draw_Primitive_Type"><a data-rhwidget="HyperlinkPopover" href="../../../../../GameMaker_Language/GML_Reference/Drawing/Primitives/draw_primitive_begin.htm">Primitive Type Constant</a></span></td>
-        <td>The primitive base type.</td>
+        <td><span class="notranslate">primitive</span></td>
+        <td><span data-keyref="Type_Constant_Draw_Primitive_Type"><a data-rhwidget="HyperlinkPopover" href="../../../../../GameMaker_Language/GML_Reference/Drawing/Primitives/draw_primitive_begin.htm">Примитивный тип Константа</a></span></td>
+        <td><span class="notranslate">The primitive base type.</span></td>
       </tr>
       <tr>
-        <td>texture</td>
-        <td><span data-keyref="Type_Pointer_Texture"><a data-rhwidget="HyperlinkPopover" href="../../../../../LINKGOESHERE">Texture Pointer</a></span></td>
-        <td>The texture to use (or -1 for no texture).</td>
+        <td><span class="notranslate">texture</span></td>
+        <td><span data-keyref="Type_Pointer_Texture"><a data-rhwidget="HyperlinkPopover" href="../../../../../LINKGOESHERE">Указатель текстуры</a></span></td>
+        <td><span class="notranslate">The texture to use (or -1 for no texture).</span></td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
   <p class="code"><span data-keyref="Type_Void"><a data-rhwidget="HyperlinkPopover" href="../../../../../LINKGOESHERE">N/A</a></span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Пример:</h4>
   <p class="code">shader_set(shader_prim);<br />
     vertex_submit(buff, pr_trianglelist, sprite_get_texture(sprite_index));<br />
     shader_reset();</p>
-  <p>The above code will submit the vertex buffer indexed in the variable &quot;buff&quot; for drawing with the shader &quot;shader_prim&quot;, using a triangle list as the base primitive and the texture of the sprite for the instance running the code.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Приведенный выше код передаст буфер вершин, индексированный в переменной &quot;buff&quot;, для отрисовки шейдером &quot;shader_prim&quot;, используя список треугольников в качестве базового примитива и текстуру <span class="notranslate">sprite</span> для экземпляра, выполняющего код.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Primitives_And_Vertex_Formats.htm">Primitives And Vertex Formats</a></div>
-        <div style="float:right">Next: <a href="draw_primitive_begin.htm">draw_primitive_begin</a></div>
+        <div style="float:left">Назад: <a href="Primitives_And_Vertex_Formats.htm">Примитивы и форматы вершин</a></div>
+        <div style="float:right">Следующий: <a href="draw_primitive_begin.htm"><span class="notranslate">draw_primitive_begin</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 vertex_submit

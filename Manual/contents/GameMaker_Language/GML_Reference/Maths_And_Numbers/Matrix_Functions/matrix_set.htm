@@ -6,7 +6,7 @@
   <title>matrix_set</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference page for matrix_set" />
   <meta name="rh-index-keywords" content="matrix_set,matrix_view,matrix_projection,matrix_world" />
@@ -15,67 +15,67 @@
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
   <h1>matrix_set</h1>
-  <p>This function takes an <a href="../../../GML_Overview/Arrays.htm">array</a> of 16 values, corresponding to a given 4x4 matrix type, where elements [0 - 3] would be row 1, elements [4 -7] would be row 2, etc... (see the image on the <a href="Matrix_Functions.htm">main page</a>). You can create such a matrix using the <a href="matrix_build.htm"><span class="inline">matrix_build()</span></a> or <a href="matrix_get.htm"><span class="inline">matrix_get()</span></a> functions or simply building the array yourself and passing that into the function. The available matrix types are <i>view</i>, <i>projection</i> and <i>world</i>, for which you would use one of the following constants:</p>
+  <p>Эта функция принимает <a href="../../../GML_Overview/Arrays.htm">массив</a> из 16 значений, соответствующих заданному типу матрицы 4x4, где элементы [0 - 3] будут строкой 1, элементы [4 -7] - строкой 2 и т.д.... (см. рисунок на <a href="Matrix_Functions.htm">главной странице</a>). Вы можете создать такую матрицу, используя <a href="matrix_build.htm"><span class="inline">matrix_build()</span></a> или <a href="matrix_get.htm"><span class="inline">matrix_get()</span></a> или просто создать массив самостоятельно и передать его в функцию. Доступными типами матриц являются <i>вид</i>, <i>проекция</i> и <i>мир</i>, для которых можно использовать одну из следующих констант:</p>
   <table>
     <tbody>
       <tr>
-        <th>Constant</th>
-        <th>Description</th>
+        <th>Постоянная</th>
+        <th>Описание</th>
       </tr>
       <tr>
-        <td><span class="inline">matrix_view</span></td>
-        <td>The current view matrix</td>
+        <td><span class="notranslate"><span class="inline">matrix_view</span></td>
+        <td>Текущая матрица представления</td>
       </tr>
       <tr>
-        <td><span class="inline">matrix_projection</span></td>
-        <td>The current projection matrix</td>
+        <td><span class="notranslate"><span class="inline">matrix_projection</span></td>
+        <td>Текущая матрица проекции</td>
       </tr>
       <tr>
-        <td><span class="inline">matrix_world</span></td>
-        <td>The current world matrix</td>
+        <td><span class="notranslate"><span class="inline">matrix_world</span></td>
+        <td>Текущая мировая матрица</td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p> </p>
+  <h4>Синтаксис:</h4>
   <p class="code">matrix_set(type, matrix);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Аргумент</th>
+        <th>Тип</th>
+        <th>Описание</th>
       </tr>
       <tr>
-        <td>type</td>
-        <td><span data-keyref="Type_Constant_Matrix_Type">Matrix Type Constant</span></td>
-        <td>The type of matrix to get the values of (see the <i>constants</i> listed above)</td>
+        <td><span class="notranslate">type</span></td>
+        <td><span data-keyref="Type_Constant_Matrix_Type">Тип матрицы Постоянная</span></td>
+        <td><span class="notranslate">The type of matrix to get the values of (see the <i>constants</i> listed above)</span></td>
       </tr>
       <tr>
-        <td>matrix</td>
-        <td><span data-keyref="Type_Array_Matrix">Matrix Array</span></td>
-        <td>The matrix data as an array</td>
+        <td><span class="notranslate">matrix</span></td>
+        <td><span data-keyref="Type_Array_Matrix">Матричный массив</span></td>
+        <td><span class="notranslate">The matrix data as an array</span></td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
   <p class="code"><span data-keyref="Type_Void">N/A</span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Пример:</h4>
   <p class="code">matrix_set(matrix_world, m_array);</p>
-  <p>The above code will set the values of the current world matrix to those stored in the array matrix &quot;m_array&quot;.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Приведенный выше код установит значения текущей мировой матрицы на значения, хранящиеся в матрице массива &quot;m_array&quot;.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Matrix_Functions.htm">Matrix Functions</a></div>
-        <div style="float:right">Next: <a href="matrix_build.htm">matrix_build</a></div>
+        <div style="float:left">Назад: <a href="Matrix_Functions.htm">Матричные функции</a></div>
+        <div style="float:right">Следующий: <a href="matrix_build.htm"><span class="notranslate">matrix_build</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 matrix_set

@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>String To Number</title>
+  <title>Строка в число</title>
   <meta name="generator" content="Adobe RoboHelp 2019" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
-  <script src="../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page that explains the String To Number action" />
   <meta name="rh-index-keywords" content="GML Visual Action - String To Number" />
@@ -14,75 +14,75 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1><img alt="String To Number Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Data_Types/i_Types_String_To_Number.png" /> String To Number</h1>
-  <p>This action can convert a string into a number. You provide the string to change and then give a target variable to return the real number back to (this variable can be flagged as a temporary local variable). Note that if the string has any characters
-    other than numbers and a decimal point, it will <i>not</i> be converted, although if the string <i>starts</i> with a number then those will be converted and the rest of the string excluded. It is important to note that when passing decimals into this
-    action, the returned string will be rounded to <i>two</i> decimal places only. Below is a table of input values and what you&#39;d expect returned</p>
+  <h1><img> Строка в число</h1>
+  <p>Это действие может преобразовать строку в число. Вы предоставляете строку для изменения, а затем указываете целевую переменную для возврата реального числа (эта переменная может быть помечена как временная локальная переменная). Обратите внимание, что если в строке есть символы
+    кроме цифр и десятичной точки, то она <i>не</i> будет преобразована, хотя если строка <i>начинается</i> с цифры, то она будет преобразована, а остальная часть строки исключена. Важно отметить, что при передаче десятичных дробей в это действие
+    действие, возвращаемая строка будет округлена только до <i>двух</i> знаков после запятой. Ниже приведена таблица вводимых значений и ожидаемого результата</p>
   <table>
     <tbody>
       <tr>
-        <th>String</th>
-        <th>Returned Value</th>
+        <th>Строка</th>
+        <th>Возвращаемое значение</th>
       </tr>
       <tr>
-        <td>&quot;123&quot;</td>
+        <td><span class="notranslate">&quot;123&quot;</span></td>
         <td>123</td>
       </tr>
       <tr>
-        <td>&quot;123 Hello World&quot;</td>
+        <td><span class="notranslate">&quot;123 Hello World&quot;</span></td>
         <td>123</td>
       </tr>
       <tr>
-        <td>&quot;Hello World&quot;</td>
-        <td>0 (by default if the string can&#39;t be converted, 0 will be returned)</td>
+        <td><span class="notranslate">&quot;Hello World&quot;</span></td>
+        <td>0 (по умолчанию, если строка не может быть преобразована, возвращается 0)</td>
       </tr>
       <tr>
-        <td>&quot;Hello World 123&quot;</td>
+        <td><span class="notranslate">&quot;Hello World 123&quot;</span></td>
         <td>0</td>
       </tr>
       <tr>
-        <td>&quot;123.45678&quot;</td>
+        <td><span class="notranslate">&quot;123.45678&quot;</span></td>
         <td>123.46</td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Action Syntax:</h4>
-  <p><img alt="String To Number Action" class="center" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Data_Types/a_Types_String_To_Number.png" /></p>
-  <h4>Arguments:</h4>
-  <p> </p>
+  <p> </p>
+  <h4>Синтаксис действия:</h4>
+  <p><img alt="String To Number Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Data_Types/i_Types_String_To_Number.png" /></p>
+  <h4>Аргументы:</h4>
+  <p> </p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Description</th>
+        <th>Аргумент</th>
+        <th>Описание</th>
       </tr>
       <tr>
-        <td>Value</td>
-        <td>The string to convert</td>
+        <td><span class="notranslate">Value</span></td>
+        <td>Строка для преобразования</td>
       </tr>
       <tr>
-        <td>Target</td>
-        <td>The target variable to hold the returned value</td>
+        <td><span class="notranslate">Target</span></td>
+        <td>Целевая переменная для хранения возвращаемого значения</td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Example:</h4>
-  <p><img alt="String To Number Example" class="center" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Data_Types/e_Types_String_To_Number.png" />The above action block code initialises a global variable and then loads a file with
-    a buffer saved in it. Two strings are read from the buffer and stored in a temporary local variables before one of them is converted into a real number and stored in another temporary local variable. These are then assigned to global variables, and
-    the buffer is deleted.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p> </p>
+  <h4>Пример:</h4>
+  <p><img>Приведенный выше код блока действий инициализирует глобальную переменную, а затем загружает файл с
+    буфером, сохраненным в нем. Две строки считываются из буфера и сохраняются во временных локальных переменных, после чего одна из них преобразуется в вещественное число и сохраняется в другой временной локальной переменной. Затем они присваиваются глобальным переменным, и
+    буфер удаляется.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Data_Type_Actions.htm">Data Type Actions</a></div>
-        <div style="float:right">Next: <a href="Number_To_String.htm">Number To String</a></div>
+        <div style="float:left">Назад: <a href="Data_Type_Actions.htm">Действия с типами данных</a></div>
+        <div style="float:right">Следующий: <a href="Number_To_String.htm">Преобразование числа в строку</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2021 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 Action - String To Number

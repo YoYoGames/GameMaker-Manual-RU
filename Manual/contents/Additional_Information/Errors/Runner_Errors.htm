@@ -3,50 +3,47 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Runner Errors</title>
+  <title>Ошибки бегунов</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../assets/css/default.css" type="text/css" />
-  <script src="../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page that explains the various runner errors" />
   <meta name="rh-index-keywords" content="Runtime Errors,Runner Errors" />
-  <meta name="search-keywords" content="runner errors, runtime errors" />
+  <meta name="search-keywords" content="runner errors" />
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1><span data-field="title" data-format="default">Runner Errors</span></h1>
-  <p>Even after syntax checking in the code editor and then having the compiler check your code for <a href="Compiler_Errors.htm">compiler errors</a>, there are still occasions when something can go wrong. In most cases this will throw a <a class="glossterm" data-glossterm="Virtual Machine (VM)" href="#">Virtual Machine (VM)</a> runner error (also called a <strong>runtime exception</strong>) which looks like this:</p>
-  <figure><img alt="Runner Error Window" class="center" src="../../assets/Images/Scripting_Reference/Additional_Information/Error_Report.png" />
-    <figcaption>Caption</figcaption>
-  </figure>
-  <p>Runner errors are generally more serious than compile errors as it means that there is something seriously wrong with your code that neither the code editor nor the compiler have been able to detect, and as such you should pay attention to all such errors. When one occurs, you can use the <strong>Copy</strong> button on the pop-up to copy the error to the clipboard which you can then paste into a text file (or wherever) for future reference.</p>
-  <p>The structure of this error is as follows:</p>
+  <h1>Ошибки бегунов</h1>
+  <p>Даже после проверки синтаксиса в редакторе кода и последующей проверки кода компилятором на наличие <a href="Compiler_Errors.htm">ошибок компилятора</a>, все равно бывают случаи, когда что-то может пойти не так. В большинстве случаев это приведет к возникновению ошибки выполнения <a class="glossterm" data-glossterm="Виртуальная машина (VM)" href="#">виртуальной машины (VM)</a> (также называемой <strong>исключением времени выполнения</strong>), которая выглядит следующим образом:</p>
+  <p><img>Ошибки Runner обычно более серьезны, чем ошибки компиляции, поскольку они означают, что в вашем коде что-то серьезно не так, чего не смогли обнаружить ни редактор кода, ни компилятор, и поэтому вы должны обращать внимание на все такие ошибки. При возникновении такой ошибки вы можете воспользоваться кнопкой <strong>Copy</strong> на всплывающем окне, чтобы скопировать ошибку в буфер обмена, который затем можно вставить в текстовый файл (или куда-либо еще) для дальнейшего использования.</p>
+  <p>Структура этой ошибки выглядит следующим образом:</p>
   <ul class="colour">
-    <li><img alt="Error Object And Event" class="icon" src="../../assets/Images/Scripting_Reference/Additional_Information/Error_Text_ObjectEvent.png" /><br />
-      This shows the Event that the error has occurred in as well as the Object (where applicable).</li>
-    <li><img alt="Error Text Information" class="icon" height="16" src="../../assets/Images/Scripting_Reference/Additional_Information/Error_Text_Information.png" width="436" /><br />
-      This shows the actual error.  So, it shows the <em>scope </em>of the error and the type of error it is. The first value in the brackets will be the instance ID of the instance that was running the code - or it could be one of the special values listed in the table below - and the second is an internal value that <span data-keyref="GameMaker Name">GameMaker</span> uses for identifying bugs and can be ignored. In the case of the image above, it&#39;s saying that the variable <span class="inline">_image</span> has not been set (ie: does not exist before being accessed) on the object <span class="inline">obj_EA_DEMO_Control</span>.</li>
-    <li><img alt="Error Line Number Position" class="icon" height="16" src="../../assets/Images/Scripting_Reference/Additional_Information/Error_LineNumber.png" width="354" /><br />
-      This shows the line number that the error occurs on as well as a snippet of code showing the position. Note that this is not always 100% accurate due to the way the game is compiled, but it should be enough to help you find exactly where the issue is.</li>
+    <li><img><br>
+      Здесь отображается событие, в котором произошла ошибка, а также объект (если применимо).</li>
+    <li><img><br>
+      Это показывает фактическую ошибку.  Таким образом, она показывает <em>область действия </em>ошибки и ее тип. Первое значение в скобках будет идентификатором экземпляра, на котором выполнялся код, или это может быть одно из специальных значений, перечисленных в таблице ниже, а второе - это внутреннее значение, которое <span data-keyref="GameMaker Name">GameMaker</span> использует для идентификации ошибок, и его можно игнорировать. В случае с изображением выше это означает, что переменная <span class="inline">_image</span> не была установлена (т.е. не существует до обращения к ней) на объекте <span class="inline">obj_EA_DEMO_Control</span>.</li>
+    <li><img><br>
+      Здесь показан номер строки, на которой возникла ошибка, а также фрагмент кода с указанием позиции. Обратите внимание, что это не всегда на 100% точно из-за способа компиляции игры, но этого должно быть достаточно, чтобы помочь вам найти точное место проблемы.</li>
   </ul>
-  <p>As mentioned above, certain error messages will be identify the scope not by an instance ID value, but rather by a <em>negative </em>value. These values can be used to pinpoint the exact nature of the error and what it refers to with the following values possible:</p>
+  <p>Как упоминалось выше, некоторые сообщения об ошибках будут идентифицироваться не по значению ID экземпляра, а по <em>отрицательному </em>значению. Эти значения могут быть использованы для точного определения природы ошибки и того, к чему она относится, при этом возможны следующие значения:</p>
   <table>
     <tbody>
       <tr>
-        <th>Prefix</th>
-        <th>Scope</th>
+        <th>Префикс</th>
+        <th>Область применения</th>
       </tr>
       <tr>
         <td style="text-align: center">-1</td>
-        <td>Self</td>
+        <td>Самостоятельно</td>
       </tr>
       <tr>
         <td style="text-align: center">-2</td>
-        <td>Other</td>
+        <td>Другое</td>
       </tr>
       <tr>
         <td style="text-align: center">-3</td>
-        <td>All</td>
+        <td>Все</td>
       </tr>
       <tr>
         <td style="text-align: center">-4</td>
@@ -54,51 +51,39 @@
       </tr>
       <tr>
         <td style="text-align: center">-5</td>
-        <td>Global</td>
+        <td>Глобальный</td>
       </tr>
       <tr>
         <td style="text-align: center">-6</td>
-        <td>Not Specified</td>
+        <td>Не указано</td>
       </tr>
       <tr>
         <td style="text-align: center">-7</td>
-        <td>Local</td>
+        <td>Местный</td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <p>The possible errors from the VM runner are as follows:</p>
+  <p> </p>
+  <p>Ниже перечислены возможные ошибки, возникающие при запуске VM runner:</p>
   <table>
-    <colgroup>
-      <col />
-      <col />
-      <col />
-      <col />
-    </colgroup>
     <tbody>
       <tr>
-        <th>Error</th>
-        <th>Message</th>
-        <th>Operation</th>
-        <th>Description</th>
+        <th>Ошибка</th>
+        <th>Сообщение</th>
+        <th>Операция</th>
+        <th>Описание</th>
       </tr>
       <tr>
         <td style="text-align: center;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px"><span class="inline">DoSet</span></td>
-        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Invalid comparison type</td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Data Types</td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">This denotes that the runner has tried to compare two incompatible data types, like a real number with a string.</td>
+        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Недопустимый тип сравнения</td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Типы данных</td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Это означает, что программа попыталась сравнить два несовместимых типа данных, например, вещественное число со строкой.</td>
       </tr>
       <tr>
         <td style="text-align: center;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px"><span class="inline">DoConv</span></td>
-        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Execution Error</td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Data Types</td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">This denotes an error in the conversion of one data-type into another.</td>
-      </tr>
-      <tr>
-        <td style="text-align: center;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px"><span class="inline">Argument Type</span></td>
-        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">(function) argument (index) incorrect type (wrong_type) expecting a (expected_type)</td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Data Types</td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">A value with the wrong data type was passed as an argument to the function at (index) (where an index of 1 is the <i>first</i> argument). A value of wrong_type was given but it should be one of expected_type instead.</td>
+        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Ошибка выполнения</td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Типы данных</td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Это означает ошибку при преобразовании одного типа данных в другой.</td>
       </tr>
       <tr>
         <td colspan="4" style="text-align: center;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">
@@ -107,57 +92,57 @@
       </tr>
       <tr>
         <td style="text-align: center;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px"><span class="inline">DoAdd</span></td>
-        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Execution Error</td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Maths</td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Something has gone wrong when using the addition (<span class="inline">+</span>) expression.</td>
+        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Ошибка выполнения</td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Математика</td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Что-то пошло не так при использовании выражения сложения (<span class="inline">+</span>).</td>
       </tr>
       <tr>
         <td style="text-align: center;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px"><span class="inline">DoMul</span></td>
-        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Execution Error</td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Maths</td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Something has gone wrong when using the multiplication (<span class="inline">*</span>) expression.</td>
+        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Ошибка выполнения</td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Математика</td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Что-то пошло не так при использовании выражения умножения (<span class="inline">*</span>).</td>
       </tr>
       <tr>
         <td style="text-align: center;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px"><span class="inline">DoSub</span></td>
-        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Execution Error</td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Maths</td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Something has gone wrong when using the subtraction (<span class="inline">-</span>) expression.</td>
+        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Ошибка выполнения</td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Математика</td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Что-то пошло не так при использовании выражения вычитания (<span class="inline">-</span>).</td>
       </tr>
       <tr>
         <td style="text-align: center;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px"><span class="inline">DoSub</span></td>
-        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Execution Engine - Cannot operate on string type</td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Maths</td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">You are trying to subtract the wrong type of variables (for example subtract a string from a real).</td>
+        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Execution Engine - Невозможно выполнить операцию над строковым типом</td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Математика</td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Вы пытаетесь вычесть переменные не того типа (например, вычесть строку из real).</td>
       </tr>
       <tr>
         <td style="text-align: center;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px"><span class="inline">DoDiv</span></td>
-        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Execution Error</td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Maths</td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Something has gone wrong when using the division (<span class="inline">/</span> or <span class="inline">div</span>) expression.</td>
+        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Ошибка выполнения</td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Математика</td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Что-то пошло не так при использовании выражения деления (<span class="inline">/</span> или <span class="inline">div</span>).</td>
       </tr>
       <tr>
         <td style="text-align: center;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px"><span class="inline">DoDiv</span></td>
-        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Execution Engine - Cannot operate on string type</td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Maths</td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">You are trying to divide the wrong type of variables (for example divide a string by a real).</td>
+        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Execution Engine - Невозможно выполнить операцию над строковым типом</td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Математика</td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Вы пытаетесь разделить переменные не того типа (например, разделить строку на вещественную).</td>
       </tr>
       <tr>
         <td style="text-align: center;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px"><span class="inline">DoDiv</span></td>
-        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Divide by zero</td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Maths</td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">You are attempting to divide by 0 (note this will only happen when using integer division, dividing a (non-zero) real by 0 will give infinity as an answer, dividing zero by zero will give NaN as an answer). You can check for these values with (<span class="inline">is_infinity</span>) and (<span class="inline">is_nan</span>)</td>
+        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Деление на ноль</td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Математика</td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Вы пытаетесь разделить на 0 (обратите внимание, что это произойдет только при использовании целочисленного деления, деление (ненулевого) вещественного числа на 0 даст бесконечность в качестве ответа, деление нуля на ноль даст NaN в качестве ответа). Вы можете проверить наличие этих значений с помощью (<span class="inline">is_infinity</span>) и (<span class="inline">is_nan</span>).</td>
       </tr>
       <tr>
         <td style="text-align: center;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px"><span class="inline">DoMod</span></td>
-        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Execution Error</td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Maths</td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Something has gone wrong when using the modulo (<span class="inline">mod</span>) expression.</td>
+        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Ошибка выполнения</td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Математика</td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Что-то пошло не так при использовании выражения modulo (<span class="inline">mod</span>).</td>
       </tr>
       <tr>
         <td style="text-align: center;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px"><span class="inline">DoMod</span></td>
-        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Execution Engine - Cannot operate on string type</td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Maths</td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">You are trying to use modulo (<span class="inline">mod</span>) on the wrong type of variables (for example <span class="inline">mod</span> a string by a real).</td>
+        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Execution Engine - Невозможно выполнить операцию над строковым типом</td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Математика</td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Вы пытаетесь использовать modulo (<span class="inline">mod</span>) для переменных неправильного типа (например, <span class="inline">mod</span> строку на вещественную).</td>
       </tr>
       <tr>
         <td colspan="4" style="text-align: center;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">
@@ -166,63 +151,63 @@
       </tr>
       <tr>
         <td style="text-align: center;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px"><span class="inline">DoAnd</span></td>
-        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Execution Error</td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Bitwise</td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Something has gone wrong when using the bitwise &quot;and&quot; (<span class="inline">&amp;</span>) expression.</td>
+        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Ошибка выполнения</td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Побитовая</td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Что-то пошло не так при использовании побитового выражения &quot;и&quot; (<span class="inline">&amp;</span>).</td>
       </tr>
       <tr>
         <td style="text-align: center;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px"><span class="inline">DoAnd</span></td>
-        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Execution Engine - Cannot operate on string type</td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Bitwise</td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">You are trying to use bitwise &quot;and&quot; (<span class="inline">&amp;</span>) on the wrong type of variables (for example trying to &quot;and&quot; a string with a real).</td>
+        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Execution Engine - Невозможно выполнить операцию над строковым типом</td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Побитовая</td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Вы пытаетесь использовать побитовое &quot;и&quot; (<span class="inline">&amp;</span>) для переменных неправильного типа (например, пытаетесь &quot;и&quot; строки с вещественным числом).</td>
       </tr>
       <tr>
         <td style="text-align: center;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px"><span class="inline">DoOr</span></td>
-        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Execution Error</td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Bitwise</td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Something has gone wrong when using the bitwise &quot;or&quot; (<span class="inline">|</span>) expression.</td>
+        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Ошибка выполнения</td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Побитовая</td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Что-то пошло не так при использовании побитового выражения &quot;или&quot; (<span class="inline">|</span>).</td>
       </tr>
       <tr>
         <td style="text-align: center;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px"><span class="inline">DoOr</span></td>
-        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Execution Engine - Cannot operate on string type</td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Bitwise</td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">You are trying to use &quot;or&quot; (<span class="inline">|</span>) on the wrong type of variables (for example trying to &quot;or&quot; a string with a real).</td>
+        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Execution Engine - Невозможно выполнить операцию над строковым типом</td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Побитовая</td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Вы пытаетесь использовать &quot;или&quot; (<span class="inline">|</span>) для неправильного типа переменных (например, пытаетесь &quot;или&quot; строку с вещественным).</td>
       </tr>
       <tr>
         <td style="text-align: center;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px"><span class="inline">DoXor</span></td>
-        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Execution Error</td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Bitwise</td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Something has gone wrong when using the bitwise &quot;xor&quot; (<span class="inline">^</span>) expression.</td>
+        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Ошибка выполнения</td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Побитовая</td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Что-то пошло не так при использовании побитового выражения &quot;xor&quot; (<span class="inline">^</span>).</td>
       </tr>
       <tr>
         <td style="text-align: center;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px"><span class="inline">DoXor</span></td>
-        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Execution Engine - Cannot operate on string type</td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Bitwise</td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">You are trying to use &quot;xor&quot; (<span class="inline">^</span>) on the wrong type of variables (for example trying to &quot;xor&quot; a string with a real).</td>
+        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Execution Engine - Невозможно выполнить операцию над строковым типом</td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Побитовая</td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Вы пытаетесь использовать &quot;xor&quot; (<span class="inline">^</span>) для переменных неправильного типа (например, пытаетесь &quot;xor&quot; строки с вещественным числом).</td>
       </tr>
       <tr>
         <td style="text-align: center;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px"><span class="inline">DoShl</span></td>
-        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Execution Error</td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Bitwise</td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Something has gone wrong when bitshifting left (<span class="inline">&lt;&lt;</span>) a value.</td>
+        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Ошибка выполнения</td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Побитовая</td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Что-то пошло не так при битовом сдвиге влево (<span class="inline">&lt;&lt;</span>) значения.</td>
       </tr>
       <tr>
         <td style="text-align: center;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px"><span class="inline">DoShl</span></td>
-        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Execution Engine - Cannot operate on string type</td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Bitwise</td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">You are trying to left bitshift (<span class="inline">&lt;&lt;</span>) the wrong type of variables (for example trying to bitshift a string).</td>
+        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Execution Engine - Невозможно выполнить операцию над строковым типом</td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Побитовая</td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Вы пытаетесь выполнить левый битовый сдвиг (<span class="inline">&lt;&lt;</span>) переменных не того типа (например, пытаетесь выполнить битовый сдвиг строки).</td>
       </tr>
       <tr>
         <td style="text-align: center;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px"><span class="inline">DoShr</span></td>
-        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Execution Error</td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Bitwise</td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Something has gone wrong when bitshifting right (<span class="inline">&gt;&gt;</span>) a value.</td>
+        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Ошибка выполнения</td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Побитовая</td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Что-то пошло не так при битовом сдвиге вправо (<span class="inline">&gt;&gt;</span>) значения.</td>
       </tr>
       <tr>
         <td style="text-align: center;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px"><span class="inline">DoShr</span></td>
-        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Execution Engine - Cannot operate on string type</td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Bitwise</td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">You are trying to right bitshift (<span class="inline">&gt;&gt;</span>) the wrong type of variables (for example trying to bitshift a string).</td>
+        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Execution Engine - Невозможно выполнить операцию над строковым типом</td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Побитовая</td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Вы пытаетесь выполнить правый битовый сдвиг (<span class="inline">&gt;&gt;</span>) переменных не того типа (например, пытаетесь выполнить битовый сдвиг строки).</td>
       </tr>
       <tr>
         <td colspan="4" style="text-align: center;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">
@@ -231,15 +216,15 @@
       </tr>
       <tr>
         <td style="text-align: center;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px"><span class="inline">DoNeg</span></td>
-        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Execution Error</td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Negate</td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">You are trying to turn a variable type into a negative when this type does not permit such an operation.</td>
+        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Ошибка выполнения</td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Отрицать</td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Вы пытаетесь превратить тип переменной в отрицательный, когда этот тип не допускает такой операции.</td>
       </tr>
       <tr>
         <td style="text-align: center;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px"><span class="inline">DoNot</span></td>
-        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Execution Error</td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Negate</td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">You are trying to &quot;not&quot; a variable type when this type does not permit such an operation.</td>
+        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Ошибка выполнения</td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Отрицание</td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Вы пытаетесь &quot;не&quot; тип переменной, когда этот тип не допускает такой операции.</td>
       </tr>
       <tr>
         <td colspan="4" style="text-align: center;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">
@@ -248,27 +233,27 @@
       </tr>
       <tr>
         <td style="text-align: center;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px"><span class="inline">Push</span></td>
-        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Execution Error - Variable Index out of range (var)</td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Stack</td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">The variable being accessed is out with the established range for the runner.</td>
+        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Ошибка выполнения - индекс переменной вышел за пределы диапазона (var)</td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Стек</td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Переменная, к которой осуществляется доступ, находится вне установленного диапазона для бегуна.</td>
       </tr>
       <tr>
         <td style="text-align: center;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px"><span class="inline">Push</span></td>
-        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Variable Get (var)</td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Stack</td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">The given variable has not been defined or is unknown.</td>
+        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Получение переменной (var)</td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Стек</td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Данная переменная не определена или неизвестна.</td>
       </tr>
       <tr>
         <td style="text-align: center;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px"><span class="inline">Pop</span></td>
-        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Variable Index out of range (var)</td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Stack</td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">The variable being accessed is out with the established range for the runner.</td>
+        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Индекс переменной вне диапазона (var)</td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Стек</td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Переменная, к которой осуществляется доступ, находится вне установленного диапазона для бегуна.</td>
       </tr>
       <tr>
         <td style="text-align: center;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px"><span class="inline">Pop</span></td>
-        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Variable Get (var)</td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Stack</td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">The given variable has not been defined or is unknown.</td>
+        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Получение переменной (var)</td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Стек</td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Данная переменная не определена или неизвестна.</td>
       </tr>
       <tr>
         <td colspan="4" style="text-align: center;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">
@@ -277,9 +262,9 @@
       </tr>
       <tr>
         <td style="text-align: center;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px"><span class="inline">With</span></td>
-        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Cannot use global in with statement</td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">With</td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">You have tried to use &quot;<span class="inline">global</span>&quot; as a variable within a &quot;<span class="inline">with</span>&quot; statement, ie:<br />
+        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Невозможно использовать global в операторе with</td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">С</td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Вы пытались использовать &quot;<span class="inline">global</span>&quot; в качестве переменной в операторе &quot;<span class="inline">with</span>&quot;, т.е:<br>
           <span class="inline">with (global)<br />
                {<br />
                //do something;<br />
@@ -288,9 +273,9 @@
       </tr>
       <tr>
         <td style="text-align: center;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px"><span class="inline">With</span></td>
-        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Cannot use local in with statement</td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">With</td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">You have tried to use &quot;<span class="inline">local</span>&quot; as a variable within a &quot;<span class="inline">with</span>&quot; statement, ie:<br />
+        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Невозможно использовать local в операторе with</td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">С</td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Вы пытались использовать &quot;<span class="inline">local</span>&quot; в качестве переменной в операторе &quot;<span class="inline">with</span>&quot;, т.е:<br>
           <span class="inline">with (local)<br />
                {<br />
                //do something;<br />
@@ -304,44 +289,32 @@
       </tr>
       <tr>
         <td style="text-align: center;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px"><span class="inline">DoCall</span></td>
-        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Execution Engine type error</td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Engine</td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">This is an undefined error within the Virtual Machine. You should file a bug report should this happen (see: The Help Menu for details on how to do this.</td>
+        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Ошибка типа исполнительного механизма</td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Двигатель</td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Это неопределенная ошибка в виртуальной машине. В этом случае необходимо подать отчет об ошибке (как это сделать, см. в меню Справка.</td>
       </tr>
       <tr>
         <td style="text-align: center;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px"><span class="inline">Stack Overflow</span></td>
         <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">-</td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Engine</td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">A stack overflow occurs when too much memory is used on the call stack and when your game attempts to use more space than is available on the call stack (that is, when it attempts to access memory beyond the call stack&#39;s bounds, which is essentially a buffer overflow), the stack is said to overflow, resulting in a program crash. Restart your computer and <span data-keyref="GameMaker Name">GameMaker</span> and if the error persists please get in touch with support and/or file a bug (as explained above).</td>
-      </tr>
-      <tr>
-        <td colspan="4" style="text-align: center;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">
-          <hr />
-        </td>
-      </tr>
-      <tr>
-        <td style="text-align: center;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px"><span class="inline">Read Variable</span></td>
-        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Variable not set before reading it</td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Variable Initialisation</td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">You are trying to access a variable that hasn&#39;t been set (i.e. <i>initialised</i>) yet. Assign a value to it first before trying to read it, e.g. <span class="inline2">variable = 100;</span>. Only <i>declaring</i> a variable, using e.g. <span class="inline2">var variable;</span> will also throw this error.</td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Двигатель</td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Переполнение стека происходит, когда в стеке вызовов используется слишком много памяти, и когда ваша игра пытается использовать больше места, чем доступно в стеке вызовов (то есть, когда она пытается получить доступ к памяти за пределами стека вызовов, что по сути является переполнением буфера), считается, что стек переполняется, что приводит к сбою программы. Перезагрузите компьютер и <span data-keyref="GameMaker Name">GameMaker</span>, и если ошибка не исчезнет, обратитесь в службу поддержки и/или оформите ошибку (как описано выше).</td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="../Error_Reporting.htm">Error Reporting</a></div>
-        <div style="float:right">Next: <a href="Syntax_Errors.htm">Syntax Errors</a></div>
+        <div style="float:left">Назад: <a href="../Error_Reporting.htm">Отчеты об ошибках</a></div>
+        <div style="float:right">Следующее: <a href="Syntax_Errors.htm">Ошибки синтаксиса</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 Runner Errors
-Runtime Errors
 -->
   <!-- TAGS
 runner_errors

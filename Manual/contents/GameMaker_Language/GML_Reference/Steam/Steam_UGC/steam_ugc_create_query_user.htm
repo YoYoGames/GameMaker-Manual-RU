@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>steam_ugc_create_query_user</title>
+  <meta name="generator" content="Adobe RoboHelp 2019" />
+  <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
+  <script src="../../../../assets/scripts/main_script.js"></script>
+  <meta name="rh-authors" content="Mark Alexander" />
+  <meta name="topic-comment" content="Reference page for steam_ugc_create_query_user" />
+  <meta name="rh-index-keywords" content="steam_ugc_create_query_user,ugc_list_Published,ugc_list_VotedOn,ugc_list_VotedUp,ugc_list_VotedDown,ugc_list_WillVoteLater,ugc_list_Favorited,ugc_list_Subscribed,ugc_list_UsedOrPlayed,ugc_list_Followed,ugc_match_Items,ugc_match_Items_Mtx,ugc_match_Items_ReadyToUse,ugc_match_Collections,ugc_match_Artwork,ugc_match_Videos,ugc_match_Screenshots,ugc_match_AllGuides,ugc_match_WebGuides,ugc_match_IntegratedGuides,ugc_match_UsableInGame,ugc_match_ControllerBindings,ugc_sortorder_CreationOrderDesc,ugc_sortorder_CreationOrderAsc,ugc_sortorder_TitleAsc,ugc_sortorder_LastUpdatedDesc,ugc_sortorder_SubscriptionDateDesc,ugc_sortorder_VoteScoreDesc,ugc_sortorder_ForModeration" />
+  <meta name="search-keywords" content="steam_ugc_create_query_user,ugc_list_Published,ugc_list_VotedOn,ugc_list_VotedUp,ugc_list_VotedDown,ugc_list_WillVoteLater,ugc_list_Favorited,ugc_list_Subscribed,ugc_list_UsedOrPlayed,ugc_list_Followed,ugc_match_Items,ugc_match_Items_Mtx,ugc_match_Items_ReadyToUse,ugc_match_Collections,ugc_match_Artwork,ugc_match_Videos,ugc_match_Screenshots,ugc_match_AllGuides,ugc_match_WebGuides,ugc_match_IntegratedGuides,ugc_match_UsableInGame,ugc_match_ControllerBindings,ugc_sortorder_CreationOrderDesc,ugc_sortorder_CreationOrderAsc,ugc_sortorder_TitleAsc,ugc_sortorder_LastUpdatedDesc,ugc_sortorder_SubscriptionDateDesc,ugc_sortorder_VoteScoreDesc,ugc_sortorder_ForModeration" />
+</head>
+<body>
+  <!--<div class="body-scroll" style="top: 150px;">-->
+  <h1>steam_ugc_create_query_user</h1>
+  <p>Эта функция может быть использована для запроса базы данных пользовательского контента. Функция автоматически использует идентификатор по умолчанию для приложения, пользователя и предполагает, что запрос выполняется потребителем (а не создателем). Функция требует, чтобы вы использовали следующие
+    константы для типа данных для запроса, типа элемента для запроса и порядка, в котором будут отсортированы возвращаемые элементы, а также номер страницы - обратите внимание, что запрос вернет <i>максимум</i> 50 элементов.</p>
+  <p> </p>
+  <table>
+    <tbody>
+      <tr>
+        <th>Тип списка Постоянная</th>
+        <th>Описание</th>
+      </tr>
+      <tr>
+        <td>ugc_list_Published</td>
+        <td>См. <a href="https://partner.steamgames.com/documentation/ugc#QueryContent">документацию Steam</a>.</td>
+      </tr>
+      <tr>
+        <td>ugc_list_VotedOn</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>ugc_list_VotedUp</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>ugc_list_VotedDown</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>ugc_list_WillVoteLater</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>ugc_list_Favorited</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>ugc_list_Subscribed</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>ugc_list_UsedOrPlayed</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>ugc_list_Followed</td>
+        <td>-</td>
+      </tr>
+    </tbody>
+  </table>
+  <p> </p>
+  <table>
+    <tbody>
+      <tr>
+        <th>Тип соответствия Постоянная</th>
+        <th>Описание</th>
+      </tr>
+      <tr>
+        <td>ugc_match_Items</td>
+        <td>См. <a href="https://partner.steamgames.com/documentation/ugc#QueryContent">документацию Steam</a>.</td>
+      </tr>
+      <tr>
+        <td>ugc_match_Items_Mtx</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>ugc_match_Items_ReadyToUse</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>ugc_match_Collections</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>ugc_match_Artwork</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>ugc_match_Videos</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>ugc_match_Screenshots</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>ugc_match_AllGuides</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>ugc_match_WebGuides</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>ugc_match_IntegratedGuides</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>ugc_match_UsableInGame</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>ugc_match_ControllerBindings</td>
+        <td>-</td>
+      </tr>
+    </tbody>
+  </table>
+  <p> </p>
+  <table>
+    <tbody>
+      <tr>
+        <th>Порядок сортировки Постоянная</th>
+        <th>Описание</th>
+      </tr>
+      <tr>
+        <td>ugc_sortorder_CreationOrderDesc</td>
+        <td>См. <a href="https://partner.steamgames.com/documentation/ugc#QueryContent">документацию Steam</a>.</td>
+      </tr>
+      <tr>
+        <td>ugc_sortorder_CreationOrderAsc</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>ugc_sortorder_TitleAsc</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>ugc_sortorder_LastUpdatedDesc</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>ugc_sortorder_SubscriptionDateDesc</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>ugc_sortorder_VoteScoreDesc</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>ugc_sortorder_ForModeration</td>
+        <td>-</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><br> Функция возвращает уникальное значение хэндла запроса, которое должно быть сохранено в переменной для использования в других функциях запроса. Обратите внимание, что эта функция только подготавливает запрос, но не отправляет его - для этого вы должны вызвать функцию
+    <a href="steam_ugc_send_query.htm"><tt>steam_ugc_send_query()</tt></a> - и вы можете использовать другие функции <tt>steam_ugc_query_*()</tt> для уточнения поискового запроса перед его отправкой.</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
+  <p class="code">steam_ugc_create_query_user(list_type, match_type, sort_order, page);</p>
+  <table>
+    <tbody>
+      <tr>
+        <th>Аргумент</th>
+        <th>Описание</th>
+      </tr>
+      <tr>
+        <td><span class="notranslate">list_type</span></td>
+        <td>Тип создаваемого списка данных (см. константы, перечисленные ниже).</td>
+      </tr>
+      <tr>
+        <td><span class="notranslate">match_type</span></td>
+        <td>Тип элементов пользовательского контента для запроса (см. константы, перечисленные ниже).</td>
+      </tr>
+      <tr>
+        <td><span class="notranslate">sort_order</span></td>
+        <td>Способ, которым следует упорядочить данные (см. константы, перечисленные ниже).</td>
+      </tr>
+      <tr>
+        <td><span class="notranslate">page</span></td>
+        <td>Номер страницы для запроса.</td>
+      </tr>
+    </tbody>
+  </table>
+  <p> </p>
+  <h4>Возвращается:</h4>
+  <p class="code">Query Handle</p>
+  <p> </p>
+  <h4>Пример:</h4>
+  <p class="code">query_handle = steam_ugc_create_query_user(ugc_list_Published, ugc_match_Items, ugc_sortorder_TitleAsc, 1);</p>
+  <p>Приведенный выше код создает запрос запроса и сохраняет его обработку в переменной для дальнейшего использования.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <div class="footer">
+    <div class="buttons">
+      <div class="clear">
+        <div style="float:left">Назад: <a href="Steam_UGC.htm">UGC</a></div>
+        <div style="float:right">Следующий: <a href="steam_ugc_create_query_user_ex.htm"><span class="notranslate">steam_ugc_create_query_user_ex</span></a></div>
+      </div>
+    </div>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Все права защищены</span></h5>
+  </div>
+  <!-- KEYWORDS
+steam_ugc_create_query_user
+ugc_list_Published
+ugc_list_VotedOn
+ugc_list_VotedUp
+ugc_list_VotedDown
+ugc_list_WillVoteLater
+ugc_list_Favorited
+ugc_list_Subscribed
+ugc_list_UsedOrPlayed
+ugc_list_Followed
+ugc_match_Items
+ugc_match_Items_Mtx
+ugc_match_Items_ReadyToUse
+ugc_match_Collections
+ugc_match_Artwork
+ugc_match_Videos
+ugc_match_Screenshots
+ugc_match_AllGuides
+ugc_match_WebGuides
+ugc_match_IntegratedGuides
+ugc_match_UsableInGame
+ugc_match_ControllerBindings
+ugc_sortorder_CreationOrderDesc
+ugc_sortorder_CreationOrderAsc
+ugc_sortorder_TitleAsc
+ugc_sortorder_LastUpdatedDesc
+ugc_sortorder_SubscriptionDateDesc
+ugc_sortorder_VoteScoreDesc
+ugc_sortorder_ForModeration
+-->
+  <!-- TAGS
+steam_ugc_create_query_user
+-->
+</body>
+</html>

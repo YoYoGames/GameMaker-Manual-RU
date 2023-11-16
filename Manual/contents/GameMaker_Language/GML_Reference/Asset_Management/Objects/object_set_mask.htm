@@ -6,7 +6,7 @@
   <title>object_set_mask</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page outlining the function object_set_mask" />
   <meta name="rh-index-keywords" content="object_set_mask" />
@@ -15,51 +15,51 @@
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
   <h1>object_set_mask</h1>
-  <p>With this function you can set the mask_index of a specific object (for more information on masks see <a href="../../../../The_Asset_Editors/Objects.htm">The Object Editor</a>). This means that all instances of this object that are created <i>after the mask has been changed</i> will be created with this new mask, while instances that are already in the room may not be affected. You can set this to -1 to remove a mask sprite and so default to the mask defined for the sprite of the object (or no masks if no sprite has been chosen).</p>
-  <p>Please note that this is not an instance function! You can set the mask index of individual instances using the <a href="../Sprites/Sprite_Instance_Variables/mask_index.htm"><span class="inline">mask_index</span></a> variable and so have ten instances all with a different mask to the object they are created from, and even if you change the mask index of the object using this function, all instances that are currently in the room will remain as they were, and only instances created after calling the function will start with the new mask.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p>С помощью этой функции вы можете установить mask_index определенного объекта (более подробную информацию о масках см. в разделе <a href="../../../../The_Asset_Editors/Objects.htm">Редактор объектов</a>). Это означает, что все экземпляры этого объекта, созданные <i>после изменения маски</i>, будут созданы с этой новой маской, в то время как экземпляры, уже находящиеся в комнате, могут быть не затронуты. Вы можете установить значение -1, чтобы удалить маску <span class="notranslate">sprite</span> и по умолчанию использовать маску, определенную для <span class="notranslate">sprite</span> объекта (или без маски, если не было выбрано <span class="notranslate">sprite</span> ).</p>
+  <p>Обратите внимание, что это не функция экземпляра! Вы можете установить индекс маски отдельных экземпляров с помощью переменной <a href="../Sprites/Sprite_Instance_Variables/mask_index.htm"><span class="inline">mask_index</span></a> и таким образом иметь десять экземпляров с маской, отличной от маски объекта, из которого они созданы, и даже если вы измените индекс маски объекта с помощью этой функции, все экземпляры, находящиеся в комнате в данный момент, останутся такими, какими они были, и только экземпляры, созданные после вызова функции, начнут работать с новой маской.</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
   <p class="code">object_set_mask(index, spr);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Аргумент</th>
+        <th>Тип</th>
+        <th>Описание</th>
       </tr>
       <tr>
-        <td>index</td>
-        <td><span data-keyref="Type_Asset_Object">Object Asset</span></td>
-        <td>The index of the object to change.</td>
+        <td><span class="notranslate">index</span></td>
+        <td><span data-keyref="Type_Asset_Object">Объект Активы</span></td>
+        <td><span class="notranslate">The index of the object to change.</span></td>
       </tr>
       <tr>
-        <td>spr</td>
-        <td><span data-keyref="Type_Asset_Sprite">Sprite Asset</span></td>
-        <td>The new sprite to use as the object&#39;s mask.</td>
+        <td><span class="notranslate">spr</span></td>
+        <td><span data-keyref="Type_Asset_Sprite">Актив спрайта</span></td>
+        <td><span class="notranslate">The new sprite to use as the object&#39;s mask.</span></td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
   <p class="code"><span data-keyref="Type_Void">N/A</span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Пример:</h4>
   <p class="code">if (global.level == 10)<br />
     {<br />
         object_set_mask(obj_Platform, spr_mask_10);<br />
     }</p>
-  <p>The above code checks the value of global variable and then changes the mask index of the object &quot;obj_Platform&quot; if it is equal to ten.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Приведенный выше код проверяет значение глобальной переменной и затем изменяет индекс маски объекта &quot;obj_Platform&quot;, если он равен десяти.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Objects.htm">Objects</a></div>
-        <div style="float:right">Next: <a href="object_set_persistent.htm">object_set_persistent</a></div>
+        <div style="float:left">Назад: <a href="Objects.htm">Объекты</a></div>
+        <div style="float:right">Следующий: <a href="object_set_persistent.htm"><span class="notranslate">object_set_persistent</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 object_set_mask

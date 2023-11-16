@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>steam_initialised</title>
+  <meta name="generator" content="Adobe RoboHelp 2020" />
+  <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
+  <script src="../../../../assets/scripts/main_script.js"></script>
+  <meta name="rh-authors" content="Mark Alexander" />
+  <meta name="topic-comment" content="Reference page for steam_initialised" />
+  <meta name="rh-index-keywords" content="steam_initialised" />
+  <meta name="search-keywords" content="steam_initialised" />
+</head>
+<body>
+  <!--<div class="body-scroll" style="top: 150px;">-->
+  <h1>steam_initialised</h1>
+  <p>При использовании API <span class="notranslate">Steam</span> эта функция может быть вызвана для проверки правильности инициализации клиентского API <span class="notranslate">Steam</span> перед выполнением дальнейших вызовов специфических функций <span class="notranslate">Steam</span> в вашей игре.</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
+  <p class="code">steam_initialised();</p>
+  <p> </p>
+  <h4>Возвращается:</h4>
+  <p class="code">Boolean</p>
+  <p> </p>
+  <h4>Пример:</h4>
+  <p class="code">global.steam_api = false;<br />
+    if steam_initialised()<br />
+    {<br />
+        if steam_stats_ready() &amp;&amp; steam_is_overlay_enabled()<br />
+        {<br />
+            global.steam_api = true;<br />
+        }<br />
+    }</p>
+  <p>Приведенный выше код установит глобальную переменную в <tt>true</tt>, если клиентский API <span class="notranslate">Steam</span> правильно инициализирован, вместе с функциями статистики и наложения <span class="notranslate">Steam</span>, или установит переменную в <tt>false</tt> в противном случае.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <div class="footer">
+    <div class="buttons">
+      <div class="clear">
+        <div style="float:left">Назад: <a href="Steam_API.htm">Общий <span class="notranslate">Steam</span> API</a></div>
+        <div style="float:right">Следующий: <a href="steam_stats_ready.htm"><span class="notranslate">steam_stats_ready</span></a></div>
+      </div>
+    </div>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
+  </div>
+  <!-- KEYWORDS
+steam_initialised
+-->
+  <!-- TAGS
+steam_initialised
+-->
+</body>
+</html>

@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>vertex_freeze</title>
+  <title>вершинная_заморозка</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference for vertex_freeze" />
   <meta name="rh-index-keywords" content="vertex_freeze" />
@@ -14,45 +14,45 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>vertex_freeze</h1>
-  <p>This function can be used to &quot;freeze&quot; a vertex buffer. This buffer becomes <b>read-only</b>, meaning that should you need to change it, you would have to delete the whole buffer and re-create it. A frozen buffer can be submitted to the shader faster than a normal, dynamic buffer and is recommended for those effects that require an unchanging custom primitive for the duration of a level or the game.</p>
-  <p>The function will return 0 on successfully freezing the specified vertex buffer, however if it failed for any reason, it will return -1.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <h1>вершинная_заморозка</h1>
+  <p>Эта функция может быть использована для &quot;замораживания&quot; буфера вершин. Этот буфер становится доступным <b>только для чтения</b>, то есть, если вам понадобится изменить его, вам придется удалить весь буфер и создать его заново. Замороженный буфер может быть передан в шейдер быстрее, чем обычный динамический буфер, и рекомендуется для тех эффектов, которые требуют неизменного пользовательского примитива на протяжении всего уровня или игры.</p>
+  <p>Функция вернет 0 при успешном замораживании указанного вершинного буфера, однако если по какой-либо причине это не удалось, она вернет -1.</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
   <p class="code">vertex_freeze(buffer);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Аргумент</th>
+        <th>Тип</th>
+        <th>Описание</th>
       </tr>
       <tr>
-        <td>buffer</td>
-        <td><span data-keyref="Type_ID_Buffer_Vertex">Vertex Buffer ID</span></td>
-        <td>The vertex buffer to freeze.</td>
+        <td><span class="notranslate">buffer</span></td>
+        <td><span data-keyref="Type_ID_Buffer_Vertex">Идентификатор буфера вершин</span></td>
+        <td><span class="notranslate">The vertex buffer to freeze.</span></td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
   <p class="code"><span data-keyref="Type_Real">Real</span> (0 for success, -1 for failure)</p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Пример:</h4>
   <p class="code">// Create event<br />
     vertex_freeze(vbuff);</p>
-  <p>The above code will freeze the given vertex buffer in the Create event, so it can be used as a &quot;static&quot; buffer in other events for faster access.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Приведенный выше код заморозит заданный буфер вершин в событии Create, чтобы его можно было использовать как &quot;статический&quot; буфер в других событиях для более быстрого доступа.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Primitives_And_Vertex_Formats.htm">Primitives And Vertex Formats</a></div>
-        <div style="float:right">Next: <a href="vertex_freeze.htm">vertex_submit</a></div>
+        <div style="float:left">Назад: <a href="Primitives_And_Vertex_Formats.htm">Примитивы и форматы вершин</a></div>
+        <div style="float:right">Следующий: <a href="vertex_freeze.htm"><span class="notranslate">vertex_submit</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 vertex_freeze

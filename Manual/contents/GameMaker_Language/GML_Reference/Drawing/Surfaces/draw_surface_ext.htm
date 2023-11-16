@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>draw_surface_ext</title>
+  <title>нарисовать_поверхность_экст</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference for draw_surface_ext" />
   <meta name="rh-index-keywords" content="draw_surface_ext" />
@@ -15,79 +15,79 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>draw_surface_ext</h1>
-  <p>This function will draw the given surface as in the function <a href="draw_surface.htm"><span class="inline">draw_surface()</span></a> but with additional options to change the scale, blending, rotation and alpha of the surface being drawn. Changing these values does <i>not</i> modify the resource in any way (only how it is drawn).</p>
+  <h1>нарисовать_поверхность_экст</h1>
+  <p>Эта функция рисует заданную поверхность, как в функции <a href="draw_surface.htm"><span class="inline">draw_surface()</span></a> но с дополнительными опциями для изменения масштаба, смешивания, вращения и альфа-функции рисуемой поверхности. Изменение этих значений никак <i>не</i> изменяет ресурс (только способ его рисования).</p>
   <div data-conref="../../../../assets/snippets/Surface_volatile_warning.hts"> </div>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p> </p>
+  <h4>Синтаксис:</h4>
   <p class="code">draw_surface_ext(id, x, y, xscale, yscale, rot, col, alpha);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Аргумент</th>
+        <th>Тип</th>
+        <th>Описание</th>
       </tr>
       <tr>
-        <td>id</td>
-        <td><span data-keyref="Type_ID_Surface">Surface ID</span></td>
-        <td>The unique ID value of the surface to draw.</td>
+        <td><span class="notranslate">id</span></td>
+        <td><span data-keyref="Type_ID_Surface">Идентификатор поверхности</span></td>
+        <td><span class="notranslate">The unique ID value of the surface to draw.</span></td>
       </tr>
       <tr>
-        <td>x</td>
-        <td><span data-keyref="Type_Real">Real</span></td>
-        <td>The x position of where to draw the surface.</td>
+        <td><span class="notranslate">x</span></td>
+        <td><span data-keyref="Type_Real">Реально</span></td>
+        <td><span class="notranslate">The x position of where to draw the surface.</span></td>
       </tr>
       <tr>
-        <td>y</td>
-        <td><span data-keyref="Type_Real">Real</span></td>
-        <td>The y position of where to draw the surface.</td>
+        <td><span class="notranslate">y</span></td>
+        <td><span data-keyref="Type_Real">Реально</span></td>
+        <td><span class="notranslate">The y position of where to draw the surface.</span></td>
       </tr>
       <tr>
-        <td>xscale</td>
-        <td><span data-keyref="Type_Real">Real</span></td>
-        <td>The horizontal scale.</td>
+        <td><span class="notranslate">xscale</span></td>
+        <td><span data-keyref="Type_Real">Реально</span></td>
+        <td><span class="notranslate">The horizontal scale.</span></td>
       </tr>
       <tr>
-        <td>yscale</td>
-        <td><span data-keyref="Type_Real">Real</span></td>
-        <td>The vertical scale.</td>
+        <td><span class="notranslate">yscale</span></td>
+        <td><span data-keyref="Type_Real">Реально</span></td>
+        <td><span class="notranslate">The vertical scale.</span></td>
       </tr>
       <tr>
-        <td>rot</td>
-        <td><span data-keyref="Type_Real">Real</span></td>
-        <td>The rotation or angle to draw the surface.</td>
+        <td><span class="notranslate">rot</span></td>
+        <td><span data-keyref="Type_Real">Реально</span></td>
+        <td><span class="notranslate">The rotation or angle to draw the surface.</span></td>
       </tr>
       <tr>
-        <td>col</td>
-        <td><span data-keyref="Type_Constant_Colour">Colour</span></td>
-        <td>The colour with which to blend the surface.</td>
+        <td><span class="notranslate">col</span></td>
+        <td><span data-keyref="Type_Constant_Colour">Цвет</span></td>
+        <td><span class="notranslate">The colour with which to blend the surface.</span></td>
       </tr>
       <tr>
-        <td>alpha</td>
-        <td><span data-keyref="Type_Real">Real</span></td>
-        <td>The alpha transparency for drawing the surface.</td>
+        <td><span class="notranslate">alpha</span></td>
+        <td><span data-keyref="Type_Real">Реально</span></td>
+        <td><span class="notranslate">The alpha transparency for drawing the surface.</span></td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
   <p class="code"><span data-keyref="Type_Void">N/A</span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Пример:</h4>
   <p class="code">draw_surface_ext(surf, 0, 0, 2, 2, 0, c_red, 0.5);</p>
-  <p>The above code will draw a the surface indexed in the variable &quot;surf&quot; at the (0,0) position in the room, with twice the original scale, blended red and semi transparent.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Приведенный выше код нарисует поверхность, индексированную в переменной &quot;surf&quot; в позиции (0,0) в комнате, с удвоенным исходным масштабом, с красной и полупрозрачной смесью.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Surfaces.htm">Surfaces</a></div>
-        <div style="float:right">Next: <a href="draw_surface_part.htm">draw_surface_part</a></div>
+        <div style="float:left">Назад: <a href="Surfaces.htm">Поверхности</a></div>
+        <div style="float:right">Следующий: <a href="draw_surface_part.htm"><span class="notranslate">draw_surface_part</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 draw_surface_ext

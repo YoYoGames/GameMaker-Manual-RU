@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>distance_to_object</title>
+  <title>расстояние_до_объекта</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference page for distance_to_object" />
   <meta name="rh-index-keywords" content="distance_to_object" />
@@ -15,46 +15,46 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>distance_to_object</h1>
-  <p>This function calculates the distance from the edge of the bounding box of the calling instance to the nearest edge of the nearest instance of the object specified. The object can be an object index or a specific instance ID as well as the <a href="../../../GML_Overview/Instance_Keywords.htm"><i>keyword</i></a> <b>other</b>, and the distance is returned in pixels. Note that if either of the objects have no sprite or no mask defined, the results will be incorrect.</p>
-  <p> </p>
-  <h4><b>Syntax:</b></h4>
+  <h1>расстояние_до_объекта</h1>
+  <p>Эта функция вычисляет расстояние от края ограничительной рамки вызывающего экземпляра до ближайшего края ближайшего экземпляра указанного объекта. Объект может быть индексом объекта или идентификатором конкретного экземпляра, а также <a href="../../../GML_Overview/Instance_Keywords.htm"><i>ключевое слово</i></a> <b>другой</b>, а расстояние возвращается в пикселях. Обратите внимание, что если у любого из объектов нет <span class="notranslate">sprite</span> или не определена маска, результаты будут неверными.</p>
+  <p> </p>
+  <h4><b>Синтаксис:</b></h4>
   <p class="code">distance_to_object(obj);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Аргумент</th>
+        <th>Тип</th>
+        <th>Описание</th>
       </tr>
       <tr>
-        <td>obj</td>
-        <td><span data-keyref="Type_Asset_Object">Object Asset</span> or <span data-keyref="Type_ID_Instance">Instance ID</span></td>
-        <td>The object to check for.</td>
+        <td><span class="notranslate">obj</span></td>
+        <td> <span data-keyref="Type_ID_Instance">Идентификатор</span><span data-keyref="Type_Asset_Object">актива</span> или <span data-keyref="Type_ID_Instance">экземпляра</span><span data-keyref="Type_Asset_Object">объекта</span> </td>
+        <td><span class="notranslate">The object to check for.</span></td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
   <p class="code"><span data-keyref="Type_Real">Real</span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Пример:</h4>
   <p class="code">if (distance_to_object(obj_Player) &lt; range)<br />
     {<br />
         canshoot = true;<br />
     }</p>
-  <p>The above code will check for the distance to the player object and if it is less than the value stored in the variable &quot;range&quot; the variable &quot;canshoot&quot; is set to true.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Приведенный выше код проверяет расстояние до объекта игрока, и если оно меньше значения, хранящегося в переменной &quot;range&quot;, то переменная &quot;canshoot&quot; устанавливается в true.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Angles_And_Distance.htm">Angles And Distance</a></div>
-        <div style="float:right">Next: <a href="distance_to_point.htm">distance_to_point</a></div>
+        <div style="float:left">Назад: <a href="Angles_And_Distance.htm">Углы и расстояние</a></div>
+        <div style="float:right">Следующий: <a href="distance_to_point.htm"><span class="notranslate">distance_to_point</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 distance_to_object

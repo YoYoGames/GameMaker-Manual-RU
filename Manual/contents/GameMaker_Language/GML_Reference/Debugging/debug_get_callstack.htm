@@ -6,7 +6,7 @@
   <title>debug_get_callstack</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
-  <script src="../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference page for debug_get_callstack" />
   <meta name="rh-index-keywords" content="debug_get_callstack" />
@@ -16,35 +16,35 @@
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
   <h1>debug_get_callstack</h1>
-  <p>This function generates an array of strings as the &quot;callstack&quot; where the current script is listed first, and then all the other scripts that were run in order for the current script to be executed. The exact string format will vary depending on the target platform chosen, but it will mostly have the script/event name, then a colon : and the line number, similar to this:</p>
+  <p>Эта функция генерирует массив строк в виде &quot;стека вызовов&quot;, где сначала перечисляется текущий сценарий, а затем все другие сценарии, которые были запущены для того, чтобы текущий сценарий был выполнен. Точный формат строк зависит от выбранной целевой платформы, но в основном это будет имя сценария/события, затем двоеточие : и номер строки, как показано ниже:</p>
   <p class="code"><span class="inline">&quot;gml_Script_script2:1&quot;<br />
       &quot;gml_Script_script1:32&quot;<br />
       &quot;gml_Script_script0:64&quot;<br />
       &quot;gml_Object_object0_Create_0:1&quot;</span></p>
-  <p>The function allows for an optional argument to be passed in, which is the maximum depth of the returned callstack. This value is the number of scripts that are included in the returned array starting from the current script. If this argument is not specified, then the full callstack will be returned.</p>
-  <p>Note that the returned array will always contain 0 in its last position, after listing the callstack scripts.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p>Функция позволяет передавать необязательный аргумент, который является максимальной глубиной возвращаемого стека вызовов. Это значение представляет собой количество скриптов, включенных в возвращаемый массив, начиная с текущего скрипта. Если этот аргумент не указан, то будет возвращен полный стек вызовов.</p>
+  <p>Обратите внимание, что возвращаемый массив всегда будет содержать 0 в своей последней позиции, после перечисления сценариев стека вызовов.</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
   <p class="code">debug_get_callstack([maxdepth])</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Аргумент</th>
+        <th>Тип</th>
+        <th>Описание</th>
       </tr>
       <tr>
-        <td>[maxdepth]</td>
-        <td><span data-keyref="Type_Real">Real</span></td>
-        <td><span class="optional">OPTIONAL</span> The maximum depth of the callstack that is returned</td>
+        <td><span class="notranslate">[maxdepth]</span></td>
+        <td><span data-keyref="Type_Real">Реально</span></td>
+        <td><span class="notranslate"><span class="optional">OPTIONAL</span> Максимальная глубина возвращаемого стека вызовов</td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
   <p class="code"><span data-keyref="Type_Array">Array</span></p>
-  <p> </p>
-  <h4><b>Example:</b></h4>
+  <p> </p>
+  <h4><b>Пример:</b></h4>
   <p class="code">if debug_mode<br />
     {<br />
         if keyboard_check(vk_escape)<br />
@@ -56,18 +56,18 @@
             }<br />
         }<br />
     }</p>
-  <p>The above code checks to see if debug mode is enabled and if it is, checks to see if a key is being held down. In that case, it outputs the current call stack to the console, with a maximum depth of 4.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Приведенный выше код проверяет, включен ли режим отладки, и если да, то проверяет, удерживается ли клавиша. В этом случае он выводит на консоль текущий стек вызовов с максимальной глубиной 4.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Debugging.htm">Debugging</a></div>
-        <div style="float:right">Next: <a href="exception_unhandled_handler.htm">exception_unhandled_handler</a></div>
+        <div style="float:left">Назад: <a href="Debugging.htm">Отладка</a></div>
+        <div style="float:right">Следующий: <a href="exception_unhandled_handler.htm"><span class="notranslate">exception_unhandled_handler</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 debug_get_callstack

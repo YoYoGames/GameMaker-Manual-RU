@@ -6,7 +6,7 @@
   <title>room_get_camera</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page outlining the function room_get_camera" />
   <meta name="rh-index-keywords" content="room_get_camera" />
@@ -16,51 +16,51 @@
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
   <h1>room_get_camera</h1>
-  <p>With this function you can get the unique index ID of the camera assigned to a specific view in a room other than the current one. You give the room to use, the view port to use (from 0 to 7) and the function will return a camera index.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p>С помощью этой функции вы можете получить уникальный индекс ID камеры, назначенной на определенный вид в комнате, отличной от текущей. Вы указываете комнату, которую нужно использовать, порт вида, который нужно использовать (от 0 до 7), и функция возвращает индекс камеры.</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
   <p class="code">room_get_camera(rm, vind);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Аргумент</th>
+        <th>Тип</th>
+        <th>Описание</th>
       </tr>
       <tr>
-        <td>rm</td>
-        <td><span data-keyref="Type_Asset_Room">Room Asset</span></td>
-        <td>The index of the room to get the view camera of</td>
+        <td><span class="notranslate">rm</span></td>
+        <td><span data-keyref="Type_Asset_Room">Комнатный актив</span></td>
+        <td><span class="notranslate">The index of the room to get the view camera of</span></td>
       </tr>
       <tr>
-        <td>vind</td>
-        <td><span data-keyref="Type_Real">Real</span></td>
-        <td>The index of the view port to get the camera of</td>
+        <td><span class="notranslate">vind</span></td>
+        <td><span data-keyref="Type_Real">Реально</span></td>
+        <td><span class="notranslate">The index of the view port to get the camera of</span></td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
   <p class="code"><span data-keyref="Type_ID_Camera">Camera ID</span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Пример:</h4>
   <p class="code">var cam = room_get_camera(rm_Game, 0);<br />
     if cam != global.MainCam<br />
     {<br />
         room_set_camera(rm_Game, 0, global.MainCam);<br />
     }</p>
-  <p>The above code assigns a camera in a newly created room to view port [0].</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Приведенный выше код назначает камеру во вновь созданной комнате на порт просмотра [0].</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Rooms.htm">Rooms</a></div>
-        <div style="float:right">Next: <a href="room_first.htm">room_first</a></div>
+        <div style="float:left">Назад: <a href="Rooms.htm">Номера</a></div>
+        <div style="float:right">Следующий: <a href="room_first.htm"><span class="notranslate">room_first</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 room_get_camera

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>steam_create_leaderboard</title>
+  <meta name="generator" content="Adobe RoboHelp 2019" />
+  <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
+  <script src="../../../../assets/scripts/main_script.js"></script>
+  <meta name="rh-authors" content="Mark Alexander" />
+  <meta name="topic-comment" content="Reference page for steam_create_leaderboard" />
+  <meta name="rh-index-keywords" content="steam_create_leaderboard,lb_sort_none,lb_sort_ascending,lb_sort_descending,lb_disp_none,lb_disp_numeric,lb_disp_time_sec,lb_disp_time_ms" />
+  <meta name="search-keywords" content="steam_create_leaderboard,lb_sort_none,lb_sort_ascending,lb_sort_descending,lb_disp_none,lb_disp_numeric,lb_disp_time_sec,lb_disp_time_ms" />
+</head>
+<body>
+  <!--<div class="body-scroll" style="top: 150px;">-->
+  <h1>steam_create_leaderboard</h1>
+  <p>С помощью этой функции вы можете создать новую таблицу лидеров для вашей игры. Первым аргументом является строка, определяющая имя вашей таблицы лидеров, и это имя должно использоваться во всех дальнейших вызовах функции, связанных с создаваемой таблицей лидеров. Вы можете
+    затем определить метод сортировки (см. константы, перечисленные ниже), а также способ отображения информации (опять же, одна из констант, перечисленных ниже). Функция вернет значение -1, если ей не удалось создать таблицу лидеров, или значение
+    больше -1, если это удалось.</p>
+  <p class="note"><b>ПРИМЕЧАНИЕ</b>: Если вы ранее создали таблицу лидеров с таким же названием (либо через код, либо через вашу страницу <span class="notranslate">Steam</span> для игры), эта функция будет проигнорирована!</p>
+  <p> </p>
+  <table>
+    <tbody>
+      <tr>
+        <th>Сортировка Постоянная</th>
+        <th>Описание</th>
+      </tr>
+      <tr>
+        <td>lb_sort_none</td>
+        <td>Никакой сортировки. Информация будет отображаться &quot;как есть&quot;.</td>
+      </tr>
+      <tr>
+        <td>lb_sort_ascending</td>
+        <td>Сортировка таблицы лидеров в порядке возрастания.</td>
+      </tr>
+      <tr>
+        <td>lb_sort_descending</td>
+        <td>Сортировка таблицы лидеров в порядке убывания.</td>
+      </tr>
+    </tbody>
+  </table>
+  <p> </p>
+  <table>
+    <tbody>
+      <tr>
+        <th>Отображать постоянную</th>
+        <th>Описание</th>
+      </tr>
+      <tr>
+        <td>lb_disp_none</td>
+        <td>Показать таблицу лидеров &quot;как есть&quot;.</td>
+      </tr>
+      <tr>
+        <td>lb_disp_numeric</td>
+        <td>Показать таблицу лидеров в виде числового дисплея.</td>
+      </tr>
+      <tr>
+        <td>lb_disp_time_sec</td>
+        <td>Показывать значения в таблице лидеров в виде времени, базовым значением которого являются секунды.</td>
+      </tr>
+      <tr>
+        <td>lb_disp_time_ms</td>
+        <td>Показывать значения в таблице лидеров в виде времени, базовым значением которого являются миллисекунды.</td>
+      </tr>
+    </tbody>
+  </table>
+  <p> </p>
+  <h4>Синтаксис:</h4>
+  <p class="code">steam_create_leaderboard(lb_name, sort_method, display_type);</p>
+  <table>
+    <tbody>
+      <tr>
+        <th>Аргумент</th>
+        <th>Описание</th>
+      </tr>
+      <tr>
+        <td><span class="notranslate">lb_name</span></td>
+        <td>Название создаваемой доски лидеров (строка).</td>
+      </tr>
+      <tr>
+        <td><span class="notranslate">sort_method</span></td>
+        <td>Метод сортировки записей в таблице лидеров (см. константы, перечисленные ниже).</td>
+      </tr>
+      <tr>
+        <td><span class="notranslate">display_type</span></td>
+        <td>Способ отображения таблицы лидеров для пользователя (см. константы, перечисленные ниже).</td>
+      </tr>
+    </tbody>
+  </table>
+  <p> </p>
+  <h4>Возвращается:</h4>
+  <p class="code">Real</p>
+  <p> </p>
+  <h4>Пример:</h4>
+  <p class="code">steam_create_leaderboard(&quot;Game Times&quot;, lb_sort_ascending, lb_disp_time_sec);</p>
+  <p>Приведенный выше код создаст таблицу лидеров под названием &quot;Game Times&quot; и настроит ее на отображение результатов в порядке возрастания и с отображением в секундах.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <div class="footer">
+    <div class="buttons">
+      <div class="clear">
+        <div style="float:left">Назад: <a href="Steam_Leaderboards.htm">Таблицы лидеров</a></div>
+        <div style="float:right">Следующий: <a href="steam_upload_score.htm"><span class="notranslate">steam_upload_score</span></a></div>
+      </div>
+    </div>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Все права защищены</span></h5>
+  </div>
+  <!-- KEYWORDS
+steam_create_leaderboard
+lb_sort_none
+lb_sort_ascending
+lb_sort_descending
+lb_disp_none
+lb_disp_numeric
+lb_disp_time_sec
+lb_disp_time_ms
+-->
+  <!-- TAGS
+steam_create_leaderboard
+-->
+</body>
+</html>

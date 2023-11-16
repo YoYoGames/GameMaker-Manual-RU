@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Runtime Functions</title>
+  <title>Функции времени выполнения</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../assets/css/default.css" type="text/css" />
-  <script src="../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page outlining the use of runtime functions" />
   <meta name="rh-index-keywords" content="Runtime Functions" />
@@ -14,18 +14,18 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>Runtime Functions</h1>
-  <p>The general definition of a function is something like this:</p>
-  <p><i>A function has an input and an output, and the output is related to the input.</i></p>
-  <p>In <span data-keyref="GameMaker Name">GameMaker</span> this translates into two different things, but they both work the same way:</p>
+  <h1>Функции времени выполнения</h1>
+  <p>Общее определение функции выглядит примерно так:</p>
+  <p><i>Функция имеет вход и выход, и выход связан с входом.</i></p>
+  <p>В <span data-keyref="GameMaker Name">GameMaker</span> это означает две разные вещи, но обе они работают одинаково:</p>
   <ul class="colour">
-    <li><b>Runtime Functions</b> - A <i>runtime</i> function is one that is supplied as part of the <b>GameMaker Language</b> (GML). These are built in to the language and can be used to make things happen in your games and there are a great number of GML runtime functions available to you, all of which are explained in the <a href="../GML_Reference/GML_Reference.htm">Language Reference</a> section of the manual.</li>
-    <li><b>Script Functions And Methods </b>- <a href="Script_Functions.htm"><em>Script </em><em>functions</em></a> and <a href="Method_Variables.htm"><em>M</em><i>ethod Variables</i></a> are functions that you have created yourself using the basic building blocks of the <b>GameMaker Language</b> (GML), and these can include runtime functions as part of their code.</li>
+    <li><b>Функции времени выполнения</b> - Функция <i>времени выполнения</i> - это функция, которая поставляется как часть <b>языка GameMaker Language</b> (<span class="notranslate">GML</span>). Они встроены в язык и могут использоваться для того, чтобы что-то происходило в ваших играх. Вам доступно большое количество функций времени выполнения <span class="notranslate">GML</span>, все они описаны в разделе руководства " <a href="../GML_Reference/GML_Reference.htm">Справочник по языку</a> ".</li>
+    <li><b>Функции и методы сценария - </b><a href="Script_Functions.htm"><em>Скрипт </em><em>функции</em></a> и <a href="Method_Variables.htm"><em>M</em><i>Переменные метода</i></a> это функции, которые вы создали сами, используя основные строительные блоки <b>языка GameMaker Language</b> (<span class="notranslate">GML</span>), и они могут включать функции времени выполнения как часть своего кода.</li>
   </ul>
-  <p>In both of the above cases a function has the form of a function <i>name</i>, followed by the <i>input <a class="glossterm" data-glossterm="argument" href="#">argument</a><span class="glossextra">s</span></i> between brackets <span class="inline">()</span> and separated by commas (if the function has no input arguments then just brackets are used). This page concentrates on the <strong>runtime functions</strong> (ie: the ones that are built-in to GameMaker to form the GameMaker Language), but the general rules shown below follow for all function types.</p>
-  <p>Here is an outline of the structure of a function:</p>
+  <p>В обоих вышеперечисленных случаях функция имеет вид <i>имени</i> функции, за которым следуют <i>входные <a class="glossterm" data-glossterm="аргумент" href="#">аргументы</a></i>, заключенные в скобки <span class="inline">()</span> и разделенные запятыми (если функция не имеет входных аргументов, то используются просто скобки). Эта страница посвящена <strong>функциям времени выполнения</strong> (т.е. тем, которые встроены в <span class="notranslate">GameMaker</span> для формирования <span class="notranslate">GameMaker Language</span>), но общие правила, приведенные ниже, применимы ко всем типам функций.</p>
+  <p>Вот примерная структура функции:</p>
   <p class="code">&lt;function&gt;(&lt;arg0&gt;, &lt;arg1&gt; ,... &lt;argN&gt;);</p>
-  <p>Some functions can return values and can be used in <a class="glossterm" data-glossterm="expression" href="#">expression</a><span class="glossextra">s</span>, while others simply execute commands, as illustrated in the following two runtime function examples:</p>
+  <p>Некоторые функции могут возвращать значения и использоваться в <a class="glossterm" data-glossterm="выражение" href="#">выражениях</a>, в то время как другие просто выполняют команды, как показано в следующих двух примерах функций времени выполнения:</p>
   <p class="code">// Destroy the calling instance<br />
     // This requires no arguments and returns nothing<br />
     instance_destroy();<br />
@@ -34,10 +34,10 @@
     // This takes four arguments and returns a real value<br />
     dist = point_distance(x, y, mouse_x, mouse_y);
   </p>
-  <p class="note"><span class="note">NOTE</span> Anywhere the manual has &quot;N/A&quot; as a return value for a function, it means that the function is not meant to return any value as part of its operation. If you try to check for a return value from these functions then you will get the value <span class="inline">undefined</span>. </p>
-  <p>Sometimes the return value of a function may be a value that you want to use in an <a class="glossterm" data-glossterm="assignment" href="#">assignment</a>, but you should note that it is impossible to use any function <em>directly</em> as the left-hand side of an assignment. For example, the following code to set the speed on an instance would give you an error:</p>
+  <p class="note"><span class="note">ПРИМЕЧАНИЕ</span> Везде, где в руководстве в качестве возвращаемого значения функции указано &quot;N/A&quot;, это означает, что функция не предназначена для возврата какого-либо значения в рамках своей работы. Если вы попытаетесь проверить возвращаемое значение из этих функций, то получите значение <span class="inline">undefined</span>. </p>
+  <p>Иногда возвращаемое значение функции может быть значением, которое вы хотите использовать в <a class="glossterm" data-glossterm="задание" href="#">присваивании</a>, но вы должны заметить, что невозможно использовать любую функцию <em>непосредственно</em> в качестве левой части присваивания. Например, следующий код для установки скорости на экземпляре выдаст ошибку:</p>
   <p class="code">instance_nearest(x, y, obj).speed = 0;</p>
-  <p>The return value for the expression in that code example is an integer number (the unique ID value for the nearest instance) and so it must be enclosed in brackets to be used in this way and properly address the instance required (see <a href="Addressing_Variables_In_Other_Instances.htm">Addressing Variables In Other Instances</a> for more information). The above code would be correctly written as:</p>
+  <p>Возвращаемое значение для выражения в этом примере кода является целым числом (уникальное значение ID для ближайшего экземпляра), поэтому для его использования таким образом и правильного обращения к требуемому экземпляру оно должно быть заключено в скобки (более подробная информация приведена в разделе <a href="Addressing_Variables_In_Other_Instances.htm">Обращение к переменным в других экземплярах</a> ). Приведенный выше код будет правильно записать как:</p>
   <p class="code">(instance_nearest(x, y, obj)).speed = 0;<br />
     <br />
     //or more correctly still<br />
@@ -55,17 +55,17 @@
         }<br />
     }
   </p>
-  <p>The <a href="../GML_Reference/GML_Reference.htm">Language Reference</a> section of the manual lists all of the runtime functions available to you and gives examples of how they can be used as well as other important information about what they may return or any events that they may trigger, etc... For more information on user defined script functions and methods, see the section on <a href="Script_Functions.htm">Script Functions</a> and the section on <a href="Method_Variables.htm">Method Variables</a>.</p>
-  <p> </p>
-  <p> </p>
+  <p>В разделе " <a href="../GML_Reference/GML_Reference.htm">Справочник по языку</a> " руководства перечислены все доступные вам функции времени выполнения и приведены примеры их использования, а также другая важная информация о том, что они могут возвращать, какие события они могут вызывать и т.д.. Для получения дополнительной информации о функциях и методах сценария, определяемых пользователем, см. раздел " <a href="Script_Functions.htm">Функции сценария</a> " и раздел " <a href="Method_Variables.htm">Переменные метода</a>".</p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="GML_Overview.htm">GML Overview</a></div>
-        <div style="float:right">Next: <a data-xref="{title}" href="Variables_And_Variable_Scope.htm">Variables And Variable Scope</a></div>
+        <div style="float:left">Назад: <a href="GML_Overview.htm">Обзор GML</a></div>
+        <div style="float:right">Следующее: <a data-xref="{title}" href="Variables_And_Variable_Scope.htm">Переменные и область видимости переменных</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 Runtime Functions

@@ -2,64 +2,64 @@
 
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"><head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>ds_queue_enqueue</title>
-  <meta name="generator" content="Adobe RoboHelp 2019"/>
-  <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css"/>
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
-  <meta name="rh-authors" content="Mark Alexander"/>
-  <meta name="topic-comment" content="Reference page for ds_queue_enqueue"/>
-  <meta name="rh-index-keywords" content="ds_queue_enqueue"/>
-  <meta name="search-keywords" content="ds_queue_enqueue"/>
+  <meta name="generator" content="Adobe RoboHelp 2019" />
+  <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
+  <script src="../../../../assets/scripts/main_script.js"></script>
+  <meta name="rh-authors" content="Mark Alexander" />
+  <meta name="topic-comment" content="Reference page for ds_queue_enqueue" />
+  <meta name="rh-index-keywords" content="ds_queue_enqueue" />
+  <meta name="search-keywords" content="ds_queue_enqueue" />
 </head>
 
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
   <h1>ds_queue_enqueue</h1>
-  <p>This function will add a value (real or string) onto the tail of the <span class="misspell-word">DS queue</span>. The function can take a further 14 optional arguments (making a total of 15 possible additions), permitting you to add multiple values
-    consecutively to the tail of the queue in a single call.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p>Эта функция добавляет значение (вещественное или строковое) в хвост <span class="misspell-word">очереди DS</span>. Функция может принимать еще 14 необязательных аргументов (всего 15 возможных добавлений), что позволяет добавлять несколько значений
+    последовательно в хвост очереди за один вызов.</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
   <p class="code">ds_queue_enqueue(id, val [, val2, ... val15]);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th><th>Type</th>
-        <th>Description</th>
+        <th>Аргумент</th><th>Тип</th>
+        <th>Описание</th>
      </tr>
       <tr>
-        <td>id</td><td><span data-keyref="Type_ID_DS_Queue"></span></td>
-        <td>The id of the queue to add to.</td>
+        <td><span class="notranslate">id</span></td><td><span data-keyref="Type_ID_DS_Queue"></span></td>
+        <td><span class="notranslate">The id of the queue to add to.</span></td>
      </tr>
       <tr>
-        <td>val</td><td><span data-keyref="Type_Any"></span></td>
-        <td>The value to add to the queue.</td>
+        <td><span class="notranslate">val</span></td><td><span data-keyref="Type_Any"></span></td>
+        <td><span class="notranslate">The value to add to the queue.</span></td>
      </tr>
       <tr>
-        <td>[val2, ... val15]</td><td><span data-keyref="Type_Any"></span></td>
-        <td>Optional values to be added to the queue.</td>
+        <td><span class="notranslate">[val2, ... val15]</span></td><td><span data-keyref="Type_Any"></span></td>
+        <td><span class="notranslate">Optional values to be added to the queue.</span></td>
      </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
   <p class="code"><span data-keyref="Type_Void"></span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Пример:</h4>
   <p class="code">move_queue = ds_queue_create();<br/> ds_queue_enqueue(move_queue, x + 200);<br/> ds_queue_enqueue(move_queue, y);<br/> ds_queue_enqueue(move_queue, x + 200);<br/> ds_queue_enqueue(move_queue, y + 200);<br/> ds_queue_enqueue(move_queue, x);<br/> ds_queue_enqueue(move_queue,
     y + 200);<br/> ds_queue_enqueue(move_queue, x);<br/> ds_queue_enqueue(move_queue, y);</p>
-  <p>The above code creates a new DS queue and stores its index in the variable &quot;move_queue&quot;. It then pushes a number of values onto the queue for future use.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Приведенный выше код создает новую очередь DS и сохраняет ее индекс в переменной &quot;move_queue&quot;. Затем он помещает несколько значений в очередь для дальнейшего использования.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="DS_Queues.htm">DS Queues</a></div>
-        <div style="float:right">Next: <a href="ds_queue_head.htm">ds_queue_head</a></div>
+        <div style="float:left">Назад: <a href="DS_Queues.htm">Очереди DS</a></div>
+        <div style="float:right">Следующий: <a href="ds_queue_head.htm"><span class="notranslate">ds_queue_head</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2021 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 ds_queue_enqueue

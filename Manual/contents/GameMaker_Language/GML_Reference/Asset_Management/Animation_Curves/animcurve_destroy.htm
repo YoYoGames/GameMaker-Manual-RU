@@ -6,7 +6,7 @@
   <title>animcurve_destroy</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page explaining the function animcurve_destroy" />
   <meta name="rh-index-keywords" content="animcurve_destroy" />
@@ -15,43 +15,42 @@
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
   <h1>animcurve_destroy</h1>
-  <p>This function destroy an animation curve previously created with the function <a href="animcurve_create.htm"><span class="inline">animcurve_create()</span></a>.</p>
-  <p>Calling this function will remove the animation curve from memory and clean up any channels or points that it contains as well (these never need to be cleaned up manually). Note that you <b>cannot destroy any animation curves created in the asset browser</b>, only those created at runtime.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p>Эта функция может быть использована для уничтожения любых анимационных кривых, которые были ранее созданы с помощью функции <a href="animcurve_create.htm"><span class="inline">animcurve_create()</span></a>. Вызов этой функции удалит анимационную кривую из памяти и очистит все каналы или точки, которые она содержит (их никогда не нужно очищать вручную). Обратите внимание, что <b>нельзя уничтожить анимационные кривые, созданные в браузере активов</b>, только те, которые были созданы во время выполнения.</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
   <p class="code">animcurve_destroy(curve_struct);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Аргумент</th>
+        <th>Тип</th>
+        <th>Описание</th>
       </tr>
       <tr>
-        <td>curve_struct</td>
-        <td><span data-keyref="Type_Struct_AnimCurve"><a href="../../../../../GameMaker_Language/GML_Reference/Asset_Management/Animation_Curves/animcurve_get.htm" target="_blank">Animation Curve Struct</a></span></td>
-        <td>The pointer to the curve struct to destroy.</td>
+        <td><span class="notranslate">curve_struct</span></td>
+        <td><span data-keyref="Type_Struct_AnimCurve">Структура анимационной кривой</span></td>
+        <td><span class="notranslate">The pointer to the curve struct to destroy.</span></td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
   <p class="code"><span data-keyref="Type_Void">N/A</span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Пример:</h4>
   <p class="code">animcurve_destroy(my_curve);</p>
-  <p>The above code will destroy the (previously created) animation curve struct indexed in the variable &quot;<span class="inline">my_curve</span>&quot;.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Приведенный выше код уничтожит (ранее созданную) структуру кривой анимации, индексированную в переменной &quot;<span class="inline">my_curve</span>&quot;.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Animation_Curves.htm">Animation Curves</a></div>
-        <div style="float:right">Next: <a href="animcurve_get.htm">animcurve_get</a></div>
+        <div style="float:left">Назад: <a href="Animation_Curves.htm">Анимационные кривые</a></div>
+        <div style="float:right">Следующий: <a href="animcurve_get.htm"><span class="notranslate">animcurve_get</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 animcurve_destroy

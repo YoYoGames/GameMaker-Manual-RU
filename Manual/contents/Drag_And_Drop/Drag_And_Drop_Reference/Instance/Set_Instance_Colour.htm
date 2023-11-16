@@ -1,54 +1,54 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"><head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>Set Instance Colour</title>
-  <meta name="generator" content="Adobe RoboHelp 2020"/>
-  <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css"/>
-  <script src="../../../assets/scripts/main_script.js" type="module"></script>
-  <meta name="rh-authors" content="Mark Alexander"/>
-  <meta name="topic-comment" content="Page that explains the Set Instance Colour action"/>
-  <meta name="rh-index-keywords" content="GML Visual Action - Set Instance Colour"/>
-  <meta name="search-keywords" content="Set Instance Colour"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Установить цвет экземпляра</title>
+  <meta name="generator" content="Adobe RoboHelp 2020" />
+  <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
+  <script src="../../../assets/scripts/main_script.js"></script>
+  <meta name="rh-authors" content="Mark Alexander" />
+  <meta name="topic-comment" content="Page that explains the Set Instance Colour action" />
+  <meta name="rh-index-keywords" content="GML Visual Action - Set Instance Colour" />
+  <meta name="search-keywords" content="Set Instance Colour" />
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1><img alt="Set Instance Colour Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Instance/i_Instance_Set_Colour.png"/> Set Instance Colour</h1>
-  <p>This action block sets the <span class="inline">image_blend</span> colour for &quot;blending&quot; with the instance sprite. The default value is the hex code $FFFFFFFF (which represents the colour white using <a class="glossterm" data-glossterm="ARGB" href="#">ARGB</a>    format) and this will draw the sprite using no blending and full alpha. Any other value (including internal colour constants like <span class="inline">c_red</span>, or <span class="inline">c_aqua</span>) will <i>blend</i> the specified colour with the original sprite as well as set the
-    <span class="inline">image_alpha</span> component for the instance, but only when the <strong>Use Alpha</strong> checkbox is ticked. This will overwrite any alpha value set previously using the action <a href="Set_Instance_Alpha.htm">Set Instance Alpha</a>.</p>
-  <p>Please note that for changes in this action to be visible, the instance should have either <i>no</i> draw event (and so <span data-keyref="GameMaker Name">GameMaker</span> will default draw the sprite) or be drawn using <a href="../Drawing/Draw_Self.htm">Draw Self</a> action. It is
-    important to note too that you should try to limit blending on the <b>HTML5</b> platform (unless using WebGL), as each blended sprite has to be cached separately and so having many blended sprites may adversely affect performance.</p>
+  <h1><img> Установить цвет экземпляра</h1>
+  <p>Этот блок действий устанавливает цвет <span class="inline">image_blend</span> для &quot;смешивания&quot; с экземпляром <span class="notranslate">sprite</span>. Значение по умолчанию - шестнадцатеричный код $FFFFFFFF (который представляет белый цвет в формате <a class="glossterm" data-glossterm="ARGB" href="#">ARGB</a> ), и это нарисует <span class="notranslate">sprite</span> без смешивания и с полной альфой. Любое другое значение (включая внутренние константы цвета, такие как <span class="inline">c_red</span>, или <span class="inline">c_aqua</span>) приведет к <i>смешиванию</i> указанного цвета с исходным <span class="notranslate">sprite</span>, а также установит компонент
+    <span class="inline">image_alpha</span> компонент для данного экземпляра, но только если установлен флажок <strong>Использовать альфу</strong>. При этом будет перезаписано любое значение альфа, установленное ранее с помощью действия <a href="Set_Instance_Alpha.htm">Set Instance Alpha</a>.</p>
+  <p>Обратите внимание, что для того, чтобы изменения в этом действии были видны, экземпляр должен либо <i>не</i> иметь события рисования (и тогда <span data-keyref="GameMaker Name">GameMaker</span> по умолчанию нарисует <span class="notranslate">sprite</span>), либо быть нарисованным с помощью действия <a href="../Drawing/Draw_Self.htm">Draw Self</a>. Важно
+    важно отметить, что на платформе <b>HTML5</b> следует ограничить количество смешиваний (если только не используется WebGL), так как каждое смешивание <span class="notranslate">sprite</span> должно кэшироваться отдельно, поэтому наличие большого количества смешиваний <span class="notranslate">sprites</span> может негативно сказаться на производительности.</p>
+  <p><img alt="Set Instance Colour Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Instance/i_Instance_Set_Colour.png"/></p>
+  <h4>Синтаксис действия:</h4>
   <p><img alt="Example of sprites being coloured" class="center" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Instance/sprite_colour.png"/></p>
-  <h4>Action Syntax:</h4>
-  <p><img alt="Set Instance Colour Action" class="center" height="131" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Instance/a_Instance_Set_Colour.png" width="297"/></p>
-  <h4>Arguments:</h4>
+  <h4>Аргументы:</h4>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Description</th>
+        <th>Аргумент</th>
+        <th>Описание</th>
       </tr>
       <tr>
-        <td>Colour</td>
-        <td>The new blending colour to use (clicking the colour swatch will open the colour picker window).</td>
+        <td><span class="notranslate">Colour</span></td>
+        <td>Новый цвет смешивания (щелчок по образцу цвета открывает окно выбора цвета).</td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Example:</h4>
-  <p><span><img alt="Set Instance Colour Example" class="center" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Instance/e_Instance_Set_Sprite.png"/></span>The above action block code sets a new sprite as well as a number of other
-    properties for how that sprite is to be displayed, including setting the blend colour to pink.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p> </p>
+  <h4>Пример:</h4>
+  <p><span><img></span>Приведенный выше код блока действий устанавливает новый <span class="notranslate">sprite</span>, а также ряд других
+    свойств для отображения этого <span class="notranslate">sprite</span>, включая установку розового цвета наложения.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Instance_Actions_Library.htm">Instance Actions</a></div>
-        <div style="float:right">Next: <a href="If_Instance_Exists.htm">If Instance Exists</a></div>
+        <div style="float:left">Назад: <a href="Instance_Actions_Library.htm">Действия экземпляра</a></div>
+        <div style="float:right">Следующий: <a href="If_Instance_Exists.htm">Если экземпляр существует</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2021 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 Action - Set Instance Colour

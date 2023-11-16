@@ -4,7 +4,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="generator" content="Adobe RoboHelp 2020" />
-  <title>Text in Sequences</title>
+  <title>Текст в последовательностях</title>
   <meta name="topic-status" content="Draft" />
   <link rel="stylesheet" type="text/css" href="../../assets/css/default.css" />
   <meta name="template" content="../../assets/masterpages/Manual_Page.htt" />
@@ -14,76 +14,76 @@
   <meta name="search-keywords" content="Text in Sequences, animate text" />
 </head>
 <body>
-  <h1>Text in Sequences</h1>
-  <p>Text tracks can be added to a Sequence through the editor. This is done by selecting the <img class="icon" height="24" src="../../assets/Images/Icons/Icon_TextButton.png" width="24" /> <strong>Add a Text Track</strong> button from the Canvas Toolbox, and then clicking (and optionally dragging) in the Canvas to create a text track.</p>
-  <p><img class="center" src="../../assets/Images/Asset_Editors/Sequences_Text/SeqTextOverview.png" /></p>
-  <p>This page covers the following topics:</p>
+  <h1>Текст в последовательностях</h1>
+  <p>Текстовые дорожки можно добавить в последовательность через редактор. Для этого нужно выбрать кнопку <img> <strong>Добавить текстовую дорожку</strong> на панели инструментов холста, а затем щелкнуть (и по желанию перетащить) на холсте для создания текстовой дорожки.</p>
+  <p><img class="icon" height="24" src="../../assets/Images/Icons/Icon_TextButton.png" width="24" /></p>
+  <p>На этой странице рассматриваются следующие темы:</p>
   <ol class="Decimal">
-    <li><a href="#s1">Creating Text</a></li>
-    <li><a href="#s2">Modifying Text</a></li>
-    <li><a href="#s3">Font Assets</a></li>
-    <li><a href="#s4">Parameters</a></li>
-    <li><a href="#s5">Inspector</a></li>
+    <li><a href="#s1">Создание текста</a></li>
+    <li><a href="#s2">Изменение текста</a></li>
+    <li><a href="#s3">Шрифтовые активы</a></li>
+    <li><a href="#s4">Параметры</a></li>
+    <li><a href="#s5">Инспектор</a></li>
   </ol>
-  <h2 id="s1">Creating Text</h2>
-  <p>There are two ways of creating a text track. After selecting the <img class="icon" height="24" src="../../assets/Images/Icons/Icon_TextButton.png" width="24" /> <strong>Text</strong> tool from the Toolbox, you can:</p>
+  <h2 id="s1">Создание текста</h2>
+  <p>Существует два способа создания текстовой дорожки. Выбрав инструмент " <strong>Текст"</strong> <img> на панели инструментов, вы можете:</p>
   <ul class="colour">
-    <li><strong>Click once in the canvas</strong>: This creates an &quot;unwrapped&quot; text track. This means the text can be as long as you want and it will stay on one line. Wrapping can easily be enabled later through the <a href="../../IDE_Tools/The_Inspector.htm">Inspector</a>.<br />
+    <li><strong>Щелкните один раз на холсте</strong>: Это создаст &quot;развернутую&quot; текстовую дорожку. Это означает, что текст может быть сколь угодно длинным, и он останется на одной линии. Обертывание можно легко включить позже в <a href="../../IDE_Tools/The_Inspector.htm">Инспекторе</a>.<br>
       <video class="center" src="../../assets/Videos/AssetEditors/SeqTextUnwrapped.mp4" width="700" height="330" controls=""></video>
     </li>
-    <li><strong>Click and drag in the canvas</strong>: This creates a &quot;wrapped&quot; text track, meaning the text only displays inside a frame. The size of this frame is set by dragging while creating the text track. Its size can also be changed later via parameter tracks or the Inspector. <video class="center" src="../../assets/Videos/AssetEditors/SeqTextWrapped.mp4" width="700" height="330" controls=""></video> It is recommended to use wrapped text tracks as it makes it much easier to align your text and get consistent results while animating.</li>
+    <li><strong>Щелкните и перетащите в холсте</strong>: Это создает &quot;обернутую&quot; текстовую дорожку, то есть текст отображается только внутри рамки. Размер этой рамки задается перетаскиванием при создании текстовой дорожки. Его размер также можно изменить позже с помощью дорожек параметров или Инспектора. <video class="center" src="../../assets/Videos/AssetEditors/SeqTextWrapped.mp4" width="700" height="330" controls=""></video> Рекомендуется использовать обернутые текстовые дорожки, так как это значительно облегчает выравнивание текста и позволяет добиться стабильных результатов при анимации.</li>
   </ul>
-  <h2 id="s2">Modifying Text</h2>
-  <p>When you create a new text track, GameMaker opens the <a href="../../IDE_Tools/The_Inspector.htm">Inspector</a> and automatically selects the <strong>Text</strong> field, allowing you to start writing your text.</p>
-  <p><img class="center" src="../../assets/Images/Asset_Editors/Sequences_Text/SeqTextEditFromInspector.png" />To edit the text for a track at any time, simply select that track, go into the Inspector and modify the <strong>Text</strong> field again.</p>
-  <p class="note_heading">Resize Behaviour</p>
-  <p class="note">Resizing your text track in the Canvas will work differently depending on whether your text track is <strong>wrapped</strong> or <strong>unwrapped</strong>.<br />
-    <br />
-    If unwrapped, your text track will be scaled, similar to how you scale sprites and objects. However, resizing a <strong>wrapped</strong> text track modifies its <strong>frame size</strong> instead of modifying its scale values.<br />
-    <img class="center" src="../../assets/Images/Asset_Editors/Sequences_Text/SeqTextResizeBehaviour.png" />To scale a wrapped text track, use <a data-height="650" data-rhwidget="HyperlinkPopover" data-width="360" href="The_Sequence_Canvas.htm#gizmos">Gizmos</a> instead, or edit the values in the Scale parameter track manually.
+  <h2 id="s2">Изменение текста</h2>
+  <p>Когда вы создаете новую текстовую дорожку, <span class="notranslate">GameMaker</span> открывает <a href="../../IDE_Tools/The_Inspector.htm">Инспектор</a> и автоматически выбирает поле <strong>Текст</strong>, позволяя вам начать писать текст.</p>
+  <p><img>Чтобы изменить текст для дорожки в любое время, просто выберите эту дорожку, перейдите в Инспектор и снова измените поле <strong>Текст</strong>.</p>
+  <p class="note_heading">Поведение при изменении размера</p>
+  <p class="note">Изменение размера текстовой дорожки на холсте будет работать по-разному в зависимости от того, <strong>обернута</strong> или <strong>не обернута</strong> текстовая дорожка.<br>
+    <br>
+    Если текстовая дорожка развернута, она будет масштабироваться аналогично тому, как масштабируются <span class="notranslate">sprites</span> и объекты. Однако при изменении размера <strong>обернутой</strong> текстовой дорожки изменяется <strong>размер</strong> ее <strong>рамки</strong>, а не значения масштаба.<br>
+    <img>Чтобы изменить масштаб обернутой текстовой дорожки, используйте <a data-height="650" data-rhwidget="HyperlinkPopover" data-width="360" href="The_Sequence_Canvas.htm#gizmos">Gizmos</a> или отредактируйте значения параметра Scale вручную.
   </p>
-  <h2 id="s3">Font Assets</h2>
-  <p>Text tracks are tied to <a href="../Fonts.htm">Font assets</a>. When you create a new text track, it will look for a font asset within your project, and use the one that was last added. If your project has no fonts, it will automatically create a new font asset.</p>
-  <p>When you delete a font, all text tracks that use that font are deleted as well, so ensure you don&#39;t accidentally delete font assets that are used in Sequences.</p>
-  <h2 id="s4">Parameters</h2>
-  <p>You can modify and animate all the usual parameters that are provided for a sprite track, like Position, Rotation, Scale, Origin and Colour Multiply. Using these parameters you can move and rotate your text, make it bigger or smaller, and change its colour and alpha.</p>
-  <p>There are some text-specific parameters provided as well, which can also be animated:<img class="center" src="../../assets/Images/Asset_Editors/Sequences_Text/SeqTextParameters.png" /></p>
+  <h2 id="s3">Шрифтовые активы</h2>
+  <p>Текстовые дорожки привязаны к <a href="../Fonts.htm">активам шрифта</a>. При создании новой текстовой дорожки она будет искать шрифтовой актив в вашем проекте и использовать тот, который был добавлен последним. Если в проекте нет шрифтов, он автоматически создаст новый шрифтовой актив.</p>
+  <p>При удалении шрифта все текстовые дорожки, использующие этот шрифт, также удаляются, поэтому убедитесь, что вы случайно не удалили активы шрифтов, используемых в последовательностях.</p>
+  <h2 id="s4">Параметры</h2>
+  <p>Вы можете изменять и анимировать все обычные параметры, предусмотренные для дорожки <span class="notranslate">sprite</span>, такие как позиция, вращение, масштаб, происхождение и умножение цвета. С помощью этих параметров вы можете перемещать и вращать текст, делать его больше или меньше, изменять его цвет и альфа-фактор.</p>
+  <p>Также предусмотрены некоторые специфические для текста параметры, которые также могут быть анимированы:<img></p>
   <ul class="colour">
-    <li><strong>Character Spacing</strong>: This is the space between each character (in pixels).<br />
-      <img class="center" src="../../assets/Images/Asset_Editors/Sequences_Text/SeqTextCharacterSpacing.png" />
+    <li><strong>Расстояние между символами</strong>: Это расстояние между каждым символом (в пикселях).<br>
+      <img>
     </li>
-    <li><strong>Line Spacing</strong>: This is the space between each line of text (in pixels).<br />
-      <img class="center" src="../../assets/Images/Asset_Editors/Sequences_Text/SeqTextLineSpacing.png" />
+    <li><strong>Межстрочный интервал</strong>: Это расстояние между каждой строкой текста (в пикселях).<br>
+      <img>
     </li>
-    <li><strong>Paragraph Scaling</strong>: This is the space between each paragraph of text (in pixels). A new paragraph starts when you add a line break manually by pressing <img class="icon" height="20" src="../../assets/Images/Icons/Icon_Enter.png" width="55" />.<br />
-      <img class="center" src="../../assets/Images/Asset_Editors/Sequences_Text/SeqTextParagraphSpacing.png" />
+    <li><strong>Масштабирование абзацев</strong>: Это пространство между каждым абзацем текста (в пикселях). Новый абзац начинается, когда вы добавляете разрыв строки вручную, нажав <img>.<br>
+      <img>
     </li>
-    <li><strong>Frame Size</strong>: This is the size of the text&#39;s frame, and is only used when <strong>Wrap</strong> is enabled in the Inspector (see its section below for more information).</li>
+    <li><strong>Размер рамки</strong>: Это размер рамки текста, который используется только в том случае, если в инспекторе включена функция <strong>Wrap</strong> (подробнее см. раздел ниже).</li>
   </ul>
-  <p> </p>
-  <h2 id="s5">Inspector</h2>
-  <p>There are some properties that can only be changed through the Inspector. Such properties cannot be animated as they are not parameter tracks, but simple options that apply to the whole track.</p>
-  <p>The Inspector shows you the following properties when a text track is selected:</p>
-  <p class="note"><span class="note">NOTE</span> The Inspector should open automatically when you create or select a text track, but if your Inspector is closed, you can open it manually from the <a href="../../IDE_Navigation/Menus/The_Windows_Menu.htm">Windows</a> menu at the top.</p>
-  <p><img class="center" src="../../assets/Images/Asset_Editors/Sequences_Text/SeqTextInspector.png" /></p>
-  <p>Some of the parameter tracks (such as <strong>Colour</strong>, <strong>Character Spacing</strong>, <strong>Line Spacing</strong>, etc.) are included here, and changing them will create a keyframe at the playhead if <img class="icon" src="../../assets/Images/Icons/Icon_Seq_Record.png" /> <strong>Automatically record changes</strong> is enabled, or modify the selected keyframe. The rest of the options are &quot;static&quot; (as they cannot be animated) and are as follows:</p>
+  <p> </p>
+  <h2 id="s5">Инспектор</h2>
+  <p>Существуют некоторые свойства, которые можно изменить только через Инспектор. Такие свойства нельзя анимировать, поскольку это не параметры дорожки, а простые параметры, которые применяются ко всей дорожке.</p>
+  <p>Инспектор показывает следующие свойства, когда выбрана текстовая дорожка:</p>
+  <p class="note"><span class="note">ПРИМЕЧАНИЕ</span> Инспектор должен открываться автоматически при создании или выборе текстовой дорожки, но если ваш инспектор закрыт, вы можете открыть его вручную из меню <a href="../../IDE_Navigation/Menus/The_Windows_Menu.htm">Windows</a> в верхней части.</p>
+  <p><img class="center" src="../../assets/Images/Asset_Editors/Sequences_Text/SeqTextOverview.png" /></p>
+  <p>Некоторые дорожки параметров (такие как <strong>Цвет</strong>, <strong>Интервал между символами</strong>, <strong>Интервал между строками</strong> и т.д.) включены здесь, и их изменение создаст ключевой кадр на головке воспроизведения, если включена опция <img> <strong>Автоматически записывать изменения</strong>, или изменит выбранный ключевой кадр. Остальные параметры являются &quot;статичными&quot; (поскольку их нельзя анимировать) и представлены следующим образом:</p>
   <ul class="colour">
-    <li>At the top it shows you the font asset that is selected. You can use this option to select an existing font asset, or create a new one and assign it to the selected text track.</li>
-    <li><strong>Text</strong>: This is the text that is displayed on your text track. You can enter multiple lines here, however empty lines will not be displayed.</li>
-    <li><strong>Alignment</strong>: Here you can change how your text is aligned within the frame horizontally (left, centre, right, justified) and vertically (bottom, top, middle). This only applies when the <strong>Wrap</strong> option is enabled.</li>
-    <li><strong>Wrap</strong>: This controls whether the text should automatically wrap within the defined frame. When this is enabled, your text will automatically move to the next line when it hits the end of the frame, and will always be cut off if the text happens to be longer than the height of the frame. When this is disabled, all of your text will be displayed on a single line, and the frame will not be displayed in the canvas anymore.</li>
+    <li>В верхней части отображается выбранный шрифтовой актив. С помощью этой опции можно выбрать существующий шрифтовой актив или создать новый и назначить его выбранной текстовой дорожке.</li>
+    <li><strong>Текст</strong>: Это текст, который будет отображаться на вашей текстовой дорожке. Здесь можно ввести несколько строк, однако пустые строки не будут отображаться.</li>
+    <li><strong>Выравнивание</strong>: Здесь можно изменить выравнивание текста в рамке по горизонтали (слева, по центру, справа, выровненный) и по вертикали (снизу, сверху, посередине). Это применимо только в том случае, если включена опция " <strong>Обернуть"</strong>.</li>
+    <li><strong>Обернуть</strong>: Этот параметр определяет, должен ли текст автоматически заворачиваться в заданную рамку. Если этот параметр включен, текст будет автоматически переходить на следующую строку, когда он достигнет конца рамки, и всегда будет обрезаться, если длина текста окажется больше высоты рамки. Если эта функция отключена, весь текст будет отображаться на одной строке, а рамка больше не будет отображаться на холсте.</li>
   </ul>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div>Back: <a data-xref="{title}" href="../Sequences.htm">Sequences</a></div>
-        <div>Next: <a data-xref="{title}" href="Clipping_Masks.htm">Clipping Masks</a></div>
+        <div>Назад: <a data-xref="{title}" href="../Sequences.htm">Последовательности</a></div>
+        <div>Следующее: <a data-xref="{title}" href="Clipping_Masks.htm">Обтравочные маски</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
 </body>
 </html>

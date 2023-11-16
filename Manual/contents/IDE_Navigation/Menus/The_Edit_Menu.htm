@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>The Edit Menu</title>
+  <title>Меню редактирования</title>
   <meta name="generator" content="Adobe RoboHelp 2019" />
   <link rel="stylesheet" href="../../assets/css/default.css" type="text/css" />
-  <script src="../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Section on the Edit Menu" />
   <meta name="rh-index-keywords" content="Menu - Edit" />
@@ -14,51 +14,50 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>The Edit Menu</h1>
+  <h1>Меню редактирования</h1>
   <p><img alt="The Edit Menu" class="center" src="../../assets/Images/IDE_Input/Edit_Menu.png" /></p>
-  <p>The edit menu is where you can use the general edition tools of the <span data-keyref="GameMaker Name">GameMaker</span> interface. The available options are:</p>
+  <p>Меню редактирования - это место, где вы можете использовать общие инструменты редактирования интерфейса <span data-keyref="GameMaker Name">GameMaker</span>. Доступными опциями являются:</p>
   <ul class="colour">
-    <li><strong>Undo </strong>- Undo an action.</li>
-    <li><strong>Redo </strong>- Redo a previous action.</li>
-    <li><strong>Search and replace </strong>- This will open a search window which permits you to search through your entire code (including room creation code, scripts, and events) for a given input - see below for further information.</li>
+    <li><strong>Отменить - </strong> отменить действие.</li>
+    <li><strong>Повторить - </strong> повторное выполнение предыдущего действия.</li>
+    <li><strong>Поиск и замена - </strong> откроется окно поиска, которое позволит вам найти весь ваш код (включая код создания комнаты, скрипты и события) для заданного ввода - более подробную информацию см. ниже.</li>
   </ul>
-  <p>When you select Search &amp; Replace from the Edit menu, it will open the following window:</p>
-  <p><img alt="Search In Assets Window" class="center" src="../../assets/Images/IDE_Input/Search_Menu.png" />You can use this to search through all the scripted assets in your game, including room code, event code, scripts and shaders. When searching, you
-    can type in a new search term in the box at the top, or you can click the arrow icon to the right to open a list of previously searched for terms. You also have the option to give a replacement term that will be used to replace the initial search
-    term, and this too has an option to use a previously used replace string from the arrow button on the right.</p>
-  <p>Searches can be general or you can refine them using the options below the search term inputs:</p>
+  <p>Когда вы выбираете Поиск и замена в меню Правка, открывается следующее окно:</p>
+  <p><img>Вы можете использовать его для поиска по всем заскриптованным активам в вашей игре, включая код комнаты, код события, скрипты и шейдеры. При поиске вы можете
+    можете ввести новый поисковый запрос в поле вверху или нажать на значок стрелки справа, чтобы открыть список ранее найденных терминов. У вас также есть возможность задать заменяющий термин, который будет использоваться для замены первоначального поискового термина.
+    и здесь также есть возможность использовать ранее использованную строку замены с помощью кнопки со стрелкой справа.</p>
+  <p>Поиск может быть общим или вы можете уточнить его с помощью опций, расположенных под вводимыми поисковыми терминами:</p>
   <ul class="colour">
-    <li>You can choose to make the search <strong>case sensitive</strong>, in which case it will only include words that exactly match the search string case, ie: searching for &quot;My_Var&quot; without this option and you will get results with &quot;my_var&quot;,
-      &quot;mY_VAR&quot;, or &quot;My_Var&quot;, but with this option checked only &quot;My_Var&quot; will be included in the search results.</li>
-    <li>You can choose to only include search results that include the <strong>whole word only</strong>, in which case any results that include the search term but aren&#39;t an exact match will be ignored, ie: a search for &quot;game&quot; without this checked
-      will show up things like the function &quot;game_end()&quot; or variables like &quot;game_state&quot;, while checking this and doing the search will only show results that are &quot;game&quot; itself.</li>
-    <li>You can choose to have the search <strong>ignore comments</strong>. When this is checked, any comments in your code that contain the search term will simply be ignored and not shown in the output results.</li>
-    <li>You can apply a <strong>filter </strong>on the search results based on the different asset types in the asset browser. By default this is set to &quot;Everything&quot;, but clicking on this will open the following menu where you can check or uncheck
-      assets to be included in the search:</li>
+    <li>Вы можете сделать поиск <strong>чувствительным к регистру</strong>, в этом случае он будет включать только слова, которые точно соответствуют регистру строки поиска, т.е.: при поиске &quot;My_Var&quot; без этой опции вы получите результаты с &quot;my_var&quot;,
+      &quot;mY_VAR&quot;, или &quot;My_Var&quot;, но при отмеченной опции в результаты поиска будет включен только &quot;My_Var&quot;.</li>
+    <li>Вы можете выбрать включение только тех результатов поиска, которые включают <strong>только полное слово</strong>, в этом случае любые результаты, включающие поисковый термин, но не являющиеся точным совпадением, будут проигнорированы, т.е.: поиск по слову &quot;game&quot; без этой отметки
+      покажет такие вещи, как функция &quot;game_end()&quot; или переменные типа &quot;game_state&quot;, в то время как при установке этого флажка и выполнении поиска будут показаны только результаты, содержащие само слово &quot;game&quot;.</li>
+    <li>Вы можете выбрать, чтобы поиск <strong>игнорировал комментарии</strong>. Если этот флажок установлен, любые комментарии в вашем коде, содержащие поисковый запрос, будут просто игнорироваться и не отображаться в результатах поиска.</li>
+    <li>Вы можете применить <strong>фильтр </strong>к результатам поиска на основе различных типов активов в обозревателе активов. По умолчанию установлено значение &quot;Все&quot;, но при нажатии на него откроется следующее меню, в котором вы можете отметить или снять отметку
+      активы, которые будут включены в поиск:</li>
   </ul>
-  <p><img alt="Search Filter Options" class="center" src="../../assets/Images/IDE_Input/Search_Menu_Filter.png" />Once you have given a search (and optionally a replace) term and set up the search options, you can use the different buttons at the bottom
-    to choose how to perform the search and any actions to take. These buttons are:</p>
+  <p><img>После того, как вы задали термин поиска (и, по желанию, замены) и настроили параметры поиска, вы можете использовать различные кнопки в нижней части окна
+    чтобы выбрать способ выполнения поиска и любые действия. К этим кнопкам относятся:</p>
   <ul class="colour">
-    <li><strong>Find All</strong>: Find all the search terms and show them in the output window.</li>
-    <li><strong>Find Previous</strong>: Find the previous instance of the search term. This will open the asset containing the reference in the workspace (if it&#39;s not already open) and pan to it.</li>
-    <li><strong>Find Next</strong>: Find the next instance of the search term. This will open the asset containing the reference in the workspace (if it&#39;s not already open) and pan to it.</li>
-    <li><strong>Replace All</strong>: This will perform a search for the given term with the options set and also replace it in the assets with the new replace term you have specified.</li>
-    <li><strong>Replace</strong>: This will replace the currently selected term in the current editor where it&#39;s highlighted with the selected replace term.</li>
-    <li><strong>Stop Search</strong>: Stop the current search if one is in progress.</li>
+    <li><strong>Найти все</strong>: Найти все условия поиска и показать их в окне вывода.</li>
+    <li><strong>Найти предыдущий</strong>: найти предыдущий экземпляр поискового термина. Это позволит открыть актив, содержащий ссылку, в рабочей области (если он еще не открыт) и перейти к нему.</li>
+    <li><strong>Найти следующий</strong>: Найти следующий экземпляр поискового термина. Это откроет актив, содержащий ссылку, в рабочей области (если он еще не открыт) и вызовет к нему панорамирование.</li>
+    <li><strong>Заменить все</strong>: Выполнит поиск заданного термина с заданными параметрами, а также заменит его в активах новым термином, который вы указали.</li>
+    <li><strong>Заменить</strong>: Это заменит текущий выбранный термин в текущем редакторе, где он выделен, на выбранный термин замены.</li>
+    <li><strong>Остановить поиск</strong>: Остановить текущий поиск, если он ведется.</li>
   </ul>
-  <p>Pressing the <strong>Escape </strong>key while this window is open will clear the selected field, however if that field is already empty, then it will close the window.</p>
-  <p>All results from using the Search &amp; Replace window will be shown in the <a href="../../Introduction/The_Output_Window.htm">Search Output Window</a> at the bottom of the IDE. Each result can be <img alt="LMB Icon" class="icon" src="../../assets/Images/Icons/Icon_LMB.png"
-    /> double-clicked to open the asset with the term in the current workspace and pan to it, ready for editing.</p>
-  <p> </p>
-  <p> </p>
+  <p>Нажатие клавиши <strong>Escape </strong>при открытом окне очистит выбранное поле, однако если это поле уже пустое, то окно будет закрыто.</p>
+  <p>Все результаты использования окна "Поиск и замена" будут показаны в <a href="../../Introduction/The_Output_Window.htm">окне "Результаты поиска</a> " в нижней части сайта <span class="notranslate">IDE</span>. Каждый результат можно <img> дважды щелкнуть, чтобы открыть актив с термином в текущей рабочей области и перейти к нему, готовому к редактированию.</p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="../Menus.htm">Menus</a></div>
-        <div style="float:right">Next: <a href="The_Build_Menu.htm">The Build Menu</a></div>
+        <div style="float:left">Назад: <a href="../Menus.htm">Меню</a></div>
+        <div style="float:right">Следующий: <a href="The_Build_Menu.htm">Меню сборки</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2021 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 The Edit Menu

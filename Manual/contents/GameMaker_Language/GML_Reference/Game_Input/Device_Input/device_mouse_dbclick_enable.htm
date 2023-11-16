@@ -6,7 +6,7 @@
   <title>device_mouse_dbclick_enable</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference page for device_mouse_dbclick_enable" />
   <meta name="rh-index-keywords" content="device_mouse_dbclick_enable" />
@@ -15,46 +15,46 @@
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
   <h1>device_mouse_dbclick_enable</h1>
-  <p>This function can be used to set the device to detect a double tap of the <span class="inline">mb_left</span> (left mouse button) as an <span class="inline">mb_right</span> (right mouse button) input.</p>
-  <p>By default this is set to <span class="inline">true</span>, meaning that every time the user taps the device screen twice quickly and consecutively, the return value is the same as if the right mouse button had been clicked. When this is on, the first tap will be detected as <span class="inline">mb_left</span>, and the second as <span class="inline">mb_right</span>, so make sure that any code you use takes this into account.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p>С помощью этой функции можно настроить устройство на распознавание двойного нажатия <span class="inline">mb_left</span> (левой кнопки мыши) как ввода <span class="inline">mb_right</span> (правой кнопки мыши).</p>
+  <p>По умолчанию это значение установлено на <span class="inline">true</span>, что означает, что каждый раз, когда пользователь дважды быстро и последовательно касается экрана устройства, возвращаемое значение будет таким же, как если бы была нажата правая кнопка мыши. Если этот параметр включен, первое касание будет определено как <span class="inline">mb_left</span>, а второе - как <span class="inline">mb_right</span>, поэтому убедитесь, что используемый вами код учитывает это.</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
   <p class="code">device_mouse_dbclick_enable(bool);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Аргумент</th>
+        <th>Тип</th>
+        <th>Описание</th>
       </tr>
       <tr>
-        <td>bool</td>
-        <td><span data-keyref="Type_Bool">Boolean</span></td>
-        <td>Set double-click detection on (<span class="inline">true</span>) or off (<span class="inline">false</span>).</td>
+        <td><span class="notranslate">bool</span></td>
+        <td><span data-keyref="Type_Bool">Булево</span></td>
+        <td><span class="notranslate">Set double-click detection on (<span class="inline">true</span>) или выключить (<span class="inline">false</span>).</td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
   <p class="code"><span data-keyref="Type_Bool">Boolean</span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Пример:</h4>
   <p class="code">if os_type == os_windows || os_type == os_mac<br />
     {<br />
         device_mouse_dbclick_enable(false);<br />
     }</p>
-  <p>The above code checks to see if the device running the game is a Windows PC or a Mac and if it is either of them, it disables the double tap function.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Приведенный выше код проверяет, является ли устройство, на котором запущена игра, ПК <span class="notranslate">Windows</span> или Mac, и если это одно из них, то отключает функцию двойного нажатия.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Device_Input.htm">Device Input</a></div>
-        <div style="float:right">Next: <a href="device_mouse_x.htm">device_mouse_x</a></div>
+        <div style="float:left">Назад: <a href="Device_Input.htm">Ввод устройства</a></div>
+        <div style="float:right">Следующий: <a href="device_mouse_x.htm"><span class="notranslate">device_mouse_x</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 device_mouse_dbclick_enable

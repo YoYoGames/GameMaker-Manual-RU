@@ -1,56 +1,56 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"><head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>Get Sequence Head</title>
-  <meta name="generator" content="Adobe RoboHelp 2020"/>
-  <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css"/>
-  <script src="../../../assets/scripts/main_script.js" type="module"></script>
-  <meta name="rh-authors" content="Gurpreet Matharoo"/>
-  <meta name="topic-comment" content="Page that explains the Get Sequence Head action"/>
-  <meta name="rh-index-keywords" content="GML Visual Action - Get Sequence Head"/>
-  <meta name="search-keywords" content="Get Sequence Head"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Получить головку последовательности</title>
+  <meta name="generator" content="Adobe RoboHelp 2020" />
+  <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
+  <script src="../../../assets/scripts/main_script.js"></script>
+  <meta name="rh-authors" content="Gurpreet Matharoo" />
+  <meta name="topic-comment" content="Page that explains the Get Sequence Head action" />
+  <meta name="rh-index-keywords" content="GML Visual Action - Get Sequence Head" />
+  <meta name="search-keywords" content="Get Sequence Head" />
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1><img class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Sequences/i_sequence_get_head.png"/> Get Sequence Head</h1>
-  <p>With this action you can retrieve the current <a class="glossterm" data-glossterm="playhead" href="#">playhead</a> position of the given sequence element in the room. You supply the sequence element ID (as returned by the action <a href="Create_Sequence_Element.htm">Create Sequence</a>),
-    and this action will return the current frame that the sequence playhead is on, in the target variable. For information on the playhead, see <a href="../../../The_Asset_Editors/Sequence_Properties/Using_The_Dope_Sheet.htm">Using The Dope Sheet</a>.</p>
-  <p>Note that the target variable can be flagged as temporary (local), which will be created for the action and can be used in all subsequent actions for the event the action is in.</p>
-  <p> </p>
-  <h4>Action Syntax:</h4>
-  <p><img class="center" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Sequences/a_sequence_get_head.png"/></p>
-  <h4>Arguments:</h4>
+  <h1><img> Получить головку последовательности</h1>
+  <p>С помощью этого действия вы можете получить текущее положение <a class="glossterm" data-glossterm="playhead" href="#">головки воспроизведения</a> заданного элемента последовательности в комнате. Вы указываете ID элемента последовательности (возвращенный действием <a href="Create_Sequence_Element.htm">Create Sequence</a>),
+    и это действие вернет текущий кадр, на котором находится головка воспроизведения последовательности, в переменную target. Информацию о головке воспроизведения см. в разделе <a href="../../../The_Asset_Editors/Sequence_Properties/Using_The_Dope_Sheet.htm">Использование листа допинга</a>.</p>
+  <p>Обратите внимание, что целевая переменная может быть помечена как временная (локальная), которая будет создана для данного действия и может использоваться во всех последующих действиях для события, в котором происходит действие.</p>
+  <p> </p>
+  <h4>Синтаксис действия:</h4>
+  <p><img class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Sequences/i_sequence_get_head.png"/></p>
+  <h4>Аргументы:</h4>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Description</th>
+        <th>Аргумент</th>
+        <th>Описание</th>
       </tr>
       <tr>
-        <td>Variable</td>
-        <td>The ID of the sequence element to get the head position of.</td>
+        <td><span class="notranslate">Variable</span></td>
+        <td>Идентификатор элемента последовательности для получения позиции головки.</td>
       </tr>
       <tr>
-        <td>Target</td>
-        <td>The target variable to hold the head position.</td>
+        <td><span class="notranslate">Target</span></td>
+        <td>Целевая переменная для фиксации положения головы.</td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Example:</h4>
-  <p><img class="center" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Sequences/e_sequence_head.png" style="cursor: nwse-resize;"/>The above action block retrieves the current head position of the sequence element ID stored in
-    the variable &quot;<span class="inline">seq_id</span>&quot;. That value is then used to set the head position of the same sequence element, advancing it by 4 frames.</p>
-  <p> </p>
-  <p> </p>
+  <p> </p>
+  <h4>Пример:</h4>
+  <p><img>Приведенный выше блок действий извлекает текущую позицию головки идентификатора элемента последовательности, хранящегося в
+    переменной &quot;<span class="inline">seq_id</span>&quot;. Затем это значение используется для установки позиции головки того же элемента последовательности, сдвигая его на 4 кадра.</p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Sequence_Actions_Library.htm">Sequence Actions</a></div>
-        <div style="float:right">Next: <a href="Set_Sequence_Head.htm">Set Sequence Head</a> </div>
+        <div style="float:left">Назад: <a href="Sequence_Actions_Library.htm">Последовательность действий</a></div>
+        <div style="float:right">Следующий: <a href="Set_Sequence_Head.htm">Установить головку последовательности</a> </div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2021 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 Action - Get Sequence Head

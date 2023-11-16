@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>steam_get_user_persona_name</title>
+  <meta name="generator" content="Adobe RoboHelp 2019" />
+  <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
+  <script src="../../../../assets/scripts/main_script.js"></script>
+  <meta name="rh-authors" content="Mark Alexander" />
+  <meta name="topic-comment" content="Reference page for steam_get_user_persona_name" />
+  <meta name="rh-index-keywords" content="steam_get_user_persona_name" />
+  <meta name="search-keywords" content="steam_get_user_persona_name" />
+</head>
+<body>
+  <!--<div class="body-scroll" style="top: 150px;">-->
+  <h1>steam_get_user_persona_name</h1>
+  <p>Эта функция может быть использована для получения имени пользователя (экранного имени) для любого определенного ID пользователя. Вы указываете ID пользователя, после чего функция возвращает уникальное значение async ID, которое может быть использовано для правильной проверки деталей в <a href="../../../../The_Asset_Editors/Object_Properties/Async_Events/Steam.htm">событии Steam Async</a>.
+    Это событие будет иметь <a href="../../../GML_Overview/Variables/Builtin_Global_Variables/async_load.htm"><tt>async_load</tt></a> DS map, которая будет заполнена следующими парами ключ/значение:</p>
+  <ul class="colour">
+    <li>&quot;<b>id</b>&quot; - Идентификатор async, возвращаемый функцией, которая вызвала событие</li>
+    <li>&quot;<b>event_type</b>&quot; - Строка &quot;<b>user_persona_name</b>&quot;</li>
+    <li>&quot;<b>steamid&quot;</b>&quot; - Значение <span class="notranslate">Steam</span> ID, используемое для получения имени пользователя.</li>
+    <li>&quot;<b>persona_name</b>&quot; - Имя пользователя для данного <span class="notranslate">Steam</span> ID</li>
+  </ul>
+  <p> </p>
+  <h4>Синтаксис:</h4>
+  <p class="code">steam_get_user_persona_name(steamID);</p>
+  <table>
+    <tbody>
+      <tr>
+        <th>Аргумент</th>
+        <th>Описание</th>
+      </tr>
+      <tr>
+        <td><span class="notranslate">steamID</span></td>
+        <td>Уникальный идентификатор <span class="notranslate">Steam</span> для пользователя.</td>
+      </tr>
+    </tbody>
+  </table>
+  <p> </p>
+  <h4>Возвращается:</h4>
+  <p class="code">Real</p>
+  <p> </p>
+  <h4>Пример:</h4>
+  <p class="code">request = steam_get_user_persona_name(global.UGC_UserID);</p>
+  <p>Приведенный выше код запросит имя пользователя ID пользователя, хранящегося в глобальной переменной &quot;UGC_UserID&quot;, сохраняя возвращаемое значение в переменной для разбора в Async Event.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <div class="footer">
+    <div class="buttons">
+      <div class="clear">
+        <div style="float:left">Назад: <a href="Steam_API.htm">Общий <span class="notranslate">Steam</span> API</a></div>
+        <div style="float:right">Следующий: <a href="steam_is_user_logged_on.htm"><span class="notranslate">steam_is_user_logged_on</span></a></div>
+      </div>
+    </div>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Все права защищены</span></h5>
+  </div>
+  <!-- KEYWORDS
+steam_get_user_persona_name
+-->
+  <!-- TAGS
+steam_get_user_persona_name
+-->
+</body>
+</html>

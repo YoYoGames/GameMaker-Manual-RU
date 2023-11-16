@@ -6,7 +6,7 @@
   <title>skeleton_animation_get_frames</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page explaining the function skeleton_animation_get_frames" />
   <meta name="rh-index-keywords" content="skeleton_animation_get_frames" />
@@ -16,44 +16,44 @@
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
   <h1>skeleton_animation_get_frames</h1>
-  <p>This function can be used to retrieve the number of frames that any given skeleton animation has. You supply the skeleton animation name (as a string, as defined in the program used to make the animation, or as returned by using the function <span class="inline"><a href="skeleton_animation_get.htm">skeleton_animation_get()</a></span>) and the function returns the frames that it has as an integer value. The function will return 0 if the specified animation does not exist.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p>Эта функция может быть использована для получения количества кадров, которые имеет любая заданная скелетная анимация. Вы задаете имя скелетной анимации (в виде строки, как определено в программе, используемой для создания анимации, или как возвращено с помощью функции <span class="inline"><a href="skeleton_animation_get.htm">skeleton_animation_get()</a></span>), а функция возвращает количество кадров, которое она имеет, в виде целого числа. Функция возвращает 0, если указанная анимация не существует.</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
   <p class="code">skeleton_animation_get_frames(anim_name);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Аргумент</th>
+        <th>Тип</th>
+        <th>Описание</th>
       </tr>
       <tr>
-        <td>anim_name</td>
-        <td><span data-keyref="Type_String"><a data-rhwidget="HyperlinkPopover" href="../../../../../../../GameMaker_Language/GML_Overview/Data_Types.htm">String</a></span></td>
-        <td>The animation name to get the frames of.</td>
+        <td><span class="notranslate">anim_name</span></td>
+        <td><span data-keyref="Type_String"><a data-rhwidget="HyperlinkPopover" href="../../../../../../../GameMaker_Language/GML_Overview/Data_Types.htm">Строка</a></span></td>
+        <td><span class="notranslate">The animation name to get the frames of.</span></td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
   <p class="code"><span data-keyref="Type_Real"><a data-rhwidget="HyperlinkPopover" href="../../../../../../../GameMaker_Language/GML_Overview/Data_Types.htm">Real</a></span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Пример:</h4>
   <p class="code">var num = skeleton_animation_get_frames(skeleton_animation_get());<br />
     image_index = num -1;<br />
     image_speed = 0;</p>
-  <p>The above code will get the number of frames in the animation and then set the sprite to the last frame and stop animating.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Приведенный выше код получит количество кадров в анимации, затем установит <span class="notranslate">sprite</span> на последний кадр и остановит анимацию.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Animation.htm">Animation</a></div>
-        <div style="float:right">Next: <a href="skeleton_animation_get_frame.htm">skeleton_animation_get_frame</a></div>
+        <div style="float:left">Назад: <a href="Animation.htm">Анимация</a></div>
+        <div style="float:right">Следующий: <a href="skeleton_animation_get_frame.htm"><span class="notranslate">skeleton_animation_get_frame</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 skeleton_animation_get_frames

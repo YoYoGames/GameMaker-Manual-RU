@@ -4,9 +4,9 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>gpu_set_zwriteenable</title>
-  <meta name="generator" content="Adobe RoboHelp 2022" />
+  <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference for the function gpu_set_zwriteenable" />
   <meta name="rh-index-keywords" content="gpu_set_zwriteenable" />
@@ -15,47 +15,46 @@
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
   <h1>gpu_set_zwriteenable</h1>
-  <p>This function can be used to toggle on (<span class="inline">true</span>) and off (<span class="inline">false</span>) depth ordering using the z-buffer. When an instance is rendered in <span data-keyref="GameMaker Name">GameMaker</span> , the depth of a generated pixel (its z coordinate) is stored in the z-buffer, then, if another instance of the scene must be rendered at the same pixel, the two depths are compared (z-testing - see <a href="gpu_set_ztestenable.htm"><span class="inline">gpu_set_ztestenable()</span></a>) and the one &quot;closer&quot; to the observer is then saved to the z-buffer, replacing the old one. However, this is not always what you wish to happen and there are moments when you may want something to be drawn over everything else, no matter what its z value is. In those cases you can use this function to switch off writing to the z-buffer and so force whatever is being drawn to be drawn over everything else. Note that the description given here is for the <i>default</i> z-testing comparison mode, but that can be changed</p>
-  <p>The default value is that z-buffering is enabled (<span class="inline">true</span>).</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p>Эта функция может использоваться для включения (<span class="inline">true</span>) и выключения (<span class="inline">false</span>) упорядочивания глубины с помощью z-буфера. При рендеринге экземпляра в <span data-keyref="GameMaker Name">GameMaker</span> глубина сгенерированного пикселя (его координата z) сохраняется в z-буфере, затем, если на тот же пиксель должен быть отрендерен другой экземпляр сцены, эти две глубины сравниваются (z-тестирование - см. <a href="gpu_set_ztestenable.htm"><span class="inline">gpu_set_ztestenable()</span></a>), и та, что ближе к наблюдателю, сохраняется в z-буфере, заменяя старую. Однако это не всегда то, что вы хотите, и бывают моменты, когда вы хотите, чтобы что-то было нарисовано поверх всего остального, независимо от того, каково его значение z. В таких случаях вы можете использовать эту функцию, чтобы отключить запись в z-буфер и таким образом заставить то, что рисуется, рисоваться поверх всего остального. Обратите внимание, что описание, приведенное здесь, относится к режиму сравнения z-тестирования по <i>умолчанию</i>, но его можно изменить.</p>
+  <p>По умолчанию z-буферизация включена (<span class="inline">true</span>).</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
   <p class="code">gpu_set_zwriteenable(enable);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
+        <th>Аргумент</th><th>Тип</th>
+        <th>Описание</th>
+     </tr>
       <tr>
-        <td>enable</td>
-        <td><span data-keyref="Type_Bool"><a href="GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Boolean</a></span></td>
-        <td>The comparison mode to use (see list above)</td>
-      </tr>
+        <td><span class="notranslate">enable</span></td><td><span data-keyref="Type_Bool"></span></td>
+        <td><span class="notranslate">The comparison mode to use (see list above)</span></td>
+     </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
-  <p class="code"><span data-keyref="Type_Void">N/A</span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
+  <p class="code"><span data-keyref="Type_Void"></span></p>
+  <p> </p>
+  <h4>Пример:</h4>
   <p class="code">gpu_set_zwriteenable(false);<br />
     with (obj_Menu_Containers)<br />
     {<br />
         draw_self();<br />
     }<br />
     gpu_set_zwriteenable(true);</p>
-  <p>The above code switches off z-buffer writing, draws a number of objects, and then switches it back on again to continue drawing.</p>
-  <p> </p>
-  <p> </p>
+  <p>Приведенный выше код отключает запись в z-буфер, рисует несколько объектов, а затем снова включает его для продолжения рисования.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="GPU_Control.htm">GPU Control</a></div>
-        <div style="float:right">Next: <a data-xref="{title}" href="gpu_set_depth.htm">gpu_set_depth</a></div>
+        <div style="float:left">Назад: <a href="GPU_Control.htm">Управление графическим процессором</a></div>
+        <div style="float:right">Следующий: <a href="gpu_set_fog.htm"><span class="notranslate">gpu_set_fog</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 gpu_set_zwriteenable

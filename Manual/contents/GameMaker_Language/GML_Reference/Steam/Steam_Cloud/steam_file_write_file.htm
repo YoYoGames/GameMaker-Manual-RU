@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>steam_file_write_file</title>
+  <meta name="generator" content="Adobe RoboHelp 2019" />
+  <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
+  <script src="../../../../assets/scripts/main_script.js"></script>
+  <meta name="rh-authors" content="Mark Alexander" />
+  <meta name="topic-comment" content="Reference page for steam_file_write_file" />
+  <meta name="rh-index-keywords" content="steam_file_write_file" />
+  <meta name="search-keywords" content="steam_file_write_file" />
+</head>
+<body>
+  <!--<div class="body-scroll" style="top: 150px;">-->
+  <h1>steam_file_write_file</h1>
+  <p>С помощью этой функции вы можете скопировать содержимое локально сохраненного файла в файл, синхронизированный с <span class="notranslate">Steam</span> Cloud. Локальный файл <i>должен существо</i> вать до использования этой функции, и она вернет значение 0 в случае неудачи по какой-либо причине и
+    значение больше 0 в случае успеха.</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
+  <p class="code">steam_file_write_file(steam_filename, local_filename);</p>
+  <table>
+    <tbody>
+      <tr>
+        <th>Аргумент</th>
+        <th>Описание</th>
+      </tr>
+      <tr>
+        <td><span class="notranslate">steam_filename</span></td>
+        <td>Файл <span class="notranslate">Steam</span> Cloud для копирования.</td>
+      </tr>
+      <tr>
+        <td><span class="notranslate">local_filename</span></td>
+        <td>Локальный файл, из которого будет производиться копирование.</td>
+      </tr>
+    </tbody>
+  </table>
+  <p> </p>
+  <h4>Возвращается:</h4>
+  <p class="code">real</p>
+  <p> </p>
+  <h4>Пример:</h4>
+  <p class="code">steam_file_write_file(&quot;rm_koala.png&quot;, &quot;Koala2.png&quot;);</p>
+  <p>Приведенный выше код скопирует содержимое файла &quot;Koala2.png&quot; в файл <span class="notranslate">Steam</span> Cloud &quot;rm_koala.png&quot;.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <div class="footer">
+    <div class="buttons">
+      <div class="clear">
+        <div style="float:left">Назад: <a href="Steam_Cloud.htm">Паровое облако</a></div>
+        <div style="float:right">Следующий: <a href="steam_file_read.htm"><span class="notranslate">steam_file_read</span></a></div>
+      </div>
+    </div>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Все права защищены</span></h5>
+  </div>
+  <!-- KEYWORDS
+steam_file_write_file
+-->
+  <!-- TAGS
+steam_file_write_file
+-->
+</body>
+</html>

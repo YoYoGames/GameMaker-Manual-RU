@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>keyboard_string</title>
+  <title>строка_клавиатуры</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference page for keyboard_string" />
   <meta name="rh-index-keywords" content="keyboard_string" />
@@ -14,32 +14,32 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1><span data-field="title" data-format="default">keyboard_string</span></h1>
-  <p>This variable holds a string containing the last (at most) 1024 characters typed on the keyboard. This string will only contain printable characters typed, but it <i>will</i> correctly respond to pressing the backspace key by erasing the last character. This variable is <i>not</i> read only and you can change it, for example to set it to &quot;&quot; (an empty string) if you handled it already, and you can use the <a href="../../Strings/Strings.htm">String Functions</a> to manipulate it.</p>
-  <p class="note"><span data-conref="../../../../assets/snippets/Tag_note.hts"> </span> When using the on-screen <a href="../Virtual_Keys_And_Keyboards/Virtual_Keys_And_Keyboards.htm">Virtual Keyboard</a>, <i>only</i> this variable will be updated with the keyboard input.</p>
-  <p> </p>
-  <h4><b>Syntax:</b></h4>
-  <p class="code"><span data-field="title" data-format="default">keyboard_string</span></p>
-  <p> </p>
-  <h4><b>Returns:</b></h4>
-  <p class="code"><span data-keyref="Type_String"><a href="../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">String</a></span></p>
-  <p> </p>
-  <h4><b>Example:</b></h4>
-  <p class="code">if string_length(<span data-field="title" data-format="default">keyboard_string</span>) &gt; 15<br />
+  <h1>строка_клавиатуры</h1>
+  <p>В этой переменной хранится строка, содержащая последние (максимум) 1024 символа, набранные на клавиатуре. Эта строка будет содержать только печатаемые символы, но она <i>будет</i> правильно реагировать на нажатие клавиши backspace, стирая последний символ. Эта переменная <i>не</i> предназначена только для чтения, и вы можете изменить ее, например, установить в &quot;&quot; (пустая строка), если вы уже работали с ней, и вы можете использовать <a href="../../Strings/Strings.htm">функции String Functions</a> для работы с ней. Обратите внимание, что при использовании экранной <a href="../Virtual_Keys_And_Keyboards/Virtual_Keys_And_Keyboards.htm">виртуальной клавиатуры</a> <i>только</i> эта переменная будет обновляться при вводе с клавиатуры.</p>
+  <p> </p>
+  <h4><b>Синтаксис:</b></h4>
+  <p class="code">keyboard_string;</p>
+  <p> </p>
+  <h4><b>Возвращается:</b></h4>
+  <p class="code"><span data-keyref="Type_String"></span></p>
+  <p> </p>
+  <h4><b>Пример:</b></h4>
+  <p class="code">if string_length(keyboard_string) &gt; 15<br />
     {<br />
-        <span data-field="title" data-format="default">keyboard_string</span> = string_copy(<span data-field="title" data-format="default">keyboard_string</span>, 1, 15);<br />
+        keyboard_string = string_copy(keyboard_string, 1, 15);<br />
     }</p>
-  <p>The above code will limit the length of the keyboard string to 15 characters, removing those that are over that limit by copying the first fifteen characters back into the variable.</p>
-  <p> </p>
-  <p> </p>
+  <p>Приведенный выше код ограничивает длину строки клавиатуры 15 символами, удаляя те, которые превышают этот предел, копируя первые пятнадцать символов обратно в переменную.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a data-xref="{title}" href="Keyboard_Input.htm">Keyboard Input</a></div>
-        <div style="float:right">Next: <a data-xref="{title}" href="io_clear.htm">io_clear</a></div>
+        <div style="float:left">Назад: <a href="Keyboard_Input.htm">Ввод с клавиатуры</a></div>
+        <div style="float:right">Следующий: <a href="io_clear.htm"><span class="notranslate">io_clear</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 keyboard_string

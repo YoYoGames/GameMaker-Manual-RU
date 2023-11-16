@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>draw_skeleton</title>
+  <title>нарисовать_скелет</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page explaining the function draw_skeleton" />
   <meta name="rh-index-keywords" content="draw_skeleton" />
@@ -15,95 +15,95 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>draw_skeleton</h1>
-  <p>This function is <i>only</i> for use with sprites that have been created using a skeletal animation program like Spine. While you can draw these sprites using the normal draw functions (like <a href="../../../../Drawing/Sprites_And_Tiles/draw_self.htm"><span class="inline">draw_self()</span></a>), there are times when you may want to draw a single frame or show a change of skin texture without actually changing the sprite properties. In these cases you can draw the sprite with this function, where you give the sprite index and then the name of the animation to get the frame from (a string, as set within the program used to make the sprite). Next you give the name of the skin to use (again, as set when the sprite was made), and a frame value. The frame value is for telling <span data-keyref="GameMaker Name">GameMaker</span> what part of the animation to show and is a value between 0 and the <a href="../../Sprite_Instance_Variables/image_number.htm"><span class="inline">image_number</span></a>. The rest of the arguments are the same as those used for normal sprite drawing and will change the scale, angle, blend colour and alpha of the final animation frame being drawn.<b></b></p>
-  <p class="note"><b>WARNING!</b> Because of the way skeletal animations are interpolated between various &quot;key&quot; frames, there is an additional overhead associated with this call and therefore it is recommended that you avoid drawing skeleton based sprites using this method unless absolutely necessary.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <h1>нарисовать_скелет</h1>
+  <p>Эта функция предназначена <i>только</i> для использования с <span class="notranslate">sprites</span>, которые были созданы с помощью программы скелетной анимации, например <span class="notranslate">Spine</span>. Хотя вы можете рисовать эти <span class="notranslate">sprites</span> с помощью обычных функций рисования (например, таких как <a href="../../../../Drawing/Sprites_And_Tiles/draw_self.htm"><span class="inline">draw_self()</span></a>), бывают случаи, когда необходимо нарисовать один кадр или показать изменение текстуры кожи, не изменяя свойств <span class="notranslate">sprite</span>. В таких случаях вы можете нарисовать <span class="notranslate">sprite</span> с помощью этой функции, где вы указываете индекс <span class="notranslate">sprite</span>, затем имя анимации, из которой нужно взять кадр (строка, заданная в программе, используемой для создания <span class="notranslate">sprite</span>). Затем вы указываете имя скина, который нужно использовать (опять же, заданное при создании <span class="notranslate">sprite</span> ), и значение кадра. Значение кадра указывает программе <span data-keyref="GameMaker Name">GameMaker</span>, какую часть анимации нужно показать, и представляет собой значение от 0 до <a href="../../Sprite_Instance_Variables/image_number.htm"><span class="inline">image_number</span></a>. Остальные аргументы аналогичны тем, которые используются при обычном рисовании <span class="notranslate">sprite</span>, и изменяют масштаб, угол, цвет наложения и альфа-коэффициент конечного рисуемого кадра анимации.<b></b></p>
+  <p class="note"><b>ВНИМАНИЕ!</b> Из-за того, что скелетная анимация интерполируется между различными &quot;ключевыми&quot; кадрами, существует дополнительная нагрузка, связанная с этим вызовом, поэтому рекомендуется избегать рисования скелетной анимации <span class="notranslate">sprites</span> с помощью этого метода, если это не является абсолютно необходимым.</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
   <p class="code">draw_skeleton(sprite, animname, skinname, frame, x, y, xscale, yscale, rot, colour, alpha);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Аргумент</th>
+        <th>Тип</th>
+        <th>Описание</th>
       </tr>
       <tr>
-        <td>sprite</td>
-        <td><span data-keyref="Type_Asset_Sprite">Sprite Asset</span></td>
-        <td>The index of the sprite to draw.</td>
+        <td><span class="notranslate">sprite</span></td>
+        <td><span data-keyref="Type_Asset_Sprite">Актив спрайта</span></td>
+        <td><span class="notranslate">The index of the sprite to draw.</span></td>
       </tr>
       <tr>
-        <td>animname</td>
-        <td><span data-keyref="Type_String">String</span></td>
-        <td>The name of the animation to get the frame from (a string).</td>
+        <td><span class="notranslate">animname</span></td>
+        <td><span data-keyref="Type_String">Строка</span></td>
+        <td><span class="notranslate">The name of the animation to get the frame from (a string).</span></td>
       </tr>
       <tr>
-        <td>skinname</td>
-        <td><span data-keyref="Type_String">String</span></td>
-        <td>The name of the skin to use (a string).</td>
+        <td><span class="notranslate">skinname</span></td>
+        <td><span data-keyref="Type_String">Строка</span></td>
+        <td><span class="notranslate">The name of the skin to use (a string).</span></td>
       </tr>
       <tr>
-        <td>frame</td>
-        <td><span data-keyref="Type_Real">Real</span></td>
-        <td>The animation frame to draw (from 0 to image_number - 1).</td>
+        <td><span class="notranslate">frame</span></td>
+        <td><span data-keyref="Type_Real">Реально</span></td>
+        <td><span class="notranslate">The animation frame to draw (from 0 to image_number - 1).</span></td>
       </tr>
       <tr>
-        <td>x</td>
-        <td><span data-keyref="Type_Real">Real</span></td>
-        <td>The x coordinate of where to draw the sprite.</td>
+        <td><span class="notranslate">x</span></td>
+        <td><span data-keyref="Type_Real">Реально</span></td>
+        <td><span class="notranslate">The x coordinate of where to draw the sprite.</span></td>
       </tr>
       <tr>
-        <td>y</td>
-        <td><span data-keyref="Type_Real">Real</span></td>
-        <td>The y coordinate of where to draw the sprite.</td>
+        <td><span class="notranslate">y</span></td>
+        <td><span data-keyref="Type_Real">Реально</span></td>
+        <td><span class="notranslate">The y coordinate of where to draw the sprite.</span></td>
       </tr>
       <tr>
-        <td>xscale</td>
-        <td><span data-keyref="Type_Real">Real</span></td>
-        <td>The horizontal scaling of the sprite, as a multiplier: 1 = normal scaling, 0.5 is half etc...</td>
+        <td><span class="notranslate">xscale</span></td>
+        <td><span data-keyref="Type_Real">Реально</span></td>
+        <td><span class="notranslate">The horizontal scaling of the sprite, as a multiplier: 1 = normal scaling, 0.5 is half etc...</span></td>
       </tr>
       <tr>
-        <td>yscale</td>
-        <td><span data-keyref="Type_Real">Real</span></td>
-        <td>The vertical scaling of the sprite, as a multiplier: 1 = normal scaling, 0.5 is half etc...</td>
+        <td><span class="notranslate">yscale</span></td>
+        <td><span data-keyref="Type_Real">Реально</span></td>
+        <td><span class="notranslate">The vertical scaling of the sprite, as a multiplier: 1 = normal scaling, 0.5 is half etc...</span></td>
       </tr>
       <tr>
-        <td>rot</td>
-        <td><span data-keyref="Type_Real">Real</span></td>
-        <td>The rotation of the sprite. 0=normal, 90=turned 90 degrees counter-clockwise etc.</td>
+        <td><span class="notranslate">rot</span></td>
+        <td><span data-keyref="Type_Real">Реально</span></td>
+        <td><span class="notranslate">The rotation of the sprite. 0=normal, 90=turned 90 degrees counter-clockwise etc.</span></td>
       </tr>
       <tr>
-        <td>colour</td>
-        <td><span data-keyref="Type_Constant_Colour">Colour</span></td>
-        <td>The colour with which to blend the sprite.</td>
+        <td><span class="notranslate">colour</span></td>
+        <td><span data-keyref="Type_Constant_Colour">Цвет</span></td>
+        <td><span class="notranslate">The colour with which to blend the sprite.</span></td>
       </tr>
       <tr>
-        <td>alpha</td>
-        <td><span data-keyref="Type_Real">Real</span></td>
-        <td>The alpha of the sprite (from 0 to 1 where 0 is transparent and 1 opaque).</td>
+        <td><span class="notranslate">alpha</span></td>
+        <td><span data-keyref="Type_Real">Реально</span></td>
+        <td><span class="notranslate">The alpha of the sprite (from 0 to 1 where 0 is transparent and 1 opaque).</span></td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
   <p class="code"><span data-keyref="Type_Void">N/A</span></p>
-  <p> </p>
-  <h4>Example:</h4>
-  <p> </p>
+  <p> </p>
+  <h4>Пример:</h4>
+  <p> </p>
   <p class="code">draw_skeleton(spr_Jump, &quot;jump&quot;, &quot;skin1&quot;, 0, x, y, image_xscale, image_yscale, image_angle, c_white, 0.5);</p>
-  <p>The above code will draw the first frame of the given skeletal animation sprite, using the &quot;jump&quot; animation set, the skin defined as &quot;skin1&quot; and at the same scale and position as the instance properties define, but with an alpha of 0.5.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Приведенный выше код нарисует первый кадр заданной скелетной анимации <span class="notranslate">sprite</span>, используя набор анимации &quot;jump&quot;, скин, определенный как &quot;skin1&quot;, в том же масштабе и положении, как определено в свойствах экземпляра, но с альфой 0,5.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Drawing_And_Miscellaneous.htm">Drawing And Miscellaneous</a></div>
-        <div style="float:right">Next: <a href="draw_skeleton_instance.htm">draw_skeleton_instance</a></div>
+        <div style="float:left">Назад: <a href="Drawing_And_Miscellaneous.htm">Рисование и разное</a></div>
+        <div style="float:right">Следующий: <a href="draw_skeleton_instance.htm"><span class="notranslate">draw_skeleton_instance</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 draw_skeleton

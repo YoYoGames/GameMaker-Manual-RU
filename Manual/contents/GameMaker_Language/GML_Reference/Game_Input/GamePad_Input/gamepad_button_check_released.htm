@@ -6,7 +6,7 @@
   <title>gamepad_button_check_released</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference page for gamepad_button_check_released" />
   <meta name="rh-index-keywords" content="gamepad_button_check_released" />
@@ -16,51 +16,51 @@
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
   <h1>gamepad_button_check_released</h1>
-  <p>This function will return <span class="inline">true</span> or <span class="inline">false</span> depending on whether the given gamepad button is detected as having been released or not. Note that this function will only trigger <i>once</i> for the button the moment it has been released. For it to trigger again the button must first be pressed and then released once more. If you are checking an analogue button, then the check will take into consideration the <a href="gamepad_set_button_threshold.htm">threshold setting</a> and only return <span class="inline">true</span> when the raw input value goes under the given threshold (you can get this raw value using the function <span class="inline"><a href="gamepad_button_value.htm">gamepad_button_value()</a></span>).</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p>Эта функция возвращает значение <span class="inline">true</span> или <span class="inline">false</span> в зависимости от того, была ли обнаружена отпущенной данная кнопка геймпада или нет. Обратите внимание, что эта функция сработает только <i>один раз</i> для кнопки в тот момент, когда она была отпущена. Чтобы она сработала снова, кнопка должна быть сначала нажата, а затем отпущена еще раз. Если вы проверяете аналоговую кнопку, то при проверке будет учитываться <a href="gamepad_set_button_threshold.htm">настройка порога</a> срабатывания и функция вернет значение <span class="inline">true</span> только в том случае, если необработанное входное значение окажется ниже заданного порога (необработанное значение можно получить с помощью функции <span class="inline"><a href="gamepad_button_value.htm">gamepad_button_value()</a></span>).</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
   <p class="code">gamepad_button_check_released(device, button);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Аргумент</th>
+        <th>Тип</th>
+        <th>Описание</th>
       </tr>
       <tr>
-        <td>device</td>
-        <td><span data-keyref="Type_Real">Real</span></td>
-        <td>Which gamepad device &quot;slot&quot; to check.</td>
+        <td><span class="notranslate">device</span></td>
+        <td><span data-keyref="Type_Real">Реально</span></td>
+        <td><span class="notranslate">Which gamepad device &quot;slot&quot; to check.</span></td>
       </tr>
       <tr>
-        <td>button</td>
-        <td><span data-keyref="Type_Constant_Gamepad_Button">Gamepad Button Constant</span></td>
-        <td>Which gamepad button <a href="Gamepad_Input.htm">constant</a> to check for.</td>
+        <td><span class="notranslate">button</span></td>
+        <td><span data-keyref="Type_Constant_Gamepad_Button">Постоянная кнопка геймпада</span></td>
+        <td><span class="notranslate">Which gamepad button <a href="Gamepad_Input.htm">constant</a> to check for.</span></td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
   <p class="code"><span data-keyref="Type_Bool">Boolean</span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Пример:</h4>
   <p class="code">if gamepad_button_check_released(0, gp_select)<br />
     {<br />
         audio_play_sound(snd_Button, 0, false);<br />
         global.Pause = !global.Pause;<br />
     }</p>
-  <p>The above code will detect whether the &quot;select&quot; button of the gamepad connected to device &quot;slot&quot; 0 has been pressed or not and toggle the global &quot;Pause&quot; variable.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Приведенный выше код определит, была ли нажата кнопка &quot;select&quot; геймпада, подключенного к устройству &quot;slot&quot; 0, и переключит глобальную переменную &quot;Pause&quot;.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Gamepad_Input.htm">Gamepad Input</a></div>
-        <div style="float:right">Next: <a href="gamepad_button_count.htm">gamepad_button_count</a></div>
+        <div style="float:left">Назад: <a href="Gamepad_Input.htm">Вход геймпада</a></div>
+        <div style="float:right">Следующий: <a href="gamepad_button_count.htm"><span class="notranslate">gamepad_button_count</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 gamepad_button_check_released

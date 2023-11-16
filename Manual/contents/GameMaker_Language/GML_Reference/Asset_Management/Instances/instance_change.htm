@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>instance_change</title>
+  <title>экземпляр_изменения</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page outlining the function instance_change" />
   <meta name="rh-index-keywords" content="instance_change" />
@@ -15,54 +15,54 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>instance_change</h1>
-  <p>You can use this function to change one instance of an object into another instance of a different object, and while doing so decide whether to perform the initial instances Destroy and Clean Up Events and the new instances Create Event. In this way, you can have (for example) a bomb change into an explosion - in which case the &quot;perf&quot; argument would probably be true as you would want the bomb to perform its Destroy Event and Clean Up Event, as well as the explosion to perform its Create Event - or you could have your player character change into a different one - in which case the &quot;perf&quot; argument would probably be false as you do not want the instances to perform their Create and Destroy/Clean Up events.</p>
-  <p>It is worth noting that changing the instance means that you should perform no further actions with that instance until the next step, in particular trying to access variables etc... as that will cause an error. Basically, you change the instance but it is not actually available until the end of the current step, so to access any of the variables it contains directly (for example, calling <span class="inline">obj_Changed.x</span>) will not work.</p>
-  <p class="note"><b>WARNING!</b> When changing a physics enabled instance, the physical properties <b>will not be carried over</b> to the new instance being changed into. Therefore you should have code in place to &quot;transfer&quot; the physics state of the current instance over to the new instance, or have defined the new instances physical properties in its Create Event, or in the object editor. For this reason it is recommended that you not use this function with physics enabled instances, but rather use a combination of <span style="font-size:1px;"><span class="inline">instance_destroy()</span></span> and <span><span style="font-size:1px;"><span class="inline">instance_create_layer()</span></span>.</span></p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <h1>экземпляр_изменения</h1>
+  <p>Вы можете использовать эту функцию для изменения одного экземпляра объекта на другой экземпляр другого объекта, и при этом решить, нужно ли выполнять события уничтожения и очистки исходного экземпляра и событие создания нового экземпляра. Таким образом, вы можете, например, изменить бомбу на взрыв - в этом случае аргумент &quot;perf&quot; будет истинным, так как вы хотите, чтобы бомба выполнила события уничтожения и очистки, а взрыв - событие создания. Или вы можете изменить персонажа игрока на другого персонажа - в этом случае аргумент &quot;perf&quot; будет ложным, так как вы не хотите, чтобы экземпляры выполняли свои события создания и уничтожения/очистки.</p>
+  <p>Стоит отметить, что изменение экземпляра означает, что вы не должны выполнять никаких дальнейших действий с этим экземпляром до следующего шага, в частности, пытаться получить доступ к переменным и т.д., так как это приведет к ошибке. По сути, вы изменяете экземпляр, но он фактически недоступен до конца текущего шага, поэтому обращение к любой из содержащихся в нем переменных напрямую (например, вызов <span class="inline">obj_Changed.x</span>) не сработает.</p>
+  <p class="note"><b>ВНИМАНИЕ!</b> При изменении экземпляра с включенной физикой физические свойства <b>не будут перенес</b> ены на новый экземпляр. Поэтому вы должны иметь код для &quot;передачи&quot; физического состояния текущего экземпляра новому экземпляру, либо определить физические свойства нового экземпляра в событии Create Event или в редакторе объектов. По этой причине рекомендуется не использовать эту функцию с экземплярами с включенной физикой, а использовать комбинацию функций <span style="font-size:1px;"><span class="inline">instance_destroy()</span></span> и <span><span style="font-size:1px;"><span class="inline">instance_create_layer()</span></span></span>.</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
   <p class="code">instance_change(obj, perf);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Аргумент</th>
+        <th>Тип</th>
+        <th>Описание</th>
       </tr>
       <tr>
-        <td>obj</td>
-        <td><span data-keyref="Type_Asset_Object">Object Asset</span></td>
-        <td>The new object the calling object will change into.</td>
+        <td><span class="notranslate">obj</span></td>
+        <td><span data-keyref="Type_Asset_Object">Объект Активы</span></td>
+        <td><span class="notranslate">The new object the calling object will change into.</span></td>
       </tr>
       <tr>
-        <td>perf</td>
-        <td><span data-keyref="Type_Bool">Boolean</span></td>
-        <td>Whether to perform that new object&#39;s Create and Destroy events (true) or not (false).</td>
+        <td><span class="notranslate">perf</span></td>
+        <td><span data-keyref="Type_Bool">Булево</span></td>
+        <td><span class="notranslate">Whether to perform that new object&#39;s Create and Destroy events (true) or not (false).</span></td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
   <p class="code"><span data-keyref="Type_Void">N/A</span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Пример:</h4>
   <p class="code">if keyboard_check(vk_enter)<br />
     {<br />
         instance_change(obj_Player_Swimming, false);<br />
         exit;<br />
     }</p>
-  <p>The above code will change the calling instance into an instance of &quot;obj_Player_Swimming&quot; without performing the original instances destroy event nor the new instances create event when the user presses the &quot;Enter&quot; key, exiting the code block when done.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Приведенный выше код изменит вызывающий экземпляр на экземпляр &quot;obj_Player_Swimming&quot; без выполнения события уничтожения исходного экземпляра и события создания нового экземпляра, когда пользователь нажмет клавишу &quot;Enter&quot;, выйдя из блока кода после завершения.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Instances.htm">Instances</a></div>
-        <div style="float:right">Next: <a href="instance_copy.htm">instance_copy</a></div>
+        <div style="float:left">Назад: <a href="Instances.htm">Инстанции</a></div>
+        <div style="float:right">Следующий: <a href="instance_copy.htm"><span class="notranslate">instance_copy</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 instance_change

@@ -6,7 +6,7 @@
   <title>irandom</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference page for irandom" />
   <meta name="rh-index-keywords" content="irandom" />
@@ -14,47 +14,45 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1><span data-field="title" data-format="default">irandom</span></h1>
-  <p>This function returns a random value as an integer (whole number). So, for example, to get a random number from 0 to 9 you can use <span class="inline">irandom(9)</span> and it will return a number from 0 to 9 <i>inclusive</i>.</p>
-  <p>Floats can also be used but the upper value after the point will be excluded, so <span class="inline">irandom(9.7)</span> will return a value from 0 to 9 only. The function has an upper bound of $7fffffffffffffffLL, so care should be taken if using very large numbers.</p>
-  <div data-conref="../../../../assets/snippets/Note_randomise.hts"> </div>
-  <h4>Syntax:</h4>
-  <p class="code"><span data-field="title" data-format="default">irandom</span>(n);</p>
+  <h1>irandom</h1>
+  <p>Эта очень полезная функция возвращает только целые числа (целые числа). Так, например, для получения случайного числа от 0 до 9 вы можете использовать <span class="inline">irandom(9)</span>, и она вернет число от 0 до 9 <i>включительно</i>. Обратите внимание, что можно использовать и плавающие числа, но верхнее значение после точки будет исключено, поэтому <span class="inline">irandom(9.7)</span> вернет значение только от 0 до 9. Верхняя граница функции составляет $7fffffffffffffffLL, поэтому при использовании очень больших чисел следует соблюдать осторожность.</p>
+  <p class="note"><b><span class="note">ПРИМЕЧАНИЕ</span></b> Эта функция будет возвращать одно и то же значение при каждом новом запуске игры, поскольку <span data-keyref="GameMaker Name">GameMaker</span> каждый раз генерирует одно и то же начальное случайное зерно, чтобы облегчить отладку кода. Чтобы избежать такого поведения, используйте <span style="font-size:1px;"><a href="randomise.htm"><span class="inline">randomise()</span></a></span> в начале вашей игры.</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
+  <p class="code">irandom(n);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
+        <th>Аргумент</th><th>Тип</th>
+        <th>Описание</th>
+     </tr>
       <tr>
-        <td>n</td>
-        <td><span data-keyref="Type_Real"><a href="../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
-        <td>The upper range from which the random number will be selected.</td>
-      </tr>
+        <td><span class="notranslate">n</span></td><td><span data-keyref="Type_Real"></span></td>
+        <td><span class="notranslate">The upper range from which the random number will be selected.</span></td>
+     </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
-  <p class="code"><span data-keyref="Type_Real"><a href="../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></p>
-  <p> </p>
-  <h4>Example:</h4>
-  <p class="code">if (<span data-field="title" data-format="default">irandom</span>(9) == 1)<br />
+  <p> </p>
+  <h4>Возвращается:</h4>
+  <p class="code"><span data-keyref="Type_Real"></span></p>
+  <p> </p>
+  <h4>Пример:</h4>
+  <p class="code">if (irandom(9) == 1)<br />
     {<br />
         score += 100;<br />
     }</p>
-  <p>This will produce a one in ten (since 0 is included) chance of adding 100 to the score.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Это даст один шанс из десяти (поскольку 0 включено) добавить 100 к счету.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a data-xref="{title}" href="Number_Functions.htm">Number Functions</a></div>
-        <div style="float:right">Next: <a data-xref="{title}" href="irandom_range.htm">irandom_range</a></div>
+        <div style="float:left">Назад: <a href="Number_Functions.htm">Функции чисел</a></div>
+        <div style="float:right">Следующий: <a href="irandom_range.htm"><span class="notranslate">irandom_range</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 irandom

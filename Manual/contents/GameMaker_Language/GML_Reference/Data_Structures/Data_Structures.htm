@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Data Structures</title>
-  <meta name="generator" content="Adobe RoboHelp 2022" />
+  <title>Структуры данных</title>
+  <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
-  <script src="../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference section for Data Structures" />
   <meta name="rh-index-keywords" content="" />
@@ -14,41 +14,42 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>Data Structures</h1>
-  <p>In games you often need to store information in a precise and ordered way. For example, you may need to store lists of items that a person carries or you may want to store a grid of places that still need to be visited.</p>
-  <p><span data-keyref="GameMaker Name">GameMaker</span> has a number of built-in <b>data structures</b> that can be accessed through specialist functions. There are six different types of data structure available, each one having its own benefits depending on the type of information that you are looking to store and how you wish to manipulate it later: stacks, queues, lists, maps, priority queues, and grids.</p>
-  <p class="note"><span data-conref="../../../assets/snippets/Tag_note.hts"> </span> It is recommend to use <a href="../../GML_Overview/Arrays.htm">arrays</a> and <a href="../../GML_Overview/Structs.htm">structs</a> over DS lists and maps, as they now have similar functionality, are easier to use and are garbage collected automatically.</p>
-  <p>Essentially, all data structures work in the same way - you create a data structure and store its reference in a variable. You then use this reference to use the data structure in all further function calls that can perform operations on it. Finally, once you are done you destroy the data structure again to remove it from memory. You can use as many of the structures at the same time as you need, and all structures can store any of the available <a href="../../GML_Overview/Data_Types.htm">data types</a>.</p>
-  <p class="note"><span data-conref="../../../assets/snippets/Tag_note.hts"> </span> As with all dynamic resources, data structures take up memory and so should <b>always</b> be destroyed when no longer needed to prevent memory leaks which will slow down and eventually crash your game.</p>
-  <p>Information on the different data structures can be found in the following sections:</p>
+  <h1>Структуры данных</h1>
+  <p>В играх часто требуется хранить информацию в точном и упорядоченном виде. Например, вам может понадобиться хранить списки предметов, которые несет человек, или сетку мест, которые еще нужно посетить. Сейчас для этого <i>можно</i> использовать массивы, но если вы хотите выполнить более сложные операции, например, сортировку данных или поиск определенного элемента, вам придется писать большие куски кода <span class="notranslate">GML</span>, который может быть медленным в исполнении, трудным в отладке и настоящей мукой!</p>
+  <p>Для решения этой проблемы в <span data-keyref="GameMaker Name">GameMaker</span> имеется ряд встроенных <b>структур данных</b>, доступ к которым можно получить с помощью специальных функций. Существует шесть различных типов структур данных, каждый из которых имеет свои преимущества в зависимости от типа информации, которую вы хотите хранить, и от того, как вы хотите манипулировать ею в дальнейшем: стеки, очереди, списки, карты, очереди приоритетов и сетки.</p>
+  <p class="note"><strong>ПРИМЕЧАНИЕ</strong>: Рекомендуется использовать <a href="../../GML_Overview/Arrays.htm">массивы</a> и <a href="../../GML_Overview/Structs.htm">структуры</a> вместо списков и карт DS, так как они имеют схожие функции, проще в использовании и автоматически собирают мусор.</p>
+  <p>По сути, все структуры данных работают одинаково - вы создаете структуру данных и сохраняете <i>значение</i> ее <i>индекса</i> в переменной. Затем вы используете этот индекс для ссылки на структуру данных во всех последующих вызовах функций, которые могут выполнять операции над ней. Наконец, когда вы закончили, вы снова уничтожаете структуру данных, чтобы удалить ее из памяти. Вы можете использовать столько структур одновременно, сколько вам нужно, и все структуры могут хранить любой из доступных <a href="../../GML_Overview/Data_Types.htm">типов данных</a>.</p>
+  <p class="note"><b><span class="note">ПРИМЕЧАНИЕ</span> </b>Как и все динамические ресурсы, структуры данных занимают память, поэтому их <b>всегда</b> следует уничтожать, когда они больше не нужны, чтобы предотвратить утечку памяти, которая замедлит и в конечном итоге приведет к краху вашей игры.</p>
+  <p>Когда вы создаете структуру данных, значение индекса, используемое для ее идентификации, является целым числом, начинающимся с 0. Это означает, что разные структуры данных могут иметь одно и то <b>же</b> значение индекса, поэтому, если вы сомневаетесь, вам следует использовать функцию <span style="font-size:1px;"><span class="inline"><a data-xref="{title}" href="ds_exists.htm">ds_exists</a></span></span> функцию перед обращением к ним. Также обратите внимание, что индексы используются повторно, поэтому значение индекса уничтоженной структуры данных может быть использовано впоследствии вновь созданной, и мы рекомендуем после уничтожения структуры данных установить любую переменную, содержащую индекс DS, в -1.</p>
+  <p>Информацию о различных структурах данных можно найти в следующих разделах:</p>
   <ul class="colour">
-    <li><a href="DS_Grids/DS_Grids.htm">Grids</a></li>
-    <li><a href="DS_Lists/DS_Lists.htm">Lists</a></li>
-    <li><a href="DS_Maps/DS_Maps.htm">Maps</a></li>
-    <li><a href="DS_Priority_Queues/DS_Priority_Queues.htm">Priority Queues</a></li>
-    <li><a href="DS_Queues/DS_Queues.htm">Queues</a></li>
-    <li><a href="DS_Stacks/DS_Stacks.htm">Stacks</a></li>
+    <li><a href="DS_Grids/DS_Grids.htm">Сетки</a></li>
+    <li><a href="DS_Lists/DS_Lists.htm">Списки</a></li>
+    <li><a href="DS_Maps/DS_Maps.htm">Карты</a></li>
+    <li><a href="DS_Priority_Queues/DS_Priority_Queues.htm">Приоритетные очереди</a></li>
+    <li><a href="DS_Queues/DS_Queues.htm">Очереди</a></li>
+    <li><a href="DS_Stacks/DS_Stacks.htm">Стеки</a></li>
   </ul>
-  <p> </p>
-  <p>Before using data structures in your game, you should also be aware that there are certain moments when, due to rounding errors, you may get a result that is not what you expected. This may be resolved by changing the DS precision using the following function:</p>
+  <p> </p>
+  <p>Прежде чем использовать структуры данных в своей игре, вы также должны знать, что существуют определенные моменты, когда из-за ошибок округления вы можете получить не тот результат, который ожидали. Это можно решить, изменив точность DS с помощью следующей функции:</p>
   <ul class="colour">
-    <li><a href="ds_set_precision.htm">ds_set_precision</a></li>
+    <li><a href="ds_set_precision.htm"><span class="notranslate">ds_set_precision</span></a></li>
   </ul>
-  <p> </p>
-  <p>There is also a special function for checking to see whether a data structure of any given type exists:</p>
+  <p> </p>
+  <p>Существует также специальная функция для проверки существования структуры данных любого заданного типа:</p>
   <ul class="colour">
-    <li><a href="ds_exists.htm">ds_exists</a></li>
+    <li><a href="ds_exists.htm"><span class="notranslate">ds_exists</span></a></li>
   </ul>
-  <p> </p>
-  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="../GML_Reference.htm">GML Reference</a></div>
-        <div style="float:right">Next: <a href="../Strings/Strings.htm">Strings</a></div>
+        <div style="float:left">Назад: <a href="../GML_Reference.htm">Ссылка на GML</a></div>
+        <div style="float:right">Следующий: <a href="../Strings/Strings.htm">Струны</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 Data Structures

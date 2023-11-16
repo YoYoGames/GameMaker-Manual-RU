@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>buffer_get_type</title>
+  <title>тип_буфера</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
-  <script src="../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference page for buffer_get_type" />
   <meta name="rh-index-keywords" content="buffer_get_type" />
@@ -15,69 +15,69 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>buffer_get_type</h1>
-  <p>With this function you retrieve the type of buffer that is being referenced by a buffer ID value. The return value will be one of the following constants:</p>
+  <h1>тип_буфера</h1>
+  <p>С помощью этой функции вы получаете тип буфера, на который ссылается значение идентификатора буфера. Возвращаемое значение будет одной из следующих констант:</p>
   <table>
     <tbody>
       <tr>
-        <th>Constant</th>
-        <th>Description</th>
+        <th>Постоянная</th>
+        <th>Описание</th>
       </tr>
       <tr>
-        <td><span class="inline">buffer_fixed</span></td>
-        <td>A buffer of fixed size.</td>
+        <td><span class="notranslate"><span class="inline">buffer_fixed</span></td>
+        <td>Буфер фиксированного размера.</td>
       </tr>
       <tr>
-        <td><span class="inline">buffer_grow</span></td>
-        <td>A buffer that will &quot;grow&quot; dynamically as data is added</td>
+        <td><span class="notranslate"><span class="inline">buffer_grow</span></td>
+        <td>Буфер, который будет динамически &quot;расти&quot; по мере добавления данных</td>
       </tr>
       <tr>
-        <td><span class="inline">buffer_wrap</span></td>
-        <td>A buffer where the data will &quot;wrap&quot;. When the data being added reaches the limit of the buffer size, the overwrite will be placed back at the start of the buffer, and further writing will continue from that point.</td>
+        <td><span class="notranslate"><span class="inline">buffer_wrap</span></td>
+        <td>Буфер, в который будут &quot;заворачиваться&quot; данные. Когда добавляемые данные достигнут предела размера буфера, перезапись будет помещена обратно в начало буфера, и дальнейшая запись будет продолжаться с этого момента.</td>
       </tr>
       <tr>
-        <td><span class="inline">buffer_fast</span></td>
-        <td>Special &quot;stripped&quot; buffer that is extremely fast to read/write to. Can only be used with <span class="inline">buffer_u8</span> <a href="buffer_read.htm">data types</a>, and <i>must</i> be 1 byte aligned.</td>
+        <td><span class="notranslate"><span class="inline">buffer_fast</span></td>
+        <td>Специальный &quot;полосатый&quot; буфер, который очень быстро читается/записывается. Может использоваться только с <a href="buffer_read.htm">типами данных</a> <span class="inline">buffer_u8</span> и <i>должен</i> быть выровнен по 1 байту.</td>
       </tr>
       <tr>
-        <td><span class="inline">buffer_vbuffer</span></td>
-        <td>A vertex buffer</td>
+        <td><span class="notranslate"><span class="inline">buffer_vbuffer</span></td>
+        <td>Буфер вершин</td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p> </p>
+  <h4>Синтаксис:</h4>
   <p class="code">buffer_get_type(buffer);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th><th>Type</th>
-        <th>Description</th>
+        <th>Аргумент</th><th>Тип</th>
+        <th>Описание</th>
      </tr>
       <tr>
-        <td>buffer</td><td><span data-keyref="Type_ID_Buffer"></span></td>
-        <td>The index of the buffer to check.</td>
+        <td><span class="notranslate">buffer</span></td><td><span data-keyref="Type_ID_Buffer"></span></td>
+        <td><span class="notranslate">The index of the buffer to check.</span></td>
      </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
   <p class="code"><span data-keyref="Type_Constant_Buffer_Type">Buffer Type Constant</span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Пример:</h4>
   <p class="code">type = buffer_get_type(buff);</p>
-  <p>The above code will get the type of buffer from the value indexed in the variable &quot;buff&quot; and store it in a variable.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Приведенный выше код получит тип буфера из значения, проиндексированного в переменной &quot;buff&quot;, и сохранит его в переменной.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Buffers.htm">Buffers</a></div>
-        <div style="float:right">Next: <a href="buffer_get_alignment.htm">buffer_get_alignment</a></div>
+        <div style="float:left">Назад: <a href="Buffers.htm">Буферы</a></div>
+        <div style="float:right">Следующий: <a href="buffer_get_alignment.htm"><span class="notranslate">buffer_get_alignment</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 buffer_get_type

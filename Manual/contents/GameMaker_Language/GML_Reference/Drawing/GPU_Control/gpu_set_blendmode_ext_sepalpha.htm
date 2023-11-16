@@ -6,7 +6,7 @@
   <title>gpu_set_blendmode_ext_sepalpha</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference for the function gpu_set_blendmode_ext_sepalpha" />
   <meta name="rh-index-keywords" content="gpu_set_blendmode_ext_sepalpha,bm_zero,bm_one,bm_src_colour,bm_inv_src_colour,bm_src_alpha,bm_inv_src_alpha,bm_dest_alpha,bm_inv_dest_alpha,bm_dest_colour,bm_inv_dest_colour,bm_src_alpha_sat,bm_src_color,bm_inv_src_color,bm_dest_color,bm_inv_dest_colour" />
@@ -15,62 +15,62 @@
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
   <h1>gpu_set_blendmode_ext_sepalpha</h1>
-  <p>When <span data-keyref="GameMaker Name">GameMaker</span> goes to draw a pixel there is a source colour (the colour of the pixel we&#39;re going to draw) and a destination colour(the colour that&#39;s already in the pixel we&#39;re drawing to), so when determining the new colour of the pixel, the source and destination colours are calculated according to the chosen blend mode. Each component of the colours is stored as a floating point value between 0 and 1, and the new colour is calculated by multiply each component of the source colour by some factor and by multiplying each component of destination colour by some other factor and then adding the results together component by component.</p>
-  <p>This function permits you to set the different component parts that should be factored together to create a custom blend mode, selecting different parts of different blend mode factors for the RGB components and the Alpha component. So the &quot;src&quot; and &quot;dest&quot; argument will use the first 3 blend mode values (RGB) and the &quot;alphasrc&quot; and &quot;alphadest&quot; arguments will take the last part of the blend mode factor. For example, if you have the RGB source as <span class="inline">bm_zero</span>, then (0, 0, 0) will be used. If you then set the Alpha source as bm_one then (1) will be used, giving a final source blend mode of (0, 0, 0, 1).</p>
-  <p>The following chart shows the RGBA values for each blend mode, where (Rs, Gs, Bs, As) are considered the source values and (Rd, Gd, Bd, Ad) are the destination values. The eleven constants that are available for use can be either source or destination (or both) when used in this function.</p>
+  <p>Когда <span data-keyref="GameMaker Name">GameMaker</span> рисует пиксель, есть исходный цвет (цвет пикселя, который мы собираемся нарисовать) и цвет назначения (цвет, который уже есть в пикселе, к которому мы рисуем), поэтому при определении нового цвета пикселя исходный и конечный цвета рассчитываются в соответствии с выбранным режимом наложения. Каждый компонент цвета хранится как значение с плавающей точкой между 0 и 1, а новый цвет вычисляется путем умножения каждого компонента исходного цвета на некоторый коэффициент и умножения каждого компонента цвета назначения на другой коэффициент, а затем суммирования результатов по компонентам.</p>
+  <p>Эта функция позволяет задать различные компоненты, которые должны быть сложены вместе для создания пользовательского режима наложения, выбирая различные части различных коэффициентов режима наложения для компонентов RGB и компонента Alpha. Таким образом, аргументы &quot;src&quot; и &quot;dest&quot; будут использовать первые 3 значения режима наложения (RGB), а аргументы &quot;alphasrc&quot; и &quot;alphadest&quot; - последнюю часть коэффициента режима наложения. Например, если вы задали источник RGB как <span class="inline">bm_zero</span>, то будет использоваться (0, 0, 0). Если затем задать для источника Alpha значение bm_one, то будет использовано значение (1), что даст окончательный режим наложения источника (0, 0, 0, 0, 1).</p>
+  <p>На следующей диаграмме показаны значения RGBA для каждого режима наложения, где (Rs, Gs, Bs, As) считаются исходными значениями, а (Rd, Gd, Bd, Ad) - конечными. Одиннадцать констант, доступных для использования, могут быть как исходными, так и конечными (или и теми, и другими) при использовании в этой функции.</p>
   <table>
     <tbody>
       <tr>
-        <th>Constant</th>
-        <th>Blend factor (Red, Green, Blue, Alpha)</th>
+        <th>Постоянная</th>
+        <th>Коэффициент смешивания (красный, зеленый, синий, альфа)</th>
       </tr>
       <tr>
-        <td>bm_zero</td>
+        <td><span class="notranslate">bm_zero</span></td>
         <td>(0, 0, 0, 0)</td>
       </tr>
       <tr>
-        <td>bm_one</td>
+        <td><span class="notranslate">bm_one</span></td>
         <td>(1, 1, 1, 1)</td>
       </tr>
       <tr>
-        <td>bm_src_colour</td>
+        <td><span class="notranslate">bm_src_colour</span></td>
         <td>(Rs, Gs, Bs, As)</td>
       </tr>
       <tr>
-        <td>bm_inv_src_colour</td>
+        <td><span class="notranslate">bm_inv_src_colour</span></td>
         <td>(1-Rs, 1-Gs, 1-Bs, 1-As)</td>
       </tr>
       <tr>
-        <td>bm_src_alpha</td>
-        <td>(As, As, As, As)</td>
+        <td><span class="notranslate">bm_src_alpha</span></td>
+        <td>(As, As, As, As, As)</td>
       </tr>
       <tr>
-        <td>bm_inv_src_alpha</td>
-        <td>(1-As, 1-As, 1-As, 1-As)</td>
+        <td><span class="notranslate">bm_inv_src_alpha</span></td>
+        <td>(1-Ас, 1-Ас, 1-Ас, 1-Ас, 1-Ас)</td>
       </tr>
       <tr>
-        <td>bm_dest_alpha</td>
-        <td>(Ad, Ad, Ad, Ad)</td>
+        <td><span class="notranslate">bm_dest_alpha</span></td>
+        <td>(Ad, Ad, Ad, Ad, Ad)</td>
       </tr>
       <tr>
-        <td>bm_inv_dest_alpha</td>
-        <td>(1-Ad, 1-Ad, 1-Ad, 1-Ad)</td>
+        <td><span class="notranslate">bm_inv_dest_alpha</span></td>
+        <td>(1-Ad, 1-Ad, 1-Ad, 1-Ad, 1-Ad)</td>
       </tr>
       <tr>
-        <td>bm_dest_colour</td>
+        <td><span class="notranslate">bm_dest_colour</span></td>
         <td>(Rd, Gd, Bd, Ad)</td>
       </tr>
       <tr>
-        <td>bm_inv_dest_colour</td>
+        <td><span class="notranslate">bm_inv_dest_colour</span></td>
         <td>(1-Rd, 1-Gd, 1-Bd, 1-Ad)</td>
       </tr>
       <tr>
-        <td>bm_src_alpha_sat</td>
-        <td>(f, f, f, 1) where f = min(As, 1-Ad)</td>
+        <td><span class="notranslate">bm_src_alpha_sat</span></td>
+        <td>(f, f, f, 1), где f = min(As, 1-Ad)</td>
       </tr>
     </tbody>
   </table>
-  <p class="note"><b>IMPORTANT!</b> HTML5 without WebGL enabled will <b>not</b> be able to display use following modes correctly:</p>
+  <p class="note"><b>ВАЖНО!</b> HTML5 без включенного WebGL <b>не</b> сможет корректно отображать следующие режимы:</p>
   <ul class="colour" style="padding-left: 120px">
     <li><span class="inline">bm_src_colour</span></li>
     <li><span class="inline">bm_inv_src_colour</span></li>
@@ -78,71 +78,71 @@
     <li><span class="inline">bm_inv_dest_colour</span></li>
     <li><span class="inline">bm_src_alpha_sat</span></li>
   </ul>
-  <p> </p>
-  <p>Note that you can either supply four individual arguments to this function or you can supply an array of arguments (as returned by the function <a href="gpu_get_blendmode_ext_sepalpha.htm"><span class="inline">gpu_get_blendmode_ext_sepalpha()</span></a> for example). If supplying an array it should have the following four elements:</p>
+  <p> </p>
+  <p>Обратите внимание, что вы можете либо предоставить четыре отдельных аргумента этой функции, либо массив аргументов (как возвращает функция <a href="gpu_get_blendmode_ext_sepalpha.htm"><span class="inline">gpu_get_blendmode_ext_sepalpha()</span></a> например). В случае предоставления массива он должен состоять из следующих четырех элементов:</p>
   <ul class="colour">
-    <li>[0] = Source blend mode minus the alpha component (default is <span class="inline">bm_src_alpha</span> (As, As, As))</li>
-    <li>[1] = Destination blend mode minus the alpha component (default is <span class="inline">bm_inv_src_alpha</span> (1-As, 1-As, 1-As))</li>
-    <li>[2] = Source alpha component (default is <span class="inline">bm_src_alpha</span> (As))</li>
-    <li>[3] = Destination alpha component (default is <span class="inline">bm_inv_src_alpha</span> (1-As))</li>
+    <li>[0] = Режим наложения источника за вычетом альфа-компонента (по умолчанию <span class="inline">bm_src_alpha</span> (As, As, As)).</li>
+    <li>[1] = Режим наложения назначения за вычетом альфа-компонента (по умолчанию <span class="inline">bm_inv_src_alpha</span> (1-As, 1-As, 1-As)).</li>
+    <li>[2] = Альфа-компонент источника (по умолчанию <span class="inline">bm_src_alpha</span> (As))</li>
+    <li>[3] = Альфа-компонент назначения (по умолчанию <span class="inline">bm_inv_src_alpha</span> (1-As))</li>
   </ul>
-  <p>To help you get the most from blend modes and to help understand how they work and how they affect the final image being drawn to the screen, we recommend that you read the following guide:</p>
+  <p>Чтобы максимально использовать режимы наложения и понять, как они работают и как влияют на конечное изображение, выводимое на экран, мы рекомендуем вам ознакомиться со следующим руководством:</p>
   <ul class="colour">
-    <li><a href="../../../../Additional_Information/Guide_To_Using_Blendmodes.htm">Guide To Using Blendmodes</a></li>
+    <li><a href="../../../../Additional_Information/Guide_To_Using_Blendmodes.htm">Руководство по использованию блендмодов</a></li>
   </ul>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p> </p>
+  <h4>Синтаксис:</h4>
   <p class="code">gpu_set_blendmode(src, dest, alphasrc, alphadest);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Аргумент</th>
+        <th>Тип</th>
+        <th>Описание</th>
       </tr>
       <tr>
-        <td>src</td>
-        <td><span data-keyref="Type_Constant_Draw_Blend_Mode_Factor">Blend Mode Factor Constant</span></td>
-        <td>Source blend mode factor for RGB (see constants above).</td>
+        <td><span class="notranslate">src</span></td>
+        <td><span data-keyref="Type_Constant_Draw_Blend_Mode_Factor">Коэффициент режима наложения Постоянная</span></td>
+        <td><span class="notranslate">Source blend mode factor for RGB (see constants above).</span></td>
       </tr>
       <tr>
-        <td>dest</td>
-        <td><span data-keyref="Type_Constant_Draw_Blend_Mode_Factor">Blend Mode Factor Constant</span></td>
-        <td>Destination blend mode factor for RGB (see constants above)</td>
+        <td><span class="notranslate">dest</span></td>
+        <td><span data-keyref="Type_Constant_Draw_Blend_Mode_Factor">Коэффициент режима наложения Постоянная</span></td>
+        <td><span class="notranslate">Destination blend mode factor for RGB (see constants above)</span></td>
       </tr>
       <tr>
-        <td>alphasrc</td>
-        <td><span data-keyref="Type_Constant_Draw_Blend_Mode_Factor">Blend Mode Factor Constant</span></td>
-        <td>Source blend mode factor Alpha (see constants above).</td>
+        <td><span class="notranslate">alphasrc</span></td>
+        <td><span data-keyref="Type_Constant_Draw_Blend_Mode_Factor">Коэффициент режима наложения Постоянная</span></td>
+        <td><span class="notranslate">Source blend mode factor Alpha (see constants above).</span></td>
       </tr>
       <tr>
-        <td>alphadest</td>
-        <td><span data-keyref="Type_Constant_Draw_Blend_Mode_Factor">Blend Mode Factor Constant</span></td>
-        <td>Destination blend mode factor Alpha (see constants above)</td>
+        <td><span class="notranslate">alphadest</span></td>
+        <td><span data-keyref="Type_Constant_Draw_Blend_Mode_Factor">Коэффициент режима наложения Постоянная</span></td>
+        <td><span class="notranslate">Destination blend mode factor Alpha (see constants above)</span></td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
   <p class="code"><span data-keyref="Type_Void">N/A</span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Пример:</h4>
   <p class="code">var bm = gpu_get_blendmode_ext_sepalpha();<br />
     bm[0] = bm_src_alpha;<br />
     bm[1] = bm_inv_src_alpha;<br />
     gpu_set_blendmode_ext_sepalpha(bm);</p>
-  <p>The above code creates a local array and gets the current extended blend mode with separate alpha values. This array is then manipulated and returned to set the blend mode.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Приведенный выше код создает локальный массив и получает текущий расширенный режим наложения с отдельными альфа-значениями. Затем этот массив обрабатывается и возвращается для установки режима наложения.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="GPU_Control.htm">GPU Control</a></div>
-        <div style="float:right">Next: <a href="gpu_set_colourwriteenable.htm">gpu_set_colourwriteenable</a></div>
+        <div style="float:left">Назад: <a href="GPU_Control.htm">Управление графическим процессором</a></div>
+        <div style="float:right">Следующий: <a href="gpu_set_colourwriteenable.htm"><span class="notranslate">gpu_set_colourwriteenable</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 gpu_set_blendmode_ext_sepalpha

@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Sequences</title>
+  <title>Последовательности</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../assets/css/default.css" type="text/css" />
-  <script src="../assets/scripts/main_script.js" type="module"></script>
+  <script src="../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Overview of Sequences in games." />
   <meta name="rh-index-keywords" content="Quick Start - Sequences" />
@@ -15,29 +15,29 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>Sequences</h1>
-  <p>The final asset we&#39;ll discuss in this guide before moving on to discuss how it all comes together in the <strong>Room Editor</strong>, is the <strong>Sequences</strong> asset. A sequence is essentially a collection of other assets that are collected in one place and then animated together. The final animation (sequence) can then be added to rooms in your game much like instances.</p>
-  <p>Sequences are created through the <a href="../The_Asset_Editors/Sequences.htm"><strong>Sequence Editor</strong></a> which is opened whenever you create a new sequence asset in the <a href="../Introduction/The_Asset_Browser.htm">Asset Browser</a>:</p>
-  <p><img alt="The Sequences Editor" class="center" src="../assets/Images/QS_Guide/QS_Sequences_Editor.png" />To create a basic sequence you add either a sound, a sprite or an instance into the sequence <em>canvas</em> and then position it to where you want it to be at the start of the sequence. This creates an <strong><a class="glossterm" data-glossterm="Asset Track" href="#">Asset Track</a></strong> in the <a class="glossterm" data-glossterm="Track Panel" href="#">Track Panel</a> <em></em> and also adds <strong></strong>a <strong><a class="glossterm" data-glossterm="keyframe" href="#">keyframe</a></strong> into the <a class="glossterm" data-glossterm="Dope Sheet" href="#">Dope Sheet</a> to show the duration that the asset will be visible for.</p>
-  <p>Time for the sequence is in frames (which is the same as steps for instances, ie: one frame is the same as one game step), and you can see what will happen at any given frame by moving the sequence <strong><a class="glossterm" data-glossterm="playhead" href="#">playhead</a></strong> in the dope sheet. The playhead position is also used for adding in <strong>keyframes </strong>which are the frames where you want some state to change to begin or end. Parameter keys are stored on <strong><a class="glossterm" data-glossterm="parameter tracks" href="#">parameter tracks</a></strong> for the given asset.</p>
-  <p>So, you would position the asset and set its scale and colour and other properties at frame 0 of the sequence. You would then record the parameter keys for the asset and move the playhead to the frame where you want to set the next asset state (position, colour, etc....). On this frame you would again change the different parameters and record keys for them, then repeat this process as required for the length of the sequence. When you press play on the sequence, the asset will be animated, with the sequence <a class="glossterm" data-glossterm="linear interpolation" href="#">interpolating</a> between the different parameter states, giving an end result something like this: </p>
-  <p><img alt="Sequence Example Image" class="center" src="../assets/Images/QS_Guide/QS_Sequence_Example.gif" />We won&#39;t go into more details about how sequences work here, but suffice to say that they are an incredibly powerful tool for doing anything from cut-scenes, to menus, to character states and much more.</p>
-  <p>The page linked below gives you all the details on how to use sequences in your games:</p>
+  <h1>Последовательности</h1>
+  <p>Последний актив, который мы рассмотрим в этом руководстве, прежде чем перейти к обсуждению того, как все это объединяется в <strong>редакторе помещений</strong>, - это актив " <strong>Последовательности</strong> ". Последовательность - это, по сути, коллекция других активов, которые собраны в одном месте и затем анимированы вместе. Окончательная анимация (последовательность) может быть добавлена к комнатам в вашей игре подобно инстансам.</p>
+  <p>Последовательности создаются с помощью <a href="../The_Asset_Editors/Sequences.htm"><strong>Редактор последовательностей</strong></a> который открывается каждый раз, когда вы создаете новый актив последовательности в <a href="../Introduction/The_Asset_Browser.htm">браузере активов</a>:</p>
+  <p><img>Чтобы создать базовую последовательность, добавьте звук, <span class="notranslate">sprite</span> или экземпляр на <em>холст</em> последовательности, а затем расположите его в том месте, где он должен находиться в начале последовательности. При этом создается <strong><a class="glossterm" data-glossterm="Asset Track" href="#">Отслеживание активов</a></strong> в <a class="glossterm" data-glossterm="Панель для отслеживания" href="#">панели дорожек</a> <em></em>, а также добавляет <strong></strong>a <strong><a class="glossterm" data-glossterm="ключевой кадр" href="#">ключевой кадр</a></strong> в <a class="glossterm" data-glossterm="Наркотический лист" href="#">Dope Sheet</a>, чтобы показать продолжительность, в течение которой актив будет виден.</p>
+  <p>Время для последовательности задается в кадрах (что для экземпляров равно шагам, т.е. один кадр равен одному игровому шагу), и вы можете увидеть, что произойдет на любом данном кадре, перемещая последовательность <strong><a class="glossterm" data-glossterm="playhead" href="#">головка воспроизведения</a></strong> на доп-листе. Положение головки воспроизведения также используется для добавления <strong>ключевых кадров </strong>- кадров, в которых вы хотите, чтобы какое-то состояние изменилось в начале или в конце. Ключевые кадры параметров хранятся на <strong><a class="glossterm" data-glossterm="дорожки параметров" href="#">дорожки параметров</a></strong> для данного актива.</p>
+  <p>Таким образом, вы позиционируете актив и устанавливаете его масштаб, цвет и другие свойства в кадре 0 последовательности. Затем вы записываете клавиши параметров актива и перемещаете головку воспроизведения на кадр, где вы хотите установить следующее состояние актива (положение, цвет и т.д.). На этом кадре вы снова измените различные параметры и запишите ключи для них, а затем повторите этот процесс в течение всей последовательности. Когда вы нажмете кнопку воспроизведения последовательности, актив будет анимирован, при этом последовательность будет <a class="glossterm" data-glossterm="линейная интерполяция" href="#">интерполироваться</a> между различными состояниями параметров, что в итоге даст примерно такой результат: </p>
+  <p><img>Мы не будем вдаваться в подробности о том, как работают последовательности, но достаточно сказать, что они являются невероятно мощным инструментом для создания любых эффектов: от cut-scenes, меню, состояний персонажей и многого другого.</p>
+  <p>На странице, ссылка на которую приведена ниже, подробно описано, как использовать последовательности в своих играх:</p>
   <ul class="colour">
-    <li><a href="../The_Asset_Editors/Sequences.htm">The Sequences Editor</a></li>
+    <li><a href="../The_Asset_Editors/Sequences.htm">Редактор последовательностей</a></li>
   </ul>
-  <p>Now we can move on to talk about the  <strong>Room Editor</strong>, which is where all these parts of your game come together...</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Теперь мы можем перейти к разговору о <strong>редакторе комнат</strong>, в котором все эти части вашей игры собираются вместе...</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="../Content.htm">Index</a></div>
-        <div style="float:right">Next: <a href="Rooms.htm">Rooms</a></div>
+        <div style="float:left">Назад: <a href="../Content.htm">Указатель</a></div>
+        <div style="float:right">Следующий: <a href="Rooms.htm">Номера</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2021 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 Quick Start: Sequences

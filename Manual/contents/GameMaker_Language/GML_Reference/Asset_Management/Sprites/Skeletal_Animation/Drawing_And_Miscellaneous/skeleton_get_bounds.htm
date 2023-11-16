@@ -6,7 +6,7 @@
   <title>skeleton_get_bounds</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page explaining the function skeleton_get_bounds" />
   <meta name="rh-index-keywords" content="skeleton_get_bounds" />
@@ -16,38 +16,38 @@
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
   <h1>skeleton_get_bounds</h1>
-  <p>This function will return an array of values associated with any given bounding box for the currently assigned skeleton animation sprite. You supply the index number for the bounding box to get the details of (you can retrieve the total number of bounding boxes for the sprite using the function <a href="skeleton_get_num_bounds.htm"><span class="inline">skeleton_get_num_bounds()</span></a>) and the function will return an array with the following elements:</p>
+  <p>Эта функция возвращает массив значений, связанных с любой заданной граничной рамкой для текущей назначенной скелетной анимации <span class="notranslate">sprite</span>. Вы вводите индексный номер ограничивающей рамки для получения подробной информации (вы можете получить общее количество ограничивающих рамок для <span class="notranslate">sprite</span> с помощью функции <a href="skeleton_get_num_bounds.htm"><span class="inline">skeleton_get_num_bounds()</span></a>), и функция вернет массив со следующими элементами:</p>
   <ul class="colour">
-    <li>[0] - the number of points on the bounding box (a real)</li>
-    <li>[1] - the name of the bounding box (a string)</li>
-    <li>[2] - the x position of the first point</li>
-    <li>[3] - the y position of the first point</li>
-    <li>[etc...] - further x/y position data up to the number of points on the bounding box</li>
+    <li>[0] - количество точек на ограничивающей рамке (вещественное)</li>
+    <li>[1] - имя ограничивающей рамки (строка)</li>
+    <li>[2] - положение x первой точки</li>
+    <li>[3] - положение y первой точки</li>
+    <li>[и т.д.] - дальнейшие данные о положении x/y до количества точек на ограничительной рамке</li>
   </ul>
   <div data-conref="../../../../../../assets/snippets/Spine_bounding_box_note.hts"> </div>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p> </p>
+  <h4>Синтаксис:</h4>
   <p class="code">skeleton_get_bounds(index);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Аргумент</th>
+        <th>Тип</th>
+        <th>Описание</th>
       </tr>
       <tr>
-        <td>index</td>
-        <td><span data-keyref="Type_Real">Real</span></td>
-        <td>The bounding box index to get the values of.</td>
+        <td><span class="notranslate">index</span></td>
+        <td><span data-keyref="Type_Real">Реально</span></td>
+        <td><span class="notranslate">The bounding box index to get the values of.</span></td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
   <p class="code"><span data-keyref="Type_Array">Array</span> (minimum 2 elements: numPoints, name [, xPos, yPos, etc...])</p>
-  <p> </p>
-  <h4>Example:</h4>
-  <p> </p>
+  <p> </p>
+  <h4>Пример:</h4>
+  <p> </p>
   <p class="code">var num = skeleton_get_num_bounds();<br />
     var yy = 60;<br />
     for(var i = 0; i &lt; num; i++)<br />
@@ -64,18 +64,18 @@
             yy += 20;<br />
         }<br />
     }</p>
-  <p>The above code will loop through each of the bounding boxes associated with the currently assigned sprite and then draw that data as a string to the screen.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Приведенный выше код будет циклически просматривать все ограничивающие рамки, связанные с текущим назначенным <span class="notranslate">sprite</span>, а затем выводить эти данные в виде строки на экран.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Drawing_And_Miscellaneous.htm">Drawing And Miscellaneous</a></div>
-        <div style="float:right">Next: <a href="skeleton_collision_draw_set.htm">skeleton_collision_draw_set</a></div>
+        <div style="float:left">Назад: <a href="Drawing_And_Miscellaneous.htm">Рисование и разное</a></div>
+        <div style="float:right">Следующий: <a href="skeleton_collision_draw_set.htm"><span class="notranslate">skeleton_collision_draw_set</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 skeleton_get_bounds

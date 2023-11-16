@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>switch</title>
+  <title>переключатель</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
-  <script src="../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page outlining the switch function" />
   <meta name="rh-index-keywords" content="switch,case" />
@@ -14,9 +14,9 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>switch</h1>
-  <p>In a number of situations you want to let your instances perform different actions depending on a particular value. You can do this using a number of consecutive <a href="If_Else_and_Conditional_Operators.htm"><span class="inline">if / else</span></a> statements, but when the possible choices gets above two or three it is usually easier to use the <span class="inline">switch</span> statement.</p>
-  <p>A <span class="inline">switch</span> statement has the following syntax:</p>
+  <h1>переключатель</h1>
+  <p>В ряде ситуаций вы хотите, чтобы ваши экземпляры выполняли различные действия в зависимости от конкретного значения. Вы можете сделать это с помощью нескольких последовательных <a href="If_Else_and_Conditional_Operators.htm"><span class="inline">if / else</span></a> но когда количество возможных вариантов становится больше двух или трех, обычно проще использовать оператор <span class="inline">switch</span>.</p>
+  <p>Заявление <span class="inline">switch</span> имеет следующий синтаксис:</p>
   <p class="code">switch (&lt;expression&gt;)<br />
     {<br />
         case &lt;constant1&gt;:<br />
@@ -33,15 +33,15 @@
             &lt;code&gt;;<br />
     }
   </p>
-  <p>This works as follows:</p>
+  <p>Это работает следующим образом:</p>
   <ul class="colour">
-    <li>First the <a class="glossterm" data-glossterm="expression" href="#">expression</a> is executed.</li>
-    <li>Next, its result is compared with the different constants after each of the <span class="inline">case</span> <a class="glossterm" data-glossterm="statement" href="#">statement</a><span class="glossextra">s</span>. When we say &quot;constant&quot; what we mean is that the value in the case cannot be a variable expression and must be a fixed value of any <a href="../Data_Types.htm">data type</a>, like <span class="inline2">&quot;fight&quot;</span> or <span class="inline2">3</span> or the keyword <span class="inline2"><span class="inline"><a href="../Instance_Keywords.htm">noone</a></span></span>. </li>
-    <li>The execution begins from the first <span class="inline">case</span> statement with the matching value, <i>until a <a href="break.htm">break</a> statement is encountered</i>.</li>
-    <li>If no <span class="inline">case</span> statement has the matching value, then the <span class="inline">default</span> statement will be executed. It is not required to have a <span class="inline">default</span> statement, and if none is supplied then no action will be taken when there are no matching cases. The <span class="inline">default</span> statement can be placed anywhere in a switch block, however it&#39;s traditionally placed at the bottom, after all the cases.</li>
+    <li>Сначала выполняется <a class="glossterm" data-glossterm="выражение" href="#">выражение</a>.</li>
+    <li>Затем его результат сравнивается с различными константами после каждого из<span class="glossextra">утверждений</span> <span class="inline">case</span>. Когда мы говорим &quot;константа&quot;, мы имеем в виду, что значение в данном случае не может быть переменной выражения и должно быть фиксированным значением любого <a href="../Data_Types.htm">типа данных</a>, например, <span class="inline2">&quot;бой&quot;</span> или <span class="inline2">3</span>, или ключевое слово <span class="inline2"><span class="inline"><a href="../Instance_Keywords.htm">noone</a></span></span>. </li>
+    <li>Выполнение начинается с первого оператора <span class="inline">case</span> с совпадающим значением, <i>пока не встретится оператор <a href="break.htm"><span class="notranslate">break</span></a> </i>.</li>
+    <li>Если ни одно из утверждений <span class="inline">case</span> не имеет совпадающего значения, то будет выполнено утверждение <span class="inline">default</span>. Наличие оператора <span class="inline">default</span> не обязательно, и если он отсутствует, то при отсутствии совпадающих случаев никаких действий предприниматься не будет. Оператор <span class="inline">default</span> может быть размещен в любом месте блока switch, однако традиционно он располагается внизу, после всех случаев.</li>
   </ul>
-  <p class="note"><span class="note">NOTE</span> The switch statement will continue to execute code within a <span class="inline">case</span>, until a <span class="inline">break</span> is encountered. If you do not use <span class="inline">break</span>s at the end of your cases, it will cause the switch to &quot;leak&quot; to the next <span class="inline">case</span>, and even to a <span class="inline">default</span> section, if there are no <span class="inline">break</span>s in the way. This can cause unintended behaviour as the execution of one <span class="inline">case</span> can result in multiple <span class="inline">case</span>s being executed, so ensure to use <span class="inline">break</span> where appropriate.</p>
-  <p>A simple example of using a switch statement would be something like this:</p>
+  <p class="note"><span class="note">ПРИМЕЧАНИЕ</span> Оператор switch будет продолжать выполнять код в пределах <span class="inline">case</span>, пока не встретится <span class="inline">break</span>. Если вы не используете <span class="inline">break</span>s в конце примеров, это приведет к тому, что переключатель &quot;перетечет&quot; на следующий <span class="inline">case</span>, и даже в секцию <span class="inline">default</span>, если на пути не будет <span class="inline">break</span>s. Это может привести к нежелательному поведению, так как выполнение одного <span class="inline">case</span> может привести к выполнению нескольких <span class="inline">case</span>, поэтому используйте <span class="inline">break</span> там, где это необходимо.</p>
+  <p>Простой пример использования оператора switch будет выглядеть следующим образом:</p>
   <p class="code">switch (player_lives)<br />
     {<br />
         case 3:<br />
@@ -61,7 +61,7 @@
         break;<br />
     }
   </p>
-  <p>Note that multiple <span class="inline">case</span> statements can be used to execute the same statement, as the <span class="inline">break</span> is not always required for each and every <span class="inline">case</span>. If there is no <span class="inline">break</span> statement for a particular <span class="inline">case</span>, the execution simply continues with the code for the next case, e.g.:</p>
+  <p>Обратите внимание, что для выполнения одного и того же оператора можно использовать несколько операторов <span class="inline">case</span>, так как оператор <span class="inline">break</span> не всегда требуется для каждого <span class="inline">case</span>. Если для конкретного <span class="inline">case</span> оператора <span class="inline">break</span> не существует, выполнение просто продолжается с кода для следующего случая, например:</p>
   <p class="code">switch (keyboard_key)<br />
     {<br />
         case vk_left:<br />
@@ -85,19 +85,19 @@
         break;<br />
     }
   </p>
-  <p>The above code uses <span class="inline">switch</span> to check for a keyboard event and then compares that to each <span class="inline">case</span> listed. If it meets any of the required values then the corresponding code is executed. Note how the <span class="inline">switch</span> can check multiple <span class="inline">cases</span> and execute code until the next <span class="inline">break</span>, to permit various keys to be used to get the same result.</p>
-  <p>Each <span class="inline">case</span> can have its own code, so you can set up a sort of &quot;inheritance&quot; system where a case executes its own code and then the code for the next case as well.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Приведенный выше код использует <span class="inline">switch</span> для проверки наличия события клавиатуры, а затем сравнивает его с каждым из перечисленных <span class="inline">case</span>. Если оно соответствует любому из требуемых значений, то выполняется соответствующий код. Обратите внимание, как <span class="inline">switch</span> может проверять несколько <span class="inline">cases</span> и выполнять код до следующего <span class="inline">break</span>, чтобы позволить использовать различные клавиши для получения одного и того же результата.</p>
+  <p>Каждый <span class="inline">case</span> может иметь свой собственный код, так что вы можете создать своего рода систему &quot;наследования&quot;, где один случай выполняет свой собственный код, а затем и код для следующего случая.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="../Language_Features.htm">Language Features</a></div>
-        <div style="float:right">Next: <a href="break.htm">break</a></div>
+        <div style="float:left">Назад: <a href="../Language_Features.htm">Особенности языка</a></div>
+        <div style="float:right">Следующий: <a href="break.htm"><span class="notranslate">break</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 switch

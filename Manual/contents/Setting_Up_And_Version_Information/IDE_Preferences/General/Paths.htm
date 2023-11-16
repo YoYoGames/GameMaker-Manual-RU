@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Paths</title>
-  <meta name="generator" content="Adobe RoboHelp 2022" />
+  <title>Пути</title>
+  <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
-  <script src="../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="The Paths Preferences from the General Preferences section" />
   <meta name="rh-index-keywords" content="Prefs - General - Paths" />
@@ -14,72 +14,57 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>Path Preferences</h1>
+  <h1>Предпочтения пути</h1>
   <p><img alt="Path Prefs" class="center" src="../../../assets/Images/Setup_And_Version/Preferences/General_Paths_Prefs.png" style="cursor: nwse-resize;" /></p>
-  <p>The <strong>Path </strong>preferences control the different file paths required by elements in the <span data-keyref="GameMaker Name">GameMaker</span> IDE as well as for any external editors that you require.</p>
-  <h2 id="ide">IDE</h2>
-  <p>The following are the options under the IDE section: </p>
+  <p>Параметры <strong>Path </strong>управляют различными путями к файлам, которые требуются элементам в <span data-keyref="GameMaker Name">GameMaker</span> <span class="notranslate">IDE</span>, а также для любых внешних редакторов, которые вам необходимы. Для IDE существуют следующие опции:</p>
   <ul class="colour">
-    <li><strong>Temp directory</strong>: The location for saving all the temporary folders. By default on Windows this is: 
-      <p class="code">\Users\&lt;Username&gt;\AppData\Local\Temp\GameMaker</p>
-      And on macOS it&#39;s: 
-      <p class="code">/var/folders/&lt;Path_Hash&gt;/GameMaker</p>
-      <p> </p>
+    <li><strong>Временный каталог</strong>: Место для сохранения всех временных папок. По умолчанию на <span class="notranslate">Windows</span> это
+     <p class="code">\Users\&lt;Username&gt;\AppData\Local\Temp\GameMaker</p>
+      А на <span class="notranslate">macOS</span> это:
+     <p class="code">/var/folders/&lt;Path_Hash&gt;/GameMaker</p>
+     <p> </p>
     </li>
-    <li><strong>IDE cache directory</strong>: The location for saving the IDE cache. By default on Windows this is: 
-      <p class="code">\Users\&lt;Username&gt;\AppData\Roaming\GameMaker\Cache</p>
-      And on macOS it&#39;s: 
-      <p class="code">/Users/&lt;Username&gt;/.config/GameMaker/Cache</p>
-      <p> </p>
+    <li><strong>Каталог кэша IDE</strong>: Место для сохранения кэша <span class="notranslate">IDE</span>. По умолчанию на <span class="notranslate">Windows</span> это
+     <p class="code">\Users\&lt;Username&gt;\AppData\Roaming\GameMaker\Cache</p>
+      А на <span class="notranslate">macOS</span> это:
+     <p class="code">/Users/&lt;Username&gt;/.config/GameMaker/Cache</p>
+     <p> </p>
     </li>
-    <li><strong>Asset cache directory</strong>: The location for saving the asset cache for each project. By default on Windows this is: 
-      <p class="code">\Users\&lt;Username&gt;\AppData\Roaming\GameMaker\Cache</p>
-      And on macOS it&#39;s: 
-      <p class="code">/Users/&lt;Username&gt;/.config/GameMaker/Cache</p>
-      <p> </p>
+    <li><strong>Каталог кэша активов</strong>: Место для сохранения кэша активов для каждого проекта. По умолчанию на <span class="notranslate">Windows</span> это
+     <p class="code">\Users\&lt;Username&gt;\AppData\Roaming\GameMaker\Cache</p>
+      А на <span class="notranslate">macOS</span> это:
+     <p class="code">/Users/&lt;Username&gt;/.config/GameMaker/Cache</p>
+     <p> </p>
     </li>
-    <li><strong>&quot;My Projects&quot; Location</strong>: The location where <span data-keyref="GameMaker Name">GameMaker</span> will initially create new projects. By default on Windows this is: 
-      <p class="code">\Users\&lt;Username&gt;\Documents\GameMaker</p>
-      And on macOS it&#39;s: 
-      <p class="code">/Users/&lt;Username&gt;/GameMaker</p>
-      <p> </p>
+    <li><strong>Расположение &quot;Мои проекты&quot;:</strong> Место, где <span data-keyref="GameMaker Name">GameMaker</span> будет первоначально создавать новые проекты. По умолчанию на <span class="notranslate">Windows</span> это
+     <p class="code">\Users\&lt;Username&gt;\Documents\GameMaker</p>
+      А на <span class="notranslate">macOS</span> это
+     <p class="code">/Users/&lt;Username&gt;/GameMaker</p>
+     <p> </p>
     </li>
-    <li><strong>Automatically delete temp directory on close</strong>: Checking this will force <span data-keyref="GameMaker Name">GameMaker</span> to automatically delete the Temp folder that it creates per project for compiling, etc. This setting is on by default, and un-checking it will switch it off (meaning that you&#39;ll have to manually remove any temp files later).</li>
-    <li><strong>Automatically delete temp directory on build</strong>: Checking this forces <span data-keyref="GameMaker Name">GameMaker</span> to automatically delete the Temp folder every time the project is built. This setting is off by default.</li>
-    <li><strong>Automatically delete asset cache on close</strong>: If this is checked then the asset compiler cache folder will be removed when you quit <span data-keyref="GameMaker Name">GameMaker</span>. This is off by default, and enabling it will mean that every time you load and run any project the cache will need to be rebuilt (which can take time depending on the size of the game).</li>
-    <li><strong>Automatically delete IDE cache on close</strong>: If this is checked then the IDE compiler cache folder will be removed when you quit <span data-keyref="GameMaker Name">GameMaker</span>. This is off by default, and enabling it will mean that every time you start <span data-keyref="GameMaker Name">GameMaker</span> the cache will need to be rebuilt.</li>
-    <li><strong>Delete Temp Folder</strong>: Clicking this button will delete the temp folder for the project.</li>
-    <li><strong>Delete Asset Cache</strong>: Clicking this button will delete the compiler asset cache for the project.</li>
-    <li><strong>Delete IDE Cache</strong>: Clicking this button will delete the IDE cache.</li>
+    <li><strong>Automatically delete temp directory on close</strong>: Установка этого флажка заставит <span data-keyref="GameMaker Name">GameMaker</span> автоматически удалять папку Temp, которую он создает в проекте для компиляции и т.д.. Этот параметр включен по умолчанию, а снятие флажка отключает его (это означает, что вам придется вручную удалять все временные файлы).</li>
+    <li><strong>Автоматически удалять кэш активов при закрытии</strong>: Если этот флажок установлен, то папка кэша компилятора активов будет удаляться при выходе из <span data-keyref="GameMaker Name">GameMaker</span>. По умолчанию эта опция выключена, и ее включение будет означать, что при каждой загрузке и запуске любого проекта кэш нужно будет создавать заново (что может занять время, зависящее от размера игры).</li>
+    <li><strong>Автоматически удалять кэш <span class="notranslate">IDE</span> при закрытии</strong>: Если этот флажок установлен, то кэш-папка компилятора <span class="notranslate">IDE</span> будет удаляться при выходе из <span data-keyref="GameMaker Name">GameMaker</span>. По умолчанию эта опция выключена, и ее включение будет означать, что при каждом запуске <span data-keyref="GameMaker Name">GameMaker</span> кэш придется создавать заново.</li>
+    <li><strong>Удалить временную папку</strong>: Нажатие этой кнопки приведет к удалению временной папки проекта.</li>
+    <li><strong>Удалить кэш активов</strong>: Нажатие этой кнопки приведет к удалению кэша активов компилятора для проекта.</li>
+    <li><strong>Удалить кэш <span class="notranslate">IDE</span>:</strong> Нажав на эту кнопку, вы удалите кэш <span class="notranslate">IDE</span>.</li>
   </ul>
-  <h2 id="external_editors">External Editors</h2>
-  <p>The following are the options under the External Editors section: </p>
+  <p>Для задания путей к внешним редакторам существуют следующие варианты:</p>
   <ul class="colour">
-    <li><strong>Sound files</strong>: The path to the external editor to use for <a href="../../../The_Asset_Editors/Sounds.htm">Sounds</a>. If empty (the default), the OS&#39;es file associations are used.</li>
-    <li><strong>SWF files</strong>: The path to the external editor to use for <a data-xref="{text}" href="../../../Settings/Texture_Information/Non-Bitmap_Sprites.htm#h">Vector Sprites (SWF)</a>. If empty (the default), the OS&#39;es file associations are used.</li>
-    <li><strong>Spine files</strong>: The path to the external editor to use for <a data-xref="{text}" href="../../../Settings/Texture_Information/Non-Bitmap_Sprites.htm#h1">Skeletal Animation Sprites (Spine)</a>. If empty (the default), the OS&#39;es file associations are used.</li>
-    <li><strong>Bitmap files</strong>: The path to the external editor to use for bitmap <a href="../../../The_Asset_Editors/Sprites.htm">Sprites</a>. If empty (the default), the OS&#39;es file associations are used.</li>
-    <li><strong>Automatic response to external bitmap editor warning</strong>: When y<span>ou use b<span>oth <a data-xref="{title}" href="../../../The_Asset_Editors/Image_Editor.htm">The Image Editor</a></span></span><span> and an external editor for editing the same bitmap <a href="../../../Quick_Start_Guide/Creating_Sprites.htm">sprite</a>, the Image Editor will overwrite the changes. </span>This <span><span>opti<span><span>on lets <span data-keyref="GameMaker Name">GameMaker</span> <span><span><span>sh<span>ow</span></span></span></span> a warning message</span></span></span></span><span> when y<span>ou</span> try to externally edit a bitmap sprite: <strong>Sh</strong><span><strong>ow Message</strong> sh<span>ows a warning (the default), <strong>OK</strong> sh<span>ows n<span>one.</span></span></span></span></span></li>
-    <li><strong>Automatic response to external spine re-import warning</strong>: <span>Any changes done to a sprite in the Spine external editor will need to be re-imported as a new sprite. <span><span data-keyref="GameMaker Name">GameMaker</span> will show a warning message f<span>or this</span></span> if <span><strong>Show Message</strong> is selected (the default), </span><span>or n<span><span>o message</span></span> <span>if y<span>ou select <strong>OK</strong>.</span></span></span></span></li>
-    <li><strong>Default option for opening included files</strong>: This option sets the default behaviour when double-clicking <img class="icon" src="../../../assets/Images/Icons/Icon_LMB.png" /> a file in the <a data-xref="{title}" href="../../../Settings/Included_Files.htm">Included Files</a>.
-      <ul>
-        <li><strong>Properties</strong>: This opens the included file in <a data-xref="{title}" href="../../../IDE_Tools/The_Inspector.htm">The Inspector</a>.</li>
-        <li><strong>External Editor</strong>: This opens the file in an external editor, using the file associations of the OS.</li>
-      </ul>
-    </li>
-    <li><strong>Path to external editor/viewer for SWF files</strong>: If you are working with SWF format sprites, you can set this to the path of your preferred viewer/editor and when you click the <em>Edit Image</em> button in the Sprite Editor then it will open the given program. The default value here is to have no path.</li>
-    <li><strong>Path to external editor/viewer for Spine files</strong>: If you are working with Spine format sprites, you can set this to the path of your preferred viewer/editor and when you click the <em>Edit Image</em> button in the Sprite Editor then it will open the given program. The default value here is to have no path.</li>
+    <li><strong>Путь к внешнему редактору/просмотрщику для SWF-файлов</strong>: Если вы работаете с форматом SWF <span class="notranslate">sprites</span>, вы можете установить это значение на путь к предпочитаемой программе просмотра/редактору, и когда вы нажмете кнопку <em>Редактировать изображение</em> в редакторе <span class="notranslate">Sprite</span>, откроется данная программа. По умолчанию путь не задан.</li>
+    <li><strong>Путь к внешнему редактору/просмотрщику для файлов <span class="notranslate">Spine</span>:</strong> Если вы работаете с форматом <span class="notranslate">Spine</span> <span class="notranslate">sprites</span> , вы можете установить это значение на путь к предпочитаемой программе просмотра/редактору, и когда вы нажмете кнопку <em>Редактировать изображение</em> в редакторе <span class="notranslate">Sprite</span>, откроется данная программа. По умолчанию путь не задан.</li>
   </ul>
-  <p> </p>
-  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="../General_Preferences.htm">General Preferences</a></div>
-        <div style="float:right">Next: <a href="Power_Saving.htm">Power Saving Preferences</a></div>
+        <div style="float:left">Назад: <a href="../General_Preferences.htm">Общие предпочтения</a></div>
+        <div style="float:right">Следующий: <a href="Power_Saving.htm">Предпочтения в энергосбережении</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 Asset Explorer

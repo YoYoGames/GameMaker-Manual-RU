@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>steam_upload_score</title>
+  <meta name="generator" content="Adobe RoboHelp 2020" />
+  <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
+  <script src="../../../../assets/scripts/main_script.js"></script>
+  <meta name="rh-authors" content="Mark Alexander" />
+  <meta name="topic-comment" content="Reference page for steam_upload_score" />
+  <meta name="rh-index-keywords" content="steam_upload_score" />
+  <meta name="search-keywords" content="steam_upload_score" />
+</head>
+<body>
+  <!--<div class="body-scroll" style="top: 150px;">-->
+  <h1>steam_upload_score</h1>
+  <p>Эта функция отправит результат в заданную таблицу лидеров. Загружаемый результат является вещественным числом, а имя таблицы лидеров - строкой, которая была определена при создании таблицы лидеров с помощью функции <a href="steam_create_leaderboard.htm"><tt>steam_create_leaderboard()</tt></a>. В случае неудачи функция вернет значение -1, в то время как успешная отправка вернет уникальный ID для выгрузки и вызовет асинхронное <a href="../../../../The_Asset_Editors/Object_Properties/Async_Events/Steam.htm">событие Steam Event</a>. Это событие создаст <tt>DS Map</tt> во встроенной переменной <a href="../../../GML_Overview/Variables/Builtin_Global_Variables/async_load.htm"><tt>async_load</tt></a> со следующими парами ключ/значение:</p>
+  <ul class="colour">
+    <li>&quot;<b>event_type</b>&quot; - Этот ключ будет иметь значение &quot;<b>leaderboard_upload</b>&quot;, когда будет вызван этой функцией.</li>
+    <li>&quot;<b>lb_name</b>&quot; - Этот ключ содержит название таблицы лидеров, которая была опубликована в</li>
+    <li>&quot;<b>success</b>&quot; - Будет равно 1, если сообщение удалось, 0 - нет</li>
+    <li>&quot;<b>updated</b>&quot; - Будет 1, если результат в таблице лидеров был действительно обновлен (т.е. новый результат был лучше) или 0 в противном случае.</li>
+    <li>&quot;<b>post_id</b>&quot; - Этот ключ должен соответствовать значению ID, возвращенному вызовом загрузки.</li>
+    <li>&quot;<b>score</b>&quot; - Этот ключ хранит оценку, которая была опубликована</li>
+  </ul>
+  <p> </p>
+  <h4>Синтаксис:</h4>
+  <p class="code">steam_upload_score(lb_name, score);</p>
+  <table>
+    <tbody>
+      <tr>
+        <th>Аргумент</th>
+        <th>Описание</th>
+      </tr>
+      <tr>
+        <td><span class="notranslate">lb_name</span></td>
+        <td>Имя таблицы лидеров, в которую вы загружаете результаты (строка).</td>
+      </tr>
+      <tr>
+        <td><span class="notranslate">score</span></td>
+        <td>Оценка, которую нужно загрузить (реальное число).</td>
+      </tr>
+    </tbody>
+  </table>
+  <p> </p>
+  <h4>Возвращается:</h4>
+  <p class="code">Real</p>
+  <p> </p>
+  <h4>Расширенный пример:</h4>
+  <p>В этом примере мы сначала загрузим результат, а затем разберем карту <tt>async_load</tt>, возвращенную в случае успеха. В приведенном ниже коде показан типичный пример загрузки:</p>
+  <p class="code">if (hp &lt;= 0)<br />
+        {<br />
+        upload_ID = steam_upload_score(&quot;Game Scores&quot;, score);<br />
+        if (!upload_ID)<br />
+            {<br />
+            alarm[0] = room_speed;<br />
+            }<br />
+        }</p>
+  <p>Обратите внимание, что мы установили сигнал тревоги при неудачном вызове. Это будет использоваться для повторной попытки загрузки в более позднее время, и вы можете добавить туда дополнительный код для повторной попытки загрузки или для сохранения результатов в текстовом файле в случае неудачи и т.д.. Теперь мы добавим следующее в <b>событие Steam async</b> для экземпляра, управляющего оценками:</p>
+  <p class="code">var type = ds_map_find_value(async_load, &quot;event_type&quot;);<br />
+    if (type == &quot;leaderboard_upload&quot;)<br />
+    {<br />
+        var lb_ID = ds_map_find_value(async_load, &quot;post_id&quot;);<br />
+        if lb_ID == upload_ID<br />
+        {<br />
+            var lb_name = ds_map_find_value(async_load, &quot;lb_name&quot;);<br />
+            var lb_done = ds_map_find_value(async_load, &quot;success&quot;);<br />
+            var lb_score = ds_map_find_value(async_load, &quot;score&quot;);<br />
+            var lb_updated = ds_map_find_value(async_load, &quot;updated&quot;);<br />
+            show_debug_message(&quot;leaderboard post id:&quot; + string(lb_ID) + &quot; to lb:&quot; + string(lb_name) + &quot; with score:&quot; + string(lb_score) + &quot; updated=&quot; + string(lb_updated));<br />
+            if (lb_done)<br />
+            {<br />
+                show_debug_message(&quot;- Succeeded&quot;);<br />
+            }<br />
+            else<br />
+            {<br />
+                show_debug_message(&quot;- Failed&quot;);<br />
+            }<br />
+        }<br />
+    }</p>
+  <p>в примере мы просто выводим возвращаемые значения в окно компилятора в качестве отладочных сообщений, но вы можете использовать это событие для работы с информацией любым удобным для вас способом.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <div class="footer">
+    <div class="buttons">
+      <div class="clear">
+        <div style="float:left">Назад: <a href="Steam_Leaderboards.htm">Таблицы лидеров</a></div>
+        <div style="float:right">Следующий: <a href="steam_upload_score_buffer.htm"><span class="notranslate">steam_upload_score_buffer</span></a></div>
+      </div>
+    </div>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
+  </div>
+  <!-- KEYWORDS
+steam_upload_score
+-->
+  <!-- TAGS
+steam_upload_score
+-->
+</body>
+</html>

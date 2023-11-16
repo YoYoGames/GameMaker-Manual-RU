@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Save Game</title>
-  <meta name="generator" content="Adobe RoboHelp 2022" />
+  <title>Сохранить игру</title>
+  <meta name="generator" content="Adobe RoboHelp 2019" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
-  <script src="../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page that explains the Save Game action" />
   <meta name="rh-index-keywords" content="GML Visual Action - Save Game" />
@@ -14,40 +14,41 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1><img alt="Save Game Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Game/i_Game_Save_Game.png" /> <span data-field="title" data-format="default">Save Game</span> <span data-conref="../../../assets/snippets/Tag_deprecated.hts"> </span></h1>
-  <p>This action will do a basic save of the game to a given file.</p>
-  <p>You give a filename (as a string and including the extension) and the action will perform a limited save out of the current game state. It&#39;s important to understand that the action is designed to take a &quot;snapshot&quot; of the current game state and is for use more as a checkpoint system than a universal save system, since it does <i>not</i> save any of the dynamic resources (like <a href="../Data_Structures/Data_Structure_Actions.htm">Data Structures</a> or <a href="../Particles/Particle_Actions.htm">Particles</a>). As such the action should be used very carefully so as not to get errors or memory leaks.</p>
-  <div data-conref="../../../assets/snippets/Note_Load_Save_Game_Legacy.hts"> </div>
-  <p> </p>
-  <h4>Action Syntax:</h4>
-  <p><img alt="Save Game Action" class="center" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Game/a_Game_Save_Game.png" /></p>
-  <h4>Arguments:</h4>
-  <p> </p>
+  <h1><img> Сохранить игру</h1>
+  <p>Это действие выполняет базовое сохранение игры в заданный файл. Вы указываете имя файла (в виде строки и включая расширение), и действие выполнит ограниченное сохранение из текущего состояния игры. Важно понимать, что действие
+    предназначено для создания &quot;моментального снимка&quot; текущего состояния игры и используется скорее как система контрольных точек, чем как универсальная система сохранения, поскольку оно <i>не</i> сохраняет динамические ресурсы (например, <a href="../Data_Structures/Data_Structure_Actions.htm">структуры данных</a> или <a href="../Particles/Particle_Actions.htm">частицы</a>). Поэтому использовать это действие следует очень осторожно, чтобы не получить ошибок или утечек памяти. Для более комплексного подхода к сохранению игровых данных см. раздел <a href="../Files/File_Actions.htm">Действия с файлами</a>.</p>
+  <p> </p>
+  <h4>Синтаксис действия:</h4>
+  <p><img alt="Save Game Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Game/i_Game_Save_Game.png" /></p>
+  <h4>Аргументы:</h4>
+  <p> </p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Description</th>
+        <th>Аргумент</th>
+        <th>Описание</th>
       </tr>
       <tr>
-        <td>Filename</td>
-        <td>The name - as a string and with the extension - to give the file being saved (if the file already exists, it will be overwritten)</td>
+        <td><span class="notranslate">Filename</span></td>
+        <td>Имя - в виде строки и с расширением - для сохранения файла (если файл уже существует, он будет перезаписан).</td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Example:</h4>
-  <p><img alt="Save Game Example" class="center" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Game/e_Game_Save_Game.png" />The above action block code will check for a collision with another instance and if one is found it checks an instance variable. If the variable returns <span class="inline">true</span> then the game is saved and the variable set to <span class="inline">false</span>.</p>
-  <p> </p>
-  <p> </p>
+  <p> </p>
+  <h4>Пример:</h4>
+  <p><img>Приведенный выше код блока действий будет проверять наличие столкновения с другим экземпляром, и если оно найдено, то проверяется
+    переменную экземпляра. Если переменная возвращает значение <span class="inline">true</span>, то игра сохраняется, а переменная устанавливается в значение <span class="inline">false</span>.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Game_Actions.htm">Game Actions</a></div>
-        <div style="float:right">Next: <a href="Load_Game.htm">Load Game</a></div>
+        <div style="float:left">Назад: <a href="Game_Actions.htm">Игровые действия</a></div>
+        <div style="float:right">Следующий: <a href="Load_Game.htm">Загрузить игру</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 Action - Save Game

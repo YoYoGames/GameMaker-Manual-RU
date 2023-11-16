@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>part_system_update</title>
+  <title>часть_системы_обновление</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference page for part_system_update" />
   <meta name="rh-index-keywords" content="part_system_update" />
@@ -14,45 +14,46 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1><span data-field="title" data-format="default">part_system_update</span></h1>
-  <p>This function will advance the given particle system one step in game time and can be used to simulate the particle system behaviour when automatic updating is off, or it can be used to advance a particle system to a specific point all in one step. For example, if you have a particle system for snow, and you want it to appear that the snow is falling right from the moment the player enters the room then you may wish to advance your snow particles for a few seconds in the create event of an instance so that the first time they are drawn, there are particles all over the screen (the code example below shows this). You can also use this function when automatic updating of the system is switched off by the function <span class="inline3_func"><a data-xref="{title}" href="part_system_automatic_update.htm">part_system_automatic_update</a></span> to move the system along.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
-  <p class="code"><span data-field="title" data-format="default">part_system_update</span>(ind);</p>
+  <h1>часть_системы_обновление</h1>
+  <p>Эта функция продвигает заданную систему частиц на один шаг в игровом времени и может использоваться для имитации поведения системы частиц, когда автоматическое обновление выключено, или для продвижения системы частиц к определенной точке за один шаг. Например, если у вас есть система частиц для снега, и вы хотите, чтобы казалось, что снег падает с того момента, как игрок входит в комнату, то вы можете продвинуть частицы снега на несколько секунд в событии создания экземпляра, чтобы при первом рисовании частицы были по всему экрану (пример кода ниже показывает это). Вы также можете использовать эту функцию, когда автоматическое обновление системы отключено функцией <a href="part_system_automatic_update.htm"><span class="inline">part_system_automatic_update()</span></a> для перемещения системы.</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
+  <p class="code">part_system_update(ind);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Аргумент</th>
+        <th>Тип</th>
+        <th>Описание</th>
       </tr>
       <tr>
-        <td>ind</td>
-        <td><span data-keyref="Type_ID_PartSys"><a href="../../../../../../GameMaker_Language/GML_Reference/Drawing/Particles/Particle_Systems/part_system_create.htm" target="_blank">Particle System ID</a></span></td>
-        <td>The index of the particle system to update.</td>
+        <td><span class="notranslate">ind</span></td>
+        <td><span data-keyref="Type_ID_PartSys">Идентификатор системы частиц</span></td>
+        <td><span class="notranslate">The index of the particle system to update.</span></td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
   <p class="code"><span data-keyref="Type_Void">N/A</span></p>
-  <p> </p>
-  <h4>Example:</h4>
-  <p class="code">repeat (game_get_speed(gamespeed_fps) * 3)<br />
+  <p> </p>
+  <h4>Пример:</h4>
+  <p class="code">repeat (room_speed * 3)<br />
     {<br />
-        <span data-field="title" data-format="default">part_system_update</span>(global.RainSys);<br />
+        part_system_update(global.RainSys);<br />
     }</p>
-  <p>The above code will advance the particle system indexed in the global variable <span class="inline2">RainSys</span> by 3 seconds.</p>
-  <p> </p>
-  <p> </p>
+  <p>Приведенный выше код продвинет систему частиц, индексированную в глобальной переменной &quot;RainSys&quot;, на 3 секунды.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Particle_Systems.htm">Particle Systems</a></div>
-        <div style="float:right">Next: <a href="part_system_drawit.htm">part_system_drawit</a></div>
+        <div style="float:left">Назад: <a href="Particle_Systems.htm">Системы частиц</a></div>
+        <div style="float:right">Следующий: <a href="part_system_drawit.htm"><span class="notranslate">part_system_drawit</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 part_system_update

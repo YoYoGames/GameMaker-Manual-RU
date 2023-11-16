@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>font_replace</title>
+  <meta name="generator" content="Adobe RoboHelp 2020" />
+  <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
+  <script src="../../../../assets/scripts/main_script.js"></script>
+  <meta name="rh-authors" content="Mark Alexander" />
+  <meta name="topic-comment" content="Page outlining the function font_replace" />
+  <meta name="rh-index-keywords" content="font_replace" />
+  <meta name="search-keywords" content="" />
+</head>
+<body>
+  <!--<div class="body-scroll" style="top: 150px;">-->
+  <h1>font_replace</h1>
+  <p>Эта функция может быть использована для замены шрифта в вашей игре из тех шрифтов, которые установлены на системе, на которой она запущена. Обратите внимание, что заменяемый шрифт <em>не может</em> быть шрифтом из браузера активов, а должен быть шрифтом, который был добавлен ранее с помощью функции <a href="font_add.htm"><span class="inline">font_add()</span></a>.</p>
+  <p>При замене шрифта таким образом можно задать размер шрифта (в пунктах), а также то, должен ли шрифт быть <b>полужирным</b> или <i>курсивным</i>, а также определить диапазон символов, которые необходимо включить. Если функция не сработает, то она завершится молча, и заданный шрифт не будет заменен.</p>
+  <p>Для целевого модуля HTML5 эта функция <b>может использоваться только для замены <i>веб-шрифтов</i></b> и будет работать только в том случае, если WebGL <b>не</b> включен - если WebGL включен, необходимо использовать общий ресурс шрифта (т.е. использовать <a href="../../Drawing/Text/draw_set_font.htm"><span class="inline">draw_set_font()</span></a> вместе со шрифтом из Asset Browser) или растровые шрифты (см. <a href="font_add_sprite.htm"><span class="inline">font_add_sprite()</span></a>).</p>
+  <p class="note"><span class="optional">ВАЖНО</span> При использовании HTML5 курсив и полужирный текст поддерживаются только в том случае, если в шрифтовой актив или сам веб-шрифт включены эти символы. Они не будут синтезированы из базового шрифта.</p>
+  <p>В следующей таблице приведены шрифты, которые являются стандартными для всех браузеров и должны быть доступны для использования без проблем. Любой другой шрифт может существовать или не существовать на компьютере или устройстве, на котором запущена ваша игра, поэтому использование этой функции должно быть ограничено этими стандартными шрифтами:</p>
+  <table>
+    <tbody>
+      <tr>
+        <th>Имя шрифта Windows</th>
+        <th>Имя шрифта Mac</th>
+        <th>Семейство шрифтов</th>
+      </tr>
+      <tr>
+        <td>Arial</td>
+        <td>Arial / Helvetica</td>
+        <td>sans-serif</td>
+      </tr>
+      <tr>
+        <td>Arial Black</td>
+        <td>Arial Black / Gadget</td>
+        <td>sans-serif</td>
+      </tr>
+      <tr>
+        <td>Comic Sans MS</td>
+        <td>Comic Sans MS</td>
+        <td>скоропись</td>
+      </tr>
+      <tr>
+        <td>Курьерская новинка</td>
+        <td>Курьерская новинка</td>
+        <td>моношрифт</td>
+      </tr>
+      <tr>
+        <td>Грузия</td>
+        <td>Грузия</td>
+        <td>засечка</td>
+      </tr>
+      <tr>
+        <td>Влияние</td>
+        <td>Удар / Древесный уголь</td>
+        <td>sans-serif</td>
+      </tr>
+      <tr>
+        <td>Консоль Lucida</td>
+        <td>Монако</td>
+        <td>моношрифт</td>
+      </tr>
+      <tr>
+        <td>Lucida Sans Unicode</td>
+        <td>Lucida Grande</td>
+        <td>sans-serif</td>
+      </tr>
+      <tr>
+        <td>Palatino Linotype / Book Antiqua</td>
+        <td>Палатино</td>
+        <td>засечка</td>
+      </tr>
+      <tr>
+        <td>Tahoma</td>
+        <td>Женева</td>
+        <td>sans-serif</td>
+      </tr>
+      <tr>
+        <td>Times New Roman</td>
+        <td>Times New Roman / Times</td>
+        <td>засечка</td>
+      </tr>
+      <tr>
+        <td>Требушет МС</td>
+        <td>Требушет МС</td>
+        <td>sans-serif</td>
+      </tr>
+      <tr>
+        <td>Verdana</td>
+        <td>Вердана / Женева</td>
+        <td>sans-serif</td>
+      </tr>
+      <tr>
+        <td>Грузия</td>
+        <td>Грузия</td>
+        <td>засечка</td>
+      </tr>
+      <tr>
+        <td>Символ</td>
+        <td>Символ</td>
+        <td>Н/Д</td>
+      </tr>
+      <tr>
+        <td>Webdings</td>
+        <td>Webdings</td>
+        <td>Н/Д</td>
+      </tr>
+      <tr>
+        <td>Wingdings</td>
+        <td>Zapf Dingbats</td>
+        <td>Н/Д</td>
+      </tr>
+      <tr>
+        <td>MS Sans Serif</td>
+        <td>Женева</td>
+        <td>sans-serif</td>
+      </tr>
+      <tr>
+        <td>MS Serif</td>
+        <td>Нью-Йорк</td>
+        <td>sans-serif</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>На всех других (не веб-) объектах вы можете использовать эту функцию для замены шрифта из файла. Файл <b>должен быть включен в пакет игры</b> с помощью функции <a href="../../../../Settings/Included_Files.htm">Included Files</a> программы <span data-keyref="GameMaker Name">GameMaker</span> и должен представлять собой файл шрифта формата <span class="inline">*.ttf</span> или <span class="inline">*.otf</span>, что удобно для добавления нестандартных шрифтов, например, азиатских или арабских.</p>
+  <p class="note"><span class="tip">СОВЕТ</span><b> </b>Если вы включаете такой файл шрифта в игру, убедитесь, что он <b>должным образом лицензирован</b> для распространения вместе с игрой.</p>
+  <p>При загрузке шрифта из файла таким способом <i>размер</i> шрифта указывается в <b>пикселях</b>, а <i>первое</i> и <i>последнее</i> значения игнорируются, то есть все глифы шрифта будут добавлены. Шрифты, добавленные таким образом, назначаются на свою собственную страницу текстуры, поэтому при использовании этой функции следует соблюдать осторожность, так как это увеличит количество смен текстуры при рисовании. Также стоит отметить, что шрифты могут выглядеть немного больше при отрисовке, так как глифы могут иметь части, которые рисуются за пределами ограничительной рамки, определенной для шрифта. Также следует помнить, что существует ограничение на 200 глифов, которые могут быть отрисованы в одном кадре для определенного шрифта.</p>
+  <p class="note"><b><span class="note">ПРИМЕЧАНИЕ</span> </b>Когда вы загружаете шрифт в <span data-keyref="GameMaker Name">GameMaker</span>, вы должны не забыть удалить его снова (с помощью кнопки <span style="font-size:1px;"><a href="font_delete.htm"><span class="inline">font_delete()</span></a></span>), если он больше не нужен, иначе есть риск утечки памяти, что приведет к замедлению и, в конечном итоге, к краху вашей игры.</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
+  <p class="code">font_replace(ind, name, size, bold, italic, first, last);</p>
+  <table>
+    <tbody>
+      <tr>
+        <th>Аргумент</th>
+        <th>Тип</th>
+        <th>Описание</th>
+      </tr>
+      <tr>
+        <td><span class="notranslate">ind</span></td>
+        <td><span data-keyref="Type_Asset_Font">Шрифтовой актив</span></td>
+        <td><span class="notranslate">The index of the (previously added) font to be replaced.</span></td>
+      </tr>
+      <tr>
+        <td><span class="notranslate">name</span></td>
+        <td><span data-keyref="Type_String">Строка</span></td>
+        <td><span class="notranslate">The name of the font to be used (eg &#39;Arial&#39;), or the file path if the font is an included <span class="inline"></span>*.<span class="inline">ttf</span> или <span class="inline">*.otf</span> файл.</td>
+      </tr>
+      <tr>
+        <td><span class="notranslate">size</span></td>
+        <td><span data-keyref="Type_Real">Реально</span></td>
+        <td><span class="notranslate">The size of the font - points for Web Fonts, pixels for file fonts.</span></td>
+      </tr>
+      <tr>
+        <td><span class="notranslate">bold</span></td>
+        <td><span data-keyref="Type_Bool">Булево</span></td>
+        <td><span class="notranslate">Whether the font is bold (true) or not (false).</span></td>
+      </tr>
+      <tr>
+        <td><span class="notranslate">italics</span></td>
+        <td><span data-keyref="Type_Bool">Булево</span></td>
+        <td><span class="notranslate">Whether the font is italic (true) or not (false).</span></td>
+      </tr>
+      <tr>
+        <td><span class="notranslate">first</span></td>
+        <td><span data-keyref="Type_Real">Реально</span></td>
+        <td><span class="notranslate">The first character to include (if you&#39;re unsure, go for 32).</span></td>
+      </tr>
+      <tr>
+        <td><span class="notranslate">last</span></td>
+        <td><span data-keyref="Type_Real">Реально</span></td>
+        <td><span class="notranslate">The last character to include (if you&#39;re unsure, go for 128).</span></td>
+      </tr>
+    </tbody>
+  </table>
+  <p> </p>
+  <h4>Возвращается:</h4>
+  <p class="code"><span data-keyref="Type_Void">N/A</span></p>
+  <p> </p>
+  <h4>Пример:</h4>
+  <p class="code">font_replace(myfont, &quot;Arial&quot;, 24, true, true, 32, 128);</p>
+  <p>Это заменит шрифт, указанный в переменной &quot;myfont&quot;, на новый шрифт размером 24pt, использующий шрифт &quot;Arial&quot;, полужирный и курсивный. Шрифт включает заглавные и строчные буквы, цифры и всю обычную пунктуацию.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <div class="footer">
+    <div class="buttons">
+      <div class="clear">
+        <div style="float:left">Назад: <a href="Fonts.htm">Шрифты</a></div>
+        <div style="float:right">Следующий: <a href="font_replace_sprite.htm"><span class="notranslate">font_replace_sprite</span></a></div>
+      </div>
+    </div>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
+  </div>
+  <!-- KEYWORDS
+font_replace_sprite
+-->
+  <!-- TAGS
+font_replace_sprite
+-->
+</body>
+</html>

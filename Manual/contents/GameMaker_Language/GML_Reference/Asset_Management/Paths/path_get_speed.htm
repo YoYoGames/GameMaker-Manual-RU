@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>path_get_speed</title>
+  <title>путь_получить_скорость</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page explaining the function path_get_speed" />
   <meta name="rh-index-keywords" content="path_get_speed" />
@@ -15,48 +15,48 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>path_get_speed</h1>
-  <p>This function returns the speed factor of any given position on a path. The position should be a value between 0 and 1 (you can use <a href="Path_Variables/path_position.htm"><span class="inline">path_position</span></a>, for example, if you need the current position of the instance) with 0 being the start position and 1 being the end. The value returned will be the factor by which the actual <span class="inline"><a href="Path_Variables/path_speed.htm">path_speed</a> </span>is being set. For example, on a path with only two points, 0 and 1, where the point 0 speed factor is 100 and point 1 speed factor is 0, the function <span class="inline">path_get_speed(path, 0.5)</span> will return 50.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <h1>путь_получить_скорость</h1>
+  <p>Эта функция возвращает коэффициент скорости для любой заданной позиции на пути. Позиция должна быть значением между 0 и 1 (вы можете использовать <a href="Path_Variables/path_position.htm"><span class="inline">path_position</span></a>например, если вам нужна текущая позиция экземпляра), причем 0 - это начальная позиция, а 1 - конечная. Возвращаемое значение будет коэффициентом, на который устанавливается фактическое значение <span class="inline"><a href="Path_Variables/path_speed.htm">path_speed</a> </span>. Например, на пути с двумя точками, 0 и 1, где коэффициент скорости точки 0 равен 100, а коэффициент скорости точки 1 равен 0, функция <span class="inline">path_get_speed(path, 0.5)</span> вернет 50.</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
   <p class="code">path_get_speed(ind, pos);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Аргумент</th>
+        <th>Тип</th>
+        <th>Описание</th>
       </tr>
       <tr>
-        <td>index</td>
-        <td><span data-keyref="Type_Asset_Path">Path Asset</span></td>
-        <td>The index of the path to check.</td>
+        <td><span class="notranslate">index</span></td>
+        <td><span data-keyref="Type_Asset_Path">Путь Актива</span></td>
+        <td><span class="notranslate">The index of the path to check.</span></td>
       </tr>
       <tr>
-        <td>pos</td>
-        <td><span data-keyref="Type_Real">Real</span></td>
-        <td>How far through the path to check. Between 0 (start) and 1 (end), can be decimal.</td>
+        <td><span class="notranslate">pos</span></td>
+        <td><span data-keyref="Type_Real">Реально</span></td>
+        <td><span class="notranslate">How far through the path to check. Between 0 (start) and 1 (end), can be decimal.</span></td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
   <p class="code"><span data-keyref="Type_Real">Real</span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Пример:</h4>
   <p class="code">speed = path_get_speed(pth_Patrol, 0.5) / 20;</p>
-  <p>This will set the calling instance&#39;s speed to the speed factor of the point at exactly halfway through the given path, divided by 20. So if the speed factor found is the default 100, it will set the speed of the calling instance to 5.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Это установит скорость вызывающего экземпляра на коэффициент скорости точки, находящейся ровно на половине заданного пути, деленный на 20. Таким образом, если найденный коэффициент скорости равен 100 по умолчанию, то скорость вызывающего экземпляра будет равна 5.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Paths.htm">Paths</a></div>
-        <div style="float:right">Next: <a href="path_get_x.htm">path_get_x</a></div>
+        <div style="float:left">Назад: <a href="Paths.htm">Пути</a></div>
+        <div style="float:right">Следующий: <a href="path_get_x.htm"><span class="notranslate">path_get_x</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 path_get_speed

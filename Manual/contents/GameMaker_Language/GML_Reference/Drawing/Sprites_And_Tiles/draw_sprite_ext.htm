@@ -6,7 +6,7 @@
   <title>draw_sprite_ext</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference page for draw_sprite_ext" />
   <meta name="rh-index-keywords" content="draw_sprite_ext" />
@@ -16,76 +16,76 @@
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
   <h1>draw_sprite_ext</h1>
-  <p>This function will draw the given sprite as in the function <a href="draw_sprite.htm"><span class="inline">draw_sprite()</span></a> but with additional options to change the scale, blending, rotation and alpha of the sprite being drawn. Changing these values does <i>not</i> modify the resource in any way (only how it is drawn), and you can use any of the available <a href="../../Asset_Management/Sprites/Sprite_Instance_Variables/Sprite_Instance_Variables.htm">sprite variables</a> instead of direct values for all the arguments in the function. The image below illustrates how different values affect the drawing of the sprite:</p>
+  <p>Эта функция рисует заданный <span class="notranslate">sprite</span>, как в функции <a href="draw_sprite.htm"><span class="inline">draw_sprite()</span></a> но с дополнительными опциями для изменения масштаба, смешивания, поворота и альфа-функции рисуемого <span class="notranslate">sprite</span>. Изменение этих значений никак <i>не</i> изменяет ресурс (только то, как он рисуется), и вы можете использовать любую из доступных <a href="../../Asset_Management/Sprites/Sprite_Instance_Variables/Sprite_Instance_Variables.htm">переменных спрайта</a> вместо прямых значений для всех аргументов в функции. На рисунке ниже показано, как различные значения влияют на отрисовку спрайта:</p>
   <p><img alt="sraw_sprite_ext examples" class="center" src="../../../../assets/Images/Scripting_Reference/GML/Reference/Drawing/spr_ext.png" /></p>
   <p id="p"><span data-conref="../../../../assets/snippets/This_function_supports_nineslice.hts"> </span></p>
-  <p class="note"><b>NOTE</b>: Colour blending is only recommended for the HTML5 target when WebGL is enabled, although you can still set the blending colour if it is not enabled and it will blend the sprite as normal. However all blending in this way creates a duplicate sprite which is then stored in the cache and used when required. This is far from optimal and if you use multiple colour changes it will slow down your games performance unless you activate WebGL. if you do not wish to use WebGL, then you can set the font cache size to try and limit this should it be necessary using the function <span style="font-size:1px;"><a href="../../Asset_Management/Sprites/Sprite_Manipulation/sprite_set_cache_size_ext.htm"><span class="inline">sprite_set_cache_size()</span></a></span>.</p>
-  <p class="note"><b>NOTE</b>: This function may not work as expected when using skeleton animation sprites, and you may find that the function only draws the first frame of the default pose. You should be using the <span class="inline">draw_skeleton_*</span> functions instead.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p class="note"><b>ПРИМЕЧАНИЕ</b>: Смешивание цветов рекомендуется только для HTML5-цели, когда включен WebGL, хотя вы можете установить цвет смешивания, если он не включен, и он будет смешивать <span class="notranslate">sprite</span> как обычно. Однако при таком смешивании создается дубликат <span class="notranslate">sprite</span>, который затем сохраняется в кэше и используется при необходимости. Это далеко не оптимально, и если вы используете многократное изменение цвета, это замедлит производительность вашей игры, если вы не активируете WebGL. Если вы не хотите использовать WebGL, тогда вы можете установить размер кэша шрифтов, чтобы попытаться ограничить это, если это необходимо, используя функцию <span style="font-size:1px;"><a href="../../Asset_Management/Sprites/Sprite_Manipulation/sprite_set_cache_size_ext.htm"><span class="inline">sprite_set_cache_size()</span></a></span>.</p>
+  <p class="note"><b>ПРИМЕЧАНИЕ</b>: Эта функция может работать не так, как ожидается, при использовании скелетной анимации <span class="notranslate">sprites</span>, и вы можете обнаружить, что функция рисует только первый кадр позы по умолчанию. Вместо нее следует использовать функции <span class="inline">draw_skeleton_*</span>.</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
   <p class="code">draw_sprite_ext( sprite, subimg, x, y, xscale, yscale, rot, colour, alpha );</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th><th>Type</th>
-        <th>Description</th>
+        <th>Аргумент</th><th>Тип</th>
+        <th>Описание</th>
      </tr>
       <tr>
-        <td>sprite</td><td><span data-keyref="Type_Asset_Sprite"></span></td>
-        <td>The index of the sprite to draw.</td>
+        <td><span class="notranslate">sprite</span></td><td><span data-keyref="Type_Asset_Sprite"></span></td>
+        <td><span class="notranslate">The index of the sprite to draw.</span></td>
      </tr>
       <tr>
-        <td>subimg</td><td><span data-keyref="Type_Real"></span></td>
-        <td>The subimg (frame) of the sprite to draw (image_index or -1 correlate to the current frame of animation in the object).</td>
+        <td><span class="notranslate">subimg</span></td><td><span data-keyref="Type_Real"></span></td>
+        <td><span class="notranslate">The subimg (frame) of the sprite to draw (image_index or -1 correlate to the current frame of animation in the object).</span></td>
      </tr>
       <tr>
-        <td>x</td><td><span data-keyref="Type_Real"></span></td>
-        <td>The x coordinate of where to draw the sprite.</td>
+        <td><span class="notranslate">x</span></td><td><span data-keyref="Type_Real"></span></td>
+        <td><span class="notranslate">The x coordinate of where to draw the sprite.</span></td>
      </tr>
       <tr>
-        <td>y</td><td><span data-keyref="Type_Real"></span></td>
-        <td>The y coordinate of where to draw the sprite.</td>
+        <td><span class="notranslate">y</span></td><td><span data-keyref="Type_Real"></span></td>
+        <td><span class="notranslate">The y coordinate of where to draw the sprite.</span></td>
      </tr>
       <tr>
-        <td>xscale</td><td><span data-keyref="Type_Real"></span></td>
-        <td>The horizontal scaling of the sprite, as a multiplier: 1 = normal scaling, 0.5 is half etc...</td>
+        <td><span class="notranslate">xscale</span></td><td><span data-keyref="Type_Real"></span></td>
+        <td><span class="notranslate">The horizontal scaling of the sprite, as a multiplier: 1 = normal scaling, 0.5 is half etc...</span></td>
      </tr>
       <tr>
-        <td>yscale</td><td><span data-keyref="Type_Real"></span></td>
-        <td>The vertical scaling of the sprite as a multiplier: 1 = normal scaling, 0.5 is half etc...</td>
+        <td><span class="notranslate">yscale</span></td><td><span data-keyref="Type_Real"></span></td>
+        <td><span class="notranslate">The vertical scaling of the sprite as a multiplier: 1 = normal scaling, 0.5 is half etc...</span></td>
      </tr>
       <tr>
-        <td>rot</td><td><span data-keyref="Type_Real"></span></td>
-        <td>The rotation of the sprite. 0=right way up, 90=rotated 90 degrees counter-clockwise etc...</td>
+        <td><span class="notranslate">rot</span></td><td><span data-keyref="Type_Real"></span></td>
+        <td><span class="notranslate">The rotation of the sprite. 0=right way up, 90=rotated 90 degrees counter-clockwise etc...</span></td>
      </tr>
       <tr>
-        <td>colour</td><td><span data-keyref="Type_Constant_Colour"></span></td>
-        <td>The colour with which to blend the sprite. <span class="inline">c_white</span> is to display it normally.</td>
+        <td><span class="notranslate">colour</span></td><td><span data-keyref="Type_Constant_Colour"></span></td>
+        <td><span class="notranslate">The colour with which to blend the sprite. <span class="inline">c_white</span> это отображать его в обычном режиме.</td>
      </tr>
       <tr>
-        <td>alpha</td><td><span data-keyref="Type_Real"></span></td>
-        <td>The alpha of the sprite (from 0 to 1 where 0 is transparent and 1 opaque).</td>
+        <td><span class="notranslate">alpha</span></td><td><span data-keyref="Type_Real"></span></td>
+        <td><span class="notranslate">The alpha of the sprite (from 0 to 1 where 0 is transparent and 1 opaque).</span></td>
      </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
   <p class="code"><span data-keyref="Type_Void"></span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Пример:</h4>
   <p class="code">draw_sprite_ext(sprite_index, image_index, x, y, image_xscale, image_yscale, image_angle, image_blend, image_alpha);</p>
-  <p>This will draw the instances assigned sprite with all its default values (essentially the same as using <span class="inline">draw_self</span>).</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>В результате будут нарисованы экземпляры, которым присвоен <span class="notranslate">sprite</span> со всеми его значениями по умолчанию (по сути, это то же самое, что и использование <span class="inline">draw_self</span>).</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Sprites_And_Tiles.htm">Sprites And Tiles</a></div>
-        <div style="float:right">Next: <a href="draw_sprite_general.htm">draw_sprite_general</a></div>
+        <div style="float:left">Назад: <a href="Sprites_And_Tiles.htm">Спрайты и плитки</a></div>
+        <div style="float:right">Следующий: <a href="draw_sprite_general.htm"><span class="notranslate">draw_sprite_general</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2021 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 draw_sprite_ext

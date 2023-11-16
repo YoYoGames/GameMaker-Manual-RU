@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>прирост_достижений</title>
+  <meta name="generator" content="Adobe RoboHelp 2019" />
+  <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
+  <script src="../../../../assets/scripts/main_script.js"></script>
+  <meta name="rh-authors" content="Mark Alexander" />
+  <meta name="topic-comment" content="Reference page for achievement_increment" />
+  <meta name="rh-index-keywords" content="achievement_increment" />
+  <meta name="search-keywords" content="achievement_increment" />
+</head>
+<body>
+  <!--<div class="body-scroll" style="top: 150px;">-->
+  <h1>прирост_достижений</h1>
+  <p>В играх могут быть достижения, не имеющие значения завершения, поэтому вы можете использовать эту функцию для увеличения этих достижений на заданную сумму. На <span class="notranslate">Android</span> вы отправляете ID достижения в виде строки (это уникальный ID достижения, который был присвоен, когда
+    вы установили достижение), в то время как на всех других платформах вы передаете определенное имя достижения в виде строки, а затем указываете фактическое значение достижения для увеличения.</p>
+  <p>Функция запустит <a href="../../../../The_Asset_Editors/Object_Properties/Async_Events/Social.htm">социальное асинхронное событие</a>, в котором возвращаемая <a href="../../../GML_Overview/Variables/Builtin_Global_Variables/async_load.htm"><tt>async_load</tt></a>    DS map будут следующие пары ключ/значение:</p>
+  <ul class="colour">
+    <li>&quot;<b>type</b>&quot; - Это тип события, которое было запущено, для данной функции это будет строка &quot;<tt>achievement_increment_result</tt>&quot;.</li>
+    <li>&quot;<b>id</b>&quot; - Это идентификатор события, и для этой функции он возвращает константу <span class="notranslate">GML</span> <tt>GooglePlayServices_EVENT_ID_INCREMENT_ACHIEVEMENT</tt>.</li>
+    <li>&quot;<b>achievement_id</b>&quot; - Это уникальный ID достижения, которое было увеличено.</li>
+    <li>&quot;<b>status</b>&quot; - Будет равно 1, если достижение было увеличено успешно, или 0, если запрос не был выполнен.</li>
+    <li>&quot;<b>complete</b>&quot; - значение будет равно 1, если достижение было выполнено по данному инкременту, или 0, если запрос не был выполнен.</li>
+  </ul>
+  <p> </p>
+  <h4><b>Синтаксис:</b></h4>
+  <p class="code">achievement_increment(name, value)</p>
+  <table>
+    <tbody>
+      <tr>
+        <th>Аргумент</th>
+        <th>Описание</th>
+      </tr>
+      <tr>
+        <td><span class="notranslate">name</span></td>
+        <td>Имя/идентификатор достижения.</td>
+      </tr>
+      <tr>
+        <td><span class="notranslate">value</span></td>
+        <td>Значение, которое будет отправлено в качестве приращения.</td>
+      </tr>
+    </tbody>
+  </table>
+  <p> </p>
+  <h4>Возвращается:</h4>
+  <p class="code">N/A</p>
+  <p> </p>
+  <h4>Пример:</h4>
+  <p class="code">achievement_increment(global.Achievement[0], score);</p>
+  <p>Приведенный выше код добавляет текущий результат игрока в достижение с ID, сохраненным в глобальном массиве.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <div class="footer">
+    <div class="buttons">
+      <div class="clear">
+        <div style="float:left">Назад: <a href="Achievements_And_Leaderboards.htm">Достижения и таблицы лидеров</a></div>
+        <div style="float:right">Следующий: <a href="achievement_show_achievements.htm"><span class="notranslate">achievement_show_achievements</span></a></div>
+      </div>
+    </div>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Все права защищены</span></h5>
+  </div>
+  <!-- KEYWORDS
+achievement_increment
+-->
+  <!-- TAGS
+achievement_increment
+-->
+</body>
+</html>

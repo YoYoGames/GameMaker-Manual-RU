@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>steam_get_quota_total</title>
+  <meta name="generator" content="Adobe RoboHelp 2020" />
+  <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
+  <script src="../../../../assets/scripts/main_script.js"></script>
+  <meta name="rh-authors" content="Mark Alexander" />
+  <meta name="topic-comment" content="Reference page for steam_get_quota_total" />
+  <meta name="rh-index-keywords" content="steam_get_quota_total" />
+  <meta name="search-keywords" content="steam_get_quota_total" />
+</head>
+<body>
+  <!--<div class="body-scroll" style="top: 150px;">-->
+  <h1>steam_get_quota_total</h1>
+  <p>При использовании облака <span class="notranslate">Steam</span> для хранения и синхронизации файлов вы должны установить <i>квоту</i> пространства, которое потребуется вашей игре. Эта квота устанавливается для каждой игры, поддерживаемой Cloud, по принципу "пользователь - игра". Например, если квота для игры X составляет 1 мегабайт, то каждая учетная запись <span class="notranslate">Steam</span>, владеющая игрой X, может хранить в Cloud не более 1 мегабайта данных, связанных с этой игрой. Любые другие игры с поддержкой Cloud, которыми владеет пользователь (например, игра Y), не будут затронуты данными, хранящимися в Game X. По умолчанию квота для новых игр Steamworks составляет один гигабайт, но вы можете изменить это значение в панели управления Steamworks для вашей игры.</p>
+  <p class="note"><b>ПРИМЕЧАНИЕ</b>: После исчерпания квоты запись файлов <b>будет прекращена</b>. Если вы думаете, что квота может быть исчерпана для пользователя вашей игры, вы должны создать код для обработки этого, так как, ничего не делая, вы оставляете пользователей в ситуации, когда они не могут исправить ситуацию, что приведет к плохому восприятию вашей игры.</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
+  <p class="code">steam_get_quota_total();</p>
+  <p> </p>
+  <h4>Возвращается:</h4>
+  <p class="code">Real</p>
+  <p> </p>
+  <h4>Пример:</h4>
+  <p class="code">if steam_is_cloud_enabled_for_app()<br />
+    {<br />
+        quota = steam_get_quota_total();<br />
+    }</p>
+  <p>Приведенный выше код проверяет, включено ли облако <span class="notranslate">steam</span> для игры, и если да, то получает размер квоты хранения и сохраняет его в переменной.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <div class="footer">
+    <div class="buttons">
+      <div class="clear">
+        <div style="float:left">Назад: <a href="Steam_Cloud.htm">Паровое облако</a></div>
+        <div style="float:right">Следующий: <a href="steam_get_quota_free.htm"><span class="notranslate">steam_get_quota_free</span></a></div>
+      </div>
+    </div>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
+  </div>
+  <!-- KEYWORDS
+steam_get_quota_total
+-->
+  <!-- TAGS
+steam_get_quota_total
+-->
+</body>
+</html>

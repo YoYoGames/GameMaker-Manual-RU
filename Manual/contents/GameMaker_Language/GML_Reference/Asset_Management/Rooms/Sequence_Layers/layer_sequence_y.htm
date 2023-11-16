@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>layer_sequence_y</title>
+  <title>слой_последовательности_y</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page outlining the function layer_sequence_y" />
   <meta name="rh-index-keywords" content="layer_sequence_y" />
@@ -14,49 +14,49 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>layer_sequence_y</h1>
-  <p>With this function you can set the position along the Y (vertical) axis of the room for the given sequence element. You supply the sequence element ID as returned by <a href="layer_sequence_create.htm"><span class="inline">layer_sequence_create()</span></a> or by one of the <a href="../General_Layer_Functions/General_Layer_Functions.htm">layer element functions</a> along with the Y position to set and the sequence will be moved to the new position.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <h1>слой_последовательности_y</h1>
+  <p>С помощью этой функции можно задать положение вдоль оси Y (вертикальной) комнаты для заданного элемента последовательности. Вы передаете идентификатор элемента последовательности, возвращенный функцией <a href="layer_sequence_create.htm"><span class="inline">layer_sequence_create()</span></a> или одной из <a href="../General_Layer_Functions/General_Layer_Functions.htm">функций элемента слоя</a> вместе с заданной позицией по оси Y, и последовательность будет перемещена в новое положение.</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
   <p class="code">layer_sequence_y(sequence_element_id, pos_y)</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th><th>Type</th>
-        <th>Description</th>
+        <th>Аргумент</th><th>Тип</th>
+        <th>Описание</th>
      </tr>
       <tr>
-        <td>sequence_element_id</td><td><span data-keyref="Type_ID_Element_Sequence"></span></td>
-        <td>The unique ID value of the sequence element to target</td>
+        <td><span class="notranslate">sequence_element_id</span></td><td><span data-keyref="Type_ID_Element_Sequence"></span></td>
+        <td><span class="notranslate">The unique ID value of the sequence element to target</span></td>
      </tr>
       <tr>
-        <td>pos_y</td><td><span data-keyref="Type_Real"></span></td>
-        <td>The Y position to move the sequence element to</td>
+        <td><span class="notranslate">pos_y</span></td><td><span data-keyref="Type_Real"></span></td>
+        <td><span class="notranslate">The Y position to move the sequence element to</span></td>
      </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
   <p class="code"><span data-keyref="Type_Void"></span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Пример:</h4>
   <p class="code">if layer_sequence_exists(my_seq)<br />
     {<br />
         layer_sequence_x(my_seq, x);<br />
         layer_sequence_y(my_seq, y);<br />
     }</p>
-  <p>The above code checks to see if the sequence element referenced in the variable &quot;my_seq&quot; exists, and if it does it sets the x/y position to the that of the instance running the code.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Приведенный выше код проверяет, существует ли элемент последовательности, на который ссылается переменная &quot;my_seq&quot;, и если да, то он устанавливает позицию x/y на позицию экземпляра, выполняющего код.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Sequence_Layers.htm">Sequence Layers</a></div>
-        <div style="float:right">Next: <a href="layer_sequence_angle.htm">layer_sequence_angle</a></div>
+        <div style="float:left">Назад: <a href="Sequence_Layers.htm">Последовательность слоев</a></div>
+        <div style="float:right">Следующий: <a href="layer_sequence_angle.htm"><span class="notranslate">layer_sequence_angle</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2021 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 layer_sequence_y

@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Animated Tiles</title>
+  <title>Анимированные плитки</title>
   <meta name="generator" content="Adobe RoboHelp 2019" />
   <link rel="stylesheet" href="../../assets/css/default.css" type="text/css" />
-  <script src="../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page detailing how the tile set editor animated tiles works" />
   <meta name="rh-index-keywords" content="Tile Sets - Animated Tiles" />
@@ -14,40 +14,39 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>Animated Tiles</h1>
-  <p>Tiles are generally considered to be static cells within the game room, however with <span data-keyref="GameMaker Name">GameMaker</span> it is possible to animate them, just as you would a sprite. Why not just use sprites, you ask? Well, sprites have a certain processing overhead due
-    to them being associated with a bounding box and the way in which they are rendered, but tiles have a much lower processing overhead and so are faster to render. This does come at a price however, in that with tile set animations you are limited to
-    creating animations that must be a power of two in length - ie: of 2, 4, 8, 16, etc... frames - and they must obviously be created within the tile grid, <em>and </em>they must all animate at the same speed (on a per-tile set basis). However, even
-    with these limitations, animated tiles are a powerful feature that can be used to add life and colour to otherwise static environments and backgrounds.</p>
-  <p>To create a tile animation you must first have a tile set that has the required tiles all within the one sprite image (but not as sprite frames, so a single large sprite frame with all the animation images within it), and then in the <a href="../Tile_Sets.htm">Tile Set Editor</a>    you click on the <strong>Tile Animation</strong> button to bring up the Animation Editor:</p>
-  <p><img alt="Tile Animation Window" class="center" src="../../assets/Images/Asset_Editors/Editor_Tilesets_Animations.png" />The example image above is a single image with all animation frames contained within it, but it should be noted that the image could
-    also contain other non-animation tiles too, since you can use a single massive tile set and then &quot;cherry pick&quot; the parts of it that you want to create the animation from. For example, you could have a large landscape tile set with trees,
-    earth and water, and within the tile set have multiple tiles to be animated to make the water ripple.</p>
-  <p>To create a tile animation you first have to add an animation to the animation library by clicking the <strong>Add Animation </strong>button <img alt="Add Animation Icon" class="icon" src="../../assets/Images/Icons/Icon_AddArgument.png" />, which will
-    add an empty animation strip to the library and request that you select a number of frames to be used:</p>
-  <p><img alt="Add Animation" class="center" src="../../assets/Images/Asset_Editors/Editor_Tilesets_AnimationAdd.png" />You will then be presented with a view of each empty animation frame, with the initial frame highlighted for you:</p>
-  <p><img alt="An Empty Animation" class="center" src="../../assets/Images/Asset_Editors/Editor_Tilesets_EmptyAnim.png" />If you then go back to the tile set image on the left of the editor you can click <img alt="LMB Icon" class="icon" height="24" src="../../assets/Images/Icons/Icon_LMB.png"
-      width="21" /> on any tile to add it into the animation and the frame will advance to the next one. Clicking <img alt="LMB Icon" class="icon" height="24" src="../../assets/Images/Icons/Icon_LMB.png" width="21" /> on successive tiles will fill up the
-    animation, which you can then preview by clicking on the &quot;play&quot; button beside the frames:</p>
-  <p><img alt="Add Animation Frames" class="center" src="../../assets/Images/Asset_Editors/Editor_Tilesets_AddFrames.gif" />Once you have done that your animation will become part of the animation library and when you enter the <a href="../Rooms.htm">Room Editor</a>    you can select it and place it within the room. Note that if you select any of the tiles from an animation to place in a room, that tile will animate from the selected tile onwards, so you can &quot;desynchronise&quot; an animation by placing separate
-    frames within the room and they will all animate. The only caveat to this is that the animation speed will always be the same, since it is defined for the whole tile set and not individual animations within the library.</p>
-  <p>A few things to note about tiles that are being used in animations:</p>
+  <h1>Анимированные плитки</h1>
+  <p>Плитки обычно считаются статичными ячейками в игровой комнате, однако в <span data-keyref="GameMaker Name">GameMaker</span> их можно анимировать, как и <span class="notranslate">sprite</span>. Почему бы просто не использовать <span class="notranslate">sprites</span>, спросите вы? Ну, <span class="notranslate">sprites</span> имеет определенные накладные расходы на обработку из-за того.
+    поскольку они связаны с ограничивающей рамкой и способом их рендеринга, но плитки имеют гораздо меньшие затраты на обработку и поэтому быстрее рендерятся. Однако за это приходится платить, так как при использовании анимации с набором плиток вы ограничены в возможности
+    созданием анимации, длина которой должна быть равна степени двойки - т.е. 2, 4, 8, 16 и т.д. кадров - и они должны быть созданы внутри сетки плиток, <em>и </em>все они должны анимироваться с одинаковой скоростью (на основе каждого набора плиток). Однако, даже
+    даже с этими ограничениями, анимированные плитки - это мощная функция, которую можно использовать для придания жизни и цвета статичным окружениям и фонам.</p>
+  <p>Чтобы создать анимацию плиток, сначала нужно создать набор плиток, в котором все необходимые плитки находятся в одном изображении <span class="notranslate">sprite</span> (но не в виде кадров <span class="notranslate">sprite</span>, а в виде одного большого кадра <span class="notranslate">sprite</span> со всеми анимационными изображениями внутри него), а затем в <a href="../Tile_Sets.htm">редакторе набора плиток</a> нажать на кнопку <strong>Tile Animation</strong>, чтобы открыть редактор анимации:</p>
+  <p><img>Приведенный выше пример изображения представляет собой единое изображение со всеми кадрами анимации, но следует отметить, что изображение может
+    содержать и другие неанимационные плитки, поскольку вы можете использовать один массивный набор плиток, а затем &quot;выбрать&quot; из него те части, на основе которых вы хотите создать анимацию. Например, у вас может быть большой набор плиток ландшафта с деревьями,
+    земля и вода, а внутри этого набора плиток есть несколько плиток, которые нужно анимировать, чтобы сделать рябь на воде.</p>
+  <p>Чтобы создать анимацию плитки, сначала нужно добавить анимацию в библиотеку анимации, нажав на кнопку <strong>Добавить анимацию </strong> <img>, что позволит
+    добавит пустую полосу анимации в библиотеку и попросит вас выбрать количество кадров, которые будут использоваться:</p>
+  <p><img>Затем вам будет представлен вид каждого пустого кадра анимации, причем начальный кадр будет выделен для вас:</p>
+  <p><img>Если вы вернетесь к изображению набора плиток в левой части редактора, вы можете нажать <img> на любой плитке, чтобы добавить ее в анимацию, и кадр перейдет к следующему. Щелчок <img> на последующих плитках заполнит анимацию.
+    анимацию, которую вы можете просмотреть, нажав на кнопку &quot;play&quot; рядом с кадрами:</p>
+  <p><img>После этого ваша анимация станет частью библиотеки анимации, и когда вы войдете в <a href="../Rooms.htm">редактор комнат</a>, вы сможете выбрать ее и разместить в комнате. Обратите внимание, что если вы выберите любую плитку из анимации для размещения в комнате, эта плитка будет анимироваться, начиная с выбранной плитки и далее, поэтому вы можете &quot;рассинхронизировать&quot; анимацию, разместив отдельные кадры в комнате.
+    кадры в комнате, и все они будут анимированы. Единственная оговорка - скорость анимации всегда будет одинаковой, поскольку она определяется для всего набора плиток, а не для отдельных анимаций в библиотеке.</p>
+  <p>Следует отметить несколько моментов, касающихся плиток, которые используются в анимации:</p>
   <ul class="colour">
-    <li>If the tile has its own animation specified (so there is an animation where it is set as the first tile) then it will use that animation.</li>
-    <li>If the tile doesn&#39;t have its own animation but is used in only one other animation, then it will use that animation starting at the first position that tile is present in the animation.</li>
-    <li>If the tile doesn&#39;t have its own animation and is used in multiple other animations, then it will not animate at all. You will need to explicitly specify an animation with it as the first tile.</li>
+    <li>Если у плитки задана собственная анимация (то есть существует анимация, в которой она установлена как первая плитка), то она будет использовать эту анимацию.</li>
+    <li>Если плитка не имеет собственной анимации, но используется только в одной другой анимации, то будет использоваться эта анимация, начиная с первой позиции, в которой плитка присутствует в анимации.</li>
+    <li>Если плитка не имеет собственной анимации и используется в нескольких других анимациях, то она не будет анимироваться вообще. Вам нужно будет явно указать анимацию с этой плиткой в качестве первой.</li>
   </ul>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="../Tile_Sets.htm">Tile Sets</a></div>
-        <div style="float:right">Next: <a href="Auto_Tiles.htm">Auto Tiles</a></div>
+        <div style="float:left">Назад: <a href="../Tile_Sets.htm">Наборы плиток</a></div>
+        <div style="float:right">Следующий: <a href="Auto_Tiles.htm">Автоплитка</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2021 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 Animated Tiles

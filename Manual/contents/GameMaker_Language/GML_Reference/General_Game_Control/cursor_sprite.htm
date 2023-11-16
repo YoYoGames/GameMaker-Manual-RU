@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>cursor_sprite</title>
+  <title>курсор_спрайт</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
-  <script src="../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="This page outlines the function cursor_sprite" />
   <meta name="rh-index-keywords" content="cursor_sprite" />
@@ -14,30 +14,30 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>cursor_sprite</h1>
-  <p>Setting this variable will instruct <span data-keyref="GameMaker Name"><span data-keyref="GameMaker Name">GameMaker</span></span> to use the designated sprite as a cursor (basically setting it to the current mouse x/y position every step). The default value is -1 which is no sprite for the cursor, but you can assign any sprite index from the game assets or that has been imported from an external resource. Please note that there is no way to control the animation speed or image_index, so if the sprite has sub-images, these will be cycled at the same speed as the room speed. To remove the cursor sprite, you can set this variable to -1 again.</p>
-  <p>It is also worth noting that this variable does <i>not</i> replace the game window cursor, and that it will still be drawn as normal. To avoid this you can use the function <a href="../Cameras_And_Display/The_Game_Window/window_set_cursor.htm"><span class="inline">window_set_cursor()</span></a> and set it to the constant <span class="inline">cr_none</span> which will make the standard cursor invisible.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <h1>курсор_спрайт</h1>
+  <p>Установка этой переменной дает команду <span data-keyref="GameMaker Name"><span data-keyref="GameMaker Name">GameMaker</span></span> использовать указанный <span class="notranslate">sprite</span> в качестве курсора (по сути, устанавливая его на текущую позицию мыши x/y каждый шаг). Значение по умолчанию равно -1, что означает отсутствие <span class="notranslate">sprite</span> для курсора, но вы можете назначить любой индекс <span class="notranslate">sprite</span> из активов игры или импортированный из внешнего ресурса. Обратите внимание, что нет возможности управлять скоростью анимации или индексом изображения, поэтому если <span class="notranslate">sprite</span> имеет подизображения, они будут циклически повторяться с той же скоростью, что и скорость комнаты. Чтобы убрать курсор <span class="notranslate">sprite</span>, вы можете снова установить эту переменную в -1.</p>
+  <p>Также стоит отметить, что эта переменная <i>не</i> заменяет курсор игрового окна, и он все равно будет рисоваться как обычно. Чтобы избежать этого, вы можете использовать функцию <a href="../Cameras_And_Display/The_Game_Window/window_set_cursor.htm"><span class="inline">window_set_cursor()</span></a> и установить ее в константу <span class="inline">cr_none</span>, что сделает стандартный курсор невидимым.</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
   <p class="code">cursor_sprite;</p>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
   <p class="code"><span data-keyref="Type_Asset_Sprite">Sprite Asset</span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Пример:</h4>
   <p class="code">cursor_sprite = spr_CustomCursor;</p>
-  <p>The above code will set the sprite indexed in the variable &quot;spr_CustomCursor&quot; to be the cursor sprite for the game.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Приведенный выше код установит <span class="notranslate">sprite</span>, указанный в переменной &quot;spr_CustomCursor&quot;, в качестве курсора <span class="notranslate">sprite</span> для игры.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="General_Game_Control.htm">General Game Control</a></div>
-        <div style="float:right">Next: <a href="game_id.htm">game_id</a></div>
+        <div style="float:left">Назад: <a href="General_Game_Control.htm">Общее управление игрой</a></div>
+        <div style="float:right">Следующий: <a href="game_id.htm"><span class="notranslate">game_id</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 highscore_value

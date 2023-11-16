@@ -6,7 +6,7 @@
   <title>audio_create_stream</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page explaining the function audio_create_stream" />
   <meta name="rh-index-keywords" content="audio_create_stream" />
@@ -15,46 +15,45 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1><span data-field="title" data-format="default">audio_create_stream</span></h1>
-  <p>With this function you can create a new sound index which can then be used in the regular audio functions to stream audio directly from an external OGG file source.</p>
-  <p>The function requires the filename (which can be an included file, for example) and will return the new sound index for use.</p>
-  <p class="note"><span data-conref="../../../../assets/snippets/Tag_note.hts"> </span> After you no longer need the sound you should call the function <span class="inline2"><a data-xref="{title}" href="audio_destroy_stream.htm">audio_destroy_stream</a></span> with the sound index to remove it from memory otherwise you may get a memory leak. This will slow down and eventually crash your game.</p>
-  <p class="note"><span data-conref="../../../../assets/snippets/Tag_note.hts"> </span> This functionality is not available for the HTML5 target platform.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
-  <p class="code"><span data-field="title" data-format="default">audio_create_stream</span>(filename);</p>
+  <h1>audio_create_stream</h1>
+  <p>С помощью этой функции вы можете создать новый звуковой индекс, который затем можно использовать в обычных аудиофункциях для потоковой передачи звука непосредственно из внешнего источника файла OGG. Функция требует имя файла (которое может быть, например, включенным файлом) и возвращает новый звуковой индекс для использования. Обратите внимание, что после того, как звук больше не нужен, необходимо вызвать функцию <a href="audio_destroy_stream.htm"><span class="inline">audio_destroy_stream()</span></a> с индексом звука, чтобы удалить его из памяти, иначе вы можете получить утечку памяти, что приведет к замедлению и, в конечном счете, к краху вашей игры.</p>
+  <p class="note"><b>ПРИМЕЧАНИЕ</b>: Эта функциональность недоступна для целевой платформы HTML5.</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
+  <p class="code">audio_create_stream(filename);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Аргумент</th>
+        <th>Тип</th>
+        <th>Описание</th>
       </tr>
       <tr>
-        <td>filename</td>
-        <td><span data-keyref="Type_String"><a href="../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">String</a></span></td>
-        <td>Path to the file (OGG only) to stream the audio from.</td>
+        <td><span class="notranslate">filename</span></td>
+        <td><span data-keyref="Type_String">Строка</span></td>
+        <td><span class="notranslate">Path to the file (OGG only) to stream the audio from.</span></td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
-  <p class="code"><span data-keyref="Type_Asset_Sound"><a href="../../../../../The_Asset_Editors/Sounds.htm" target="_blank">Sound Asset</a></span></p>
-  <p> </p>
-  <h4>Example:</h4>
-  <p class="code">snd = <span data-field="title" data-format="default">audio_create_stream</span>(&quot;Music/Track1.ogg&quot;);<br />
+  <p> </p>
+  <h4>Возвращается:</h4>
+  <p class="code"><span data-keyref="Type_Asset_Sound">Sound Asset</span></p>
+  <p> </p>
+  <h4>Пример:</h4>
+  <p class="code">snd = audio_create_stream(&quot;Music/Track1.ogg&quot;);<br />
     audio_play_sound(snd, 0, true);</p>
-  <p>The above code creates a new sound index in the variable &quot;snd&quot; from the given file, then plays this sound.</p>
-  <p> </p>
-  <p> </p>
+  <p>Приведенный выше код создает новый индекс звука в переменной &quot;snd&quot; из заданного файла, затем воспроизводит этот звук.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a data-xref="{title}" href="Audio.htm">Audio</a></div>
-        <div style="float:right">Next: <a data-xref="{title}" href="audio_destroy_stream.htm">audio_destroy_stream</a></div>
+        <div style="float:left">Назад: <a href="Audio.htm">Аудио</a></div>
+        <div style="float:right">Следующий: <a href="audio_destroy_stream.htm"><span class="notranslate">audio_destroy_stream</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 audio_create_stream

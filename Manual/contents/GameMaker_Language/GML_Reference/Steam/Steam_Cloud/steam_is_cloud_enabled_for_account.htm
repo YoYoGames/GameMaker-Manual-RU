@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>steam_is_cloud_enabled_for_account</title>
+  <meta name="generator" content="Adobe RoboHelp 2020" />
+  <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
+  <script src="../../../../assets/scripts/main_script.js"></script>
+  <meta name="rh-authors" content="Mark Alexander" />
+  <meta name="topic-comment" content="Reference page for steam_is_cloud_enabled_for_account" />
+  <meta name="rh-index-keywords" content="steam_is_cloud_enabled_for_account" />
+  <meta name="search-keywords" content="steam_is_cloud_enabled_for_account" />
+</head>
+<body>
+  <!--<div class="body-scroll" style="top: 150px;">-->
+  <h1>steam_is_cloud_enabled_for_account</h1>
+  <p>С помощью этой функции вы можете проверить, включен ли сервис <span class="notranslate">Steam</span> Cloud в настройках клиента <span class="notranslate">Steam</span>. Она вернет <tt>true</tt>, если это так, и <tt>false</tt> в противном случае. Обратите внимание, что это не означает, что вы можете автоматически сохранять данные в облако, так как оно также должно быть включено для вашей игры (вы можете проверить это с помощью функции <a href="steam_is_cloud_enabled_for_app.htm"><tt>steam_is_cloud_enabled_for_app()</tt></a>). Если облако <span class="notranslate">Steam</span> включено для вашей игры, но пользователь отключил его локально, вы все равно можете использовать функции облака для хранения и получения данных из локальной копии всех файлов, просто они не будут загружаться в облако при завершении игры или синхронизироваться при ее запуске.</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
+  <p class="code">steam_is_cloud_enabled_for_account();</p>
+  <p> </p>
+  <h4>Возвращается:</h4>
+  <p class="code">Boolean</p>
+  <p> </p>
+  <h4>Пример:</h4>
+  <p class="code">if steam_is_cloud_enabled_for_account<br />
+    {<br />
+        steam_file_share(&quot;Save.txt&quot;);<br />
+    }</p>
+  <p>Приведенный выше код проверяет, включен ли у пользователя <span class="notranslate">Steam</span> Cloud, и если он возвращает <tt>true</tt>, то синхронизирует заданный файл.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <div class="footer">
+    <div class="buttons">
+      <div class="clear">
+        <div style="float:left">Назад: <a href="Steam_Cloud.htm">Паровое облако</a></div>
+        <div style="float:right">Следующий: <a href="steam_get_quota_total.htm"><span class="notranslate">steam_get_quota_total</span></a></div>
+      </div>
+    </div>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
+  </div>
+  <!-- KEYWORDS
+steam_is_cloud_enabled_for_account
+-->
+  <!-- TAGS
+steam_is_cloud_enabled_for_account
+-->
+</body>
+</html>

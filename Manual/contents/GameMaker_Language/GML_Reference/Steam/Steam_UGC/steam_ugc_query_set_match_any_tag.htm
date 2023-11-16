@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>steam_ugc_query_set_match_any_tag</title>
+  <meta name="generator" content="Adobe RoboHelp 2019" />
+  <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
+  <script src="../../../../assets/scripts/main_script.js"></script>
+  <meta name="rh-authors" content="Mark Alexander" />
+  <meta name="topic-comment" content="Reference page for steam_ugc_query_set_match_any_tag" />
+  <meta name="rh-index-keywords" content="steam_ugc_query_set_match_any_tag" />
+  <meta name="search-keywords" content="steam_ugc_query_set_match_any_tag" />
+</head>
+<body>
+  <!--<div class="body-scroll" style="top: 150px;">-->
+  <h1>steam_ugc_query_set_match_any_tag</h1>
+  <p>Эта функция может использоваться для дополнительной фильтрации любого заданного запроса пользовательского контента, в частности, для включения или отключения сопоставления тегов. Ручка запроса - это значение, возвращенное при создании запроса (например, с помощью, <a href="steam_ugc_create_query_user.htm"><tt>steam_ugc_create_query_user()</tt></a>)
+    а второй аргумент - <tt>true</tt> или <tt>false</tt>, в зависимости от того, требуется ли вам проверка на совпадение тегов. Функция вернет <tt>true</tt>, если фильтр запроса был установлен правильно, и <tt>false</tt> в противном случае.</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
+  <p class="code">steam_ugc_query_set_match_any_tag(ugc_query_handle , match_any_tag);</p>
+  <table>
+    <tbody>
+      <tr>
+        <th>Аргумент</th>
+        <th>Описание</th>
+      </tr>
+      <tr>
+        <td><span class="notranslate">ugc_query_handle</span></td>
+        <td>Ручка запроса, которую следует использовать.</td>
+      </tr>
+      <tr>
+        <td><span class="notranslate">match_any_tag</span></td>
+        <td>Устанавливает, должны ли теги элементов пользовательского контента соответствовать чему-либо или нет.</td>
+      </tr>
+    </tbody>
+  </table>
+  <p> </p>
+  <h4>Возвращается:</h4>
+  <p class="code">Boolean</p>
+  <p> </p>
+  <h4>Пример:</h4>
+  <p class="code">var query_handle = steam_ugc_create_query_all(ugc_query_RankedByVote, ugc_match_Items, 1);<br/> steam_ugc_query_set_match_any_tag(query_handle, false);<br/> steam_ugc_query_add_excluded_tag(query_handle, &quot;walking simulator&quot;);<br/> steam_ugc_query_set_return_long_description(query_handle,
+    true);<br/> steam_ugc_query_set_allow_cached_response(query_handle, true);<br/> query_ID = steam_ugc_send_query(query_handle);</p>
+  <p>Приведенный выше код создает запрос запроса и сохраняет его хэндл в локальной переменной для дальнейшего использования в остальных функциях, которые определяют запрос перед отправкой запроса.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <div class="footer">
+    <div class="buttons">
+      <div class="clear">
+        <div style="float:left">Назад: <a href="Steam_UGC.htm">UGC</a></div>
+        <div style="float:right">Следующий: <a href="steam_ugc_query_set_search_text.htm"><span class="notranslate">steam_ugc_query_set_search_text</span></a></div>
+      </div>
+    </div>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Все права защищены</span></h5>
+  </div>
+  <!-- KEYWORDS
+steam_ugc_query_set_match_any_tag
+-->
+  <!-- TAGS
+steam_ugc_query_set_match_any_tag
+-->
+</body>
+</html>

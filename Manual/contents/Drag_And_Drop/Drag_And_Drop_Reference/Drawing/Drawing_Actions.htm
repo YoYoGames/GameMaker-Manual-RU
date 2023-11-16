@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Drawing Actions</title>
+  <title>Действия при рисовании</title>
   <meta name="generator" content="Adobe RoboHelp 2019" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
-  <script src="../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Section detailing all the Drawing actions" />
   <meta name="rh-index-keywords" content="GML Visual Overview - Drawing Actions Library" />
@@ -14,150 +14,150 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>Drawing Action Library</h1>
-  <p><img alt="Drawing Action Library" class="center" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Drawing/Lib_Drawing.png" />The <b>Drawing</b> action library is where you can find the actions required to draw sprites, text or
-    shapes as well as set certain draw properties. Most of these actions are <strong>only for use in the various <a href="../../../The_Asset_Editors/Object_Properties/Draw_Events.htm">Draw Events</a></strong> of an object, and may not work if used outside
-    of the Draw Event. The exceptions to this are the <i>Set</i> actions, which can be added to any event and will affect all drawing for all instances afterwards.</p>
-  <p>It is important to note that if you add any actions into the main <b>Draw Event</b> of an object, then it will <i>not</i> draw the sprite that has been assigned to the instance unless you explicitly tell <span data-keyref="GameMaker Name">GameMaker</span> to draw it, using an action
-    like <a href="Draw_Self.htm">Draw Self</a>. Basically, <span data-keyref="GameMaker Name">GameMaker</span> will default draw any sprite assigned to an instance, only if there is <em>nothing </em>else in the Draw Event.</p>
-  <p>The Draw actions available are as follows:</p>
+  <h1>Библиотека действий при рисовании</h1>
+  <p><img>В библиотеке действий <b>рисования</b> можно найти действия, необходимые для рисования <span class="notranslate">sprites</span>, текста или фигур, а также для установки определенных свойств рисования.
+    фигуры, а также установить определенные свойства рисования. Большинство из этих действий <strong>предназначены только для использования в различных <a href="../../../The_Asset_Editors/Object_Properties/Draw_Events.htm">событиях рисования</a></strong> объекта и могут не работать, если используются вне
+    События рисования. Исключением являются действия <i>Set</i>, которые можно добавить в любое событие, и они будут влиять на все рисование для всех последующих экземпляров.</p>
+  <p>Важно отметить, что если вы добавите какие-либо действия в основное <b>событие Draw Event</b> объекта, то он <i>не</i> будет рисовать <span class="notranslate">sprite</span>, который был назначен данному экземпляру, пока вы явно не прикажете <span data-keyref="GameMaker Name">GameMaker</span> нарисовать его, используя действие
+    например, <a href="Draw_Self.htm">Draw Self</a>. В принципе, <span data-keyref="GameMaker Name">GameMaker</span> будет по умолчанию рисовать любой <span class="notranslate">sprite</span>, назначенный экземпляру, только если в событии Draw Event <em>нет ничего </em>другого.</p>
+  <p>Ниже перечислены доступные действия Draw:</p>
   <table class="dnd" style="text-align: left;margin-left:">
     <tbody>
       <tr style="height: 1px;">
-        <td class="icons" style="margin-left: 16px;"><img alt="Draw Self Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Drawing/i_Drawing_Draw_Self.png" /></td>
-        <td class="dnd" style=""><a href="Draw_Self.htm">Draw Self</a></td>
+        <td class="icons" style="margin-left: 16px;"><img alt="Drawing Action Library" class="center" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Drawing/Lib_Drawing.png" /></td>
+        <td class="dnd" style=""><a href="Draw_Self.htm">Нарисовать себя</a></td>
+      </tr>
+      <tr>
+        <td class="dnd_icons" style="margin-left: 16px;"><img alt="Draw Self Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Drawing/i_Drawing_Draw_Self.png" /></td>
+        <td class="dnd" style=""><a href="Draw_Value.htm">Чертежное значение</a></td>
       </tr>
       <tr>
         <td class="dnd_icons" style="margin-left: 16px;"><img alt="Draw Value Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Drawing/i_Drawing_Draw_Value.png" /></td>
-        <td class="dnd" style=""><a href="Draw_Value.htm">Draw Value</a></td>
+        <td class="dnd" style=""><a href="Draw_Transformed_Value.htm">Нарисовать преобразованное значение</a></td>
       </tr>
       <tr>
         <td class="dnd_icons" style="margin-left: 16px;"><img alt="Draw Transformed Value Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Drawing/i_Drawing_Draw_Transformed_Value.png" /></td>
-        <td class="dnd" style=""><a href="Draw_Transformed_Value.htm">Draw Transformed Value</a></td>
+        <td class="dnd" style=""><a href="Draw_Sprite.htm">Нарисовать спрайт</a></td>
       </tr>
       <tr>
         <td class="dnd_icons" style="margin-left: 16px;"><img alt="Draw Sprite Icon" class="icon" height="32" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Drawing/i_Drawing_Draw_Sprite.png" width="32" /></td>
-        <td class="dnd" style=""><a href="Draw_Sprite.htm">Draw Sprite</a></td>
+        <td class="dnd" style=""><a href="Draw_Sprite_Transformed.htm">Нарисовать <span class="notranslate">Sprite</span> Трансформированный</a></td>
       </tr>
       <tr>
         <td class="dnd_icons" style="margin-left: 16px;"><img alt="Draw Sprite Transformed Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Drawing/i_Drawing_Draw_Sprite_Transformed.png" /></td>
-        <td class="dnd" style=""><a href="Draw_Sprite_Transformed.htm">Draw Sprite Transformed</a></td>
+        <td class="dnd" style=""><a href="Draw_Stacked_Sprites.htm">Рисование сложенных спрайтов</a></td>
       </tr>
       <tr>
         <td class="dnd_icons" style="margin-left: 16px;"><img alt="Draw Stacked Sprites Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Drawing/i_Drawing_Draw_Stacked_Sprites.png" /></td>
-        <td class="dnd" style=""><a href="Draw_Stacked_Sprites.htm">Draw Stacked Sprites</a></td>
+        <td class="dnd" style=""><a href="Draw_Rectangle.htm">Нарисовать прямоугольник</a></td>
       </tr>
       <tr>
         <td class="dnd_icons" style="margin-left: 16px;"><img alt="Draw Rectangle Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Drawing/i_Drawing_Draw_Rectangle.png" /></td>
-        <td class="dnd" style=""><a href="Draw_Rectangle.htm">Draw Rectangle</a></td>
+        <td class="dnd" style=""><a href="Draw_Gradient_Rectangle.htm">Нарисовать градиентный прямоугольник</a></td>
       </tr>
       <tr>
         <td class="dnd_icons" style="margin-left: 16px;"><img alt="Draw Gradient Rectangle Icon" class="icon" height="32" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Drawing/i_Drawing_Draw_Rectangle_Gradient.png" width="32" /></td>
-        <td class="dnd" style=""><a href="Draw_Gradient_Rectangle.htm">Draw Gradient Rectangle</a></td>
+        <td class="dnd" style=""><a href="Draw_Ellipse.htm">Нарисовать эллипс</a></td>
       </tr>
       <tr>
         <td class="dnd_icons" style="margin-left: 16px;"><img alt="Draw Ellipse Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Drawing/i_Drawing_Draw_Ellipse.png" /></td>
-        <td class="dnd" style=""><a href="Draw_Ellipse.htm">Draw Ellipse</a></td>
+        <td class="dnd" style=""><a href="Draw_Gradient_Ellipse.htm">Нарисовать градиентный эллипс</a></td>
       </tr>
       <tr>
         <td class="dnd_icons" style="margin-left: 16px;"><img alt="Draw Gradient Ellipse Icon" class="icon" height="32" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Drawing/i_Drawing_Draw_Ellipse_Gradient.png" width="32" /></td>
-        <td class="dnd" style=""><a href="Draw_Gradient_Ellipse.htm">Draw Gradient Ellipse</a></td>
+        <td class="dnd" style=""><a href="Draw_Line.htm">Нарисовать линию</a></td>
       </tr>
       <tr>
         <td class="dnd_icons" style="margin-left: 16px;"><img alt="Draw Line Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Drawing/i_Drawing_Draw_Line.png" /></td>
-        <td class="dnd" style=""><a href="Draw_Line.htm">Draw Line</a></td>
+        <td class="dnd" style=""><a href="Draw_Healthbar.htm">Нарисовать панель здоровья</a></td>
       </tr>
       <tr>
         <td class="dnd_icons" style="margin-left: 16px;"><img alt="Draw Healthbar Icon" class="icon" height="32" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Drawing/i_Drawing_Draw_Healthbar.png" width="32" /></td>
-        <td class="dnd" style=""><a href="Draw_Healthbar.htm">Draw Healthbar</a></td>
+        <td class="dnd" style=""><a href="Draw_Instance_Score.htm">Балл за участие в розыгрыше</a></td>
       </tr>
       <tr>
         <td class="dnd_icons" style="margin-left: 16px;"><img alt="Draw Instance Score Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Drawing/i_Drawing_Draw_Instance_Score.png" /></td>
-        <td class="dnd" style=""><a href="Draw_Instance_Score.htm">Draw Instance Score</a></td>
+        <td class="dnd" style=""><a href="Draw_Instance_Health.htm">Здоровье экземпляра рисунка</a></td>
       </tr>
       <tr>
         <td class="dnd_icons" style="margin-left: 16px;"><img alt="Draw Instance Health Icon" class="icon" height="32" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Drawing/i_Drawing_Draw_Instance_Health.png" width="32" /></td>
-        <td class="dnd" style=""><a href="Draw_Instance_Health.htm">Draw Instance Health</a></td>
+        <td class="dnd" style=""><a href="Draw_Instance_Lives.htm">Нарисовать жизнь экземпляра</a></td>
       </tr>
       <tr>
         <td class="dnd_icons" style="margin-left: 16px;"><img alt="Draw Instance Lives Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Drawing/i_Drawing_Draw_Instance_Lives.png" /></td>
-        <td class="dnd" style=""><a href="Draw_Instance_Lives.htm">Draw Instance Lives</a></td>
+        <td class="dnd" style=""><a href="Set_Draw_Colour.htm">Установите цвет рисунка</a></td>
       </tr>
       <tr>
         <td class="dnd_icons" style="margin-left: 16px;"><img alt="Set Draw Colour Icon" class="icon" height="32" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Drawing/i_Drawing_Set_Draw_Colour.png" width="32" /></td>
-        <td class="dnd" style=""><a href="Set_Draw_Colour.htm">Set Draw Colour</a></td>
+        <td class="dnd" style=""><a href="Get_Draw_Colour.htm">Получить цвет рисунка</a></td>
       </tr>
       <tr>
         <td class="dnd_icons" style="margin-left: 16px;"><img alt="Get Draw Colour Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Drawing/i_Drawing_Get_Draw_Colour.png" /></td>
-        <td class="dnd" style=""><a href="Get_Draw_Colour.htm">Get Draw Colour</a></td>
+        <td class="dnd" style=""><a href="Set_Draw_Alpha.htm">Установить альфа рисунка</a></td>
       </tr>
       <tr>
         <td class="dnd_icons" style="margin-left: 16px;"><img alt="Set Draw Alpha Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Drawing/i_Drawing_Set_Draw_Alpha.png" /></td>
-        <td class="dnd" style=""><a href="Set_Draw_Alpha.htm">Set Draw Alpha</a></td>
+        <td class="dnd" style=""><a href="Get_Draw_Alpha.htm">Получить альфа-рисунок</a></td>
       </tr>
       <tr>
         <td class="dnd_icons" style="margin-left: 16px;"><img alt="Get Draw Alpha Icon" class="icon" height="32" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Drawing/i_Drawing_Get_Draw_Alpha.png" width="32" /></td>
-        <td class="dnd" style=""><a href="Get_Draw_Alpha.htm">Get Draw Alpha</a></td>
+        <td class="dnd" style=""><a href="Set_Font.htm">Установить шрифт</a></td>
       </tr>
       <tr>
         <td class="dnd_icons" style="margin-left: 16px;"><img alt="Set Font Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Drawing/i_Drawing_Set_Font.png" /></td>
-        <td class="dnd" style=""><a href="Set_Font.htm">Set Font</a></td>
+        <td class="dnd" style=""><a href="Get_Draw_Font.htm">Получить рисованный шрифт</a></td>
       </tr>
       <tr>
         <td class="dnd_icons" style="margin-left: 16px;"><img alt="Get Font Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Drawing/i_Drawing_Get_Font.png" /></td>
-        <td class="dnd" style=""><a href="Get_Draw_Font.htm">Get Draw Font</a></td>
+        <td class="dnd" style=""><a href="Set_Text_Alignment.htm">Установить выравнивание текста</a></td>
       </tr>
       <tr>
         <td class="dnd_icons" style="margin-left: 16px;"><img alt="Set Text Alignment Icon" class="icon" height="32" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Drawing/i_Drawing_Set_Text_Alignment.png" width="32" /></td>
-        <td class="dnd" style=""><a href="Set_Text_Alignment.htm">Set Text Alignment</a></td>
-      </tr>
-      <tr>
-        <td class="dnd_icons" style="margin-left: 16px;"><img alt="Get Text Alignment Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Drawing/i_Drawing_Get_Text_Alignment.png" /></td>
-        <td class="dnd" style=""><a href="Get_Text_Alignment.htm">Get Text Alignment</a></td>
+        <td class="dnd" style=""><a href="Get_Text_Alignment.htm">Получить выравнивание текста</a></td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="../DnD_Reference.htm">Index</a></div>
-        <div style="float:right">Next: <a href="../Tiles/Tile_Actions.htm">Tile Actions</a></div>
+        <div style="float:left">Назад: <a href="../DnD_Reference.htm">Указатель</a></div>
+        <div style="float:right">Следующий: <a href="../Tiles/Tile_Actions.htm">Действия с плиткой</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2021 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 GML Visual Drawing Actions

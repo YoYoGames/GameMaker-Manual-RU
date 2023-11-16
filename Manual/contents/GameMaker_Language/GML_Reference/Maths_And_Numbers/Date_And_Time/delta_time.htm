@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>delta_time</title>
+  <title>дельта_время</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference page for delta_time" />
   <meta name="rh-index-keywords" content="delta_time" />
@@ -14,31 +14,31 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>delta_time</h1>
-  <p>This variable returns the frame delta time, which is the time difference between the previous frame and the current frame. This value is in microseconds, where 1 microsecond is 1,000,000th of a second.</p>
-  <p>The purpose of delta timing is to eliminate the effects of the lag or slowness of computers that try to handle complex graphics or a lot of code. It is a value that can be added on to the speed of objects so that they will eventually move at the same speed, regardless of lag. This is achieved in <span data-keyref="GameMaker Name">GameMaker</span> by using the <span class="inline">delta_time</span> variable every step as it measures the time that has passed between one step and the next in microseconds. Therefore the variable <span class="inline">delta_time</span> can be used to calculate how much faster (for example) a game character has to move to make up for a lag spike in the game.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <h1>дельта_время</h1>
+  <p>Эта переменная возвращает время дельты кадра, которое представляет собой разницу во времени между предыдущим и текущим кадром. Это значение в микросекундах, где 1 микросекунда - это 1 000 000 000-я доля секунды.</p>
+  <p>Цель дельта-времени - устранить эффект запаздывания или медлительности компьютеров, которые пытаются обрабатывать сложную графику или большое количество кода. Это величина, которую можно прибавить к скорости объектов, чтобы в конечном итоге они двигались с одинаковой скоростью, независимо от запаздывания. В <span data-keyref="GameMaker Name">GameMaker</span> это достигается путем использования переменной <span class="inline">delta_time</span> на каждом шаге, поскольку она измеряет время, прошедшее между одним шагом и следующим, в микросекундах. Поэтому переменная <span class="inline">delta_time</span> может быть использована для расчета того, насколько быстрее (например) должен двигаться игровой персонаж, чтобы компенсировать скачок задержки в игре.</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
   <p class="code">delta_time</p>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
   <p class="code"><span data-keyref="Type_Real">Real</span> (integer)</p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Пример:</h4>
   <p class="code">var _dt = delta_time / 1000000;<br />
     speed = spd * _dt;</p>
-  <p>The above code will set the speed of the instance using delta-time to correct for lag. The variable &quot;_dt&quot; would be used to hold the previously calculated delta time value so that the ratio can be used to multiply the base speed value (held in the variable &quot;spd&quot;) and so get a consistent speed for the instance.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Приведенный выше код установит скорость экземпляра, используя дельта-время для коррекции запаздывания. Переменная &quot;_dt&quot; будет использоваться для хранения ранее рассчитанного значения дельта-времени, чтобы это отношение можно было использовать для умножения базового значения скорости (хранящегося в переменной &quot;spd&quot;) и таким образом получить согласованную скорость для экземпляра.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Date_And_Time.htm">Date And Time</a></div>
-        <div style="float:right">Next: <a href="date_set_timezone.htm">date_set_timezone</a></div>
+        <div style="float:left">Назад: <a href="Date_And_Time.htm">Дата и время</a></div>
+        <div style="float:right">Следующий: <a href="date_set_timezone.htm"><span class="notranslate">date_set_timezone</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 delta_time

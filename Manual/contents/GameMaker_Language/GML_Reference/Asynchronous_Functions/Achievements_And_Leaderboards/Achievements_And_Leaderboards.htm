@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Достижения и таблицы лидеров</title>
+  <meta name="generator" content="Adobe RoboHelp 2019" />
+  <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
+  <script src="../../../../assets/scripts/main_script.js"></script>
+  <meta name="rh-authors" content="Mark Alexander" />
+  <meta name="topic-comment" content="Reference section for all the Achievements And Leaderboard functions" />
+  <meta name="rh-index-keywords" content="" />
+  <meta name="search-keywords" content="Achievements And Leaderboards" />
+</head>
+<body>
+  <!--<div class="body-scroll" style="top: 150px;">-->
+  <h1>Достижения и таблицы лидеров</h1>
+  <p>Игры, созданные для устройств, работающих под управлением <span class="notranslate">iOS</span> или <span class="notranslate">Android</span>, также могут подключаться к одному из двух API для таблиц лидеров и достижений. Для <span class="notranslate">iOS</span> есть <b>iTunes Connect</b>, а для <span class="notranslate">Android</span> можно использовать <b>Google Play</b>.
+    они используют функции, найденные на этой странице. Эти функции позволяют вашей игре отправлять информацию о набранных очках и достижениях в таблицы лидеров, которые вы установили в аккаунте разработчиков для создаваемой вами игры, и это отличный способ
+    привлечь игроков к социальной стороне игры, поскольку они могут увидеть, чего достигли другие люди, игравшие в вашу игру, и попытаться превзойти их.</p>
+  <p>При использовании этих функций следует учитывать, что они <i>не</i> отслеживают достижения и баллы автоматически за вас. Они отображают только те данные, которые вы отправляете им из своей игры, поэтому вы должны написать свой собственный код достижений и
+    для отслеживания состояния отдельных людей в игре, а затем использовать эти функции для добавления данных в выбранную сеть (однако вы <i>можете</i> запросить информацию о достижениях с помощью функции     <a href="achievement_load_progress.htm"><tt>achievement_load_progress()</tt></a> функцию).</p>
+  <p>Некоторые из этих функций будут вызывать обратный вызов <a href="../../../../The_Asset_Editors/Object_Properties/Async_Events/Social.htm">Social Asynchronous Event</a>, который будет содержать <tt>DS Map</tt> данных, относящихся к
+    к функции, которая его вызвала. Те функции, которые запускают событие, также детализируют пары ключ/значение карты, возвращаемые обратным вызовом, однако обратный вызов <b>социального события</b> также может быть вызван тем, что ваша игра получает
+    внешних уведомлений о вызовах и т.д.. </p>
+  <p class="note"><b>ПРИМЕЧАНИЕ</b>: Чтобы эти функции работали с <span class="notranslate">iOS</span>, у вас должна быть действующая учетная запись Game Center и <b>идентификатор приложения</b> <span class="notranslate">iOS</span> для вашей игры.</p>
+  <p class="note"><b>ПРИМЕЧАНИЕ</b>: Чтобы эти функции работали с <span class="notranslate">Android</span>, вы должны отправить свою игру в Google Play, установить необходимые разделы, а также активировать API в <a href="../../../../Settings/Game_Options/Android.htm">параметрах игры</a> для <a href="../../../../Settings/Game_Options/Android.htm">Android</a>.
+    вашей игры.</p>
+  <p>Ниже перечислены основные функции, используемые для интеграции вашей игры с выбранной целевой платформой социальных игр:</p>
+  <p> </p>
+  <ul class="colour">
+    <li><a href="achievement_login_status.htm"><span class="notranslate">achievement_login_status</span></a></li>
+    <li><a href="achievement_login.htm"><span class="notranslate">achievement_login</span></a></li>
+    <li><a href="achievement_logout.htm"><span class="notranslate">achievement_logout</span></a></li>
+    <li><a href="achievement_available.htm"><span class="notranslate">achievement_available</span></a></li>
+    <li><a href="achievement_post.htm"><span class="notranslate">achievement_post</span></a></li>
+    <li><a href="achievement_post_score.htm"><span class="notranslate">achievement_post_score</span></a></li>
+    <li><a href="achievement_increment.htm"><span class="notranslate">achievement_increment</span></a></li>
+    <li><a href="achievement_show_achievements.htm"><span class="notranslate">achievement_show_achievements</span></a></li>
+    <li><a href="achievement_show_leaderboards.htm"><span class="notranslate">achievement_show_leaderboards</span></a></li>
+    <li><a href="achievement_show_challenge_notifications.htm"><span class="notranslate">achievement_show_challenge_notifications</span></a></li>
+    <li><a href="achievement_get_challenges.htm"><span class="notranslate">achievement_get_challenges</span></a></li>
+    <li><a href="achievement_get_pic.htm"><span class="notranslate">achievement_get_pic</span></a></li>
+    <li><a href="achievement_load_friends.htm"><span class="notranslate">achievement_load_friends</span></a></li>
+    <li><a href="achievement_load_leaderboard.htm"><span class="notranslate">achievement_load_leaderboard</span></a></li>
+    <li><a href="achievement_load_progress.htm"><span class="notranslate">achievement_load_progress</span></a></li>
+    <li><a href="achievement_send_challenge.htm"><span class="notranslate">achievement_send_challenge</span></a></li>
+    <li><a href="achievement_reset.htm"><span class="notranslate">achievement_reset</span></a></li>
+  </ul>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <div class="footer">
+    <div class="buttons">
+      <div class="clear">
+        <div style="float:left">Назад: <a href="../Asynchronous_Functions.htm">Асинхронные функции</a></div>
+        <div style="float:right">Следующий: <a href="../HTTP/HTTP.htm">HTTP</a></div>
+      </div>
+    </div>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Все права защищены</span></h5>
+  </div>
+  <!-- KEYWORDS
+Achievements And Leaderboards
+-->
+  <!-- TAGS
+achievement_leaderboard_functions
+-->
+</body>
+</html>

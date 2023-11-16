@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Compiler Errors</title>
+  <title>Ошибки компилятора</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../assets/css/default.css" type="text/css" />
-  <script src="../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page that explains the various compiler errors" />
   <meta name="rh-index-keywords" content="Compile Errors" />
@@ -14,16 +14,16 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>Compile Errors</h1>
-  <p>The second type of error that can be reported for your game is the <strong>compiler error</strong>. A compiler error happens when your game encounters some type of error that the syntax checker may not have been able to detect - it&#39;s very easy to forget to declare a variable or mistakenly type a string as a real, for example - or when an error is related to how you have set up the compile tools from the <a href="../../Setting_Up_And_Version_Information/Platform_Preferences.htm">Platform Preferences</a> for the target platform. These errors will be caught by <span data-keyref="GameMaker Name">GameMaker</span> as the game is being compiled and this information will also be shown in the <a href="../../Introduction/The_Output_Window.htm">Compiler Error Output</a>, as shown below:</p>
+  <h1>Ошибки компиляции</h1>
+  <p>Второй тип ошибки, о которой может быть сообщено в вашей игре, - это <strong>ошибка компилятора</strong>. Ошибка компилятора возникает, когда ваша игра сталкивается с ошибкой, которую не смогла обнаружить программа проверки синтаксиса - например, очень легко забыть объявить переменную или ошибочно ввести строку как real - или когда ошибка связана с тем, как вы настроили инструменты компиляции из <a href="../../Setting_Up_And_Version_Information/Platform_Preferences.htm">Platform Preferences</a> для целевой платформы. Эти ошибки будут отловлены <span data-keyref="GameMaker Name">GameMaker</span> в процессе компиляции игры, и эта информация также будет показана в <a href="../../Introduction/The_Output_Window.htm">выводе ошибок компилятора</a>, как показано ниже:</p>
   <p><img alt="Compile Errors" class="center" src="../../assets/Images/Scripting_Reference/Additional_Information/Errors_Compile_Output.png" /></p>
-  <p class="note"><span class="note">NOTE</span> These errors don&#39;t usually pop up a window and will simply show &quot;<span class="inline" style="font-size: 14px">Build Failed</span>&quot; in the compiler output. If a window pops up it&#39;s usually a Runner Error, which is explained <a href="Runner_Errors.htm">here</a>.</p>
-  <p>The compiler error messages will all follow the same format:</p>
+  <p class="note"><span class="note">ПРИМЕЧАНИЕ</span> Эти ошибки обычно не выводят окно и просто показывают &quot;<span class="inline" style="font-size: 14px">Build Failed</span>&quot; в выводе компилятора. Если появляется окно, то это обычно ошибка Runner Error, которая объясняется <a href="Runner_Errors.htm">здесь</a>.</p>
+  <p>Все сообщения об ошибках компилятора будут иметь одинаковый формат:</p>
   <p class="code">[object] - [event] - [Line Number]: [error string]</p>
-  <p>If the error is found in a script then it will simply be:</p>
+  <p>Если ошибка найдена в сценарии, то это будет просто:</p>
   <p class="code">[script] - [Line Number]: [error string]</p>
-  <p>You can then double-click <img alt="Icon LMB" class="icon" height="24" src="../../assets/Images/Icons/Icon_LMB.png" width="21" /> on any of the compiler error entries to open the given asset at the position flagged as giving the error, and then you can use the information contained within the message to pinpoint exactly where in the object or script the error has occurred. However, sometimes these errors can seem a bit cryptic, so below you can find a complete list of all errors and a brief explanation of what they mean:</p>
-  <p> </p>
+  <p>Затем вы можете дважды щелкнуть <img> на любой из записей об ошибках компилятора, чтобы открыть данный актив в позиции, отмеченной как дающая ошибку, а затем вы можете использовать информацию, содержащуюся в сообщении, чтобы точно определить, где именно в объекте или сценарии произошла ошибка. Однако иногда эти ошибки могут показаться немного загадочными, поэтому ниже вы найдете полный список всех ошибок и краткое объяснение того, что они означают:</p>
+  <p> </p>
   <table>
     <colgroup>
       <col />
@@ -31,347 +31,347 @@
     </colgroup>
     <tbody>
       <tr>
-        <th>Error</th>
-        <th>Description</th>
+        <th>Ошибка</th>
+        <th>Описание</th>
       </tr>
       <tr>
         <td colspan="2" style="text-align: center;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">
-          <p><strong>Miscellaneous</strong></p>
+          <p><strong>Разное</strong></p>
         </td>
       </tr>
       <tr>
-        <td>No program to compile</td>
-        <td>A previous compile error has caused the compiler parse tree to not be created and thus the compiler has no program data to compile</td>
+        <td>Нет программы для компиляции</td>
+        <td>Предыдущая ошибка компиляции привела к тому, что дерево разбора компилятора не было создано, и поэтому у компилятора нет данных программы для компиляции</td>
       </tr>
       <tr>
-        <td>Fatal Error while compiling <i>[name]</i> - bailing details below</td>
-        <td>This message simply means that some error has been discovered but the compiler cannot place what or where (if this happens consistently you may wish to contact <a href="https://accounts.yoyogames.com/contact-us" target="_blank">support</a> and supply the details that the compiler output window shows)</td>
+        <td>Фатальная ошибка при компиляции <i>[имя]</i> - подробности ниже</td>
+        <td>Это сообщение означает, что обнаружена какая-то ошибка, но компилятор не может определить, какая и где (если это происходит постоянно, вы можете обратиться в службу <a href="https://accounts.yoyogames.com/contact-us" target="_blank">поддержки</a> и предоставить данные, которые показывает окно вывода компилятора).</td>
       </tr>
       <tr>
-        <td>Recursive macro expansion is not supported</td>
-        <td>You have used recursive macros that refer to each other and constantly expand</td>
+        <td>Рекурсивное расширение макросов не поддерживается</td>
+        <td>Вы использовали рекурсивные макросы, которые ссылаются друг на друга и постоянно расширяются</td>
       </tr>
       <tr>
-        <td>Unable to find TextureGroup <span class="inline">[group]</span></td>
-        <td>This error is usually only found from trying to run a malformed project file (if this happens consistently you may wish to contact <a href="https://accounts.yoyogames.com/contact-us" target="_blank">support</a> and supply the details that the compiler output window shows)</td>
+        <td>Невозможно найти TextureGroup <span class="inline">[group]</span></td>
+        <td>Эта ошибка обычно возникает только при попытке запустить неправильно сформированный файл проекта (если это происходит постоянно, вы можете обратиться в службу <a href="https://accounts.yoyogames.com/contact-us" target="_blank">поддержки</a> и предоставить данные, которые показывает окно вывода компилятора).</td>
       </tr>
       <tr>
-        <td>Wrong to convert <span class="inline">[value]</span> to number</td>
-        <td>You have tried to convert the given value, for example a string, into a number</td>
+        <td>Неправильное преобразование <span class="inline">[value]</span> в число</td>
+        <td>Вы попытались преобразовать заданное значение, например, строку, в число</td>
       </tr>
       <tr>
-        <td>Division by 0</td>
-        <td>You have tried to divide a value by 0</td>
+        <td>Деление на 0</td>
+        <td>Вы пытались разделить значение на 0</td>
       </tr>
       <tr>
-        <td>Invalid object id <span class="inline">[object ID]</span> used</td>
-        <td>You have tried to access an object using an ID value that is incorrect</td>
+        <td>Использован неверный идентификатор объекта <span class="inline">[object ID]</span> </td>
+        <td>Вы пытались получить доступ к объекту, используя неверное значение ID</td>
       </tr>
       <tr>
-        <td>Unclosed comment (<span class="inline">/*</span>) at end of script</td>
-        <td>You have created a script comment using<br />
-          <span class="inline">/* [comment] */</span><br />
-          but have not supplied the closing comment tag
+        <td>Незакрытый комментарий (<span class="inline">/*</span>) в конце сценария</td>
+        <td>Вы создали комментарий к сценарию, используя<br>
+          <span class="inline">/* [comment] */</span><br>
+          но не поставили закрывающий тег комментария
         </td>
       </tr>
       <tr>
-        <td>Invalid token</td>
-        <td>You have an invalid character in your game code, which can happen with foreign language characters or Unicode</td>
+        <td>Неверный токен</td>
+        <td>В коде вашей игры есть недопустимый символ, что может произойти с символами иностранного языка или Unicode</td>
       </tr>
       <tr>
-        <td>Number <span class="inline">[num]</span> in incorrect format</td>
-        <td>The given number - shown in the error - is not the correct format for the function or operation being performed, for example you supply an integer when a pointer is required</td>
+        <td>Номер <span class="inline">[num]</span> в неправильном формате</td>
+        <td>Заданное число - показанное в ошибке - не является правильным форматом для выполняемой функции или операции, например, вы предоставили целое число, когда требуется указатель</td>
       </tr>
       <tr>
-        <td>Unexpected EOF encountered</td>
-        <td>You have reached the end of file unexpectedly while using the File Functions</td>
+        <td>Возникла неожиданная ошибка EOF</td>
+        <td>Вы неожиданно достигли конца файла при использовании функций файла</td>
       </tr>
       <tr>
         <td colspan="2" style="text-align: center;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">
-          <p><strong>Strings</strong></p>
+          <p><strong>Струны</strong></p>
         </td>
       </tr>
       <tr>
-        <td>Unable to Not a string</td>
-        <td>You have tried to use &quot;<span class="inline">!</span>&quot; (not) on a string</td>
+        <td>Невозможно Не строка</td>
+        <td>Вы пытались использовать &quot;<span class="inline">!</span>&quot; (не) в строке</td>
       </tr>
       <tr>
-        <td>Unable to Negate a string</td>
-        <td>You have tried to negate a string, for example<br />
+        <td>Невозможно отрицать строку</td>
+        <td>Вы пытались отрицать строку, например<br>
           <span class="inline">string = -string</span>
         </td>
       </tr>
       <tr>
         <td colspan="2" style="text-align: center;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">
-          <p><strong>Scripts, </strong><strong>Functions </strong><strong>and Arguments</strong></p>
+          <p><strong>Скрипты, </strong><strong>Функции </strong><strong>и аргументы</strong></p>
         </td>
       </tr>
       <tr>
-        <td>Wrong number of arguments for function <span class="inline">[function]</span></td>
-        <td>You have supplied too many or too few arguments for the given function</td>
+        <td>Неправильное количество аргументов для функции <span class="inline">[function]</span></td>
+        <td>Вы указали слишком много или слишком мало аргументов для данной функции</td>
       </tr>
       <tr>
-        <td>Failed to parse action_execute_script() - incorrect number of arguments received</td>
-        <td>The GML Visual action Execute Script has too many or too few arguments for the given script being called</td>
+        <td>Не удалось разобрать action_execute_script() - получено неверное количество аргументов</td>
+        <td>Действие <span class="notranslate">GML</span> Visual Execute Script имеет слишком много или слишком мало аргументов для вызываемого сценария.</td>
       </tr>
       <tr>
-        <td>Unknown function <span class="inline">[function]</span> check to see if script is empty</td>
-        <td>A script or function has been called that the compiler does not recognise (this error is usually thrown by empty script asset references since the compiler will strip out these assets on compile)</td>
+        <td>Неизвестная функция <span class="inline">[function]</span> проверьте, не пуст ли скрипт.</td>
+        <td>Был вызван скрипт или функция, которую компилятор не распознал (эта ошибка обычно возникает при пустых ссылках на активы скрипта, поскольку компилятор удаляет эти активы при компиляции).</td>
       </tr>
       <tr>
-        <td>Function <span class="inline">[function]</span> expects <span class="inline">n</span> arguments, <span class="inline">a</span> provided</td>
-        <td><span>A function has been given the wrong number of arguments (<span class="inline">n</span>) when a certain number were expected (<span class="inline">a</span>)</span></td>
+        <td>Функция <span class="inline">[function]</span> ожидает <span class="inline">n</span> аргументов, <span class="inline">a</span> предоставлено</td>
+        <td><span>Функция получила неправильное количество аргументов (<span class="inline">n</span>), когда ожидалось определенное количество (<span class="inline">a</span>)</span></td>
       </tr>
       <tr>
-        <td>Assignment of an empty value (function does not return anything?)</td>
-        <td>You have tried to assign a return value from a function when that function returns nothing</td>
+        <td>Присвоение пустого значения (функция ничего не возвращает?)</td>
+        <td>Вы пытались присвоить возвращаемое значение функции, когда эта функция ничего не возвращает</td>
       </tr>
       <tr>
-        <td>Unable to find function <span class="inline">[function]</span>    </td>
-        <td>You have called an unknown function</td>
+        <td>Невозможно найти функцию <span class="inline">[function]</span> </td>
+        <td>Вы вызвали неизвестную функцию</td>
       </tr>
       <tr>
-        <td>Calling a function that needs an instance and no instance is available</td>
-        <td><span>The function or script being called is for acting on an instance, but at the time of running no instances exist</span></td>
+        <td>Вызов функции, которой нужен экземпляр, а экземпляр недоступен</td>
+        <td><span>Вызываемая функция или сценарий предназначены для действия над экземпляром, но на момент выполнения не существует ни одного экземпляра</span></td>
       </tr>
       <tr>
-        <td>Calling a function that needs an other and no other is available</td>
-        <td>You have used the keyword <span class="inline">other</span> outside of the Collision Event or outside of a <span class="inline">with</span> statement</td>
+        <td>Вызов функции, которая нуждается в другой функции, а другая функция недоступна</td>
+        <td>Вы использовали ключевое слово <span class="inline">other</span> вне события столкновения или вне высказывания <span class="inline">with</span>.</td>
       </tr>
       <tr>
-        <td>Argument naming error, <span class="inline">n</span> arguments but no reference found to<span class="inline"> a</span></td>
-        <td>You have given a number of arguments to a script, but fail to reference one of them in the script, for example, your script takes three arguments but you only use arguments <span class="inline">n </span>and <span class="inline">a</span></td>
+        <td>Ошибка именования аргументов, <span class="inline">n</span> аргументов, но не найдена ссылка на<span class="inline"> a</span></td>
+        <td>Вы задали несколько аргументов сценарию, но не указали один из них в сценарии, например, ваш сценарий принимает три аргумента, но вы используете только аргументы <span class="inline">n </span>и <span class="inline">a</span></td>
       </tr>
       <tr>
-        <td>Cannot compare arguments</td>
-        <td>You have tried to compare two different argument types, like a string and a real number</td>
+        <td>Невозможно сравнить аргументы</td>
+        <td>Вы пытались сравнить два разных типа аргументов, например, строку и вещественное число.</td>
       </tr>
       <tr>
-        <td>Unknown function or script <span class="inline">[functions/script]</span> </td>
-        <td>The compiler does not recognise the function or script being called</td>
+        <td>Неизвестная функция или сценарий <span class="inline">[functions/script]</span> </td>
+        <td>Компилятор не распознает вызываемую функцию или скрипт</td>
       </tr>
       <tr>
-        <td>Cannot use resource name <span class="inline">[resource] </span>as it is not being exported</td>
-        <td>You have tried to access a resource that has not been flagged as part of the project for the platform being compiled to</td>
+        <td>Невозможно использовать имя ресурса <span class="inline">[resource] </span>, поскольку он не экспортируется.</td>
+        <td>Вы попытались получить доступ к ресурсу, который не был отмечен как часть проекта для компилируемой платформы.</td>
       </tr>
       <tr>
-        <td>Cannot use function/script name for a variable, using <span class="inline">[functions/script]</span></td>
-        <td>You have tried to use either a function name or a script name as a variable, for example:<br />
+        <td>Невозможно использовать имя функции/скрипта для переменной, используя <span class="inline">[functions/script]</span></td>
+        <td>Вы пытались использовать в качестве переменной, например, имя функции или имя скрипта:<br>
           <span class="inline">string = &quot;Hello World&quot;</span>
         </td>
       </tr>
       <tr>
-        <td>Cannot use an argument outside a script </td>
-        <td>The built in argument variables can only be used inside a script but you have tried to use them elsewhere</td>
+        <td>Невозможно использовать аргумент вне сценария </td>
+        <td>Встроенные переменные аргументов можно использовать только внутри сценария, но вы пытались использовать их в другом месте</td>
       </tr>
       <tr>
-        <td>No references to <span class="inline">argument[num]</span> but references <span class="inline">argument[num]</span></td>
-        <td>You are using a reference to an argument that does not exist but that could map to another argument</td>
+        <td>Нет ссылок на <span class="inline">argument[num]</span>, но есть ссылки <span class="inline">argument[num]</span></td>
+        <td>Вы используете ссылку на аргумент, которого не существует, но который может быть связан с другим аргументом.</td>
       </tr>
       <tr>
-        <td>Incorrect number of arguments for accessor</td>
-        <td>You have supplied the wrong number of arguments when using an accessor</td>
+        <td>Неправильное количество аргументов для аксессора</td>
+        <td>Вы указали неверное количество аргументов при использовании аксессора</td>
       </tr>
       <tr>
-        <td>Wrong type of arguments for (one of the below):<br />
-          /, div, mod, +, -, &amp;&amp;, ||, &amp;, |, ^, &lt;&lt;, &gt;&gt;</td>
-        <td>You have supplied the wrong type of argument for the expression being evaluated</td>
-      </tr>
-      <tr>
-        <td colspan="2" style="text-align: center;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">
-          <p><b>Variables</b></p>
-        </td>
-      </tr>
-      <tr>
-        <td>Using uninitialized variable <i>[var]</i></td>
-        <td>You have tried to use the named variable before it has been initialised</td>
-      </tr>
-      <tr>
-        <td>Variable <i>[var]</i> is read-only</td>
-        <td>You have tried to change the named variable when it cannot be changed</td>
-      </tr>
-      <tr>
-        <td>Unable to find variable named <i>[var]</i></td>
-        <td>The named variable cannot be found in the current compile</td>
-      </tr>
-      <tr>
-        <td>Malformed variable reference</td>
-        <td>You have tried to reference a variable in the wrong way</td>
-      </tr>
-      <tr>
-        <td>Trying to set a read only variable <i>[var]</i></td>
-        <td>You have tried to set a variable that is read only</td>
-      </tr>
-      <tr>
-        <td>Cannot re-declare a built in variable</td>
-        <td>You have tried to declare a local variable using the same name as one of the built in variables</td>
-      </tr>
-      <tr>
-        <td>Cannot use resource name for a variable</td>
-        <td>You have use the same name as a resource from the resource tree as a local variable</td>
-      </tr>
-      <tr>
-        <td><i>[Variable]</i> is read-only</td>
-        <td>You have tried to use a variable that has been flagged as read only</td>
+        <td>Неправильный тип аргументов для (одного из нижеперечисленных):<br>
+          /, div, mod, +, -, &amp;&amp;, ||, &amp;, |, ^, &lt;&lt;, &gt;&gt;</td>
+        <td>Вы указали неверный тип аргумента для вычисляемого выражения</td>
       </tr>
       <tr>
         <td colspan="2" style="text-align: center;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">
-          <p><b>Constants</b></p>
+          <p><b>Переменные</b></p>
         </td>
       </tr>
       <tr>
-        <td>Cannot set a constant [constant] to a value</td>
-        <td>You have tried to set a constant to a different value</td>
+        <td>Использование неинициализированной переменной <i>[var]</i></td>
+        <td>Вы попытались использовать именованную переменную до того, как она была инициализирована</td>
       </tr>
       <tr>
-        <td>Constant is invalid here</td>
-        <td>You have tried to use a constant somewhere that is not valid for the code being run</td>
+        <td>Переменная <i>[var]</i> доступна только для чтения</td>
+        <td>Вы пытались изменить именованную переменную, когда она не может быть изменена</td>
       </tr>
       <tr>
-        <td>Cannot assign to [var] - it&#39;s a constant</td>
-        <td>You have tried to assign a new value to the named constant</td>
+        <td>Невозможно найти переменную с именем <i>[var]</i></td>
+        <td>Именованная переменная не может быть найдена в текущей компиляции</td>
+      </tr>
+      <tr>
+        <td>Некорректная ссылка на переменную</td>
+        <td>Вы попытались сослаться на переменную неправильным способом</td>
+      </tr>
+      <tr>
+        <td>Попытка установить переменную <i>[var]</i>, доступную только для чтения.</td>
+        <td>Вы пытались установить переменную, которая доступна только для чтения</td>
+      </tr>
+      <tr>
+        <td>Невозможно повторно объявить встроенную переменную</td>
+        <td>Вы пытались объявить локальную переменную, используя то же имя, что и одна из встроенных переменных</td>
+      </tr>
+      <tr>
+        <td>Невозможно использовать имя ресурса для переменной</td>
+        <td>Вы можете использовать то же имя ресурса из дерева ресурсов в качестве локальной переменной</td>
+      </tr>
+      <tr>
+        <td><i>[Переменная]</i> доступно только для чтения</td>
+        <td>Вы пытались использовать переменную, которая была помечена как доступная только для чтения</td>
       </tr>
       <tr>
         <td colspan="2" style="text-align: center;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">
-          <p><b>Arrays</b></p>
+          <p><b>Константы</b></p>
         </td>
       </tr>
       <tr>
-        <td>Array index should not be negative</td>
-        <td>You have tried to access, create, or set an array value using a negative array index</td>
+        <td>Невозможно установить константу [константа] на значение</td>
+        <td>Вы пытались установить константу в другое значение</td>
+      </tr>
+      <tr>
+        <td>Константа здесь недействительна</td>
+        <td>Вы пытались использовать константу, которая не является действительной для выполняемого кода</td>
+      </tr>
+      <tr>
+        <td>Невозможно присвоить [var] - это константа</td>
+        <td>Вы попытались присвоить новое значение именованной константе</td>
       </tr>
       <tr>
         <td colspan="2" style="text-align: center;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">
-          <p><b>Malformed...</b></p>
+          <p><b>Массивы</b></p>
         </td>
       </tr>
       <tr>
-        <td>Malformed Conditional operator</td>
-        <td>You have used an erroneous conditional (ternary) operator or if statement, and not the format:<br />
+        <td>Индекс массива не должен быть отрицательным</td>
+        <td>Вы пытались получить доступ, создать или установить значение массива, используя отрицательный индекс массива</td>
+      </tr>
+      <tr>
+        <td colspan="2" style="text-align: center;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">
+          <p><b>Неправильно сформированный...</b></p>
+        </td>
+      </tr>
+      <tr>
+        <td>Некорректный условный оператор</td>
+        <td>Вы использовали ошибочный условный (троичный) оператор или оператор if, а не формат:<br>
           <span class="inline">[condition] ? [expression1] : [expression2];</span>
         </td>
       </tr>
       <tr>
-        <td>If requires a then statement</td>
-        <td>You have written an if statement and expression to evaluate, but not given any then part to run</td>
+        <td>Если требует утверждения then</td>
+        <td>Вы написали оператор if и выражение для оценки, но не указали часть then для выполнения</td>
       </tr>
       <tr>
-        <td>malformed assignment statement</td>
-        <td>In the code you are using an assignment operator wrong</td>
+        <td>неверно сформированное заявление о назначении</td>
+        <td>В коде вы неправильно используете оператор присваивания</td>
       </tr>
       <tr>
-        <td>Malformed<br />
-          if / repeat / while / do / for / with / switch / break / continue / exit<br />
-          statement</td>
-        <td>The structure of the given statement is incorrect.</td>
+        <td>Неправильно сформированный<br>
+          if / repeat / while / do / for / with / switch / break / continue / exit<br>
+          оператор</td>
+        <td>Структура приведенного утверждения неверна.</td>
       </tr>
       <tr>
-        <td>Malformed post inc or dec statement</td>
-        <td>You have tried to use <span class="inline">[var]++</span> or <span class="inline">[var]--</span> in an illegal way</td>
+        <td>Неправильно сформированное сообщение post inc или dec</td>
+        <td>Вы пытались использовать <span class="inline">[var]++</span> или <span class="inline">[var]--</span> незаконным способом</td>
       </tr>
       <tr>
-        <td>Malformed pre inc or dec statement</td>
-        <td>You have tried to use <span class="inline">++[var]</span> or <span class="inline">--[var]</span> in an illegal way</td>
+        <td>Неправильно сформированный оператор pre inc или dec</td>
+        <td>Вы пытались использовать <span class="inline">++[var]</span> или <span class="inline">--[var]</span> незаконным способом</td>
       </tr>
       <tr>
-        <td>Malformed global gml_pragma</td>
-        <td>You have created a wrong global string when using <span class="inline">gml_pragma</span></td>
+        <td>Некорректная глобальная gml_pragma</td>
+        <td>Вы создали неправильную глобальную строку при использовании <span class="inline">gml_pragma</span></td>
       </tr>
       <tr>
-        <td>Malformed PNGCrush gml_pragma</td>
-        <td>You have created a wrong string command for PNGCrush when using <span class="inline">gml_pragma</span></td>
+        <td>Некорректная форма PNGCrush gml_pragma</td>
+        <td>Вы создали неправильную строковую команду для PNGCrush при использовании <span class="inline">gml_pragma</span></td>
       </tr>
       <tr>
-        <td>Malformed Texgroup.Scale gml_pragma</td>
-        <td>You have create a wrong global string when using <span class="inline">gml_pragma</span></td>
-      </tr>
-      <tr>
-        <td colspan="2" style="text-align: center;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">
-          <p><b>Switch / Case</b></p>
-        </td>
-      </tr>
-      <tr>
-        <td>Default cannot be used multiple times in a switch</td>
-        <td>In your switch statement you have defined default: more than once</td>
-      </tr>
-      <tr>
-        <td>Clause expression type mismatch (clause expressions should all be the same type)</td>
-        <td>In your switch you are checking for two different constant case types, for example a string in one case and an integer in another</td>
-      </tr>
-      <tr>
-        <td>Case argument should be a constant</td>
-        <td>You have tried to use a value that does not evaluate to a constant within one of your switch cases</td>
-      </tr>
-      <tr>
-        <td>Statement in a switch MUST appear after case or default</td>
-        <td>You have added a statement to a switch outside of either a <span class="inline">case:</span> or <span class="inline">default:</span> call</td>
-      </tr>
-      <tr>
-        <td>Duplicate case statement found / original here</td>
-        <td>You have used the same case constant in two different places within a switch (note that the &quot;original here&quot; comment will be on another line and can be clicked to show the original case)</td>
+        <td>Некорректная форма Texgroup.Scale gml_pragma</td>
+        <td>Вы создали неправильную глобальную строку при использовании <span class="inline">gml_pragma</span></td>
       </tr>
       <tr>
         <td colspan="2" style="text-align: center;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">
-          <p><b>Expressions</b></p>
+          <p><b>Переключатель / корпус</b></p>
         </td>
       </tr>
       <tr>
-        <td>No return value from expression (does expression have a return value?)</td>
-        <td>You have tried to assign a return value from an expression to a variable when the expression returns nothing</td>
+        <td>Значение по умолчанию нельзя использовать несколько раз в переключателе</td>
+        <td>В операторе switch вы определили default: более одного раза</td>
       </tr>
       <tr>
-        <td>Expecting expression after the &#39;.&#39;</td>
-        <td>You have used the point &quot;<span class="inline">.</span>&quot; notation erroneously and not added an expression afterwords correctly</td>
+        <td>Несоответствие типа выражения клаузулы (все выражения клаузулы должны быть одного типа)</td>
+        <td>В вашем переключателе вы проверяете два различных типа регистра констант, например, строка в одном случае и целое число в другом.</td>
       </tr>
       <tr>
-        <td>Unexpected symbol [symbol] in expression</td>
-        <td>The expression uses a symbol that is not part of the accepted expression symbol set - the symbol in question will be shown</td>
+        <td>Аргументация по делу должна быть постоянной</td>
+        <td>Вы пытались использовать значение, которое не оценивается как константа, в одном из случаев переключения</td>
+      </tr>
+      <tr>
+        <td>Утверждение в переключателе ДОЛЖНО появляться после регистра или значения по умолчанию</td>
+        <td>Вы добавили оператор в переключатель вне вызова <span class="inline">case:</span> или <span class="inline">default:</span>.</td>
+      </tr>
+      <tr>
+        <td>Найдено дублирующее заявление по делу / оригинал здесь</td>
+        <td>Вы использовали одну и ту же константу case в двух разных местах внутри switch (обратите внимание, что комментарий &quot;original here&quot; будет находиться на другой строке и его можно щелкнуть, чтобы показать исходный случай)</td>
       </tr>
       <tr>
         <td colspan="2" style="text-align: center;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">
-          <p><b>Unknown Operators</b></p>
+          <p><b>Выражения</b></p>
         </td>
       </tr>
       <tr>
-        <td>Unknown Pre operator</td>
-        <td>You have tried to use a symbol as a pre-operator when that symbol is not permitted, for example <span class="inline">**[var]</span> or <span class="inline">&gt;&gt;[var]</span> - only <span class="inline">++</span> and <span class="inline">--</span> are acceptable</td>
+        <td>Нет возвращаемого значения из выражения (есть ли у выражения возвращаемое значение?)</td>
+        <td>Вы пытались присвоить переменной возвращаемое значение из выражения, когда выражение ничего не возвращает.</td>
       </tr>
       <tr>
-        <td>Unknown Post operator</td>
-        <td>You have tried to use a symbol as a post-operator when that symbol is not permitted, for example <span class="inline">[var]**</span> or <span class="inline">[var]&gt;&gt;</span> - only <span class="inline">++</span> and <span class="inline">--</span> are acceptable</td>
+        <td>Ожидание выражения после '.'</td>
+        <td>Вы ошибочно использовали обозначение точки &quot;<span class="inline">.</span>&quot; и не добавили выражение после слов.</td>
       </tr>
       <tr>
-        <td>Unknown pragma [gml_pragma string]</td>
-        <td>You have used a pragma string that is unknown to the compiler</td>
-      </tr>
-      <tr>
-        <td>Unknown unary operator</td>
-        <td>You have tried to use an unknown symbol as a unary operator</td>
-      </tr>
-      <tr>
-        <td>Unknown binary operator</td>
-        <td>You have tried to use an unknown symbol as a binary operator</td>
-      </tr>
-      <tr>
-        <td>Unknown operator [operator]</td>
-        <td>You have tried to use an unknown symbol as an operator (the symbol will be shown in the error)</td>
+        <td>Неожиданный символ [символ] в выражении</td>
+        <td>В выражении используется символ, который не входит в принятый набор символов выражения - соответствующий символ будет показан</td>
       </tr>
       <tr>
         <td colspan="2" style="text-align: center;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">
-          <p><b>Break / Continue</b></p>
+          <p><b>Неизвестные операторы</b></p>
         </td>
       </tr>
       <tr>
-        <td>Break used without context</td>
-        <td>You have not used break within a switch or a loop or any other permitted structure</td>
+        <td>Неизвестно Предварительный оператор</td>
+        <td>Вы пытались использовать символ в качестве предоператора, когда этот символ не разрешен, например, <span class="inline">**[var]</span> или <span class="inline">&gt;&gt;[var]</span> - допустимы только <span class="inline">++</span> и <span class="inline">--</span>.</td>
       </tr>
       <tr>
-        <td>Continue used without context</td>
-        <td>You have not used continue within the correct context</td>
+        <td>Неизвестный оператор почтовой связи</td>
+        <td>Вы пытались использовать символ в качестве постоператора, когда этот символ не разрешен, например, <span class="inline">[var]**</span> или <span class="inline">[var]&gt;&gt;</span> - допустимы только <span class="inline">++</span> и <span class="inline">--</span>.</td>
       </tr>
       <tr>
-        <td>continue statement is not allowed at this point</td>
-        <td>You have used continue within a apart of your code where it is not permitted</td>
+        <td>Неизвестная прагма [gml_pragma string]</td>
+        <td>Вы использовали строку прагмы, которая неизвестна компилятору</td>
+      </tr>
+      <tr>
+        <td>Неизвестный унарный оператор</td>
+        <td>Вы пытались использовать неизвестный символ в качестве унарного оператора</td>
+      </tr>
+      <tr>
+        <td>Неизвестный двоичный оператор</td>
+        <td>Вы пытались использовать неизвестный символ в качестве двоичного оператора</td>
+      </tr>
+      <tr>
+        <td>Неизвестный оператор [оператор]</td>
+        <td>Вы попытались использовать неизвестный символ в качестве оператора (символ будет показан в ошибке)</td>
+      </tr>
+      <tr>
+        <td colspan="2" style="text-align: center;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">
+          <p><b>Перерыв / Продолжение</b></p>
+        </td>
+      </tr>
+      <tr>
+        <td>Перерыв, используемый без контекста</td>
+        <td>Вы не использовали разрыв внутри переключателя, петли или любой другой разрешенной структуры</td>
+      </tr>
+      <tr>
+        <td>Продолжение используется без контекста</td>
+        <td>Вы не использовали continue в правильном контексте</td>
+      </tr>
+      <tr>
+        <td>продолжение заявления не допускается на данном этапе</td>
+        <td>Вы использовали continue в той части вашего кода, где это запрещено</td>
       </tr>
       <tr>
         <td colspan="2" style="text-align: center;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">
@@ -379,111 +379,111 @@
         </td>
       </tr>
       <tr>
-        <td>enum num is invalid</td>
-        <td>The enum number is invalid for the enum</td>
+        <td>перечисление num недействительно</td>
+        <td>Номер перечисления недействителен для данного перечисления</td>
       </tr>
       <tr>
-        <td>malformed enum</td>
-        <td>You have not created the enum correctly</td>
+        <td>неправильное перечисление</td>
+        <td>Вы неправильно создали перечисление</td>
       </tr>
       <tr>
-        <td>enum [enum] has already been defined</td>
-        <td>You have tried to define an enum using the same name as another previously defined</td>
+        <td>enum [перечисление] уже определено</td>
+        <td>Вы попытались определить перечисление, использующее то же имя, что и другое, ранее определенное.</td>
       </tr>
       <tr>
-        <td>malformed enum entry</td>
-        <td>The enum has an invalid entry</td>
+        <td>неправильное заполнение перечисления</td>
+        <td>Перечисление имеет недопустимую запись</td>
       </tr>
       <tr>
-        <td>enum expression must be an integer constant</td>
-        <td>The enum entry does not evaluate as an integer constant</td>
+        <td>выражение перечисления должно быть целочисленной константой</td>
+        <td>Запись перечисления не оценивается как целочисленная константа</td>
       </tr>
       <tr>
-        <td>enum reference [key] does not exist in [enum]</td>
-        <td>You have tried to reference an enum entry using a key that has not previously been defined for that enum</td>
-      </tr>
-      <tr>
-        <td colspan="2" style="text-align: center;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">
-          <p><strong>Expected Symbols / Values</strong></p>
-        </td>
-      </tr>
-      <tr>
-        <td>Symbol ( expected<br />
-          Symbol ) expected<br />
-          Symbol , or ) expected<br />
-          Symbol { expected<br />
-          Symbol } expected<br />
-          Symbol , or } expected<br />
-          Symbol : expected<br />
-          Symbol ; expected<br />
-          Symbol [ expected<br />
-          symbol ] expected<br />
-          Symbol , or ] expected</td>
-        <td>You have not used a required symbol when writing your code</td>
-      </tr>
-      <tr>
-        <td>Expected id or string</td>
-        <td>You have used a value that is not either a layer ID or a layer name - as a string - in one of the Layer functions</td>
-      </tr>
-      <tr>
-        <td>keyword Until expected</td>
-        <td>You have created a do... until loop but neglected to supply an until expression</td>
-      </tr>
-      <tr>
-        <td>Function name expected</td>
-        <td>You have used something other than a function name in your code where a function should go</td>
-      </tr>
-      <tr>
-        <td>variable name expected</td>
-        <td>You have supplied a name that is not a variable name where one is expected</td>
-      </tr>
-      <tr>
-        <td>Assignment operator expected</td>
-        <td>You have created an assignment which expects an operator but none has been supplied</td>
+        <td>Ссылка на перечисление [ключ] не существует в [перечислении]</td>
+        <td>Вы попытались сослаться на запись перечисления, используя ключ, который ранее не был определен для этого перечисления</td>
       </tr>
       <tr>
         <td colspan="2" style="text-align: center;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">
-          <p><b>Android Exclusive</b></p>
+          <p><strong>Ожидаемые символы/значения</strong></p>
         </td>
       </tr>
       <tr>
-        <td>Android ARM ToolChain directory [dir] does not exist</td>
-        <td>The link given in the Android Preferences for the ARM toolchain is incorrect and does not exist.</td>
+        <td>Символ (ожидаемый<br>
+          Символ ) ожидаемый<br>
+          Символ , или ) ожидаемый<br>
+          Символ { ожидаемый<br>
+          Символ } ожидаемый<br>
+          Символ , или } ожидается<br>
+          Символ : ожидается<br>
+          Символ ; ожидается<br>
+          Символ [ ожидаемый<br>
+          символ ] ожидаемый<br>
+          Символ , или ] ожидаемый</td>
+        <td>Вы не использовали требуемый символ при написании кода</td>
       </tr>
       <tr>
-        <td>Android MIPS ToolChain directory [dir] does not exist</td>
-        <td>The link given in the Android Preferences for the MIPS toolchain is incorrect and does not exist.</td>
+        <td>Ожидаемый идентификатор или строка</td>
+        <td>Вы использовали значение, которое не является ни идентификатором слоя, ни именем слоя - в виде строки - в одной из функций Layer</td>
       </tr>
       <tr>
-        <td>Android x86 ToolChain directory [dir] does not exist</td>
-        <td>The link given in the Android Preferences for the x86 toolchain is incorrect and does not exist.</td>
+        <td>ключевое слово Пока не ожидается</td>
+        <td>Вы создали цикл do... until, но не указали выражение until.</td>
       </tr>
       <tr>
-        <td>Android NDK directory [dir] does not exist</td>
-        <td>The link given in the Android Preferences for the Android NDK is incorrect and does not exist.</td>
+        <td>Ожидаемое имя функции</td>
+        <td>Вы использовали что-то, кроме имени функции, в коде, где должна быть функция</td>
+      </tr>
+      <tr>
+        <td>ожидаемое имя переменной</td>
+        <td>Вы ввели имя, которое не является именем переменной там, где оно ожидается</td>
+      </tr>
+      <tr>
+        <td>Ожидается оператор присваивания</td>
+        <td>Вы создали присваивание, которое ожидает оператора, но ни один из них не был предоставлен</td>
+      </tr>
+      <tr>
+        <td colspan="2" style="text-align: center;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">
+          <p><b>Эксклюзив Android</b></p>
+        </td>
+      </tr>
+      <tr>
+        <td>Каталог [dir] Android ARM ToolChain не существует</td>
+        <td>Ссылка, указанная в <span class="notranslate">Android</span> Preferences для инструментальной цепочки ARM, неверна и не существует.</td>
+      </tr>
+      <tr>
+        <td>Каталог [dir] Android MIPS ToolChain не существует</td>
+        <td>Ссылка, указанная в разделе <span class="notranslate">Android</span> Preferences для инструментальной цепочки MIPS, неверна и не существует.</td>
+      </tr>
+      <tr>
+        <td>Каталог Android x86 ToolChain [dir] не существует</td>
+        <td>Ссылка, указанная в разделе <span class="notranslate">Android</span> Preferences для инструментальной цепочки x86, неверна и не существует.</td>
+      </tr>
+      <tr>
+        <td>Каталог Android NDK [dir] не существует</td>
+        <td>Ссылка, указанная в разделе <span class="notranslate">Android</span> Preferences для <span class="notranslate">Android</span> NDK, неверна и не существует.</td>
       </tr>
       <tr>
         <td colspan="2">
-          <p><strong>Windows Exclusive</strong></p>
+          <p><strong>Эксклюзив Windows</strong></p>
         </td>
       </tr>
       <tr>
-        <td>Configuration Problem : Windows Visual Studio Path needs to be set to point to Visual Studio (.bat) batch file.</td>
-        <td>The link given in the Windows Preferences for the Visual Studio (.bat) batch file is incorrect and does not exist.</td>
+        <td>Проблема конфигурации: <span class="notranslate">Windows</span> <span class="notranslate">Visual Studio</span> Path необходимо установить так, чтобы он указывал на пакетный файл <span class="notranslate">Visual Studio</span> (.bat).</td>
+        <td>Ссылка, указанная в предпочтениях <span class="notranslate">Windows</span> для пакетного файла <span class="notranslate">Visual Studio</span> (.bat), неверна и не существует.</td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="../Error_Reporting.htm">Error Reporting</a></div>
-        <div style="float:right">Next: <a href="Runner_Errors.htm">Runner Errors</a></div>
+        <div style="float:left">Назад: <a href="../Error_Reporting.htm">Отчеты об ошибках</a></div>
+        <div style="float:right">Следующий: <a href="Runner_Errors.htm">Ошибки бегунов</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 Compiler Errors

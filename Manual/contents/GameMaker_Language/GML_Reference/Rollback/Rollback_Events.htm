@@ -4,202 +4,144 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="generator" content="Adobe RoboHelp 2020" />
-  <title>Rollback Events</title>
+  <title>События отката</title>
   <meta name="topic-status" content="Draft" />
   <link rel="stylesheet" type="text/css" href="../../../assets/css/default.css" />
-  <script src="../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../assets/scripts/main_script.js"></script>
   <meta name="template" content="../../../assets/masterpages/Manual_Page.htt" />
   <meta name="rh-authors" content="Gurpreet S. Matharoo" />
   <meta name="condition-tags" content="Export:Beta" />
 </head>
 <body>
-  <h1>Rollback Events</h1>
-  <p>There are two Rollback-related events you can find in the &quot;Other&quot; category:</p>
+  <h1>События отката</h1>
+  <p>В категории &quot;Другое&quot; можно найти два события, связанных с Rollback:</p>
   <p><img class="center" src="../../../assets/Images/Scripting_Reference/GML/Reference/Rollback/rollback_events.png" /></p>
-  <h2 id="h">Rollback Start</h2>
-  <p>This event is triggered when all the players are connected and the multiplayer game has started. It&#39;s also triggered when the room is later changed.</p>
-  <p>Within this event, you get a struct called <span class="inline2">rollback_event_param</span> which contains all relevant values for the event:</p>
+  <h2 id="h">Начало отката</h2>
+  <p>Это событие срабатывает, когда все игроки подключены и многопользовательская игра началась. Оно также срабатывает при последующей смене комнаты.</p>
+  <p>Внутри этого события вы получаете структуру под названием <span class="inline2">rollback_event_param</span>, которая содержит все соответствующие значения для данного события:</p>
   <table>
     <tbody>
       <tr>
-        <th>Struct Member</th>
-        <th>Description</th>
+        <th>Структурный член</th>
+        <th>Описание</th>
       </tr>
       <tr>
         <td><span class="inline">num_players</span></td>
-        <td>The total number of players in the game</td>
+        <td>Общее количество игроков в игре</td>
       </tr>
       <tr>
         <td><span class="inline">player_id</span></td>
-        <td>The ID of your local player (starting at 0, which initially is the host itself)</td>
+        <td>ID вашего локального игрока (начиная с 0, который изначально является самим хостом)</td>
       </tr>
       <tr>
         <td><span class="inline">first_start</span></td>
-        <td>This is <span class="inline2">true</span> if the multiplayer game just started, or <span class="inline2">false</span> if only the room was changed</td>
+        <td>Это значение равно <span class="inline2">true</span>, если многопользовательская игра только что началась, или <span class="inline2">false</span>, если была изменена только комната.</td>
       </tr>
       <tr>
-        <td><span class="inline">late_join</span></td>
-        <td>This is <span class="inline2">true</span> if the player is a late joining player, or <span class="inline2">false</span> if not</td>
+        <td><span class="inline">rollback_connect_error</span></td>
+        <td> <a href="../../GML_Overview/Structs.htm">Структура</a>, содержащая следующие переменные:<br>
+          <br>
+         <span class="inline2">status</span> Код статуса HTTP ответа<br>
+         <span class="inline2">error</span> Строка, описывающая ошибку
+        </td>
       </tr>
     </tbody>
   </table>
-  <p>You should only use this event in your game manager object rather than a player object, as <span class="inline2">rollback_event_param.player_id</span> will always be the ID of your main local player and NOT the ID of the player instance that the event may trigger in.</p>
-  <p>For example, if you are player 0, and you catch the <strong>Rollback Start</strong> event in the instance of player 1, the <span class="inline2">player_id</span> variable will still be 0 as it indicates the ID of the local player only.</p>
-  <h2 id="h1">Rollback Event</h2>
-  <p>The <strong>Rollback Event</strong> event is triggered at various points throughout the game, containing a <span class="inline2">rollback_event_id</span> variable. This variable indicates what type of event has been triggered.</p>
-  <p>A struct called <span class="inline2">rollback_event_param</span> is provided which contains all relevant values for the event.</p>
-  <p>Any one of the following constants may be stored in <span class="inline2">rollback_event_id</span>:</p>
+  <p>Вы должны использовать это событие только в объекте менеджера игры, а не в объекте игрока, так как <span class="inline2">rollback_event_param.player_id</span> всегда будет ID вашего главного локального игрока, а НЕ ID экземпляра игрока, в котором может сработать событие.</p>
+  <p>Например, если вы игрок 0, и вы поймали событие <strong>Rollback Start</strong> в экземпляре игрока 1, переменная <span class="inline2">player_id</span> все еще будет равна 0, поскольку она указывает на ID только локального игрока.</p>
+  <h2 id="h1">Событие отката</h2>
+  <p>Событие <strong>Rollback Event</strong> срабатывает в различные моменты игры и содержит переменную <span class="inline2">rollback_event_id</span>. Эта переменная указывает, какой тип события был вызван.</p>
+  <p>Предоставляется структура под названием <span class="inline2">rollback_event_param</span>, которая содержит все необходимые значения для события.</p>
+  <p>В <span class="inline2">rollback_event_id</span> может храниться любая из следующих констант:</p>
   <table>
-    <colgroup>
-      <col />
-      <col />
-    </colgroup>
     <tbody>
       <tr>
         <th><span class="inline">rollback_event_id</span></th>
-        <th>Description</th>
-      </tr>
-      <tr>
-        <th colspan="2">In-Game</th>
+        <th>Описание</th>
       </tr>
       <tr>
         <td><span class="inline">rollback_chat_message</span></td>
-        <td>Triggered when a message from <a href="Rollback_Functions/rollback_chat.htm"><span class="inline">rollback_chat()</span></a> / <a data-xref="{title}" href="../../../Drag_And_Drop/Drag_And_Drop_Reference/Rollback/Send_Message.htm">Send Message (Rollback)</a> is received. During this event, <span class="inline2">rollback_event_param</span> will contain the following variables:<br />
-          <br />
-          <span class="inline2">message</span>: The message string received<br />
-          <span class="inline2">from</span>: The ID of the player that sent the message<br />
-          <span class="inline2">to</span>: The ID of the player that the message was sent to; will be -1 if the message was sent to everyone
+        <td>Срабатывает, когда получено сообщение от <a href="Rollback_Functions/rollback_chat.htm"><span class="inline">rollback_chat()</span></a> / <a data-xref="{title}" href="../../../Drag_And_Drop/Drag_And_Drop_Reference/Rollback/Send_Message.htm">Send Message</a> получено. Во время этого события <span class="inline2">rollback_event_param</span> будет содержать следующие переменные:<br>
+          <br>
+         <span class="inline2">сообщение</span>: Полученная строка сообщения<br>
+         <span class="inline2">от</span>: Идентификатор игрока, отправившего сообщение<br>
+         <span class="inline2">to</span>: ID игрока, которому было отправлено сообщение; будет равно -1, если сообщение было отправлено всем.
         </td>
       </tr>
       <tr>
         <td><span class="inline">rollback_player_prefs</span></td>
-        <td>Triggered when a player sets its <a href="Rollback_Preferences.htm">preferences</a>. During this event, <span class="inline2">rollback_event_param</span> will contain the following variables:<br />
-          <br />
-          <span class="inline2">player_id</span>: The ID of the player that set its preferences<br />
-          <span class="inline2">preferences</span>: The preferences set for that player
+        <td>Срабатывает, когда игрок устанавливает свои <a href="Rollback_Preferences.htm">предпочтения</a>. Во время этого события <span class="inline2">rollback_event_param</span> будет содержать следующие переменные:<br>
+          <br>
+         <span class="inline2">player_id</span>: ID игрока, который установил свои предпочтения.<br>
+         <span class="inline2">предпочтения</span>: Предпочтения, установленные для этого игрока
         </td>
-      </tr>
-      <tr>
-        <th colspan="2">Game</th>
-      </tr>
-      <tr>
-        <td><span class="inline">rollback_game_interrupted</span></td>
-        <td>Triggered when the game is interrupted because of a player with an unstable connection. During this event, <span class="inline2">rollback_event_param</span> will contain the following variables:<br />
-          <br />
-          <span class="inline2">player_id</span>: ID of the player with connection issues<br />
-          <span class="inline2">timeout</span>: How much time is remaining for that player to time out and disconnect (in milliseconds). After this amount of time, the player will be kicked and the game will resume with the remaining players.
-        </td>
-      </tr>
-      <tr>
-        <td><span class="inline">rollback_game_resumed</span></td>
-        <td>Triggered when the game resumes after an interruption (as described above). The ID of the player that reconnected is stored in <span class="inline2">rollback_event_param.player_id</span>.</td>
-      </tr>
-      <tr>
-        <td><span class="inline">rollback_game_full</span></td>
-        <td>Triggered when the game/room you are connecting to is already full.</td>
-      </tr>
-      <tr>
-        <td><span class="inline">rollback_game_info</span></td>
-        <td>Triggered when information about a room is received, but before it is fully joined.<br />
-          During this event, <span class="inline2">rollback_event_param</span> will contain the following variables:<br />
-          <br />
-          <span class="inline2">num_players</span>: The total number of players in the game<br />
-          <span class="inline2">player_id</span>: The ID of the local player (starting at 0)
-        </td>
-      </tr>
-      <tr>
-        <th colspan="2">Connection</th>
-      </tr>
-      <tr>
-        <td><span class="inline">rollback_end_game</span></td>
-        <td><span>Triggered when the server wants clients to stop the game. Usually this event means that clients are in an inconsistent state. The multiplayer session is closed automatically before the event is fired.</span></td>
-      </tr>
-      <tr>
-        <td><span class="inline">rollback_connect_info</span></td>
-        <td>Triggered when a room has been created and is ready to be shared with other players. The shareable URL is stored in <span class="inline2">rollback_event_param.share_url</span>.<br />
-          <br />
-          You can copy this URL automatically when it becomes available by calling <span class="inline"><a href="../Strings/clipboard_set_text.htm">clipboard_set_text()</a></span>.
-        </td>
-      </tr>
-      <tr>
-        <td><span class="inline">rollback_connect_error</span></td>
-        <td>Triggered when there is a connection error. The <span class="inline2">rollback_event_param</span> <a href="../../GML_Overview/Structs.htm">struct</a> will contain the following variables:<br />
-          <br />
-          <span class="inline2">status</span> The HTTP status code of the response<br />
-          <span class="inline2">error</span> A string describing the error
-        </td>
-      </tr>
-      <tr>
-        <td><span class="inline">rollback_connection_rejected</span></td>
-        <td><span>Triggered when a connection attempt is rejected. The error can be caused by an invalid token, mismatch in client versions, or mismatch in protocol versions. The multiplayer session is closed automatically before the event is fired.</span></td>
-      </tr>
-      <tr>
-        <td><span class="inline">rollback_protocol_rejected</span></td>
-        <td><span>Triggered when a connection attempt is rejected. This means the client is using an obsolete version of the protocol. Before this event is fired, GameMaker will show an error message in-game (even if <a href="Rollback_Functions/rollback_display_events.htm">events are disabled</a>). The multiplayer session is closed automatically before the event is fired.</span></td>
-      </tr>
-      <tr>
-        <td><span class="inline">rollback_high_latency</span></td>
-        <td><span>Triggered when your latency to the server is too high. The multiplayer session is closed automatically before the event is fired.</span></td>
-      </tr>
-      <tr>
-        <th colspan="2">Peers</th>
       </tr>
       <tr>
         <td><span class="inline">rollback_connected_to_peer</span></td>
-        <td>Triggered when a new player has connected. The ID of the connected player is stored in <span class="inline2">rollback_event_param.player_id</span>.</td>
+        <td>Срабатывает при подключении нового игрока. ID подключившегося игрока хранится в <span class="inline2">rollback_event_param.player_id</span>.</td>
       </tr>
       <tr>
         <td><span class="inline">rollback_synchronizing_with_peer</span></td>
-        <td>Triggered while the game is synchronising with a new player. During this event, <span class="inline2">rollback_event_param</span> will contain the following variables:<br />
-          <br />
-          <span class="inline2">player_id</span>: ID of the player that you&#39;re synchronizing with<br />
-          <span class="inline2">count</span>: How many synchronisation steps have been completed<br />
-          <span class="inline2">total</span>: How many total synchronisation steps need to be completed
+        <td>Срабатывает во время синхронизации игрока с новым игроком. Во время этого события <span class="inline2">rollback_event_param</span> будет содержать следующие переменные:<br>
+          <br>
+         <span class="inline2">player_id</span>: ID игрока, с которым происходит синхронизация.<br>
+         <span class="inline2">count</span>: Сколько шагов синхронизации было выполнено<br>
+         <span class="inline2">всего</span>: Сколько всего шагов синхронизации необходимо выполнить
         </td>
       </tr>
       <tr>
         <td><span class="inline">rollback_synchronized_with_peer</span></td>
-        <td>Triggered when synchronisation with a player is complete. The ID of the synchronised player is stored in <span class="inline2">rollback_event_param.player_id</span>.</td>
+        <td>Срабатывает, когда синхронизация с игроком завершена. ID синхронизированного игрока хранится в <span class="inline2">rollback_event_param.player_id</span>.</td>
       </tr>
       <tr>
         <td><span class="inline">rollback_disconnected_from_peer</span></td>
-        <td>Triggered when a player disconnects. The ID of the disconnected player is stored in <span class="inline2">rollback_event_param.player_id</span>.</td>
+        <td>Срабатывает, когда игрок отсоединяется. ID отключившегося игрока хранится в <span class="inline2">rollback_event_param.player_id</span>.</td>
+      </tr>
+      <tr>
+        <td><span class="inline">rollback_game_interrupted</span></td>
+        <td>Срабатывает, когда игра прерывается из-за игрока с нестабильным соединением. Во время этого события <span class="inline2">rollback_event_param</span> будет содержать следующие переменные:<br>
+          <br>
+         <span class="inline2">player_id</span>: ID игрока с проблемами соединения<br>
+         <span class="inline2">таймаут</span>: Сколько времени осталось до тайм-аута и отключения игрока (в миллисекундах). По истечении этого времени игрок будет выкинут, и игра возобновится с оставшимися игроками.
+        </td>
+      </tr>
+      <tr>
+        <td><span class="inline">rollback_game_resumed</span></td>
+        <td>Срабатывает, когда игра возобновляется после прерывания (как описано выше). ID игрока, который восстановил соединение, хранится в <span class="inline2">rollback_event_param.player_id</span>.</td>
+      </tr>
+      <tr>
+        <td><span class="inline">rollback_game_full</span></td>
+        <td>Срабатывает, когда игра, к которой вы подключаетесь, уже заполнена.</td>
+      </tr>
+      <tr>
+        <td><span class="inline">rollback_game_info</span></td>
+        <td>Срабатывает при получении информации о помещении, но до того, как оно будет полностью присоединено.<br>
+          Во время этого события <span class="inline2">rollback_event_param</span> будет содержать следующие переменные:<br>
+          <br>
+         <span class="inline2">num_players</span>: Общее количество игроков в игре<br>
+         <span class="inline2">player_id</span>: ID местного игрока (начиная с 0)
+        </td>
+      </tr>
+      <tr>
+        <td><span class="inline">rollback_connect_info</span></td>
+        <td>Срабатывает, когда комната была создана и готова к совместному использованию с другими игроками. URL, которым можно поделиться, хранится в <span class="inline2">rollback_event_param.share_url</span>.<br>
+          <br>
+          Вы можете автоматически скопировать этот URL, когда он станет доступен, вызвав <span class="inline"><a href="../Strings/clipboard_set_text.htm">clipboard_set_text()</a></span>.
+        </td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div>Back: <a data-xref="{title}" href="Rollback_Multiplayer.htm">Rollback Multiplayer</a></div>
-        <div>Next: <a href="Rollback_Errors.htm">Rollback Errors</a></div>
+        <div>Назад: <a data-xref="{title}" href="Rollback_Multiplayer.htm">Rollback Multiplayer</a></div>
+        <div>Следующий: <a data-xref="{title}" href="Rollback_Preferences.htm">Предпочтения отката</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
-  <!-- KEYWORDS
-rollback_event_param
-rollback_event_id
-rollback_chat_message
-rollback_player_prefs
-rollback_game_interrupted
-rollback_game_resumed
-rollback_game_full
-rollback_game_info
-rollback_end_game
-rollback_connect_info
-rollback_connection_rejected
-rollback_protocol_rejected
-rollback_high_latency
-rollback_connected_to_peer
-rollback_synchronizing_with_peer
-rollback_synchronized_with_peer
-rollback_disconnected_from_peer
--->
-  <!-- TAGS
-Rollback Events
--->
 </body>
 </html>

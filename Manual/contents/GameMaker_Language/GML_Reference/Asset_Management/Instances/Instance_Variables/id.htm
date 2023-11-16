@@ -6,7 +6,7 @@
   <title>id</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page outlining the variable id" />
   <meta name="rh-index-keywords" content="id" />
@@ -15,17 +15,17 @@
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
   <h1>id</h1>
-  <p>This <b>read-only</b> variable holds the unique identifying number for the instance. Every instance that you create - whether through code or by adding them to a room in the Room Editor - is given a number that is used internally to identify this instance and the variable <span class="inline">id</span> is what you can use to reference it. The <span class="inline">id</span> is also returned (and can be stored in a variable) when an instance is created using <span class="inline"><a href="../instance_create_layer.htm">instance_create_layer()</a></span> or <span class="inline"><a href="../instance_create_depth.htm">instance_create_depth()</a></span>, as well as other instance functions.</p>
-  <p><span data-condition="Export:Beta">This variable is now a reference to an instance, instead of simply being a real number. You can get the instance ID number by calling <a href="../../../Strings/real.htm"><span class="inline">real()</span></a> or <a href="../../../Variable_Functions/int64.htm"><span class="inline">int64()</span></a> on this variable.</span></p>
-  <p class="note"><span class="note">NOTE</span> The value of this variable is <i>not</i> the same as the identifier that the instance is given in the room editor and is also different to the <span style="font-size:1px;"><a href="../instance_id.htm" style="font-size: 14px"><span class="inline">instance_id</span></a></span> array which contains all the ids of all the currently active instances.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p>Эта переменная, <b>доступная только для чтения</b>, содержит уникальный идентификационный номер экземпляра. Каждому экземпляру, который вы создаете - будь то с помощью кода или путем добавления в комнату в редакторе комнат - присваивается номер, который используется для внутренней идентификации этого экземпляра, а переменная <span class="inline">id</span> - это то, что вы можете использовать для ссылки на него. Номер <span class="inline">id</span> также возвращается (и может быть сохранен в переменной) при создании экземпляра с помощью <span class="inline"><a href="../instance_create_layer.htm">instance_create_layer()</a></span> или <span class="inline"><a href="../instance_create_depth.htm">instance_create_depth()</a></span>, а также других функций экземпляра.</p>
+  <p><span data-condition="Export:Beta">Теперь эта переменная является ссылкой на экземпляр, а не просто вещественным числом. Вы можете получить идентификационный номер экземпляра, вызвав <a href="../../../Strings/real.htm"><span class="inline">real()</span></a> или <a href="../../../Variable_Functions/int64.htm"><span class="inline">int64()</span></a> на этой переменной.</span></p>
+  <p class="note"><span class="note">ПРИМЕЧАНИЕ</span> Значение этой переменной <i>не</i> совпадает с идентификатором, который присваивается экземпляру в редакторе помещений, а также отличается от массива <span style="font-size:1px;"><a href="../instance_id.htm" style="font-size: 14px"><span class="inline">instance_id</span></a></span> массив, который содержит все идентификаторы всех активных в данный момент экземпляров.</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
   <p class="code">id;</p>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
   <p class="code"><span data-keyref="Type_ID_Instance"><a href="../../../../../../GameMaker_Language/GML_Reference/Asset_Management/Instances/Instance_Variables/id.htm" target="_blank">Instance ID</a></span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Пример:</h4>
   <p class="code">for (var i = 0; i &lt; instance_count; i++;)<br />
     {<br />
         if instance_id[i] != id<br />
@@ -33,18 +33,18 @@
             instance_id[i].scr += 5;<br />
         }<br />
     }</p>
-  <p>The above code adds 5 to the &quot;scr&quot; variable for every active instance in the room except the one running the code. It does this by looping through ALL the active instances (using the &quot;instance_id&quot; array to return each active instances ID) and comparing them against the built in &quot;id&quot; variable, which is the ID of the original instance running the code.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Приведенный выше код добавляет 5 к переменной &quot;scr&quot; для каждого активного экземпляра в комнате, кроме того, который выполняет код. Это происходит путем перебора ВСЕХ активных экземпляров (используя массив &quot;instance_id&quot; для возврата ID каждого активного экземпляра) и сравнения их с встроенной переменной &quot;id&quot;, которая является ID исходного экземпляра, выполняющего код.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Instance_Variables.htm">Instance Variables</a></div>
-        <div style="float:right">Next: <a href="visible.htm">visible</a></div>
+        <div style="float:left">Назад: <a href="Instance_Variables.htm">Переменные экземпляра</a></div>
+        <div style="float:right">Следующий: <a href="visible.htm"><span class="notranslate">visible</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 id

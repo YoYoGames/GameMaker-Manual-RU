@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Create Buffer</title>
-  <meta name="generator" content="Adobe RoboHelp 2020" />
+  <title>Создать буфер</title>
+  <meta name="generator" content="Adobe RoboHelp 2019" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
-  <script src="../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page that explains the Create Buffer action" />
   <meta name="rh-index-keywords" content="GML Visual Action - Create Buffer" />
@@ -14,43 +14,48 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1><img alt="Create Buffer Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Buffers/i_Buffers_Create_Buffer.png" /> Create Buffer</h1>
-  <p>This action can be used to allocate a portion of memory as a buffer in your game, with the function returning the unique <i>buffer id</i> value that should be stored in a variable and used for all further function calls to the buffer. You can supply a global variable, an instance variable or have the action create a temporary local variable for storing the buffer ID. Note that you can create additional buffers by clicking the plus icon <span><img alt="Expand Icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Icon_Expand_Arguments.png" /> </span>beside the action, and selecting another variable to hold the buffer ID.</p>
-  <p class="note"><span data-conref="../../../assets/snippets/Tag_note.hts"> </span> It&#39;s important that you remove any dynamically created resources like this from memory when you no longer need them to prevent memory leaks, so when you are finished with the buffer that you have created you should free it up again using <a href="Delete_Buffer.htm">Delete Buffer</a> action (in the <a href="../../../The_Asset_Editors/Object_Properties/Object_Events.htm">Other - Clean Up</a> event, for example). This is especially important to remember when using a temporary local variable, as if you do not remove the buffer again before the end of the event or action script then you will no longer be able access it and can have issues later.</p>
-  <p> </p>
-  <h4>Action Syntax:</h4>
-  <p><img alt="Create Buffer Action" class="center" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Buffers/a_Buffers_Create_Buffer.png" /></p>
-  <h4>Arguments:</h4>
+  <h1><img> Создать буфер</h1>
+  <p>Это действие можно использовать для выделения части памяти под буфер в вашей игре, при этом функция возвращает уникальное значение <i>идентификатора буфера</i>, которое должно храниться в переменной и использоваться для всех последующих обращений к буферу. Вы можете предоставить
+    глобальную переменную, переменную экземпляра или попросить функцию создать временную локальную переменную для хранения идентификатора буфера. Обратите внимание, что вы можете создавать дополнительные буферы, нажав на значок плюса <span><img> </span>рядом с
+    и выбрать другую переменную для хранения идентификатора буфера.</p>
+  <p class="note"><b>ПРИМЕЧАНИЕ</b>: Важно, чтобы вы удаляли из памяти любые динамически созданные ресурсы, подобные этому, когда они вам больше не нужны, чтобы предотвратить утечку памяти, поэтому, когда вы закончите работу с созданным буфером, вы должны освободить его снова
+    используя действие <a href="Delete_Buffer.htm">Delete Buffer</a> (например, в событии <a href="../../../The_Asset_Editors/Object_Properties/Object_Events.htm">Other - Clean Up</a> ). Это особенно важно помнить при использовании временной локальной
+    переменную, так как если вы не удалите буфер до окончания события или сценария действия, то вы больше не сможете получить к нему доступ, и в дальнейшем могут возникнуть проблемы.</p>
+  <p> </p>
+  <h4>Синтаксис действия:</h4>
+  <p><img alt="Create Buffer Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Buffers/i_Buffers_Create_Buffer.png" /></p>
+  <h4>Аргументы:</h4>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Description</th>
+        <th>Аргумент</th>
+        <th>Описание</th>
       </tr>
       <tr>
-        <td>Buffer</td>
-        <td>The buffer index (stored in a variable)</td>
+        <td><span class="notranslate">Buffer</span></td>
+        <td>Индекс буфера (хранится в переменной)</td>
       </tr>
       <tr>
-        <td>Value</td>
-        <td>The value to add into the list</td>
+        <td><span class="notranslate">Value</span></td>
+        <td>Значение для добавления в список</td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Example:</h4>
-  <p><img alt="Create Buffer Example" class="center" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Buffers/e_Buffers_Create_Buffer.png" />The above action block code creates a global variable and then a buffer, assigning the unique buffer ID to the variable. This buffer than has two pieces of data written to it.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p> </p>
+  <h4>Пример:</h4>
+  <p><img>Приведенный выше код блока действий создает глобальную переменную, а затем буфер, присваивая уникальный
+    идентификатор буфера переменной. Затем в этот буфер записываются два фрагмента данных.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Buffer_Actions.htm">Buffer Actions</a></div>
-        <div style="float:right">Next: <a href="Copy_Buffer.htm">Copy Buffer</a></div>
+        <div style="float:left">Назад: <a href="Buffer_Actions.htm">Действия буфера</a></div>
+        <div style="float:right">Следующий: <a href="Copy_Buffer.htm">Буфер копирования</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 Action - Create Buffer

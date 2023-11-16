@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>The Output Window</title>
-  <meta name="generator" content="Adobe RoboHelp 2022" />
+  <title>Окно вывода</title>
+  <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../assets/css/default.css" type="text/css" />
-  <script src="../assets/scripts/main_script.js" type="module"></script>
+  <script src="../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Debugging Projects In GameMaker" />
   <meta name="rh-index-keywords" content="Output Window,Search Results,Breakpoints" />
@@ -14,79 +14,89 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1><span data-field="title" data-format="default">The Output Window</span></h1>
+  <h1>Окно вывода</h1>
   <p><img alt="The Output Dock" class="center" src="../assets/Images/Introduction/Output_General.png" /></p>
-  <p>When you open a project in <span data-keyref="GameMaker Name">GameMaker</span> for the first time, you will be presented with the Output Window<strong> </strong>docked at the bottom of the screen. This docked window contains various tabs that show the different output information for your project, depending on certain circumstances. The dock can be closed by clicking the button at the bottom of the <a class="glossterm" data-glossterm="IDE" href="#">IDE</a>, and you can click <img alt="Icon LMB" class="icon" height="24" src="../assets/Images/Icons/Icon_LMB.png" width="21" /> and drag any tab in the docked window to another dock to change its position, or you can click <img alt="Icon LMB" class="icon" height="24" src="../assets/Images/Icons/Icon_LMB.png" width="21" /> on the dock contents bar and drag it into the workspace to create a stand-alone window:</p>
-  <p><img alt="Docking / Undocking The Output Window" class="center" src="../assets/Images/Introduction/Output_Window.gif" />You can also click <img alt="Icon LMB" class="icon" height="24" src="../assets/Images/Icons/Icon_LMB.png" width="21" /> and drag a docked output into another one to create a split view output window, as shown in the example below where the two error outputs have been placed within the same tab (you can slow click <img alt="Icon LMB" class="icon" height="24" src="../assets/Images/Icons/Icon_LMB.png" width="21" /> on a tab to change its name too):</p>
-  <p><img alt="Split Output Window" class="center" src="../assets/Images/Introduction/Output_SplitWindow.gif" />You can recover the default state of the IDE at any time by selecting <em>Reset Layout</em> from <a data-xref="{title}" href="../IDE_Navigation/Menus/The_Layouts_Menu.htm">The Layouts Menu</a> and you can re-open any closed tab from <a data-xref="{title}" href="../IDE_Navigation/Menus/The_Windows_Menu.htm">The Windows Menu</a>. You can also change the way the contents of each of the output window are displayed by editing the <a href="../Setting_Up_And_Version_Information/IDE_Preferences/General/Output_Windows.htm">Output Window Preferences</a>.</p>
-  <p>The default docked tabs are explained below:</p>
-  <p id="output"><a class="dropspot" data-rhwidget="DropSpot" data-target="drop_down" href="#">Output</a></p>
+  <p>Когда вы впервые открываете проект в <span data-keyref="GameMaker Name">GameMaker</span>, в нижней части экрана появляется <strong>пристыкованное окно Output Window </strong>. Это пристыкованное окно содержит различные вкладки, которые показывают различную выходную информацию для вашего проекта, в зависимости от определенных обстоятельств. Док можно закрыть, нажав кнопку в нижней части <a class="glossterm" data-glossterm="IDE" href="#">IDE</a>, а также щелкнуть <img> и перетащить любую вкладку в пристыкованном окне в другой док, чтобы изменить ее положение, или щелкнуть <img> на панели содержимого дока и перетащить ее в рабочую область, чтобы создать отдельное окно:</p>
+  <p><img>Вы также можете щелкнуть <img> и перетащить пристыкованный вывод в другой вывод для создания окна вывода с разделенным видом, как показано в примере ниже, где два вывода ошибок были размещены в одной вкладке (вы можете медленно щелкнуть <img> на вкладке, чтобы изменить ее имя):</p>
+  <p><img>Вы можете в любой момент восстановить состояние по умолчанию на сайте <span class="notranslate">IDE</span>, выбрав команду <em>Сброс макета</em> в <a href="../IDE_Navigation/Menus/The_Layouts_Menu.htm">окне Макеты</a>, а также вы можете снова открыть любую закрытую вкладку из <a href="../IDE_Navigation/Menus/The_Windows_Menu.htm">меню Окна</a>. Вы также можете изменить способ отображения содержимого каждого окна вывода, отредактировав Параметры окна вывода.</p>
+  <p>Ниже описаны вкладки, установленные по умолчанию в доке:</p>
+  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop_down" href="#">Выход</a></p>
   <div class="droptext" data-targetname="drop_down">
-    <p class="dropspot"><img alt="The Output Window" class="center" src="../assets/Images/Introduction/Output_Output.png" />The general <strong>Output </strong>window is where all compiler output is shown, as well as any messages that you may have added to your game using the <span class="inline3_func"><a data-xref="{title}" href="../GameMaker_Language/GML_Reference/Debugging/show_debug_message.htm">show_debug_message</a></span> function. Most of the initial information shown is simply debug information on how the game is being built and as such can generally be ignored. However if you have an issue building your project for a target platform it can prove helpful in finding the cause as well as provide information for Support should you contact them.</p>
-    <p class="note"><span data-conref="../assets/snippets/Tag_note.hts"> </span> You can change the quantity of information shown here from the <a href="../Setting_Up_And_Version_Information/IDE_Preferences/General_Preferences.htm">Compiling</a> section of the <a href="../Setting_Up_And_Version_Information/IDE_Preferences.htm">Preferences</a>.</p>
-    <p class="note"><span data-conref="../assets/snippets/Tag_note.hts"> </span> The <strong>Log</strong> window of <a data-xref="{title}" href="../GameMaker_Language/GML_Reference/Debugging/The_Debug_Overlay.htm">The Debug Overlay</a> also shows this output.</p>
-    <p class="dropspot"> </p>
+    <p class="dropspot"><img>В общем окне <strong>Output </strong>отображается весь вывод компилятора, а также любые сообщения, которые вы добавили в игру с помощью функции
+      функция <a href="../GameMaker_Language/GML_Reference/Debugging/show_debug_message.htm"><span class="inline">show_debug_message()</span></a> функцию. Большая часть отображаемой начальной информации является просто отладочной информацией о том, как собирается игра, и
+      как таковая, может быть проигнорирована. Однако если у вас возникли проблемы со сборкой проекта для целевой платформы, это может оказаться полезным для поиска причины, а также предоставить информацию для службы поддержки, если вы обратитесь к ней. Обратите внимание, что вы можете изменить
+      количество информации, отображаемой здесь, в разделе <a href="../Setting_Up_And_Version_Information/IDE_Preferences/General_Preferences.htm">Компиляция</a> раздела <a href="../Setting_Up_And_Version_Information/IDE_Preferences.htm">Предпочтения</a>.</p>
+    <p class="dropspot"> </p>
   </div>
-  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop_down1" href="#">Search Results</a></p>
+  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop_down1" href="#">Результаты поиска</a></p>
   <div class="droptext" data-targetname="drop_down1">
-    <p class="dropspot"><img alt="Search Results" class="center" src="../assets/Images/Introduction/Output_Search.png" />You can open the <strong>Search And Replace Window</strong> using the keyboard shortcut  <img alt="Control Icon" class="icon" height="20" src="../assets/Images/Icons/Icon_Ctrl.png" width="55" /> / <img alt="CMD Icon" class="icon" height="20" src="../assets/Images/Icons/Icon_Cmd.png" width="55" /> +  <img alt="Shift Icon" class="icon" height="20" src="../assets/Images/Icons/Icon_Shift.png" width="55" /> + &quot; <strong>F</strong>&quot;, or go to the <a href="../IDE_Navigation/Menus/The_Edit_Menu.htm">Edit Menu</a>. Once you have entered your search terms, the results will be shown in this window with the format:</p>
+    <p class="dropspot"><img><strong>Окно поиска и замены</strong> можно открыть с помощью сочетания клавиш <img> / <img> + <img> + &quot; <strong>F</strong>&quot; или через <a href="../IDE_Navigation/Menus/The_Edit_Menu.htm">меню Правка</a>. После того как вы введете условия поиска, результаты будут показаны в этом окне в формате:</p>
     <p class="code">[object] - [event] - [Line Number]: [search string]</p>
-    <p class="dropspot">If the search term is found in a script then it will simply be:</p>
+    <p class="dropspot">Если поисковый запрос найден в сценарии, то он будет просто:</p>
     <p class="code">[script] - [Line Number]: [search string]</p>
-    <p class="dropspot">You can then double-click <img alt="Icon LMB" class="icon" height="24" src="../assets/Images/Icons/Icon_LMB.png" width="21" /> on any of the returned entries to open the given asset at the correct position for editing.</p>
-    <p class="dropspot">This window will also show results for Feather&#39;s <a href="../The_Asset_Editors/Code_Editor_Properties/Feather_Features.htm#h1">&quot;Quick Fixes&quot;</a> functionality.</p>
-    <p class="dropspot"> </p>
+    <p class="dropspot">Затем вы можете дважды щелкнуть <img> на любой из возвращенных записей, чтобы открыть данный актив в нужной позиции для редактирования.</p>
+    <p class="dropspot">В этом окне также будут показаны результаты для функции Feather &quot;<a data-xref="{text}" href="../The_Asset_Editors/Code_Editor_Properties/Feather_Features.htm#h">Найти все ссылки</a>&quot;.</p>
+    <p class="dropspot"> </p>
   </div>
-  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop_down2" href="#">Source Control</a></p>
+  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop_down2" href="#">Контроль источников</a></p>
   <div class="droptext" data-targetname="drop_down2">
-    <p class="dropspot"><img alt="Source Control Output" class="center" src="../assets/Images/Introduction/Output_SourceControl.png" />This window will show all the output for your <a class="glossterm" data-glossterm="SCM" href="#">SCM</a> plugin. See the <a data-xref="{title}" href="../IDE_Tools/Source_Control.htm">Source Control</a> page to find out more about setting up.</p>
-    <p class="dropspot"> </p>
+    <p class="dropspot"><img>В этом окне будет показан весь вывод для вашего плагина <a class="glossterm" data-glossterm="SCM" href="#">SCM</a>. Вы можете узнать больше о
+      о настройке Source Control <a href="../IDE_Tools/Source_Control.htm">здесь</a>.</p>
+    <p class="dropspot"> </p>
   </div>
-  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop_down3" href="#">Breakpoints</a></p>
+  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop_down3" href="#">Точки останова</a></p>
   <div class="droptext" data-targetname="drop_down3">
-    <p class="dropspot"><img alt="Breakpoints Output" class="center" src="../assets/Images/Introduction/Output_Breakpoints.png" />Breakpoints are places in your game code or GML Visual where you have instructed <span data-keyref="GameMaker Name">GameMaker</span> to pause the running of the project while in <a href="Debugging.htm">Debug Mode</a>. You can add a breakpoint anywhere in the game loop using the key &quot; <strong>F9</strong>&quot;, and when you do it will appear in this output tab. You can enable and disable them (without removing them) by clicking on the checkbox to the left and if you use the right mouse button <img alt="Icon RMB" class="icon" src="../assets/Images/Icons/Icon_RMB.png" /> on one then you get a small menu that permits you to remove the breakpoint or open the <span data-keyref="GML_Code">GML Code</span>/<span data-keyref="GML_Visual">GML Visual</span> window where the breakpoint is located.</p>
-    <p class="dropspot"> </p>
+    <p class="dropspot"><img>Точки останова - это места в коде вашей игры или <span class="notranslate">GML</span> Visual, где вы указали <span data-keyref="GameMaker Name">GameMaker</span> приостановить выполнение проекта в режиме отладки.
+     <a href="Debugging.htm">режиме отладки</a>. Вы можете добавить точку останова в любом месте игрового цикла с помощью клавиши &quot; <strong>F9</strong>&quot;, и когда вы это сделаете, она появится на этой вкладке вывода. Вы можете включать и выключать их (не удаляя)
+      нажав на флажок слева, а если вы используете правую кнопку мыши <img> на одной из них, то вы получите небольшое меню, которое позволит вам удалить точку останова или открыть код/GML Visual
+      окно, в котором находится точка останова.
+    </p>
+    <p class="dropspot"> </p>
   </div>
-  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop_down4" href="#">Syntax Errors</a></p>
+  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop_down4" href="#">Ошибки синтаксиса</a></p>
   <div class="droptext" data-targetname="drop_down4">
-    <p class="dropspot"><img alt="Syntax Errors Output" class="center" src="../assets/Images/Introduction/Output_SyntaxErrors.png" />Syntax errors are those errors in your code that the <span data-keyref="GameMaker Name">GameMaker</span> <a class="glossterm" data-glossterm="syntax" href="#">syntax</a> checker has picked up. There are many reasons why you might get a syntax error - like having a &quot;;&quot; in your code when a &quot;:&quot; is expected - and these should be fixed before trying to test or compile your game. Each syntax error entry in the output window can be double-clicked using the left mouse button <img alt="Icon LMB" class="icon" height="24" src="../assets/Images/Icons/Icon_LMB.png" width="21" /> to open a window at the position flagged so it can be resolved.</p>
-    <p class="dropspot">Syntax errors will update as you write your code (there will be a short pause between typing something and any errors appearing in this window to prevent errors being reported for unfinished code), and will follow the format:</p>
+    <p class="dropspot"><img>Синтаксические ошибки - это те ошибки в вашем коде, которые <a class="glossterm" data-glossterm="синтаксис" href="#">синтаксическая</a> проверка <span data-keyref="GameMaker Name">GameMaker</span> 
+      обнаружила. Существует множество причин, по которым вы можете получить синтаксическую ошибку - например, в вашем коде есть символ &quot;;&quot;, когда ожидается символ &quot;:&quot; - и их следует устранить до того, как вы попытаетесь протестировать или скомпилировать свою игру. Каждая запись о синтаксической ошибке в
+      в окне вывода можно дважды щелкнуть левой кнопкой мыши <img>, чтобы открыть окно в отмеченной позиции и устранить ошибку.</p>
+    <p class="dropspot">Синтаксические ошибки будут обновляться по мере написания кода (между вводом текста и появлением ошибок в этом окне будет небольшая пауза, чтобы избежать появления сообщений об ошибках в незаконченном коде), и будут соответствовать формату:</p>
     <p class="code">[object] - [event] - [Line Number] - [Position In Line]: [error string]</p>
-    <p class="dropspot">Or if the error is in a script, it will be:</p>
+    <p class="dropspot">Или если ошибка находится в скрипте, она будет:</p>
     <p class="code">[script] - [Line Number] - [Position in line]: [error string]</p>
-    <p class="dropspot">Note that syntax errors will usually prevent the game from being compiled, however there are errors that will be flagged that won&#39;t prevent compiling, but that should, nonetheless, be resolved. The errors in question are:</p>
+    <p class="dropspot">Обратите внимание, что синтаксические ошибки обычно препятствуют компиляции игры, однако есть ошибки, которые будут отмечены, которые не препятствуют компиляции, но которые, тем не менее, должны быть устранены. Речь идет о следующих ошибках:</p>
     <ul class="colour">
-      <li class="dropspot">for declared variables that aren&#39;t used anywhere</li>
-      <li class="dropspot">for variables used somewhere that haven&#39;t been declared yet</li>
+      <li class="dropspot">для объявленных переменных, которые нигде не используются</li>
+      <li class="dropspot">для переменных, используемых где-то, которые еще не были объявлены</li>
     </ul>
-    <p class="dropspot">In general either of these would suggest a <a class="glossterm" data-glossterm="typo" href="#">typo</a> in a variable name, or some other kind of easy-to-make error - and so they are flagged for you to revise - but it can also be intentional, as you may have declared the variable for future use, but not got around to actually using it yet. This is why these errors will still permit your game to compile. For a full list of possible syntax error messages, please see <a href="../Additional_Information/Errors/Syntax_Errors.htm">here</a>.</p>
-    <p class="dropspot"> </p>
+    <p class="dropspot">Как правило, любой из этих вариантов предполагает <a class="glossterm" data-glossterm="опечатка" href="#">опечатку</a> в имени переменной или какую-то другую легко совершаемую ошибку - и поэтому они помечаются, чтобы вы перепроверили их, - но это может быть и намеренным, поскольку вы
+      вы объявили переменную для будущего использования, но еще не успели ее использовать. Поэтому такие ошибки все равно позволят вашей игре скомпилироваться. Полный список возможных сообщений об ошибках синтаксиса смотрите <a href="../Additional_Information/Errors/Syntax_Errors.htm">здесь</a>.</p>
+    <p class="dropspot"> </p>
   </div>
-  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop_down5" href="#">Compile Errors</a></p>
+  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop_down5" href="#">Ошибки компиляции</a></p>
   <div class="droptext" data-targetname="drop_down5">
-    <p class="dropspot"><img alt="Compile Error Output" class="center" src="../assets/Images/Introduction/Output_CompileErrors.png" />A Compiler Error happens when your game encounters some type of error that the syntax checker may not have been able to detect, or when an error is related to how you have set up the compile options. When this happens, your game will give you a compiler error and stop running. Any compiler errors will be shown in the General Output window too, but they will also be listed here separately (since they can get &quot;lost&quot; in the rest of the general output).</p>
-    <p class="dropspot">The compiler error messages will all follow the same format:</p>
+    <p class="dropspot"><img>Ошибка компилятора возникает, когда ваша игра сталкивается с какой-то ошибкой, которую не смогла обнаружить проверка синтаксиса, или когда ошибка связана с тем, как вы настроили параметры компиляции. Когда это происходит, игра выдает ошибку компилятора и прекращает работу. Все ошибки компилятора будут показаны и в окне общего вывода, но они также будут перечислены здесь отдельно (поскольку они могут &quot;потеряться&quot; в остальном общем выводе).</p>
+    <p class="dropspot">Все сообщения об ошибках компилятора будут иметь одинаковый формат:</p>
     <p class="code">[object] - [event] - [Line Number]: [error string]</p>
-    <p class="dropspot">If the error is found in a script then it will simply be:</p>
+    <p class="dropspot">Если ошибка найдена в сценарии, то это будет просто:</p>
     <p class="code">[script] - [Line Number]: [error string]</p>
-    <p class="dropspot">You can then double-click <img alt="Icon LMB" class="icon" height="24" src="../assets/Images/Icons/Icon_LMB.png" width="21" /> on any of the compiler error entries to open the given asset at the position flagged as giving the error. For a full list of possible error messages, please see <a href="../Additional_Information/Errors/Compiler_Errors.htm">here</a>.</p>
+    <p class="dropspot">Затем вы можете дважды щелкнуть <img> на любой из записей об ошибках компилятора, чтобы открыть данный актив в позиции, отмеченной как дающая ошибку. Полный список возможных сообщений об ошибках см. <a href="../Additional_Information/Errors/Compiler_Errors.htm">здесь</a>.</p>
   </div>
-  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop_down6" href="#">Feather Messages</a></p>
+  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop_down6" href="#">Сообщения перьев</a></p>
   <div class="droptext" data-targetname="drop_down6">
-    <p class="dropspot"><img src="../assets/Images/Scripting_Reference/Additional_Information/Output_Feather_Searchable_Sortable.png" /></p>
-    <p class="dropspot">The Feather Messages window shows you all errors, warnings and suggestions reported by <a href="../Setting_Up_And_Version_Information/IDE_Preferences/Feather_Settings.htm">Feather</a>. You can double-click any item in the list to navigate to its corresponding code window.</p>
-    <p class="dropspot">See <a data-xref="{text}" href="../Additional_Information/Errors/Syntax_Errors.htm#h">Feather Messages (Feather enabled)</a> for more info.</p>
+    <p class="dropspot"><img alt="Icon LMB" class="icon" height="24" src="../assets/Images/Icons/Icon_LMB.png" width="21" /></p>
+    <p class="dropspot">В окне Feather Messages отображаются все ошибки, предупреждения и предложения, о которых сообщает <a href="../Setting_Up_And_Version_Information/IDE_Preferences/Feather_Settings.htm">Feather</a>. Вы можете дважды щелкнуть любой элемент в списке, чтобы перейти к соответствующему окну кода.</p>
+    <p class="dropspot">Дополнительную информацию см. в разделе <a data-xref="{text}" href="../Additional_Information/Errors/Syntax_Errors.htm#h">Сообщения Feather (Feather enabled)</a>.</p>
   </div>
-  <p> </p>
-  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Introduction_To_GameMaker_Studio_2.htm">Introduction To <span data-keyref="GameMaker Name">GameMaker</span></a></div>
-        <div style="float:right">Next: <a href="The_Marketplace.htm">The Marketplace</a></div>
+        <div style="float:left">Назад: <a href="Introduction_To_GameMaker_Studio_2.htm">Введение в <span data-keyref="GameMaker Name">GameMaker</span></a></div>
+        <div style="float:right">Следующий: <a href="The_Marketplace.htm">Рынок</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 Compiler Error Output

@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Load Game</title>
-  <meta name="generator" content="Adobe RoboHelp 2022" />
+  <title>Загрузить игру</title>
+  <meta name="generator" content="Adobe RoboHelp 2019" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
-  <script src="../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page that explains the Load Game action" />
   <meta name="rh-index-keywords" content="GML Visual Action - Load Game" />
@@ -14,39 +14,40 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1><img alt="Load Game Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Game/i_Game_Load_Game.png" style="cursor: nwse-resize;" /> <span data-field="title" data-format="default">Load Game</span> <span data-conref="../../../assets/snippets/Tag_deprecated.hts"> </span></h1>
-  <p>This action will load a game that has previously been saved using the <a data-xref="{title}" href="Save_Game.htm">Save Game</a> action.</p>
-  <p>You give the filename of the file to load (as a string, and including the extension) and the game will be loaded and continue running from the saved point. Note that this is not designed as a universal save/load system, and trying to load a game saved from a previous run of the project may give errors (especially if you have used things like <a href="../Data_Structures/Data_Structure_Actions.htm">Data Structures</a> or <a href="../Particles/Particle_Actions.htm">Particles</a>), and as such you should only try and load games that have been saved in the progress of a single game play-through (for things like checkpoints). Also note that the file will <i>not</i> be loaded until the end of the current event or script, so any actions after the load action is called will still be performed.</p>
-  <div data-conref="../../../assets/snippets/Note_Load_Save_Game_Legacy.hts"> </div>
-  <p> </p>
-  <h4>Action Syntax:</h4>
-  <p><img alt="Load Game Action" class="center" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Game/a_Game_Load_Game.png" /></p>
-  <h4>Arguments:</h4>
+  <h1><img> Загрузить игру</h1>
+  <p>Это действие загружает игру, которая ранее была сохранена с помощью действия <a href="Save_Game.htm">Save Game</a>. Вы указываете имя файла, который нужно загрузить (в виде строки, включая расширение), и игра будет загружена и продолжит работу
+    с сохраненной точки. Обратите внимание, что это не универсальная система сохранения/загрузки, и попытка загрузить игру, сохраненную в предыдущем запуске проекта, может привести к ошибкам (особенно если вы использовали такие вещи, как <a href="../Data_Structures/Data_Structure_Actions.htm">структуры данных</a> или <a href="../Particles/Particle_Actions.htm">частицы</a>), и поэтому вы должны пытаться загрузить только те игры, которые были сохранены в процессе прохождения одной игры (для таких вещей, как контрольные точки). Также обратите внимание, что файл <i>не</i> будет загружен до окончания текущего события или сценария, поэтому любые действия после вызова действия load все равно будут выполнены. Более подробный подход к загрузке сохраненных данных игры см. в разделе <a href="../Files/File_Actions.htm">Действия с файлами</a>.</p>
+  <p> </p>
+  <h4>Синтаксис действия:</h4>
+  <p><img alt="Load Game Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Game/i_Game_Load_Game.png" style="cursor: nwse-resize;" /></p>
+  <h4>Аргументы:</h4>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Description</th>
+        <th>Аргумент</th>
+        <th>Описание</th>
       </tr>
       <tr>
-        <td>Timeline</td>
-        <td>The timeline resource to assign to an instance</td>
+        <td><span class="notranslate">Timeline</span></td>
+        <td>Ресурс временной шкалы для назначения экземпляру</td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Example:</h4>
-  <p><span><img alt="Load Game Example" class="center" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Game/e_Game_Load_Game.png" /></span>The above action block code will check a global variable and if it is less than or equal to 0 it will load a previously saved game.</p>
-  <p> </p>
-  <p> </p>
+  <p> </p>
+  <h4>Пример:</h4>
+  <p><span><img></span>Приведенный выше код блока действий проверит глобальную переменную и, если она меньше или равна
+    0, то будет загружена ранее сохраненная игра.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Game_Actions.htm">Game Actions</a></div>
-        <div style="float:right">Next: <a href="Restart_Game.htm">Restart Game</a></div>
+        <div style="float:left">Назад: <a href="Game_Actions.htm">Игровые действия</a></div>
+        <div style="float:right">Следующий: <a href="Restart_Game.htm">Перезапуск игры</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 Action - Load Game

@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Declare Temporary Variable</title>
+  <title>Объявление временной переменной</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
-  <script src="../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Section detailing Declare Temporary Variable" />
   <meta name="rh-index-keywords" content="GML Visual Action - Declare Temporary Variable" />
@@ -14,45 +13,51 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1><img alt="Declare Temporary Variable Icon" class="icon" height="32" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Common/i_Common_Temp_Var.png" width="32" /> <span data-field="title" data-format="default">Declare Temporary Variable</span></h1>
-  <p>This action is used to declare and give an initial value to a <b>temporary variable </b>(also called a <b>local variable</b>), which is a variable that <i>only exists for the duration of the event or script that it was declared in</i>. Temporary variables are very useful for storing values that are only needed for a single operation and prevent your objects becoming &quot;cluttered&quot; with variables that may only be used once. They are also very useful for breaking down complex operations, or for setting values in other instances when you change the action scope. This is because variables declared as temporary are<i>not</i>scoped to any particular instance, but instead scoped to the event or script itself, so if you create a temporary variable and then change the action scope using the <a href="Apply_To...htm">Apply To...</a> action, you can still check the temporary variable without issues and without changing its action scope.</p>
-  <p>It is worth noting that when we talk about &quot;values&quot;, we don&#39;t just mean numeric values, as a variable can be a string, a pointer, a resource ID or anything else that a function can return or use, even an <a class="glossterm" data-glossterm="expression" href="#">expression</a>. See the section on <a href="../../../GameMaker_Language/GML_Overview/Data_Types.htm">data types</a> for more information.</p>
-  <p>Note that many action have a &quot;Temp&quot; check-box which enables you to create a new temporary local variable to hold the return value of the action, and this variable can be accessed in the action script or event as you would any other variable thereafter. Also note that temporary local variables are scoped to the script or event in which they are created, and so they can be used by other instances in the same block when using <a href="Apply_To...htm">Apply To</a>.</p>
-  <p>You can also add additional variables in the same action by clicking the plus icon <img src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Icon_Expand_Arguments.png" /> beside the action, and giving another temporary local variable name and value. For more advanced information on variables please see the section on <a href="../../../GameMaker_Language/GML_Overview/Variables_And_Variable_Scope.htm">Variables And Variable Scope</a>.</p>
-  <p> </p>
-  <h4>Action Syntax:</h4>
-  <p><img alt="Declare Temporary Variable Action" class="center" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Common/a_Common_Declare_Temp_Var.png" /></p>
-  <h4>Arguments:</h4>
+  <h1><img> Объявление временной переменной</h1>
+  <p>Это действие используется для объявления и присвоения начального значения <b>временной переменной </b>(также называемой <b>локальной переменной</b>), которая <i>существует только в течение времени действия события или сценария, в котором она была объявлена</i>. Временные переменные
+    очень полезны для хранения значений, которые нужны только для одной операции, и предотвращают &quot;загромождение&quot; объектов переменными, которые могут быть использованы только один раз. Они также очень полезны для разбиения сложных операций или для
+    установки значений в других экземплярах при изменении области действия. Это происходит потому, что переменные, объявленные как временные,<i>не привязаны</i>к конкретному экземпляру, а привязаны к самому событию или сценарию, поэтому если вы создадите временную переменную
+    а затем изменить область действия с помощью действия <a href="Apply_To...htm">Apply To</a>..., вы все равно сможете проверить временную переменную без проблем и без изменения области действия.</p>
+  <p>Стоит отметить, что когда мы говорим о &quot;значениях&quot;, мы имеем в виду не только числовые значения, поскольку переменная может быть строкой, указателем, идентификатором ресурса или чем-либо еще, что может вернуть или использовать функция, даже <a class="glossterm" data-glossterm="выражение" href="#">выражением</a>. Более подробную информацию см. в разделе о <a href="../../../GameMaker_Language/GML_Overview/Data_Types.htm">типах данных</a>.</p>
+  <p>Обратите внимание, что многие действия имеют флажок &quot;Temp&quot;, который позволяет создать новую временную локальную переменную для хранения возвращаемого значения действия, и к этой переменной можно получить доступ в сценарии действия или события, как и к любой другой переменной.
+    после этого. Также обратите внимание, что временные локальные переменные привязаны к сценарию или событию, в котором они созданы, поэтому они могут быть использованы другими экземплярами в том же блоке при использовании <a href="Apply_To...htm">Apply To</a>.</p>
+  <p>Вы также можете добавить дополнительные переменные в том же действии, нажав на значок плюса <img> рядом с действием и задав другой временной локальной переменной
+    имя и значение. Более подробную информацию о переменных можно найти в разделе " <a href="../../../GameMaker_Language/GML_Overview/Variables_And_Variable_Scope.htm">Переменные и область действия переменных</a>".</p>
+  <p> </p>
+  <h4>Синтаксис действия:</h4>
+  <p><img alt="Declare Temporary Variable Icon" class="icon" height="32" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Common/i_Common_Temp_Var.png" width="32"/></p>
+  <h4>Аргументы:</h4>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Description</th>
+        <th>Аргумент</th>
+        <th>Описание</th>
       </tr>
       <tr>
-        <td>Name</td>
-        <td>The name of the new variable to assign, or the name of an existing variable to change.</td>
+        <td><span class="notranslate">Name</span></td>
+        <td>Имя новой переменной, которую нужно присвоить, или имя существующей переменной, которую нужно изменить.</td>
       </tr>
       <tr>
-        <td>Value</td>
-        <td>The value that the variable should hold.</td>
+        <td><span class="notranslate">Value</span></td>
+        <td>Значение, которое должна иметь переменная.</td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Example:</h4>
-  <p><img alt="Declare Temporary Variable Example" class="center" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Common/e_Common_Declare_Temp.png" />The above action block code creates two temporary variables, &quot; <span class="inline">_dir</span>&quot; and &quot;<span class="inline">_spd</span>&quot; and sets them to random values. It then uses these values to set the instance moving in a random direction at a random speed.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p> </p>
+  <h4>Пример:</h4>
+  <p><img>Приведенный выше код блока действий создает две временные переменные, &quot; <span class="inline">_dir</span>&quot;
+    и &quot;<span class="inline">_spd</span>&quot; и устанавливает их в случайные значения. Затем он использует эти значения, чтобы заставить экземпляр двигаться в случайном направлении со случайной скоростью.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Common_Actions_Library.htm">Common Actions</a></div>
-        <div style="float:right">Next: <a href="Set_Global_Variable.htm">Set Global Variable</a></div>
+        <div style="float:left">Назад: <a href="Common_Actions_Library.htm">Общие действия</a></div>
+        <div style="float:right">Следующий: <a href="Set_Global_Variable.htm">Установка глобальной переменной</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 Action - Assign Variable
@@ -60,5 +65,5 @@ Action - Assign Variable
   <!-- TAGS
 action_variable
 -->
-</body>
-</html>
+
+</body></html>

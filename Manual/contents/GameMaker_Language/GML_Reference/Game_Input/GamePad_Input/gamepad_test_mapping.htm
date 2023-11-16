@@ -6,7 +6,7 @@
   <title>gamepad_test_mapping</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference page for gamepad_test_mapping" />
   <meta name="rh-index-keywords" content="gamepad_test_mapping" />
@@ -16,29 +16,29 @@
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
   <h1>gamepad_test_mapping</h1>
-  <p>This function can be used to set the gamepad mapping on those targets that permit it. You supply the &quot;slot&quot; index for the gamepad to set, and then the map string, which should have been created using the SDL format with the following fields:</p>
+  <p>Эта функция может быть использована для установки отображения геймпада на тех целях, которые это позволяют. Вы передаете индекс &quot;slot&quot; для геймпада, который нужно установить, а затем строку map, которая должна быть создана с использованием формата SDL со следующими полями:</p>
   <p class="code">&lt;guid&gt;,&lt;description&gt;,platform:&lt;platform-name&gt;,&lt;bindings&gt;</p>
-  <p>The details that should be included in each of these fields are:</p>
+  <p>В каждом из этих полей должны быть указаны следующие данные:</p>
   <ul class="colour">
-    <li><span class="inline">guid</span> - a string of digits and letters that uniquely identifies a device type (this can be retrieved using the <a href="gamepad_get_guid.htm"><span class="inline">gamepad_get_guid()</span></a> function)</li>
-    <li><span class="inline">description</span> - an Ascii description of the device (this can be retrieved using the <a href="gamepad_get_description.htm"><span class="inline">gamepad_get_description()</span></a> function)</li>
-    <li><span class="inline">platform-name</span> - will be either &quot;platform:android&quot;, &quot;platform:windows&quot;, &quot;linux&quot;, or &quot;mac&quot; (note that <b>this will be appended automatically onto the string when you call this function</b>, and so you do not need to supply it when constructing your own mapping strings)</li>
-    <li><span class="inline">bindings</span> - a set of entries separated by a &#39;,&#39; to bind actual input to specific GML constants</li>
+    <li><span class="inline">guid</span> - строка цифр и букв, которая однозначно идентифицирует тип устройства (ее можно получить с помощью функции <a href="gamepad_get_guid.htm"><span class="inline">gamepad_get_guid()</span></a> функция)</li>
+    <li><span class="inline">description</span> - описание устройства в формате Ascii (его можно получить с помощью функции <a href="gamepad_get_description.htm"><span class="inline">gamepad_get_description()</span></a> функция)</li>
+    <li><span class="inline">platform-name</span> - будет либо &quot;platform:android&quot;, &quot;platform:windows&quot;, &quot;linux&quot;, либо &quot;mac&quot; (обратите внимание, что <b>это будет автоматически добавлено к строке при вызове этой функции</b>, и поэтому вам не нужно указывать это при построении собственных строк отображения)</li>
+    <li><span class="inline">bindings</span> - набор записей, разделенных символом ',' для привязки фактического ввода к определенным константам <span class="notranslate">GML</span>.</li>
   </ul>
-  <p>The comma separated list of entries follows a specific format for each entry:</p>
+  <p>Список записей, разделенных запятыми, соответствует определенному формату для каждой записи:</p>
   <p class="code">&lt;abstract-gp-name&gt;:&lt;value-binding&gt;</p>
-  <p>Here <span class="inline">&lt;value-binding&gt;</span> (ie: the direct gamepad input) can be any one of the following:</p>
+  <p>Здесь <span class="inline">&lt;value-binding&gt;</span> (т.е. прямой вход геймпада) может быть любым из следующих:</p>
   <ul class="colour">
-    <li><span class="inline">a&lt;N&gt;</span> - This represents an axis of the gamepad, where the &lt;N&gt; is one of the axis from 0 to <a href="gamepad_axis_count.htm"><span class="inline">gamepad_axis_count()</span></a> -1</li>
-    <li><span class="inline">b&lt;N&gt;</span> - This represents a button of the gamepad, where the &lt;N&gt; is one of the buttons from 0 to <a href="gamepad_button_count.htm"><span class="inline">gamepad_button_count()</span></a> -1</li>
-    <li><span class="inline">h&lt;N&gt;.&lt;mask&gt;</span> - This represents a hat of the gamepad, where the &lt;N&gt; represents a hat from 0 to <a href="gamepad_hat_count.htm"><span class="inline">gamepad_hat_count()</span></a> -1, and the <span class="inline">&lt;mask&gt;</span> will be either 1, 2, 4, or 8.</li>
+    <li><span class="inline">a&lt;N&gt;</span> - Представляет собой ось геймпада, где &lt;N&gt; - одна из осей от 0 до <a href="gamepad_axis_count.htm"><span class="inline">gamepad_axis_count()</span></a> -1</li>
+    <li><span class="inline">b&lt;N&gt;</span> - Представляет собой кнопку геймпада, где &lt;N&gt; - одна из кнопок от 0 до <a href="gamepad_button_count.htm"><span class="inline">gamepad_button_count()</span></a> -1</li>
+    <li><span class="inline">h&lt;N&gt;.&lt;mask&gt;</span> - Это представляет шапку геймпада, где &lt;N&gt; представляет шапку от 0 до <a href="gamepad_hat_count.htm"><span class="inline">gamepad_hat_count()</span></a> -1, а <span class="inline">&lt;mask&gt;</span> будет либо 1, либо 2, либо 4, либо 8.</li>
   </ul>
-  <p>Each input value should be bound to an SDL name, which is expressed as <span class="inline">&lt;&gt;abstract-gp-name&gt;</span>, which in turn is bound to a GML constant. The table below shows the equivalence between the SDL name and the <span data-keyref="GameMaker Name">GameMaker</span> constant:</p>
+  <p>Каждое входное значение должно быть связано с именем SDL, которое выражается в виде <span class="inline">&lt;&gt;abstract-gp-name&gt;</span>, которое, в свою очередь, связано с константой <span class="notranslate">GML</span>. В таблице ниже показана эквивалентность между именем SDL и константой <span data-keyref="GameMaker Name">GameMaker</span>:</p>
   <table>
     <tbody>
       <tr>
-        <th>SDL Name</th>
-        <th>GML Name</th>
+        <th>Название SDL</th>
+        <th>Имя GML</th>
       </tr>
       <tr>
         <td><span class="inline">a</span></td>
@@ -122,36 +122,36 @@
       </tr>
     </tbody>
   </table>
-  <p><br />
-    When you have constructed your mapping string it should look something like this:</p>
+  <p><br>
+    Когда вы построите строку сопоставления, она должна выглядеть примерно так:</p>
   <p class="code">&quot;050000005e040000fd020000ffff3f00,Xbox Wireless Controller,a:b0,b:b1,start:b4,dpdown:h0.4,dpleft:h0.8,dpright:h0.2,dpup:h0.1,guide:b6,leftshoulder:b9,leftstick:b7,lefttrigger:a4,leftx:a0,lefty:a1,rightshoulder:b10,rightstick:b8,righttrigger:a5,rightx:a2,righty:a3,x:b2,y:b3,platform:android&quot;</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p> </p>
+  <h4>Синтаксис:</h4>
   <p class="code">gamepad_test_mapping(index, mapping_string);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Аргумент</th>
+        <th>Тип</th>
+        <th>Описание</th>
       </tr>
       <tr>
-        <td>index</td>
-        <td><span data-keyref="Type_Real">Real</span></td>
-        <td>Which gamepad index &quot;slot&quot; to set.</td>
+        <td><span class="notranslate">index</span></td>
+        <td><span data-keyref="Type_Real">Реально</span></td>
+        <td><span class="notranslate">Which gamepad index &quot;slot&quot; to set.</span></td>
       </tr>
       <tr>
-        <td>mapping_string</td>
-        <td><span data-keyref="Type_String">String</span></td>
-        <td>The map string to use (see the description for more information).</td>
+        <td><span class="notranslate">mapping_string</span></td>
+        <td><span data-keyref="Type_String">Строка</span></td>
+        <td><span class="notranslate">The map string to use (see the description for more information).</span></td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
   <p class="code"><span data-keyref="Type_Void">N/A</span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Пример:</h4>
   <p class="code">var mapping = gamepad_get_guid(global.padIndex) + &quot;,&quot; + gamepad_get_description(global.padIndex);<br />
     var len = array_length(global.PadInstances);<br />
     for (i = 0; i &lt; len; i += 2)<br />
@@ -161,18 +161,18 @@
         mapping += &quot;,&quot; + left.sdlLabel + &quot;:&quot; + right.binding;<br />
     }<br />
     gamepad_test_mapping(global.padIndex, mapping);</p>
-  <p>The above code will loop through a number of instances and use the values of different variables that they contain to create a mapping string, which is then set for use on the gamepad in the given slot index.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Приведенный выше код будет проходить через ряд экземпляров и использовать значения различных переменных, которые они содержат, для создания строки отображения, которая затем устанавливается для использования на геймпаде в заданном индексе слота.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Gamepad_Input.htm">Gamepad Input</a></div>
-        <div style="float:right">Next: <a href="gamepad_remove_mapping.htm">gamepad_remove_mapping</a></div>
+        <div style="float:left">Назад: <a href="Gamepad_Input.htm">Вход геймпада</a></div>
+        <div style="float:right">Следующий: <a href="gamepad_remove_mapping.htm"><span class="notranslate">gamepad_remove_mapping</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 gamepad_test_mapping

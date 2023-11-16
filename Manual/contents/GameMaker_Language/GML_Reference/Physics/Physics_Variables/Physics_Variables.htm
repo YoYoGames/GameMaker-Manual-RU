@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Physics Variables</title>
+  <title>Физические переменные</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference section for Physics Variables" />
   <meta name="rh-index-keywords" content="" />
@@ -14,58 +14,58 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>Physics Variables</h1>
-  <p>As with the &quot;traditional&quot; collisions and movement system, the physics system also has a series of <a href="../../Asset_Management/Instances/Instance_Variables/Instance_Variables.htm">instance variables</a> assigned to each instance of an object when it is created. Some of these properties can be defined by the user in GML, but many are read-only and still more are only applicable in the <strong>collision</strong> event.</p>
-  <p>The following variables exists in <i>all</i> physics enabled objects and they can be read from and written to (ie: changed) using code from instances and script functions:</p>
+  <h1>Физические переменные</h1>
+  <p>Как и в &quot;традиционной&quot; системе столкновений и движения, в системе физики также есть ряд <a href="../../Asset_Management/Instances/Instance_Variables/Instance_Variables.htm">переменных экземпляра</a>, назначаемых каждому экземпляру объекта при его создании. Некоторые из этих свойств могут быть определены пользователем в <span class="notranslate">GML</span>, но многие из них доступны только для чтения, а многие применимы только в событии <strong>столкновения</strong>.</p>
+  <p>Следующие переменные существуют во <i>всех</i> объектах с поддержкой физики, и их можно читать и записывать (т.е. изменять) с помощью кода из экземпляров и скриптовых функций:</p>
   <ul class="colour">
-    <li><a href="phy_active.htm">phy_active</a></li>
-    <li><a href="phy_angular_velocity.htm">phy_angular_velocity</a></li>
-    <li><a href="phy_angular_damping.htm">phy_angular_damping</a></li>
-    <li><a href="phy_linear_velocity_x.htm">phy_linear_velocity_x</a></li>
-    <li><a href="phy_linear_velocity_y.htm">phy_linear_velocity_y</a></li>
-    <li><a href="phy_linear_damping.htm">phy_linear_damping</a></li>
-    <li><a href="phy_speed_x.htm">phy_speed_x</a></li>
-    <li><a href="phy_speed_y.htm">phy_speed_y</a></li>
-    <li><a href="phy_position_x.htm">phy_position_x</a></li>
-    <li><a href="phy_position_y.htm">phy_position_y</a></li>
-    <li><a href="phy_position_xprevious.htm">phy_position_xprevious</a></li>
-    <li><a href="phy_position_yprevious.htm">phy_position_yprevious</a></li>
-    <li><a href="phy_rotation.htm">phy_rotation</a></li>
-    <li><a href="phy_fixed_rotation.htm">phy_fixed_rotation</a></li>
-    <li><a href="phy_bullet.htm">phy_bullet</a></li>
+    <li><a href="phy_active.htm"><span class="notranslate">phy_active</span></a></li>
+    <li><a href="phy_angular_velocity.htm"><span class="notranslate">phy_angular_velocity</span></a></li>
+    <li><a href="phy_angular_damping.htm"><span class="notranslate">phy_angular_damping</span></a></li>
+    <li><a href="phy_linear_velocity_x.htm"><span class="notranslate">phy_linear_velocity_x</span></a></li>
+    <li><a href="phy_linear_velocity_y.htm"><span class="notranslate">phy_linear_velocity_y</span></a></li>
+    <li><a href="phy_linear_damping.htm"><span class="notranslate">phy_linear_damping</span></a></li>
+    <li><a href="phy_speed_x.htm"><span class="notranslate">phy_speed_x</span></a></li>
+    <li><a href="phy_speed_y.htm"><span class="notranslate">phy_speed_y</span></a></li>
+    <li><a href="phy_position_x.htm"><span class="notranslate">phy_position_x</span></a></li>
+    <li><a href="phy_position_y.htm"><span class="notranslate">phy_position_y</span></a></li>
+    <li><a href="phy_position_xprevious.htm"><span class="notranslate">phy_position_xprevious</span></a></li>
+    <li><a href="phy_position_yprevious.htm"><span class="notranslate">phy_position_yprevious</span></a></li>
+    <li><a href="phy_rotation.htm"><span class="notranslate">phy_rotation</span></a></li>
+    <li><a href="phy_fixed_rotation.htm"><span class="notranslate">phy_fixed_rotation</span></a></li>
+    <li><a href="phy_bullet.htm"><span class="notranslate">phy_bullet</span></a></li>
   </ul>
-  <p> </p>
-  <p>Certain variables are <b>read-only</b> variables, which means that the information they contain cannot be changed through instance code or script funcions (but it <i>can</i> be changed internally by <span data-keyref="GameMaker Name">GameMaker</span> which is why these are variables and not <b>constants</b>). The following list shows the <b>read-only</b> variables that exist in <i>all</i> physics enabled objects:</p>
+  <p> </p>
+  <p>Некоторые переменные являются переменными <b>только для чтения</b>, что означает, что информация, которую они содержат, не может быть изменена с помощью кода экземпляра или скриптовых функций (но она <i>может</i> быть изменена внутри <span data-keyref="GameMaker Name">GameMaker</span>, поэтому они являются переменными, а не <b>константами</b>). В следующем списке представлены переменные, <b>доступные только для чтения</b>, которые существуют во <i>всех</i> объектах с поддержкой физики:</p>
   <ul class="colour">
-    <li><a href="phy_speed.htm">phy_speed</a></li>
-    <li><a href="phy_com_x.htm">phy_com_x</a></li>
-    <li><a href="phy_com_y.htm">phy_com_y</a></li>
-    <li><a href="phy_dynamic.htm">phy_dynamic</a></li>
-    <li><a href="phy_kinematic.htm">phy_kinematic</a></li>
-    <li><a href="phy_inertia.htm">phy_inertia</a></li>
-    <li><a href="phy_mass.htm">phy_mass</a></li>
-    <li><a href="phy_sleeping.htm">phy_sleeping</a></li>
+    <li><a href="phy_speed.htm"><span class="notranslate">phy_speed</span></a></li>
+    <li><a href="phy_com_x.htm"><span class="notranslate">phy_com_x</span></a></li>
+    <li><a href="phy_com_y.htm"><span class="notranslate">phy_com_y</span></a></li>
+    <li><a href="phy_dynamic.htm"><span class="notranslate">phy_dynamic</span></a></li>
+    <li><a href="phy_kinematic.htm"><span class="notranslate">phy_kinematic</span></a></li>
+    <li><a href="phy_inertia.htm"><span class="notranslate">phy_inertia</span></a></li>
+    <li><a href="phy_mass.htm"><span class="notranslate">phy_mass</span></a></li>
+    <li><a href="phy_sleeping.htm"><span class="notranslate">phy_sleeping</span></a></li>
   </ul>
-  <p> </p>
-  <p>Finally, there are a number of temporary variables that exist in physics enabled objects and are created <i>only in the collision event</i>. These variables are like those listed above and are <b>read-only</b>:</p>
+  <p> </p>
+  <p>Наконец, существует ряд временных переменных, которые существуют в объектах с поддержкой физики и создаются <i>только в событии столкновения</i>. Эти переменные подобны перечисленным выше и <b>доступны только для чтения</b>:</p>
   <ul class="colour">
-    <li><a href="phy_collision_points.htm">phy_collision_points</a></li>
-    <li><a href="phy_collision_x.htm">phy_collision_x</a></li>
-    <li><a href="phy_collision_y.htm">phy_collision_y</a></li>
-    <li><a href="phy_col_normal_x.htm">phy_col_normal_x</a></li>
-    <li><a href="phy_col_normal_y.htm">phy_col_normal_y</a></li>
+    <li><a href="phy_collision_points.htm"><span class="notranslate">phy_collision_points</span></a></li>
+    <li><a href="phy_collision_x.htm"><span class="notranslate">phy_collision_x</span></a></li>
+    <li><a href="phy_collision_y.htm"><span class="notranslate">phy_collision_y</span></a></li>
+    <li><a href="phy_col_normal_x.htm"><span class="notranslate">phy_col_normal_x</span></a></li>
+    <li><a href="phy_col_normal_y.htm"><span class="notranslate">phy_col_normal_y</span></a></li>
   </ul>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="../Physics.htm">Physics</a></div>
-        <div style="float:right">Next: <a href="../The_Physics_World/The_Physics_World.htm">The Physics World</a></div>
+        <div style="float:left">Назад: <a href="../Physics.htm">Физика</a></div>
+        <div style="float:right">Следующий: <a href="../The_Physics_World/The_Physics_World.htm">Мир физики</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 Physics Variables

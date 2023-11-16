@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Set Audio Volume</title>
+  <title>Настройка громкости звука</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
-  <script src="../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page that explains the Set Audio Volume action" />
   <meta name="rh-index-keywords" content="GML Visual Action - Set Audio Volume" />
@@ -14,47 +14,47 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1><img alt="Set Audio Volume Icon" class="icon" height="32" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Audio/i_Audio_Set_Audio_Volume.png" style="cursor: nesw-resize;" width="32" /> Set Audio Volume</h1>
-  <p>With this action you can set the volume of a given sound. You select the sound from the asset explorer and then set the volume value. The volume can be between 0 (silent) and 1 (full volume) and the scale is linear, such that a value of 0.5 would be half volume. Note that this action will affect all instances of the sound that are playing currently in the room, and will affect all future instances of the sound played.</p>
-  <p>The &quot;Time&quot; field controls how long it takes for the volume change to take effect. A value of 0 results in an instant change, where a larger value will gradually change the volume over the given amount of milliseconds.</p>
-  <p> </p>
-  <h4>Action Syntax:</h4>
-  <p><img alt="Set Audio Volume Action" class="center" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Audio/a_Audio_Set_Audio_Volume.png" /></p>
-  <h4>Arguments:</h4>
+  <h1><img> Настройка громкости звука</h1>
+  <p>С помощью этого действия можно установить громкость заданного звука. Вы выбираете звук в проводнике активов, а затем устанавливаете значение громкости. Громкость может быть от 0 (тихо) до 1 (полная громкость), шкала линейная, так что значение 0,5 означает половину громкости. Обратите внимание, что это действие повлияет на все экземпляры звука, которые воспроизводятся в данный момент в комнате, и повлияет на все будущие экземпляры воспроизводимого звука.</p>
+  <p>Поле &quot;Время&quot; определяет, через какое время изменение громкости вступит в силу. Значение 0 приводит к мгновенному изменению, в то время как большее значение будет постепенно изменять громкость в течение заданного количества миллисекунд.</p>
+  <p> </p>
+  <h4>Синтаксис действия:</h4>
+  <p><img alt="Set Audio Volume Icon" class="icon" height="32" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Audio/i_Audio_Set_Audio_Volume.png" style="cursor: nesw-resize;" width="32" /></p>
+  <h4>Аргументы:</h4>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Description</th>
+        <th>Аргумент</th>
+        <th>Описание</th>
       </tr>
       <tr>
-        <td>Sound</td>
-        <td>The sound resource to set the volume of</td>
+        <td><span class="notranslate">Sound</span></td>
+        <td>Звуковой ресурс для установки громкости</td>
       </tr>
       <tr>
-        <td>Volume</td>
-        <td>The new volume for the sound (from 0 to 1, default 1)</td>
+        <td><span class="notranslate">Volume</span></td>
+        <td>Новая громкость для звука (от 0 до 1, по умолчанию 1)</td>
       </tr>
       <tr>
-        <td>Time</td>
-        <td>The amount of time over which to fade the volume (in milliseconds).</td>
+        <td><span class="notranslate">Time</span></td>
+        <td>Количество времени, в течение которого будет уменьшаться громкость (в миллисекундах).</td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Example:</h4>
-  <p><span><img alt="Set Audio Volume Example" class="center" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Audio/e_Audio_Get_Audio_Volume.png" /></span>The above action block code checks a global variable to see if it is <span class="inline">true</span> or false. If it is <span class="inline">true</span> then the volume of the given sound is retrieved and stored in a temporary local variable. The value is then checked to see if it is not equal to 0.5, and if it is not, then the volume of the sound is set to fade to 0.5 in 1000 milliseconds (1 second). If the global variable evaluates to <span class="inline">false</span>, then the sound has its volume set to 1. As the value for time is set to 0 here, the change in volume occurs immediately.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p> </p>
+  <h4>Пример:</h4>
+  <p><span><img></span>Приведенный выше код блока действий проверяет глобальную переменную на предмет того, имеет ли она значение <span class="inline">true</span> или false. Если она равна <span class="inline">true</span>, то громкость данного звука извлекается и сохраняется во временной локальной переменной. Затем проверяется, не равно ли это значение 0,5, и если нет, то громкость звука уменьшается до 0,5 за 1000 миллисекунд (1 секунда). Если значение глобальной переменной равно <span class="inline">false</span>, то громкость звука устанавливается равной 1. Поскольку значение времени здесь установлено в 0, изменение громкости происходит немедленно.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Audio_Actions.htm">Audio Actions</a></div>
-        <div style="float:right">Next: <a href="Get_Audio_Volume.htm">Get Audio Volume</a></div>
+        <div style="float:left">Назад: <a href="Audio_Actions.htm">Аудиодействия</a></div>
+        <div style="float:right">Следующий: <a href="Get_Audio_Volume.htm">Получить громкость звука</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 Action - Set Audio Volume

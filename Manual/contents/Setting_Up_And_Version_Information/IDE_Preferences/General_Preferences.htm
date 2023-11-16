@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>General Preferences</title>
+  <title>Общие предпочтения</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../assets/css/default.css" type="text/css" />
-  <script src="../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="The General IDE Preferences" />
   <meta name="rh-index-keywords" content="Prefs - General" />
@@ -14,60 +14,60 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>General Preferences</h1>
-  <p><img alt="General Preferences" class="center" src="../../assets/Images/Setup_And_Version/Preferences/General_Prefs.png" />The <strong>General Preferences</strong> are used to define the general behaviour of the <span data-keyref="GameMaker Name">GameMaker</span> <a class="tooltip" title=" ">IDE</a>. The most general ones are listed on the main page while many others are split into multiple sub-categories, explained further down this page.</p>
+  <h1>Общие предпочтения</h1>
+  <p><img><strong>Общие параметры</strong> используются для определения общего поведения <a class="tooltip" title=" ">среды</a> <span data-keyref="GameMaker Name">GameMaker</span> <a class="tooltip" title=" ">IDE</a>. Самые общие из них перечислены на главной странице, в то время как многие другие разделены на несколько подкатегорий, которые описаны далее на этой странице.</p>
   <ul class="colour">
-    <li><strong>IDE Font</strong>: This option permits you to change the font used throughout the IDE. Default is <strong>Open Sans</strong>.</li>
-    <li><strong>IDE Language</strong>: This option permits you to select the language for the IDE from the list of options supplied. Default is <strong>English</strong>.</li>
-    <li><strong>Maximum Framerate of the <span data-keyref="GameMaker Name">GameMaker</span> Editor</strong>: This option permits you to set the maximum framerate that the <span data-keyref="GameMaker Name">GameMaker</span> IDE will update at, permitting you to set the framerate to match the update speed of your monitor. Default value is 60.</li>
-    <li><strong>IDE Skin</strong>: Here you can select from the different skins that the IDE can use. By default <span data-keyref="GameMaker Name">GameMaker</span> comes with two skins, one light and one dark, and the initial setup uses the <strong>Dark</strong> skin.</li>
-    <li><strong>Default Build Target</strong>: This is the default build <a href="../../Introduction/Compiling.htm">target</a> to use for projects. The default is <strong>GX.games</strong>.</li>
-    <li><strong>Default Audio Device</strong>: Here you can choose the default audio device for the <span data-keyref="GameMaker Name">GameMaker</span> IDE to use. You can refresh the list by clicking the Refresh Button  <img alt="Refresh Button Icon" class="icon" src="../../assets/Images/Icons/Icon_Refresh.png" />.</li>
-    <li><strong>Automatic Response to Exit Confirmation</strong>: This option permits you to set whether a confirmation message should be shown when you exit <span data-keyref="GameMaker Name">GameMaker</span>. By default this is set to <strong>Show Message</strong>, but can be set to skip the message as if you&#39;d clicked OK.</li>
-    <li><strong>Automatic Response to The System Font Changed Dialog</strong>: This option permits you to set whether a confirmation message should be shown when a system font has been added, removed or edited. By default this is set to <strong>Show Message</strong>, but can be set to skip the message as if you&#39;d clicked OK.</li>
-    <li><strong>Enable notifications</strong>: Checking this will enable the IDE to show notifications about new runtimes, etc. This is on by default.</li>
-    <li><strong>Notification timeout (ms)</strong>: This sets the length of time (in milliseconds) that a notification is shown for. Default is 6000.</li>
-    <li><strong>Sign out on exit</strong>: If this option is checked then the IDE will automatically log out the user session when <span data-keyref="GameMaker Name">GameMaker</span> is closed. This is primarily aimed at Education users, as - when checked - this means that whenever the program shuts down the user would be logged out and so free up the session seat for other users to use. This is off by default.</li>
-    <li><strong>Allow empty tabs to be closed via the keyboard shortcut</strong>: You can close any open Tabs using the keyboard shortcut <img alt="Icon CTRL" class="icon" height="20" src="../../assets/Images/Icons/Icon_Ctrl.png" width="55" /> / <img alt="Icon CMD" class="icon" height="20" src="../../assets/Images/Icons/Icon_Cmd.png" width="55" /> + <strong>W</strong>, but if you disable this option that shortcut will no longer work. This is enabled by default.</li>
-    <li><strong>Open new assets for edit on dragging files into IDE</strong>: Certain assets (like sprites or sounds) can be dragged onto the main Workspace in the <span data-keyref="GameMaker Name">GameMaker</span> IDE and will be detected and added as a new asset in <a data-xref="{title}" href="../../Introduction/The_Asset_Browser.htm">The Asset Browser</a>. By default the corresponding asset editor will also be opened for editing when this happens, but un-checking this option will prevent the editors from being opened and you will be required to open them manually.</li>
-    <li><strong>Use US Date Format</strong>: This setting changes the format used to display dates in the IDE. When enabled, dates are displayed as e.g. &quot;Thursday, April 27, 2023&quot;, when disabled, dates are displayed as e.g. &quot;27 April 2023&quot; instead. By default this preference is unchecked.</li>
-    <li><strong>Open new assets for edit on creation</strong>: If this is checked, every time you create a new resource in <a data-xref="{title}" href="../../Introduction/The_Asset_Browser.htm">The Asset Browser</a>, the corresponding asset editor will be opened automatically. This is checked by default and un-checking it will mean that you have to manually open all newly created assets.</li>
-    <li><strong>Automatically reload changed files</strong>: If this is checked, the IDE will automatically scan and check files to see if any of them have been changed outside of <span data-keyref="GameMaker Name">GameMaker</span> and reload them if they have.</li>
-    <li><strong>Case-Insensitive mode for project files (may affect performance)</strong>: Intended to be used to avoid issues with filename case sensitivity on non-Windows devices (macOS and Linux). Such issues can happen when transferring projects from Windows to non-Windows systems, using Git with <a href="https://git-scm.com/docs/git-config#Documentation/git-config.txt-coreignoreCase">ignore case</a> enabled (which you should try disabling first) and/or renaming files only to change the case. This is disabled by default as it&#39;s a performance overhead and should not be required outside of the aforementioned cases.</li>
-    <li><strong>Disable IDE transition animations</strong>: The <span data-keyref="GameMaker Name">GameMaker</span> IDE has a number of animated transitions for things like opening windows etc... however they are not to everyone&#39;s taste and you may experience a performance boost if they are disabled on older or under-powered machines if they are disabled. You can disable them here, and they are on by default.</li>
-    <li><strong>Enable DPI Override</strong>: This option lets you override the default DPI setting with your own. You must first enable the option and then set either the <strong>Raw DPi Override</strong> value (the default value is 96) or set the <strong>Percentage of the native DPi</strong> (default value 100%), and once changed you will be prompted to restart the IDE, which may require you to save any work being done on the currently open project. Note that the DPi has a minimum percentage of 50% and a maximum of 500%, and if you you mouse over the information icon you can see the recommended maximum setting for the display being used:<br />
-      <br />
-      <img alt="General DPi Override Recommendation" class="center" src="../../assets/Images/Setup_And_Version/Preferences/General_DPi_Override_Recomendation.png" />Note that if you go above the recommended DPi setting for the monitor, you will be shown a notification that permits you to reset the DPI.
+    <li><strong>Язык IDE</strong>: Эта опция позволяет выбрать язык для сайта <span class="notranslate">IDE</span> из прилагаемого списка. По умолчанию это <strong>английский</strong> язык.</li>
+    <li><strong>Шрифт IDE</strong>: Эта опция позволяет вам изменить шрифт, используемый на сайте <span class="notranslate">IDE</span>. По умолчанию это <strong>Open Sans</strong>.</li>
+    <li><strong>Максимальная частота кадров редактора <span data-keyref="GameMaker Name">GameMaker</span></strong>: Этот параметр позволяет установить максимальную частоту кадров, с которой будет обновляться <span data-keyref="GameMaker Name">GameMaker</span> <span class="notranslate">IDE</span>, что позволяет установить частоту кадров в соответствии со скоростью обновления вашего монитора. Значение по умолчанию - 60.</li>
+    <li><strong>Скин IDE</strong>: Здесь вы можете выбрать один из различных скинов, которые может использовать <span class="notranslate">IDE</span>. По умолчанию <span data-keyref="GameMaker Name">GameMaker</span> поставляется с двумя скинами, светлым и темным, и при начальной установке используется темный скин.</li>
+    <li><strong>Аудиоустройство по умолчанию</strong>: Здесь вы можете выбрать аудиоустройство по умолчанию, которое будет использовать <span data-keyref="GameMaker Name">GameMaker</span> <span class="notranslate">IDE</span>. Вы можете обновить список, нажав кнопку Refresh Button <img>.</li>
+    <li><strong>Автоматическая реакция на подтверждение выхода</strong>: Эта опция позволяет установить, будет ли показано подтверждающее сообщение при выходе из <span data-keyref="GameMaker Name">GameMaker</span>. По умолчанию установлено значение &quot;показать сообщение&quot;, но его можно установить так, чтобы пропустить сообщение, как если бы вы нажали кнопку OK.</li>
+    <li><strong>Automatic Response to The System Font Changed Dialog</strong>: Этот параметр позволяет установить, следует ли показывать подтверждающее сообщение, когда системный шрифт был добавлен, удален или отредактирован. По умолчанию установлено значение &quot;показать сообщение&quot;, но его можно установить, чтобы пропустить сообщение, как если бы вы нажали кнопку OK.</li>
+    <li><strong>Включить уведомления</strong>: Установка этого флажка позволит <span class="notranslate">IDE</span> показывать уведомления о новых исполнениях и т.д.. По умолчанию эта опция включена.</li>
+    <li><strong>Тайм-аут уведомления (мс)</strong>: Устанавливает продолжительность времени (в миллисекундах), в течение которого будет отображаться уведомление. По умолчанию - 6000.</li>
+    <li><strong>Выход при выходе</strong>: Если эта опция отмечена, то <span class="notranslate">IDE</span> автоматически завершит сеанс пользователя при закрытии <span data-keyref="GameMaker Name">GameMaker</span>. Эта опция предназначена в первую очередь для пользователей системы образования, поскольку, если она отмечена, это означает, что при каждом завершении работы программы пользователь будет выходить из системы, освобождая место в сессии для других пользователей. По умолчанию эта функция выключена.</li>
+    <li><strong>Показывать экран приветствия при запуске</strong>: Этот параметр включен по умолчанию и просто указывает <span data-keyref="GameMaker Name">GameMaker</span> показывать короткую заставку при запуске программы. Если снять флажок, то заставка не будет отображаться.</li>
+    <li><strong>Разрешить закрытие пустых вкладок с помощью сочетания</strong> клавиш: Вы можете закрыть все открытые вкладки с помощью сочетания клавиш <img> / <img> + <strong>W</strong>, но если вы отключите эту опцию, сочетание клавиш перестанет работать. По умолчанию эта опция включена.</li>
+    <li><strong>Открытие новых ресурсов для редактирования при перетаскивании файлов в IDE</strong>: Некоторые ресурсы (например, <span class="notranslate">sprites</span> или звуки) можно перетащить на основную рабочую область в <span data-keyref="GameMaker Name">GameMaker</span> <span class="notranslate">IDE</span>, и они будут обнаружены и добавлены как новый ресурс в браузере ресурсов. По умолчанию соответствующий редактор ресурсов также будет открыт для редактирования, но если снять флажок с этой опции, то редакторы не будут открыты, и вам придется открывать их вручную.</li>
+    <li><strong>Открывать новые ресурсы для редактирования при создании</strong>: Если этот флажок установлен, то каждый раз, когда вы создаете новый ресурс в браузере активов, соответствующий редактор ресурсов будет открываться автоматически. Этот параметр установлен по умолчанию, и снятие флажка означает, что вам придется вручную открывать все вновь созданные ресурсы.</li>
+    <li><strong>Автоматически перезагружать измененные файлы</strong>: Если этот флажок установлен, то <span class="notranslate">IDE</span> будет автоматически сканировать и проверять файлы на предмет того, не были ли они изменены вне <span data-keyref="GameMaker Name">GameMaker</span>, и перезагружать их, если это так.</li>
+    <li><strong>Отключите анимацию переходов <span class="notranslate">IDE</span>:</strong> <span data-keyref="GameMaker Name">GameMaker</span> <span class="notranslate">IDE</span> имеет ряд анимированных переходов для таких вещей, как открытие окон и т.д... однако они не всем по вкусу, и вы можете ощутить прирост производительности, если отключите их на старых или маломощных машинах. Вы можете отключить их здесь, по умолчанию они включены.</li>
+    <li><strong>Opt-in To Feedback Surveys</strong>: Когда эта опция отмечена, вы сообщаете <span data-keyref="GameMaker Name">GameMaker</span>, что желаете участвовать в опросах обратной связи, то есть время от времени во время работы будет появляться сообщение об участке, над которым вы работаете, с просьбой поставить оценку и оставить отзыв. По умолчанию эта опция включена.</li>
+    <li><strong>Включить переопределение DPI</strong>: Эта опция позволяет переопределить настройки DPI по умолчанию на свои собственные. Вы должны сначала включить опцию, а затем установить либо значение <strong>Raw DPi Override</strong> (значение по умолчанию 96), либо <strong>процентное соотношение DPi</strong> (значение по умолчанию 100%). После изменения вам будет предложено перезапустить <span class="notranslate">IDE</span>, что может потребовать сохранения любой работы, выполняемой в текущем открытом проекте. Обратите внимание, что минимальный процент DPi составляет 50%, а максимальный - 500%, и если вы наведете курсор мыши на значок информации, то увидите рекомендуемое максимальное значение для используемого дисплея:<br>
+      <br>
+      <img>Обратите внимание, что если вы превысите рекомендуемое значение DPi для монитора, появится уведомление, позволяющее сбросить DPi.
     </li>
   </ul>
-  <p>The options above are the main options available from the <strong>General </strong>preferences, but there are a number of extra options available to you in the sub-categories listed below:</p>
+  <p>Выше перечислены основные опции, доступные в <strong>общих </strong>настройках, но есть ряд дополнительных опций, доступных вам в подкатегориях, перечисленных ниже:</p>
+  <p> </p>
   <ul class="colour">
-    <li><a href="General/Background.htm">Background</a></li>
-    <li><a href="General/Compiling.htm">Compiling</a></li>
-    <li><a href="General/Confirm_Dialogs.htm">Confirm Dialogs</a></li>
-    <li><a href="General/Debugging.htm">Debugging</a></li>
-    <li><a href="General/File_Watcher.htm">File Watcher</a></li>
-    <li><a href="General/Go_To.htm">Go To</a></li>
-    <li><a data-xref="{title}" href="General/GXgames_Environments.htm">GX.games Environments</a></li>
-    <li><a href="General/Help.htm">Help</a></li>
-    <li><a href="General/Input.htm">Input</a></li>
-    <li><a href="General/Output_Windows.htm">Output Windows</a></li>
-    <li><a href="General/Paths.htm">Paths</a></li>
-    <li><a href="General/Power_Saving.htm">Power Saving</a></li>
-    <li><a href="General/Recent_Windows.htm">Recent Windows</a></li>
-    <li><a href="General/Resources.htm">Resources</a></li>
-    <li><a href="General/Workspace.htm">Workspaces</a></li>
+    <li><a href="General/Background.htm">Справочная информация</a></li>
+    <li><a href="General/Compiling.htm">Компиляция</a></li>
+    <li><a href="General/Confirm_Dialogs.htm">Диалоги подтверждения</a></li>
+    <li><a href="General/Debugging.htm">Отладка</a></li>
+    <li><a href="General/File_Watcher.htm">Наблюдатель за файлами</a></li>
+    <li><a href="General/Go_To.htm">GoTo</a></li>
+    <li><a href="General/Help.htm">Помощь</a></li>
+    <li><a href="General/Input.htm">Вход</a></li>
+    <li><a href="General/Output_Windows.htm">Выходные окна</a></li>
+    <li><a href="General/Paths.htm">Пути</a></li>
+    <li><a href="General/Power_Saving.htm">Энергосбережение</a></li>
+    <li><a href="General/Recent_Windows.htm">Последние окна</a></li>
+    <li><a href="General/Resources.htm">Ресурсы</a></li>
+    <li><a href="General/Workspace.htm">Рабочие места</a></li>
   </ul>
-  <p> </p>
-  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="../IDE_Preferences.htm">IDE Preferences</a></div>
-        <div style="float:right">Next: <a href="Start_Screen_Preferences.htm">Start Screen Preferences</a></div>
+        <div style="float:left">Назад: <a href="../IDE_Preferences.htm">Предпочтения IDE</a></div>
+        <div style="float:right">Следующий: <a href="Start_Screen_Preferences.htm">Предпочтения начального экрана</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 Preferences - General

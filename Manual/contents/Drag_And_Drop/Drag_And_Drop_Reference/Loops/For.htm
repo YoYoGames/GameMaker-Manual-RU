@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>For</title>
+  <title>Для</title>
   <meta name="generator" content="Adobe RoboHelp 2019" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
-  <script src="../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page that explains the For action" />
   <meta name="rh-index-keywords" content="GML Visual Action - For" />
@@ -14,58 +14,58 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1><img alt="For Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Loops/i_Loops_For.png" /> For</h1>
-  <p>The <b>For</b> action is used to perform loops that only terminate when a value reaches the given condition. You give an initial value as a variable (which can be flagged as a temporary local variable - this is usually what you want), then you give
-    the condition to check the variable against (for example if it is less than a certain value), and then finally the amount to increment the variable by each iteration of the loop. So, the general flow is as follows:</p>
+  <h1><img> Для</h1>
+  <p>Действие <b>For</b> используется для выполнения циклов, которые завершаются только тогда, когда значение достигает заданного условия. Вы задаете начальное значение в качестве переменной (которая может быть помечена как временная локальная переменная - обычно это то, что вам нужно), затем вы задаете
+    условие для проверки переменной (например, если она меньше определенного значения), и, наконец, сумму для увеличения переменной на каждую итерацию цикла. Итак, общий поток выглядит следующим образом:</p>
   <ul class="colour">
-    <li>You initialise a variable to a value</li>
-    <li>You set the condition to check this variable against</li>
-    <li>You set how much the variable should be incremented by each iteration of the loop</li>
-    <li>You then add actions into the loop, and these will be run for each iteration until the condition returns <span class="inline">false</span> or a Break action is encountered.</li>
+    <li>Вы инициализируете переменную значением</li>
+    <li>Вы задаете условие для проверки этой переменной</li>
+    <li>Вы задаете, на сколько должна увеличиваться переменная на каждой итерации цикла</li>
+    <li>Затем вы добавляете в цикл действия, которые будут выполняться на каждой итерации до тех пор, пока условие не вернется на <span class="inline">false</span> или не будет встречено действие Break.</li>
   </ul>
-  <p>When adding actions to be performed within the loop, these are added much as you would add an action to an &quot;if&quot;, ie: dropping it to the side of the action rather than under it:</p>
-  <p><img alt="For drop actions" class="center" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Loops/For_Drop.png" />All actions added to the side will be included in the For and will be performed before the event or script continues
-    with the actions added under. Note that you can end any loop prematurely if you call the <a href="Break.htm">Break</a> action, and when using For loops you don&#39;t <i>have</i> to increment and you can make it decrement too, as long as the condition
-    you use is appropriate. For example, set the initial variable to 10, set the condition to check for less than 0 and then set the increment value to -1 and the loop will iterate 10 times, counting backwards from 10 to 0.</p>
-  <p> </p>
-  <h4>Action Syntax:</h4>
-  <p><img alt="For Action" class="center" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Loops/a_Loops_For.png" /></p>
-  <h4>Arguments:</h4>
+  <p>При добавлении действий, которые будут выполняться в цикле, они добавляются так же, как если бы вы добавляли действие в &quot;if&quot;, т.е. опускаете его сбоку от действия, а не под ним:</p>
+  <p><img>Все действия, добавленные сбоку, будут включены в For и будут выполнены до того, как событие или сценарий продолжится
+    с действиями, добавленными ниже. Обратите внимание, что вы можете завершить любой цикл преждевременно, если вызовете действие <a href="Break.htm">Break</a>, а при использовании циклов For вам не <i>обязательно</i> инкрементировать, вы можете сделать его и декрементным, если только условие
+    которое вы используете, является подходящим. Например, установите начальную переменную равной 10, задайте условие проверки на значение меньше 0, а затем установите значение инкремента -1, и цикл выполнит 10 итераций, считая в обратном порядке от 10 до 0.</p>
+  <p> </p>
+  <h4>Синтаксис действия:</h4>
+  <p><img alt="For Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Loops/i_Loops_For.png" /></p>
+  <h4>Аргументы:</h4>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Description</th>
+        <th>Аргумент</th>
+        <th>Описание</th>
       </tr>
       <tr>
-        <td>Initialise</td>
-        <td>Initialise the variable that will be used for counting to a value (can be flagged as a temporary local variable)</td>
+        <td><span class="notranslate">Initialise</span></td>
+        <td>Инициализируйте переменную, которая будет использоваться для подсчета, до значения (может быть помечена как временная локальная переменная).</td>
       </tr>
       <tr>
-        <td>Condition</td>
-        <td>The condition to check to break the loop</td>
+        <td><span class="notranslate">Condition</span></td>
+        <td>Условие, которое нужно проверить, чтобы разорвать цикл</td>
       </tr>
       <tr>
-        <td>Increment</td>
-        <td>The amount to increment (or decrement) the initial count variable by each iteration of the loop</td>
+        <td><span class="notranslate">Increment</span></td>
+        <td>Сумма, на которую будет увеличиваться (или уменьшаться) начальная переменная count на каждой итерации цикла</td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Example:</h4>
-  <p><img alt="For Example" class="center" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Loops/e_Loops_For.png" />The above action block code runs a <span class="inline">for</span> loop to check and see if a gamepad is connected to any of the 12 available
-    &quot;slots&quot;. If a gamepad is discovered, a global variable is set to the current slot number and the loop is broken.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p> </p>
+  <h4>Пример:</h4>
+  <p><img>Приведенный выше код блока действий запускает цикл <span class="inline">for</span>, чтобы проверить, подключен ли геймпад к любому из 12 доступных
+    &quot;слотов&quot;. Если геймпад обнаружен, глобальная переменная устанавливается на номер текущего слота, и цикл прерывается.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Loop_Actions.htm">Loop Actions</a></div>
-        <div style="float:right">Next: <a href="Break.htm">Break</a></div>
+        <div style="float:left">Назад: <a href="Loop_Actions.htm">Действия петли</a></div>
+        <div style="float:right">Следующий: <a href="Break.htm">Перерыв</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2021 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 Action - For

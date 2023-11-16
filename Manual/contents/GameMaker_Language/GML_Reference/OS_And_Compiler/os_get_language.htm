@@ -6,7 +6,7 @@
   <title>os_get_language</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
-  <script src="../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference page for os_get_language" />
   <meta name="rh-index-keywords" content="os_get_language" />
@@ -16,86 +16,86 @@
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
   <h1>os_get_language</h1>
-  <p>This function returns a string with the two letter Language Code for the OS that is running the game, as set by the <a href="http://en.wikipedia.org/wiki/ISO_639" target="_blank">ISO639</a> standard. If the information is not available, it will hold simply an empty string &quot;&quot;, or &quot;en&quot; for &quot;English&quot; language. Note that some languages also have a relevant Regional Code too, so to distinguish between different regions of the same country use the function <a href="os_get_region.htm"><span class="inline">os_get_region()</span></a>.</p>
-  <p>The following table shows example of some of the main two letter language codes as defined by ISO 639:</p>
+  <p>Эта функция возвращает строку с двухбуквенным кодом языка для ОС, на которой запущена игра, как установлено стандартом <a href="http://en.wikipedia.org/wiki/ISO_639" target="_blank">ISO639</a>. Если эта информация недоступна, будет возвращена просто пустая строка &quot;&quot;, или &quot;en&quot; для &quot;английского&quot; языка. Обратите внимание, что некоторые языки также имеют соответствующий региональный код, поэтому для различения разных регионов одной страны используйте функцию <a href="os_get_region.htm"><span class="inline">os_get_region()</span></a>.</p>
+  <p>В следующей таблице приведены примеры некоторых основных двухбуквенных кодов языков, определенных стандартом ISO 639:</p>
   <table>
     <tbody>
       <tr>
-        <th>Language</th>
-        <th>Code</th>
+        <th>Язык</th>
+        <th>Код</th>
       </tr>
       <tr>
-        <td>Arabic</td>
+        <td>Арабский язык</td>
         <td>ar</td>
       </tr>
       <tr>
-        <td>Chinese</td>
+        <td>Китайский</td>
         <td>zh</td>
       </tr>
       <tr>
-        <td>Danish</td>
-        <td>da</td>
+        <td>Датский</td>
+        <td>да</td>
       </tr>
       <tr>
-        <td>English</td>
+        <td>Английский язык</td>
         <td>en</td>
       </tr>
       <tr>
-        <td>French</td>
+        <td>Французский</td>
         <td>fr</td>
       </tr>
       <tr>
-        <td>German</td>
-        <td>de</td>
+        <td>Немецкий</td>
+        <td>де</td>
       </tr>
       <tr>
-        <td>Greek</td>
+        <td>Греция</td>
         <td>el</td>
       </tr>
       <tr>
-        <td>Italian</td>
-        <td>it</td>
+        <td>Итальянский</td>
+        <td>это</td>
       </tr>
       <tr>
-        <td>Japanese</td>
+        <td>Японский</td>
         <td>ja</td>
       </tr>
       <tr>
-        <td>Norwegian</td>
-        <td>no</td>
+        <td>Норвежский</td>
+        <td>нет</td>
       </tr>
       <tr>
-        <td>Polish</td>
+        <td>Польский</td>
         <td>pl</td>
       </tr>
       <tr>
-        <td>Portuguese</td>
+        <td>Португальский язык</td>
         <td>pt</td>
       </tr>
       <tr>
-        <td>Russian</td>
+        <td>Русский</td>
         <td>ru</td>
       </tr>
       <tr>
-        <td>Spanish</td>
+        <td>Испанский</td>
         <td>es</td>
       </tr>
       <tr>
-        <td>Swedish</td>
+        <td>Шведский</td>
         <td>sv</td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <p class="note"><b>NOTE</b>: This is not the location country code that is returned, but the language code of the OS.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p> </p>
+  <p class="note"><b>ПРИМЕЧАНИЕ</b>: Возвращается не код страны местоположения, а код языка ОС.</p>
+  <p> </p>
+  <h4>Синтаксис:</h4>
   <p class="code">os_get_language()</p>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Возвращается:</h4>
   <p class="code"><span data-keyref="Type_String"></span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Пример:</h4>
   <p class="code">switch (os_get_language())<br />
     {<br />
         case &quot;es&quot;: ini_open(&quot;spanish.ini&quot;); break;<br />
@@ -103,18 +103,18 @@
         case &quot;it&quot;: ini_open(&quot;italian.ini&quot;); break;<br />
         default: ini_open(&quot;english.ini&quot;); break;<br />
     }</p>
-  <p>The above code checks the OS language and opens a different <span class="inline">*.ini</span> file depending on the returned value.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Приведенный выше код проверяет язык ОС и открывает другой файл <span class="inline">*.ini</span> в зависимости от возвращаемого значения.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="OS_And_Compiler.htm">OS And Compiler</a></div>
-        <div style="float:right">Next: <a href="os_get_region.htm">os_get_region</a></div>
+        <div style="float:left">Назад: <a href="OS_And_Compiler.htm">ОС и компилятор</a></div>
+        <div style="float:right">Следующий: <a href="os_get_region.htm"><span class="notranslate">os_get_region</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
   </div>
   <!-- KEYWORDS
 os_get_language
