@@ -4,7 +4,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>texture_is_ready</title>
-  <meta name="generator" content="Adobe RoboHelp 2022" />
+  <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
@@ -15,20 +15,11 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-<<<<<<< HEAD
   <h1>texture_is_ready</h1>
   <p>Эта функция может быть использована для проверки того, была ли распакована и готова к использованию определенная текстурная страница или группа текстурных страниц была распакована и готова к использованию. Вы передаете уникальный <b>ID текстурной страницы</b> (как возвращается функциями <span class="inline">texturegroup_*</span> ) или строку ID текстурной группы (как определено в Texture Group Editor), и функция возвращает <span class="inline">true</span>, если они были распакованы, или <span class="inline">false</span> в противном случае.</p>
   <p> </p>
   <h4>Синтаксис:</h4>
   <p class="code">texture_is_ready(tex_id);</p>
-=======
-  <h1><span data-field="title" data-format="default">texture_is_ready</span></h1>
-  <p>This function can be used to check if a specific texture page has been unpacked and is ready for use, or if a group of texture pages have been unpacked and are ready for use.</p>
-  <p>You supply the unique <b>texture page ID</b> (as returned by the <span class="inline3_func">texturegroup_*</span> functions) or the texture group ID string (as defined in the <a href="../../../../Settings/Texture_Groups.htm">Texture Group Editor</a>), and the function will return <span class="inline2">true</span> if they have been unpacked, or <span class="inline2">false</span> otherwise.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
-  <p class="code"><span data-field="title" data-format="default">texture_is_ready</span>(tex_id);</p>
->>>>>>> e8f331b1b74476a144e051c0d836bf120b342735
   <table>
     <tbody>
       <tr>
@@ -37,7 +28,6 @@
         <th>Описание</th>
       </tr>
       <tr>
-<<<<<<< HEAD
         <td><span class="notranslate">tex_id</span></td>
         <td><span data-keyref="Type_Pointer_Texture">Указатель текстуры</span> или <span data-keyref="Type_String">строка</span></td>
         <td><span class="notranslate">The texture page pointer <i>or</i> a texture group name (a string)</span></td>
@@ -49,19 +39,6 @@
   <p class="code"><span data-keyref="Type_Bool">Boolean</span></p>
   <p> </p>
   <h4>Пример:</h4>
-=======
-        <td>tex_id</td>
-        <td><span data-keyref="Type_Pointer_Texture"><a href="../../Asset_Management/Sprites/Sprite_Information/sprite_get_texture.htm" target="_blank">Texture</a></span> or <span data-keyref="Type_String"><a href="../../../GML_Overview/Data_Types.htm" target="_blank">String</a></span></td>
-        <td>The texture page pointer <i>or</i> a texture group name (a string)</td>
-      </tr>
-    </tbody>
-  </table>
-  <p> </p>
-  <h4>Returns:</h4>
-  <p class="code"><span data-keyref="Type_Bool"><a href="../../../GML_Overview/Data_Types.htm" target="_blank">Boolean</a></span></p>
-  <p> </p>
-  <h4>Example:</h4>
->>>>>>> e8f331b1b74476a144e051c0d836bf120b342735
   <p class="code">var _tex_array = texturegroup_get_textures( &quot;MainMenu&quot;);<br />
     for (var i = 0; i &lt; array_length(_tex_array); ++i;)<br />
     {<br />
@@ -70,16 +47,10 @@
             texture_prefetch(_tex_array[i]);<br />
         }<br />
     }</p>
-<<<<<<< HEAD
   <p>Приведенный выше код получит идентификаторы текстурных страниц для группы текстур &quot;MainMenu&quot;, затем проверит, распакованы ли они, и если нет, то они будут префетишированы в VRAM.</p>
   <p> </p>
   <p> </p>
   <p> </p>
-=======
-  <p>The above code will retrieve the texture page IDs for the texture group &quot;MainMenu&quot;, then check to see if they are unpacked, and if they are not they are prefetched into <a class="glossterm" data-glossterm="VRAM" href="#">VRAM</a>.</p>
-  <p> </p>
-  <p> </p>
->>>>>>> e8f331b1b74476a144e051c0d836bf120b342735
   <div class="footer">
     <div class="buttons">
       <div class="clear">
@@ -87,11 +58,7 @@
         <div style="float:right">Следующий: <a href="texturegroup_get_textures.htm"><span class="notranslate">texturegroup_get_textures</span></a></div>
       </div>
     </div>
-<<<<<<< HEAD
     <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
-=======
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
->>>>>>> e8f331b1b74476a144e051c0d836bf120b342735
   </div>
   <!-- KEYWORDS
 texture_is_ready

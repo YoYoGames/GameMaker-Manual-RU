@@ -3,13 +3,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<<<<<<< HEAD
   <title>тип_актива</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
-=======
-  <title>asset_get_type</title>
-  <meta name="generator" content="Adobe RoboHelp 2022" />
->>>>>>> e8f331b1b74476a144e051c0d836bf120b342735
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
@@ -20,20 +15,11 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-<<<<<<< HEAD
   <h1>тип_актива</h1>
   <p>С помощью этой функции вы можете получить тип актива, на который ссылаются, из его имени (строки). При этом будет возвращена одна из перечисленных ниже <b>констант</b>.</p>
   <p> </p>
   <h4>Синтаксис:</h4>
   <p class="code">asset_get_type(name);</p>
-=======
-  <h1><span data-field="title" data-format="default">asset_get_type</span></h1>
-  <p>This function gets the type of asset being referenced from its name or handle.</p>
-  <p>One of the <b>constants</b> listed below will be returned.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
-  <p class="code"><span data-field="title" data-format="default">asset_get_type</span>(name_or_ref);</p>
->>>>>>> e8f331b1b74476a144e051c0d836bf120b342735
   <table>
     <tbody>
       <tr>
@@ -42,7 +28,6 @@
         <th>Описание</th>
       </tr>
       <tr>
-<<<<<<< HEAD
         <td><span class="notranslate">name</span></td>
         <td><span data-keyref="Type_String"><a data-rhwidget="HyperlinkPopover" href="../../../../../LINKGOESHERE">Строка</a></span></td>
         <td><span class="notranslate">The name of the game asset to get the type of (a string).</span></td>
@@ -117,22 +102,6 @@
   <p> </p>
   <h4>Пример:</h4>
   <p class="code">if asset_get_type(&quot;pth_Path_&quot; + string(global.Game)) == asset_unknown<br />
-=======
-        <td>name_or_ref</td>
-        <td><span data-keyref="Type_Asset"><a href="../../../../The_Asset_Editors/The_Asset_Editors.htm" target="_blank">Asset</a></span> or <span data-keyref="Type_String"><a href="../../../GML_Overview/Data_Types.htm" target="_blank">String</a></span></td>
-        <td>The name of or a reference to the game asset to get the type of.</td>
-      </tr>
-    </tbody>
-  </table>
-  <p> </p>
-  <h4>Returns:</h4>
-  <p class="code"><span data-keyref="Type_Constant_Asset_Type"><a href="asset_get_type.htm" target="_blank">Asset Type Constant</a></span></p>
-  <blockquote> </blockquote>
-  <div data-conref="../../../../assets/snippets/Asset_Type_Constants.hts"> </div>
-  <p> </p>
-  <h4>Example:</h4>
-  <p class="code">if <span data-field="title" data-format="default">asset_get_type</span>(&quot;pth_Path_&quot; + string(global.Game)) == asset_unknown<br />
->>>>>>> e8f331b1b74476a144e051c0d836bf120b342735
     {<br />
         show_debug_message(&quot;Path doesn&#39;t exist!!!&quot;);<br />
     }<br />

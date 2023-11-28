@@ -15,21 +15,11 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-<<<<<<< HEAD
   <h1>variable_struct_get_names</h1>
   <p>С помощью этой функции вы можете получить массив, заполненный именами переменных из структуры. Вы передаете ссылку на struct для проверки, и каждая запись в массиве будет <b>строкой</b> имен переменных, которые содержит struct.</p>
   <p> </p>
   <h4>Синтаксис:</h4>
   <p class="code">variable_struct_get_names(struct);</p>
-=======
-  <h1><span data-field="title" data-format="default">struct_get_names</span></h1>
-  <p>This function returns an array with the variable names from a struct.</p>
-  <p>You pass in the struct reference to check, and each entry in the array will be a <span data-keyref="Type_String"><a href="../../GML_Overview/Data_Types.htm" target="_blank">String</a></span> of the variable names that the struct contains.</p>
-  <p class="note"><span data-conref="../../../assets/snippets/Tag_note.hts"> </span> This function doesn&#39;t return the <em>static</em> variables of the struct. These belong to its <a data-xref="{title}" href="../../GML_Overview/Structs/Static_Structs.htm">Static Struct</a>, that you can get using <span class="inline3_func"><a data-xref="{title}" href="static_get.htm">static_get</a></span>.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
-  <p class="code"><span data-field="title" data-format="default">struct_get_names</span>(struct);</p>
->>>>>>> e8f331b1b74476a144e051c0d836bf120b342735
   <table>
     <tbody>
       <tr>
@@ -37,7 +27,6 @@
         <th>Описание</th>
      </tr>
       <tr>
-<<<<<<< HEAD
         <td><span class="notranslate">struct</span></td><td><span data-keyref="Type_Struct"></span></td>
         <td><span class="notranslate">The struct reference to check.</span></td>
      </tr>
@@ -52,26 +41,6 @@
     var array = variable_struct_get_names(mystruct);<br />
     show_debug_message(&quot;Variables for struct: &quot; + string(array));<br />
     for (var i = 0; i &lt; array_length(array); i++;)<br />
-=======
-        <td>struct</td>
-        <td><span data-keyref="Type_Struct"><a href="../../GML_Overview/Structs.htm" target="_blank">Struct</a></span></td>
-        <td>The struct reference to check.</td>
-      </tr>
-    </tbody>
-  </table>
-  <p> </p>
-  <h4>Returns:</h4>
-  <p class="code"><span data-keyref="Type_Array"><a href="../../GML_Overview/Arrays.htm" target="_blank">Array</a></span> (each entry is a <span data-keyref="Type_String"><a href="../../GML_Overview/Data_Types.htm" target="_blank">String</a></span>)</p>
-  <p> </p>
-  <h4>Example 1: Basic Use</h4>
-  <p class="code">var _my_struct = {a: 7, str: &quot;a string&quot;};<br />
-    <br />
-    var _arr_names = <span data-field="title" data-format="default">struct_get_names</span>(_my_struct);<br />
-    show_debug_message(&quot;Variables for struct: &quot; + string(_arr_names));<br />
-    <br />
-    var _str = &quot;&quot;, _len = array_length(_arr_names);<br />
-    for (var i = 0; i &lt; _len; i++;)<br />
->>>>>>> e8f331b1b74476a144e051c0d836bf120b342735
     {<br />
         str = array[i] + &quot;:&quot; + string(variable_struct_get(mystruct, array[i]));<br />
         show_debug_message(str);<br />
@@ -91,11 +60,9 @@
   </div>
   <!-- KEYWORDS
 variable_struct_get_names
-struct_get_names
 -->
   <!-- TAGS
 variable_struct_get_names
-struct_get_names
 -->
 </body>
 </html>

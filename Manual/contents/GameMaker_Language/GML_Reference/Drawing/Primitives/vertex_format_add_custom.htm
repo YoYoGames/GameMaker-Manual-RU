@@ -4,7 +4,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>vertex_format_add_custom</title>
-  <meta name="generator" content="Adobe RoboHelp 2022" />
+  <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
@@ -14,14 +14,8 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-<<<<<<< HEAD
   <h1>vertex_format_add_custom</h1>
   <p>Эта функция позволяет использовать пользовательский тип данных для определенных атрибутов формата вершин как часть создаваемого нового формата вершин. Доступные для использования значения определяются выбранной вами константой типа данных, перечисленной ниже:</p>
-=======
-  <h1><span data-field="title" data-format="default">vertex_format_add_custom</span></h1>
-  <p>This function adds a custom data type for specific vertex format attributes as part of the new vertex format being created.</p>
-  <p>The available values to use are defined by the data type constant that you choose, listed below: </p>
->>>>>>> e8f331b1b74476a144e051c0d836bf120b342735
   <table>
     <colgroup>
       <col />
@@ -61,13 +55,8 @@
       </tr>
     </tbody>
   </table>
-<<<<<<< HEAD
   <p><br>
     Также необходимо определить, как будут использоваться эти константы, чтобы значения можно было правильно &quot;привязать&quot; в создаваемом шейдере. Это необходимо в связи с тем, что DX и OpenGL имеют разные требования, поэтому если вы не свяжете их должным образом, они не будут правильно отображаться в шейдере. Доступные константы использования, которые вы можете выбрать, перечислены ниже, и их использование будет зависеть от специфики создаваемого шейдера:</p>
-=======
-  <p><br />
-    The use that these constants will be put to also needs to be defined so that the values can be &quot;bound&quot; properly within the shader being created. This is necessary due to the fact that DirectX and OpenGL have different requirements so if you don&#39;t bind them properly, they won&#39;t come through right in the shader. The available usage constants that you can choose are listed below and those you use will depend on the specifics of the shader being created: </p>
->>>>>>> e8f331b1b74476a144e051c0d836bf120b342735
   <table>
     <colgroup>
       <col />
@@ -130,15 +119,9 @@
   <p><br>
     Есть несколько важных моментов, на которые следует обратить внимание при использовании таких пользовательских форматов:</p>
   <ul class="colour">
-<<<<<<< HEAD
     <li>Функция <span class="inline">vertex_format_add_custom()</span> поддерживает только <span class="inline">vertex_usage_position</span>, <span class="inline">vertex_usage_colour</span>, <span class="inline">vertex_usage_normal</span> и <span class="inline">vertex_usage_textcoord</span> при использовании шейдеров GLSL. Они будут отображаться на атрибуты шейдеров <span class="inline">in_Position</span>, <span class="inline">in_Colour[0 - ...]</span>, <span class="inline">in_Normal</span> соответственно (все, что не является одним из этих трех атрибутов - например, координаты текстуры - может быть отображено на любой атрибут, который вы определите).</li>
     <li>В общем случае для всех дополнительных параметров следует использовать <span class="inline">vertex_usage_textcoord</span>, так как типы <span class="inline">vertex_usage_blendweight</span> и <span class="inline">vertex_usage_tangent</span> близки к устаревшим в большинстве шейдерных языков и, вероятно, не будут правильно конвертироваться. Вместо этого используйте <span class="inline">vec</span>, <span class="inline">vec2</span>, <span class="inline">vec3</span> или <span class="inline">vec4</span>, типы <span class="inline">vertex_usage_textcoord</span>, и все будет работать нормально.</li>
     <li>GLSL ES <i>не</i> поддерживает целочисленные атрибуты, поэтому передача <span class="inline">ivec4</span>'s не работает (этот тип обычно используется при передаче <span class="inline">vertex_usage_blendindices</span>). Вам нужно передать текстурные координаты, а затем в шейдере преобразовать их в <span class="inline">ivec4</span> следующим образом:</li>
-=======
-    <li>The <span class="inline">vertex_format_add_custom()</span> function only supports <span class="inline">vertex_usage_position</span>, <span class="inline">vertex_usage_colour</span>, <span class="inline">vertex_usage_normal</span> and <span class="inline">vertex_usage_textcoord</span> when using GLSL shaders. These will map to the shader attributes <span class="inline">in_Position</span>, <span class="inline">in_Colour[0 - ...]</span>, <span class="inline">in_Normal</span> respectively (anything that is not one of these three attributes - e.g.: texture coordinates - can be mapped to any attribute you define).</li>
-    <li>In general you should use <span class="inline">vertex_usage_textcoord</span> for all extra parameters where possible, as types like <span class="inline">vertex_usage_blendweight</span> and <span class="inline">vertex_usage_tangent</span> are close to deprecated in most shader languages, and probably won&#39;t convert properly. Instead use <span class="inline">vec</span>, <span class="inline">vec2</span>, <span class="inline">vec3</span> or <span class="inline">vec4</span> types <span class="inline">vertex_usage_textcoord</span> and everything should work fine.</li>
-    <li>GLSL ES does <i>not</i> support integer attributes, so passing in <span class="inline">ivec4</span>&#39;s does not work (this type is usually used when passing in <span class="inline">vertex_usage_blendindices</span>). What you need to do is pass in texture coordinates and then in the shader, convert them to <span class="inline">ivec4</span> like this:</li>
->>>>>>> e8f331b1b74476a144e051c0d836bf120b342735
   </ul>
   <p> </p>
   <p class="code">attribute vec3 in_Position;<br />
@@ -157,23 +140,12 @@
     }
   </p>
   <ul class="colour">
-<<<<<<< HEAD
     <li>Веса смесей обычно хранятся в массиве, а доступ к ним осуществляется с помощью индексов смесей, но здесь вы можете видеть, что вместо определения <span class="inline">in_BlendIndices</span> как атрибута <span class="inline">ivec4</span>, это <span class="inline">vec4</span>, затем в коде он приводится к <span class="inline">ivec4</span>. Это затем используется для индексации массива, созданного с помощью <span class="inline">gm_Matrix</span> (доступ к массиву можно получить только с помощью значения <span class="inline">INT</span> - не float).</li>
     <br />
      
   </ul>
   <h4>Синтаксис:</h4>
   <p class="code">vertex_format_add_custom(type, usage);</p>
-=======
-    <li>Blend weights are usually stored in an array and then accessed using blend indices, but you can see here that instead of defining <span class="inline">in_BlendIndices</span> as an <span class="inline">ivec4</span> attribute, it&#39;s a <span class="inline">vec4</span>, then cast to an <span class="inline">ivec4</span> in the code. This is then used to index the array created using the <span class="inline">gm_Matrix</span> (you can only access an array using an <span class="inline">INT</span> value - not a float).</li>
-  </ul>
-  <p> </p>
-  <ul class="colour"><br />
-     
-  </ul>
-  <h4>Syntax:</h4>
-  <p class="code"><span data-field="title" data-format="default">vertex_format_add_custom</span>(type, usage);</p>
->>>>>>> e8f331b1b74476a144e051c0d836bf120b342735
   <table>
     <tbody>
       <tr>
@@ -187,15 +159,9 @@
         <td><span class="notranslate">The data type that this custom vertex data will hold (see the <b><i>type constants</i></b> listed above).</span></td>
       </tr>
       <tr>
-<<<<<<< HEAD
         <td><span class="notranslate">usage</span></td>
         <td><span data-keyref="Type_Constant_Draw_Vertex_Usage"><a data-rhwidget="HyperlinkPopover" href="../../../../../GameMaker_Language/GML_Reference/Drawing/Primitives/vertex_format_add_custom.htm">Тип использования вершин Константа</a></span></td>
         <td><span class="notranslate">The use that the data will get(see the <b><i>usage constants</i></b> listed above).</span></td>
-=======
-        <td>usage</td>
-        <td><span data-keyref="Type_Constant_Draw_Vertex_Usage"><a href="../../../../../GameMaker_Language/GML_Reference/Drawing/Primitives/vertex_format_add_custom.htm" target="_blank">Vertex Usage Type Constant</a></span></td>
-        <td>The use that the data will get (see the <b><i>usage constants</i></b> listed above).</td>
->>>>>>> e8f331b1b74476a144e051c0d836bf120b342735
       </tr>
     </tbody>
   </table>
@@ -208,16 +174,10 @@
     vertex_format_add_textcoord();<br />
     vertex_format_add_custom(vertex_type_float3, vertex_usage_position);<br />
     my_format = vertex_format_end();</p>
-<<<<<<< HEAD
   <p>Приведенный выше код создаст новый формат вершин, содержащий только текстуру и 3 пользовательских значения с плавающей точкой для позиции. Затем он сохраняет идентификатор формата в переменной &quot;my_format&quot;.</p>
   <p> </p>
   <p> </p>
   <p> </p>
-=======
-  <p>The above code creates a new vertex format with just texture and 3 custom floating point values for position. It then stores the format in the variable <span class="inline2">my_format</span>.</p>
-  <p> </p>
-  <p> </p>
->>>>>>> e8f331b1b74476a144e051c0d836bf120b342735
   <div class="footer">
     <div class="buttons">
       <div class="clear">

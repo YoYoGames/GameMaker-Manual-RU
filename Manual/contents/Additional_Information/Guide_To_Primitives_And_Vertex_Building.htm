@@ -51,9 +51,9 @@
     vertex_position(v_buff, 110, 110);<br />
     vertex_colour(v_buff, c_white, 1);<br />
     vertex_texcoord(v_buff, 1, 1);<br />
-    vertex_end(v_buff);</p>
-  <p class="code_heading">Draw Event</p>
-  <p class="code"><br />
+    vertex_end(v_buff);<br />
+    <br />
+    // DRAW EVENT<br />
     var tex = sprite_get_texture(spr_Background, 0);<br />
     shader_set(shd_shimmer);<br />
     vertex_submit(v_buff, pr_trianglelist, tex);<br />

@@ -3,13 +3,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<<<<<<< HEAD
   <title>рисовать_поверхность_общая</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
-=======
-  <title>draw_surface_general</title>
-  <meta name="generator" content="Adobe RoboHelp 2022" />
->>>>>>> e8f331b1b74476a144e051c0d836bf120b342735
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
@@ -20,7 +15,6 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-<<<<<<< HEAD
   <h1>рисовать_поверхность_общая</h1>
   <p>Эта функция объединяет функцию <a href="draw_surface_ext.htm"><span class="inline">draw_surface_ext()</span></a> с функцией <a href="draw_surface_part.htm"><span class="inline">draw_surface_part()</span></a>но добавляет некоторые дополнительные опции смешивания, так что каждый угол конечной части поверхности может быть смешен с отдельным цветом.</p>
   <p class="note"><b><span class="note">ПРИМЕЧАНИЕ</span> </b>Градиентное смешивание недоступно для цели HTML5, если не включен WebGL.<b></b></p>
@@ -28,15 +22,6 @@
   <p> </p>
   <h4>Синтаксис:</h4>
   <p class="code">draw_surface_general(id, left, top, w, h, x, y, xscale, yscale, rot, c1, c2, c3, c4, alpha);</p>
-=======
-  <h1><span data-field="title" data-format="default">draw_surface_general</span></h1>
-  <p>This function combines the function <span class="inline3_func"><a data-xref="{title}" href="draw_surface_ext.htm">draw_surface_ext</a></span> with the function <span class="inline3_func"><a data-xref="{title}" href="draw_surface_part.htm">draw_surface_part</a></span>, adding in some additional blending options so that each corner of the final surface part can be blended with an individual colour.</p>
-  <p class="note"><b><span class="note">NOTE</span> </b>Gradient blending is not available for the HTML5 target unless <a href="../../../../Settings/Game_Options/HTML5.htm#webgl">WebGL</a> is enabled.<b></b></p>
-  <div data-conref="../../../../assets/snippets/Surface_volatile_warning.hts"> </div>
-  <p> </p>
-  <h4>Syntax:</h4>
-  <p class="code"><span data-field="title" data-format="default">draw_surface_general</span>(surface, left, top, w, h, x, y, xscale, yscale, rot, c1, c2, c3, c4, alpha);</p>
->>>>>>> e8f331b1b74476a144e051c0d836bf120b342735
   <table>
     <tbody>
       <tr>
@@ -45,7 +30,6 @@
         <th>Описание</th>
       </tr>
       <tr>
-<<<<<<< HEAD
         <td><span class="notranslate">id</span></td>
         <td><span data-keyref="Type_ID_Surface">Идентификатор поверхности</span></td>
         <td><span class="notranslate">The unique ID value of the surface to draw.</span></td>
@@ -119,88 +103,12 @@
         <td><span class="notranslate">alpha</span></td>
         <td><span data-keyref="Type_Real">Реально</span></td>
         <td><span class="notranslate">The alpha transparency to draw the surface with..</span></td>
-=======
-        <td>surface</td>
-        <td><span data-keyref="Type_ID_Surface"><a href="../../../../../GameMaker_Language/GML_Reference/Drawing/Surfaces/surface_create.htm" target="_blank">Surface</a></span></td>
-        <td>The surface to draw.</td>
-      </tr>
-      <tr>
-        <td>left</td>
-        <td><span data-keyref="Type_Real"><a href="../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
-        <td>The left position in the surface of the part to be drawn.</td>
-      </tr>
-      <tr>
-        <td>top</td>
-        <td><span data-keyref="Type_Real"><a href="../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
-        <td>The top position in the surface of the part to be drawn.</td>
-      </tr>
-      <tr>
-        <td>w</td>
-        <td><span data-keyref="Type_Real"><a href="../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
-        <td>The width of the part to be draw, from left.</td>
-      </tr>
-      <tr>
-        <td>h</td>
-        <td><span data-keyref="Type_Real"><a href="../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
-        <td>The height of the part to be draw, from top.</td>
-      </tr>
-      <tr>
-        <td>x</td>
-        <td><span data-keyref="Type_Real"><a href="../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
-        <td>The x position of where to draw the surface.</td>
-      </tr>
-      <tr>
-        <td>y</td>
-        <td><span data-keyref="Type_Real"><a href="../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
-        <td>The y position of where to draw the surface.</td>
-      </tr>
-      <tr>
-        <td>xscale</td>
-        <td><span data-keyref="Type_Real"><a href="../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
-        <td>The horizontal scaling to draw the surface with.</td>
-      </tr>
-      <tr>
-        <td>yscale</td>
-        <td><span data-keyref="Type_Real"><a href="../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
-        <td>The vertical scaling to draw the surface with.</td>
-      </tr>
-      <tr>
-        <td>rot</td>
-        <td><span data-keyref="Type_Real"><a href="../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
-        <td>The rotation or angle to draw the surface with.</td>
-      </tr>
-      <tr>
-        <td>c1</td>
-        <td><span data-keyref="Type_Constant_Colour"><a href="../../../../../GameMaker_Language/GML_Reference/Drawing/Colour_And_Alpha/Colour_And_Alpha.htm" target="_blank">Colour</a></span></td>
-        <td>The colour of the top left corner of the surface.</td>
-      </tr>
-      <tr>
-        <td>c2</td>
-        <td><span data-keyref="Type_Constant_Colour"><a href="../../../../../GameMaker_Language/GML_Reference/Drawing/Colour_And_Alpha/Colour_And_Alpha.htm" target="_blank">Colour</a></span></td>
-        <td>The colour of the top right corner of the surface.</td>
-      </tr>
-      <tr>
-        <td>c3</td>
-        <td><span data-keyref="Type_Constant_Colour"><a href="../../../../../GameMaker_Language/GML_Reference/Drawing/Colour_And_Alpha/Colour_And_Alpha.htm" target="_blank">Colour</a></span></td>
-        <td>The colour of the bottom right corner of the surface.</td>
-      </tr>
-      <tr>
-        <td>c4</td>
-        <td><span data-keyref="Type_Constant_Colour"><a href="../../../../../GameMaker_Language/GML_Reference/Drawing/Colour_And_Alpha/Colour_And_Alpha.htm" target="_blank">Colour</a></span></td>
-        <td>The colour of the bottom left corner of the surface.</td>
-      </tr>
-      <tr>
-        <td>alpha</td>
-        <td><span data-keyref="Type_Real"><a href="../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
-        <td>The alpha transparency to draw the surface with.</td>
->>>>>>> e8f331b1b74476a144e051c0d836bf120b342735
       </tr>
     </tbody>
   </table>
   <p> </p>
   <h4>Возвращается:</h4>
   <p class="code"><span data-keyref="Type_Void">N/A</span></p>
-<<<<<<< HEAD
   <p> </p>
   <h4>Пример:</h4>
   <p class="code">draw_surface_general(surf, 8, 8, 32, 32, x, y, 2, 0.5, 180, c_white, c_white, c_black, c_black, 1);</p>
@@ -208,14 +116,6 @@
   <p> </p>
   <p> </p>
   <p> </p>
-=======
-  <p> </p>
-  <h4>Example:</h4>
-  <p class="code"><span data-field="title" data-format="default">draw_surface_general</span>(surf, 8, 8, 32, 32, x, y, 2, 0.5, 180, c_white, c_white, c_black, c_black, 1);</p>
-  <p>This will draw a 32x32 pixel area from 8x8 pixels into the surface. It will be stretched to double its usual width but half its usual height. It will be opaque, and upside down. The top area of the surface will be blended white and hence normal, but the bottom area will be black, meaning the surface will go from normal to silhouette downwards in a smooth gradient.</p>
-  <p> </p>
-  <p> </p>
->>>>>>> e8f331b1b74476a144e051c0d836bf120b342735
   <div class="footer">
     <div class="buttons">
       <div class="clear">
@@ -223,11 +123,7 @@
         <div style="float:right">Следующий: <a href="application_surface.htm"><span class="notranslate">application_surface</span></a></div>
       </div>
     </div>
-<<<<<<< HEAD
     <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
-=======
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
->>>>>>> e8f331b1b74476a144e051c0d836bf120b342735
   </div>
   <!-- KEYWORDS
 draw_surface_general

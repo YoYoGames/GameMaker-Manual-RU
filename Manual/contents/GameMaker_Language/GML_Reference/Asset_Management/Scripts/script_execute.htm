@@ -4,7 +4,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>script_execute</title>
-  <meta name="generator" content="Adobe RoboHelp 2022" />
+  <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
@@ -20,18 +20,11 @@
     <li>Первый способ - это поддержка <b>унаследованных</b> скриптов, когда каждый скрипт представлял собой отдельную функцию, а название скрипта было также названием функции. Используемый таким образом, он будет работать, как и раньше, и будет запускать созданный пользователем актив скрипта и передавать в него заданные аргументы. Обратите внимание, что в данном случае вызывается не <i>скрипт</i>, а одноименная <i>функция</i> внутри <i>скрипта</i>. <span style="text-align: justify;"></span></li>
     <li><span style="text-align: justify;">Второй способ - вызвать функцию из актива сценария, содержащего несколько функций. В этом случае нужно указать имя функции и аргументы, которые она требует, а не имя актива сценария. Обратите внимание, что это работает только для <a href="../../../GML_Overview/Script_Functions.htm">функций сценария</a>, но не для <a href="../../../GML_Overview/Method_Variables.htm">методов</a>, поскольку только функции сценария имеют присвоенный им идентификатор сценария.</span></li>
   </ul>
-<<<<<<< HEAD
   <p><span style="text-align: justify;"></span>Несмотря на то, что эта функция предназначена в основном для поддержки старых версий, она не является устаревшей, так как все еще имеет свое место в сетевых ситуациях и ситуациях удаленного вызова процедур. Стоит также отметить, что эта функция медленная, и ее частое использование может негативно сказаться на производительности.</p>
   <p class="note"><span class="note">ПРИМЕЧАНИЕ</span> Эту функцию нельзя использовать со встроенными функциями.</p>
   <p> </p>
   <h4>Синтаксис:</h4>
   <p class="code">script_execute(scr, arg0, arg1, arg2..., etc...);</p>
-=======
-  <p class="note"><span style="text-align: justify;"></span><span data-conref="../../../../assets/snippets/Tag_note.hts"> </span> While this function is designed primarily for legacy support, it is not deprecated as it still has its place in networking and remote procedure call situations. It is also worth noting that this function is slow, and using it a lot may adversely affect performance.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
-  <p class="code"><span data-field="title" data-format="default">script_execute</span>(scr, arg0, arg1, arg2, etc.);</p>
->>>>>>> e8f331b1b74476a144e051c0d836bf120b342735
   <table>
     <tbody>
       <tr>
@@ -40,7 +33,6 @@
         <th>Описание</th>
       </tr>
       <tr>
-<<<<<<< HEAD
         <td><span class="notranslate">scr</span></td>
         <td><span data-keyref="Type_Asset_Script"><a href="../../../../../The_Asset_Editors/Scripts.htm" target="_blank">Актив сценария</a></span> или <span data-keyref="Type_Function_Script"><a href="../../../../../GameMaker_Language/GML_Overview/Script_Functions.htm" target="_blank">Функция сценария</a></span></td>
         <td><span class="notranslate">The function/script that you want to call</span></td>
@@ -62,28 +54,6 @@
   <p> </p>
   <p> </p>
   <p> </p>
-=======
-        <td>scr</td>
-        <td><span data-keyref="Type_Asset_Script"><a href="../../../../The_Asset_Editors/Scripts.htm" target="_blank">Script Asset</a></span> or <span data-keyref="Type_Function_Script"><a href="../../../GML_Overview/Script_Functions.htm" target="_blank">Script Function</a></span></td>
-        <td>The function/script that you want to call</td>
-      </tr>
-      <tr>
-        <td>arg0, arg1, arg2, etc.</td>
-        <td><span data-keyref="Type_Any"><a href="../../../GML_Overview/Data_Types.htm#variable" target="_blank">Any</a></span></td>
-        <td>The different arguments that you want to pass through to the function/script</td>
-      </tr>
-    </tbody>
-  </table>
-  <p> </p>
-  <h4>Returns:</h4>
-  <p class="code"><span data-keyref="Type_Any"><a href="../../../GML_Overview/Data_Types.htm#variable" target="_blank">Any</a></span> (Will depend on the return value from the script/function being called)</p>
-  <p> </p>
-  <h4>Example:</h4>
-  <p class="code"><span data-field="title" data-format="default">script_execute</span>(choose(move_up, move_down, move_left, move_right), irandom(5));</p>
-  <p>The above example code will use <span class="inline3_func"><span data-field="title" data-format="default">script_execute</span></span> to choose one of four user defined functions (in this case related to movement) and pass a random integer to it as the first argument.</p>
-  <p> </p>
-  <p> </p>
->>>>>>> e8f331b1b74476a144e051c0d836bf120b342735
   <div class="footer">
     <div class="buttons">
       <div class="clear">
@@ -91,11 +61,7 @@
         <div style="float:right">Следующий: <a href="script_execute_ext.htm"><span class="notranslate">script_execute_ext</span></a></div>
       </div>
     </div>
-<<<<<<< HEAD
     <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
-=======
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
->>>>>>> e8f331b1b74476a144e051c0d836bf120b342735
   </div>
   <!-- KEYWORDS
 script_execute

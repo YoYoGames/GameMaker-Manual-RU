@@ -64,30 +64,7 @@
     <p class="dropspot">Любые побитовые операции, даже при выполнении над не 64-битными значениями, всегда будут возвращать 64-битное целое число.</p>
     <p class="dropspot">Деление на значения int64 также возвращает целые числа (например: <span class="inline2">int64(5) / int64(2) = 2</span>).</p>
   </div>
-<<<<<<< HEAD
   <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down5" href="#">Шестнадцатеричные значения</a></p>
-=======
-  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down16" href="#">Handles</a></p>
-  <div class="droptext" data-targetname="drop-down16">
-    <p class="dropspot">A handle contains a reference to one of the following types of resources:</p>
-    <ul class="colour">
-      <li class="dropspot">Data Structures</li>
-      <li class="dropspot">Assets, such as Objects, Sprites, Rooms, etc.</li>
-      <li class="dropspot">Object Instances</li>
-      <li class="dropspot">Particle Systems</li>
-      <li class="dropspot">Buffers</li>
-      <li class="dropspot">Vertex Buffers and Vertex Formats</li>
-      <li class="dropspot">Surfaces</li>
-      <li class="dropspot">A reference created with <span class="inline3_func"><a data-xref="{title}" href="../GML_Reference/Variable_Functions/ref_create.htm">ref_create</a></span></li>
-    </ul>
-    <p class="dropspot">You get a handle when you create a new resource (with a <span class="inline2">_create()</span> function) or reference an existing resource in your code (like referencing an object, getting an instance through a function, etc.).</p>
-    <p class="dropspot">A handle is a 64-bit integer, where the first 32 bits contain information about the type of resource, and the next 32 bits contain the index number of the resource.</p>
-    <p class="dropspot">The type information in a handle is used to make sure that you pass the correct type of resource into a function (e.g. making sure you pass a DS list into <span class="inline3_func"><a data-xref="{title}" href="../GML_Reference/Data_Structures/DS_Lists/ds_list_add.htm">ds_list_add</a></span> instead of a DS map, grid or something else).</p>
-    <p class="dropspot">If you convert a handle to a string or print it as an output, you will see a string in the format <span class="inline2">&quot;ref &lt;type&gt; &lt;id&gt;&quot;</span>, e.g. <span class="inline2">&quot;ref ds_list 1&quot;</span>.</p>
-    <p class="dropspot"> </p>
-  </div>
-  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down5" href="#">Hexadecimal Literals</a></p>
->>>>>>> e8f331b1b74476a144e051c0d836bf120b342735
   <div class="droptext" data-targetname="drop-down5">
     <p class="dropspot"><span data-keyref="GameMaker Name">GameMaker</span> принимает <b>шестнадцатеричные литералы</b> в качестве законных значений. Шестнадцатеричные значения особенно часто встречаются при работе с цветами, но могут использоваться везде, где требуется положительное целочисленное значение. Шестнадцатеричные значения могут быть отформатированы следующими двумя способами, где <span class="inline"><em>abcd</em></span> - это фактическое шестнадцатеричное значение:</p>
     <p class="code"><span style="background-color: transparent;"><strong>$</strong><em>abcd</em></span><br />

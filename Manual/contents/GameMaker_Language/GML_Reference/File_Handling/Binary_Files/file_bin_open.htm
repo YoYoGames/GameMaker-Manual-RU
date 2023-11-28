@@ -4,7 +4,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>file_bin_open</title>
-  <meta name="generator" content="Adobe RoboHelp 2022" />
+  <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
@@ -22,19 +22,11 @@
     <li>1 = запись</li>
     <li>2 = и чтение, и письмо</li>
   </ul>
-<<<<<<< HEAD
   <p>Если файл не существует, он создается, и функция возвращает id файла, который должен быть использован в других функциях. Вы можете одновременно открывать несколько файлов (не более 32), но не забудьте закрыть их, когда закончите работу с ними.</p>
   <p class="note"><b>ВНИМАНИЕ!</b> Эта функция может работать не так, как вы ожидаете, из-за того, что <span data-keyref="GameMaker Name">GameMaker</span> находится в "песочнице"! Пожалуйста, обратитесь к разделу о <a href="../../../../Additional_Information/The_File_System.htm">файловой системе</a> для получения дополнительной информации.</p>
   <p class="note"><b>ПРИМЕЧАНИЕ</b>: Эти функции <b>не</b> работают, если целевым модулем является HTML5.</p>
   <p> </p>
   <h4>Синтаксис:</h4>
-=======
-  <p>When the file does not exist it is created, and the function returns the id of the file that must be used in the other functions. You can open multiple files at the same time (32 max), but don&#39;t forget to close them once you are finished with them.</p>
-  <div data-conref="../../../../assets/snippets/Note_Warning_GM_FileSystem_Sandboxed.hts"> </div>
-  <p class="note"><b><span data-conref="../../../../assets/snippets/Tag_note.hts"> </span> </b>These functions <b>do not</b> work when the target module is HTML5.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
->>>>>>> e8f331b1b74476a144e051c0d836bf120b342735
   <p class="code">file_bin_open(fname, mode);</p>
   <table>
     <tbody>
@@ -44,7 +36,6 @@
         <th>Описание</th>
       </tr>
       <tr>
-<<<<<<< HEAD
         <td><span class="notranslate">fname</span></td>
         <td><span data-keyref="Type_String">Строка</span></td>
         <td><span class="notranslate">The name of the file to read from.</span></td>
@@ -61,24 +52,6 @@
   <p class="code"><span data-keyref="Type_ID_File_Bin">Binary File ID</span></p>
   <p> </p>
   <h4>Пример:</h4>
-=======
-        <td>fname</td>
-        <td><span data-keyref="Type_String"><a href="../../../GML_Overview/Data_Types.htm" target="_blank">String</a></span></td>
-        <td>The name of the file to read from.</td>
-      </tr>
-      <tr>
-        <td>mode</td>
-        <td><span data-keyref="Type_Real"><a href="../../../GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
-        <td>The indicator of what can be done with the file.</td>
-      </tr>
-    </tbody>
-  </table>
-  <p> </p>
-  <h4>Returns:</h4>
-  <p class="code"><span data-keyref="Type_ID_File_Bin"><a href="file_bin_open.htm" target="_blank">Binary File ID</a></span></p>
-  <p> </p>
-  <h4>Example:</h4>
->>>>>>> e8f331b1b74476a144e051c0d836bf120b342735
   <p class="code">file = file_bin_open(&quot;myfile.bin&quot;, 2);</p>
   <p>Это откроет файл из той же директории, что и игра, и присвоит его индекс переменной &quot;file&quot;.</p>
   <p> </p>
@@ -91,11 +64,7 @@
         <div style="float:right">Следующий: <a href="file_bin_rewrite.htm"><span class="notranslate">file_bin_rewrite</span></a></div>
       </div>
     </div>
-<<<<<<< HEAD
     <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
-=======
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
->>>>>>> e8f331b1b74476a144e051c0d836bf120b342735
   </div>
   <!-- KEYWORDS
 file_bin_open

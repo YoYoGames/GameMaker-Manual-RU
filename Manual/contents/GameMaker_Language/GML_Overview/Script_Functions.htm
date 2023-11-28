@@ -119,17 +119,9 @@
     {<br />
         val = scr_sqr(amount);<br />
     }</p>
-<<<<<<< HEAD
   <p class="note"><strong>ПРИМЕЧАНИЕ</strong>: При использовании собственных функций из скриптов в редакторе кода можно нажать кнопку<span> <img></span> или нажать среднюю кнопку мыши <span><img> </span>на имени функции, чтобы открыть содержащий ее сценарий для редактирования.</p>
   <h2>Имена сценариев в сравнении с именами функций</h2>
   <p>Важно понимать, что <i>имена</i> скриптов <b>не зависят от функций, которые они содержат</b>, поэтому вы можете называть свои скрипты более &quot;здравым&quot; образом, т.е. все ваши функции AI могут быть помещены в скрипт &quot;<span class="inline">Enemy_AI</span>&quot; (следуя стандартным соглашениям об именовании активов, состоящим только из буквенно-цифровых символов и нижнего символа &quot;_&quot;). Однако вы все равно можете вызывать скрипты в своей игре - и вы можете называть скрипты так же, как и функции, которые вы в них определяете - что может привести к проблемам из-за способа, которым <span data-keyref="GameMaker Name">GameMaker</span> хранит ссылки на активы. В качестве примера рассмотрим этот код, вызываемый из экземпляра:</p>
-=======
-  <p class="note"><span data-conref="../../assets/snippets/Tag_note.hts"> </span> When using your own functions from scripts in the code editor, you can press<span> <img alt="F1 Icon" class="icon" height="20" src="../../assets/Images/Icons/Icon_f1.png" width="55" /></span> or click the middle mouse button <span><img alt="MMB Icon" class="icon" src="../../assets/Images/Icons/Icon_MMB.png" /> </span>on the function name to open the script that contains it for editing directly.</p>
-  <h2>Script Names vs. Function Names</h2>
-  <p>It is important to understand that script <i>names</i> are <b>independent of the functions that they contain</b>, so you can name your scripts in a more &quot;common sense&quot; way, i.e.: all your AI functions could go in a script &quot;<span class="inline">Enemy_AI</span>&quot; and contain functions like <span class="inline2">ai_target_pos()</span>, <span class="inline2">ai_alert_level()</span>, <span class="inline2">ai_state()</span>, etc.</p>
-  <p>However, you can still name a script the same as a function that you define in it and call the script, e.g. if you want one function per script (which can be useful for making reusable libraries so all functions are shown in the Asset Browser). When doing this, it is important to understand how script references behave to avoid code errors, due to the way <span data-keyref="GameMaker Name">GameMaker</span> stores asset references.</p>
-  <p>For example, consider this code, called from an instance&#39;s event:</p>
->>>>>>> e8f331b1b74476a144e051c0d836bf120b342735
   <p class="code">function indirectCall(func, arg)<br />
     {<br />
         func(arg);<br />
@@ -137,27 +129,16 @@
     <br />
     indirectCall(myscript, arg);
   </p>
-<<<<<<< HEAD
   <p>Приведенный выше код пытается вызвать скрипт под названием &quot;myscript&quot; внутри метода, что в данном случае приведет к неудаче. Это происходит потому, что встроенная функция фактически использует <em>индекс</em> актива скрипта, а <strong>не </strong>вызывает функцию скрипта - например: если индекс скрипта разрешается в &quot;4&quot;, то функция вызывает <span class="inline">4(arg);</span>, что не имеет смысла. Вместо этого код должен быть структурирован одним из следующих двух способов:</p>
   <p class="code">function indirectCall(func, arg)<br />
-=======
-  <p>The above code is attempting to call a script called <span class="inline2">myscript</span> within a method, which in this case will fail. This is because the inline function is actually using the <em>index</em> for the script asset and <strong>not </strong>actually calling the script function - e.g.: if the script index resolves to &quot;4&quot;, essentially the function is calling <span class="inline2">4(arg)</span>, which makes no sense.</p>
-  <p>Here are two things you can do to work around this:</p>
-  <ol>
-    <li>Convert the script index into a <a data-xref="{title}" href="../GML_Reference/Variable_Functions/method.htm">method</a> before passing it as an argument</li>
-    <li>Use <span class="inline3_func"><a data-xref="{title}" href="../GML_Reference/Asset_Management/Scripts/script_execute.htm">script_execute</a></span> to call the passed script reference</li>
-  </ol>
-  <p>Both ways are shown below:</p>
-  <p class="code">// 1<br />
-    function indirectCall(func, arg)<br />
->>>>>>> e8f331b1b74476a144e051c0d836bf120b342735
     {<br />
         func(arg);<br />
     }<br />
     <br />
     indirectCall(method(undefined, myscript), arg);<br />
     <br />
-    // 2<br />
+    // OR<br />
+    <br />
     function indirectCall(func, arg)<br />
     {<br />
         script_execute(func, arg);<br />
@@ -165,10 +146,7 @@
     <br />
     indirectCall(myscript, arg);
   </p>
-<<<<<<< HEAD
   <p>Это важно отметить, особенно при работе со старыми проектами, где скрипты содержат одну единственную функцию, и функция называется так же, как и скрипт. Однако на самом деле так делать <em>никогда не</em> следует, и ваши скрипты должны называться независимо от функций, которые они содержат.</p>
-=======
->>>>>>> e8f331b1b74476a144e051c0d836bf120b342735
   <div data-conref="../../assets/snippets/Script_empty_reference_error.hts"> </div>
   <h2>Объем сценария</h2>
   <p>Это подводит нас к последней и самой важной вещи, которую необходимо знать о скриптах и функциях, которые они содержат: скрипты анализируются на <b>глобальном</b> уровне и <strong>компилируются в самом начале игры</strong>. Это означает, что <em>технически</em> все функции в скрипте являются &quot;несвязанными&quot; <a href="Method_Variables.htm">переменными метода</a>, а любые переменные, объявленные вне функции в скрипте, будут считаться <a href="Variables/Global_Variables.htm">глобальными переменными</a>. Например, рассмотрим этот скрипт:</p>
