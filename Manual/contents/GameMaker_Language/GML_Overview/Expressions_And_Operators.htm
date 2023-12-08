@@ -103,6 +103,7 @@
   <div class="droptext" data-targetname="drop-down8">
     <p class="dropspot"><strong><span class="inline2">div</span>, <span class="inline2">mod</span> (<span class="inline2">%</span></strong> ) - это деление и модуляция, где div дает сумму, на которую можно разделить значение, получая только целочисленный коэффициент, а mod дает только остаток от деления. Обратите внимание, что div или mod можно использовать только с целыми значениями. Примеры использования: </p>
     <p class="code">secs = time mod 60;<br />
+      secs = time % 60;    // Identical to the above line<br />
       time_str = string(time div 60);</p>
     <p class="dropspot"> </p>
   </div>
