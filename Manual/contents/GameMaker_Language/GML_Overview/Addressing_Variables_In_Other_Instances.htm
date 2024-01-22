@@ -40,7 +40,7 @@
   <p>В приведенном выше коде для примера 1 имеется <a href="../GML_Reference/Asset_Management/Instances/instance_exists.htm"><span class="inline">instance_exists()</span></a> в блоке кода. Это связано с тем, что использование метода point для доступа или изменения значения другого экземпляра приведет к ошибке и аварийному завершению игры, если экземпляр не существует, а в данном примере есть вероятность, что так и есть. Однако в примерах 2 и 3 проверка не нужна, поскольку мы <i>знаем</i>, что экземпляр существует, так как в примере 2 мы его создали, а в примере 3 - это другой экземпляр в событии столкновения. Однако, если существует <i>вероятность</i> того, что экземпляр может быть уничтожен, деактивирован или иным образом удален из комнаты при использовании этого метода, <i>всегда</i> следует предварительно проверить его с помощью функции <span class="inline">instance_exists()</span> или функции <a href="../GML_Reference/Asset_Management/Instances/instance_number.htm"><span class="inline">instance_number()</span></a> функция.</p>
   <p>Обратите внимание, что вы не можете использовать специальное <a href="Instance_Keywords.htm">ключевое слово</a> &quot;<span class="inline">all</span>&quot; с этим методом, чтобы нацелить все экземпляры (например, <span class="inline">all.val = 10</span> даст ошибку), но вы <i>можете</i> использовать ключевые слова &quot;<span class="inline">other</span>&quot; и &quot;<span class="inline">self</span>&quot; без проблем. Например, использование <span class="inline">other</span> в <a href="../../The_Asset_Editors/Object_Properties/Object_Events.htm">событии столкновения</a>:</p>
   <p class="code">// Example 3 other.hp -= 10;<br />
-    if other.hp &lt;= 0<br />
+    if (other.hp &lt;= 0)<br />
     {<br />
         other.sprite_index = spr_E_Dead;<br />
     }</p>
@@ -51,8 +51,8 @@
     <br />
     //or<br />
     <br />
-    var inst = instance_nearest(x, y, obj);<br />
-    inst.speed = 0;
+    var _inst = instance_nearest(x, y, obj);<br />
+    _inst.speed = 0;
   </p>
   <p>Все эти способы чтения, изменения и установки переменных в других экземплярах являются вполне допустимыми и работают потому, что точка на самом деле является <i>оператором</i>. Он принимает значение в качестве левого <a class="glossterm" data-glossterm="операнд" href="#">операнда</a>, переменную в качестве правого операнда и возвращает адрес этой конкретной переменной в указанном объекте или экземпляре. Все имена объектов, константы, идентификаторы и т.д... просто представляют значения, и с ними можно работать как с любыми другими значениями.</p>
   <p>Другой способ ссылаться на переменные в другом экземпляре - использовать функцию <span class="notranslate">GameMaker Language</span> <span class="inline">with()</span> , которая подробно рассматривается <a href="Language_Features/with.htm">здесь</a>:</p>
