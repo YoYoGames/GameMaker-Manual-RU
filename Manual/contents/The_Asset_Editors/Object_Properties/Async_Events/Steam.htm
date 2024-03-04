@@ -49,11 +49,18 @@
   <p class="code">score_get = steam_download_scores(&quot;Game Scores&quot;, 1, 10);</p>
   <p>Это отправит запрос на сервер <span class="notranslate">Steam</span> для получения очков из таблицы лидеров &quot;Game Scores&quot;, сохраняя асинхронный ID запроса в переменной &quot;<span class="inline">score_get</span>&quot;. Затем этот запрос будет обработан в <strong>событии Steam Async Event</strong> следующим образом:</p>
   <p class="code">var async_id = ds_map_find_value(async_load, &quot;id&quot;);<br />
-    if async_id == score_get<br />
-       {<br />
-       var entries = ds_map_find_value(async_load, &quot;entries&quot;);<br />
-       var map = json_decode(entries);<br />
-       if ds_map_exists(map, &quot;default&quot;)<br />
+    <br />
+    if (async_id == score_get)<br />
+    {<br />
+        var entries = ds_map_find_value(async_load, &quot;entries&quot;);<br />
+        var map = json_decode(entries);<br />
+    <br />
+        if (ds_map_exists(map, &quot;default&quot;))<br />
+        {<br />
+            ds_map_destroy(map);<br />
+            exit;<br />
+        }<br />
+        else<br />
         {<br />
           ds_map_destroy(map);<br />
           exit;<br />
