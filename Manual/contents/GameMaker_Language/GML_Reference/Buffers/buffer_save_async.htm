@@ -61,7 +61,7 @@
   <p>Приведенный выше код сохраняет содержимое буфера &quot;<i>buff</i>&quot; в заданный файл сохранения, сохраняя ID вызова функции в переменной &quot;<i>saveid</i>&quot;. Когда сохранение будет завершено, сработает асинхронное событие Save/Load, и вы сможете разобрать карту <span class="inline">async_load</span> на предмет правильного ID функции, как это сделано ниже:</p>
   <p class="code">if ds_map_find_value(async_load, &quot;id&quot;) == saveid<br />
     {<br />
-        if ds_map_find_value(async_load, &quot;status&quot;) == false<br />
+        if (ds_map_find_value(async_load, &quot;status&quot;) == false) <br />
         {<br />
             show_debug_message(&quot;Save failed!&quot;);<br />
         }<br />

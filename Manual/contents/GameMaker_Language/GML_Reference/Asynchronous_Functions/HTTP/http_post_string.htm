@@ -60,9 +60,9 @@
     post = http_post_string(&quot;http://www.angusgames.com/game?game_id=&quot; + string(global.game_id), str);</p>
   <p>Приведенный выше код отправляет запрос на получение по указанному URL с заданными параметрами, а также отправляет дополнительные данные (имя игрока и счет в URL-кодированном виде), хранящиеся в переменной str. Это вызовет все определенные асинхронные <b>Http-события</b>, если будет получен обратный вызов, и вы можете сверить возвращаемый &quot;id&quot; с тем, что хранится в переменной <span class="inline">post</span>, чтобы убедиться, что вы запустили правильный код, если вы использовали различные функции <span class="inline">http_post_string()</span>. Следующий пример кода показывает, как это можно сделать:</p>
   <p class="code">var r_str = &quot;null&quot;;<br />
-    if ds_map_find_value(async_load, &quot;id&quot;) == post<br />
+    if (ds_map_find_value(async_load, &quot;id&quot;) == post) <br />
     {<br />
-        if ds_map_find_value(async_load, &quot;status&quot;) == 0<br />
+        if (ds_map_find_value(async_load, &quot;status&quot;) == 0) <br />
         {<br />
             r_str = ds_map_find_value(async_load, &quot;result&quot;);<br />
         }<br />

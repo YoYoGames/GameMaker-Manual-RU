@@ -38,7 +38,7 @@
   <h4>Пример:</h4>
   <p class="code">if keyboard_check_pressed(ord(&quot;L&quot;))<br />
     {<br />
-        if global.Checkpoint game_load_buffer(save_buff);<br />
+        if (global.Checkpoint) game_load_buffer(save_buff);<br />
     }</p>
   <p>Приведенный выше код загрузит ранее сохраненное состояние игры из буфера, указанного в переменной &quot;save_buff&quot;, только если глобальная переменная имеет значение <span class="inline">true</span>, когда игрок нажмет клавишу &quot;L&quot;.</p>
   <p> </p>

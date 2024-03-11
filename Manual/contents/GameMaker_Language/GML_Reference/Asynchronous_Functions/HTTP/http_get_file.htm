@@ -63,11 +63,11 @@
   <p class="code">if ds_map_find_value(async_load, &quot;id&quot;) == file<br />
     {<br />
         var status = ds_map_find_value(async_load, &quot;status&quot;);<br />
-        if status == 0<br />
+        if (status == 0) <br />
         {<br />
             var path = ds_map_find_value(async_load, &quot;result&quot;);<br />
             var files = zip_unzip(path, &quot;/NewContent/&quot;);<br />
-            if files &gt; 0<br />
+            if (files &gt; 0) <br />
             {<br />
                 global.ExtraContent = true;<br />
             }<br />

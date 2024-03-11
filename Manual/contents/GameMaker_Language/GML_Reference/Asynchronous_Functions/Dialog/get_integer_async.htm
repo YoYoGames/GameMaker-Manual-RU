@@ -50,9 +50,9 @@
   <p class="code">msg = get_integer_async(&quot;How old are you?&quot;, 0);</p>
   <p>Выше будет показано сообщение, требующее, чтобы пользователь ввел строку и нажал кнопку &quot;Ок&quot;. Идентификатор функции хранится в переменной &quot;msg&quot; и будет использован в асинхронном событии Dialogs, как показано ниже:</p>
   <p class="code">var i_d = ds_map_find_value(async_load, &quot;id&quot;);<br />
-    if i_d == msg<br />
+    if (i_d == msg) <br />
     {<br />
-        if ds_map_find_value(async_load, &quot;status&quot;)<br />
+        if (ds_map_find_value(async_load, &quot;status&quot;)) <br />
         {<br />
             global.Age = ds_map_find_value(async_load, &quot;value&quot;);<br />
         }<br />

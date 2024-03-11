@@ -34,7 +34,7 @@
   <p>Приведенный выше код запускает буферную группу, затем устанавливает ее для асинхронного сохранения 4 файлов. Затем определение группы завершается (в этот момент начнется сохранение), сохраняя идентификатор вызова функции в переменной &quot;<i>save_id</i>&quot;. Когда сохранение будет завершено, сработает событие асинхронного сохранения/загрузки, и вы сможете разобрать карту <span class="inline">async_load</span> на предмет правильного ID функции, как показано ниже:</p>
   <p class="code">if ds_map_find_value(async_load, &quot;id&quot;) == saveid<br />
     {<br />
-        if ds_map_find_value(async_load, &quot;status&quot;) == false<br />
+        if (ds_map_find_value(async_load, &quot;status&quot;) == false) <br />
         {<br />
             show_debug_message(&quot;Save failed!&quot;);<br />
         }<br />
