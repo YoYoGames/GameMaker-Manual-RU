@@ -68,6 +68,7 @@
     YYIosScriptPhase<br />
     YYIosCFBundleURLSchemesArray<br />
     YYIosLSApplicationQueriesSchemesArray<br />
+    YYIosPrivacyManifest<br />
     <br />
     YYTvosPlist<br />
     YYTvosEntitlements<br />
@@ -77,7 +78,8 @@
     YYTvosBuildSettingsInjection<br />
     YYTvosScriptPhase<br />
     YYTvosCFBundleURLSchemesArray<br />
-    YYTvosLSApplicationQueriesSchemesArray
+    YYTvosLSApplicationQueriesSchemesArray<br />
+    YYTvosPrivacyManifest
   </p>
   <p>Место выполнения, куда внедряется код, зависит от типа тега:</p>
   <table>
@@ -115,6 +117,10 @@
         <td style=""><strong>xcscheme</strong></td>
         <td style="">{RUNTIME}\ios\TemplateProject\${YYXCodeProjName}.xcodeproj\<br>
           xcshareddata\xcschemes\${YYXCodeProjName}.xcscheme</td>
+      </tr>
+      <tr>
+        <td style=""><strong>PrivacyManifest</strong></td>
+        <td style=""><span>{RUNTIME}\ios\TemplateProject\${YYXCodeProjName}\Supporting Files\PrivacyInfo.xcprivacy</span></td>
       </tr>
     </tbody>
   </table>
