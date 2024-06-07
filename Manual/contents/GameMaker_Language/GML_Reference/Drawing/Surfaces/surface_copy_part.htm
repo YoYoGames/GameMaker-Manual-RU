@@ -76,7 +76,10 @@
   <h4>Пример:</h4>
   <p class="code">if view_current == 0<br />
     {<br />
-        surface_copy_part(surf, 0, 0, temp_surf, 0, 0, view_xview[1] - mouse_x, view_yview[1] - mouse_y);<br />
+        var _cam1_x = camera_get_view_x(view_camera[1]);<br />
+        var _cam1_y = camera_get_view_y(view_camera[1]);<br />
+    <br />
+        surface_copy_part(surf, 0, 0, temp_surf, 0, 0, _cam1_x - mouse_x, _cam1_y - mouse_y);<br />
     }<br />
     else<br />
     {<br />

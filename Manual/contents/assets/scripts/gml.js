@@ -206,6 +206,7 @@ export default function(hljs) {
 
     "audio_sound_gain",
     "audio_sound_get_gain",
+    "audio_sound_get_asset",
     "audio_sound_get_listener_mask",
     "audio_sound_get_pitch",
     "audio_sound_get_track_position",
@@ -2112,8 +2113,10 @@ export default function(hljs) {
     "asset_font",
     "asset_object",
     "asset_path",
+    "asset_particlesystem",
     "asset_room",
     "asset_script",
+    "asset_sequence",
     "asset_shader",
     "asset_sound",
     "asset_sprite",

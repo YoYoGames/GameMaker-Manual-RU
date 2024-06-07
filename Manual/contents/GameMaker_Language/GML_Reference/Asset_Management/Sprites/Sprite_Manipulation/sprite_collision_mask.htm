@@ -4,7 +4,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>sprite_collision_mask</title>
-  <meta name="generator" content="Adobe RoboHelp 2020" />
+  <meta name="generator" content="Adobe RoboHelp 2022" />
   <link rel="stylesheet" href="../../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
@@ -47,6 +47,10 @@
       <tr>
         <td><span class="notranslate"><span class="inline">bboxkind_precise</span></td>
         <td>Точная маска столкновений, где маска будет соответствовать непрозрачным пикселям <span class="notranslate">sprite</span>, на основе заданного значения допуска (см. ниже)).</td>
+      </tr>
+      <tr>
+        <td><span class="inline">bboxkind_spine</span></td>
+        <td>Apart from rectangle, this is the only valid option for Spine sprites. It enables more precise collision checking against the mesh in the sprite.</td>
       </tr>
     </tbody>
   </table>
@@ -133,6 +137,11 @@
   </div>
   <!-- KEYWORDS
 sprite_collision_mask
+bboxkind_precise
+bboxkind_diamond
+bboxkind_ellipse
+bboxkind_rectangular
+bboxkind_spine
 -->
   <!-- TAGS
 sprite_collision_mask
