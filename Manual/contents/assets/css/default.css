@@ -357,6 +357,8 @@ span.warning {
 /* -------------------------------------------------------- LINKS */
 a {
   text-decoration: none;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 a:link,
 a:visited {
