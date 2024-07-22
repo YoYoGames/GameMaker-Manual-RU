@@ -49,7 +49,7 @@
     <li>Установите значения верхнего уровня объекта последовательности, такие как длина, режим воспроизведения, скорость воспроизведения и т.д.. Например:</li>
   </ul>
   <p class="code">myseq.length = 120;<br />
-    myseq.loopmode = seqplay_pingpong</p>
+    myseq.loopmode = seqplay_pingpong;</p>
   <ul class="colour">
     <li>Прежде чем добавлять дорожки к объекту последовательности, их нужно создать, поэтому сейчас вы создадите массив дорожек <i>активов</i>, которые были определены с помощью функции <a href="sequence_track_new.htm"><span class="inline">sequence_track_new()</span></a>. Обратите внимание, что в коде нет разницы между дорожками активов и дорожками параметров - все они просто дорожки, и их поведение зависит от типа созданной дорожки и от того, назначены ли они в качестве поддорожек дорожки верхнего уровня или нет. Так, вы создадите дорожку для актива, а затем назначите ей поддорожки для различных параметров, и эти поддорожки будут действовать как дорожки <i>параметров</i> для актива. В приведенном ниже примере создается одна дорожка графического актива, которая будет добавлена в последовательность позже:</li>
   </ul>
@@ -61,21 +61,26 @@
   <p class="code">// Create a new keyframe struct for a graphics asset track and add it to an array (as you can have multiple keys in a frame)<br />
     var graphickeys = array_create(1);<br />
     graphickeys[0] = sequence_keyframe_new(seqtracktype_graphic);<br />
+    <br />
     // Set the graphics keyframe top level data for the keyframe position and length, etc...<br />
     graphickeys[0].frame = 0;<br />
     graphickeys[0].length = 1;<br />
     graphickeys[0].stretch = true;<br />
     graphickeys[0].disabled = false;<br />
+    <br />
     // Create the channel data that will go into this keyframe (again an array, as each key can have multiple channels of keyframe data)<br />
     var graphickeydata = array_create(1);<br />
     graphickeydata[0] = sequence_keyframedata_new(seqtracktype_graphic);<br />
     graphickeydata[0].spriteIndex = spr_Platform;<br />
     graphickeydata[0].channel = 0;<br />
+    <br />
     // Add the keyframe data channels to the graphics track keyframe<br />
     graphickeys[0].channels = graphickeydata;<br />
+    <br />
     // Add the definied keyframes to the track<br />
     mytracks[0].name = &quot;TestGraphicTrack&quot;;<br />
-    mytracks[0].keyframes = graphickeys;</p>
+    mytracks[0].keyframes = graphickeys;
+  </p>
   <ul class="colour">
     <li>Теперь нам нужно создать дорожку параметров, которую мы назначим в качестве поддорожки только что созданной графической дорожки. Это будет сделано аналогично тому, как показано выше, только теперь нам нужно дать дорожке имя, показывающее ее назначение, в данном случае &quot;position&quot;, поскольку мы будем использовать эту дорожку для перемещения дорожки графики по ходу кадров анимации последовательности:</li>
   </ul>
@@ -90,14 +95,17 @@
     paramkeys[0].frame = 0;<br />
     paramkeys[1] = sequence_keyframe_new(seqtracktype_real);<br />
     paramkeys[1].frame = 120;<br />
+    <br />
     // Create the keyframe data structs<br />
     var paramkeydata1 = array_create(2);<br />
     paramkeydata1[0] = sequence_keyframedata_new(seqtracktype_real);<br />
     paramkeydata1[0].channel = 0; // Channel 0 for a position track is the X position<br />
     paramkeydata1[0].value = 0;<br />
+    <br />
     paramkeydata1[1] = sequence_keyframedata_new(seqtracktype_real);<br />
     paramkeydata1[1].channel = 1; // Channel 1 for a position track is the Y position<br />
     paramkeydata1[1].value = 0;<br />
+    <br />
     var paramkeydata2 = array_create(2);<br />
     paramkeydata2[0] = sequence_keyframedata_new(seqtracktype_real);<br />
     paramkeydata2[0].channel = 0;<br />
@@ -105,11 +113,14 @@
     paramkeydata2[1] = sequence_keyframedata_new(seqtracktype_real);<br />
     paramkeydata2[1].channel = 1;<br />
     paramkeydata2[1].value = room_height;<br />
+    <br />
     // Assign the keyframe data structs to the channels for each key<br />
     paramkeys[0].channels = paramkeydata1;<br />
     paramkeys[1].channels = paramkeydata2;<br />
+    <br />
     // Assign the keys to the parameter track<br />
-    paramtracks[0].keyframes = paramkeys;</p>
+    paramtracks[0].keyframes = paramkeys;
+  </p>
   <ul class="colour">
     <li>После этого остается назначить дорожку параметров в качестве поддорожки к нашей основной дорожке графических активов, которую мы создали в начале, а затем назначить эти дорожки последовательности, которую мы можем создать в комнате:</li>
   </ul>

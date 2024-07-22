@@ -134,8 +134,8 @@
     <p class="dropspot"><img alt="GML VisualExample" class="center" src="../assets/Images/QS_Guide/QS_DnD_Example.png" /></p>
     <p class="code">if gamepad_id &gt; -1<br />
       {<br />
-          var _h = gamepad_axis_value(gamepad_id, gp_axislh);<br />
-          var _v = gamepad_axis_value(gamepad_id, gp_axislv);<br />
+          var _h = gamepad_axis_value(gamepads[0], gp_axislh);<br />
+          var _v = gamepad_axis_value(gamepads[0], gp_axislv);<br />
           x += _h * 4;<br />
           y += _v * 4;<br />
       }</p>
