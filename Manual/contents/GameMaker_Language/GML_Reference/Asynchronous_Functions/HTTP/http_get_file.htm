@@ -4,7 +4,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>http_get_file</title>
-  <meta name="generator" content="Adobe RoboHelp 2020" />
+  <meta name="generator" content="Adobe RoboHelp 2022" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
@@ -62,14 +62,14 @@
   <p>Приведенный выше код запросит файл с заданного URL и настроит его загрузку в локальное хранилище (как указано в параметрах HTML5-игры), в каталог &quot;Downloads&quot; с заданным именем файла (оно не обязательно должно совпадать с именем исходного файла, но должно использовать то же расширение файла). Индекс карты <span class="inline">async_load</span> будет сохранен в переменной &quot;file&quot;, чтобы вы могли проверить правильность обратного вызова в асинхронном событии, и если каталог сохранения не существует, он будет создан. Асинхронное событие будет вызвано под-событием <b>HTTP</b>, и в этом событии у вас будет что-то вроде следующего:</p>
   <p class="code">if ds_map_find_value(async_load, &quot;id&quot;) == file<br />
     {<br />
-        var status = ds_map_find_value(async_load, &quot;status&quot;);<br />
-        if (status == 0) <br />
+        var _status = ds_map_find_value(async_load, &quot;status&quot;);<br />
+        if (_status == 0)<br />
         {<br />
-            var path = ds_map_find_value(async_load, &quot;result&quot;);<br />
-            var files = zip_unzip(path, &quot;/NewContent/&quot;);<br />
-            if (files &gt; 0) <br />
+            var _path = ds_map_find_value(async_load, &quot;result&quot;);<br />
+            var _files = zip_unzip(path, &quot;/NewContent/&quot;);<br />
+            if (_files &gt; 0)<br />
             {<br />
-                global.ExtraContent = true;<br />
+                global.extra_content = true;<br />
             }<br />
         }<br />
     }</p>

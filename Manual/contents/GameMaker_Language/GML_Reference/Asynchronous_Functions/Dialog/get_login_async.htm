@@ -45,8 +45,8 @@
   <h4>Расширенный пример:</h4>
   <p> <b>Событие create</b> (например) объекта, контролирующего вход нашего пользователя, будет иметь следующий код:</p>
   <p class="code">ini_open(&quot;Profile.ini&quot;);<br />
-    u = ini_read_string(&quot;User&quot;,&quot;0&quot;,&quot;&quot;);<br />
-    p = ini_read_string(&quot;User&quot;,&quot;1&quot;,&quot;&quot;);<br />
+    u = ini_read_string(&quot;User&quot;, &quot;0&quot;, &quot;&quot;);<br />
+    p = ini_read_string(&quot;User&quot;, &quot;1&quot;, &quot;&quot;);<br />
     ini_close();<br />
     login = get_login_async(u,p);</p>
   <p>Приведенный выше код открывает файл ini (или создает его, если он не существует) и получает имя и пароль, хранящиеся в этом файле. Если они не существуют, то по умолчанию возвращается пустая строка (&quot;&quot;). Эти значения затем используются в <span class="inline">get_login_async()</span> для запроса у пользователя имени пользователя и пароля, при этом индекс запроса хранится в переменной &quot;login&quot;. Обратите внимание, что в ожидании, пока пользователь сообщит необходимую информацию, игра и ее события будут продолжаться в обычном режиме.</p>

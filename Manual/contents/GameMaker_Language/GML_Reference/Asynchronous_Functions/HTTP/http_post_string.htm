@@ -4,7 +4,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>http_post_string</title>
-  <meta name="generator" content="Adobe RoboHelp 2020" />
+  <meta name="generator" content="Adobe RoboHelp 2022" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
@@ -62,9 +62,9 @@
   <p class="code">var r_str = &quot;null&quot;;<br />
     if (ds_map_find_value(async_load, &quot;id&quot;) == post) <br />
     {<br />
-        if (ds_map_find_value(async_load, &quot;status&quot;) == 0) <br />
+        if (ds_map_find_value(async_load, &quot;status&quot;) == 0)<br />
         {<br />
-            r_str = ds_map_find_value(async_load, &quot;result&quot;);<br />
+            _r_str = ds_map_find_value(async_load, &quot;result&quot;);<br />
         }<br />
     }</p>
   <p>Приведенный выше код сначала проверит id созданной карты DS, затем проверит статус обратного вызова. Если значение равно 0 (что означает успех), результат обратного вызова будет сохранен в переменной для дальнейшего использования, в противном случае переменная будет содержать значение по умолчанию (в данном случае &quot;null&quot;).</p>

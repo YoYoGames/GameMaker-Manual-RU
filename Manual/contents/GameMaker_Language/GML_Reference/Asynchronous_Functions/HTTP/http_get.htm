@@ -59,14 +59,8 @@
   <p>Приведенный выше код передаст строку, хранящуюся в переменной &quot;name&quot;, на указанный сервер, а также получит данные с этого URL, вызвав событие Async Event, которое будет содержать карту async_load DS (индекс карты async_load будет храниться в переменной &quot;get&quot;, чтобы вы могли проверить правильность обратного вызова). Сработавшее Async-событие будет под-событием <b>HTTP</b>, и в этом событии у вас будет следующее:</p>
   <p class="code">if ds_map_find_value(async_load, &quot;id&quot;) == get<br />
     {<br />
-        if (ds_map_find_value(async_load, &quot;status&quot;) == 0) <br />
-        {<br />
-            r_str = ds_map_find_value(async_load, &quot;result&quot;);<br />
-        }<br />
-        else<br />
-        {<br />
-            r_str = &quot;null&quot;;<br />
-        }<br />
+        var _status = async_load[? &quot;status&quot;];<br />
+        var _r_str = (_status == 0) ? async_load[? &quot;result&quot;] : &quot;null&quot;;<br />
     }</p>
   <p>Приведенный выше код сначала проверит id созданной карты DS, затем проверит &quot;статус&quot; обратного вызова. Если значение равно 0 (сигнализирует об успехе), результат обратного вызова будет сохранен в переменной для дальнейшего использования, в противном случае переменная будет установлена в значение по умолчанию (в данном случае &quot;null&quot;).</p>
   <p> </p>
