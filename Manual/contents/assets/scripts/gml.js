@@ -1,12 +1,10 @@
 export default function(hljs) {
+
   const KEYWORDS = [
-    "#define",
-    "#endregion",
-    "#macro",
-    "#region",
     "and",
     "begin",
     "break",
+    "catch",
     "case",
     "constructor",
     "continue",
@@ -16,19 +14,23 @@ export default function(hljs) {
     "do",
     "else",
     "end",
-    "enum",
     "exit",
+    "finally",
     "for",
     "function",
     "globalvar",
     "if",
     "mod",
+    "new",
     "not",
     "or",
     "repeat",
     "return",
+    "static",
     "switch",
     "then",
+    "throw",
+    "try",
     "until",
     "var",
     "while",
@@ -2105,7 +2107,7 @@ export default function(hljs) {
     "achievement_type_score_challenge",
 
     "all",
-	
+  
     "animcurvetype_linear",
     "animcurvetype_catmullrom",
     "animcurvetype_bezier",
@@ -3061,21 +3063,291 @@ export default function(hljs) {
     "player_name",
     "player_type"
   ];
+
+  /**
+   * Regex for some sort of identifier - i.e, a valid name of something in code.
+   */
+  const VALID_IDENTIFIER_REG = /[a-zA-Z_][a-zA-Z0-9_]*/;
+
+  /**
+   * Regex for a dot separating some LHS and RHS expression with optional whitespace (as this is
+   * supported in the engine.)
+   */
+  const DOT_ACCESSOR_REG = /\b\.\b/;
+
+  /**
+   * Various types of strings supported in the engine.
+   */
+  const STRING = {
+    variants: [
+      hljs.QUOTE_STRING_MODE,
+      {
+        scope: "string",
+        begin: "@'",
+        end: "'"
+      },
+      {
+        scope: "string",
+        begin: "@\"",
+        end: "\""
+      }
+    ]
+  };
+
+  /**
+   * Various representations of numbers!
+   */
+  const NUMBER = {
+    className: "literal",
+    variants: [
+      { match: /(\B|^)\$[0-9a-fA-F]+/ },
+      { match: /(\B|^)#[0-9a-fA-F]+/ },
+      { match: /\b0x[0-9a-fA-F][0-9a-fA-F_]*/ },
+      { match: /\b0b[01][01_]*/ },
+      { match: /\b[0-9][0-9_.]*/ }
+    ]
+  };
+
+  /**
+   * Pre-processor modes for macro definitions and regions.
+   */
+  const PREPROCESSOR = {
+    variants: [
+      {
+        match: [
+          /#macro\s+/,
+          VALID_IDENTIFIER_REG
+        ],
+        className: {
+          1: "keyword",
+          2: "literal"
+        }
+      },
+      {
+        match: "#define"
+      },
+      {
+        match: [
+          /#region\s+/,
+          /[^\n]*/
+        ],
+        className: {
+          1: "keyword",
+          2: "comment"
+        }
+      },
+      {
+        match: [
+          /#endregion\s+/,
+          /[^\n]*/
+        ],
+        className: {
+          1: "keyword",
+          2: "comment"
+        }
+      },
+    ]
+  };
+
+  /**
+   * A single-line comment.
+   */
+  const COMMENT_LINE = hljs.COMMENT('//', /\$|\n/);
+
+  /**
+   * Modes for the types of comments supported in GML.
+   */
+  const COMMENT = {
+    variants: [
+      COMMENT_LINE,
+      hljs.C_BLOCK_COMMENT_MODE,
+    ]
+  };
+
+  /**
+   * Dot accessor usage with a special highlighting case for `global`.
+   */
+  const PROP_ACCESS = [
+    {
+      match: [
+        "global",
+        DOT_ACCESSOR_REG,
+        VALID_IDENTIFIER_REG
+      ],
+      className: {
+        1: "literal",
+        3: "variable-global"
+      }
+    },
+    {
+      match: [
+        DOT_ACCESSOR_REG,
+        VALID_IDENTIFIER_REG,
+        /\s*\(/
+      ],
+      className: {
+        2: "function"
+      }
+    },
+    {
+      match: [
+        DOT_ACCESSOR_REG,
+        VALID_IDENTIFIER_REG
+      ],
+      className: {
+        2: "variable-instance"
+      }
+    },
+  ];
+
+  /**
+   * Function call sites, just looking for `<ident>(`. This creates false positives
+   * for keywords such as `if (<condition>)`, so has lower priority in the mode `contains` list.
+   */
+  const FUNCTION_CALL = {
+    begin: [
+      VALID_IDENTIFIER_REG,
+      /\s*?/,
+      /\(/
+    ],
+    className: {
+      1: "function"
+    }
+  };
+
+  /**
+   * The manual likes using `obj_` and such to define assets. Sneaky trick to make it look nicer :P
+   */
+  const USER_ASSET_CONSTANT = {
+    className: "literal",
+    end: VALID_IDENTIFIER_REG,
+    variants: [
+      { begin: "spr_" },
+      { begin: "obj_" },
+      { begin: "shader_" },
+    ]
+  };
+
+  /**
+   * Expressions, which form part of a valid statement.
+   */
+  const EXPRESSION = [
+    STRING,
+    PROP_ACCESS,
+    NUMBER,
+    FUNCTION_CALL,
+    USER_ASSET_CONSTANT
+  ];
+
+  const SWITCH_CASE = {
+    begin: [
+      /case/,
+      /\s+/
+    ],
+    end: /:/,
+    className: {
+      1: "keyword"
+    },
+    contains: EXPRESSION
+  };
+
+  /**
+   * A struct variable declaration, of `<ident>:`
+   */
+  const STRUCT_LITERAL_MEMBER = {
+    match: [
+      /\b/,
+      VALID_IDENTIFIER_REG,
+      /\s*:/
+    ],
+    className: {
+      2: "variable-instance"
+    },
+  };
+
+  /**
+   * A function declaration matching for:
+   * ```gml
+   * function <ident>(
+   * ```
+   */
+  const FUNCTION_DECLARATION = {
+    match: [
+      "function",
+      /\s+/,
+      VALID_IDENTIFIER_REG,
+      /\s*?\(/
+    ],
+    className: {
+      1: "keyword",
+      3: "function"
+    }
+  };
+
+  /**
+   * An enum definition in the form:
+   * ```gml
+   * enum <ident> {
+   *     <ident> [= <expr>][,]
+   * }
+   * ```
+   */
+  const ENUM_DEFINITION = {
+    begin: [
+      /enum/,
+      /\s+/,
+      VALID_IDENTIFIER_REG,
+      /\s*{/
+    ],
+    end: "}",
+    className: {
+      1: "keyword",
+      3: "literal"
+    },
+    contains: [
+      COMMENT,
+      {
+        begin: [
+          VALID_IDENTIFIER_REG,
+          /\s*=\s*/
+        ],
+        end: /,|\n|}/,
+        className: {
+          1: "literal"
+        },
+        contains: EXPRESSION
+      },
+      {
+        match: VALID_IDENTIFIER_REG,
+        className: "literal"
+      }
+    ]
+  };
+
   return {
     name: 'GML',
     case_insensitive: false, // language is case-sensitive
     keywords: {
       keyword: KEYWORDS,
-      built_in: BUILT_INS,
       literal: LITERALS,
-      symbol: SYMBOLS,
+      symbol: SYMBOLS
     },
     contains: [
-      hljs.C_LINE_COMMENT_MODE,
-      hljs.C_BLOCK_COMMENT_MODE,
-      hljs.APOS_STRING_MODE,
-      hljs.QUOTE_STRING_MODE,
-      hljs.C_NUMBER_MODE
+      COMMENT,
+      PREPROCESSOR,
+      NUMBER,
+      STRING,
+      ENUM_DEFINITION,
+      SWITCH_CASE,
+      {
+        // Prevent keywords being taken by function calls.
+        beginKeywords: KEYWORDS.join(" ")
+      },
+      STRUCT_LITERAL_MEMBER,
+      FUNCTION_DECLARATION,
+      FUNCTION_CALL,
+      USER_ASSET_CONSTANT,
+      PROP_ACCESS
     ]
   };
 }
