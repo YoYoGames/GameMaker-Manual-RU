@@ -53,10 +53,12 @@
     {<br />
         var _x = random(room_width);<br />
         var _y = random(room_height);<br />
-        if (instance_position(_x, y, obj_Enemy)<br />
+    <br />
+        if (instance_position(_x, _y, obj_Enemy))<br />
         {<br />
             continue;<br />
         }<br />
+    <br />
         instance_create_layer(_x, _y, &quot;Instances&quot;, obj_Enemy);<br />
     }<br />
     until (instance_count(obj_Enemy) &gt;= 10);</p>
