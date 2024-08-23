@@ -90,7 +90,7 @@
     draw_sprite(spr_Body, 0, 0, 0);<br />
     draw_sprite(spr_Clothes, 0, 0, 0);<br />
     draw_sprite(spr_Hair, 0, 0, 0);<br />
-    spr_custom = sprite_create_from_surface(surf, 0, 0, 32, 32, true, true, 16, 16);<br />
+    spr_custom = sprite_create_from_surface(surf, 0, 0, 32, 32, false, false, 16, 16);<br />
     surface_reset_target();<br />
     surface_free(surf);</p>
   <p>Приведенный выше код создает поверхность и сохраняет ее индекс в локальной переменной &quot;surf&quot;. Затем он нацеливается на эту поверхность, очищает ее и рисует несколько <span class="notranslate">sprites</span> друг на друга. Наконец, он создает новый <span class="notranslate">sprite</span> из составного изображения, нарисованного на поверхности, и присваивает его индекс &quot;spr_Custom&quot;, после чего освобождает память, используемую поверхностью.</p>

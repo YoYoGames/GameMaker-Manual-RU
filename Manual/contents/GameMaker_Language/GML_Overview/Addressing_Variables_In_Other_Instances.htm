@@ -27,7 +27,7 @@
   <p>Однако наиболее распространенным и практичным методом является использование <i>переменной</i> слева от точки, при условии, что данная переменная<i> хранит действительный <b>идентификатор экземпляра</b></i>. Следующие примеры иллюстрируют это.</p>
   <p class="code">// Example 1<br />
     var _inst = instance_position(mouse_x, mouse_y, all);<br />
-    if (instance_exists(_inst)) <br />
+    if (instance_exists(_inst))<br />
     {<br />
         _inst.speed = 0;<br />
     }<br />
@@ -64,7 +64,7 @@
     <br />
     // This will affect one instance of the object &quot;obj_Enemy&quot;<br />
     var _enemy = instance_nearest(x, y, obj_Enemy);<br />
-    if (instance_exists(_enemy)) <br />
+    if (instance_exists(_enemy))<br />
     {<br />
         with (_enemy)<br />
         {<br />
