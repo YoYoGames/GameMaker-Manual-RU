@@ -62,9 +62,9 @@
   <p class="code">var r_str = &quot;null&quot;;<br />
     if (ds_map_find_value(async_load, &quot;id&quot;) == post) <br />
     {<br />
-        if (ds_map_find_value(async_load, &quot;status&quot;) == 0)<br />
+        if (async_load[? &quot;status&quot;] == 0)<br />
         {<br />
-            _r_str = ds_map_find_value(async_load, &quot;result&quot;);<br />
+            _r_str = async_load[? &quot;result&quot;];<br />
         }<br />
     }</p>
   <p>Приведенный выше код сначала проверит id созданной карты DS, затем проверит статус обратного вызова. Если значение равно 0 (что означает успех), результат обратного вызова будет сохранен в переменной для дальнейшего использования, в противном случае переменная будет содержать значение по умолчанию (в данном случае &quot;null&quot;).</p>
