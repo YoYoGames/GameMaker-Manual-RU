@@ -2589,6 +2589,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 // ----------------------------------------------------------------------------------------------
 // Language select dropdown (create and navigate)
 // ----------------------------------------------------------------------------------------------
+var createLanguageMenu = function () {
 // Create default style (full context view) and get parent elm
 var listStyle = `float: right;
   background-color: #333;
@@ -2699,3 +2700,5 @@ selectList.addEventListener( "change", function(e) {
   }
 
 });
+}
+setTimeout(createLanguageMenu, 30);
