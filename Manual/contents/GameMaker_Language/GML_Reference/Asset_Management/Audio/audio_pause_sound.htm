@@ -40,14 +40,14 @@
   <h4>Пример:</h4>
   <p class="code">if keyboard_check_pressed(ord(&quot;P&quot;))<br />
     {<br />
-        global.Pause = !global.Pause;<br />
-        if (global.Pause)<br />
+        global.pause = !global.pause;<br />
+        if (global.pause)<br />
         {<br />
             audio_pause_sound(snd_Waterfall);<br />
         }<br />
         else<br />
         {<br />
-            audio_resume_sound(snd_Waterfall);<br />
+            audio_resume_sound(snd_waterfall);<br />
         }<br />
     }</p>
   <p>Приведенный выше код проверяет нажатие клавиши &quot;P&quot; и, если обнаруживает ее, устанавливает глобальную переменную &quot;Pause&quot; в значение <span class="inline">true</span> или false, а затем либо приостанавливает звук, индексированный в переменной &quot;snd_Waterfall&quot;, либо возобновляет его из состояния паузы.</p>
