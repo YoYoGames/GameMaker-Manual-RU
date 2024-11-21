@@ -105,7 +105,7 @@
     <br />
     function sqr_calc(val)<br />
     {<br />
-        if !is_real(val)<br />
+        if (!is_real(val))<br />
         {<br />
             return 0;<br />
         }<br />
@@ -137,8 +137,7 @@
     <br />
     indirectCall(method(undefined, myscript), arg);<br />
     <br />
-    // OR<br />
-    <br />
+    // 2<br />
     function indirectCall(func, arg)<br />
     {<br />
         script_execute(func, arg);<br />

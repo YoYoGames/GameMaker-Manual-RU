@@ -4,7 +4,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>gamepad_get_description</title>
-  <meta name="generator" content="Adobe RoboHelp 2020" />
+  <meta name="generator" content="Adobe RoboHelp 2022" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
@@ -40,13 +40,14 @@
   <p class="code">var gp_num = gamepad_get_device_count();<br />
     for (var i = 0; i &lt; gp_num; i++;)<br />
     {<br />
-        if gamepad_is_connected(i)<br />
+        var _gamepad = gamepads[i];<br />
+        if (gamepad_is_connected(_gamepad))<br />
         {<br />
-            draw_text(32, 32 + (i * 32), gamepad_get_description(i));<br />
+            draw_text(32, 32 + (i * 32), gamepad_get_description(_gamepad));<br />
         }<br />
         else<br />
         {<br />
-            draw_text(32, 32 + (i * 32), &quot;No Gamepad Connected&quot;);<br />
+            draw_text(32, 32 + (i * 32), &quot;Gamepad not found&quot;);<br />
         }<br />
     }</p>
   <p>Приведенный выше код пройдется по всем слотам геймпада для проверки наличия подключенных устройств, а затем нарисует текст на экране в зависимости от того, подключен ли геймпад к слоту или нет.</p>

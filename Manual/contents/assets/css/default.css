@@ -40,7 +40,7 @@
   font-family: 'open_sanslight_italic';
   src: url('../fonts/opensans-lightitalic-webfont.woff2') format('woff2'), url('../fonts/opensans-lightitalic-webfont.woff') format('woff');
   font-weight: normal;
-  font-style: normal
+  font-style: normal;
 }
 @font-face {
   font-family: 'open_sansregular';
@@ -82,9 +82,9 @@ h1 {
   color: #FFFFFF;
   box-shadow: 0px 0px 5px #181818;
 }
-@media screen and (max-width:600px){
+@media screen and (max-width:600px) {
   h1 {
-  	  background-repeat: repeat, repeat;
+    background-repeat: repeat, repeat;
   }
 }
 h2 {
@@ -98,7 +98,7 @@ h2 {
   margin-top: 2em;
   margin-bottom: 10px;
 }
-h1 + h2 {
+h1+h2 {
   margin-top: 0px;
 }
 h3 {
@@ -193,17 +193,21 @@ p.code_heading {
   padding-right: 10px;
   padding-bottom: 5px;
   padding-left: 10px;
-  margin-top: 10px;
-  margin-bottom: -20px;
+  margin-top: 20px;
+  margin-bottom: -10px;
   border-width: 5px;
   border-style: solid;
   border-color: #282828;
-  width: auto;
-  display: inline-block;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
+  display: block;
+  width: fit-content;
+  position: relative;
+}
+p.code_heading+p.code_heading {
+  margin-top: 13px;
 }
 p.code,
 p.code_plain,
@@ -226,15 +230,14 @@ pre {
   line-height: 1.25;
   overflow-wrap: break-word;
 }
-h4 + p.code,
-h4 + p.code_plain,
-p.code_heading + p.code,
-p.code_heading + p.code_plain
-{
+h4+p.code,
+h4+p.code_plain,
+p.code_heading+p.code,
+p.code_heading+p.code_plain {
   margin-top: 1px;
 }
-p.code + p.code_heading,
-p.code_plain + p.code_heading {
+p.code+p.code_heading,
+p.code_plain+p.code_heading {
   margin-top: -10px;
 }
 p.note {
@@ -263,7 +266,7 @@ p.note_heading {
   font-weight: 800;
   font-style: italic;
 }
-p.note_heading + p.note {
+p.note_heading+p.note {
   margin-bottom: 40px;
   padding-top: 16px;
 }
@@ -411,10 +414,10 @@ a.glossterm {
   color: #E28F4B;
 }
 h1 a.glossterm:before {
-  content:"(";
+  content: "(";
 }
 h1 a.glossterm:after {
-  content:")";
+  content: ")";
 }
 h1 a.glossterm {
   margin-left: 0.2em;
@@ -534,7 +537,9 @@ img.center {
   margin-right: auto;
   position: relative;
 }
-img.center_shadow, img.left_shadow, img.right_shadow {
+img.center_shadow,
+img.left_shadow,
+img.right_shadow {
   display: block;
   margin-top: 5px;
   max-width: 70%;
@@ -544,7 +549,8 @@ img.center_shadow, img.left_shadow, img.right_shadow {
   position: relative;
   box-shadow: 4px 4px 10px 2px #000;
 }
-img.left_shadow, img.right_shadow {
+img.left_shadow,
+img.right_shadow {
   display: block;
   position: relative;
   max-width: auto;
@@ -640,7 +646,6 @@ div.clear {
   background: #444444;
   padding: 10px;
   border-radius: 0.5em 0.5em 0 0;
-  
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -650,12 +655,8 @@ div.clear {
 div.clear a {
   font-weight: normal;
 }
-div.clear:nth-child(1) {
-  
-}
-div.clear:nth-child(2) {
-  
-}
+div.clear:nth-child(1) {}
+div.clear:nth-child(2) {}
 div.dropspotnote {
   font-style: italic;
   margin-left: 85px;
@@ -889,7 +890,7 @@ ol.AlphaNumeric>li>ol>li>ol>li>ol>li {
 }
 ol.AlphaNumeric>li>ol>li>ol>li>ol>li:before {
   counter-increment: item4;
-  content: "("counter(item4, decimal)")";
+  content: "(" counter(item4, decimal)")";
   text-align: right;
   position: absolute;
   left: calc(-1 * var(--prefix-size) - var(--prefix-gap));
@@ -909,7 +910,7 @@ ol.AlphaNumeric>li>ol>li>ol>li>ol>li>ol {
 }
 ol.AlphaNumeric>li>ol>li>ol>li>ol>li>ol>li:before {
   counter-increment: item5;
-  content: "("counter(item5, lower-alpha)")";
+  content: "(" counter(item5, lower-alpha)")";
   text-align: right;
   position: absolute;
   left: calc(-1 * var(--prefix-size) - var(--prefix-gap));
@@ -936,7 +937,7 @@ ol.AlphaNumeric>li>ol>li>ol>li>ol>li>ol>li>ol {
 }
 ol.AlphaNumeric>li>ol>li>ol>li>ol>li>ol>li>ol>li:before {
   counter-increment: item6;
-  content: "("counter(item6, lower-roman)")";
+  content: "(" counter(item6, lower-roman)")";
   text-align: right;
   position: absolute;
   left: calc(-1 * var(--prefix-size) - var(--prefix-gap));

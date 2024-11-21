@@ -4,7 +4,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>draw_primitive_begin_texture</title>
-  <meta name="generator" content="Adobe RoboHelp 2020" />
+  <meta name="generator" content="Adobe RoboHelp 2022" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
@@ -45,8 +45,8 @@
   <p> </p>
   <h4>Пример:</h4>
   <p class="code">draw_set_colour(c_white);<br />
-    var tex = sprite_get_texture(spr_Background, 0);<br />
-    draw_primitive_begin_texture(pr_trianglestrip, tex);<br />
+    var _tex = sprite_get_texture(spr_Background, 0);<br />
+    draw_primitive_begin_texture(pr_trianglestrip, _tex);<br />
     draw_vertex_texture(0, 0, 0, 0);<br />
     draw_vertex_texture(640, 0, 1, 0);<br />
     draw_vertex_texture(0, 480, 0, 1);<br />

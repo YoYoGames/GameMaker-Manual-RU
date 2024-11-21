@@ -38,7 +38,7 @@
     <p class="dropspot"><img alt="Play Icon" class="icon" src="../assets/Images/Icons/Icon_PlayGame.png" /></p>
     <p class="code">var _dist = point_distance(x, y, mouse_x, mouse_y);<br />
       <br />
-      if _dist &lt;= speed<br />
+      if (_dist &lt;= speed) <br />
       {<br />
           speed = 0;<br />
       }
@@ -58,15 +58,15 @@
       {<br />
           x = x - 2;<br />
       }<br />
-      else if keyboard_check(vk_right)<br />
+      else if (keyboard_check(vk_right)) <br />
       {<br />
           x = x + 2;<br />
       }<br />
-      else if keyboard_check(vk_up)<br />
+      else if (keyboard_check(vk_up)) <br />
       {<br />
           y = y - 2;<br />
       }<br />
-      else if keyboard_check(vk_down)<br />
+      else if (keyboard_check(vk_down)) <br />
       {<br />
           y = y + 2;<br />
       }</p>
@@ -78,15 +78,15 @@
       {<br />
           x = x - 2;<br />
       }<br />
-      if keyboard_check(vk_right)<br />
+      if (keyboard_check(vk_right)) <br />
       {<br />
           x = x + 2;<br />
       }<br />
-      if keyboard_check(vk_up)<br />
+      if (keyboard_check(vk_up)) <br />
       {<br />
           y = y - 2;<br />
       }<br />
-      if keyboard_check(vk_down)<br />
+      if (keyboard_check(vk_down)) <br />
       {<br />
           y = y + 2;<br />
       }</p>
@@ -97,15 +97,15 @@
       {<br />
           x = x - 2;<br />
       }<br />
-      if keyboard_check(ord(&quot;D&quot;))<br />
+      if (keyboard_check(ord(&quot;D&quot;))) <br />
       {<br />
           x = x + 2;<br />
       }<br />
-      if keyboard_check(ord(&quot;W&quot;))<br />
+      if (keyboard_check(ord(&quot;W&quot;))) <br />
       {<br />
           y = y - 2;<br />
       }<br />
-      if keyboard_check(ord(&quot;S&quot;))<br />
+      if (keyboard_check(ord(&quot;S&quot;))) <br />
       {<br />
           y = y + 2;<br />
       }</p>
@@ -134,8 +134,8 @@
     <p class="dropspot"><img alt="GML VisualExample" class="center" src="../assets/Images/QS_Guide/QS_DnD_Example.png" /></p>
     <p class="code">if gamepad_id &gt; -1<br />
       {<br />
-          var _h = gamepad_axis_value(gamepad_id, gp_axislh);<br />
-          var _v = gamepad_axis_value(gamepad_id, gp_axislv);<br />
+          var _h = gamepad_axis_value(gamepads[0], gp_axislh);<br />
+          var _v = gamepad_axis_value(gamepads[0], gp_axislv);<br />
           x += _h * 4;<br />
           y += _v * 4;<br />
       }</p>

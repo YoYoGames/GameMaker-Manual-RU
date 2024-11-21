@@ -4,13 +4,13 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>network_set_config</title>
-  <meta name="generator" content="Adobe RoboHelp 2020" />
+  <meta name="generator" content="Adobe RoboHelp 2022" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
   <script src="../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference page for network_set_config" />
-  <meta name="rh-index-keywords" content="network_set_config,network_config_connect_timeout,network_config_use_non_blocking_socket,network_config_enable_reliable_udp,network_config_disable_reliable_udp,network_config_avoid_time_wait " />
-  <meta name="search-keywords" content="network_set_config,network_config_connect_timeout,network_config_use_non_blocking_socket,network_config_enable_reliable_udp,network_config_disable_reliable_udp,network_config_avoid_time_wait " />
+  <meta name="rh-index-keywords" content="network_set_config,network_config_connect_timeout,network_config_use_non_blocking_socket,network_config_enable_reliable_udp,network_config_disable_reliable_udp,network_config_avoid_time_wait,network_config_enable_multicast,network_config_disable_multicast " />
+  <meta name="search-keywords" content="network_set_config,network_config_connect_timeout,network_config_use_non_blocking_socket,network_config_enable_reliable_udp,network_config_disable_reliable_udp,network_config_avoid_time_wait,network_config_enable_multicast,network_config_disable_multicast " />
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
@@ -57,6 +57,16 @@
         <td><span class="notranslate"><span class="inline">network_config_avoid_time_wait</span></td>
         <td>Устанавливает значение тайм-аута <span class="inline">SO_LINGER</span> на 0 для существующего TCP-сокета.</td>
         <td><span class="notranslate">The socket ID to target</span></td>
+      </tr>
+      <tr>
+        <td><span class="inline">network_config_enable_multicast</span></td>
+        <td>Enables multicast support for UDP</td>
+        <td>The socket ID to target</td>
+      </tr>
+      <tr>
+        <td><span class="inline">network_config_disable_multicast</span></td>
+        <td>Disables multicast support for UDP</td>
+        <td>The socket ID to target</td>
       </tr>
     </tbody>
   </table>
@@ -119,6 +129,8 @@ network_config_use_non_blocking_socket
 network_config_enable_reliable_udp
 network_config_disable_reliable_udp
 network_config_avoid_time_wait 
+network_config_enable_multicast
+network_config_disable_multicast
 -->
   <!-- TAGS
 network_set_config

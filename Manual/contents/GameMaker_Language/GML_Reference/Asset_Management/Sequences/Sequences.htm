@@ -49,7 +49,7 @@
     <li>Установите значения верхнего уровня объекта последовательности, такие как длина, режим воспроизведения, скорость воспроизведения и т.д.. Например:</li>
   </ul>
   <p class="code">myseq.length = 120;<br />
-    myseq.loopmode = seqplay_pingpong</p>
+    myseq.loopmode = seqplay_pingpong;</p>
   <ul class="colour">
     <li>Прежде чем добавлять дорожки к объекту последовательности, их нужно создать, поэтому сейчас вы создадите массив дорожек <i>активов</i>, которые были определены с помощью функции <a href="sequence_track_new.htm"><span class="inline">sequence_track_new()</span></a>. Обратите внимание, что в коде нет разницы между дорожками активов и дорожками параметров - все они просто дорожки, и их поведение зависит от типа созданной дорожки и от того, назначены ли они в качестве поддорожек дорожки верхнего уровня или нет. Так, вы создадите дорожку для актива, а затем назначите ей поддорожки для различных параметров, и эти поддорожки будут действовать как дорожки <i>параметров</i> для актива. В приведенном ниже примере создается одна дорожка графического актива, которая будет добавлена в последовательность позже:</li>
   </ul>
@@ -61,7 +61,7 @@
   <p class="code">// Create a new keyframe struct for a graphics asset track and add it to an array (as you can have multiple keys in a frame)<br />
     var graphickeys = array_create(1);<br />
     graphickeys[0] = sequence_keyframe_new(seqtracktype_graphic);<br />
-    // Set the graphics keyframe top level data for the keyframe position and length, etc...<br />
+    // Set the graphics keyframe top level data for the keyframe position and length, etc.<br />
     graphickeys[0].frame = 0;<br />
     graphickeys[0].length = 1;<br />
     graphickeys[0].stretch = true;<br />

@@ -4,7 +4,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>asset_get_index</title>
-  <meta name="generator" content="Adobe RoboHelp 2020" />
+  <meta name="generator" content="Adobe RoboHelp 2022" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
@@ -38,7 +38,8 @@
   <p> </p>
   <h4>Пример:</h4>
   <p class="code">var obj = asset_get_index(&quot;obj_Enemy_&quot; + string(global.Level));<br />
-    if obj &gt; -1<br />
+    <br />
+    if (object_exists(obj))<br />
     {<br />
         instance_create_layer(random(room_width), random(room_height), obj, &quot;Enemy_Layer&quot;);<br />
     }</p>

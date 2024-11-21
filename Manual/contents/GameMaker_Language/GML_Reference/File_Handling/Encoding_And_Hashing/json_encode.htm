@@ -4,7 +4,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>json_encode</title>
-  <meta name="generator" content="Adobe RoboHelp 2020" />
+  <meta name="generator" content="Adobe RoboHelp 2022" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
@@ -52,7 +52,7 @@
     hiscore_map = ds_map_create();<br />
     for (i = 0; i &lt; 10; i ++;)<br />
     {<br />
-        ds_map_add(hiscore_map, name[i], score[i]);<br />
+        ds_map_add(_hiscore_map, name[i], score[i]);<br />
     }<br />
     str = json_encode(hiscore_map);<br />
     get[0] = http_post_string(&quot;http://www.angusgames.com/game?game_id=&quot; + string(global.game_id), str)<br />

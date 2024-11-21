@@ -40,13 +40,13 @@
   <h4>Пример:</h4>
   <p class="code">if keyboard_check_pressed(vk_space)<br />
     {<br />
-        if application_surface_is_enabled()<br />
+        if (application_surface_is_enabled())<br />
         {<br />
-            application_surface_enable(false);<br />
+            <span data-field="title" data-format="default">application_surface_enable</span>(false);<br />
         }<br />
         else<br />
         {<br />
-            application_surface_enable(true);<br />
+            <span data-field="title" data-format="default">application_surface_enable</span>(true);<br />
         }<br />
     }</p>
   <p>Приведенный выше код проверяет нажатие клавиши и включает или выключает поверхность приложения в зависимости от ее состояния (как в меню опций).</p>

@@ -1269,6 +1269,7 @@ export default function(hljs) {
 
     "merge_color",
     "merge_color",
+    "merge_color",
     "merge_colour",
 	
     "method",
@@ -1783,6 +1784,7 @@ export default function(hljs) {
     "string_count",
     "string_delete",
     "string_digits",
+    "string_ext",
     "string_format",
     "string_hash_to_newline",
     "string_height",
@@ -2112,8 +2114,10 @@ export default function(hljs) {
     "asset_font",
     "asset_object",
     "asset_path",
+    "asset_particlesystem",
     "asset_room",
     "asset_script",
+    "asset_sequence",
     "asset_shader",
     "asset_sound",
     "asset_sprite",

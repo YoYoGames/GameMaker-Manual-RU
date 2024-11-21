@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
   <script src="../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
-  <meta name="topic-comment" content="Page outlining the with function" />
+  <meta name="topic-comment" content="Page outlining the with statement" />
   <meta name="rh-index-keywords" content="with" />
   <meta name="search-keywords" content="with" />
 </head>
@@ -22,24 +22,24 @@
   <p>будет иметь точно такой же эффект, потому что это просто сокращение первого утверждения. Как <i>же</i> добиться чего-то подобного? Вот почему утверждение <span class="inline">with</span> существует в <span class="notranslate">GML</span>. Утверждение <span class="inline">with</span> имеет следующий синтаксис:</p>
   <p class="code">with (&lt;expression&gt;)<br />
     {<br />
-        &lt;statement&gt;;<br />
-        &lt;statement&gt;;<br />
-        ...<br />
+    &lt;statement&gt;;<br />
+    &lt;statement&gt;;<br />
+    ...<br />
     }</p>
   <p>Для <a class="glossterm" data-glossterm="выражение" href="#">выражения</a> можно указать один или несколько экземпляров (или struct) для выполнения кода, используя ID экземпляра, ID объекта (который указывает, что <i>все экземпляры</i> в комнате этого объекта должны выполнить блок кода), ID struct или одно из специальных <a href="../Instance_Keywords.htm">ключевых слов</a> (<span class="inline">all</span> или <span class="inline">other</span>). В результате <strong>область видимости</strong> кода в фигурных скобках <span class="inline">{}</span> изменится с экземпляра, структуры или функции, в которой фактически находится код, на экземпляр (или экземпляры, или структуру), указанный в выражении.</p>
   <p>Как только выражение установит область видимости <span class="inline">with</span>, <a class="glossterm" data-glossterm="заявление" href="#">оператор</a> будет выполнен для каждого из указанных экземпляров, как если бы этот экземпляр был текущим ( <span class="inline">self</span>). Итак, возвращаясь к нашей исходной задаче, чтобы переместить все экземпляры объекта ball на 8 пикселей вниз, нужно ввести:</p>
   <p class="code">with (obj_ball)<br />
     {<br />
-        y += 8;<br />
+        y += 8;<br />
     }</p>
   <p>По сути, это цикл, и на каждой <a class="glossterm" data-glossterm="итерация" href="#">итерации</a> цикла код будет выполняться на одном экземпляре объекта <span class="inline">obj_ball</span>.</p>
   <p>Если вы хотите выполнить несколько операторов, просто заключите их в фигурные скобки, как и любой другой блок кода. Например, чтобы переместить все шарики в нашем примере в случайное положение и придать им случайную скорость и направление, вы можете использовать:</p>
   <p class="code">with (obj_ball)<br />
     {<br />
-        x = random(room_width);<br />
-        y = random(room_height);<br />
-        speed = 1 + random(2);<br />
-        direction = random(360);<br />
+        x = random(room_width);<br />
+        y = random(room_height);<br />
+        speed = 1 + random(2);<br />
+        direction = random(360);<br />
     }</p>
   <p>Как упоминалось выше, в операторе (операторах) указанный экземпляр или структура стал целевым (<span class="inline">self</span>) экземпляром, который выполняет блок кода, что означает, что исходный экземпляр (который содержит <span class="inline">with</span> и весь блок кода) стал экземпляром. <a href="../Instance_Keywords.htm"><span class="inline">other</span></a> экземпляром. Так, например, чтобы переместить все шарики в позицию текущего экземпляра, который фактически содержит код, вы можете напечатать следующее:</p>
   <p class="code">with (obj_ball)<br />
@@ -86,9 +86,9 @@
     {<br />
         if (++count &gt; 10)<br />
         {<br />
-            break;<br />
+            break;<br />
         }<br />
-        hp = 100;<br />
+        hp = 100;<br />
     }</p>
   <p>Приведенный выше код перебирает все экземпляры объекта <span class="inline">obj_Enemy</span> в комнате и устанавливает переменную <span class="inline">hp</span> в значение 100 для первых 10 найденных экземпляров. Если найдено более 10 экземпляров, код с вызовет <span class="inline">break</span> и завершится.</p>
   <p>Примером использования <span class="inline">continue</span> в цикле <span class="inline">with</span> может быть:</p>

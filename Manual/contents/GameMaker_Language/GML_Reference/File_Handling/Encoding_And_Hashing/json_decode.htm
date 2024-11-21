@@ -3,6 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="generator" content="Adobe RoboHelp 2022" />
   <title>json_decode</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
@@ -10,8 +11,6 @@
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference page for json_decode" />
   <meta name="rh-index-keywords" content="json_decode" />
-  <meta name="search-keywords" content="json_decode" />
-  <meta name="is_pure" content="true" />
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
@@ -59,12 +58,12 @@
     var size = ds_list_size(list);<br />
     for (var n = 0; n &lt; ds_list_size(list); n++;)<br />
     {<br />
-        var map = ds_list_find_value(list, n);<br />
-        var curr = ds_map_find_first(map);<br />
-        while (is_string(curr))<br />
+        var map = ds_list_find_value(list, n);<br />
+        var curr = ds_map_find_first(map);<br />
+        while (is_string(curr))<br />
         {<br />
-            global.Name[n] = ds_map_find_value(map, &quot;name&quot;);<br />
-            curr = ds_map_find_next(map, curr);<br />
+            global.Name[n] = ds_map_find_value(map, &quot;name&quot;);<br />
+            curr = ds_map_find_next(map, curr);<br />
         }<br />
     }<br />
     ds_map_destroy(resultMap);</p>

@@ -4,7 +4,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>tile_set_empty</title>
-  <meta name="generator" content="Adobe RoboHelp 2020" />
+  <meta name="generator" content="Adobe RoboHelp 2022" />
   <link rel="stylesheet" href="../../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
@@ -45,7 +45,7 @@
         for (var j = 0; j &lt; tilemap_get_height(map_id); j++;)<br />
         {<br />
             var data = tilemap_get(map_id, i, j);<br />
-            if !tile_get_empty(data)<br />
+            if (!tile_get_empty(data))<br />
             {<br />
                 data = tile_set_empty(data)<br />
                 tilemap_set(map_id, data, i, j);<br />

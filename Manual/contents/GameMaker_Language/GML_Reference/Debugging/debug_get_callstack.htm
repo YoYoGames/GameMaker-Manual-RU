@@ -4,7 +4,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>debug_get_callstack</title>
-  <meta name="generator" content="Adobe RoboHelp 2020" />
+  <meta name="generator" content="Adobe RoboHelp 2022" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
   <script src="../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
@@ -47,10 +47,10 @@
   <h4><b>Пример:</b></h4>
   <p class="code">if debug_mode<br />
     {<br />
-        if keyboard_check(vk_escape)<br />
+        if (keyboard_check(vk_escape))<br />
         {<br />
             var _a = debug_get_callstack(4);<br />
-            for (var i = 0; i &lt; array_length_id(_a); ++i;)<br />
+            for (var i = 0; i &lt; array_length(_a); i++)<br />
             {<br />
                 show_debug_message(_a[i]);<br />
             }<br />

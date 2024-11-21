@@ -4,7 +4,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>buffer_save_async</title>
-  <meta name="generator" content="Adobe RoboHelp 2020" />
+  <meta name="generator" content="Adobe RoboHelp 2022" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
   <script src="../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
@@ -61,7 +61,7 @@
   <p>Приведенный выше код сохраняет содержимое буфера &quot;<i>buff</i>&quot; в заданный файл сохранения, сохраняя ID вызова функции в переменной &quot;<i>saveid</i>&quot;. Когда сохранение будет завершено, сработает асинхронное событие Save/Load, и вы сможете разобрать карту <span class="inline">async_load</span> на предмет правильного ID функции, как это сделано ниже:</p>
   <p class="code">if ds_map_find_value(async_load, &quot;id&quot;) == saveid<br />
     {<br />
-        if ds_map_find_value(async_load, &quot;status&quot;) == false<br />
+        if (ds_map_find_value(async_load, &quot;status&quot;) == false)<br />
         {<br />
             show_debug_message(&quot;Save failed!&quot;);<br />
         }<br />
