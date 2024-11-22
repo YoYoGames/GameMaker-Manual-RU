@@ -56,7 +56,7 @@
   <p> </p>
   <h4>Пример:</h4>
   <p class="code">buffer_seek(broadcast_buffer, buffer_seek_start, 0);<br />
-    buffer_write(broadcast_buffer, buffer_string, global.ServerName);<br />
+    buffer_write(broadcast_buffer, buffer_string, global.server_name);<br />
     network_send_broadcast(server, 6511, broadcast_buffer, buffer_tell(broadcast_buffer));</p>
   <p>Приведенный выше код записывает строку имени текущего сервера (хранится в &quot;global.ServerName&quot;), затем записывает ее в двоичный буфер с идентификатором &quot;broadcast_buffer&quot;. Затем эти данные локально транслируются на ряд IP-адресов (IP-адрес устройства в настоящее время подразумевается как базовый диапазон вещания) на порт 6511.</p>
   <p> </p>
