@@ -40,10 +40,10 @@
   <p> </p>
   <h4>Пример:</h4>
   <p class="code">var lay_id = layer_get_id(&quot;Sprites&quot;);<br />
-    if layer_get_hspeed(lay_id) != 0 || layer_get_vspeed(lay_id) != 0<br />
+    if (layer_get_hspeed(lay_id) != 0 || layer_get_vspeed(lay_id) != 0)<br />
     {<br />
-    layer_hspeed(lay_id, 0);<br />
-    layer_vspeed(lay_id, 0);<br />
+        layer_hspeed(lay_id, 0);<br />
+        layer_vspeed(lay_id, 0);<br />
     }</p>
   <p>Приведенный выше код проверяет заданные горизонтальную и вертикальную скорости слоя, и если они обе не равны 0, то устанавливает их в 0.</p>
   <p> </p>

@@ -42,8 +42,8 @@
   <h4>Пример:</h4>
   <p class="code">with (instance_create_layer(x, y, &quot;Enemies&quot;, obj_Enemy))<br />
     {<br />
-    p_queue = ds_priority_create();<br />
-    ds_priority_copy(p_queue, other.p_queue);<br />
+        p_queue = ds_priority_create();<br />
+        ds_priority_copy(p_queue, other.p_queue);<br />
     }</p>
   <p>Приведенная выше функция создает новый экземпляр, а затем в этом экземпляре создает новую очередь приоритетов DS и копирует содержимое очереди приоритетов в экземпляре, выполняющем блок кода, во вновь созданную очередь приоритетов экземпляра.</p>
   <p> </p>
