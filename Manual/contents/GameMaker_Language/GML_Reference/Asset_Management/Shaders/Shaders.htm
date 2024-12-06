@@ -30,9 +30,9 @@
     colour_to_set = shader_get_uniform(sShaderDemo5, &quot;f_Colour2&quot;);</p>
   <p>Когда у вас есть равномерные ручки, их можно установить в коде шейдера для <b>события Draw Event</b> следующим образом:</p>
   <p class="code">shader_set(sShaderDemo5);<br />
-    shader_set_uniform_f(colour_to_find, 1,1,1 );<br />
-    shader_set_uniform_f(colour_to_set, 1,0,0 );<br />
-    draw_sprite(sprite_index,image_index,x+24, y);<br />
+    shader_set_uniform_f(colour_to_find, 1, 1, 1);<br />
+    shader_set_uniform_f(colour_to_set, 1, 0, 0);<br />
+    draw_sprite(sprite_index, image_index, x + 24, y);<br />
     shader_reset();</p>
   <p>И последнее, что следует отметить: хотя шейдеры принимаются на всех платформах, они все же зависят от устройства, и если аппаратное или программное обеспечение устройства не может использовать шейдеры, то вы получите ошибку. Поэтому рекомендуется проверить, что шейдер скомпилирован, прежде чем устанавливать форму или использовать сам шейдер, например, так:</p>
   <p class="code">if (shader_is_compiled(myShader))<br />
