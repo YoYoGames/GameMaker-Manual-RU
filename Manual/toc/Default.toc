@@ -265,11 +265,9 @@
   <page href="../contents/Additional_Information/Compatibility_Scripts.htm" format="html" processing-role="normal"></page>
   <page href="../contents/Additional_Information/Obsolete_Functions.htm" format="html" processing-role="normal"></page>
   <book href="../contents/Introduction/The_Marketplace.htm" format="html" processing-role="normal">
-    <page href="../contents/Introduction/Marketplace/Your_Marketplace_Library.htm" format="html" processing-role="normal"></page>
     <page href="../contents/Introduction/Marketplace/Purchasing_An_Asset.htm" format="html" processing-role="normal"></page>
     <page href="../contents/Introduction/Marketplace/Creating_A_Publisher_Account.htm" format="html" processing-role="normal"></page>
     <page href="../contents/Introduction/Marketplace/Listing_An_Asset.htm" format="html" processing-role="normal"></page>
-    <page href="../contents/Introduction/Marketplace/Creating_A_Marketplace_Asset.htm" format="html" processing-role="normal"></page>
     <page href="../contents/Introduction/Marketplace/Listing_A_Service.htm" format="html" processing-role="normal"></page>
     <page href="../contents/Introduction/Marketplace/Submission_Guidelines.htm" format="html" processing-role="normal"></page>
     <page href="../contents/Introduction/Marketplace/Marketplace_Style_Guide.htm" format="html" processing-role="normal"></page>
