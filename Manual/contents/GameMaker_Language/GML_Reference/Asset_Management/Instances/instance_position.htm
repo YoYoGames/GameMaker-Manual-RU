@@ -53,7 +53,10 @@
     inst = instance_position(mouse_x, mouse_y, obj_Pause_Button);<br />
     if (inst != noone)<br />
     {<br />
-        with (inst) image_index=1;<br />
+        with (inst)<br />
+        {<br />
+            image_index = 1;<br />
+        }<br />
         instance_create_layer(room_width / 2, 0, &quot;Controllers&quot;, obj_Menu);<br />
     }</p>
   <p>Приведенный выше код проверит наличие столкновения с экземпляром &quot;obj_Pause_Button&quot; в позиции мыши, и если оно есть, то будет использовать возвращенный id для установки его image_index на новое значение перед созданием нового экземпляра объекта &quot;obj_Menu&quot;.</p>

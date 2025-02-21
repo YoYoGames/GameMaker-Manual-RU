@@ -42,11 +42,11 @@
   <p class="code">elements = layer_get_all_elements(&quot;Instances&quot;);<br />
     for (var i = 0; i &lt; array_length(elements); i++)<br />
     {<br />
-         if (layer_get_element_type(elements[i]) == layerelementtype_instance)<br />
+         if (layer_get_element_type(_elements[i]) == layerelementtype_instance)<br />
          {<br />
-             var layerelement = elements[i];<br />
-             var inst = layer_instance_get_instance(layerelement);<br />
-             inst.x = inst.x + 10;<br />
+             var _element = _elements[i];<br />
+             var _inst = layer_instance_get_instance(_element);<br />
+             _inst.x = _inst.x + 10;<br />
          }<br />
     }</p>
   <p>Приведенный выше код проверит все элементы экземпляра на слое, затем получит их уникальное значение ID и использует его для перемещения на 10px вправо.</p>
