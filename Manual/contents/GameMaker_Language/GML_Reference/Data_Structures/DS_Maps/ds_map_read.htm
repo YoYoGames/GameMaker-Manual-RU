@@ -51,8 +51,8 @@
   <h4>Пример:</h4>
   <p class="code">inventory = ds_map_create();<br />
     ini_open(&quot;map.ini&quot;);<br />
-    var t_string = ini_read_string(&quot;Saved&quot;, &quot;0&quot;, &quot;&quot;);<br />
-    if (t_string != &quot;&quot;)<br />
+    var _t_string = ini_read_string(&quot;Saved&quot;, &quot;0&quot;, &quot;&quot;);<br />
+    if (_t_string != &quot;&quot;)<br />
     {<br />
         ds_map_read(inventory, t_string);<br />
     }<br />

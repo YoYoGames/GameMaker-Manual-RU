@@ -52,8 +52,9 @@
   <h4>Пример:</h4>
   <p class="code">var _data = video_draw();<br />
     var _status = _data[0];<br />
+    var _video_status = video_get_status();<br />
     <br />
-    if (_status == 0)<br />
+    if (_status == 0 &amp;&amp; _video_status == video_status_playing)<br />
     {<br />
         var _surface = _data[1];<br />
     <br />
