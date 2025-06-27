@@ -44,7 +44,7 @@
   <h4>Пример:</h4>
   <p class="code">json = &quot;{\&quot;myObj\&quot;: { \&quot;apples\&quot;:10, \&quot;oranges\&quot;:12, \&quot;potatoes\&quot;:100000, \&quot;avocados\&quot;:0 }, \&quot;myArray\&quot;:[0, 1, 2, 2, 4, 0, 1, 5, 1]}&quot;;<br />
     <br />
-    var data = json_parse(json);<br />
+    data = json_parse(json);<br />
     show_debug_message(data);
   </p>
   <p>Приведенный выше код создает новую строку, содержащую правильный объект JSON, а затем вызывает <span class="inline">json_parse()</span> для преобразования этой строки в структуру <span class="notranslate">GML</span>. Затем он печатает результат в журнал отладки.</p>
@@ -61,27 +61,27 @@
   <p class="code">data = json_parse(json);<br />
     <br />
     // Check if the struct has myObj variable<br />
-    if (struct_exists(data, &quot;myObj&quot;))<br />
+    if variable_struct_exists(data, &quot;myObj&quot;)<br />
     {<br />
         // Check if it&#39;s a struct<br />
-        if (is_struct(data.myObj))<br />
+        if is_struct(data.myObj)<br />
         {<br />
             // Print all struct members to the log<br />
-            var _names = struct_get_names(data.myObj);<br />
+            var _names = variable_struct_get_names(data.myObj);<br />
             var _str = &quot;&quot;;<br />
             for (var i = 0; i &lt; array_length(_names); i++;)<br />
             {<br />
-                _str = _names[i] + &quot;: &quot; + string(struct_get(data.myObj, _names[i]));<br />
+                _str = _names[i] + &quot;: &quot; + string(variable_struct_get(data.myObj, _names[i]));<br />
                 show_debug_message(_str);<br />
             }<br />
         }<br />
     }<br />
     <br />
     // Check if the struct has myArray variable<br />
-    if (struct_exists(data, &quot;myArray&quot;))<br />
+    if variable_struct_exists(data, &quot;myArray&quot;)<br />
     {<br />
         // Check if it&#39;s an array<br />
-        if (is_array(data.myArray))<br />
+        if is_array(data.myArray)<br />
         {<br />
             show_debug_message(data.myArray);<br />
         }<br />

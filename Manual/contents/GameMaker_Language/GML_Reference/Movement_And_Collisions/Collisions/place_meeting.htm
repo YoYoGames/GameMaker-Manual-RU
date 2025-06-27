@@ -52,10 +52,7 @@
   <h4>Пример:</h4>
   <p class="code">if keyboard_check(vk_left)<br />
     {<br />
-        if (!place_meeting(x - 5, y, obj_wall))<br />
-        {<br />
-            x -= 5;<br />
-        }<br />
+        if !place_meeting(x - 5, y, obj_wall) x -=5;<br />
     }</p>
   <p>Приведенный выше код проверяет, <i>нет</i> ли столкновения слева от экземпляра, и перемещает экземпляр, если его нет.</p>
   <p> </p>
