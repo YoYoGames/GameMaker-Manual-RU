@@ -55,7 +55,7 @@
     ey = instance_nearest(x, y, enemy).y;<br />
     with (instance_create_layer(x, y, &quot;Bullets&quot;, obj_Missile))<br />
     {<br />
-        direction = point_direction(x, y, ex, ey);<br />
+        direction = point_direction(x, y, _ex, _ey);<br />
     }</p>
   <p>Приведенный выше код получит координаты x и y ближайшего врага и затем передаст их объекту пули, чтобы использовать их в функции point_direction для правильной установки направления движения.</p>
   <p> </p>

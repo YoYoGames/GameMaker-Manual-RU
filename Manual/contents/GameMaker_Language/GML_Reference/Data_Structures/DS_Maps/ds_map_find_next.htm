@@ -47,9 +47,10 @@
     {<br />
         if (key != &quot;gold&quot;)<br />
         {<br />
-            key = ds_map_find_next(inventory, key);<br />
+            break;<br />
         }<br />
-        else break;<br />
+        <br />
+        _key = ds_map_find_next(inventory, _key);<br />
     }</p>
   <p>Приведенный выше код создает некоторые временные переменные, затем получает размер карты DS и находит первый ключ, сохраненный компьютером в карте. Затем с помощью цикла <span class="inline">for</span> выполняется итерация по карте DS в поисках значения ключа &quot;gold&quot;. Если оно найдено, то цикл завершается.</p>
   <p> </p>

@@ -42,13 +42,13 @@
   <p class="code">var reactionForceX, reactionForceY, reactionForce;<br />
     if (shipJoint) <br />
     {<br />
-        reactionForceX = physics_joint_get_value(shipJoint, phy_joint_reaction_force_x);<br />
-        reactionForceY = physics_joint_get_value(shipJoint, phy_joint_reaction_force_x);<br />
-        reactionForce = sqrt((reactionForceX + reactionForceX) + (reactionForceY + reactionForceY));<br />
-        if (reactionForce &gt; 2) <br />
+        _<span class="misspell-word">reaction_force_x</span> = physics_joint_get_value(<span class="misspell-word">ship_joint</span>, phy_joint_reaction_force_x);<br />
+        _<span class="misspell-word">reaction_force_y</span> = physics_joint_get_value(<span class="misspell-word">ship_joint</span>, phy_joint_reaction_force_y);<br />
+        _reaction_force = sqrt((_<span class="misspell-word">reaction_force_x</span> + _<span class="misspell-word">reaction_force_x</span>) + (_<span class="misspell-word">reaction_force_y</span> + _<span class="misspell-word">reaction_force_y</span>));<br />
+        if (_reaction_force &gt; 2)<br />
         {<br />
-            physics_joint_delete(shipJoint);<br />
-            shipJoint = -1;<br />
+            physics_joint_delete(<span class="misspell-word">ship_joint</span>);<br />
+            ship_joint = -1;<br />
         }<br />
     }</p>
   <p>Приведенный выше код проверяет, содержит ли переменная &quot;shipJoint&quot; индекс сустава, и если да, то рассчитывает силу, приложенную к этому суставу, используя две константы. Наконец, если общая сила больше 2, сустав удаляется.</p>

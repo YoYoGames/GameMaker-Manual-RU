@@ -51,9 +51,9 @@
   <h4>Пример:</h4>
   <p class="code">if mouse_check_button(mb_left)<br />
     {<br />
-        if (!position_meeting(mouse_x, mouse_y, all)) <br />
+        if (!position_meeting(mouse_x, mouse_y, all))<br />
         {<br />
-            instance_create_layer(mouse_x, mouse_y, &quot;Walls&quot;, obj_Wall);<br />
+            instance_create_layer(mouse_x, mouse_y, &quot;Walls&quot;, obj_wall);<br />
         }<br />
     }</p>
   <p>Приведенный выше код проверяет наличие левой кнопки мыши, и если она нажата, то проверяет положение мыши x/y на предмет столкновения с каким-либо экземпляром. Если таковых нет, то создается экземпляр &quot;obj_Wall&quot;.</p>

@@ -4,7 +4,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>physics_joint_weld_create</title>
-  <meta name="generator" content="Adobe RoboHelp 2020" />
+  <meta name="generator" content="Adobe RoboHelp 2022" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
@@ -86,7 +86,7 @@
     {<br />
         o_id = instance_create_layer(x + (128 * i), y, &quot;Instances&quot;, obj_BridgePart);<br />
         physics_fixture_bind(fix, o_id);<br />
-        if (i &gt; 0 &amp;&amp; i &lt; 4) <br />
+        if (i &gt; 0 &amp;&amp; i &lt; 4)<br />
         {<br />
             physics_joint_weld_create(p_id, o_id, x + (128 * i) - 64, y, 0, 10, 12, true);<br />
         }<br />

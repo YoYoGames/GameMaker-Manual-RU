@@ -2,8 +2,6 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-
-
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>точка_расстояния_3d</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
@@ -63,12 +61,9 @@
     inst = instance_nearest(x, y, enemy);<br />
     if (instance_exists(inst))<br />
     {<br />
-        ex = inst.x;<br />
-        ey = inst.y;<br />
-        ez = inst.z;<br />
-        if (point_distance_3d(x, y, z, ex, ey, ez) &lt; 200) <br />
+        if (point_distance_3d(x, y, z, _nearest.x, _nearest.y, _nearest.z) &lt; 200)<br />
         {<br />
-            instance_create_layer(x, y, &quot;Bullets&quot;, obj_Missile)<br />
+            instance_create_layer(x, y, &quot;Bullets&quot;, obj_missile);<br />
         }<br />
     }</p>
   <p>Приведенный выше код получит координаты x и y и z ближайшего врага, а затем использует их для проверки расстояния (длины) вектора, образованного им и координатами игрока. Если значение меньше 200, объект игрока создаст экземпляр &quot;obj_Missile&quot;.</p>
