@@ -45,7 +45,7 @@
   <p class="code">xboxlive_achievement_load_friends();</p>
   <p>Это отправит запрос на получение информации о друзьях пользователя и сгенерирует асинхронный обратный вызов со специальной картой <span class="inline">async_load</span> DS, содержащей следующие данные:</p>
   <p class="code">var ident = ds_map_find_value(async_load, &quot;id&quot;);<br />
-    if (ident == xboxlive_achievement_friends_info) <br />
+    if (ident == xboxlive_achievement_friends_info)<br />
     {<br />
         var numfriends = ds_map_find_value(async_load, &quot;numfriends&quot;);<br />
         global.numfriends = numfriends;<br />
@@ -71,6 +71,8 @@
   <!-- KEYWORDS
 achievement_load_friends
 achievement_friends_info
+xboxlive_achievement_friends_info
+xboxlive_achievement_load_friends
 -->
   <!-- TAGS
 achievement_load_friends
