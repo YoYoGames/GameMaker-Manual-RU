@@ -59,9 +59,9 @@
   <h4>Пример:</h4>
   <p class="code">var _a = [10, 9, 8, 7, 6, 5];<br />
     <br />
-    array_sort(_a, function(elm1, elm2)<br />
+    array_sort(_a, function(current, next)<br />
     {<br />
-        return elm1 - elm2;<br />
+        return current - next;<br />
     });
   </p>
   <p>Приведенный выше код использует пользовательскую функцию сортировки для сортировки массива в порядке возрастания. Функция сортировки берет два элемента массива <span class="inline">elm1</span> и <span class="inline">elm2</span> и выполняет вычитание. Если <span class="inline">elm1</span> больше, чем <span class="inline">elm2</span>, то в результате вычитания получается положительное число, которое переводит <span class="inline">elm1</span> на место после <span class="inline">elm2</span>, тем самым располагая их в порядке возрастания.</p>
