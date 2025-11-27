@@ -19,11 +19,11 @@
   <p><img>Ошибки Runner обычно более серьезны, чем ошибки компиляции, поскольку они означают, что в вашем коде что-то серьезно не так, чего не смогли обнаружить ни редактор кода, ни компилятор, и поэтому вы должны обращать внимание на все такие ошибки. При возникновении такой ошибки вы можете воспользоваться кнопкой <strong>Copy</strong> на всплывающем окне, чтобы скопировать ошибку в буфер обмена, который затем можно вставить в текстовый файл (или куда-либо еще) для дальнейшего использования.</p>
   <p>Структура этой ошибки выглядит следующим образом:</p>
   <ul class="colour">
-    <li><img><br>
+    <li><img><br />
       Здесь отображается событие, в котором произошла ошибка, а также объект (если применимо).</li>
-    <li><img><br>
+    <li><img><br />
       Это показывает фактическую ошибку.  Таким образом, она показывает <em>область действия </em>ошибки и ее тип. Первое значение в скобках будет идентификатором экземпляра, на котором выполнялся код, или это может быть одно из специальных значений, перечисленных в таблице ниже, а второе - это внутреннее значение, которое <span data-keyref="GameMaker Name">GameMaker</span> использует для идентификации ошибок, и его можно игнорировать. В случае с изображением выше это означает, что переменная <span class="inline">_image</span> не была установлена (т.е. не существует до обращения к ней) на объекте <span class="inline">obj_EA_DEMO_Control</span>.</li>
-    <li><img><br>
+    <li><img><br />
       Здесь показан номер строки, на которой возникла ошибка, а также фрагмент кода с указанием позиции. Обратите внимание, что это не всегда на 100% точно из-за способа компиляции игры, но этого должно быть достаточно, чтобы помочь вам найти точное место проблемы.</li>
   </ul>
   <p>Как упоминалось выше, некоторые сообщения об ошибках будут идентифицироваться не по значению ID экземпляра, а по <em>отрицательному </em>значению. Эти значения могут быть использованы для точного определения природы ошибки и того, к чему она относится, при этом возможны следующие значения:</p>
@@ -264,7 +264,7 @@
         <td style="text-align: center;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px"><span class="inline">With</span></td>
         <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Невозможно использовать global в операторе with</td>
         <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">С</td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Вы пытались использовать &quot;<span class="inline">global</span>&quot; в качестве переменной в операторе &quot;<span class="inline">with</span>&quot;, т.е:<br>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Вы пытались использовать &quot;<span class="inline">global</span>&quot; в качестве переменной в операторе &quot;<span class="inline">with</span>&quot;, т.е:<br />
           <span class="inline">with (global)<br />
                {<br />
                //do something;<br />
@@ -275,7 +275,7 @@
         <td style="text-align: center;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px"><span class="inline">With</span></td>
         <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Невозможно использовать local в операторе with</td>
         <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">С</td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Вы пытались использовать &quot;<span class="inline">local</span>&quot; в качестве переменной в операторе &quot;<span class="inline">with</span>&quot;, т.е:<br>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Вы пытались использовать &quot;<span class="inline">local</span>&quot; в качестве переменной в операторе &quot;<span class="inline">with</span>&quot;, т.е:<br />
           <span class="inline">with (local)<br />
                {<br />
                //do something;<br />

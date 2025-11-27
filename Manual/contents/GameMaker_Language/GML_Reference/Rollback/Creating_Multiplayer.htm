@@ -15,10 +15,10 @@
 </head>
 <body>
   <h1>Создание многопользовательской игры</h1>
-  <p class="note">На этой странице вы подробно рассмотрите шаги по созданию вашей первой многопользовательской игры.<br>
-    <br>
-    Информацию о системе отката читайте в разделе <a data-xref="{title}" href="Rollback_System.htm">Система отката</a>.<br>
-    <br>
+  <p class="note">На этой странице вы подробно рассмотрите шаги по созданию вашей первой многопользовательской игры.<br />
+    <br />
+    Информацию о системе отката читайте в разделе <a data-xref="{title}" href="Rollback_System.htm">Система отката</a>.<br />
+    <br />
     Для получения подробной информации обо всех функциях Rollback читайте раздел <a data-xref="{title}" href="Rollback_Functions/Rollback_Functions.htm">Функции Rollback</a>.
   </p>
   <h2>Создание проекта</h2>
@@ -26,8 +26,8 @@
   <p>Создайте два объекта:</p>
   <ul class="colour">
     <li><strong>obj_game</strong>: Это будет управлять вашей многопользовательской игрой.</li>
-    <li><strong>obj_player</strong>: Это будет ваш реальный объект игрока. Каждый подключенный игрок будет иметь свой собственный экземпляр этого объекта, которым он сможет управлять.<br>
-      <br>
+    <li><strong>obj_player</strong>: Это будет ваш реальный объект игрока. Каждый подключенный игрок будет иметь свой собственный экземпляр этого объекта, которым он сможет управлять.<br />
+      <br />
       Назначьте своего игрока <span class="notranslate">sprite</span> объекту игрока.
     </li>
   </ul>
@@ -53,8 +53,8 @@
   <h2>Движущиеся игроки</h2>
   <p>Ввод управляется системой Rollback и автоматически синхронизируется между игроками.</p>
   <p>В объекте игрока вызовите <span class="inline"><a href="Rollback_Functions/rollback_get_input.htm">rollback_get_input()</a></span>, чтобы получить структуру, содержащую все входы по умолчанию, которые выглядят следующим образом:</p>
-  <p class="note"><span class="inline"><strong>left</strong>, <strong>right</strong>, <strong>up</strong>, <strong>down</strong>, <strong>Z</strong>, <strong>X</strong>, <strong>C</strong>, <strong>space</strong></span><br>
-    <br>
+  <p class="note"><span class="inline"><strong>left</strong>, <strong>right</strong>, <strong>up</strong>, <strong>down</strong>, <strong>Z</strong>, <strong>X</strong>, <strong>C</strong>, <strong>space</strong></span><br />
+    <br />
     <em>Они указывают, удерживается ли ключ.</em> <span class="inline">*<strong>_pressed</strong></span> <em>и </em><span class="inline">*<strong>_released</strong></span> <em>также предусмотрены варианты.</em>
   </p>
   <p>Чтобы определить собственные входы, см. раздел <a data-xref="{title}" href="Defining_Inputs.htm">Определение входов</a>.</p>
