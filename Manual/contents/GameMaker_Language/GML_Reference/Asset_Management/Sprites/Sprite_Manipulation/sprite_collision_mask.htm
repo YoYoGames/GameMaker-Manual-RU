@@ -14,7 +14,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>sprite_collision_mask</h1>
+  <h1><span data-field="title" data-format="default">sprite_collision_mask</span></h1>
   <p>С помощью этой функции можно задать свойства маски столкновений, которую должен иметь <span class="notranslate">sprite</span>. Если вы выбрали автоматический режим (0) или режим полного изображения (1) в качестве режима ограничительной рамки, то значения отдельных ограничительных рамок могут быть установлены на 0. Однако для маски, заданной пользователем (2), вам придется установить эти значения. Различные значения ограничивающих рамок всегда относятся к левому верхнему углу <span class="notranslate">sprite</span> (независимо от координат x и y), который считается позицией (0, 0).</p>
   <p>Установка типа маски задает общую форму самой маски, но имейте в виду, что любая маска, отличная от прямоугольной, потребует больше вычислительной мощности при разрешении столкновений, что приведет к падению производительности. В общем, использовать типы масок, отличные от прямоугольной, следует только в случае крайней необходимости.</p>
   <p class="note"><b>ПРИМЕЧАНИЕ</b>: Эта функция не позволяет использовать вид маски столкновения с <b>повернутым прямоугольником</b>.</p>
@@ -60,7 +60,7 @@
   <p class="note"><b>ПРИМЕЧАНИЕ</b>: Эта функция будет работать только на добавленных <span class="notranslate">sprites</span> или дублированных <span class="notranslate">sprites</span>, но <b>не</b> непосредственно на предварительно созданных ресурсах. Вы можете продублировать <span class="notranslate">sprites</span> с помощью функции <span style="font-size:1px;"><a href="sprite_duplicate.htm"><span class="inline">sprite_duplicate()</span></a></span>.</p>
   <p> </p>
   <h4>Синтаксис:</h4>
-  <p class="code">sprite_collision_mask(ind, sepmasks, bboxmode, bbleft, bbtop, bbright, bbbottom, kind, tolerance);</p>
+  <p class="code"><span data-field="title" data-format="default">sprite_collision_mask</span>(ind, sepmasks, bboxmode, bbleft, bbtop, bbright, bbbottom, kind, tolerance);</p>
   <table>
     <tbody>
       <tr>

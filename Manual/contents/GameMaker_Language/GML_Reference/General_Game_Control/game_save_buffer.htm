@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>игровой_сохранённый_буфер</title>
+  <title>game_save_buffer</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
   <script src="../../../assets/scripts/main_script.js"></script>
@@ -14,13 +14,13 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>игровой_сохранённый_буфер</h1>
+  <h1><span data-field="title" data-format="default">game_save_buffer</span></h1>
   <p>Это вариант функции <span class="inline"><a href="game_save.htm">game_save()</a></span>, поэтому, пожалуйста, сначала прочитайте <a href="game_save.htm">ее страницу</a>, так как она содержит важную информацию, связанную с ее использованием, а также с этой функцией.</p>
   <p>С помощью этой функции вы можете сохранить текущее состояние игры в ранее созданный буфер &quot;grow&quot; (см. <a href="../Buffers/Buffers.htm">Буферы</a>), который затем можно снова загрузить в любое время с помощью функции <a href="game_load_buffer.htm"><span class="inline">game_load_buffer()</span></a> функция. Эта функция предназначена для использования в одной комнате за один раз (т.е. не рекомендуется сохранять буфер в одной комнате, а затем пытаться загрузить его из другой) и в идеале должна использоваться только для контрольных точек или перезапуска уровня.</p>
   <p class="note"><b>ПРИМЕЧАНИЕ</b>: Эта функция <i>очень</i> ограничена и предназначена для новичков, чтобы быстро запустить систему контрольных точек, но более опытные пользователи могут предпочесть кодировать свою собственную систему, используя функции <a href="../File_Handling/File_Handling.htm">File</a>, из-за того, что игра <i>не</i> будет сохранять динамические ресурсы, такие как структуры данных, поверхности, добавленные <span class="notranslate">sprites</span> и т.д.</p>
   <p> </p>
   <h4>Синтаксис:</h4>
-  <p class="code">game_save_buffer(buffer);</p>
+  <p class="code"><span data-field="title" data-format="default">game_save_buffer</span>(buffer);</p>
   <table>
     <tbody>
       <tr>

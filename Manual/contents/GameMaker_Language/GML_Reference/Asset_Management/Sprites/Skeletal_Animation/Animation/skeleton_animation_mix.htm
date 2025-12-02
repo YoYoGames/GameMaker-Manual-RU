@@ -14,12 +14,12 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>skeleton_animation_mix</h1>
+  <h1><span data-field="title" data-format="default">skeleton_animation_mix</span></h1>
   <p>Вы можете легко переключать наборы анимаций с помощью функции <a href="skeleton_animation_set.htm"><span class="inline">skeleton_animation_set()</span></a> но это может привести к пропуску или заиканию при смене одной анимации на другую. Чтобы предотвратить это, вы можете установить значение mix между двумя наборами анимации, и <span class="notranslate">sprite</span> будет интерполировать между ними. Обычно это нужно сделать в событии Create Event экземпляра со скелетной анимацией, так как его нужно установить только один раз, а <span data-keyref="GameMaker Name">GameMaker</span> будет интерполировать все дальнейшие изменения <span class="notranslate">sprite</span>, используя наборы анимации этого экземпляра. Обратите внимание, что значение длительности варьируется от 0 до 1, при значении 0,5 интерполяция от одного набора к другому будет &quot;половинчатой&quot;.</p>
   <p class="note"><span class="note">ПРИМЕЧАНИЕ</span> В Spine 4.0 изменен принцип работы анимации вращения, поскольку она больше не интерполирует вращение по кратчайшему пути, а использует абсолютные значения в ключевых кадрах для интерполяции. Это может привести к неожиданному поведению, если вы обновляете анимацию <span class="notranslate">Spine</span> с более старой версии, и для того, чтобы вращение работало так, как нужно, могут потребоваться изменения в проекте <span class="notranslate">Spine</span>.</p>
   <p> </p>
   <h4>Синтаксис:</h4>
-  <p class="code">skeleton_animation_mix(animfrom, animto, duration);</p>
+  <p class="code"><span data-field="title" data-format="default">skeleton_animation_mix</span>(animfrom, animto, duration);</p>
   <table>
     <tbody>
       <tr>

@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>нарисовать_скелет</title>
+  <title>draw_skeleton</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../../../assets/scripts/main_script.js"></script>
@@ -15,12 +15,12 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>нарисовать_скелет</h1>
+  <h1><span data-field="title" data-format="default">draw_skeleton</span></h1>
   <p>Эта функция предназначена <i>только</i> для использования с <span class="notranslate">sprites</span>, которые были созданы с помощью программы скелетной анимации, например <span class="notranslate">Spine</span>. Хотя вы можете рисовать эти <span class="notranslate">sprites</span> с помощью обычных функций рисования (например, таких как <a href="../../../../Drawing/Sprites_And_Tiles/draw_self.htm"><span class="inline">draw_self()</span></a>), бывают случаи, когда необходимо нарисовать один кадр или показать изменение текстуры кожи, не изменяя свойств <span class="notranslate">sprite</span>. В таких случаях вы можете нарисовать <span class="notranslate">sprite</span> с помощью этой функции, где вы указываете индекс <span class="notranslate">sprite</span>, затем имя анимации, из которой нужно взять кадр (строка, заданная в программе, используемой для создания <span class="notranslate">sprite</span>). Затем вы указываете имя скина, который нужно использовать (опять же, заданное при создании <span class="notranslate">sprite</span> ), и значение кадра. Значение кадра указывает программе <span data-keyref="GameMaker Name">GameMaker</span>, какую часть анимации нужно показать, и представляет собой значение от 0 до <a href="../../Sprite_Instance_Variables/image_number.htm"><span class="inline">image_number</span></a>. Остальные аргументы аналогичны тем, которые используются при обычном рисовании <span class="notranslate">sprite</span>, и изменяют масштаб, угол, цвет наложения и альфа-коэффициент конечного рисуемого кадра анимации.<b></b></p>
   <p class="note"><b>ВНИМАНИЕ!</b> Из-за того, что скелетная анимация интерполируется между различными &quot;ключевыми&quot; кадрами, существует дополнительная нагрузка, связанная с этим вызовом, поэтому рекомендуется избегать рисования скелетной анимации <span class="notranslate">sprites</span> с помощью этого метода, если это не является абсолютно необходимым.</p>
   <p> </p>
   <h4>Синтаксис:</h4>
-  <p class="code">draw_skeleton(sprite, animname, skinname, frame, x, y, xscale, yscale, rot, colour, alpha);</p>
+  <p class="code"><span data-field="title" data-format="default">draw_skeleton</span>(sprite, animname, skinname, frame, x, y, xscale, yscale, rot, colour, alpha);</p>
   <table>
     <tbody>
       <tr>

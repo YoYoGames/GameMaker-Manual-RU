@@ -15,14 +15,14 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>instanceof</h1>
+  <h1><span data-field="title" data-format="default">instanceof</span></h1>
   <p>Эта функция может быть использована для получения имени <a href="../../GML_Overview/Structs.htm">функции-конструктора</a>, которая была использована для создания структуры. Сама структура должна быть создана с помощью функции <a href="../../GML_Overview/Language_Features/new.htm"><span class="inline"></span></a> <a href="../../GML_Overview/Language_Features/new.htm"><span class="inline">new</span></a> вместе с самим конструктором. Вы передаете переменную со ссылкой на struct для проверки, и функция возвращает либо строку с именем конструктора, либо <span class="inline">undefined</span>.</p>
   <p>Обратите внимание, что если вы передадите функции литерал struct (т.е. struct, который был создан без использования функции-конструктора), то она просто вернет строку <span class="inline2">&quot;struct&quot;</span>.</p>
   <p>Эта функция также может быть использована для проверки того, является ли ссылка на структуру <strong><a class="glossterm" data-glossterm="слабая ссылка" href="#">слабая ссылка</a></strong> или нет, в этом случае функция вернет строку <span class="inline2">&quot;weakref&quot;</span> вместо имени функции, создавшей структуру. Для получения дополнительной информации см. функцию <a href="../Garbage_Collection/weak_ref_create.htm"><span class="inline">weak_ref_create()</span></a>.</p>
   <p>Возвращаемое имя конструктора будет включать дополнительный текст, если функция конструктора была создана не в сценарии. Если она была создана внутри объекта, ее имя будет включать объект и событие, в котором она была создана. Например, конструктор с именем <span class="inline2">test_constructor</span>, созданный в событии Create <strong>объекта Object1</strong>, будет возвращен как <span class="inline2">&quot;test_constructor_gml_Object_Object1_Create_0&quot;.</span> Чтобы избежать этого, создавайте свои конструкторы в формате <a href="../../GML_Overview/Script_Functions.htm"><span class="notranslate">script</span></a>.</p>
   <p> </p>
   <h4>Синтаксис:</h4>
-  <p class="code">instanceof(struct_id);</p>
+  <p class="code"><span data-field="title" data-format="default">instanceof</span>(struct_id);</p>
   <table>
     <tbody>
       <tr>

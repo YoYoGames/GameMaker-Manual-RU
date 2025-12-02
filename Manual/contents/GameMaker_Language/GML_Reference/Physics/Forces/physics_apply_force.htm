@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>физика_применить_силу</title>
+  <title>physics_apply_force</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../assets/scripts/main_script.js"></script>
@@ -14,13 +14,13 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>физика_применить_силу</h1>
+  <h1><span data-field="title" data-format="default">physics_apply_force</span></h1>
   <p>При работе с физикой необходимо применять к объектам не только гравитацию, но и силы. Сила - это любое воздействие, которое заставляет объект изменить скорость, направление или форму, и определяется в мире физики <span data-keyref="GameMaker Name">GameMaker</span> так же, как мы определяем гравитацию, путем получения вектора из двух компонентов xforce/yforce. Следует отметить, что силы прикладываются не к центру масс объекта, а скорее к точке в комнате, и они будут изменять направление и скорость, а также крутящий момент (вращение) в зависимости от любых других сил, действующих на объект (например, гравитации). Вот пример изображения для наглядности:</p>
   <p><img>В приведенном выше примере пружинный объект в нижней части создал силу на шаровом объекте, заставив его двигаться в другом направлении. Точная сила определяется вектором, который мы получаем из компонентов xforce/yforce по отношению к координатам xpos/ypos - это означает, что сила рассчитывается как расстояние от xpos/ypos до xforce/yforce в Ньютонах (Ньютон определяется как количество чистой силы, необходимой для ускорения массы в один килограмм со скоростью один метр в секунду в квадрате), а направление - это угол, который мы получаем от xpos/ypos до xforce/yforce. Код для столкновения, как описано выше, будет находиться в событии столкновения объекта spring и будет выглядеть примерно так, как показано в примере ниже.</p>
   <p class="note"><b>ПРИМЕЧАНИЕ</b>: Физический мир использует метры для всех своих расчетов, а соотношение пикселей на метр определяется в редакторе комнаты или с помощью функции <span style="font-size:1px;"><a href="../The_Physics_World/physics_world_create.htm"><span class="inline">physics_world_create()</span></a></span>.</p>
   <p> </p>
   <h4>Синтаксис:</h4>
-  <p class="code">physics_apply_force(xpos, ypos, xforce, yforce)</p>
+  <p class="code"><span data-field="title" data-format="default">physics_apply_force</span>(xpos, ypos, xforce, yforce)</p>
   <table>
     <tbody>
       <tr>

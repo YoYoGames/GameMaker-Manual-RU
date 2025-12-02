@@ -14,7 +14,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>sprite_add</h1>
+  <h1><span data-field="title" data-format="default">sprite_add</span></h1>
   <p>С помощью этой функции вы можете добавить изображение как <span class="notranslate">sprite</span>, загрузив его из внешнего источника, причем загружаемый файл изображения <b>всегда</b> должен быть в формате <span class="inline">*.png</span>, <span class="inline">*.gif</span>, <span class="inline">*.jpg/jpeg</span> или <span class="inline">*.json</span> (файлы<span class="inline">*json</span> используются для загрузки <a href="../Skeletal_Animation/Skeletal_Animation.htm">скелетных анимационных спрайтов</a>, созданных с помощью <span class="notranslate">Spine</span>). Функция возвращает новый индекс <span class="notranslate">sprite</span>, который затем должен использоваться во всем дальнейшем коде, относящемся к <span class="notranslate">sprite</span>. Если вы используете эту функцию в HTML5 или получаете изображение из URL, эта функция также генерирует асинхронное событие <b>Image Loaded</b>. Дополнительную информацию см. на <a href="../../../../../The_Asset_Editors/Object_Properties/Async_Events/Image_Loaded.htm">этой странице</a>.</p>
   <p>Все изображения, которые должны быть превращены в анимированные <span class="notranslate">sprites</span> - за исключением <span class="inline">*.gif</span> (см. ниже) - должны иметь формат &quot;полосы&quot; (см. изображение ниже), и она будет разбита на указанное количество суб-изображений по правилу <b>sprite width = strip width / sub images</b>.</p>
   <p><img alt="Example Sprite Strip" class="center" src="../../../../../assets/Images/Scripting_Reference/GML/Reference/Sprites/spr_strip.png" /></p>
@@ -29,7 +29,7 @@
   <p class="note"><b>ПРИМЕЧАНИЕ</b>: В <b>HTML5</b>, если вы загружаете <span class="notranslate">sprite</span> с защищенного сервера, вам может потребоваться установить тип cross-origin и использовать относительный путь вместо абсолютного. См. <span style="font-size:1px;"><a href="../../../Asynchronous_Functions/HTTP/http_set_request_crossorigin.htm"><span class="inline">http_set_request_crossorigin()</span></a></span> для более подробной информации.</p>
   <p> </p>
   <h4>Синтаксис:</h4>
-  <p class="code">sprite_add(fname, imgnumb, removeback, smooth, xorig, yorig);</p>
+  <p class="code"><span data-field="title" data-format="default">sprite_add</span>(fname, imgnumb, removeback, smooth, xorig, yorig);</p>
   <table>
     <tbody>
       <tr>

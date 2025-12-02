@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>рисовать_спрайт</title>
+  <title>draw_sprite</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../assets/scripts/main_script.js"></script>
@@ -15,12 +15,12 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>рисовать_спрайт</h1>
+  <h1><span data-field="title" data-format="default">draw_sprite</span></h1>
   <p>Эта функция рисует заданное <span class="notranslate">sprite</span> и суб-изображение в позиции внутри игровой комнаты. Для <span class="notranslate">sprite</span> вы можете использовать переменную экземпляра <a href="../../Asset_Management/Sprites/Sprite_Instance_Variables/sprite_index.htm"><span class="inline">sprite_index</span></a> чтобы получить текущий <span class="notranslate">sprite</span>, который назначен экземпляру, выполняющему код, или вы можете использовать любой другой актив <span class="notranslate">sprite</span>. То же самое относится и к суб-изображению, поскольку оно также может быть задано переменной экземпляра <a href="../../Asset_Management/Sprites/Sprite_Instance_Variables/image_index.htm"><span class="inline">image_index</span></a> которая установит субизображение, выбранное для текущего экземпляра <span class="notranslate">sprite</span> (обратите внимание, что вы можете нарисовать другой <span class="notranslate">sprite</span> и все равно использовать значение субизображения для текущего экземпляра), или вы можете использовать любое другое значение для этого, чтобы нарисовать конкретное субизображение выбранного <span class="notranslate">sprite</span>. Если значение больше, чем количество субизображений, то <span data-keyref="GameMaker Name">GameMaker</span> будет автоматически перебирать номера для выбора соответствующего изображения (например, если рисуемый <span class="notranslate">sprite</span> имеет 5 субизображений, пронумерованных от 0 до 4, и мы установили значение индекса равным 7, то функция нарисует субизображение 3, пронумерованное 0). Наконец, позиция x и y - это положение в комнате, в котором будет рисоваться <span class="notranslate">sprite</span>, и оно центрируется на <a href="../../Asset_Management/Sprites/Sprite_Instance_Variables/sprite_xoffset.htm">смещении</a> <span class="notranslate">sprite</span> по <a href="../../Asset_Management/Sprites/Sprite_Instance_Variables/sprite_xoffset.htm">x</a> и <a href="../../Asset_Management/Sprites/Sprite_Instance_Variables/sprite_yoffset.htm">y</a>.</p>
   <p class="note"><span class="note">ПРИМЕЧАНИЕ</span> Эта функция может работать не так, как ожидается, при использовании скелетной анимации <span class="notranslate">sprites</span>, и вы можете обнаружить, что функция рисует только первый кадр позы по умолчанию. Вместо нее следует использовать функции <span class="inline">draw_skeleton_*</span>.</p>
   <p> </p>
   <h4>Синтаксис:</h4>
-  <p class="code">draw_sprite(sprite, subimg, x, y);</p>
+  <p class="code"><span data-field="title" data-format="default">draw_sprite</span>(sprite, subimg, x, y);</p>
   <table>
     <tbody>
       <tr>

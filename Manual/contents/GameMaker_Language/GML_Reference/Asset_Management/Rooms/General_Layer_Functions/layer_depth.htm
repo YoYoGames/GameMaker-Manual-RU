@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>глубина слоя</title>
+  <title>layer_depth</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../../assets/scripts/main_script.js"></script>
@@ -14,14 +14,14 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>глубина слоя</h1>
+  <h1><span data-field="title" data-format="default">layer_depth</span></h1>
   <p>Эта функция может быть использована для изменения <b>глубины</b> заданного слоя, изменяя порядок вывода его содержимого на экран. Вы передаете идентификатор слоя (который вы получаете при создании слоя с помощью функции <a href="layer_create.htm"><span class="inline">layer_create()</span></a>) или имя слоя (в виде строки - это влияет на производительность), а затем задаете новую глубину слоя (целочисленное значение от -16000 до 16000). Глубина слоя определяется как большая, когда он находится &quot;дальше&quot; от камеры, и меньшая, когда &quot;ближе&quot; к камере, поэтому если у вас есть три слоя с глубинами -100, 0, 100, слои будут рисоваться в порядке 100, 0, -100, так что &quot;верхним&quot; слоем (т.е. ближайшим к виду камеры и поэтому нарисованным поверх всех остальных) будет слой с глубиной -100.</p>
   <p>На следующем изображении показана схема работы глубины для слоев:</p>
   <p><img>Обратите внимание, что вы можете проверить глубину слоя в любое время с помощью функции <a href="layer_get_depth.htm"><span class="inline">layer_get_depth()</span></a>. Также обратите внимание, что минимальная и максимальная глубина слоя составляет от -16000 до 16000, и все, что находится за пределами этих значений, <b>не будет отрисовано</b>. Если вам нужна глубина за пределами этого диапазона, то вам нужно использовать функцию <a href="layer_force_draw_depth.htm"><span class="inline">layer_force_draw_depth()</span></a>.</p>
   <p>Имейте в виду, что изменение глубины слоя может изменить применяемые к нему <a href="../../../../../The_Asset_Editors/Room_Properties/Filters_and_Effects.htm">фильтры и эффекты</a>, так как при изменении глубины на меньшую, чем глубина слоя FX, эффект больше не будет применяться к слою.</p>
   <p> </p>
   <h4>Синтаксис:</h4>
-  <p class="code">layer_depth(layer_id, depth)</p>
+  <p class="code"><span data-field="title" data-format="default">layer_depth</span>(layer_id, depth)</p>
   <table>
     <tbody>
       <tr>

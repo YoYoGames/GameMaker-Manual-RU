@@ -4,7 +4,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="generator" content="Adobe RoboHelp 2020" />
-  <title>откат_создания_игры</title>
+  <title>rollback_create_game</title>
   <meta name="topic-status" content="Draft" />
   <link rel="stylesheet" type="text/css" href="../../../../assets/css/default.css" />
   <script src="../../../../assets/scripts/main_script.js"></script>
@@ -16,7 +16,7 @@
   <meta name="search-keywords" content="rollback_create_game" />
 </head>
 <body>
-  <h1>откат_создания_игры</h1>
+  <h1><span data-field="title" data-format="default">rollback_create_game</span></h1>
   <p>Эта функция запускает новую многопользовательскую игру. Она принимает количество игроков, которые должны быть подключены для начала игры, и по желанию позволяет отключить <a data-xref="{text}" href="../Rollback_System.htm#h">Sync Test</a>.</p>
   <p>При вызове с отключенным Sync Test система ждет, пока количество <span class="inline2">игроков num_players</span> не присоединится к игре, прежде чем <a href="../Rollback_Events.htm">начать</a> игру. Убедитесь, что не создаете и не изменяете управляемые экземпляры до начала игры.</p>
   <p class="note"><span class="tip">СОВЕТ</span> Вы можете по желанию заставить игру начаться до того, как все игроки присоединятся к ней, вызвав команду <a href="rollback_start_game.htm"><span class="inline">rollback_start_game()</span></a>.</p>
@@ -24,7 +24,7 @@
   <p class="note"><span class="warning">ПРЕДУПРЕЖДЕНИЕ</span> Не рекомендуется устанавливать регион по умолчанию в этой функции, если только вы не позволяете проигрывателю выбирать его через меню.</p>
   <p> </p>
   <h4>Синтаксис:</h4>
-  <p class="code">rollback_create_game(num_players, [enable_sync_test, region]);</p>
+  <p class="code"><span data-field="title" data-format="default">rollback_create_game</span>(num_players, [enable_sync_test, region]);</p>
   <table>
     <colgroup>
       <col />

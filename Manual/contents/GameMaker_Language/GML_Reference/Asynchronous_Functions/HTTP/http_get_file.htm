@@ -14,7 +14,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>http_get_file</h1>
+  <h1><span data-field="title" data-format="default">http_get_file</span></h1>
   <p>С помощью этой функции вы можете подключиться к указанному URL-адресу, чтобы получить информацию в виде файла. Поскольку это асинхронная функция, <span data-keyref="GameMaker Name">GameMaker</span> не будет блокироваться в ожидании ответа, а продолжит работу до тех пор, пока не получит обратную информацию. Эта информация будет в виде строки и вызовет <b>событие Async Event</b> в любом экземпляре, у которого оно определено в свойствах объекта.</p>
   <p class="note"><b><span class="note">ВНИМАНИЕ</span> </b>Вы должны знать, что из-за XSS-защиты в браузерах запросы и попытки загрузить ресурсы из других доменов блокируются и могут возвращать пустые результаты. Более подробную информацию см. в разделе " <a href="HTTP.htm">Междоменные проблемы</a> ".</p>
   <p>Это событие генерирует &quot;обратный вызов&quot;, который подхватывается любыми <a href="../../../../The_Asset_Editors/Object_Properties/Async_Events/HTTP.htm">HTTP Events</a>, в этом случае генерируется файл <a href="../../Data_Structures/DS_Maps/DS_Maps.htm"><span class="inline">DS Map</span></a> (более известный как &quot;словарь&quot;), который является эксклюзивным для этого события и хранится в специальной переменной <a href="../../../GML_Overview/Variables/Builtin_Global_Variables/async_load.htm"><b>async_load</b></a>. Эта DS карта будет содержать различные значения в зависимости от возвращаемых данных, т.е. событие будет срабатывать несколько раз по мере получения каждого пакета данных, чтобы, например, можно было показать индикатор выполнения. Общая структура карты DS будет выглядеть следующим образом:</p>
@@ -32,7 +32,7 @@
   </ul>
   <p> </p>
   <h4>Синтаксис:</h4>
-  <p class="code">http_get_file(url, local_target);</p>
+  <p class="code"><span data-field="title" data-format="default">http_get_file</span>(url, local_target);</p>
   <table>
     <tbody>
       <tr>

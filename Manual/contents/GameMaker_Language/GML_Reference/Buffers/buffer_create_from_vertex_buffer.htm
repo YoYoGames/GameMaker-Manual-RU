@@ -15,7 +15,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>buffer_create_from_vertex_buffer</h1>
+  <h1><span data-field="title" data-format="default">buffer_create_from_vertex_buffer</span></h1>
   <p>Вы используете эту функцию для выделения части памяти под буфер в вашей игре, заполненный данными из ранее созданного <a href="../Drawing/Primitives/Primitives_And_Vertex_Formats.htm">буфера вершин</a>. Функция возвращает уникальный <i>идентификатор буфера</i>, который должен храниться в переменной и использоваться для всех последующих обращений к буферу. Функция принимает идентификатор вершинного буфера (возвращаемый функцией <a href="../Drawing/Primitives/vertex_create_buffer.htm"><span class="inline">vertex_create_buffer()</span></a>, например), а для определения типа буфера используются следующие константы:</p>
   <table>
     <tbody>
@@ -59,7 +59,7 @@
   <p class="note"><b>ПРИМЕЧАНИЕ</b>: Важно, чтобы вы удаляли любые динамически созданные ресурсы, подобные этому, из памяти, когда они вам больше не нужны, чтобы предотвратить утечку памяти, поэтому, когда вы закончите работу с созданным буфером, вы должны освободить его снова, используя <span style="font-size:1px;"><a href="buffer_delete.htm"><span class="inline">buffer_delete()</span></a></span>. Также обратите внимание, что буфер вершин, используемый для создания нового буфера, также не удаляется из памяти, и вы должны использовать функцию <span style="font-size:1px;"><a href="../Drawing/Primitives/vertex_delete_buffer.htm"><span class="inline">vertex_delete_buffer()</span></a></span> когда она больше не нужна.</p>
   <p> </p>
   <h4>Синтаксис:</h4>
-  <p class="code">buffer_create_from_vertex_buffer(vertex_buffer, type, alignment)</p>
+  <p class="code"><span data-field="title" data-format="default">buffer_create_from_vertex_buffer</span>(vertex_buffer, type, alignment)</p>
   <table>
     <tbody>
       <tr>

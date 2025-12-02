@@ -14,7 +14,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>buffer_load_async</h1>
+  <h1><span data-field="title" data-format="default">buffer_load_async</span></h1>
   <p>С помощью этой функции вы можете загрузить файл, созданный ранее с помощью функции <a href="buffer_save.htm"><span class="inline">buffer_save()</span></a> (или любой другой функции для сохранения буферов) в буфер. Смещение&quot; определяет начальную позицию в буфере для загрузки (в байтах), а &quot;размер&quot; - размер области буфера, загружаемой с этого смещения и далее (также в байтах). Вы можете указать значение -1 для аргумента size, и тогда будет загружен весь буфер. Обратите внимание, что функция будет загружаться из папки &quot;по умолчанию&quot;, которую <i>не</i> нужно включать в указанный вами путь к файлу. Эта папка будет создана, если она не существует или когда вы сохраняете файл с помощью функции <a href="buffer_save_async.htm"><span class="inline">buffer_save_async()</span></a>.</p>
   <p>Функция возвращает уникальное значение ID, которое затем может быть использовано в <a href="../../../The_Asset_Editors/Object_Properties/Async_Events/Save_Load.htm">асинхронном событии сохранения/загрузки</a> для проверки значения <a href="../../GML_Overview/Variables/Builtin_Global_Variables/async_load.htm"><span class="inline">async_load</span></a> ID, как показано в расширенном примере ниже. Карта <span class="inline">async_load</span> в событии будет содержать следующие две пары ключ/значение:</p>
   <ul class="colour">
@@ -25,7 +25,7 @@
   <p>Пожалуйста, ознакомьтесь со страницей <span class="inline"><a href="buffer_load.htm">buffer_load()</a></span> для получения информации о конкретной платформе.</p>
   <p> </p>
   <h4>Синтаксис:</h4>
-  <p class="code">buffer_load_async(buffer, filename, offset, size);</p>
+  <p class="code"><span data-field="title" data-format="default">buffer_load_async</span>(buffer, filename, offset, size);</p>
   <table>
     <tbody>
       <tr>

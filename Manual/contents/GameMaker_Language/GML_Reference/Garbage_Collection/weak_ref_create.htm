@@ -14,11 +14,11 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>weak_ref_create</h1>
+  <h1><span data-field="title" data-format="default">weak_ref_create</span></h1>
   <p>С помощью этой функции вы можете создать <a class="glossterm" data-glossterm="слабая ссылка" href="#">слабую ссылку</a> на структуру, которая затем может быть использована для проверки того, жива ли эта структура (ссылка на нее) или нет в игре. Вы передаете ссылку на структуру, которую хотите отследить, а функция возвращает другую структуру, которая является слабой ссылкой на эту структуру. Обратите внимание, что вы можете проверить, является ли ссылка &quot;сильной&quot; или &quot;слабой&quot;, используя функцию <span class="inline"><a href="../Variable_Functions/instanceof.htm">instanceof()</a></span>, так как сильная ссылка вернет либо &quot;<span class="inline">struct</span>&quot; или имя функции-конструктора, создавшей структуру, либо &quot;<span class="inline">weakref</span>&quot;, если это слабая ссылка. Также обратите внимание, что структура со слабой ссылкой будет иметь переменную &quot;<span class="inline">ref</span>&quot;, к которой можно обратиться, чтобы получить сильную ссылку на данную структуру, если только она не была собрана в мусор, в этом случае она вернет <span class="inline">undefined</span>.</p>
   <p> </p>
   <h4>Синтаксис:</h4>
-  <p class="code">weak_ref_create(struct_to_track);</p>
+  <p class="code"><span data-field="title" data-format="default">weak_ref_create</span>(struct_to_track);</p>
   <table>
     <tbody>
       <tr>

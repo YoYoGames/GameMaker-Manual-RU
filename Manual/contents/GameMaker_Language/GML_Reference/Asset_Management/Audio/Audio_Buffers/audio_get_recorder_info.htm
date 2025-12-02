@@ -15,7 +15,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>audio_get_recorder_info</h1>
+  <h1><span data-field="title" data-format="default">audio_get_recorder_info</span></h1>
   <p>Эта функция возвращает <a href="../../../Data_Structures/DS_Maps/DS_Maps.htm">DS Map</a> с информацией о заданном индексе источника диктофона. Вы можете узнать, сколько источников диктофонов доступно, используя функцию <a href="audio_get_recorder_count.htm"><span class="inline">audio_get_recorder_count()</span></a>, а возвращаемая карта будет содержать следующие пары ключ/значение:</p>
   <ul class="colour">
     <li>&quot;<strong>имя</strong>&quot; - имя для описания устройства</li>
@@ -28,7 +28,7 @@
   <p class="note"><b><span class="note">ПРИМЕЧАНИЕ</span> </b>Большинство платформ поддерживают запись звука в той или иной форме, но это не означает, что все устройства позволят это сделать, даже если платформа это делает, поэтому всегда следует проверять, что функция <span style="font-size:1px;"><a href="audio_get_recorder_count.htm"><span class="inline">audio_get_recorder_count()</span></a></span> возвращает значение больше 0, чтобы убедиться, что устройства записи доступны, прежде чем использовать остальные функции записи.</p>
   <p> </p>
   <h4>Синтаксис:</h4>
-  <p class="code">audio_get_recorder_info(recorder_index);</p>
+  <p class="code"><span data-field="title" data-format="default">audio_get_recorder_info</span>(recorder_index);</p>
   <table>
     <tbody>
       <tr>

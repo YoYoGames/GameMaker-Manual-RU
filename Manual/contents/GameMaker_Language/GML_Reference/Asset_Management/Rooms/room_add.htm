@@ -14,12 +14,12 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>room_add</h1>
+  <h1><span data-field="title" data-format="default">room_add</span></h1>
   <p>Эта функция создаст новую, пустую комнату и добавит ее в игру, возвращая ее индекс, который будет храниться в переменной для всех последующих кодов, имеющих дело с этой комнатой. Обратите внимание, что каждая комната постоянно добавляется в игру до тех пор, пока исполняемый файл не будет закрыт, т.е. <i>комнаты, добавленные с помощью кода, не могут быть удалены снова</i>. Это имеет важные последствия для использования памяти, поэтому использовать эту функцию следует с осторожностью.</p>
   <p class="note"><b>ПРИМЕЧАНИЕ</b>: Новые комнаты не являются частью обычного порядка комнат, поэтому у них нет &quot;предыдущей&quot; или &quot;следующей&quot; комнаты (это означает, что функции <span style="font-size:1px;"><a href="room_next.htm"><span class="inline">room_next()</span></a></span> и <span style="font-size:1px;"><a href="room_previous.htm"><span class="inline">room_previous()</span></a></span> не будут работать). Чтобы перейти из добавленной комнаты в другую, необходимо использовать индекс самой комнаты.</p>
   <p> </p>
   <h4>Синтаксис:</h4>
-  <p class="code">room_add();</p>
+  <p class="code"><span data-field="title" data-format="default">room_add</span>();</p>
   <p> </p>
   <h4>Возвращается:</h4>
   <p class="code"><span data-keyref="Type_Asset_Room">Room Asset</span></p>

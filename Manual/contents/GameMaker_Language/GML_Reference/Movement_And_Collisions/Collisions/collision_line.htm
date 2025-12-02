@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>линия столкновения</title>
+  <title>collision_line</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../assets/scripts/main_script.js"></script>
@@ -15,13 +15,13 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>линия столкновения</h1>
+  <h1><span data-field="title" data-format="default">collision_line</span></h1>
   <p><span class="inline">Collision_line</span> проверяет линию от точки x1,y1 до точки x2,y2 на столкновение с <b>любым</b> экземпляром объекта, указанного аргументом &quot;obj&quot;. Эта проверка может быть точной или нет, но для включения точных столкновений объект или экземпляр, который вы проверяете, <i>должен</i> также иметь включенные точные столкновения для своего <span class="notranslate">sprite</span>. Если нет, то проверка по умолчанию основывается на граничных коробках. На следующем изображении показано, как это работает:</p>
   <p><img>Помните, что для учета точных столкновений <i>и</i> объект <span class="notranslate">sprite</span>, и функция столкновения должны быть отмечены как точные. Следует также отметить, что возвращаемое значение функции может быть id <i>любого</i> из экземпляров, считающихся столкнувшимися вдоль линии, поэтому если три экземпляра пересекают определенную линию, то любой из их id может быть возвращаемым значением функции.</p>
   <p>Обратите внимание, что вместо индекса объекта вы можете указать экземпляр <a href="../../Asset_Management/Instances/Instance_Variables/id.htm"><span class="inline">id</span></a> для проверки конкретного экземпляра, или <a href="../../../GML_Overview/Instance_Keywords.htm">ключевые слова экземпляра</a> <span class="inline">all</span>, или <span class="inline">other</span> (в зависимости от события и текущей области видимости кода).</p>
   <p> </p>
   <h4>Синтаксис:</h4>
-  <p class="code">collision_line(x1, y1, x2, y2, obj, prec, notme);</p>
+  <p class="code"><span data-field="title" data-format="default">collision_line</span>(x1, y1, x2, y2, obj, prec, notme);</p>
   <table>
     <tbody>
       <tr>

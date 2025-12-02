@@ -15,7 +15,7 @@
   <meta name="is_pure" content="true" />
 </head>
 <body>
-  <h1>fx_set_single_layer</h1>
+  <h1><span data-field="title" data-format="default">fx_set_single_layer</span></h1>
   <p>Эта функция используется для включения или отключения режима &quot;Single Layer&quot; для фильтра/эффекта. По умолчанию фильтр/эффект применяется к слою, которому он <a href="layer_set_fx.htm">назначен</a>, и ко всем слоям ниже этого слоя, однако вы можете включить режим Single Layer для структуры FX, чтобы убедиться, что он применяется только к слою, которому назначен.</p>
   <p>Вы указываете структуру FX (как возвращено из <span class="inline"><a href="fx_create.htm">fx_create()</a></span> или <span class="inline"><a href="layer_get_fx.htm">layer_get_fx()</a></span>) и <a class="glossterm" data-glossterm="булево" href="#">булево</a> значение, чтобы включить (<span class="inline">true</span>) или выключить (<span class="inline">false</span>) однослойный режим.</p>
   <p>На следующем рисунке показан фильтр, используемый с отключенным режимом Single Layer (это поведение по умолчанию для всех слоев FX) и тот же фильтр с включенным режимом Single Layer:</p>
@@ -30,7 +30,7 @@
   <p class="note"><span class="note">ПРИМЕЧАНИЕ</span> При включении режима Single Layer для FX убедитесь, что вы применяете его к слою, который не является <a href="../../../../../The_Asset_Editors/Room_Properties/Filters_and_Effects.htm">слоем FX</a>, поскольку слой FX сам по себе ничего не содержит, и поэтому фильтр/эффект не будет виден.</p>
   <p> </p>
   <h4>Синтаксис:</h4>
-  <p class="code">fx_set_single_layer(filter_or_effect, enable);</p>
+  <p class="code"><span data-field="title" data-format="default">fx_set_single_layer</span>(filter_or_effect, enable);</p>
   <table>
     <tbody>
       <tr>

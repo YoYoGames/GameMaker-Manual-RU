@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>глубина</title>
+  <title>depth</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../../assets/scripts/main_script.js"></script>
@@ -14,7 +14,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>глубина</h1>
+  <h1><span data-field="title" data-format="default">depth</span></h1>
   <p>При создании объекта вы можете присвоить ему начальную <i>глубину</i>, которая определяет, как экземпляры этого объекта будут отрисовываться в комнате во время игры. Эта переменная может использоваться для получения и изменения значения глубины во время игры. Обычно вам не нужно использовать эту переменную, так как вы должны устанавливать экземпляры для добавления в отдельные <a href="layer.htm">слои</a>, которые в свою очередь устанавливаются на определенную глубину, но может случиться так, что вы захотите изменить глубину экземпляра с помощью этого значения, в этом случае будет создан &quot;временный слой&quot; специально для этого экземпляра на заданной глубине. Обратите внимание, что если ни один экземпляр не находится на той же глубине, то этот временный слой будет удален из памяти (в отличие от обычных слоев, которые остаются, даже если на них ничего нет).</p>
   <p class="note"><b>ВАЖНО!</b> Когда вы изменяете переменную <span class="inline">depth</span> и <span data-keyref="GameMaker Name">GameMaker</span> управляет слоями, встроенная <span style="font-size:1px;"><a href="layer.htm"><span class="inline">layer</span></a></span> переменная вернет -1, а не идентификатор слоя, поскольку управляемыми слоями нельзя манипулировать с помощью кода.</p>
   <p>В <span data-keyref="GameMaker Name">GameMaker</span> чем меньше значение глубины для экземпляра, тем &quot;ближе к камере&quot; будет нарисован этот экземпляр, в то время как большее значение глубины означает, что экземпляр будет нарисован &quot;дальше от камеры&quot;, то есть: -1000 рисуется поверх -100, который рисуется поверх 0, и так далее.</p>
@@ -23,7 +23,7 @@
   <p>Помните, что изменение глубины экземпляра может изменить применяемые к нему <a href="../../../../../The_Asset_Editors/Room_Properties/Filters_and_Effects.htm">фильтры и эффекты</a>, поскольку при изменении глубины на меньшую, чем глубина слоя FX, эффект больше не будет применяться к экземпляру.</p>
   <p> </p>
   <h4>Синтаксис:</h4>
-  <p class="code">depth;</p>
+  <p class="code"><span data-field="title" data-format="default">depth</span></p>
   <p> </p>
   <h4>Возвращается:</h4>
   <p class="code"><span data-keyref="Type_Real"><a href="../../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span> (single precision floating point value)</p>

@@ -14,12 +14,12 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>skeleton_attachment_set</h1>
+  <h1><span data-field="title" data-format="default">skeleton_attachment_set</span></h1>
   <p>Скелетная анимация <span class="notranslate">sprite</span> может содержать другие изображения, добавленные в качестве вложений, причем эти изображения добавляются в названный слот (имя задается при создании слота вложения в вашей программе анимации), и они будут рисоваться вместе с анимацией текущего <span class="notranslate">sprite</span>. С помощью этой функции можно установить вложение в заданный слот, при этом необходимо указать имена (в виде строк) слота и вложения. Эти имена определяются используемой программой анимации или (в случае вложения) при вызове функции <a href="skeleton_attachment_create.htm"><span class="inline">skeleton_attachment_create()</span></a>.</p>
   <p>Обратите внимание, что вы также можете передать <span class="inline">sprite_index</span> в качестве вложения, и тогда будет использован <span class="notranslate">sprite</span>, или вы можете использовать -1, чтобы удалить вложение из слота. Когда вы передаете в качестве аргумента индекс <span class="notranslate">sprite</span>, будет создан слот вложения, используя имя <span class="notranslate">sprite</span> в качестве строки для названия слота (например, при использовании <span class="inline">spr_sword</span> будет создан слот вложения &quot;spr_sword&quot;), и слот будет использовать индекс первого изображения (0) из <span class="notranslate">sprite</span>, а также смещение начала координат x и y, с масштабом (1,1) и вращением 0.</p>
   <p> </p>
   <h4>Синтаксис:</h4>
-  <p class="code">skeleton_attachment_set(slot, attachment);</p>
+  <p class="code"><span data-field="title" data-format="default">skeleton_attachment_set</span>(slot, attachment);</p>
   <table>
     <tbody>
       <tr>

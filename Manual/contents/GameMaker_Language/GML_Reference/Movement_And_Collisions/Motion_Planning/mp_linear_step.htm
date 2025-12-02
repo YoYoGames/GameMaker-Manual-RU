@@ -15,12 +15,12 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>mp_linear_step</h1>
+  <h1><span data-field="title" data-format="default">mp_linear_step</span></h1>
   <p>С помощью этой функции вы указываете экземпляру сделать &quot;шаг&quot; к определенной точке, заданной значениями xgoal и ygoal. Размер шага (то есть на сколько пикселей экземпляр должен перемещаться каждый шаг) указывается значением stepize, и если экземпляр уже находится в заданной позиции, он остановится и не будет двигаться дальше, в отличие от других, более простых функций, таких как <a href="../Movement/move_towards_point.htm"><span class="inline">move_towards_point()</span></a>. Размер шага также является расстоянием &quot;вперед&quot;, на котором объект будет проверять каждый шаг на столкновение, и вы можете выбрать, остановится ли объект при столкновении с <i>любым</i> объектом или только с теми, которые помечены как твердые. Функция возвращает, достигла ли она целевой позиции (true) или потерпела неудачу (false).</p>
   <p class="note"><span class="note"><b>ПРИМЕЧАНИЕ</b></span> Эта функция не пытается объехать препятствие, если оно встречается, она просто выходит из строя и прекращает движение.</p>
   <p> </p>
   <h4>Синтаксис:</h4>
-  <p class="code">mp_linear_step(xgoal, ygoal, stepsize, checkall);</p>
+  <p class="code"><span data-field="title" data-format="default">mp_linear_step</span>(xgoal, ygoal, stepsize, checkall);</p>
   <table>
     <tbody>
       <tr>

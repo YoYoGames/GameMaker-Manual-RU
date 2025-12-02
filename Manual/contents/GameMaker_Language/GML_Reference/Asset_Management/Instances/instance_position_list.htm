@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>список_позиций_экземпляров</title>
+  <title>instance_position_list</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../assets/scripts/main_script.js"></script>
@@ -15,13 +15,13 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>список_позиций_экземпляров</h1>
+  <h1><span data-field="title" data-format="default">instance_position_list</span></h1>
   <p>С помощью этой функции можно проверить позицию на столкновение со всеми экземплярами другого объекта. При использовании этой функции вы проверяете одну точку в комнате на наличие всех экземпляров объекта, и проверка будет выполняться по ограничивающей рамке экземпляров или по маске экземпляров, если у этого объекта отмечены точные столкновения.</p>
   <p>Вы также предоставляете <a href="../../Data_Structures/DS_Lists/DS_Lists.htm">список DS</a>, поэтому <a href="Instance_Variables/id.htm"><span class="inline">id</span></a> значения всех экземпляров, которые сталкиваются с вызывающим экземпляром, будут добавлены в конец данного списка. Вы можете <a href="../../Data_Structures/DS_Lists/ds_list_clear.htm">очистить</a> список перед вызовом этой функции, чтобы он содержал только результаты этого вызова функции. Также есть возможность упорядочить список на основе расстояния от проверяемой позиции до начала координат экземпляров, с которыми произошло столкновение.</p>
   <p>Обратите внимание, что функция также принимает специальное ключевое слово <a href="../../../GML_Overview/Instance_Keywords.htm"><b><span class="inline">all</span></b></a>в этом случае будут перечислены все найденные экземпляры, с которыми произошла коллизия. Функция возвращает количество найденных экземпляров или 0, если не найдено ни одного.</p>
   <p> </p>
   <h4>Синтаксис:</h4>
-  <p class="code">instance_position_list(x, y, obj, list, ordered);</p>
+  <p class="code"><span data-field="title" data-format="default">instance_position_list</span>(x, y, obj, list, ordered);</p>
   <table>
     <tbody>
       <tr>

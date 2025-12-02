@@ -14,11 +14,11 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>audio_queue_sound</h1>
+  <h1><span data-field="title" data-format="default">audio_queue_sound</span></h1>
   <p>Эта функция добавит данные из буфера в очередь аудио, которую вы ранее создали с помощью функции <a href="audio_create_play_queue.htm"><span class="inline">audio_create_play_queue()</span></a>. Вы указываете индекс очереди для добавления, ID буфера для получения данных, а также позицию (смещение) в буфере и количество байт для добавления. После добавления звука из буфера в очередь, буфер не может быть удален до тех пор, пока вы не освободите очередь с помощью функции <a href="audio_free_play_queue.htm"><span class="inline">audio_free_play_queue()</span></a>, а свойства буфера должны соответствовать свойствам очереди, в которую вы добавляете звук.</p>
   <p> </p>
   <h4>Синтаксис:</h4>
-  <p class="code">audio_queue_sound(queueIndex, bufferId, bufferOffset, bufferLength);</p>
+  <p class="code"><span data-field="title" data-format="default">audio_queue_sound</span>(queueIndex, bufferId, bufferOffset, bufferLength);</p>
   <table>
     <tbody>
       <tr>

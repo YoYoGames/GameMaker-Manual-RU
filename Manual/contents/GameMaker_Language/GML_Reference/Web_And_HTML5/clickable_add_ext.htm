@@ -15,13 +15,13 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>clickable_add_ext</h1>
+  <h1><span data-field="title" data-format="default">clickable_add_ext</span></h1>
   <p>С помощью этой функции вы можете создать пользовательскую, кликабельную иконку, которая действует как &quot;кнопка&quot; вне игровой канвы, но в самом окне браузера. Функция возвращает значение ID, которое должно быть сохранено в переменной для использования во всех последующих функциях кнопки, которые ссылаются на новую кликабельную иконку. Эта функция очень полезна для предотвращения создания браузером всплывающего окна при нажатии на кнопку, поскольку все это делается в самом <span data-keyref="GameMaker Name">GameMaker</span>.</p>
   <p>Эта функция работает точно так же, как и <a href="clickable_add.htm"><span class="inline">clickable_add()</span></a> где необходимо задать позицию относительно (0,0) окна браузера, указать страницу текстуры для <span class="notranslate">sprite</span>, которую вы хотите видеть на значке кнопки (см: <a href="../Asset_Management/Sprites/Sprite_Information/sprite_get_tpe.htm"><span class="inline">sprite_get_tpe()</span></a>), указать URL для открытия или скрипт (из браузера активов <span data-keyref="GameMaker Name">GameMaker</span>) для открытия или запуска, затем задать цель и параметры для использования. Однако эта функция также имеет две дополнительные опции, которые позволяют установить альфа-фактор значка от 0 (полностью прозрачный) до 1 (полностью непрозрачный) и масштаб значка, который представляет собой множитель, применяемый к используемому значению <span class="notranslate">sprite</span>. Таким образом, значение 1 - это масштаб по умолчанию, в то время как (например) 0,5 - это половинный масштаб, а 2 - двойной.</p>
   <p>Также стоит отметить, что если передаваемый вами аргумент URL является именем <a href="../../GML_Overview/Script_Functions.htm">функции скрипта</a> (т.е. не начинается с &quot;http://&quot;) И скрипт называется <span class="inline"><b>gmcallback_*</b></span>, то вы можете получить прямую передачу в html5-событие. Имена функций скриптов <span data-keyref="GameMaker Name">GameMaker</span> <i>не</i> обфусцируются, если они начинаются с <span class="inline">gmcallback_</span>.</p>
   <p> </p>
   <h4>Синтаксис:</h4>
-  <p class="code">clickable_add_ext(x, y, tpe, url, target, params, alpha, scale);</p>
+  <p class="code"><span data-field="title" data-format="default">clickable_add_ext</span>(x, y, tpe, url, target, params, alpha, scale);</p>
   <table>
     <tbody>
       <tr>

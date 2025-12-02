@@ -14,13 +14,13 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>physics_particle_draw_ext</h1>
+  <h1><span data-field="title" data-format="default">physics_particle_draw_ext</span></h1>
   <p>Эта функция нарисует <span class="notranslate">sprite</span> в позиции всех частиц, которые имеют одно и то же значение категории, определенное пользователем, и у которых флаги совпадают с флагами, заданными для маски. Значение маски определяется так же, как и флаги при создании частиц (см. функции <a href="physics_particle_create.htm"><span class="inline">physics_particle_create()</span></a> для примера), т.е. с помощью <a href="../../../../Additional_Information/Bitwise_Operators.htm">побитовой</a> комбинации <a href="../../../../Additional_Information/Bitwise_Operators.htm"> <i>или</i></a> &quot;|&quot; для маскирования соответствующих битов для каждого флага.</p>
   <p class="note"><b>ПРИМЕЧАНИЕ</b>: Эта функция нарисует <b>все</b> частицы в физической симуляции с флагами, совпадающими с флагами маски, будь то отдельные частицы или группы, если категория пользователя одинакова.</p>
   <p>Нарисованная частица будет игнорировать значения цвета и альфы, установленные при ее создании, и вместо этого будет нарисована с использованием параметров масштаба, угла, цвета и альфы, заданных в этой функции. Обратите внимание, что эта функция предназначена только для рисования <span class="notranslate">sprite</span> в позиции частицы и никак не влияет на поведение частицы.</p>
   <p> </p>
   <h4>Синтаксис:</h4>
-  <p class="code">physics_particle_draw_ext(typemask, category, sprite, subimg, xscale, yscale, ang, col, alpha)</p>
+  <p class="code"><span data-field="title" data-format="default">physics_particle_draw_ext</span>(typemask, category, sprite, subimg, xscale, yscale, ang, col, alpha)</p>
   <table>
     <tbody>
       <tr>

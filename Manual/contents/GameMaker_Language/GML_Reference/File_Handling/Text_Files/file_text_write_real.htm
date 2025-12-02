@@ -14,12 +14,12 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>file_text_write_real</h1>
+  <h1><span data-field="title" data-format="default">file_text_write_real</span></h1>
   <p>С помощью этой функции вы можете записать число в ранее открытый текстовый файл. Обратите внимание, что поскольку записываемое значение может быть вещественным числом, все десятичные знаки будут записаны с точкой &quot;.&quot; в качестве разделителя. Если файл уже содержит информацию, эта информация будет стерта, а строка будет записана в начало файла, если только вы не открыли файл с помощью функции <a href="file_text_open_append.htm"><span class="inline">file_text_open_append()</span></a>. Вы также можете избежать этого, используя <a href="file_text_readln.htm"><span class="inline">file_text_readln()</span></a> вместе с функцией <a href="file_text_eof.htm"><span class="inline">file_text_eof()</span></a> для перебора содержимого файла до конца, а затем начать запись.</p>
   <p>Важно отметить, что при записи очень больших чисел в текстовый файл с помощью этой функции они могут быть переведены в стандартный упрощенный формат, например, &quot;6.6624e+003&quot;, который не может быть правильно считан обратно в <span data-keyref="GameMaker Name">GameMaker</span>. Чтобы избежать подобных проблем, вместо этого преобразуйте значение в строку и используйте функцию <a href="file_text_write_string.htm"><span class="inline">file_text_write_string()</span></a> вместо этого.</p>
   <p> </p>
   <h4>Синтаксис:</h4>
-  <p class="code">file_text_write_real(fileid, val);</p>
+  <p class="code"><span data-field="title" data-format="default">file_text_write_real</span>(fileid, val);</p>
   <table>
     <tbody>
       <tr>

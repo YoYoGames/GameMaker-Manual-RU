@@ -15,13 +15,13 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>os_is_network_connected</h1>
+  <h1><span data-field="title" data-format="default">os_is_network_connected</span></h1>
   <p>С помощью этой функции вы можете проверить, есть ли на вашем устройстве подключение к Интернету, и она вернет <span class="inline">true</span>, если есть, или <span class="inline">false</span>, если нет, и, в зависимости от ОС, может попытаться установить соединение, прежде чем вернуть значение.</p>
   <p>Функция имеет дополнительный аргумент для включения/выключения попытки установить соединение при вызове, и эта опция в настоящее время используется <strong>только</strong> для цели <span class="notranslate">Nintendo</span> <span class="notranslate">Switch</span>. При установке значения <span class="inline">true</span> функция будет пытаться установить соединение, а при установке значения <span class="inline">false</span> она будет ограничиваться проверкой соединения. Обратите внимание, что попытка установить соединение может привести к зависанию ОС <span class="notranslate">Switch</span> на несколько секунд. </p>
   <p class="note"><b><span class="note">ПРИМЕЧАНИЕ</span> </b>Эта функция проверяет внутренний API устройства, который управляет соединениями, и поэтому может вернуть true, если есть соединение bluetooth, Wi-Fi или даже обычное сетевое соединение, позволяющее доступ в интернет.</p>
   <p> </p>
   <h4>Синтаксис:</h4>
-  <p class="code">os_is_network_connected([attempt_connection]);</p>
+  <p class="code"><span data-field="title" data-format="default">os_is_network_connected</span>([attempt_connection]);</p>
   <table>
     <tbody>
       <tr>
