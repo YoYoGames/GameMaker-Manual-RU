@@ -4,7 +4,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>Струны</title>
-  <meta name="generator" content="Adobe RoboHelp 2020" />
+  <meta name="generator" content="Adobe RoboHelp 2022" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
   <script src="../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
@@ -14,11 +14,11 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>Струны</h1>
-  <p>В какой-то момент при создании игры вам понадобится использовать текст. Для работы с текстом в играх используются функции <b>строк</b> (строка - это просто другой способ сказать "строка текста"), и <span data-keyref="GameMaker Name">GameMaker</span> имеет полный набор функций, позволяющих вам работать со строками различными способами, включая вставку одной строки в другую, копирование строк и возможность анализа строк на предмет содержащихся в них цифр или букв. В общем случае строка может быть создана <i>только</i> путем добавления текста в двойных кавычках &quot; &quot;, <em>строки в одинарных кавычках не принимаются</em>, вы также не можете разделить строку на несколько строк и ожидать, что <span data-keyref="GameMaker Name">GameMaker</span> отобразит ее так, как если бы переносы строк были новыми строками (если только не используется <strong>строковый литерал</strong> <span class="inline">@</span>, как объясняется ниже).</p>
+  <h1><span data-field="title" data-format="default">Струны</span></h1>
+  <p>В какой-то момент при создании игры вам понадобится использовать текст. Для работы с текстом в играх используются функции <b>строк</b> (строка - это просто другой способ сказать &quot;строка текста&quot;), и <span data-keyref="GameMaker Name">GameMaker</span> имеет полный набор функций, позволяющих вам работать со строками различными способами, включая вставку одной строки в другую, копирование строк и возможность анализа строк на предмет содержащихся в них цифр или букв. В общем случае строка может быть создана <i>только</i> путем добавления текста в двойных кавычках &quot; &quot;, <em>строки в одинарных кавычках не принимаются</em>, вы также не можете разделить строку на несколько строк и ожидать, что <span data-keyref="GameMaker Name">GameMaker</span> отобразит ее так, как если бы переносы строк были новыми строками (если только не используется <strong>строковый литерал</strong> <span class="inline">@</span>, как объясняется ниже).</p>
   <p>Стоит отметить, что существуют определенные соглашения, которые вы можете использовать при создании строк, в основном это касается использования <i>управляющих символов</i>. Это символы, которым предшествует символ &quot;<span class="inline">\</span>&quot;. Так, например, если вы хотите поставить кавычки в строке, у вас получится что-то вроде этого:</p>
   <p class="code">str = &quot;Hello\&quot;World\&quot;&quot;;</p>
-  <p><span data-keyref="GameMaker Name">GameMaker</span> также имеет полную поддержку символов Unicode шириной четыре байта, что позволяет декодировать и кодировать символы Unicode в верхних границах стандарта (включая - но не ограничиваясь - эмодзи). Для работы с символами Unicode можно использовать символ &quot;<span class="inline">\</span>&quot; перед любым литералом Unicode - цифры шестнадцатеричного кода, которым предшествует символ &quot;<span class="inline">u</span>&quot;, например, &quot;<span class="inline"><span class="inline">\u00e2</span>&quot; для &quot;á&quot; - где цифры являются номером символа Unicode. При работе с Юникодом таким образом необходимо учитывать, что <span data-keyref="GameMaker Name">GameMaker</span> будет интерпретировать <i>все</i> цифры, следующие за &quot;<span class="inline">u</span>&quot;, поэтому если вы хотите написать, например, &quot;áa&quot;, вам следует использовать:</p>
+  <p><span data-keyref="GameMaker Name">GameMaker</span> также имеет полную поддержку символов Unicode шириной четыре байта, что позволяет декодировать и кодировать символы Unicode в верхних границах стандарта (включая - но не ограничиваясь - эмодзи). Для работы с символами Unicode можно использовать символ &quot;<span class="inline">\</span>&quot; перед любым литералом Unicode - цифры шестнадцатеричного кода, которым предшествует символ &quot;<span class="inline">u</span>&quot;, например, &quot;<span class="inline">\u00e2</span>&quot; для &quot;á&quot; - где цифры являются номером символа Unicode. При работе с Юникодом таким образом необходимо учитывать, что <span data-keyref="GameMaker Name">GameMaker</span> будет интерпретировать <i>все</i> цифры, следующие за &quot;<span class="inline">u</span>&quot;, поэтому если вы хотите написать, например, &quot;áa&quot;, вам следует использовать:</p>
   <p class="code">&quot;\u00e2\a&quot;</p>
   <p>или</p>
   <p class="code">&quot;\u00e2\u61&quot;</p>
@@ -93,7 +93,6 @@
     <li><a href="ansi_char.htm"><span class="notranslate">ansi_char</span></a></li>
     <li><a href="chr.htm"><span class="notranslate">chr</span></a></li>
     <li><a href="ord.htm"><span class="notranslate">ord</span></a></li>
-    <li><a href="real.htm"><span class="notranslate">real</span></a></li>
     <li><a href="string.htm"><span class="notranslate">string</span></a></li>
     <li><a href="string_byte_at.htm"><span class="notranslate">string_byte_at</span></a></li>
     <li><a href="string_byte_length.htm"><span class="notranslate">string_byte_length</span></a></li>
@@ -125,16 +124,16 @@
     <li><a href="string_hash_to_newline.htm"><span class="notranslate">string_hash_to_newline</span></a></li>
     <li><a href="../Variable_Functions/is_string.htm"><span class="notranslate">is_string</span></a></li>
   </ul>
-  <p> </p>
+  <p> </p>
   <p>Помимо функций, относящихся непосредственно к строкам, некоторые цели также предоставляют доступ к буферу обмена для получения и установки текстовой информации:</p>
   <ul class="colour">
     <li><a href="clipboard_has_text.htm"><span class="notranslate">clipboard_has_text</span></a></li>
     <li><a href="clipboard_get_text.htm"><span class="notranslate">clipboard_get_text</span></a></li>
     <li><a href="clipboard_set_text.htm"><span class="notranslate">clipboard_set_text</span></a></li>
   </ul>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
@@ -142,7 +141,7 @@
         <div style="float:right">Следующий: <a href="../Maths_And_Numbers/Maths_And_Numbers.htm">Математика и числа</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Все права защищены</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
   </div>
   <!-- KEYWORDS
 Strings
