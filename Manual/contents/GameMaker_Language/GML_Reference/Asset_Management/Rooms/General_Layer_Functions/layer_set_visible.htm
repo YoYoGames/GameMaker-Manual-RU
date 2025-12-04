@@ -14,12 +14,12 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>layer_set_visible</h1>
+  <h1><span data-field="title" data-format="default">layer_set_visible</span></h1>
   <p>С помощью этой функции можно переключить видимость слоя. Вы передаете идентификатор слоя (который вы получаете при создании слоя с помощью функции <a href="layer_create.htm"><span class="inline">layer_create()</span></a>) или имя слоя (в виде строки - это влияет на производительность), а также значение переключения для слоя, где visible - <span class="inline">true</span>, а invisible - <span class="inline">false</span>.</p>
   <p>Когда слой невидим, ничто, назначенное этому слою, не будет рисоваться, а если слою назначены какие-либо экземпляры, то они даже не запустят свое событие рисования (точно так же, как если бы вы установили переменную экземпляра <span class="inline">visible</span> в значение <span class="inline">false</span>). Обратите внимание, что любые экземпляры, которые уже помечены как невидимые, <i>не</i> будут помечены как видимые, если для слоя, на котором они находятся, установлено значение visible, поскольку это две независимые настройки, хотя их поведение одинаково.</p>
   <p> </p>
   <h4>Синтаксис:</h4>
-  <p class="code">layer_set_visible(layer_id, visible)</p>
+  <p class="code"><span data-field="title" data-format="default">layer_set_visible</span>(layer_id, visible)</p>
   <table>
     <tbody>
       <tr>

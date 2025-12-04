@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>физическое_расстояние_создать</title>
+  <title>physics_joint_distance_create</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../assets/scripts/main_script.js"></script>
@@ -15,12 +15,12 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>физическое_расстояние_создать</h1>
+  <h1><span data-field="title" data-format="default">physics_joint_distance_create</span></h1>
   <p>Одним из самых простых соединений является соединение расстояний, которое гласит, что расстояние между двумя точками на двух экземплярах должно быть постоянным. При задании соединения расстояния два экземпляра уже должны быть созданы и иметь назначенное крепление, затем определяются две опорные точки в комнатных координатах. Первая опорная точка связана с экземпляром 1, вторая опорная точка связана с экземпляром 2, а расстояние между этими точками подразумевает длину ограничения расстояния. На рисунке ниже показано, как это работает:</p>
   <p><img>Как видно, точки привязки задаются в виде координат помещения, поэтому при их определении необходимо соблюдать осторожность, особенно если экземпляры создаются одновременно с суставами, а не размещаются в помещении через редактор помещений. Также следует понимать, что суставы создаются независимо от размера <span class="notranslate">sprite</span> экземпляров или прикрепленных к ним приспособлений. Поэтому, если вы создадите дистанционный шарнир не в начале координат экземпляра, он все равно будет действовать и ограничивать два экземпляра относительно позиции, в которой он был создан. Если установить значение &quot;col&quot; на <span class="inline">true</span>, то два экземпляра могут взаимодействовать и сталкиваться друг с другом, но <i>только</i> если у них есть события столкновения, однако если установить значение <span class="inline">false</span>, то они не будут сталкиваться независимо ни от чего.</p>
   <p> </p>
   <h4>Синтаксис:</h4>
-  <p class="code">physics_joint_distance_create(inst1, inst2, w_anchor1_x, w_anchor1_y, w_anchor2_x, w_anchor2_y, col)</p>
+  <p class="code"><span data-field="title" data-format="default">physics_joint_distance_create</span>(inst1, inst2, w_anchor1_x, w_anchor1_y, w_anchor2_x, w_anchor2_y, col)</p>
   <table>
     <tbody>
       <tr>

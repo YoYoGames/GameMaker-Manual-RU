@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>экземпляр_деактивировать_регион</title>
+  <title>instance_deactivate_region</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../../assets/scripts/main_script.js"></script>
@@ -15,14 +15,14 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>экземпляр_деактивировать_регион</h1>
+  <h1><span data-field="title" data-format="default">instance_deactivate_region</span></h1>
   <p>С помощью этой функции можно определить область в помещении для деактивации экземпляров, которые были ранее активированы. Эта область может быть помечена как &quot;внутри&quot; или &quot;снаружи&quot;, как показано на следующем изображении:</p>
   <p><img>На изображении выше видно, что экземпляр &quot;яблоко&quot; всегда неактивен, потому что, даже если сам <span class="notranslate">sprite</span> не перекрывает регион, ограничивающая рамка перекрывает. Таким образом, экземпляры считаются находящимися в указанном регионе, когда их <i>ограничительная область</i> перекрывает его, а состояние маски столкновений (точное или нет) <b>не</b> учитывается. Обратите внимание, что деактивация не является мгновенной, и экземпляр, деактивированный таким образом, не будет считаться неактивным до окончания события, в котором была вызвана функция.</p>
   <p class="note"><b>ПРИМЕЧАНИЕ</b>: Если вы деактивируете экземпляр при запуске комнаты (т.е. из кода создания комнаты или из события создания экземпляра в комнате), то все экземпляры, размещенные в комнате из редактора комнат, <b>будут выполнять свое событие создания</b> до деактивации.</p>
   <p class="note"><b>ПРЕДУПРЕЖДЕНИЕ</b>: Деактивация экземпляров, у которых включена физика, <b>НЕ</b> остановит взаимодействие их светильников в рамках физической симуляции. Для этого необходимо установить их <a href="../../../Physics/Physics_Variables/phy_active.htm"><span class="inline"><span style="font-size:14px;">phy_active</span></a> <span class="inline">true</span> или <span class="inline">false</span> при активации/деактивации экземпляров.</p>
   <p> </p>
   <h4>Синтаксис:</h4>
-  <p class="code">instance_deactivate_region(left, top, width, height, inside, notme);</p>
+  <p class="code"><span data-field="title" data-format="default">instance_deactivate_region</span>(left, top, width, height, inside, notme);</p>
   <table>
     <tbody>
       <tr>

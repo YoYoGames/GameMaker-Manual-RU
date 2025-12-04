@@ -14,11 +14,11 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>gpu_set_tex_mip_bias_ext</h1>
+  <h1><span data-field="title" data-format="default">gpu_set_tex_mip_bias_ext</span></h1>
   <p>С помощью этой функции вы можете установить значение смещения mipmap для данного шейдерного сэмплера. Вы вводите значение индекса шейдерного сэмплера (возвращаемое функцией <a href="../../Asset_Management/Shaders/shader_get_sampler_index.htm"><span class="inline">shader_get_sampler_index()</span></a>, а затем значение смещения, где 0 - без смещения, 1 - для первого мипмапа, 2 - для второго мипмапа и т.д.. Эта функция контролирует скорость смены карт мипов и обычно делает текстуры шейдера более размытыми, чем выше значение и чем больше &quot;расстояние&quot;, на котором происходит просмотр. Обратите внимание, что эта функция может принимать и отрицательные значения, в этом случае шейдерные текстуры будут более четкими на большем расстоянии, чем меньше значение.</p>
   <p> </p>
   <h4>Синтаксис:</h4>
-  <p class="code">gpu_set_tex_mip_bias_ext(sampler_index, bias);</p>
+  <p class="code"><span data-field="title" data-format="default">gpu_set_tex_mip_bias_ext</span>(sampler_index, bias);</p>
   <table>
     <tbody>
       <tr>

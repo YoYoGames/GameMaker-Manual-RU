@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>счетчик жестов</title>
+  <title>gesture_tap_count</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../assets/scripts/main_script.js"></script>
@@ -15,11 +15,11 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>счетчик жестов</h1>
+  <h1><span data-field="title" data-format="default">gesture_tap_count</span></h1>
   <p>Эта функция используется для установки того, включен или отключен счетчик касаний. При установке значения <span class="inline">true</span> отсчет включается, а при установке <span class="inline">false</span> - отключается, хотя вы можете проверить, в каком состоянии он находится, используя функцию <a href="gesture_get_tap_count.htm"><span class="inline">gesture_get_tap_count()</span></a>. Если функция включена, каждое событие переключения будет иметь дополнительный элемент карты DS &quot;tapcount&quot;, в котором будет зарегистрировано количество переключений, а если включена, это означает, что <i>все</i> события переключения будут запущены, т.е.: два переключения вызовут и событие одинарного переключения, и событие двойного переключения, при этом количество переключений для события одинарного переключения будет равно 1, а для события двойного переключения - 2. Значение счета переключений будет сброшено на 0 по истечении времени, установленного для обнаружения двойного переключения (см. функцию <a href="gesture_double_tap_time.htm"><span class="inline">gesture_double_tap_time()</span></a>). Если счетчик касаний отключен, то первое касание не будет зарегистрировано, пока не пройдет время двойного касания и не будет обнаружено второе касание. Обратите внимание, что по умолчанию эта функция <b>включена</b>.</p>
   <p> </p>
   <h4>Синтаксис:</h4>
-  <p class="code">gesture_tap_count(enable);</p>
+  <p class="code"><span data-field="title" data-format="default">gesture_tap_count</span>(enable);</p>
   <table>
     <tbody>
       <tr>

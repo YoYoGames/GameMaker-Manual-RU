@@ -14,14 +14,14 @@
 
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>ds_map_secure_save</h1>
+  <h1><span data-field="title" data-format="default">ds_map_secure_save</span></h1>
   <p>Эта функция сохраняет содержимое заданной карты DS в файл, который привязан к устройству, на котором он был создан (это означает, что он не может быть прочитан при передаче на любое другое устройство). Сам файл может иметь практически любое расширение (например, <span class="inline">*.dat</span>,
    <span class="inline">*.json</span>, <span class="inline">*.bin</span> и т.д.) и будет обфусцирован и сохранен в локальном хранилище на целевой платформе. Затем вы можете повторно загрузить ds_map с помощью функции <a href="ds_map_secure_load.htm"><span class="inline">ds_map_secure_load()</span></a>. Обратите внимание, что если
     сохраняемая карта DS содержит массив, то при сохранении этот массив будет преобразован в список DS.</p>
   <p class="note"><b>ВАЖНО!</b> Одной из особенностей безопасного сохраненного файла является то, что он блокируется на устройстве, на котором был создан, поэтому вы не можете загрузить файл, сохраненный на одном устройстве, в проект, запущенный на другом устройстве.</p>
   <p> </p>
   <h4>Синтаксис:</h4>
-  <p class="code">ds_map_secure_save(map, filename);</p>
+  <p class="code"><span data-field="title" data-format="default">ds_map_secure_save</span>(map, filename);</p>
   <table>
     <tbody>
       <tr>

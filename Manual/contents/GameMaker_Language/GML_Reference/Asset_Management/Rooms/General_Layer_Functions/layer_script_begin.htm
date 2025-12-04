@@ -14,11 +14,11 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>layer_script_begin</h1>
+  <h1><span data-field="title" data-format="default">layer_script_begin</span></h1>
   <p>С помощью этой функции вы можете назначить слою <a href="../../../../GML_Overview/Script_Functions.htm">функцию сценария</a>, которая будет вызываться перед отрисовкой слоя. При добавлении функции к слою она будет выполняться в начале <i>каждого из различных событий рисования</i>, поэтому вы можете захотеть проверить в назначенной функции, какое событие является текущим событием рендеринга, и адаптировать код в соответствии с этим. Это можно сделать, проверив <a href="../../Objects/Object_Events/event_type.htm"><span class="inline">event_type</span></a> и/или <a href="../../Objects/Object_Events/event_number.htm"><span class="inline">event_number</span></a> (см. расширенный пример ниже). Обратите внимание, что функция <i>не</i> предназначена для вызова в любых событиях рисования или событиях шага, а должна вызываться только в начале комнаты в <strong>коде создания комнаты</strong> или в <strong>событии Create Event / </strong> <strong>Room Start Event</strong> экземпляра.</p>
   <p> </p>
   <h4>Синтаксис:</h4>
-  <p class="code">layer_script_begin(layer_id, script);</p>
+  <p class="code"><span data-field="title" data-format="default">layer_script_begin</span>(layer_id, script);</p>
   <table>
     <tbody>
       <tr>

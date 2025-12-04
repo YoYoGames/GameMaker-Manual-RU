@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>часть_излучателя_потока</title>
+  <title>part_emitter_stream</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../../assets/scripts/main_script.js"></script>
@@ -14,11 +14,11 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>часть_излучателя_потока</h1>
+  <h1><span data-field="title" data-format="default">part_emitter_stream</span></h1>
   <p>Эта функция позволяет настроить эмиттер на поток частиц определенного типа и обычно используется в событии create, поскольку это одноразовый код, который устанавливает эмиттер на генерацию заданного количества частиц на каждом последующем шаге игры. Частицы испускаются в соответствии с распределением, формой и положением, заданными функцией <a href="part_emitter_region.htm"><span class="inline">part_emitter_region()</span></a>. Вы можете установить количество излучаемых частиц на ноль и вызвать эту функцию снова, чтобы &quot;выключить&quot; поток частиц, также функция будет принимать отрицательные числа для количества, в этом случае эмиттер будет генерировать частицы на основе случайности. Например, если количество частиц установлено на -5, то вероятность того, что частица будет производиться каждый шаг, составляет 1:5. Если вам нужно, чтобы частицы появлялись все сразу, а не на каждом шаге, используйте функцию <a href="part_emitter_burst.htm"><span class="inline">part_emitter_burst()</span></a>.</p>
   <p> </p>
   <h4>Синтаксис:</h4>
-  <p class="code">part_emitter_stream(ps, ind, parttype, number);</p>
+  <p class="code"><span data-field="title" data-format="default">part_emitter_stream</span>(ps, ind, parttype, number);</p>
   <table>
     <tbody>
       <tr>

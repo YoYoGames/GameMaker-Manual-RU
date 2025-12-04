@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>список_эллипсов_коллизий</title>
+  <title>collision_ellipse_list</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../assets/scripts/main_script.js"></script>
@@ -15,13 +15,13 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>список_эллипсов_коллизий</h1>
+  <h1><span data-field="title" data-format="default">collision_ellipse_list</span></h1>
   <p>Эта функция аналогична функции <a href="collision_ellipse.htm"><span class="inline">collision_ellipse()</span></a> только вместо обнаружения одного столкновения за раз, она обнаруживает несколько столкновений. Вы задаете позиции x/y левого верхнего и правого нижнего угла эллиптической области для проверки, а также объект для проверки, и можете установить точность проверки (в этом случае все проверяемые экземпляры должны иметь <i>точные</i> маски столкновений), а также указать, должна ли проверка включать вызывающий экземпляр или нет.</p>
   <p>Вы также предоставляете <a href="../../Data_Structures/DS_Lists/DS_Lists.htm">список DS</a>, поэтому <a href="../../Asset_Management/Instances/Instance_Variables/id.htm"><span class="inline">id</span></a> значения всех экземпляров, которые сталкиваются с вызывающим экземпляром, будут добавлены в конец данного списка. Вы можете <a href="../../Data_Structures/DS_Lists/ds_list_clear.htm">очистить</a> список перед вызовом этой функции, чтобы он содержал только результаты этого вызова функции. Также есть возможность упорядочить экземпляры по расстоянию от начала эллиптической области до их начала. Функция возвращает количество найденных экземпляров или 0, если не найдено ни одного.</p>
   <p>Обратите внимание, что вместо индекса объекта можно использовать <a href="../../../GML_Overview/Instance_Keywords.htm">ключевое слово instance</a> <span class="inline">all</span>, чтобы проверить все экземпляры в текущей комнате, что может включать экземпляр, выполняющий код (в зависимости от аргумента <span class="inline">notme</span> ).</p>
   <p> </p>
   <h4>Синтаксис:</h4>
-  <p class="code">collision_ellipse_list(x1, y1, x2, y2, obj, prec, notme, list, ordered);</p>
+  <p class="code"><span data-field="title" data-format="default">collision_ellipse_list</span>(x1, y1, x2, y2, obj, prec, notme, list, ordered);</p>
   <table>
     <tbody>
       <tr>

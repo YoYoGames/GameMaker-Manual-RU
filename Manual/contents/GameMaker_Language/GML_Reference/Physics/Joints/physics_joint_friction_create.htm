@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>физика_сустава_трения_создать</title>
+  <title>physics_joint_friction_create</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../assets/scripts/main_script.js"></script>
@@ -15,12 +15,12 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>физика_сустава_трения_создать</h1>
+  <h1><span data-field="title" data-format="default">physics_joint_friction_create</span></h1>
   <p>Фрикционное соединение немного отличается от всех других соединений в физическом моделировании тем, что созданное соединение не будет ограничивать положение или движение экземпляра, а скорее его скорость и вращение. Для этого берутся максимальные входные значения силы и крутящего момента и применяются ко второму объекту, чтобы привести скорость и угловой момент к тем же значениям, что и у первого объекта. Таким образом, если у вас есть неподвижный экземпляр и подвижный экземпляр, а затем соединить их фрикционным шарниром, то подвижный экземпляр будет постепенно замедляться, пока тоже не станет неподвижным. Если оба экземпляра были движущимися, то скорость движения второго экземпляра будет изменена так, чтобы соответствовать скорости движения первого экземпляра.</p>
   <p><img>Как и для большинства других соединений, вы предоставляете экземпляры, которые нужно соединить вместе, а также позицию, в которой будет создано соединение в комнате. Затем вы задаете максимальную силу и максимальный момент (направленное и вращательное трение), и если вы установите значение &quot;col&quot; <span class="inline">true</span>, то два экземпляра могут взаимодействовать и сталкиваться друг с другом, но <i>только</i> если у них есть события столкновения, однако если оно установлено на <span class="inline">false</span>, они не будут сталкиваться независимо ни от чего.</p>
   <p> </p>
   <h4>Синтаксис:</h4>
-  <p class="code">physics_joint_friction_create(inst1, inst2, anchor_x, anchor_y, max_force, max_torque, col)</p>
+  <p class="code"><span data-field="title" data-format="default">physics_joint_friction_create</span>(inst1, inst2, anchor_x, anchor_y, max_force, max_torque, col)</p>
   <table>
     <tbody>
       <tr>

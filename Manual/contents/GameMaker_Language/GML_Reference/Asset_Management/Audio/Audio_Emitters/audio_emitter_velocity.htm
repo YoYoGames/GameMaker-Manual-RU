@@ -14,11 +14,11 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>audio_emitter_velocity</h1>
+  <h1><span data-field="title" data-format="default">audio_emitter_velocity</span></h1>
   <p>Эта функция может быть использована для придания излучателю эффекта <em>Доплера </em>и имитации движения звука на основе вектора, который определяется из заданных относительных положений x, y и z. Если эмиттер сам по себе никогда не будет двигаться, вам обычно не нужно задавать эти значения, но, например, если вы создаете скроллинговую игру-стрелялку, где враги появляются справа и прокручиваются влево, вы должны установить скорость (hspeed, 0, 0) в событии создания врагов (и обновить эмиттер каждого экземпляра в событии шага с помощью параметра <a href="audio_emitter_position.htm"><span class="inline">audio_emitter_position()</span></a>), чтобы придать любым звукам, издаваемым вражескими экземплярами, правильный доплер, когда они проходят мимо экземпляра игрока (который, в свою очередь, будет использовать функцию <a href="../Audio_Listeners/audio_listener_position.htm"><span class="inline">audio_listener_position()</span></a> для установки <i>слушателя</i> в правильное положение).</p>
   <p> </p>
   <h4>Синтаксис:</h4>
-  <p class="code">audio_emitter_velocity(emitter, vx, vy, vz);</p>
+  <p class="code"><span data-field="title" data-format="default">audio_emitter_velocity</span>(emitter, vx, vy, vz);</p>
   <table>
     <tbody>
       <tr class="rh-cursor-column">

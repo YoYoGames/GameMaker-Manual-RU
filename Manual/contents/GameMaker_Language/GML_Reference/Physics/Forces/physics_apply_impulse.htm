@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>физика_применить_импульс</title>
+  <title>physics_apply_impulse</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../assets/scripts/main_script.js"></script>
@@ -14,13 +14,13 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>физика_применить_импульс</h1>
+  <h1><span data-field="title" data-format="default">physics_apply_impulse</span></h1>
   <p>С помощью физики в <span data-keyref="GameMaker Name">GameMaker</span> к объекту можно применить не только силу и гравитацию, но и импульс. Он немного отличается от силы тем, что при его приложении он <i>немедленно </i>повлияет на скорость и, возможно, крутящий момент (или &quot;вращение&quot;) объекта, особенно если точка, выбранная для приложения импульса, не совпадает с центром масс (обратите внимание: центр масс <i>не обязательно</i> совпадает с началом координат!). Вот иллюстрация:</p>
   <p><img>Как вы видите, игрок нажал на мяч, и это дало ему импульс двигаться в правый верхний угол, вращаясь при этом. Точный импульс определяется вектором, который мы получаем из компонентов ximpulse/yimpulse по отношению к координатам xpos/ypos - это означает, что импульс рассчитывается как расстояние от xpos/ypos до ximpulse/yimpulse в Ньютонах, а направление - это угол, который мы получаем от xpos/ypos до ximpulse/yimpulse.</p>
   <p class="note"><b>ПРИМЕЧАНИЕ</b>: Физический мир использует метры для всех своих расчетов, а соотношение пикселей на метр определяется в редакторе комнаты или с помощью функции <span style="font-size:1px;"><a href="../The_Physics_World/physics_world_create.htm"><span class="inline">physics_world_create()</span></a></span>.</p>
   <p> </p>
   <h4>Синтаксис:</h4>
-  <p class="code">physics_apply_impulse(xpos, ypos, ximpulse, yimpulse)</p>
+  <p class="code"><span data-field="title" data-format="default">physics_apply_impulse</span>(xpos, ypos, ximpulse, yimpulse)</p>
   <table>
     <tbody>
       <tr>

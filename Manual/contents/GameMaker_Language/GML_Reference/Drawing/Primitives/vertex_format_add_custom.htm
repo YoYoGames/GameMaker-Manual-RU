@@ -14,7 +14,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>vertex_format_add_custom</h1>
+  <h1><span data-field="title" data-format="default">vertex_format_add_custom</span></h1>
   <p>Эта функция позволяет использовать пользовательский тип данных для определенных атрибутов формата вершин как часть создаваемого нового формата вершин. Доступные для использования значения определяются выбранной вами константой типа данных, перечисленной ниже:</p>
   <table>
     <colgroup>
@@ -55,7 +55,7 @@
       </tr>
     </tbody>
   </table>
-  <p><br>
+  <p><br />
     Также необходимо определить, как будут использоваться эти константы, чтобы значения можно было правильно &quot;привязать&quot; в создаваемом шейдере. Это необходимо в связи с тем, что DX и OpenGL имеют разные требования, поэтому если вы не свяжете их должным образом, они не будут правильно отображаться в шейдере. Доступные константы использования, которые вы можете выбрать, перечислены ниже, и их использование будет зависеть от специфики создаваемого шейдера:</p>
   <table>
     <colgroup>
@@ -116,7 +116,7 @@
       </tr>
     </tbody>
   </table>
-  <p><br>
+  <p><br />
     Есть несколько важных моментов, на которые следует обратить внимание при использовании таких пользовательских форматов:</p>
   <ul class="colour">
     <li>Функция <span class="inline">vertex_format_add_custom()</span> поддерживает только <span class="inline">vertex_usage_position</span>, <span class="inline">vertex_usage_colour</span>, <span class="inline">vertex_usage_normal</span> и <span class="inline">vertex_usage_textcoord</span> при использовании шейдеров GLSL. Они будут отображаться на атрибуты шейдеров <span class="inline">in_Position</span>, <span class="inline">in_Colour[0 - ...]</span>, <span class="inline">in_Normal</span> соответственно (все, что не является одним из этих трех атрибутов - например, координаты текстуры - может быть отображено на любой атрибут, который вы определите).</li>
@@ -145,7 +145,7 @@
      
   </ul>
   <h4>Синтаксис:</h4>
-  <p class="code">vertex_format_add_custom(type, usage);</p>
+  <p class="code"><span data-field="title" data-format="default">vertex_format_add_custom</span>(type, usage);</p>
   <table>
     <tbody>
       <tr>

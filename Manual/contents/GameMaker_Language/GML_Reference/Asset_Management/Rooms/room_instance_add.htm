@@ -15,11 +15,11 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>room_instance_add</h1>
+  <h1><span data-field="title" data-format="default">room_instance_add</span></h1>
   <p>С помощью этой функции вы можете добавить экземпляр в любую комнату, кроме текущей, и в любую позицию внутри этой комнаты. Функция возвращает уникальный <a href="../Instances/Instance_Variables/id.htm"><span class="inline">id</span></a> экземпляра, который затем может быть использован в дальнейших вызовах функций для установки свойств и т.д... этого экземпляра, но <strong>только после того, как игра войдет в указанную комнату</strong>. Если вы хотите создать экземпляр в текущей комнате, вы должны использовать функцию <a href="../Instances/instance_create_layer.htm"><span class="inline">instance_create_layer()</span></a>. Обратите внимание, что вызов этой функции на активе комнаты, созданном в браузере активов, <strong>навсегда добавит экземпляр в комнату</strong>, и даже вызов <span class="inline">game_restart()</span> не вернет комнату в исходное состояние (только завершение игры и ее повторное открытие приведет к тому, что комната снова окажется в исходном состоянии).</p>
   <p> </p>
   <h4>Синтаксис:</h4>
-  <p class="code">room_instance_add(index, x, y, obj);</p>
+  <p class="code"><span data-field="title" data-format="default">room_instance_add</span>(index, x, y, obj);</p>
   <table>
     <tbody>
       <tr>

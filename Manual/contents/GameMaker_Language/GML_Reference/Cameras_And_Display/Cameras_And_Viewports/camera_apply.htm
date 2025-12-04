@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>камера_применить</title>
+  <title>camera_apply</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../assets/scripts/main_script.js"></script>
@@ -14,11 +14,11 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>камера_применить</h1>
+  <h1><span data-field="title" data-format="default">camera_apply</span></h1>
   <p>Эта функция немедленно применит заданные настройки камеры к текущему виду камеры, который рендерится. Хотя вы можете установить любой вид камеры с помощью специальных функций <span class="inline">camera_set_*</span>, новые настройки не будут использоваться для рендеринга до <i>следующего</i> кадра игры, но с помощью этой функции вы можете сделать эти изменения немедленно. Если вы используете несколько видов, то функция должна быть использована в <b>событии Draw Event</b>, и вы можете использовать переменную <a href="view_current.htm"><span class="inline">view_current</span></a> для выборочного применения заданной камеры только к тому виду камеры, который рендерится в данный момент. Обратите внимание, что при этом НЕ изменяется значение ID камеры, а только настройки для этой камеры, и что если вы используете эту функцию для камеры по умолчанию (т.е. для внутренней камеры, которую <span data-keyref="GameMaker Name">GameMaker</span> использует, когда ни одна камера вида не активна), то изменения будут перезаписаны на следующем игровом кадре внутренними настройками для рисования комнаты.</p>
   <p> </p>
   <h4>Синтаксис:</h4>
-  <p class="code">camera_apply(camera_id)</p>
+  <p class="code"><span data-field="title" data-format="default">camera_apply</span>(camera_id)</p>
   <table>
     <tbody>
       <tr>

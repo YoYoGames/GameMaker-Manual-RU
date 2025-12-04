@@ -14,13 +14,13 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>show_question_async</h1>
+  <h1><span data-field="title" data-format="default">show_question_async</span></h1>
   <p>Эта функция открывает окно и показывает пользователю вопрос, заданный в функции. Это асинхронная функция, поэтому <span data-keyref="GameMaker Name">GameMaker</span> <i>не</i> блокирует устройство, на котором она выполняется, в ожидании ответа, а продолжает выполнять события в обычном режиме. Функция имеет две кнопки, которые показывают &quot;Да&quot; и &quot;Нет&quot;, и как только пользователь нажимает одну из них, запускается асинхронное событие <b>Dialog</b>, которое, <i>только</i> на время этого события, будет иметь карту DS, сохраненную в переменной <a href="../../../GML_Overview/Variables/Builtin_Global_Variables/async_load.htm"><span class="inline">async_load</span></a>.</p>
   <p>Эта карта будет содержать два ключа, &quot;<strong>id</strong>&quot; и &quot;<strong>status</strong>&quot;. &quot;id&quot; - это значение, которое было возвращено функцией при вызове, а &quot;status&quot; будет либо <span class="inline">true</span>, либо <span class="inline">false</span> для &quot;Yes&quot; и &quot;No&quot; соответственно.</p>
   <p class="note"><strong><em><span class="note">ПРИМЕЧАНИЕ</span></em></strong><em> Эта функция <span data-keyref="Dialog for debug only">предназначена <strong>только</strong> для <strong>отладки и тестирования</strong></span>и не должна использоваться в выпущенных играх. Для этих целей вы должны создать пользовательский интерфейс для получения ввода от игроков, чтобы иметь полный контроль над тем, как выглядят и ведут себя диалоги.</em></p>
   <p> </p>
   <h4>Синтаксис:</h4>
-  <p class="code">show_question_async(string);</p>
+  <p class="code"><span data-field="title" data-format="default">show_question_async</span>(string);</p>
   <table>
     <tbody>
       <tr>

@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>камера_создания_вида</title>
+  <title>camera_create_view</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../assets/scripts/main_script.js"></script>
@@ -15,12 +15,12 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>камера_создания_вида</h1>
+  <h1><span data-field="title" data-format="default">camera_create_view</span></h1>
   <p>Эта функция создаст новую камеру, затем установит ее вид в комнате, после чего вернет уникальное значение ID для идентификации камеры в последующих вызовах функции. Камера будет создана с использованием значений, заданных в этой функции для позиции, размера и других деталей, которые соотносятся со значениями, заданными в редакторе комнат (см. <a href="../../../../The_Asset_Editors/Rooms.htm">здесь</a>). Обратите внимание, что эта функция может принимать <i>различное количество аргументов</i>, обязательными являются только аргументы x/y position и width/height. Любые не указанные аргументы будут использоваться по умолчанию.</p>
   <p>Обратите внимание, что камеры, как и все динамические ресурсы, занимают память при создании. Это означает, что вам нужно следить за тем, чтобы не создавать камеры без необходимости и уничтожать те, которые вам не нужны, вызывая функцию <a href="camera_destroy.htm"><span class="inline">camera_destroy()</span></a>. Это также означает, что камеры будут сохраняться от комнаты к комнате, если они назначены переменной <span class="inline">global</span> (они будут сохраняться и при назначении экземпляру или локальной переменной, но вы не сможете получить к ним доступ после смены комнаты, отсюда утечка памяти), так что вы можете, например, создать новую камеру, назначить ее глобальной переменной, а затем в начале каждой комнаты использовать функции <span class="inline">camera_set_*</span> для установки свойств перед назначением ее порту просмотра.</p>
   <p> </p>
   <h4>Синтаксис:</h4>
-  <p class="code">camera_create_view(room_x, room_y, width, height, [angle, object, x_speed, y_speed, x_border, y_border])</p>
+  <p class="code"><span data-field="title" data-format="default">camera_create_view</span>(room_x, room_y, width, height, [angle, object, x_speed, y_speed, x_border, y_border])</p>
   <table>
     <tbody>
       <tr>

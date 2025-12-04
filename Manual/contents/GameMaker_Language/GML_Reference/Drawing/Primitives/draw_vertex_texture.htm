@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>рисовать_вершинную_текстуру</title>
+  <title>draw_vertex_texture</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../assets/scripts/main_script.js"></script>
@@ -15,7 +15,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>рисовать_вершинную_текстуру</h1>
+  <h1><span data-field="title" data-format="default">draw_vertex_texture</span></h1>
   <p>Эта функция определяет положение текстурированной вершины для примитива. Окончательный вид примитива будет зависеть от типа примитива, выбранного для рисования (см. <a href="draw_primitive_begin.htm"><span class="inline">draw_primitive_begin()</span></a> более подробную информацию), порядка добавления вершин и положения начальной точки, заданной для текстуры. Чтобы завершить и нарисовать примитив, необходимо вызвать команду <a href="draw_primitive_end.htm"><span class="inline">draw_primitive_end()</span></a>.</p>
   <p>Вы также можете выбрать рисование только <i>части</i> текстуры на поверхности примитива, установив соответствующую xtex/ytex позицию для выборки (эти координаты также известны как <b>UV-точки</b> ). Эта точка определяется значением от 0 до 1, причем левый верхний угол используемого изображения является точкой (0,0), а правый нижний угол - точкой (1,1). Таким образом, можно текстурировать примитив, используя только часть исходного изображения.</p>
   <p>При рисовании текстурированного примитива текстура будет смешиваться с цветом, заданным параметром <a html="../colour And Blending/draw_set_colour.html"><span class="inline">draw_set_colour</span>. Это означает, что для рисования текстуры без смешивания следует установить значение <span class="inline">c_white</span>, как показано в примере ниже.</a></p>

@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>часть_излучателя_создать</title>
+  <title>part_emitter_create</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../../assets/scripts/main_script.js"></script>
@@ -15,11 +15,11 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>часть_излучателя_создать</h1>
+  <h1><span data-field="title" data-format="default">part_emitter_create</span></h1>
   <p>Эта функция используется для создания нового эмиттера частиц в заданной системе частиц. Функция возвращает значение индекса для нового эмиттера, которое должно храниться в переменной и использоваться во всех дальнейших функциях, ссылающихся на эмиттер, а сам эмиттер должен быть уничтожен, если он больше не используется, чтобы предотвратить утечку памяти (это можно сделать с помощью специальных функций уничтожения эмиттера или путем уничтожения всей системы частиц, к которой принадлежит эмиттер).</p>
   <p class="note"><span class="note">ПРИМЕЧАНИЕ</span> Идентификаторы эмиттеров, возвращаемые этой функцией, используются повторно, например, если вы сначала создадите три эмиттера частиц, им будут присвоены идентификаторы 0, 1 и 2. Если вы затем уничтожите второй эмиттер (который получил ID 1) с помощью функции <a href="part_emitter_destroy.htm"><span class="notranslate">part_emitter_destroy</span></a> и затем создадите другой эмиттер, то этот эмиттер будет повторно использовать ID 1. Поскольку ID эмиттера 2 используется, следующий эмиттер получит ID 3, и так далее.</p>
   <h4>Синтаксис:</h4>
-  <p class="code">part_emitter_create(ps);</p>
+  <p class="code"><span data-field="title" data-format="default">part_emitter_create</span>(ps);</p>
   <table>
     <tbody>
       <tr>

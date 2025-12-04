@@ -15,14 +15,14 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>matrix_build_projection_perspective</h1>
+  <h1><span data-field="title" data-format="default">matrix_build_projection_perspective</span></h1>
   <p>Эта функция строит матрицу перспективной проекции на основе размеров ближней плоскости обрезания, используя указанные ниже параметры.</p>
   <p>Обратите внимание, что поле зрения камеры будет меняться в зависимости от указанных значений <span class="inline">width</span>, <span class="inline">height</span> и <span class="inline">znear</span>, поскольку ширина и высота проекции размещаются в позиции Z, указанной в аргументе <span class="inline">znear</span>.</p>
   <p>Например, при постоянном размере 640x480 поле зрения будет шире, если <span class="inline">znear</span> находится ближе к камере, но будет более узким, если <span class="inline">znear</span> находится далеко от камеры. Это поведение демонстрируется на следующем рисунке:</p>
   <p><img>В связи с этим рекомендуется использовать значение <span class="inline">znear</span>, равное ширине проекции, в результате чего поле зрения будет соответствовать эквивалентной ортографической проекции.</p>
   <p> </p>
   <h4>Синтаксис:</h4>
-  <p class="code">matrix_build_projection_perspective(width, height, znear, zfar);</p>
+  <p class="code"><span data-field="title" data-format="default">matrix_build_projection_perspective</span>(width, height, znear, zfar);</p>
   <table>
     <tbody>
       <tr>

@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>столкновение_круга</title>
+  <title>collision_circle</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../assets/scripts/main_script.js"></script>
@@ -15,13 +15,13 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>столкновение_круг</h1>
+  <h1><span data-field="title" data-format="default">collision_circle</span></h1>
   <p><span class="inline">Collision_circle</span> создает вокруг точек x1,y1 круговую зону заданного пользователем радиуса, а затем проверяет эту зону на столкновение с <b>любым</b> экземпляром объекта, указанным в аргументе &quot;obj&quot;. Эта проверка может быть точной или нет, но для включения точных столкновений, объект или экземпляр, который вы проверяете, <i>должен</i> также иметь включенные точные столкновения для своего <span class="notranslate">sprite</span>. Если нет, то проверка по умолчанию основывается на ограничительных границах. На следующем изображении показано, как это работает:</p>
   <p><img>Здесь экземпляр в центре использует круг столкновения для проверки объектов-шаров. Теперь синие <i>не</i> имеют точной граничной области, и, как вы можете видеть, даже если <span class="notranslate">sprite</span> фактически не касается круга, столкновение все равно может произойти (даже если вы установите опцию exact в функции на true), так как граничная область этого <span class="notranslate">sprite</span> пересекает круговую область, определенную collision_circle. С другой стороны, зеленые шары будут считаться столкнувшимися только в том случае, если фактический <span class="notranslate">sprite</span> пересекает заданную окружность. Помните, что для учета точных столкновений <i>как</i> объект <span class="notranslate">sprite</span>, так и функция collision должны иметь метку exact как on. Следует также отметить, что возвращаемым значением функции может быть id <i>любого</i> из экземпляров, считающихся столкнувшимися.</p>
   <p>Обратите внимание, что вместо индекса объекта вы можете указать экземпляр <a href="../../Asset_Management/Instances/Instance_Variables/id.htm"><span class="inline">id</span></a> для проверки конкретного экземпляра, или <a href="../../../GML_Overview/Instance_Keywords.htm">ключевые слова экземпляра</a> <span class="inline">all</span>, или <span class="inline">other</span> (в зависимости от события и текущей области видимости кода).</p>
   <p> </p>
   <h4>Синтаксис:</h4>
-  <p class="code">collision_circle(x1, y1, rad, obj, prec, notme);</p>
+  <p class="code"><span data-field="title" data-format="default">collision_circle</span>(x1, y1, rad, obj, prec, notme);</p>
   <p> </p>
   <table>
     <tbody>

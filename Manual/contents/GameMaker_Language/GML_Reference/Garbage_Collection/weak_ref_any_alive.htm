@@ -15,12 +15,12 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>weak_ref_any_alive</h1>
+  <h1><span data-field="title" data-format="default">weak_ref_any_alive</span></h1>
   <p>С помощью этой функции вы можете проверить <a class="glossterm" data-glossterm="слабая ссылка" href="#">слабые ссылки</a> на различные структуры, чтобы узнать, живы они еще или нет. Вы передаете массив слабых ссылок для проверки (каждая слабая ссылка должна быть создана с помощью функции <a href="weak_ref_create.htm"><span class="inline">weak_ref_create()</span></a>), и функция вернет <span class="inline">true</span>, если <em><strong>любой </strong></em>если на эти структуры все еще где-то ссылаются, или <span class="inline">false</span>, если это не так и они были собраны в мусор. Обратите внимание, что если вы предоставите массив, в котором любое из значений не является слабой ссылкой, функция вернет <span class="inline">undefined</span>.</p>
   <p>Обратите внимание, что функция также принимает два необязательных аргумента, первый из которых позволяет указать начальный индекс массива для проверки, а также аргумент, задающий количество позиций (длину) от этого индекса для проверки. Если они указаны, то будут проверяться только индексы массива в пределах этих параметров.</p>
   <p> </p>
   <h4>Синтаксис:</h4>
-  <p class="code">weak_ref_any_alive(array, [index], [length]);</p>
+  <p class="code"><span data-field="title" data-format="default">weak_ref_any_alive</span>(array, [index], [length]);</p>
   <table>
     <tbody>
       <tr>

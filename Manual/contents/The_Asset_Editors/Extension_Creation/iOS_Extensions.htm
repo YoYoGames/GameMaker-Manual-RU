@@ -26,8 +26,8 @@
       <ol>
         <li>Убедитесь, что исходные файлы делегата имеют то же имя, что и класс делегата (например, <span class="inline">@interface MyCustomAppDelegate</span> должен быть определен в &quot; <span class="inline">MyCustomAppDelegate.h</span>&quot;).</li>
         <li>Добавьте переменную окружения <span class="inline">${YYExtAppDelegateIncludes}</span> в верхнюю часть заголовочного файла делегата вашего приложения. Она будет заменена во время компиляции соответствующими включаемыми файлами для родительского класса делегата.</li>
-        <li>Используйте переменную окружения <span class="inline">${YYExtAppDelegateBaseClass}</span> в качестве базового класса для вашего пользовательского делегата приложения. Она будет заменена во время компиляции на правильный базовый класс делегата.<br>
-          <br>
+        <li>Используйте переменную окружения <span class="inline">${YYExtAppDelegateBaseClass}</span> в качестве базового класса для вашего пользовательского делегата приложения. Она будет заменена во время компиляции на правильный базовый класс делегата.<br />
+          <br />
           Чтобы ваше расширение работало с другими расширениями, использующими пользовательские делегаты приложений, вы должны вызывать любые методы базового класса из переопределенных методов вашего дочернего класса. Перед вызовом метода суперкласса необходимо убедиться, что он реализован в иерархии классов, чтобы избежать ошибок, например:
         </li>
       </ol>
@@ -40,17 +40,17 @@
                 return TRUE;<br />
         }</p>
     </li>
-    <li class="dropspot"><strong>Системные фреймворки</strong>: Здесь вы можете добавить любые <span class="notranslate">iOS</span> системные <a class="glossterm" data-glossterm="структура" href="#">фреймворки</a>в ваше расширение. Они добавляются нажатием кнопки <img>, которая добавит фреймворк, который затем можно отредактировать, дважды щелкнув на нем <img>. Вы можете узнать больше о доступных системных фреймворках <a href="https://developer.apple.com/documentation/">здесь</a>. Чтобы удалить системный фреймворк, просто выберите его и нажмите кнопку <img>.<br>
-      <br>
+    <li class="dropspot"><strong>Системные фреймворки</strong>: Здесь вы можете добавить любые <span class="notranslate">iOS</span> системные <a class="glossterm" data-glossterm="структура" href="#">фреймворки</a>в ваше расширение. Они добавляются нажатием кнопки <img>, которая добавит фреймворк, который затем можно отредактировать, дважды щелкнув на нем <img>. Вы можете узнать больше о доступных системных фреймворках <a href="https://developer.apple.com/documentation/">здесь</a>. Чтобы удалить системный фреймворк, просто выберите его и нажмите кнопку <img>.<br />
+      <br />
       <img>Вы можете установить флажок для фреймворка, чтобы отметить его как &quot;<strong>Weak Reference</strong>&quot;. Это добавит его в раздел &quot;<strong>Build Phases -&gt; Link Binary with Libraries</strong>&quot; на сайте <span class="notranslate">Xcode</span> как &quot;<strong>Optional</strong>&quot; фреймворк, в отличие от &quot;<strong>Required</strong>&quot; фреймворка (который используется по умолчанию).
     </li>
-    <li class="dropspot"><strong>Сторонние фреймворки + комплекты</strong>: Этот раздел предназначен для добавления сторонних фреймворков и пакетов SDK. Как и в случае с системными фреймворками, для их добавления нажмите кнопку <img>, а для редактирования дважды щелкните <img>, а выделив их и нажав <img>, удалите их (см. документацию, прилагаемую к выбранному вами SDK, для получения информации о названии фреймворка).<br>
-      <br>
-      Здесь вы можете выбрать: <strong>не встраивать</strong> фреймворк, <strong>встраивать и подписывать</strong> его или <strong>встраивать его без подписи</strong>:<br>
+    <li class="dropspot"><strong>Сторонние фреймворки + комплекты</strong>: Этот раздел предназначен для добавления сторонних фреймворков и пакетов SDK. Как и в случае с системными фреймворками, для их добавления нажмите кнопку <img>, а для редактирования дважды щелкните <img>, а выделив их и нажав <img>, удалите их (см. документацию, прилагаемую к выбранному вами SDK, для получения информации о названии фреймворка).<br />
+      <br />
+      Здесь вы можете выбрать: <strong>не встраивать</strong> фреймворк, <strong>встраивать и подписывать</strong> его или <strong>встраивать его без подписи</strong>:<br />
       <img>Это отражает ту же опцию для фреймворка, добавленного в разделе &quot;<strong>Фреймворки, библиотеки и встроенное содержимое</strong>&quot; на <span class="notranslate">Xcode</span>.
     </li>
-    <li class="dropspot"><strong>Введите путь к фреймворку на Mac</strong>: Если вы хотите добавить фреймворк в расширение, файлы которого присутствуют на Mac, используемом для сборки вашего проекта, вы можете ввести путь к этому фреймворку (на машине сборки) в это поле, а затем нажать кнопку <img>, чтобы добавить его.<br>
-      <br>
+    <li class="dropspot"><strong>Введите путь к фреймворку на Mac</strong>: Если вы хотите добавить фреймворк в расширение, файлы которого присутствуют на Mac, используемом для сборки вашего проекта, вы можете ввести путь к этому фреймворку (на машине сборки) в это поле, а затем нажать кнопку <img>, чтобы добавить его.<br />
+      <br />
       Путь должен указывать на файл <span class="inline">.framework</span>, который будет сжат как <span class="inline">.zip</span> и помещен в папку <span class="inline">iOSSourceFromMac</span> в каталоге расширения; вы можете легко открыть его в любое время, щелкнув правой кнопкой мыши <img> на расширении и выбрав <em>Open in Explorer</em>.
     </li>
     <li class="dropspot"><strong>Добавить источник</strong>: Вы можете использовать этот пункт для добавления исходных файлов, необходимых для работы вашего расширения. Добавленные файлы будут храниться в папке <span class="inline">iOSSource</span> в каталоге вашего расширения.</li>
@@ -96,28 +96,28 @@
       </tr>
       <tr>
         <td style=""><b>Выплаты</b></td>
-        <td style="">{RUNTIME}\ios\TemplateProject\${YYXCodeProjName}\<br>
+        <td style="">{RUNTIME}\ios\TemplateProject\${YYXCodeProjName}\<br />
          <span>${YYXCodeProjName}.entitlements</span>
         </td>
       </tr>
       <tr>
         <td style=""><b>info.plist</b></td>
-        <td style="">{RUNTIME}\ios\TemplateProject\${YYXCodeProjName}\<br>
+        <td style="">{RUNTIME}\ios\TemplateProject\${YYXCodeProjName}\<br />
           Вспомогательные файлы\${YYXCodeProjName}-Info<span>.plist</span></td>
       </tr>
       <tr>
         <td style=""><strong>infoPlist.strings</strong></td>
-        <td style="">{RUNTIME}\ios\TemplateProject\${YYXCodeProjName}\<br>
+        <td style="">{RUNTIME}\ios\TemplateProject\${YYXCodeProjName}\<br />
           en.lproj\InfoPlist.strings</td>
       </tr>
       <tr>
         <td style=""><strong>project.pbxproj</strong></td>
-        <td style="">{RUNTIME}\ios\TemplateProject\${YYXCodeProjName}.xcodeproj\<br>
+        <td style="">{RUNTIME}\ios\TemplateProject\${YYXCodeProjName}.xcodeproj\<br />
           project.pbxproj</td>
       </tr>
       <tr>
         <td style=""><strong>xcscheme</strong></td>
-        <td style="">{RUNTIME}\ios\TemplateProject\${YYXCodeProjName}.xcodeproj\<br>
+        <td style="">{RUNTIME}\ios\TemplateProject\${YYXCodeProjName}.xcodeproj\<br />
           xcshareddata\xcschemes\${YYXCodeProjName}.xcscheme</td>
       </tr>
       <tr>

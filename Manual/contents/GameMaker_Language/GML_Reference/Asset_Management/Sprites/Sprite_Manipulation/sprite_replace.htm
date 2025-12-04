@@ -14,7 +14,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>sprite_replace</h1>
+  <h1><span data-field="title" data-format="default">sprite_replace</span></h1>
   <p>Эта функция работает почти так же, как и функция <a href="sprite_add.htm"><span class="inline">sprite_add()</span></a>, только вместо того, чтобы возвращать индекс импортируемого <span class="notranslate">sprite</span>, она перезаписывает ранее созданный индекс <span class="notranslate">sprite</span>. При использовании этой функции вы должны использовать индекс <span class="notranslate">sprite</span>, который был создан и сохранен в переменной с помощью других функций, таких как <a href="sprite_add.htm"><span class="inline">sprite_add()</span></a> или <a href="sprite_create_from_surface.htm"><span class="inline">sprite_create_from_surface()</span></a>, или даже <a href="sprite_duplicate.htm"><span class="inline">sprite_duplicate()</span></a>, а не актив <span class="notranslate">sprite</span> дерева ресурсов. Вы <i>можете</i> заменить <span class="notranslate">sprite</span> из игровых активов с помощью этой функции, но это означает, что вы потеряете идентификатор ссылки для <span class="notranslate">sprite</span>, который вы заменяете, независимо от того, вызываете ли вы <span class="inline">game_restart()</span> или нет, и поэтому не рекомендуется. Независимо от заменяемого <span class="notranslate">sprite</span>, эта функция <b>создаст новую страницу текстуры для спрайта</b>, поэтому при ее использовании следует соблюдать осторожность, так как это может негативно сказаться на производительности, увеличив количество необходимых замен текстур для рендеринга.</p>
   <p>Загружаемый файл изображения <b>всегда</b> должен быть в формате <span class="inline">*.png</span>, а все изображения, которые должны быть превращены в анимированные <span class="notranslate">sprites</span>, должны иметь формат &quot;strip&quot; (см. рисунок ниже). Они будут разбиты на указанное количество суб-изображений по правилу <b>sprite width = strip width / sub images</b>.</p>
   <p><img alt="Example Sprite Strip" class="center" src="../../../../../assets/Images/Scripting_Reference/GML/Reference/Sprites/spr_strip.png" /></p>
@@ -26,7 +26,7 @@
   <p class="note"><b>ПРИМЕЧАНИЕ</b>: Вы должны знать, что если вы используете эту функцию в вашей целевой игре HTML5 для загрузки ресурсов с внешнего сервера, то из-за защиты XSS в браузерах попытки загрузки ресурсов из других доменов могут быть заблокированы и возвращать пустые результаты.</p>
   <p> </p>
   <h4>Синтаксис:</h4>
-  <p class="code">sprite_replace(ind, fname, imgnumb, removeback, smooth, xorig, yorig);</p>
+  <p class="code"><span data-field="title" data-format="default">sprite_replace</span>(ind, fname, imgnumb, removeback, smooth, xorig, yorig);</p>
   <table>
     <tbody>
       <tr>

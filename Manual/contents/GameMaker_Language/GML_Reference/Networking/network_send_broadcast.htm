@@ -14,13 +14,13 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>network_send_broadcast</h1>
+  <h1><span data-field="title" data-format="default">network_send_broadcast</span></h1>
   <p>С помощью этой функции вы можете транслировать данные из буфера локально на диапазон IP-адресов (более подробную информацию о буферах см. в разделе <a href="../Buffers/Buffers.htm">Справочник - Буферы</a>). Диапазон ограничен диапазоном устройства, на котором работает сервер, например, если устройство имеет IP-адрес 92.168.11.130, то данные будут транслироваться в диапазоне 92.168.11.*. Функция возвращает количество байт отправленных данных или число меньше 0, если отправка не удалась.</p>
   <p class="note"><span data-conref="../../../assets/snippets/Tag_note.hts"> </span> Эта функция будет работать только при использовании с UDP - ваш сервер должен быть TCP, а ваш клиент должен иметь клиентский сокет UDP, созданный с помощью функции <span style="font-size:1px;"><a href="network_create_socket_ext.htm"><span class="inline">network_create_socket_ext()</span></a></span> для того, чтобы получать любые широковещательные сообщения, отправляемые с сервера.</p>
   <p class="note"><span data-conref="../../../assets/snippets/Tag_note.hts"> </span> Эта функция не будет работать при использовании в проекте, работающем на HTML5-цели.</p>
   <div data-conref="../../../assets/snippets/iOS_14_IP_Multicast_Permissions.hts"> </div>
   <h4>Синтаксис:</h4>
-  <p class="code">network_send_broadcast(socket, port, bufferid, size);</p>
+  <p class="code"><span data-field="title" data-format="default">network_send_broadcast</span>(socket, port, bufferid, size);</p>
   <table>
     <tbody>
       <tr>

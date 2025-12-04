@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>прямоугольник столкновения</title>
+  <title>collision_rectangle</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../assets/scripts/main_script.js"></script>
@@ -15,13 +15,13 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>прямоугольник столкновения</h1>
+  <h1><span data-field="title" data-format="default">collision_rectangle</span></h1>
   <p><span class="inline">Collision_rectangle</span> использует первые четыре аргумента (x1,y1,x2,y2) для определения области в текущей комнате, а затем проверяет, не столкнулся ли <b>какой-либо</b> объект, определенный аргументом &quot;obj&quot;, с этой областью. Это столкновение может быть проверено как точное или нет, и вы также можете выбрать, проверять ли сам экземпляр, выполняющий код, или нет. Рассмотрим это изображение:</p>
   <p><img>Здесь экземпляр в центре использует прямоугольник столкновения для проверки объектов-шаров. Теперь синие <i>не</i> имеют точной граничной области, и, как вы можете видеть, даже если <span class="notranslate">sprite</span> фактически не касается прямоугольника, столкновение все равно произойдет (даже если вы установите параметр exact в функции на true), так как граничная область этого <span class="notranslate">sprite</span> пересекает прямоугольник collision_rectangle. С другой стороны, зеленые шарики будут считаться столкнувшимися только в том случае, если фактический <span class="notranslate">sprite</span> пересекает прямоугольник. Помните, что для учета точных столкновений <i>и</i> объект <span class="notranslate">sprite</span>, и функция столкновения должны иметь значение "точное". Следует также отметить, что возвращаемым значением функции может быть id <i>любого</i> из экземпляров, считающихся столкнувшимися.</p>
   <p>Обратите внимание, что вместо индекса объекта вы можете указать экземпляр <a href="../../Asset_Management/Instances/Instance_Variables/id.htm"><span class="inline">id</span></a> для проверки конкретного экземпляра, или <a href="../../../GML_Overview/Instance_Keywords.htm">ключевые слова экземпляра</a> <span class="inline">all</span>, или <span class="inline">other</span> (в зависимости от события и текущей области видимости кода).</p>
   <p> </p>
   <h4>Синтаксис:</h4>
-  <p class="code">collision_rectangle(x1, y1, x2, y2, obj, prec, notme);</p>
+  <p class="code"><span data-field="title" data-format="default">collision_rectangle</span>(x1, y1, x2, y2, obj, prec, notme);</p>
   <table>
     <tbody>
       <tr>

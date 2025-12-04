@@ -15,13 +15,13 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>get_string_async</h1>
+  <h1><span data-field="title" data-format="default">get_string_async</span></h1>
   <p>Эта функция открывает окно и отображает сообщение, а также место для ввода пользователем строки (которая будет содержать заданную по умолчанию строку для начала). Это асинхронная функция, поэтому <span data-keyref="GameMaker Name">GameMaker</span> <i>не</i> блокирует устройство, на котором она выполняется, в ожидании ответа, а продолжает выполнять события в обычном режиме. Как только пользователь введет свою строку и нажмет кнопку &quot;Ок&quot;, будет запущено <a href="../../../../The_Asset_Editors/Object_Properties/Async_Events/Dialog.htm">асинхронное событие Dialog </a>, которое, <i>только</i> на время этого события, будет иметь карту DS, хранящуюся в переменной <a href="../../../GML_Overview/Variables/Builtin_Global_Variables/async_load.htm"><span class="inline">async_load</span></a>.</p>
   <p>Эта карта будет содержать три ключа, &quot;<strong>id</strong>&quot;, &quot;<strong>status</strong>&quot; и &quot;<strong>result</strong>&quot;. &quot;id&quot; - это значение, которое было возвращено функцией при вызове, &quot;status&quot; будет либо <span class="inline">true</span> для нажатия кнопки &quot;Ок&quot;, либо <span class="inline">false</span>, если сообщение было отменено (где это применимо, поскольку не все целевые платформы позволяют отменить сообщение). Наконец, &quot;result&quot; вернет строку, которую ввел пользователь (или пустую строку &quot;&quot;, если она не была введена).</p>
   <p class="note"><strong><em><span class="note">ПРИМЕЧАНИЕ</span></em></strong><em> Эта функция <span data-keyref="Dialog for debug only">предназначена <strong>только</strong> для <strong>отладки и тестирования</strong></span>и не должна использоваться в выпущенных играх. Для этих целей вы должны создать пользовательский интерфейс для получения ввода от игроков, чтобы иметь полный контроль над тем, как выглядят и ведут себя диалоги.</em></p>
   <p> </p>
   <h4>Синтаксис:</h4>
-  <p class="code">get_string_async(string, default);</p>
+  <p class="code"><span data-field="title" data-format="default">get_string_async</span>(string, default);</p>
   <table>
     <tbody>
       <tr>

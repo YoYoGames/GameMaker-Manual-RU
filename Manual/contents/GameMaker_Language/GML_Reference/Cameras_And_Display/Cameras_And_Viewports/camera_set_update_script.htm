@@ -14,7 +14,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>camera_set_update_script</h1>
+  <h1><span data-field="title" data-format="default">camera_set_update_script</span></h1>
   <p>Эта функция может быть использована для задания <a href="../../../GML_Overview/Script_Functions.htm">функции сценария</a>, которая будет вызываться каждый игровой кадр, когда камера назначена на видимый и активный порт просмотра. Вы указываете уникальное значение ID камеры (возвращаемое различными функциями <span class="inline">camera_create</span> ) и ID функции, которая будет вызываться. Порядок вызова функций, прикрепленных к камерам, и фактического рендеринга вида камеры следующий:</p>
   <ul class="colour">
     <li>Камеры для всех видимых и активных портов просмотра имеют <b>функцию обновления </b>, вызываемую как</li>
@@ -30,7 +30,7 @@
   <p>Применение пользовательской функции обновления к камере переопределяет ее поведение обновления по умолчанию. Например, если вы настроили камеру на следование за объектом (например, <span class="inline2">obj_player</span>) при вызове <span class="inline"><a href="camera_create_view.htm">camera_create_view()</a></span>, или задали это в свойствах комнаты, она перестанет следовать за этим объектом после установки пользовательского сценария обновления.</p>
   <p> </p>
   <h4>Синтаксис:</h4>
-  <p class="code">camera_set_update_script(camera_id, script)</p>
+  <p class="code"><span data-field="title" data-format="default">camera_set_update_script</span>(camera_id, script)</p>
   <table>
     <tbody>
       <tr>

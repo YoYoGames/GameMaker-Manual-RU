@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>слой</title>
+  <title>layer</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../../assets/scripts/main_script.js"></script>
@@ -14,12 +14,12 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>слой</h1>
+  <h1><span data-field="title" data-format="default">layer</span></h1>
   <p>Эта <b>встроенная переменная</b> создается для каждого экземпляра в комнате и содержит значение ID слоя, к которому приписан данный экземпляр. Это значение затем может быть использовано в других функциях, таких как <a href="../../Rooms/General_Layer_Functions/layer_get_depth.htm"><span class="inline">layer_get_depth()</span></a> или его можно изменить, чтобы переместить экземпляр на другой слой, но учтите, что если назначаемый слой не существует в текущей комнате, то вы получите ошибку, которая заставит вашу игру закрыться. При назначении слоя вы должны указать уникальный <b>идентификатор слоя</b>, возвращаемый функцией <a href="../../Rooms/General_Layer_Functions/layer_get_id.htm"><span class="inline">layer_get_id()</span></a> (при использовании именованных слоев комнаты), или как возвращается функцией <a href="../../Rooms/General_Layer_Functions/layer_create.htm"><span class="inline">layer_create()</span></a> (когда вы создаете свои собственные слои во время выполнения).</p>
   <p class="note"><span class="important">ВАЖНО</span> Если вы создали экземпляр с помощью функции <span style="font-size:1px;"><a href="../instance_create_depth.htm"><span class="inline">instance_create_depth()</span></a></span> или вручную изменили <span style="font-size:1px;"><a href="depth.htm"><span class="inline">depth</span></a></span> переменную, слой, назначенный данному экземпляру, становится &quot;управляемым&quot; слоем, то есть таким, который <span data-keyref="GameMaker Name">GameMaker</span> контролирует и управляет автоматически. В этих случаях переменная <span class="inline">layer</span> вернет значение -1.</p>
   <p> </p>
   <h4>Синтаксис:</h4>
-  <p class="code">layer;</p>
+  <p class="code"><span data-field="title" data-format="default">layer</span></p>
   <p> </p>
   <h4>Возвращается:</h4>
   <p class="code"><span data-keyref="Type_ID_Layer">Layer ID</span></p>

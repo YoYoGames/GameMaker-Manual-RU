@@ -15,11 +15,11 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>ds_list_find_value</h1>
+  <h1><span data-field="title" data-format="default">ds_list_find_value</span></h1>
   <p>С помощью этой функции вы можете проверить заданную позицию списка и вернуть значение, хранящееся в списке для этой позиции. Обратите внимание, что если вы зададите позицию, которая находится за пределами заданного размера списка (например, позиция 11 в списке из 10 значений), то функция может вернуть <span class="inline">undefined</span> <i>или</i> 0. Это связано с тем, что при создании списка первые несколько записей в списке устанавливаются в 0, чтобы минимизировать проблемы с производительностью при первоначальном добавлении элементов в список (хотя функция <a href="ds_list_size.htm"><span class="inline">ds_list_size()</span></a> функция все равно вернет 0 для только что созданного списка). Если вы хотите убедиться, что список &quot;действительно&quot; пуст при создании, то вам следует вызвать функцию <a href="ds_list_clear.htm"><span class="inline">ds_list_clear()</span></a> после создания списка, что будет означать, что все значения, возвращаемые для незаполненных слотов списка, будут <span class="inline">undefined</span>, которые затем можно последовательно проверить с помощью функции <a href="../../Variable_Functions/is_undefined.htm"><span class="inline">is_undefined()</span></a> функцию.</p>
   <p> </p>
   <h4>Синтаксис:</h4>
-  <p class="code">ds_list_find_value(id, pos);</p>
+  <p class="code"><span data-field="title" data-format="default">ds_list_find_value</span>(id, pos);</p>
   <table>
     <tbody>
       <tr>

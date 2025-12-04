@@ -15,12 +15,12 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>skeleton_attachment_create_colour</h1>
+  <h1><span data-field="title" data-format="default">skeleton_attachment_create_colour</span></h1>
   <p>Когда вы создаете скелетную анимацию <span class="notranslate">sprite</span>, вы можете назначить <i>слоты для вложений</i> и <i>вложения</i> в них. Это просто изображения (<span class="notranslate">sprites</span>), которые отделены от анимации, но при прикреплении будут двигаться вместе с костью, к которой они прикреплены. Обычно вы назначаете эти вложения в вашей программе анимации (<span class="notranslate">Spine</span>), но с помощью этой функции вы можете создавать свои собственные вложения во время выполнения, используя актив <span class="notranslate">sprite</span> из вашей игры. Функция требует, чтобы вы дали вложению имя (в виде строки), а затем установили параметры <a href="../../Sprite_Instance_Variables/sprite_index.htm"><span class="inline">sprite_index</span></a> и <a href="../../Sprite_Instance_Variables/image_index.htm"><span class="inline">image_index</span></a> для использования, а также начало координат x и y (которое может отличаться от того, которое определено для <span class="notranslate">sprite</span> в свойствах <span class="notranslate">sprite</span> ), и вы также можете задать любые преобразования, которые вы хотите применить к изображению при вложении, а также цвет, который будет смешиваться с изображением, и его альфа-значение (прозрачность). Если вложение было успешно создано, функция вернет <span class="inline">1</span>, а если нет (вы указали неверный индекс <span class="notranslate">sprite</span> или базовый <span class="notranslate">sprite</span> не является <span class="notranslate">Spine</span> <span class="notranslate">sprite</span>), то вернется <span class="inline">-1</span>.</p>
   <p>Стоит отметить, что экземпляр <span class="notranslate">sprite</span> может иметь цвет наложения и настройки альфа (<a href="../../Sprite_Instance_Variables/image_blend.htm"><span class="inline">image_blend</span></a> и <a href="../../Sprite_Instance_Variables/image_alpha.htm"><span class="inline">image_alpha</span></a>), как и слот вложения (см. функцию <a href="../Slots/skeleton_slot_colour_set.htm"><span class="inline">skeleton_slot_colour_set()</span></a>), и поэтому окончательный цвет и альфа, которые будет иметь назначенное вложение <span class="notranslate">sprite</span> для слота, будет представлять собой комбинацию всех этих значений.</p>
   <p> </p>
   <h4>Синтаксис:</h4>
-  <p class="code">skeleton_attachment_create_colour(name, sprite, ind, xorigin, yorigin, xscale, yscale, rot, colour, alpha);</p>
+  <p class="code"><span data-field="title" data-format="default">skeleton_attachment_create_colour</span>(name, sprite, ind, xorigin, yorigin, xscale, yscale, rot, colour, alpha);</p>
   <table>
     <tbody>
       <tr>

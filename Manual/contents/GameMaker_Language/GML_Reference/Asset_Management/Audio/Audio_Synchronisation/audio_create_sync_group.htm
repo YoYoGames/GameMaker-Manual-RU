@@ -15,12 +15,12 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>audio_create_sync_group</h1>
+  <h1><span data-field="title" data-format="default">audio_create_sync_group</span></h1>
   <p>Создает группу синхронизации и возвращает для нее уникальное значение ID, которое затем должно использоваться во всех дальнейших вызовах аудиофункций для этой группы. Если вы хотите, чтобы группа зацикливалась, передайте <span class="inline">true</span>, в противном случае передайте <span class="inline">false</span>, но учтите, что если вы хотите, чтобы они зацикливались, <i>все дорожки, добавленные позже, должны быть одинаковой длины</i>. Обратите внимание, что при создании группы синхронизации необходимо освободить память и звуки, связанные с ней, если они не используются, с помощью функции <a href="audio_destroy_sync_group.htm"><span class="inline">audio_destroy_sync_group()</span></a> например, в событиях <b>Room End</b> или <b>Destroy</b>.</p>
   <p class="note"><b>ПРИМЕЧАНИЕ</b>: Эта функциональность недоступна для целевой платформы HTML5.</p>
   <p> </p>
   <h4>Синтаксис:</h4>
-  <p class="code">audio_create_sync_group(loop);</p>
+  <p class="code"><span data-field="title" data-format="default">audio_create_sync_group</span>(loop);</p>
   <table>
     <tbody>
       <tr>

@@ -15,12 +15,12 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>tilemap_get</h1>
+  <h1><span data-field="title" data-format="default">tilemap_get</span></h1>
   <p>С помощью этой функции вы можете получить данные о плитке из ячейки элемента карты плитки. Вы указываете ID элемента карты плитки (который вы получаете при создании элемента карты плитки с помощью функции <a href="layer_tilemap_create.htm"><span class="inline">layer_tilemap_create()</span></a> или при использовании функции <a href="layer_tilemap_get_id.htm"><span class="inline">layer_tilemap_get_id()</span></a>), а также позицию x и y <i>ячейки</i>, и функция вернет &quot;сгусток&quot; данных плитки. Эти данные по сути являются битовой маской, содержащей индекс плитки, булевы flip/rotate/mirror и любые примененные данные маски (см. <a href="tilemap_set_mask.htm"><span class="inline">tilemap_set_mask()</span></a> подробности), а полученное значение данных можно использовать в функциях <span class="inline">tile_*</span> для изменения свойств плитки. Обратите внимание, что мы используем позиции ячеек x/y, основанные на размере сетки карты плитки, а <i>не</i> на положении в комнате, поэтому &quot;cell_x&quot; - это значение от 0 до <a href="tilemap_get_width.htm">ширины карты плитки</a>, а &quot;cell_y&quot; - это значение от 0 до <a href="tilemap_get_height.htm">высоты карты плитки</a>. Если вам нужно получить данные для плитки в определенном положении в комнате, то вам нужно использовать функцию <a href="tilemap_get_at_pixel.htm"><span class="inline">tilemap_get_at_pixel()</span></a>.</p>
   <p class="note"><b>ВАЖНО!</b> Если плитки в карте плиток были неизменны (т.е. они не повернуты, не перевернуты и т.д.), то возвращаемое значение данных набора плиток будет точно равно индексу плитки в наборе плиток. Таким образом, вы можете создавать &quot;карты столкновений&quot; плиток, используя одну плитку с индексом 1 в наборе плиток - например - затем использовать эту функцию для проверки 1 или 0 (пустая плитка) для расчета столкновений.</p>
   <p> </p>
   <h4>Синтаксис:</h4>
-  <p class="code">tilemap_get(tilemap_element_id, cell_x, cell_y);</p>
+  <p class="code"><span data-field="title" data-format="default">tilemap_get</span>(tilemap_element_id, cell_x, cell_y);</p>
   <table>
     <tbody>
       <tr>

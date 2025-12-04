@@ -14,7 +14,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>physics_particle_set_flags</h1>
+  <h1><span data-field="title" data-format="default">physics_particle_set_flags</span></h1>
   <p>С помощью этой функции можно изменить флаги частиц для отдельной частицы. Значение <span class="inline">index</span> - это идентификатор частицы, возвращаемый функцией <a href="physics_particle_create.htm"><span class="inline">physics_particle_create()</span></a>а флаги - это возвращаемое значение комбинации следующих <b>констант</b>:</p>
   <table>
     <tbody>
@@ -63,7 +63,7 @@
   <p>Эти флаги используют битовую маскировку для создания конечного выходного значения, которое затем проверяется для установки различных базовых свойств частицы (при этом базовым свойством всегда является свойство <span class="inline">phy_particle_flag_water</span>). Например, если вы хотите смоделировать вязкую жидкость с поверхностным натяжением, вы можете использовать <a href="../../../../Additional_Information/Bitwise_Operators.htm">побитовую комбина</a> цию <a href="../../../../Additional_Information/Bitwise_Operators.htm"> <i>или</i></a> &quot;|&quot; для маскировки соответствующих битов, как показано в примере ниже. Таким образом, при желании можно задать различные свойства (кроме глобальных) для каждой отдельной создаваемой частицы.</p>
   <p> </p>
   <h4>Синтаксис:</h4>
-  <p class="code">physics_particle_set_flags(index, flags)</p>
+  <p class="code"><span data-field="title" data-format="default">physics_particle_set_flags</span>(index, flags)</p>
   <table>
     <tbody>
       <tr>

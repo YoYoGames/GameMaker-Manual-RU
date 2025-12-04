@@ -14,14 +14,14 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>font_replace_sprite_ext</h1>
+  <h1><span data-field="title" data-format="default">font_replace_sprite_ext</span></h1>
   <p>Эта функция заменит шрифт <span class="notranslate">sprite</span>, который вы создали ранее с помощью функции <a href="font_add_sprite_ext.htm"><span class="inline">font_add_sprite_ext()</span></a>. Она использует &quot;спрайтовую полосу&quot;, где каждое подизображение является отдельным символом или буквой, а изображения отображаются на буквы на основе аргумента &quot;string_map&quot; функции. Этот аргумент представляет собой строку, с помощью которой вы можете указать <span data-keyref="GameMaker Name">GameMaker</span>, в каком порядке расположены суб-изображения шрифта <span class="notranslate">sprite</span>, и он будет автоматически сопоставлять их при написании текста. Так, например, если у вас есть string-map &quot;AaBbCcDdEeFfGgHh&quot;, то ваш шрифт <span class="notranslate">sprite</span> <i>должен</i> иметь суб-изображения, упорядоченные таким образом.</p>
   <p>Вы также можете задать пропорциональный (<span class="inline">true</span>) или непропорциональный (<span class="inline">false</span>) интервал для шрифта, при этом пропорциональный шрифт использует фактическую ширину букв (например, буква &quot;i&quot; занимает меньше места, чем буква &quot;w&quot;), а непропорциональный - ширину подрисуночного изображения, как моноширинный шрифт. Наконец, вы можете определить пространство, которое нужно оставить между каждой буквой при написании, и это может быть любое целое значение, при этом 0 означает отсутствие пространства (буквы будут &quot;соприкасаться&quot;, если шрифт пропорциональный). Функция возвращает значение <i>индекса</i>, которое следует сохранить в переменной, так как оно понадобится во всех дальнейших кодах, которые будут ссылаться на этот шрифт.</p>
   <p>Если функция завершится неудачно, то она завершится молча, не заменив заданный шрифт <span class="notranslate">sprite</span>.</p>
   <p class="note"><b><span class="note">ПРИМЕЧАНИЕ</span> </b>Эта функция требует, чтобы вы предварительно добавили шрифт <span class="notranslate">sprite</span> с помощью функции <span style="font-size:1px;"><a href="font_add_sprite.htm"><span class="inline">font_add_sprite()</span></a></span>, так как она заменит его и не может быть использована для шрифтов, включенных в ресурсы игры.</p>
   <p> </p>
   <h4>Синтаксис:</h4>
-  <p class="code">font_replace_sprite_ext(font, spr, string_map, prop, sep);</p>
+  <p class="code"><span data-field="title" data-format="default">font_replace_sprite_ext</span>(font, spr, string_map, prop, sep);</p>
   <table>
     <tbody>
       <tr>

@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>глубина_создания_экземпляра</title>
+  <title>instance_create_depth</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../assets/scripts/main_script.js"></script>
@@ -14,7 +14,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>глубина_создания_экземпляра</h1>
+  <h1><span data-field="title" data-format="default">instance_create_depth</span></h1>
   <p>С помощью этой функции вы можете создать новый экземпляр указанного объекта в любой заданной точке комнаты и на указанной глубине. Глубина может быть любым значением, где чем меньше глубина, тем &quot;ближе&quot; к камере будут нарисованы объекты, а чем больше глубина, тем дальше, так что экземпляр с глубиной -200 будет нарисован поверх экземпляра с глубиной +300 (например).</p>
   <p>Обратите внимание, что эта функция фактически создает слой комнаты для экземпляра, поскольку все экземпляры <i>должны</i> находиться на слое в комнате, но поскольку это <i>управляемый</i> слой (т.е. не тот, который вы создали с помощью кода или в комнате, а тот, который <span data-keyref="GameMaker Name">GameMaker</span> создал автоматически). Вы не сможете получить доступ к этому слою, и <a href="Instance_Variables/layer.htm"><span class="inline">layer</span></a> переменная экземпляра вернет значение -1.</p>
   <p class="note"><span class="important">ВАЖНО</span> Существует минимальная и максимальная глубина слоя от -16000 до 16000. Все, что размещено на глубине вне этого диапазона, <b>не будет нарисовано</b>, хотя все события будут проходить в обычном режиме.</p>
@@ -27,7 +27,7 @@
   <p class="note"><span class="note">ПРИМЕЧАНИЕ</span> Переменные из структуры &quot;неглубоко копируются&quot; в новый экземпляр, то есть любые массивы, структуры и другие ресурсы копируются по ссылке, а не дублируются.</p>
   <p> </p>
   <h4>Синтаксис:</h4>
-  <p class="code">instance_create_depth(x, y, depth, obj);</p>
+  <p class="code"><span data-field="title" data-format="default">instance_create_depth</span>(x, y, depth, obj);</p>
   <table>
     <tbody>
       <tr>

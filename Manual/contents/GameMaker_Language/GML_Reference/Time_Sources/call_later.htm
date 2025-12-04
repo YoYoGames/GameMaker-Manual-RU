@@ -4,7 +4,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="generator" content="Adobe RoboHelp 2020" />
-  <title>звонок_позже</title>
+  <title>call_later</title>
   <meta name="topic-status" content="Draft" />
   <link rel="stylesheet" type="text/css" href="../../../assets/css/default.css" />
   <script src="../../../assets/scripts/main_script.js"></script>
@@ -15,7 +15,7 @@
   <meta name="search-keywords" content="call_later" />
 </head>
 <body>
-  <h1>звонок_позже</h1>
+  <h1><span data-field="title" data-format="default">call_later</span></h1>
   <p>Эта функция запускает функцию обратного вызова через указанное время или через определенный интервал. Для этого создается <span data-keyref="Type_Resource_TimeSource">источник времени</span> (см. <a data-xref="{title}" href="Time_Sources.htm">Источники времени</a>).</p>
   <p>Чтобы отменить функцию обратного вызова, см. <a data-xref="{title}" href="call_cancel.htm">call_cancel</a>.</p>
   <p class="note"><span class="important">ВАЖНО</span> Хотя эта функция возвращает фактический ID источника времени, этот ID нельзя использовать с функциями источника времени, так как источники времени, используемые <a href="call_later.htm">call_later</a> и <a href="call_cancel.htm">call_cancel</a>, являются &quot;невидимыми&quot; - они не появляются как дочерние элементы встроенных источников времени и не могут быть использованы с другими функциями источника времени. Однако они включаются в подсчет источников времени, возвращаемый функцией <a href="../Debugging/debug_event.htm">debug_event(&quot;ResourceCou<span class="inline"></span>nts&quot;)</a>.</p>
@@ -43,7 +43,7 @@
   <p> </p>
   <p> </p>
   <h4>Синтаксис:</h4>
-  <p class="code">call_later(period, unit, callback, [loop=false]);</p>
+  <p class="code"><span data-field="title" data-format="default">call_later</span>(period, unit, callback, [loop=false]);</p>
   <table>
     <colgroup>
       <col />

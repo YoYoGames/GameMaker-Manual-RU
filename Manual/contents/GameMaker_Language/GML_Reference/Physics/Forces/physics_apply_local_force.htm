@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>физика_применить_локальную_силу</title>
+  <title>physics_apply_local_force</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../assets/scripts/main_script.js"></script>
@@ -14,13 +14,13 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>физика_применить_локальную_силу</h1>
+  <h1><span data-field="title" data-format="default">physics_apply_local_force</span></h1>
   <p>Другой способ использования силы в мире физики - это <i>локальное</i> применение силы к экземпляру. Это означает, что сила и направление силы рассчитываются на основе начала координат (или положения, если оно не имеет <span class="notranslate">sprite</span>) экземпляра, не принимая во внимание направление или вращение, которое он может иметь в игровой комнате или физическом мире. Следует отметить, что при использовании этой функции силы прикладываются не к центру масс объекта, а к точке относительно экземпляра, и они не будут приложены мгновенно, поскольку зависят от любых других сил, действующих на объект (например, гравитации). На этом рисунке показано, как работает локальная сила:</p>
   <p><img>Как вы видите, координаты xlocal и ylocal вычисляются на основе положения оси, которое <i>всегда</i> рассматривается как начало координат экземпляра (0,0), поэтому независимо от того, в каком месте комнаты находится объект, xlocal и ylocal всегда будут одинаковыми. Затем необходимо решить, где должны располагаться компоненты вектора силы (xforce и yforce) относительно позиции xlocal/ylocal. Точная сила определяется вектором, который мы получаем из компонентов xforce/yforce относительно этих координат - это означает, что сила рассчитывается как расстояние от xlocal/ylocal до xforce/yforce в Ньютонах, а направление - это угол, который мы получаем от xlocal/ylocal до xforce/yforce. Это может показаться немного запутанным, но достаточно взглянуть на рисунок, чтобы понять, как это работает, и это избавит вас от сложных математических вычислений!</p>
   <p class="note"><b>ПРИМЕЧАНИЕ</b>: Физический мир использует метры для всех своих расчетов, а соотношение пикселей на метр определяется в редакторе комнаты или с помощью функции <span style="font-size:1px;"><a href="../The_Physics_World/physics_world_create.htm"><span class="inline">physics_world_create()</span></a></span>.</p>
   <p> </p>
   <h4>Синтаксис:</h4>
-  <p class="code">physics_apply_local_force(xlocal, ylocal, xforce, yforce)</p>
+  <p class="code"><span data-field="title" data-format="default">physics_apply_local_force</span>(xlocal, ylocal, xforce, yforce)</p>
   <table>
     <tbody>
       <tr>

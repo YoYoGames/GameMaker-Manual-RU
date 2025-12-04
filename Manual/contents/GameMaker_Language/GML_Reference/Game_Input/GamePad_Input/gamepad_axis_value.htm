@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>значение_оси_геймпада</title>
+  <title>gamepad_axis_value</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../assets/scripts/main_script.js"></script>
@@ -15,12 +15,12 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>значение_оси_геймпада</h1>
+  <h1><span data-field="title" data-format="default">gamepad_axis_value</span></h1>
   <p>Вы можете использовать эту функцию для получения значений различных осей от заданного слота геймпада. Вы указываете индекс слота геймпада для проверки, а также либо константу индекса оси (как указано <a href="Gamepad_Input.htm">здесь</a>), либо целое значение между <span class="inline">0</span> и <span class="inline"><a href="gamepad_axis_count.htm">gamepad_axis_count()</a></span><span class="inline">-1</span>. Возвращаемое значение будет находиться между <span class="inline">-1</span> и <span class="inline">1</span> для каждой из доступных горизонтальных и вертикальных осей.</p>
   <p>Обратите внимание, что возвращаемое значение нормализуется с учетом значения, установленного для мертвой зоны оси (с помощью функции <span class="inline"><a href="gamepad_set_axis_deadzone.htm">gamepad_set_axis_deadzone()</a></span>), и поэтому всегда будет находиться между -1 и 0 и 0 и 1. Например, если установить мертвую зону на 0.2 означает, что нажатие стика вправо начнет возвращать значение от 0 до 1 только тогда, когда <em>необработанное</em> значение оси превысит 0,2 - например, когда необработанное значение равно 0,2, возвращаемое значение будет равно 0, когда необработанное значение равно 0,5, возвращаемое значение будет равно 0,375, или если необработанное значение равно 0,9, то возвращаемое значение будет равно 0,875.</p>
   <p> </p>
   <h4>Синтаксис:</h4>
-  <p class="code">gamepad_axis_value(device, axisIndex);</p>
+  <p class="code"><span data-field="title" data-format="default">gamepad_axis_value</span>(device, axisIndex);</p>
   <table>
     <tbody>
       <tr>

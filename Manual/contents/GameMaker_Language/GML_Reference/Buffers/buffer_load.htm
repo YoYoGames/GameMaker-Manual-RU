@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>буферная_загрузка</title>
+  <title>buffer_load</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
   <script src="../../../assets/scripts/main_script.js"></script>
@@ -14,7 +14,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>буферная_загрузка</h1>
+  <h1><span data-field="title" data-format="default">buffer_load</span></h1>
   <p>Эта функция используется для загрузки буфера, который был ранее сохранен с помощью <a href="buffer_save.htm"><span class="inline">buffer_save()</span></a> функции, а также любые <a href="../../../Settings/Included_Files.htm" title="Included Files">Включенные файлы</a> или файлы, загруженные извне. Она вернет идентификатор нового буфера, который создается функцией как &quot;растущий&quot; буфер (см. <a href="buffer_create.htm">здесь</a>) с выравниванием по байтам 1. Этот идентификатор должен храниться в переменной и использоваться во всех последующих вызовах функций к этому буферу. Если по какой-либо причине загрузка не удалась, функция вернет -1, а в окне вывода компилятора появится сообщение о том, что загрузка не удалась.</p>
   <p class="note"><span class="note">ПРИМЕЧАНИЕ</span> Важно, чтобы вы удаляли любые динамически созданные ресурсы, подобные этому, из памяти, когда они вам больше не нужны, чтобы предотвратить утечку памяти, поэтому, когда вы закончите работу с созданным буфером, вы должны освободить его снова, используя <a href="buffer_delete.htm"><span class="inline">buffer_delete()</span></a>.</p>
   <h2>Примечания для конкретной платформы</h2>
@@ -25,7 +25,7 @@
   <p> </p>
   <p> </p>
   <h4>Синтаксис:</h4>
-  <p class="code">buffer_load(filename);</p>
+  <p class="code"><span data-field="title" data-format="default">buffer_load</span>(filename);</p>
   <table>
     <tbody>
       <tr>

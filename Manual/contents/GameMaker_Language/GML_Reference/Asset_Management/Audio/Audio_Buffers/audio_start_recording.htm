@@ -15,7 +15,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>audio_start_recording</h1>
+  <h1><span data-field="title" data-format="default">audio_start_recording</span></h1>
   <p>Эта функция начнет запись звука с проиндексированного источника рекордера. Количество источников рекордера можно получить с помощью функции <a href="audio_get_recorder_count.htm"><span class="inline">audio_get_recorder_count()</span></a>, и как только вы начнете запись, аудио будет сохранено во временном буфере и начнет вызывать <a href="../../../../../The_Asset_Editors/Object_Properties/Async_Events/Audio_Recording.htm">асинхронное событие Audio Recording Asynchronous Event</a>. Это событие будет срабатывать на каждом шаге, когда происходит запись, и создаст специальную <a href="../../../Data_Structures/DS_Maps/DS_Maps.htm">карту DS</a> в переменной <a href="../../../../GML_Overview/Variables/Builtin_Global_Variables/async_load.htm"><span class="inline">async_load</span></a> со следующими парами ключ/значение:</p>
   <ul class="colour">
     <li>&quot;<strong>buffer_id</strong>&quot; - идентификатор временного буфера, который можно использовать для получения аудиоданных</li>
@@ -26,7 +26,7 @@
   <p class="note"><b><span class="note">ПРИМЕЧАНИЕ</span> </b>Большинство платформ поддерживают запись звука в той или иной форме, но это не означает, что все устройства позволят это сделать, даже если платформа это делает, поэтому всегда следует проверять, что функция <span style="font-size:1px;"><a href="audio_get_recorder_count.htm"><span class="inline">audio_get_recorder_count()</span></a></span> возвращает значение больше 0, чтобы убедиться, что записывающие устройства доступны, прежде чем использовать остальные функции записи.</p>
   <p> </p>
   <h4>Синтаксис:</h4>
-  <p class="code">audio_start_recording(recorder_index);</p>
+  <p class="code"><span data-field="title" data-format="default">audio_start_recording</span>(recorder_index);</p>
   <table>
     <tbody>
       <tr>

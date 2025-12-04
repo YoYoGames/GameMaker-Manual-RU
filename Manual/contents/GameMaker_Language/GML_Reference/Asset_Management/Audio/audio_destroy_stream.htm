@@ -14,12 +14,12 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>audio_destroy_stream</h1>
+  <h1><span data-field="title" data-format="default">audio_destroy_stream</span></h1>
   <p>Если вы ранее создали звуковой поток из файла с помощью функции <a href="audio_create_stream.htm"><span class="inline">audio_create_stream()</span></a> и этот звук больше не нужен, вы можете вызвать эту функцию, чтобы удалить его из памяти. Любые дальнейшие обращения к индексу звука после его уничтожения приведут к ошибке. Следует отметить, что это освободит поток, но на целевой платформе это может не отобразиться в менеджере памяти. Это происходит потому, что <span data-keyref="GameMaker Name">GameMaker</span> объединяет ресурсы памяти для предотвращения накладных расходов на выделение памяти, и поэтому память будет оставаться выделенной до тех пор, пока не понадобится для чего-то другого или не будет повторно использована для нового потока.</p>
   <p class="note"><b>ПРИМЕЧАНИЕ</b>: Эта функциональность недоступна для целевой платформы HTML5.</p>
   <p> </p>
   <h4>Синтаксис:</h4>
-  <p class="code">audio_destroy_stream(filename);</p>
+  <p class="code"><span data-field="title" data-format="default">audio_destroy_stream</span>(filename);</p>
   <table>
     <tbody>
       <tr>

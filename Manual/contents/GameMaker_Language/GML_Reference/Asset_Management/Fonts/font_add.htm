@@ -14,7 +14,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>font_add</h1>
+  <h1><span data-field="title" data-format="default">font_add</span></h1>
   <p>Эта функция может быть использована для добавления шрифта в вашу игру из файла шрифта, присутствующего в <a data-xref="{text}" href="../../../../Settings/Included_Files.htm#h">Included Files</a>. Вы можете определить размер шрифта (в пунктах), а также то, должен ли шрифт быть <b>жирным</b> или <i>курсивным</i>, а также определить диапазон символов для включения. Функция возвращает значение <i>индекса</i>, которое следует сохранить в переменной, так как оно будет необходимо во всем дальнейшем коде, который будет ссылаться на этот шрифт, или вернет <span class="inline">-1</span>, если функция не выполнится по какой-либо причине.</p>
   <p>Обратите внимание, что файл шрифта должен быть либо <span class="inline">*.ttf</span>, либо <span class="inline">*.otf</span>, что также может быть полезно для добавления нестандартных шрифтов, таких как азиатские или арабские шрифты.</p>
   <p class="note"><b>ВНИМАНИЕ!!! </b>Если вы включите такой шрифт в Included Files, он <b>должен быть лицензирован</b> для распространения вместе с игрой.</p>
@@ -25,7 +25,7 @@
   <p class="note"><b><span class="note">ПРИМЕЧАНИЕ</span> </b>Когда вы загружаете шрифт в <span data-keyref="GameMaker Name">GameMaker</span>, вы должны не забыть удалить его снова (с помощью кнопки <span style="font-size:1px;"><a href="font_delete.htm"><span class="inline">font_delete()</span></a></span>), если он больше не нужен, иначе существует риск утечки памяти, что приведет к замедлению и, в конечном итоге, к краху вашей игры.</p>
   <p> </p>
   <h4>Синтаксис:</h4>
-  <p class="code">font_add(name, size, bold, italic, first, last);</p>
+  <p class="code"><span data-field="title" data-format="default">font_add</span>(name, size, bold, italic, first, last);</p>
   <table>
     <tbody>
       <tr>

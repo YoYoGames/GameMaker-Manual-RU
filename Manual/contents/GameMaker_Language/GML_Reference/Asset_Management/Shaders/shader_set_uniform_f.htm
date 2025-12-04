@@ -14,7 +14,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>shader_set_uniform_f</h1>
+  <h1><span data-field="title" data-format="default">shader_set_uniform_f</span></h1>
   <p>С помощью этой функции можно установить значение (или значения) константы шейдера. Предварительно вы должны получить &quot;хэндл&quot; константы с помощью функции <a href="shader_get_uniform.htm"><span class="inline">shader_get_uniform()</span></a>и вы должны знать тип константы, чтобы передать ей правильное количество значений с плавающей запятой, т.е. если у вас есть <span class="inline">vec2</span>, вам нужно передать в функцию два значения.</p>
   <p>Исключением из этого правила является работа с 32-битными значениями цвета. Вы можете передать в шейдер до восьми 32-битных значений цвета, и они будут автоматически преобразованы в значения vec4 0 - 1. Однако для этого вы <i>должны</i> использовать имя константы шейдера <span class="inline">in_Colour</span> для одного цвета, или <span class="inline">in_Colour0</span>, <span class="inline">in_Colour1</span> и т.д. вплоть до <span class="inline">in_Colour7</span> для нескольких входных значений. Следующие примеры показывают, как это будет выглядеть в самом шейдере:</p>
   <p class="code">    //Single colour<br />
@@ -32,7 +32,7 @@
   <p class="note"><b></b><b>ПРИМЕЧАНИЕ</b>: Все формы должны быть установлены <b>после</b> вызова функции <span style="font-size:1px;"><a href="shader_set.htm"><span class="inline">shader_set()</span></a></span>, и до вызова <span style="font-size:1px;"><a href="shader_reset.htm"><span class="inline">shader_reset()</span></a></span>.</p>
   <p> </p>
   <h4>Синтаксис:</h4>
-  <p class="code">shader_set_uniform_f(handle, value1 [, value2, value3, value4]);</p>
+  <p class="code"><span data-field="title" data-format="default">shader_set_uniform_f</span>(handle, value1 [, value2, value3, value4]);</p>
   <table>
     <tbody>
       <tr>

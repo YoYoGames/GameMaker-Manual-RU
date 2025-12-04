@@ -14,7 +14,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>ini_open</h1>
+  <h1><span data-field="title" data-format="default">ini_open</span></h1>
   <p>Это открывает ini_файл для чтения и/записи. Если ini_файл не существует в проверяемом месте, <span data-keyref="GameMaker Name">GameMaker</span> может создать его, но только если вы запишите в него данные. Если вы только считываете информацию из ini-файла, то
     будут возвращены значения по умолчанию для функции read, но файл ini фактически создан <i>не</i> будет.</p>
   <p>Обратите внимание, что одновременно у вас может быть открыт только <b>один</b> файл ini, и не забывайте использовать кнопку <a href="ini_close.htm"><span class="inline">ini_close()</span></a> после завершения чтения/записи из .ini файла, так как информация не сохраняется на диске до этого момента (она также хранится в памяти до закрытия файла).
@@ -22,7 +22,7 @@
   <p class="note"><b></b><b>ВНИМАНИЕ!</b> Эта функция может работать не так, как вы ожидаете, из-за того, что <span data-keyref="GameMaker Name">GameMaker</span> находится в "песочнице"! Пожалуйста, обратитесь к разделу о <a href="../../../../Additional_Information/The_File_System.htm">файловой системе</a> для получения дополнительной информации.</p>
   <p> </p>
   <h4>Синтаксис:</h4>
-  <p class="code">ini_open(name);</p>
+  <p class="code"><span data-field="title" data-format="default">ini_open</span>(name);</p>
   <table>
     <tbody>
       <tr>

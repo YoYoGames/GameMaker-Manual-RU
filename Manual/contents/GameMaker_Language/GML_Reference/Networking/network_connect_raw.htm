@@ -14,12 +14,12 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>network_connect_raw</h1>
+  <h1><span data-field="title" data-format="default">network_connect_raw</span></h1>
   <p>С помощью этой функции вы можете отправить запрос на подключение к серверу. Функция принимает <i>идентификатор сокета</i> для подключения (см. <a href="network_create_socket.htm"><span class="inline">network_create_socket()</span></a>) и требует, чтобы вы указали IP-адрес для подключения (строка), а также порт для подключения, и в случае неудачи соединения будет возвращено значение меньше 0. Разница между этой функцией и <a href="network_connect.htm"><span class="inline">network_connect()</span></a> заключается в том, что эта функция может подключаться к любому серверу и ничего не делает с исходными данными, то есть вам придется самостоятельно реализовывать протоколы на стороне сервера. Обратите внимание, что по умолчанию функция работает синхронно, а это значит, что ваша игра может &quot;зависнуть&quot; при установлении соединения. Вы можете установить значение тайм-аута для соединения или сделать создание асинхронным, используя функцию <a href="network_set_config.htm"><span class="inline">network_set_config()</span></a>или альтернативно использовать функцию <a href="network_connect_raw_async.htm"><span class="inline">network_connect_async_raw()</span></a> вместо этого.</p>
   <p class="note"><span class="note">ПРИМЕЧАНИЕ</span> Вы не можете использовать эту функцию в HTML5. Для WebSockets используйте <a href="network_connect_raw_async.htm">функцию Async</a>.</p>
   <p> </p>
   <h4>Синтаксис:</h4>
-  <p class="code">network_connect_raw(socket, url, port);</p>
+  <p class="code"><span data-field="title" data-format="default">network_connect_raw</span>(socket, url, port);</p>
   <table>
     <tbody>
       <tr>

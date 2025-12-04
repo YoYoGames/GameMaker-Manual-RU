@@ -51,10 +51,10 @@
         <tr>
           <td style=""><span class="inline">/uf=[user_folder]<strong></strong></span></td>
           <td style="">Папка пользователя, используемая для получения информации о лицензии
-            <br>
-            <br>
+            <br />
+            <br />
             На сайте <span class="notranslate">Windows</span> это будет: <span class="inline"><span>%appdata%\GameMaker\&lt;user_name&gt;_&lt;number&gt;</span>
-            <br>
+            <br />
             На <span class="notranslate">macOS</span> это будет: <span class="inline"><span>~/.config/GameMaker/&lt;user_name&gt;_&lt;number&gt;</span> </td>
         </tr>
         <tr>
@@ -76,8 +76,8 @@
         <tr>
           <td style=""><span class="inline">/of=[output_folder_filename]</span></td>
           <td style="">Выходной каталог, куда будет извлечена сборка; не указывайте только каталог, так как последующая запись всегда удаляется (например: указание <span class="inline">d:\game\output</span> поместит файлы игры в <span class="inline">d:\game</span>).
-            <br>
-            <br>
+            <br />
+            <br />
             Если этот параметр не указан, в той же директории, где находится файл <span class="inline">.bat</span> (или откуда запущена команда), будет создан каталог с именем <span class="inline">output</span>, содержащий извлеченные файлы сборки. </td>
         </tr>
         <tr>
@@ -279,21 +279,21 @@
         <tr>
           <td style=""><span class="inline">Runtime ListInstalled [directory]</span></td>
           <td style="">Перечисляет исполнительные программы, доступные в текущей папке (<span class="inline">directory</span>= полный путь к папке).
-            <br>
-            <br>
+            <br />
+            <br />
             Вы можете указать каталог для поиска, но если он не указан, то по умолчанию будет использоваться текущий каталог.
-            <br>
-            <br>
+            <br />
+            <br />
             Также проверяется, есть ли внутри каталога файл <span class="inline">receipt.json</span> и папка <span class="inline">manifest</span> (чтобы убедиться, что это действительно среда выполнения). </td>
         </tr>
         <tr>
           <td style=""><span class="inline">Runtime Info [version]</span></td>
           <td style="">Выводит информацию о последнем времени выполнения на заданном канале; также требуется файл лицензии для отображения информации о модулях, доступных для пользователя
-            <br>
-            <br>
+            <br />
+            <br />
             <span class="inline">version</span> может быть либо строкой, используемой для поиска по названиям фидов (например: <span class="inline">&quot;739&quot;</span> покажет информацию для всех сборок, содержащих 739 в номере версии), либо <span class="inline">all</span>, чтобы показать информацию для всех фидов.
-            <br>
-            <br>
+            <br />
+            <br />
             Будет выведен список модулей с именами файлов <span class="inline">.zip</span> для каждого модуля. </td>
         </tr>
         <tr>
@@ -303,11 +303,11 @@
         <tr>
           <td style=""><span class="inline">Runtime Verify [folder=.]</span></td>
           <td style="">Рассчитывает контрольные суммы для всех установленных файлов и сравнивает их с контрольными суммами, записанными в манифесте <span class="inline">folder</span>. Вы можете указать папку для проверки, однако если она не указана, то по умолчанию будет использоваться текущий каталог.
-            <br>
-            <br>
+            <br />
+            <br />
             При этом будут отмечены все файлы, контрольные суммы которых не совпадают, отсутствующие файлы и файлы, которых не должно быть.
-            <br>
-            <br>
+            <br />
+            <br />
             Обратите внимание, что сами файлы манифеста не проверяются, и пользователь может изменить файлы манифеста, чтобы они соответствовали установленным. </td>
         </tr>
       </tbody>
@@ -348,8 +348,8 @@
         <tr>
           <td style=""><span class="inline">/target=[list_of_targets]</span></td>
           <td style="">Список целей, разделенный запятыми, в формате <span class="inline">PLATFORM|DEVICE</span>, например: <span class="inline">/target=&quot;Windows|Local,HTML|Firefox&quot;</span>
-            <br>
-            <br>
+            <br />
+            <br />
             Если вы укажете <strong>all</strong>, тесты будут пытаться запустить для каждого устройства в файле <span class="inline">devices.json</span>. </td>
         </tr>
       </tbody>

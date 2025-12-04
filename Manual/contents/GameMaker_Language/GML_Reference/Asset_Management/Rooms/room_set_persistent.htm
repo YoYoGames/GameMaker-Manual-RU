@@ -14,12 +14,12 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>room_set_persistent</h1>
+  <h1><span data-field="title" data-format="default">room_set_persistent</span></h1>
   <p>С помощью этой функции вы можете изменить (или установить) постоянство любой комнаты в вашей игре, <i>кроме текущей</i>. Комната с постоянством, отмеченная как <span class="inline">true</span>, будет сохранять состояние всех экземпляров внутри этой комнаты, если игрок покинет ее, а затем вернется, тогда как если постоянство отмечено как <span class="inline">false</span>, она будет каждый раз сбрасываться в исходное состояние. Следует отметить, что постоянная комната использует значительно больше памяти, чем обычная комната, поэтому не рекомендуется иметь их слишком много в игре.</p>
   <p class="note"><b>ПРИМЕЧАНИЕ</b>: Эта функция <b>НЕ</b> работает для отключения постоянства, если комната уже была посещена! Постоянная комната, после посещения, хранится в памяти, и чтобы отключить постоянство, вы должны зайти в эту комнату и установить переменную <span style="font-size:1px;"><a href="room_persistent.htm"><span class="inline">room_persistent</span></a></span> <span class="inline">false</span> , а затем снова выйти из комнаты.</p>
   <p> </p>
   <h4>Синтаксис:</h4>
-  <p class="code">room_set_persistent(index, val);</p>
+  <p class="code"><span data-field="title" data-format="default">room_set_persistent</span>(index, val);</p>
   <table>
     <tbody>
       <tr>

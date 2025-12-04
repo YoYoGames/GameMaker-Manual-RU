@@ -14,7 +14,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>sprite_create_from_surface</h1>
+  <h1><span data-field="title" data-format="default">sprite_create_from_surface</span></h1>
   <p>С помощью этой функции можно создать <span class="notranslate">sprite</span> из ранее инициализированной поверхности (значение идентификатора индекса поверхности возвращается при создании поверхности с помощью функции <a href="../../../Drawing/Surfaces/surface_create.htm"><span class="inline">surface_create()</span></a>). Координаты x и y, которые вы затем вводите в функцию, должны быть относительно позиции (0,0) <i>поверхности</i> (левый верхний угол), а не окна игры (или вида, если он активен). Аргументы width и height задаются в пикселях и определяют ширину и высоту используемой части поверхности.</p>
   <p>Установка аргумента &quot;removeback&quot; в <span class="inline">true</span> приведет к удалению цвета из <span class="notranslate">sprite</span>, проверяя <i>левый нижний</i> пиксель <span class="notranslate">sprite</span> на наличие там цвета и затем используя его в качестве удаляемого цвета.</p>
   <p>Если вы выбрали опцию &quot;removeback&quot;, вы также можете захотеть, чтобы <span data-keyref="GameMaker Name">GameMaker</span> сгладил края <span class="notranslate">sprite</span>, установив аргумент &quot;smooth&quot; на <span class="inline">true</span>. Это создаст полупрозрачную границу по краям <span class="notranslate">sprite</span> после удаления фона.</p>
@@ -23,7 +23,7 @@
   <p class="note"><b><span class="note">ПРИМЕЧАНИЕ</span></b> Когда вы создаете <span class="notranslate">sprite</span> в <span data-keyref="GameMaker Name">GameMaker</span> с помощью этого метода, вы должны не забыть удалить его снова (с помощью кнопки <a href="sprite_delete.htm"><span class="inline">sprite_delete()</span></a>), когда он больше не нужен, иначе есть риск утечки памяти, что приведет к замедлению и, в конечном итоге, к краху вашей игры.</p>
   <p> </p>
   <h4>Синтаксис:</h4>
-  <p class="code">sprite_create_from_surface(index, x, y, w, h, removeback, smooth, xorig, yorig);</p>
+  <p class="code"><span data-field="title" data-format="default">sprite_create_from_surface</span>(index, x, y, w, h, removeback, smooth, xorig, yorig);</p>
   <table>
     <tbody>
       <tr>

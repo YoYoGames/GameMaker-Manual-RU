@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>буферный_пик</title>
+  <title>buffer_peek</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
   <script src="../../../assets/scripts/main_script.js"></script>
@@ -15,13 +15,13 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>буферный_пик</h1>
+  <h1><span data-field="title" data-format="default">buffer_peek</span></h1>
   <p>С помощью функции <a href="buffer_read.htm"><span class="inline">buffer_read()</span></a> вы можете читать данные из заданного буфера в текущей позиции &quot;seek&quot;, при этом каждая часть данных читается, продвигаясь вперед по этой позиции на считанные или записанные байты. Однако может возникнуть необходимость прочитать определенный фрагмент данных без изменения текущей позиции поиска, и тогда вы можете использовать эту функцию. Вы просто сообщаете функции идентификатор буфера, затем позицию смещения (от начала буфера) в этом буфере для чтения, а также тип данных, которые вы хотите прочитать.</p>
   <p class="note"><b>ПРИМЕЧАНИЕ</b>: Использование неправильного типа данных для считываемых данных приведет к получению ошибочных значений!</p>
   <p>При успешном выполнении функции будет возвращено значение (Real, string, boolean и т.д...) в зависимости от типа данных, в то время как при неудаче будет возвращен просто 0.</p>
   <p> </p>
   <h4>Синтаксис:</h4>
-  <p class="code">buffer_peek(buffer, offset, type);</p>
+  <p class="code"><span data-field="title" data-format="default">buffer_peek</span>(buffer, offset, type);</p>
   <table>
     <tbody>
       <tr>

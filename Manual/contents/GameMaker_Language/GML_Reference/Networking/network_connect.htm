@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>сетевой_коннект</title>
+  <title>network_connect</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
   <script src="../../../assets/scripts/main_script.js"></script>
@@ -14,12 +14,12 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>сетевой_коннект</h1>
+  <h1><span data-field="title" data-format="default">network_connect</span></h1>
   <p>С помощью этой функции вы можете отправить запрос на подключение к серверу. Функция принимает <i>идентификатор сокета</i> для подключения (см. <a href="network_create_socket.htm"><span class="inline">network_create_socket()</span></a>) и требует, чтобы вы указали IP-адрес для подключения (строка), а также порт для подключения. В случае неудачи соединения будет возвращено значение меньше 0. Соединение использует специальный протокол, который обеспечивает соединение только игр <span data-keyref="GameMaker Name">GameMaker</span>, однако если вам нужно подключиться к серверу, который не является игрой <span data-keyref="GameMaker Name">GameMaker</span>, вы можете воспользоваться командой <a href="network_connect_raw.htm"><span class="inline">network_connect_raw()</span></a>. Обратите внимание, что по умолчанию функция является синхронной, а это означает, что ваша игра может &quot;зависнуть&quot; в момент установления соединения. Вы можете установить значение тайм-аута для соединения или сделать создание асинхронным, используя функцию <span class="inline"><a href="network_set_config.htm">network_set_config()</a></span>, или же вместо нее использовать функцию <span class="inline"><a href="network_connect_async.htm">network_connect_async()</a></span>.</p>
   <p class="note"><span class="note">ПРИМЕЧАНИЕ</span> Вы не можете использовать эту функцию в HTML5. Для WebSockets используйте <a href="network_connect_async.htm">функцию Async</a>.</p>
   <p> </p>
   <h4>Синтаксис:</h4>
-  <p class="code">network_connect(socket, url, port);</p>
+  <p class="code"><span data-field="title" data-format="default">network_connect</span>(socket, url, port);</p>
   <table>
     <tbody>
       <tr>

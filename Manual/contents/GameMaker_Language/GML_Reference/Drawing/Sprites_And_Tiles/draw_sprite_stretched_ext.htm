@@ -15,13 +15,13 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>draw_sprite_stretched_ext</h1>
+  <h1><span data-field="title" data-format="default">draw_sprite_stretched_ext</span></h1>
   <p>Эта функция делает то же самое, что и <a href="draw_sprite_stretched.htm"><span class="inline">draw_sprite_stretched()</span></a> с добавлением возможности установить смешивание цветов и значение альфа для <span class="notranslate">sprite</span> при его рисовании (аналогично функции <a href="draw_sprite_ext.htm"><span class="inline">draw_sprite_ext()</span></a>).</p>
   <p class="note"><span class="note">ПРИМЕЧАНИЕ</span> При рисовании с помощью этой функции <a href="../../Asset_Management/Sprites/Sprite_Instance_Variables/sprite_xoffset.htm">смещение</a> <span class="notranslate">sprite</span> по <a href="../../Asset_Management/Sprites/Sprite_Instance_Variables/sprite_xoffset.htm">x</a> и <a href="../../Asset_Management/Sprites/Sprite_Instance_Variables/sprite_yoffset.htm">y</a> (или начало координат) игнорируются, и <span class="notranslate">sprite</span> рисуется с левым верхним углом в заданном положении x/y в помещении.</p>
   <p class="note"><span class="note">ПРИМЕЧАНИЕ</span> Смешивание цветов рекомендуется только для цели HTML5, когда включен WebGL, хотя вы можете установить цвет смешивания, если он не включен, и он будет смешивать <span class="notranslate">sprite</span> как обычно. Однако при таком смешивании создается дубликат <span class="notranslate">sprite</span>, который затем сохраняется в кэше и используется при необходимости. Это далеко не оптимально, и если вы используете многократное изменение цвета, это замедлит производительность вашей игры, если вы не активируете WebGL. Если вы не хотите использовать WebGL, тогда вы можете установить размер кэша шрифтов, чтобы попытаться ограничить это, если это необходимо, используя функцию <span style="font-size:1px;"><a href="../../Asset_Management/Sprites/Sprite_Manipulation/sprite_set_cache_size_ext.htm"><span class="inline">sprite_set_cache_sizee()</span></a></span>.</p>
   <p> </p>
   <h4>Синтаксис:</h4>
-  <p class="code">draw_sprite_stretched_ext(sprite, subimg, x, y, w, h, colour, alpha);</p>
+  <p class="code"><span data-field="title" data-format="default">draw_sprite_stretched_ext</span>(sprite, subimg, x, y, w, h, colour, alpha);</p>
   <table>
     <tbody>
       <tr>

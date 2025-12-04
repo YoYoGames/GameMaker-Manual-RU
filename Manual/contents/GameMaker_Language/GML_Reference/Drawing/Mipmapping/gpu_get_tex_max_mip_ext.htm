@@ -15,11 +15,11 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>gpu_get_tex_max_mip_ext</h1>
+  <h1><span data-field="title" data-format="default">gpu_get_tex_max_mip_ext</span></h1>
   <p>С помощью этой функции вы можете получить установленный на данный момент максимальный уровень mipmap, который будет использоваться для данного шейдерного сэмплера. Вы вводите значение индекса шейдерного сэмплера (как возвращается функцией <a href="../../Asset_Management/Shaders/shader_get_sampler_index.htm"><span class="inline">shader_get_sampler_index()</span></a>, и функция вернет текущий максимальный уровень mipmap, где значение 0 - самое высокое разрешение, 1 - использование первого mipmap, 2 - второго и т.д.. Обратите внимание, что это может быть полезно для предотвращения артефактов растекания при рендеринге текстур, например, установив границу страницы текстуры на 8px и затем установив максимальный уровень mipmap на 3, вы не получите никаких проблем с растеканием на больших расстояниях рендеринга.</p>
   <p> </p>
   <h4>Синтаксис:</h4>
-  <p class="code">gpu_get_tex_max_mip_ext(sampler_index);</p>
+  <p class="code"><span data-field="title" data-format="default">gpu_get_tex_max_mip_ext</span>(sampler_index);</p>
   <table>
     <tbody>
       <tr>

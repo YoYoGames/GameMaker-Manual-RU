@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>нарисовать_плитку</title>
+  <title>draw_tile</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../assets/scripts/main_script.js"></script>
@@ -14,7 +14,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>нарисовать_плитку</h1>
+  <h1><span data-field="title" data-format="default">draw_tile</span></h1>
   <p>С помощью этой функции вы можете нарисовать любую заданную плитку из набора плиток - соревнуясь с вращениями, переворотами и зеркалами - задавая рамку (если она анимирована) и положение в комнате. Значение ID набора плиток - это индекс набора плиток, заданный на сайте <span class="notranslate">IDE</span>, а данные плитки - это &quot;сгусток&quot; данных, содержащий всю информацию об индексе плитки и примененных преобразованиях. Вы можете использовать функцию <a href="../../Asset_Management/Rooms/Tile_Map_Layers/tilemap_get.htm"><span class="inline">tilemap_get()</span></a> для получения данных тайла, которыми затем можно манипулировать с помощью <a href="../../Asset_Management/Rooms/Tile_Map_Layers/Tile_Map_Layers.htm">функций тайла</a>, или создать их самостоятельно, используя следующие константы тайла вместе со значением индекса создаваемого тайла:</p>
   <table>
     <tbody>
@@ -40,13 +40,13 @@
       </tr>
     </tbody>
   </table>
-  <p><br>
+  <p><br />
     Побитовое &quot;или&quot; этих констант со значением индекса плитки для получения окончательных плиточных данных:</p>
   <p class="code">var tiledata = 8 | tile_rotate | tile_flip;</p>
   <p>Приведенный выше код просто создает локальную переменную для хранения данных плитки с индексом 8 в наборе плиток, поворачивает и переворачивает ее. Это не связано с каким-либо слоем tilemap, и плитка будет нарисована на глубине слоя экземпляра, выполняющего рисование, в позиции x/y, которую вы укажете в комнате. Обратите внимание, что вы также можете задать рамку для рисования. Если индексируемая плитка является частью анимационного набора, то здесь можно задать номер кадра (от 0 до количества кадров - 1), и индексируемая плитка будет просто индикатором того, какой набор анимированных плиток вы используете, а рисоваться будет именно данный кадр. Если плитка не является частью анимированного набора, то кадр должен быть равен 0.</p>
   <p> </p>
   <h4>Синтаксис:</h4>
-  <p class="code">draw_tile(tileset, tiledata, frame, x, y)</p>
+  <p class="code"><span data-field="title" data-format="default">draw_tile</span>(tileset, tiledata, frame, x, y)</p>
   <table>
     <tbody>
       <tr>

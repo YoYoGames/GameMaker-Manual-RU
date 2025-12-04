@@ -15,11 +15,11 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>skeleton_attachment_create</h1>
+  <h1><span data-field="title" data-format="default">skeleton_attachment_create</span></h1>
   <p>Когда вы создаете скелетную анимацию <span class="notranslate">sprite</span>, вы можете назначить <i>слоты для вложений</i> и <i>вложения</i> в них. Это просто изображения, которые находятся отдельно от анимации, но при прикреплении будут двигаться вместе с костью, к которой они прикреплены. Обычно вы назначаете эти вложения в вашей программе анимации (<span class="notranslate">Spine</span>), но с помощью этой функции вы можете создавать свои собственные вложения во время выполнения, используя актив <span class="notranslate">sprite</span> из вашей игры. Функция требует, чтобы вы дали вложению имя (в виде строки), затем установили sprite_index и image_index для использования, а также x и y origin (которые могут отличаться от тех, что определены в <span class="notranslate">sprite</span> в свойствах <span class="notranslate">sprite</span> ), и вы также можете установить любые преобразования, которые вы хотите применить к изображению при вложении. Если вложение было успешно создано, функция вернет <span class="inline">1</span>, а если нет (вы указали неверный индекс <span class="notranslate">sprite</span>, или основание <span class="notranslate">sprite</span> не является <span class="notranslate">Spine</span> <span class="notranslate">sprite</span>), то вернется <span class="inline">-1</span>.</p>
   <p> </p>
   <h4>Синтаксис:</h4>
-  <p class="code">skeleton_attachment_create(name, sprite, ind, xorigin, yorigin, xscale, yscale, rot);</p>
+  <p class="code"><span data-field="title" data-format="default">skeleton_attachment_create</span>(name, sprite, ind, xorigin, yorigin, xscale, yscale, rot);</p>
   <table>
     <tbody>
       <tr>

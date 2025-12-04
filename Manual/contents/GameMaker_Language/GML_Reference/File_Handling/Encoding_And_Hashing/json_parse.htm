@@ -15,7 +15,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>json_parse</h1>
+  <h1><span data-field="title" data-format="default">json_parse</span></h1>
   <p>Эта функция может быть использована для разбора строки JSON (либо созданной ранее с помощью функции <a href="json_stringify.htm"><span class="notranslate">json_stringify</span></a> или из любого корректного источника) и преобразовать ее в коллекцию массивов или структур, где массив - это эквивалент массива JSON, а структура - эквивалент объекта JSON. Вы передаете строку для разбора, и функция возвращает массив или структуру верхнего уровня, которые затем можно использовать в вашем коде. Если вы не уверены в содержимом JSON, вы можете использовать различные <a href="../../Variable_Functions/Variable_Functions.htm">функции переменных</a> (такие как <a href="../../Variable_Functions/typeof.htm"><span class="inline">typeof()</span></a> и <a href="../../Variable_Functions/variable_struct_get_names.htm"><span class="inline">variable_struct_get_names()</span></a> в случае со структурой) для проверки возвращаемого содержимого. Обратите внимание, что попытка разобрать недопустимое значение (т.е. не строку) приведет к ошибке исключения.</p>
   <p>При использовании этой функции следует обратить внимание на некоторые важные моменты:</p>
   <ul class="colour">
@@ -24,7 +24,7 @@
   </ul>
   <p> </p>
   <h4>Синтаксис:</h4>
-  <p class="code">json_parse(json)</p>
+  <p class="code"><span data-field="title" data-format="default">json_parse</span>(json)</p>
   <table>
     <tbody>
       <tr>
@@ -48,12 +48,12 @@
     show_debug_message(data);
   </p>
   <p>Приведенный выше код создает новую строку, содержащую правильный объект JSON, а затем вызывает <span class="inline">json_parse()</span> для преобразования этой строки в структуру <span class="notranslate">GML</span>. Затем он печатает результат в журнал отладки.</p>
-  <p class="note"><span class="note">ПРИМЕЧАНИЕ</span> Вы заметите, что строка JSON содержит обратную косую черту<span class="inline2">(\</span>) перед каждой двойной кавычкой (<span class="inline2">&quot;</span>) внутри нее:<br>
-    <br>
-   <span class="inline2">json = &quot;{ \ <strong>&quot; </strong></span>myObj<br>
-    <br>
-    Это делается для того, чтобы двойная кавычка читалась как реальный символ в строке, а не как часть кода и не закрывала строку преждевременно. Таким образом, мы используем обратную косую черту, чтобы &quot;спасти&quot; двойную кавычку.<br>
-    <br>
+  <p class="note"><span class="note">ПРИМЕЧАНИЕ</span> Вы заметите, что строка JSON содержит обратную косую черту<span class="inline2">(\</span>) перед каждой двойной кавычкой (<span class="inline2">&quot;</span>) внутри нее:<br />
+    <br />
+   <span class="inline2">json = &quot;{ \ <strong>&quot; </strong></span>myObj<br />
+    <br />
+    Это делается для того, чтобы двойная кавычка читалась как реальный символ в строке, а не как часть кода и не закрывала строку преждевременно. Таким образом, мы используем обратную косую черту, чтобы &quot;спасти&quot; двойную кавычку.<br />
+    <br />
     Однако если вы загружаете JSON из внешнего файла, нет необходимости экранировать символы в этом файле, и это может привести к ошибкам при разборе.
   </p>
   <hr />
