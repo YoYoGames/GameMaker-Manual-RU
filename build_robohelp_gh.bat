@@ -109,4 +109,5 @@ if /i %robohelpPreset%=="GMS2 Manual Responsive HTML5 BETA" (
 
 @REM rem ************************************************** ZIP up the output
 7z a YoYoStudioRoboHelp.zip . -r
+
 popd
