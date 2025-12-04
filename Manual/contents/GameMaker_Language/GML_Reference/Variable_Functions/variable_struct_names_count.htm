@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
-
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>struct_names_count</title>
-  <meta name="generator" content="Adobe RoboHelp 2019" />
+  <meta name="generator" content="Adobe RoboHelp 2022" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
   <script src="../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
@@ -16,41 +16,43 @@
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
   <h1><span data-field="title" data-format="default">struct_names_count</span></h1>
-  <p>С помощью этой функции вы можете найти общее количество переменных, определенных для структуры. Вы указываете ID структуры, которую нужно проверить, и функция возвращает целочисленное значение количества переменных, или (если структуры с заданным ID не существует)
-    -1.</p>
-  <p> </p>
+  <p>С помощью этой функции вы можете найти общее количество переменных, определенных для структуры. Вы указываете ID структуры, которую нужно проверить, и функция возвращает целочисленное значение количества переменных, или (если структуры с заданным ID не существует) -1.</p>
+  <p> </p>
   <h4>Синтаксис:</h4>
-  <p class="code"><span data-field="title" data-format="default">struct_names_count</span>(struct_id);</p>
+  <p class="code"><span data-field="title" data-format="default">struct_names_count</span>(struct_id)</p>
   <table>
     <tbody>
       <tr>
-        <th>Аргумент</th><th>Тип</th>
+        <th>Аргумент</th>
+        <th>Тип</th>
         <th>Описание</th>
-     </tr>
+      </tr>
       <tr>
-        <td><span class="notranslate">struct_id</span></td><td><span data-keyref="Type_Struct"></span></td>
+        <td><span class="notranslate">struct_id</span></td>
+        <td><span data-keyref="Type_Struct"><a href="../../../../GameMaker_Language/GML_Overview/Structs.htm" target="_blank">Struct</a></span></td>
         <td><span class="notranslate">The unique ID value of the struct to check.</span></td>
-     </tr>
+      </tr>
     </tbody>
   </table>
-  <p> </p>
+  <p> </p>
   <h4>Возвращается:</h4>
-  <p class="code"><span data-keyref="Type_Real"></span></p>
-  <p> </p>
+  <p class="code"><span data-keyref="Type_Real"><a href="../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></p>
+  <p> </p>
   <h4>Пример:</h4>
-  <p class="code">var _num = variable_struct_names_count(mystruct);<br/> show_debug_message(&quot;Struct Variables = &quot; + string(_num));</p>
+  <p class="code">var _num = struct_names_count(mystruct);<br />
+    show_debug_message(&quot;Struct Variables = &quot; + string(_num));</p>
   <p>Приведенный выше код получит количество переменных в заданной структуре и покажет отладочное сообщение в консольном выводе с этим значением.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Назад: <a href="Variable_Functions.htm">Переменные функции</a></div>
-        <div style="float:right">Следующий: <a href="instanceof.htm"><span class="notranslate">instanceof</span></a></div>
+        <div style="float:left">Назад: <a data-xref="{title}" href="Variable_Functions.htm">Переменные функции</a></div>
+        <div style="float:right">Следующий: <a data-xref="{title}" href="instanceof.htm">instanceof</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Все права защищены</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
   </div>
   <!-- KEYWORDS
 variable_struct_names_count
@@ -58,5 +60,5 @@ variable_struct_names_count
   <!-- TAGS
 variable_struct_names_count
 -->
-
-</body></html>
+</body>
+</html>
