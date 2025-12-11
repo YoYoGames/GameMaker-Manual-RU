@@ -15,12 +15,12 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>matrix_build_lookat</h1>
+  <h1><span data-field="title" data-format="default">matrix_build_lookat</span></h1>
   <p>Эта функция строит матрицу &quot;вида&quot; (view-at) на основе заданных параметров, перечисленных ниже. Поскольку эта функция изменяет матрицу вида, а не матрицу проекции, сначала следует инициализировать матрицу проекции с помощью другой функции матрицы. <a href="matrix_build_projection_perspective.htm"><span class="inline">matrix_build_projection_perspective()</span></a>а затем использовать эту функцию для перемещения камеры обзора в пределах проекции.</p>
   <p>Чтобы задать вид, сначала нужно определить позицию, <i>из</i> которой вы смотрите, которая обозначается параметрами (xfrom, yfrom, zfrom). Затем необходимо указать направление, <i>в</i> котором вы смотрите, для этого нужно указать вторую точку, в которую вы смотрите, с помощью аргументов (xto, yto, zto). Наконец, можно еще повернуть камеру вокруг линии от точки обзора до точки взгляда, и для этого нужно задать вектор &quot;вверх&quot; - направление, в котором находится камера. Это задается тремя последними аргументами (xup, yup, zup).</p>
   <p> </p>
   <h4>Синтаксис:</h4>
-  <p class="code">matrix_build_lookat(xfrom, yfrom, zfrom, xto, yto, zto, xup, yup, zup);</p>
+  <p class="code"><span data-field="title" data-format="default">matrix_build_lookat</span>(xfrom, yfrom, zfrom, xto, yto, zto, xup, yup, zup);</p>
   <table>
     <tbody>
       <tr>

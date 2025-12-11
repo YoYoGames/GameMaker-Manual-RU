@@ -14,12 +14,12 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>layer_set_target_room</h1>
+  <h1><span data-field="title" data-format="default">layer_set_target_room</span></h1>
   <p>Вызывая эту функцию, вы сообщаете программе <span data-keyref="GameMaker Name">GameMaker</span>, что <i>все дальнейшие функции слоев должны применяться к данной комнате</i>. Таким образом, вы можете процедурно изменять или генерировать слои и содержимое слоев в комнате, которая не является текущей. Когда вы закончите добавлять слои или элементы слоев в комнату, вызовите функцию <a href="layer_reset_target_room.htm"><span class="inline">layer_reset_target_room()</span></a> для сброса цели комнаты (или вызовите эту функцию снова с аргументом комнаты, равным -1). Обратите внимание, что эта функция может использоваться только для <i>комнат, отличных от текущей комнаты</i>, и предназначена для того, чтобы вы могли добавлять/удалять слои и элементы слоев в комнатах, отличных от текущей комнаты.</p>
   <p class="note"><b>ВНИМАНИЕ!</b> При нацеливании на другую комнату вы можете использовать все обычные функции слоя, <b>за исключением</b> того, что вы не можете создавать экземпляры, используя <span style="font-size:1px;"><a href="../../Instances/instance_create_layer.htm"><span class="inline">instance_create_layer()</span></a></span> или <span style="font-size:1px;"><a href="../../Instances/instance_create_depth.htm"><span class="inline">instance_create_depth()</span></a></span>, также не будет доступна функция слоя <a href="layer_add_instance.htm"><span style="font-size:1px;"><span class="inline">layer_add_instance()</span></span></a> не будет доступна.</p>
   <p> </p>
   <h4>Синтаксис:</h4>
-  <p class="code">layer_set_target_room(room)</p>
+  <p class="code"><span data-field="title" data-format="default">layer_set_target_room</span>(room)</p>
   <table>
     <tbody>
       <tr>

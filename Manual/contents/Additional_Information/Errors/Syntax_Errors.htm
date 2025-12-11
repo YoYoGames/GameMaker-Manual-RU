@@ -69,7 +69,7 @@
       <tr>
         <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Ненужное выражение [val] используется в качестве утверждения</td>
         <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px;text-align: center"><img alt="Syntax Error Icon" height="12" src="../../assets/Images/Scripting_Reference/Additional_Information/i_Error_SyntaxError.png" width="14" /></td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Эта ошибка возникает, когда программа проверки синтаксиса обнаруживает выражение (показанное в [val]) там, где она ожидала оператора. Например, следующий код приведет к ошибке, так как он ожидает троичный оператор ?, но встречает 32:<br>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Эта ошибка возникает, когда программа проверки синтаксиса обнаруживает выражение (показанное в [val]) там, где она ожидала оператора. Например, следующий код приведет к ошибке, так как он ожидает троичный оператор ?, но встречает 32:<br />
           <span class="inline">temp_x = x &lt; (room_width / 2)  32: room_width - 32;</span>
         </td>
       </tr>
@@ -101,7 +101,7 @@
       <tr>
         <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Получено &quot;[val1]&quot;, ожидалось &quot;[val2]&quot;.</td>
         <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px;text-align: center"><img alt="Syntax Error Icon" height="12" src="../../assets/Images/Scripting_Reference/Additional_Information/i_Error_SyntaxError.png" width="14" /></td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Это происходит, когда программа проверки синтаксиса ожидает какое-то значение или символ, но получает другое, где [val1] - текущий символ или значение, а [val2] - ожидаемый символ или значение. Например:<br>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Это происходит, когда программа проверки синтаксиса ожидает какое-то значение или символ, но получает другое, где [val1] - текущий символ или значение, а [val2] - ожидаемый символ или значение. Например:<br />
           <span class="inline">Got &quot;{&quot;, expected &quot;(&quot;</span>
         </td>
       </tr>
@@ -118,14 +118,14 @@
       <tr>
         <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Пустое утверждение [val]</td>
         <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px;text-align: center"><img alt="Syntax Error Icon" height="12" src="../../assets/Images/Scripting_Reference/Additional_Information/i_Error_SyntaxError.png" width="14" /></td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Это происходит, когда вы завершаете оператор и оставляете его пустым. Например, следующий код выдаст ошибку (обратите внимание на завершающую точку с запятой):<br>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Это происходит, когда вы завершаете оператор и оставляете его пустым. Например, следующий код выдаст ошибку (обратите внимание на завершающую точку с запятой):<br />
           <span class="inline">if (x &lt; 0);</span>
         </td>
       </tr>
       <tr>
         <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Вызовы вложенных функций не допускаются</td>
         <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px;text-align: center"><img alt="Syntax Error Icon" height="12" src="../../assets/Images/Scripting_Reference/Additional_Information/i_Error_SyntaxError.png" width="14" /></td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Это может произойти, когда вы пытаетесь вложить вызовы функций внутри оператора, например:<br>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Это может произойти, когда вы пытаетесь вложить вызовы функций внутри оператора, например:<br />
           <span class="inline">ds_list_find_value(list, 0)).sprite_index</span>
         </td>
       </tr>

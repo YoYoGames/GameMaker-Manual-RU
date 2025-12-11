@@ -15,14 +15,14 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>draw_texture_flush</h1>
+  <h1><span data-field="title" data-format="default">draw_texture_flush</span></h1>
   <p>С помощью этой функции вы можете удалить все текстуры из видеопамяти, после чего они будут перезагружены при первом использовании. Это единственный эффективный способ управления видеопамятью, когда у вас есть несколько текстурных страниц для игры, и вы должны промывать текстурную память
     между уровнями игры и организовывать графику с помощью функции группы текстур, чтобы обеспечить использование минимального количества текстур.</p>
   <p>Стоит отметить, что <i>по умолчанию</i> на всех объектах текстурные страницы будут загружаться только по мере необходимости, и вы можете использовать различные функции prefetch и flush для <span class="notranslate">sprites</span> (можно найти <a href="../../Asset_Management/Sprites/Sprite_Manipulation/Sprite_Manipulation.htm">здесь</a>).
     для управления процессом, а также эту функцию.</p>
   <p> </p>
   <h4>Синтаксис:</h4>
-  <p class="code">draw_texture_flush();</p>
+  <p class="code"><span data-field="title" data-format="default">draw_texture_flush</span>();</p>
   <p> </p>
   <h4>Возвращается:</h4>
   <p class="code"><span data-keyref="Type_Void"></span></p>

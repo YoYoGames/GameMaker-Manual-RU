@@ -14,12 +14,12 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>cloud_file_save</h1>
+  <h1><span data-field="title" data-format="default">cloud_file_save</span> <span data-conref="..\..\..\..\assets\snippets\Tag_deprecated.hts"> </span></h1>
   <p>Эта функция фиксирует файл в выбранной облачной службе для хранения. Функция возвращает уникальное значение <b>id</b>, которое затем должно быть использовано в соответствующем асинхронном событии для идентификации карты DS, возвращаемой в качестве &quot;обратного вызова&quot; из облачного сервиса. Файл должен содержать <i>всю</i> информацию, которую вам нужно сохранить для вашей игры, поскольку вы можете сохранить в облаке только один единственный &quot;сгусток данных&quot;, и повторный запуск этой функции перезапишет все ранее сохраненные значения (как и использование функции <a href="cloud_string_save.htm"><span class="inline">cloud_string_save()</span></a> функция). Описание должно представлять собой короткую строку информации, описывающую сохранение, например: &quot;Level2, Stage2&quot;.</p>
   <p>Для получения дополнительной информации о возвращаемых асинхронных данных, пожалуйста, обратитесь к функции <a href="cloud_synchronise.htm"><span class="inline">cloud_synchronise()</span></a>.</p>
   <p> </p>
   <h4>Синтаксис:</h4>
-  <p class="code">cloud_file_save(file, description);</p>
+  <p class="code"><span data-field="title" data-format="default">cloud_file_save</span>(file, description);</p>
   <table>
     <tbody>
       <tr>

@@ -15,7 +15,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>clickable_add</h1>
+  <h1><span data-field="title" data-format="default">clickable_add</span></h1>
   <p>С помощью этой функции вы можете создать пользовательскую, кликабельную иконку, которая действует как &quot;кнопка&quot; вне игровой канвы, но в самом окне браузера. Функция возвращает значение ID, которое должно быть сохранено в переменной для использования во всех последующих функциях кнопки, которые ссылаются на новую кликабельную иконку. Эта функция очень полезна для предотвращения создания браузером всплывающего окна при нажатии на кнопку, поскольку все это делается в самом <span data-keyref="GameMaker Name">GameMaker</span>.</p>
   <p>Сначала необходимо задать позицию, которая является относительной по отношению к (0,0) окна браузера (левый верхний угол), а затем дать текстуре страницы запись для <span class="notranslate">sprite</span>, которую вы хотите видеть у значка кнопки (см: <a href="../Asset_Management/Sprites/Sprite_Information/sprite_get_tpe.htm"><span class="inline">sprite_get_tpe()</span></a>). Затем вы можете указать либо URL-адрес для открытия, либо скрипт (из браузера активов <span data-keyref="GameMaker Name">GameMaker</span>) для открытия или запуска. Параметр &quot;target&quot;, который вы указываете, совпадает со стандартным значением JavaScript &quot;name&quot; при использовании метода <span class="inline">open()</span> (имейте в виду, что все значения, кроме '_self', могут привести к блокировке браузера или к тому, что браузер спросит пользователя, разрешить ли ему это), а аргумент &quot;params&quot; совпадает с параметром JavaScript &quot;specs&quot; для управления свойствами нового окна/вкладки (не все браузеры могут поддерживать все функции). Если вы используете иконку для запуска внутреннего сценария, эти два последних аргумента можно оставить пустыми строками &quot;&quot;.</p>
   <p>Действительными целями являются:</p>
@@ -97,11 +97,11 @@
       </tr>
     </tbody>
   </table>
-  <p><br>
+  <p><br />
     Также стоит отметить, что если передаваемый вами аргумент URL является именем <a href="../../GML_Overview/Script_Functions.htm">функции скрипта</a> (т.е. не начинается с &quot;http://&quot;) И скрипт называется <span class="inline"><b>gmcallback_*</b></span>, то вы можете получить прямую передачу в html5-событие. Имена функций скриптов <span data-keyref="GameMaker Name">GameMaker</span> <i>не</i> обфусцируются, если они начинаются с <span class="inline">gmcallback_</span>.</p>
   <p> </p>
   <h4>Синтаксис:</h4>
-  <p class="code">clickable_add(x, y, tpe, url, target, params);</p>
+  <p class="code"><span data-field="title" data-format="default">clickable_add</span>(x, y, tpe, url, target, params);</p>
   <table>
     <tbody>
       <tr>

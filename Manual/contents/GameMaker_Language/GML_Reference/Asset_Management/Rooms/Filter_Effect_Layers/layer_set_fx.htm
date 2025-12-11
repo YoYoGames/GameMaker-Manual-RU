@@ -14,14 +14,14 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>layer_set_fx</h1>
+  <h1><span data-field="title" data-format="default">layer_set_fx</span></h1>
   <p>Эта функция используется для назначения структуры FX слою помещения. Вы указываете либо ID, либо имя слоя, который вы хотите изменить, а затем FX struct (как возвращено из <span class="inline"><a href="fx_create.htm">fx_create()</a></span> или <span class="inline"><a href="layer_get_fx.htm">layer_get_fx()</a></span>), который будет применен к указанному слою, делая эффект видимым в комнате.</p>
   <p>Если вы укажете слой, который не является слоем фильтра/эффекта, а относится к другому типу (например, слой экземпляра, слой актива, слой плитки и т. д.), то эффект будет применен к содержимому этого слоя, а также ко всем слоям под ним.</p>
   <p>Если для указанного слоя уже назначена структура FX, она будет заменена новой.</p>
   <p class="note"><span class="note">ПРИМЕЧАНИЕ</span> Вызов этой функции на корневом уровне сценария ничего не даст, так как сценарии выполняются до загрузки первой комнаты. Вы можете сначала установить <a href="../General_Layer_Functions/layer_set_target_room.htm">целевую комнату</a>, а затем вызвать эту функцию.</p>
   <p> </p>
   <h4>Синтаксис:</h4>
-  <p class="code">layer_set_fx(layer_name_or_id, filter_or_effect);</p>
+  <p class="code"><span data-field="title" data-format="default">layer_set_fx</span>(layer_name_or_id, filter_or_effect);</p>
   <table>
     <tbody>
       <tr>

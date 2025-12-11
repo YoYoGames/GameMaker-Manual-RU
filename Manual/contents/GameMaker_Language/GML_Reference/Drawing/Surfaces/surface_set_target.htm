@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>поверхность_задать_цель</title>
+  <title>surface_set_target</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../assets/scripts/main_script.js"></script>
@@ -14,7 +14,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>поверхность_задать_цель</h1>
+  <h1><span data-field="title" data-format="default">surface_set_target</span></h1>
   <p>С помощью этой функции вы устанавливаете все дальнейшее рисование на целевую поверхность, а не на экран, и таким образом вы можете указать <span data-keyref="GameMaker Name">GameMaker</span> рисовать только определенные вещи на указанной поверхности. Обратите внимание, что если вы не вызовете функцию <a href="surface_reset_target.htm"><span class="inline">surface_reset_target()</span></a> после завершения работы, на экране ничего не будет нарисовано, так как все дальнейшее рисование (даже в других случаях) будет происходить на поверхности. Вы также должны понимать, что ничего не будет видно, если сама поверхность не будет нарисована на экране в событии draw экземпляра. Вы также можете проверить возвращаемое значение этой функции в качестве инструмента отладки, чтобы проверить, была ли установлена цель поверхности или нет. Возвращаемое значение 0 означает неудачу в установке цели, а любое другое положительное значение - успех.</p>
   <p>Следует отметить, что поверхности <i>складываются в стек</i>, поэтому вы не можете переходить от цели к цели, а затем вернуться к обычной цели рисования в конце, но скорее вы должны открывать и закрывать цели рендеринга. Например, это <b>не</b> будет работать правильно:</p>
   <p class="code">surface_set_target(surf1);<br />
@@ -39,7 +39,7 @@
   <p class="note"><b>ПРИМЕЧАНИЕ</b>: При работе с поверхностями существует вероятность того, что они могут перестать существовать в любой момент, поскольку хранятся в памяти текстур. Вы должны <b>ВСЕГДА</b> проверять существование поверхности с помощью функции <span style="font-size:1px;"><a href="surface_exists.htm"><span class="inline">surface_exists()</span></a></span> перед непосредственным обращением к ней.</p>
   <p> </p>
   <h4>Синтаксис:</h4>
-  <p class="code">surface_set_target(surface_id);</p>
+  <p class="code"><span data-field="title" data-format="default">surface_set_target</span>(surface_id);</p>
   <table>
     <tbody>
       <tr>

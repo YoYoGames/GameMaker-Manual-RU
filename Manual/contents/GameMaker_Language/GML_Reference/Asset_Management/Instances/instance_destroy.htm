@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>уничтожение экземпляра</title>
+  <title>instance_destroy</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../assets/scripts/main_script.js"></script>
@@ -15,7 +15,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>уничтожение экземпляра</h1>
+  <h1><span data-field="title" data-format="default">instance_destroy</span></h1>
   <p>Вы вызываете эту функцию всякий раз, когда хотите &quot;уничтожить&quot; экземпляр, обычно вызывая <a href="../../../../The_Asset_Editors/Object_Properties/Object_Events.htm">событие Destroy</a>, а также <a href="../../../../The_Asset_Editors/Object_Properties/Object_Events.htm">событие Clean Up</a>. Это удалит его из комнаты, пока комната не будет перезапущена (если только комната не является постоянной). Вызов функции без аргументов просто уничтожит экземпляр, который в данный момент находится в области видимости и выполняет код, но вы можете указать необязательный аргумент &quot;id&quot; и нацелиться на конкретный экземпляр, используя значение экземпляра <span class="inline"><a href="Instance_Variables/id.htm">id</a></span>, или нацелиться на все экземпляры конкретного объекта, используя аргумент <a href="../Objects/object_index.htm"><span class="inline">object_index</span></a>. Например:</p>
   <p class="code">instance_destroy(other);      // destroy the &quot;other&quot; instance in a Collision Event<br />
     instance_destroy(obj_Bullet); // destroy ALL instances of the object &quot;obj_Bullet&quot;</p>
@@ -28,7 +28,7 @@
   <p>Переменная &quot;score&quot; будет увеличиваться, <i>даже если была вызвана функция <span class="inline">instance_destroy</span> </i>, и экземпляр будет окончательно удален из игры в конце события. Будьте внимательны, так как если вы (например) создали динамический ресурс для экземпляра, например структуру данных, а затем уничтожили этот ресурс в событии destroy, то если после выполнения функции или действия destroy на него будут ссылки, вы получите ошибку &quot;неизвестный ресурс&quot;, так как событие destroy удалило его из игры.</p>
   <p> </p>
   <h4>Синтаксис:</h4>
-  <p class="code">instance_destroy([id, execute_event_flag]);</p>
+  <p class="code"><span data-field="title" data-format="default">instance_destroy</span>([id, execute_event_flag]);</p>
   <table>
     <tbody>
       <tr>

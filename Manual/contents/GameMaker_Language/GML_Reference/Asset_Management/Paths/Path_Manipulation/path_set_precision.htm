@@ -14,11 +14,11 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>path_set_precision</h1>
+  <h1><span data-field="title" data-format="default">path_set_precision</span></h1>
   <p>С помощью этой функции можно изменить &quot;гладкость&quot; контура. Значение должно быть от 1 до 8, при этом низкое значение создает более прямые края с более резкими изгибами между точками, а более высокое значение округляет точки и делает контур более &quot;кривым&quot;. Обратите внимание, что эта функция не будет иметь видимого эффекта, если путь не был установлен на сглаживание в редакторе путей или с помощью функции <a href="path_set_kind.htm"><span class="inline">path_set_kind()</span></a>. <strong>Эта функция изменяет фактический актив пути</strong>, поэтому она будет постоянно влиять на то, как этот путь используется всеми экземплярами в игре с момента использования функции и до конца игры. Если это не то, что вам нужно, используйте функцию <span class="inline"><a href="path_duplicate.htm">path_duplicate()</a></span> для создания копии пути, а затем вызовите эту функцию на дублированном активе (не забудьте вызвать <span class="inline"><a href="path_delete.htm">path_delete()</a></span> на активе, когда он больше не нужен).</p>
   <p><img alt="Path Precision differences example" class="center" src="../../../../../assets/Images/Scripting_Reference/GML/Reference/Paths/setprecision.png" /></p>
   <h4>Синтаксис:</h4>
-  <p class="code">path_set_precision(index, prec);</p>
+  <p class="code"><span data-field="title" data-format="default">path_set_precision</span>(index, prec);</p>
   <table>
     <tbody>
       <tr>

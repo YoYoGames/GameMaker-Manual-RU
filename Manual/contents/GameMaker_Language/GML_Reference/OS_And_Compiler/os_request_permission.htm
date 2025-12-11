@@ -14,7 +14,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>os_check_permission</h1>
+  <h1><span data-field="title" data-format="default">os_request_permission</span></h1>
   <p>С помощью этой функции вы можете запросить определенное разрешение. Вы указываете запрашиваемое разрешение в виде строки, используя формат &quot;<span class="inline">android.permission.&lt;permission&gt;</span>&quot;, поэтому, чтобы запросить разрешение <span class="inline">RECORD_AUDIO</span> (например), вы должны вызвать функцию</p>
   <p class="code">os_request_permission(&quot;android.permission.RECORD_AUDIO&quot;);</p>
   <p>В ответ функция запустит <a href="../../../The_Asset_Editors/Object_Properties/Async_Events/System.htm">системное асинхронное событие</a>, в котором встроенная <a href="../../GML_Overview/Variables/Builtin_Global_Variables/async_load.htm"><span class="inline">async_load</span></a> DS map будет содержать следующие пары ключ/значение:</p>
@@ -49,7 +49,7 @@
   <p class="note"><b>ВАЖНО!</b> Эта функция предназначена только для цели <b>Android</b>.</p>
   <p> </p>
   <h4>Синтаксис:</h4>
-  <p class="code">os_request_permission(permission)</p>
+  <p class="code"><span data-field="title" data-format="default">os_request_permission</span>(permission)</p>
   <table>
     <tbody>
       <tr>

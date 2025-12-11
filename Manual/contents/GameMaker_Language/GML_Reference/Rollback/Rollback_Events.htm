@@ -39,9 +39,9 @@
       </tr>
       <tr>
         <td><span class="inline">rollback_connect_error</span></td>
-        <td> <a href="../../GML_Overview/Structs.htm">Структура</a>, содержащая следующие переменные:<br>
-          <br>
-         <span class="inline2">status</span> Код статуса HTTP ответа<br>
+        <td> <a href="../../GML_Overview/Structs.htm">Структура</a>, содержащая следующие переменные:<br />
+          <br />
+         <span class="inline2">status</span> Код статуса HTTP ответа<br />
          <span class="inline2">error</span> Строка, описывающая ошибку
         </td>
       </tr>
@@ -61,18 +61,18 @@
       </tr>
       <tr>
         <td><span class="inline">rollback_chat_message</span></td>
-        <td>Срабатывает, когда получено сообщение от <a href="Rollback_Functions/rollback_chat.htm"><span class="inline">rollback_chat()</span></a> / <a data-xref="{title}" href="../../../Drag_And_Drop/Drag_And_Drop_Reference/Rollback/Send_Message.htm">Send Message</a> получено. Во время этого события <span class="inline2">rollback_event_param</span> будет содержать следующие переменные:<br>
-          <br>
-         <span class="inline2">сообщение</span>: Полученная строка сообщения<br>
-         <span class="inline2">от</span>: Идентификатор игрока, отправившего сообщение<br>
+        <td>Срабатывает, когда получено сообщение от <a href="Rollback_Functions/rollback_chat.htm"><span class="inline">rollback_chat()</span></a> / <a data-xref="{title}" href="../../../Drag_And_Drop/Drag_And_Drop_Reference/Rollback/Send_Message.htm">Send Message</a> получено. Во время этого события <span class="inline2">rollback_event_param</span> будет содержать следующие переменные:<br />
+          <br />
+         <span class="inline2">сообщение</span>: Полученная строка сообщения<br />
+         <span class="inline2">от</span>: Идентификатор игрока, отправившего сообщение<br />
          <span class="inline2">to</span>: ID игрока, которому было отправлено сообщение; будет равно -1, если сообщение было отправлено всем.
         </td>
       </tr>
       <tr>
         <td><span class="inline">rollback_player_prefs</span></td>
-        <td>Срабатывает, когда игрок устанавливает свои <a href="Rollback_Preferences.htm">предпочтения</a>. Во время этого события <span class="inline2">rollback_event_param</span> будет содержать следующие переменные:<br>
-          <br>
-         <span class="inline2">player_id</span>: ID игрока, который установил свои предпочтения.<br>
+        <td>Срабатывает, когда игрок устанавливает свои <a href="Rollback_Preferences.htm">предпочтения</a>. Во время этого события <span class="inline2">rollback_event_param</span> будет содержать следующие переменные:<br />
+          <br />
+         <span class="inline2">player_id</span>: ID игрока, который установил свои предпочтения.<br />
          <span class="inline2">предпочтения</span>: Предпочтения, установленные для этого игрока
         </td>
       </tr>
@@ -82,10 +82,10 @@
       </tr>
       <tr>
         <td><span class="inline">rollback_synchronizing_with_peer</span></td>
-        <td>Срабатывает во время синхронизации игрока с новым игроком. Во время этого события <span class="inline2">rollback_event_param</span> будет содержать следующие переменные:<br>
-          <br>
-         <span class="inline2">player_id</span>: ID игрока, с которым происходит синхронизация.<br>
-         <span class="inline2">count</span>: Сколько шагов синхронизации было выполнено<br>
+        <td>Срабатывает во время синхронизации игрока с новым игроком. Во время этого события <span class="inline2">rollback_event_param</span> будет содержать следующие переменные:<br />
+          <br />
+         <span class="inline2">player_id</span>: ID игрока, с которым происходит синхронизация.<br />
+         <span class="inline2">count</span>: Сколько шагов синхронизации было выполнено<br />
          <span class="inline2">всего</span>: Сколько всего шагов синхронизации необходимо выполнить
         </td>
       </tr>
@@ -99,9 +99,9 @@
       </tr>
       <tr>
         <td><span class="inline">rollback_game_interrupted</span></td>
-        <td>Срабатывает, когда игра прерывается из-за игрока с нестабильным соединением. Во время этого события <span class="inline2">rollback_event_param</span> будет содержать следующие переменные:<br>
-          <br>
-         <span class="inline2">player_id</span>: ID игрока с проблемами соединения<br>
+        <td>Срабатывает, когда игра прерывается из-за игрока с нестабильным соединением. Во время этого события <span class="inline2">rollback_event_param</span> будет содержать следующие переменные:<br />
+          <br />
+         <span class="inline2">player_id</span>: ID игрока с проблемами соединения<br />
          <span class="inline2">таймаут</span>: Сколько времени осталось до тайм-аута и отключения игрока (в миллисекундах). По истечении этого времени игрок будет выкинут, и игра возобновится с оставшимися игроками.
         </td>
       </tr>
@@ -115,17 +115,17 @@
       </tr>
       <tr>
         <td><span class="inline">rollback_game_info</span></td>
-        <td>Срабатывает при получении информации о помещении, но до того, как оно будет полностью присоединено.<br>
-          Во время этого события <span class="inline2">rollback_event_param</span> будет содержать следующие переменные:<br>
-          <br>
-         <span class="inline2">num_players</span>: Общее количество игроков в игре<br>
+        <td>Срабатывает при получении информации о помещении, но до того, как оно будет полностью присоединено.<br />
+          Во время этого события <span class="inline2">rollback_event_param</span> будет содержать следующие переменные:<br />
+          <br />
+         <span class="inline2">num_players</span>: Общее количество игроков в игре<br />
          <span class="inline2">player_id</span>: ID местного игрока (начиная с 0)
         </td>
       </tr>
       <tr>
         <td><span class="inline">rollback_connect_info</span></td>
-        <td>Срабатывает, когда комната была создана и готова к совместному использованию с другими игроками. URL, которым можно поделиться, хранится в <span class="inline2">rollback_event_param.share_url</span>.<br>
-          <br>
+        <td>Срабатывает, когда комната была создана и готова к совместному использованию с другими игроками. URL, которым можно поделиться, хранится в <span class="inline2">rollback_event_param.share_url</span>.<br />
+          <br />
           Вы можете автоматически скопировать этот URL, когда он станет доступен, вызвав <span class="inline"><a href="../Strings/clipboard_set_text.htm">clipboard_set_text()</a></span>.
         </td>
       </tr>

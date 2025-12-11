@@ -36,12 +36,12 @@
   <div class="droptext" data-targetname="drop-down">
     <p class="dropspot">Бегущая строка <span class="notranslate">YoYo</span> также имеет специальный параметр командной строки:</p>
     <p class="dropspot" style="padding-top: 0.5em;padding-right: 1em;padding-bottom: 0.5em;padding-left: 5em"><span class="inline">-game &lt;<em>filename</em>&gt;</span>: загружает заданный файл игры
-      <br>
+      <br />
     </p>
     <p class="dropspot">Зачем вам это нужно? Обычно вы этого не делаете, но если вы хотите иметь более одной версии вашей игры одновременно, это можно сделать с помощью этого метода, что значительно упрощает сравнительные тесты A/B. С помощью этого метода вы можете провести фокус-тестирование с кем-то другим или, как дизайнер, получить лучшее представление о вещах, проводя тесты бок о бок.</p>
     <p class="dropspot">Чтобы настроить его, необходимо знать несколько вещей. Для начала вам понадобится путь к самому Runner. Его можно найти в папке <strong>Program Data</strong> вашей ОС <span class="notranslate">Windows</span> (по умолчанию она может быть скрыта, поэтому вам придется изменить свойства просмотра, чтобы увидеть ее), а типичный формат выглядит следующим образом:
-      <br>
-      <br>
+      <br />
+      <br />
     </p>
     <p class="code">C:\ProgramData\GameMaker\Cache\runtimes\&lt;runtime_version&gt;\windows\Runner.exe
       <br />
@@ -49,14 +49,14 @@
     <p class="dropspot">Обратите внимание, что папка runtime_version будет зависеть от установленных у вас в данный момент времен выполнения. Вам также понадобится путь к файлу <span class="inline">&lt;<em>yourgame</em>&gt;.win</span>, поскольку именно на него мы будем указывать бегунку. Самый простой способ найти этот путь - зайти в папку <strong>Temp </strong>(обычно она находится по адресу <span class="inline">%localappdata%\Temp\GameMakerStudio\&lt;game_name&gt;\</span>) и просто найти <span class="inline">*.win</span>, так как это покажет вам все доступные файлы, и вы сможете просто выбрать тот, к которому вам нужно получить полный путь.</p>
     <p class="dropspot">Теперь мы могли бы создать ярлык для бегущей строки, как мы это сделали для исполняемого файла, а затем изменять параметры по мере необходимости, но это означает необходимость открывать и редактировать ее между тестами, что сводит на нет цель использования этой функциональности для тестирования бок о бок. Вместо этого мы создадим пару маленьких &quot;пакетных&quot; файлов, чтобы справиться с этой задачей.</p>
     <p class="dropspot">Для этого сначала создайте новый текстовый документ на рабочем столе и откройте его в Блокноте (или любом другом текстовом редакторе). Добавьте следующее:
-      <br>
-      <br>
+      <br />
+      <br />
     </p>
     <p class="code">START C:\ProgramData\GameMaker\Cache\runtimes\&lt;runtime_version&gt;\windows\Runner.exe -game &lt;LOCAL TEMP PATH&gt;\&lt;GAMENAME&gt;.win
       <br />
     </p>
     <p class="dropspot">Вам нужно установить временный путь к файлу игры <span class="inline">*.win</span>, а затем сохранить его как &quot;<span class="inline">GM_Test_1.bat</span>&quot; на рабочем столе (имейте в виду, что Блокнот автоматически сохранит файл <span class="inline">*.txt</span>, если вы не выберете &quot;все файлы&quot; в опциях диалога сохранения). Пример того, как должна выглядеть ваша конечная команда:
-      <br>
+      <br />
     </p>
     <p class="code">START C:\ProgramData\GameMaker\Cache\runtimes\runtime-9.9.1.199\windows\Runner.exe -game D:\Users\Mark\AppData\Local\Temp\GameMaker\AlphaDog_Reboot\AlphaDog_Reboot.win
       <br />

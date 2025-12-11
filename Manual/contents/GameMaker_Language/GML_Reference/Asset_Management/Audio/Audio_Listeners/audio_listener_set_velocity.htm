@@ -14,13 +14,13 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>audio_listener_set_velocity</h1>
+  <h1><span data-field="title" data-format="default">audio_listener_set_velocity</span></h1>
   <p>Эта функция может быть использована для придания заданному слушателю эффекта <em>Доплера </em>и имитации движения звука на основе вектора, который определяется из заданных относительных положений x, y и z. Индекс слушателя по умолчанию равен 0, но вы можете использовать функцию <a href="audio_get_listener_info.htm"><span class="inline">audio_get_listener_info()</span></a> для получения различных индексов, доступных для целевой платформы.</p>
   <p>Если данный слушатель никогда не будет двигаться, или движение не является постоянным, вам обычно не нужно устанавливать эти значения, но, например, если вы делаете скроллинговую игру, где игрок имеет постоянное движение снизу вверх, а враги - сверху вниз, вы должны установить скорости слушателя <i>и</i> эмиттера (для эмиттеров вы должны использовать <a href="../Audio_Emitters/audio_emitter_velocity.htm"><span class="inline">audio_emitter_velocity()</span></a>) соответствующим векторам, чтобы смоделировать правильный эффект Доплера при движении мимо экземпляра игрока.</p>
   <p>На рисунке ниже показано, как это можно настроить для приведенного выше примера игры:</p>
   <p><img alt="Audio Listener Set Velocity Example" class="center" src="../../../../../assets/Images/Scripting_Reference/GML/Reference/Audio/Audio_Listener_Velocity.png" /></p>
   <h4>Синтаксис:</h4>
-  <p class="code">audio_listener_set_velocity(index, x, y, z);</p>
+  <p class="code"><span data-field="title" data-format="default">audio_listener_set_velocity</span>(index, x, y, z);</p>
   <table>
     <tbody>
       <tr>

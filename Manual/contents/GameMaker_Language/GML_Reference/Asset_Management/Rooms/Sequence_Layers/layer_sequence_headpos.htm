@@ -14,7 +14,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>layer_sequence_headpos</h1>
+  <h1><span data-field="title" data-format="default">layer_sequence_headpos</span></h1>
   <p>С помощью этой функции можно установить положение <a class="glossterm" data-glossterm="playhead" href="#">головки воспроизведения</a> элемента последовательности на определенный кадр. Вы передаете идентификатор элемента последовательности, возвращенный <a href="layer_sequence_create.htm"><span class="inline">layer_sequence_create()</span></a> или одной из <a href="../General_Layer_Functions/General_Layer_Functions.htm">функций элемента слоя</a> вместе с новой позицией, которую нужно установить. Обратите внимание, что позиция задается в <i>кадрах</i>, и если вы установите значение больше, чем общее количество кадров (или меньше 0), то фактическая конечная позиция головки воспроизведения будет зависеть от типа воспроизведения последовательности, который был выбран, следуя этим правилам:</p>
   <ul class="colour">
     <li><strong>Нет зацикливания</strong>: Головка воспроизведения будет прижиматься к концу цикла (или к началу, если заданное значение отрицательно).</li>
@@ -24,7 +24,7 @@
   <p>Установка положения головки таким образом не остановит воспроизведение, и последовательность просто продолжится с нового положения головки воспроизведения, если она не приостановлена.</p>
   <p> </p>
   <h4>Синтаксис:</h4>
-  <p class="code">layer_sequence_headpos(sequence_element_id, position)</p>
+  <p class="code"><span data-field="title" data-format="default">layer_sequence_headpos</span>(sequence_element_id, position)</p>
   <table>
     <tbody>
       <tr>

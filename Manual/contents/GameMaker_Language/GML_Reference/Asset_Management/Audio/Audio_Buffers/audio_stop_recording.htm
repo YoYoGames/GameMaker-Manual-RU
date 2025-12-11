@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>аудио_остановка_записи</title>
+  <title>audio_stop_recording</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../../assets/scripts/main_script.js"></script>
@@ -15,12 +15,12 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>аудио_остановка_записи</h1>
+  <h1><span data-field="title" data-format="default">audio_stop_recording</span></h1>
   <p>Эта функция остановит запись на заданном канале рекордера (индекс канала возвращается при вызове функции <a href="audio_start_recording.htm"><span class="inline">audio_start_recording()</span></a>). Когда вы остановите запись, для данного канала рекордера не будет инициировано никаких дальнейших <a href="../../../../../The_Asset_Editors/Object_Properties/Async_Events/Audio_Recording.htm">асинхронных событий аудиозаписи</a>, поэтому обычно вы используете эту функцию в реальном асинхронном событии, чтобы убедиться, что вы захватили все данные.</p>
   <p class="note"><b><span class="note">ПРИМЕЧАНИЕ</span> </b>Большинство платформ поддерживают запись звука в той или иной форме, но это не означает, что все устройства позволят это сделать, даже если платформа это делает, поэтому всегда следует проверять, что функция <span style="font-size:1px;"><a href="audio_get_recorder_count.htm"><span class="inline">audio_get_recorder_count()</span></a></span> возвращает значение больше 0, чтобы убедиться, что записывающие устройства доступны, прежде чем использовать остальные функции записи.</p>
   <p> </p>
   <h4>Синтаксис:</h4>
-  <p class="code">audio_stop_recording(channel_index);</p>
+  <p class="code"><span data-field="title" data-format="default">audio_stop_recording</span>(channel_index);</p>
   <table>
     <tbody>
       <tr>

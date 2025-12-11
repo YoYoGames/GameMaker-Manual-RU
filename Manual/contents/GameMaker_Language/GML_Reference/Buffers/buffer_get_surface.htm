@@ -15,14 +15,14 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>buffer_get_surface</h1>
+  <h1><span data-field="title" data-format="default">buffer_get_surface</span></h1>
   <p>С помощью этой функции вы можете записать информацию с поверхности в заданный буфер. Буфер должен быть создан ранее и представлять собой выровненный по 1 байту буфер, достаточно большой, чтобы хранить данные для поверхности, которую вы собираетесь записать (если не уверены, используйте <a href="buffer_create.htm">растущий</a> буфер или смотрите пример внизу этой страницы).</p>
   <p>Информация для поверхности всегда будет записываться в начало буфера (независимо от позиции поиска), но вы можете выбрать значение смещения (в байтах) для перемещения позиции записи от начала буфера.</p>
   <p>Обратите внимание, что функция записывает каждый пиксель поверхности в буфер, используя форматирование <b>RGBA</b> на цели <span class="notranslate">Windows</span>, но на других целях оно может быть другим в зависимости от ОС или даже устройства.</p>
   <p class="note"><strong>ПРИМЕЧАНИЕ</strong>: Эта функция изменилась начиная с обновления <span data-keyref="GameMaker Name">GameMaker</span> 2.3.1 и далее. В предыдущих версиях использовалась константа <span class="inline">buffer_surface_copy</span>, которая теперь устарела.</p>
   <p> </p>
   <h4>Синтаксис:</h4>
-  <p class="code">buffer_get_surface(buffer, surface, offset);</p>
+  <p class="code"><span data-field="title" data-format="default">buffer_get_surface</span>(buffer, surface, offset);</p>
   <table>
     <tbody>
       <tr>

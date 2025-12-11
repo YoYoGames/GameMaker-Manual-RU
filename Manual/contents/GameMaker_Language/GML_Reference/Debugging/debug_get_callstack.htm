@@ -15,7 +15,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>debug_get_callstack</h1>
+  <h1><span data-field="title" data-format="default">debug_get_callstack</span></h1>
   <p>Эта функция генерирует массив строк в виде &quot;стека вызовов&quot;, где сначала перечисляется текущий сценарий, а затем все другие сценарии, которые были запущены для того, чтобы текущий сценарий был выполнен. Точный формат строк зависит от выбранной целевой платформы, но в основном это будет имя сценария/события, затем двоеточие : и номер строки, как показано ниже:</p>
   <p class="code"><span class="inline">&quot;gml_Script_script2:1&quot;<br />
       &quot;gml_Script_script1:32&quot;<br />
@@ -25,7 +25,7 @@
   <p>Обратите внимание, что возвращаемый массив всегда будет содержать 0 в своей последней позиции, после перечисления сценариев стека вызовов.</p>
   <p> </p>
   <h4>Синтаксис:</h4>
-  <p class="code">debug_get_callstack([maxdepth])</p>
+  <p class="code"><span data-field="title" data-format="default">debug_get_callstack</span>([maxdepth])</p>
   <table>
     <tbody>
       <tr>

@@ -14,7 +14,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>buffer_save_async</h1>
+  <h1><span data-field="title" data-format="default">buffer_save_async</span></h1>
   <p>С помощью этой функции вы можете сохранить часть содержимого буфера в файл, готовый к считыванию обратно в память с помощью функции <a href="buffer_load.htm"><span class="inline">buffer_load()</span></a> (или любой другой функции для загрузки буферов). Смещение&quot; определяет начальную позицию в буфере для сохранения (в байтах), а &quot;размер&quot; - размер сохраняемой области буфера, начиная с этого смещения и далее (также в байтах). Эта функция работает асинхронно, поэтому игра будет продолжаться во время сохранения, а все файлы, сохраненные с помощью этой функции, будут помещены в папку &quot;по умолчанию&quot;. Эту папку <i>не</i> нужно указывать в имени файла, так как она автоматически добавляется программой <span class="notranslate">GameMaker</span>. Например, файл с именем &quot;<span class="inline">Data\Player_Save.sav</span>&quot; будет сохранен в папку &quot;<span class="inline">default\Data\Player_Save.sav</span>&quot;. Однако, если вы затем загрузите файл с помощью функции <a href="buffer_load_async.htm"><span class="inline">buffer_load_async()</span></a>то вам также не нужно указывать часть пути &quot;по умолчанию&quot; (но любая другая функция файла <i>потребует</i> ее, за исключением консолей Xbox One, PS4 и <span class="notranslate">Nintendo</span> <span class="notranslate">Switch</span>).</p>
   <p class="note"><b>ПРИМЕЧАНИЕ</b>: В HTML5 &quot;default/&quot; не добавляется автоматически, и вам, возможно, придется учесть это в своем коде.</p>
   <p>Функция вернет уникальное значение ID и вызовет <a href="../../../The_Asset_Editors/Object_Properties/Async_Events/Save_Load.htm">событие асинхронного сохранения/загрузки</a>, где вы можете использовать возвращенный ID для проверки значения <span class="inline">async_load</span> ID, как показано в расширенном примере ниже. Карта <a href="../../GML_Overview/Variables/Builtin_Global_Variables/async_load.htm"><span class="inline">async_load</span></a> map в событии будет содержать следующие две пары ключ/значение:</p>
@@ -26,7 +26,7 @@
   <p class="note"><b>ПРИМЕЧАНИЕ</b>: На HTML5 возвращаемые результаты сохраняются в виде строк в кодировке base64 при сохранении в файл.</p>
   <p> </p>
   <h4>Синтаксис:</h4>
-  <p class="code">buffer_save_async(buffer, filename, offset, size);</p>
+  <p class="code"><span data-field="title" data-format="default">buffer_save_async</span>(buffer, filename, offset, size);</p>
   <table>
     <tbody>
       <tr>

@@ -14,7 +14,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>audio_free_play_queue</h1>
+  <h1><span data-field="title" data-format="default">audio_free_play_queue</span></h1>
   <p>Эта функция используется для освобождения памяти, связанной с заданной аудиоочередью. Индекс очереди - это значение, возвращенное при создании очереди с помощью функции <a href="audio_create_play_queue.htm"><span class="inline">audio_create_play_queue()</span></a>и эта функция должна вызываться, когда очередь больше не нужна, чтобы предотвратить утечку памяти. Освобождение очереди остановит любой воспроизводимый звук, и вы не сможете удалить буфер, из которого передается звук, пока не будет освобождена очередь, которой он назначен. Эта функция вызовет <a href="../../../../../The_Asset_Editors/Object_Properties/Async_Events/Audio_Playback.htm">асинхронное событие воспроизведения звука</a>, и в этом событии в переменной будет создана специальная <a href="../../../Data_Structures/DS_Maps/DS_Maps.htm">DS карта</a> <a href="../../../../GML_Overview/Variables/Builtin_Global_Variables/async_load.htm"><span class="inline">async_load</span></a> со следующими парами ключ/значение:</p>
   <ul class="colour">
     <li>&quot;<strong>queue_id</strong>&quot; - очередь, которая закончила воспроизведение данных</li>
@@ -23,7 +23,7 @@
   </ul>
   <p> </p>
   <h4>Синтаксис:</h4>
-  <p class="code">audio_free_play_queue(queueIndex);</p>
+  <p class="code"><span data-field="title" data-format="default">audio_free_play_queue</span>(queueIndex);</p>
   <table>
     <tbody>
       <tr>

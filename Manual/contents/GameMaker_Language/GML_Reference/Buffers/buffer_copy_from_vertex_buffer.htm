@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>буфер_копирование_из_вершинного_буфера</title>
+  <title>buffer_copy_from_vertex_buffer</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
   <script src="../../../assets/scripts/main_script.js"></script>
@@ -14,11 +14,11 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>буфер_копирование_из_вершинного_буфера</h1>
+  <h1><span data-field="title" data-format="default">buffer_copy_from_vertex_buffer</span></h1>
   <p>Эта функция может использоваться для копирования некоторых (или всех) вершинных данных, хранящихся в одном вершинном буфере, в ранее созданный обычный буфер. При копировании из вершинного буфера в обычный буфер с помощью этой функции оба буфера должны быть предварительно созданы (с помощью функций <a href="../Drawing/Primitives/vertex_create_buffer.htm"><span class="inline">vertex_create_buffer()</span></a> и <a href="buffer_create.htm"><span class="inline">buffer_create()</span></a> например). Вы можете указать диапазон вершинных данных, которые вы хотите скопировать в буфер, где начальная вершина может быть в любом месте от 0 до количества вершин -1, и вы можете указать количество вершин с этой точки для копирования. Вы можете использовать функцию <a href="../Drawing/Primitives/vertex_get_number.htm"><span class="inline">vertex_get_number()</span></a> для буфера вершин, чтобы получить общее количество хранящихся вершин. Наконец, вы указываете индекс буфера для копирования данных вершины, а также смещение данных, чтобы определить позицию для копирования данных вершины в буфере назначения.</p>
   <p> </p>
   <h4>Синтаксис:</h4>
-  <p class="code">buffer_copy_from_vertex_buffer(vertex_buffer, start_vertex, num_vertices, dest_buffer, dest_offset);</p>
+  <p class="code"><span data-field="title" data-format="default">buffer_copy_from_vertex_buffer</span>(vertex_buffer, start_vertex, num_vertices, dest_buffer, dest_offset);</p>
   <table>
     <tbody>
       <tr>

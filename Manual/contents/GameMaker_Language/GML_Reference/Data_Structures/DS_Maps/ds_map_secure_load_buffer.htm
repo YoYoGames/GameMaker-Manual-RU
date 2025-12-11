@@ -14,13 +14,13 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>ds_map_secure_load_buffer</h1>
+  <h1><span data-field="title" data-format="default">ds_map_secure_load_buffer</span></h1>
   <p>Эта функция загружает сохраненную карту DS из буфера. Вы должны предварительно загрузить буфер в память (используя <a href="../../Buffers/buffer_load.htm"><span class="inline">buffer_load()</span></a>), а затем передать его в эту функцию, которая вернет карту DS, заполненную содержимым буфера. Обратите внимание, что буфер должен быть создан с помощью функции <span class="inline"><a href="ds_map_secure_save_buffer.htm">ds_map_secure_save_buffer()</a></span>, чтобы функция работала правильно, а также обратите внимание, что если загружаемая DS-карта содержит массив, то при загрузке он будет преобразован в DS-список.</p>
   <p class="note"><b>ВАЖНО!</b> Одной из особенностей безопасного сохраненного файла является то, что он блокируется на устройстве, на котором был создан, поэтому вы не можете загрузить файл, сохраненный на одном устройстве, в проект, запущенный на другом устройстве.</p>
   <p class="note"><strong>ПРИМЕЧАНИЕ</strong>: Эта функция не поддерживается на HTML5 и UWP.</p>
   <p> </p>
   <h4>Синтаксис:</h4>
-  <p class="code">ds_map_secure_load_buffer(buffer);</p>
+  <p class="code"><span data-field="title" data-format="default">ds_map_secure_load_buffer</span>(buffer);</p>
   <table>
     <tbody>
       <tr>

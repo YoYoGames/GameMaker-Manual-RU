@@ -15,12 +15,12 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>shader_is_compiled</h1>
+  <h1><span data-field="title" data-format="default">shader_is_compiled</span></h1>
   <p>Эта функция проверяет шейдер во время выполнения, чтобы убедиться, что он был успешно скомпилирован. Если это так, то функция возвращает <span class="inline">true</span>, в противном случае возвращается <span class="inline">false</span>. Эту функцию следует использовать в начале игры, чтобы убедиться, что платформа, на которой запущена ваша игра, успешно скомпилировала все используемые шейдеры (особенно на <span class="notranslate">Windows</span>, где некоторые компьютеры могут использовать DX9 с уровнем шейдеров 2.0, а не более позднюю версию с уровнем шейдеров 3.0).</p>
   <p>Если ваш шейдер <i>НЕ</i> был скомпилирован, и вы вызовете команду <a href="shader_set.htm"><span class="inline">shader_set()</span></a> игра потерпит крах, поэтому стоит иметь какую-то проверку всякий раз, когда вы используете что-то, кроме простых GLSL ES шейдеров.</p>
   <p> </p>
   <h4>Синтаксис:</h4>
-  <p class="code">shader_is_compiled(shader);</p>
+  <p class="code"><span data-field="title" data-format="default">shader_is_compiled</span>(shader);</p>
   <table>
     <tbody>
       <tr>
