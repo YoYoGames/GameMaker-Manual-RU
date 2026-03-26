@@ -1,3 +1,7 @@
+// ----------------------------------------------------------------------------------------------
+// Code highlighter
+// ----------------------------------------------------------------------------------------------
+
 /*!
   Highlight.js v11.0.1 (git: 1cf31f015d)
   (c) 2006-2021 Ivan Sagalaev and other contributors
@@ -2552,7 +2556,9 @@ var hljs = (function () {
 }());
 if (typeof exports === 'object' && typeof module !== 'undefined') { module.exports = hljs; }
 
-
+// Load and register language definitions used for code highlighting
+import gmljs from "./gml.js";
+import glsljs from "./glsl.js";
 
 hljs.registerLanguage("gml",(()=>{"use strict";return e=>({name:"GML",
 case_insensitive:!1,keywords:{
@@ -2564,6 +2570,7 @@ symbol:"argument_relative argument argument0 argument1 argument2 argument3 argum
 contains:[e.C_LINE_COMMENT_MODE,e.C_BLOCK_COMMENT_MODE,e.APOS_STRING_MODE,e.QUOTE_STRING_MODE,e.C_NUMBER_MODE]
 })})());
 
+// Trigger code highlighting on page load
 document.addEventListener('DOMContentLoaded', (event) => {
 	// Turn return code blocks into plain blocks
 	var h4s = document.getElementsByTagName("h4");
@@ -2595,6 +2602,9 @@ var createLanguageMenu = function () {
 var desktopToc = window.parent.document.getElementsByClassName("functionbar sidebar-opened")[0];
 var nonContext = window.parent.document.getElementById("rh-topic-header");
 if (desktopToc == undefined && nonContext == undefined) return;
+
+// Checks
+var is_online = window.location.hostname.endsWith(".gamemaker.io");
 
 // Create default style (full context view) and get parent elm
 var listStyle = `
@@ -2659,6 +2669,8 @@ var array = [
   { name: "日本語", code: "ja" }
 ];
 
+if (!is_online) array.unshift({ name: "Change Language", code: "" });
+
 // Delete if it already exists
 var existingSelectList = window.parent.document.getElementById("mySelect");
 if (existingSelectList != undefined) {
@@ -2680,7 +2692,7 @@ for (var i = 0; i < array.length; i++) {
 } // end for
 
 // are we on the main site???? if so then lets find the index of the current language
-if (window.location.hostname.endsWith( ".gamemaker.io")) {
+if (is_online) {
   // lets get the language from the pathname
   const folders = window.location.pathname.split("/");
   if (folders.length >= 3) {
@@ -2700,6 +2712,9 @@ if (window.location.hostname.endsWith( ".gamemaker.io")) {
 	} // end for
   } // end if
 } // end if
+else {
+  selectList.selectedIndex = 0;
+}
 
 selectList.addEventListener( "change", function(e) { 
   //var tg = selectList.target.value;
@@ -2708,6 +2723,8 @@ selectList.addEventListener( "change", function(e) {
   var entry = array[index];
   var url = window.location.href;
   //var urlParams = url.searchParams;
+  
+  if (entry.code=="") return;
 
   // some logging for debugging
   //console.log("Hello entry " + JSON.stringify(array[index]));   
@@ -2765,12 +2782,17 @@ if (myParent == undefined) return;
 	`;
 }*/
 
+
+// Checks
+var is_online = window.location.hostname.endsWith(".gamemaker.io");
+
 //Create array of options to be added
 var bArray = [
   { name: "Monthly", code: "monthly" },
   { name: "Beta", code: "beta" },
   { name: "LTS", code: "lts" }
 ];
+if (!is_online) bArray.unshift({ name: "Change Version", code: "" });
 
 // Delete if it already exists
 var existingSelectList = window.parent.document.getElementById("myBranchSelect");
@@ -2813,6 +2835,9 @@ if (window.location.hostname.endsWith( ".gamemaker.io")) {
 	} // end for
   } // end if
 } // end if
+else {
+  bSelectList.selectedIndex = 0;
+}
 
 bSelectList.addEventListener( "change", function(e) { 
   //var tg = selectList.target.value;
@@ -2821,6 +2846,8 @@ bSelectList.addEventListener( "change", function(e) {
   var entry = bArray[index];
   var url = window.location.href;
   //var urlParams = url.searchParams;
+  
+  if (entry.code=="") return;
 
   // some logging for debugging
   //console.log("Hello entry " + JSON.stringify(array[index]));   

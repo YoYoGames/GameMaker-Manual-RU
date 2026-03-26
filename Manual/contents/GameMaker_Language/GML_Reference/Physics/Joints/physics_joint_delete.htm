@@ -42,12 +42,12 @@
   <p class="code">var reactionForceX, reactionForceY, reactionForce;<br />
     if (shipJoint) <br />
     {<br />
-        _<span class="misspell-word">reaction_force_x</span> = physics_joint_get_value(<span class="misspell-word">ship_joint</span>, phy_joint_reaction_force_x);<br />
-        _<span class="misspell-word">reaction_force_y</span> = physics_joint_get_value(<span class="misspell-word">ship_joint</span>, phy_joint_reaction_force_y);<br />
-        _reaction_force = sqrt((_<span class="misspell-word">reaction_force_x</span> + _<span class="misspell-word">reaction_force_x</span>) + (_<span class="misspell-word">reaction_force_y</span> + _<span class="misspell-word">reaction_force_y</span>));<br />
+        _reaction_force_x = physics_joint_get_value(ship_joint, phy_joint_reaction_force_x);<br />
+        _reaction_force_y = physics_joint_get_value(ship_joint, phy_joint_reaction_force_y);<br />
+        _reaction_force = sqrt((_reaction_force_x + _reaction_force_x) + (_reaction_force_y + _reaction_force_y));<br />
         if (_reaction_force &gt; 2)<br />
         {<br />
-            physics_joint_delete(<span class="misspell-word">ship_joint</span>);<br />
+            physics_joint_delete(ship_joint);<br />
             ship_joint = -1;<br />
         }<br />
     }</p>

@@ -84,13 +84,13 @@
     physics_fixture_set_box_shape(fix, 64, 32);<br />
     for (i = 0; i &lt; 5; i++)<br />
     {<br />
-        o_id = instance_create_layer(x + (128 * i), y, &quot;Instances&quot;, obj_BridgePart);<br />
-        physics_fixture_bind(fix, o_id);<br />
-        if (i &gt; 0 &amp;&amp; i &lt; 4)<br />
+        _o_id = instance_create_layer(x + (128 * i), y, &quot;Instances&quot;, obj_bridge_part);<br />
+        _o_id.fix_bound = physics_fixture_bind(_fix, _o_id);<br />
+        if (i &gt; 0)<br />
         {<br />
-            physics_joint_weld_create(p_id, o_id, x + (128 * i) - 64, y, 0, 10, 12, true);<br />
+            physics_joint_weld_create(_p_id, _o_id, x + (128 * i) - 64, y, 0, 10, 12, true);<br />
         }<br />
-        p_id = o_id;<br />
+        _p_id = _o_id;<br />
     }<br />
     physics-fixture_delete(fix);</p>
   <p>Приведенный выше код создает приспособление, затем с помощью цикла создает несколько экземпляров, привязывает приспособление к каждому новому экземпляру и затем соединяет их вместе с помощью сварного шва. Наконец, приспособление удаляется из памяти.</p>
