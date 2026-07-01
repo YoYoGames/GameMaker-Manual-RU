@@ -9,7 +9,7 @@
   <meta name="rh-authors" content="Gurpreet S. Matharoo" />
   <meta http-equiv="Content-Language" content="en-UK" />
   <link rel="stylesheet" type="text/css" href="../css/default.css" />
-  <script src="../../../assets/scripts/main_script.js"></script>
+  <script src="../../../assets/scripts/main_script.js" type="module"></script>
   <meta name="rh-index-keywords" content="" />
   <meta name="search-keywords" content="" />
   <meta name="is_pure" content="false" />
